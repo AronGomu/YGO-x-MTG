@@ -1,0 +1,19 @@
+# Malacoda, Netherlord of the Burning Abyss
+
+- **Card type:** Ritual Monster
+- **Attribute:** DARK
+- **Monster type:** Fiend
+- **Type line:** Fiend / Ritual / Effect
+- **Level:** 6
+- **ATK:** 2700
+- **DEF:** 2200
+
+## Card text
+
+You can Ritual Summon this card with "Good & Evil in the Burning Abyss". Must be Ritual Summoned, and cannot be Special Summoned by other ways. Once per turn, during either player's turn: You can send 1 "Burning Abyss" monster from your hand to the Graveyard, then target 1 face-up monster your opponent controls; until the end of this turn, that target loses ATK and DEF equal to the ATK and DEF of the "Burning Abyss" monster sent to the Graveyard this way. If this card is sent from the field to the Graveyard: You can target 1 card on the field; send it to the Graveyard.
+
+## Source
+
+- [Official Yu-Gi-Oh! Neuron card database](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=11635&request_locale=en)
+- **Database CID:** 11635
+- **Retrieved:** 2026-07-12
