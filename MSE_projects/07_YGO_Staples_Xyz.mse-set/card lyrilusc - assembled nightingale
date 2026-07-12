@@ -1,0 +1,28 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-spellbook
+	stylesheet_version: 2024-09-01
+	has_styling: false
+	notes: Source: docs/07_xyz.md
+	time_created: 2026-07-11 17:03:48
+	time_modified: 2026-07-11 18:12:54
+	name: Lyrilusc - Assembled Nightingale
+	casting_cost: 0
+	image: image8.png
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
+	super_type: <word-list-type-en>Xyz Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Winged</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Beast</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	rarity: rare
+	rule_text:
+		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Xyz</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 0</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Elle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>peut</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>attaquer</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>fois</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>supplémentaire</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chaque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> combat pour <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chaque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>matériel</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>attaché</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>elle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Elle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>gagne</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> +1/+1 pour <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chaque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>matériel</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>attaché</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>elle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(3 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Activable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> : <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> “<error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Lyrilusc</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>” <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>que</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>vous</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>contrôlez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>gagnent</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <kw-a><nospellcheck><key>indestructible</key></nospellcheck></kw-a> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>jusqu’à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la fin <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>du</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> tour.
+	flavor_text: <i-flavor></i-flavor>
+	power: 1
+	toughness: 1
+	card_code_text: 026/030 R
+	card_code_text_2: 026/030 R
+	card_code_text_3: 026/030 R

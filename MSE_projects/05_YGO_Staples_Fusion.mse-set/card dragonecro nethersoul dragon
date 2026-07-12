@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: 05_fusion.md
+	time_created: 2026-07-11 12:11:26
+	time_modified: 2026-07-11 12:11:26
+	name: Dragonecro Nethersoul Dragon
+	casting_cost: B
+	image: mse_images/image2.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Dragon</word-list-race-en>
+	rarity: rare
+	rule_text:
+		<i>Fusion — 2 créatures Zombie</i>
+		(1 - Passif) Si Dragonecro combat une créature, cette créature devient 0/1 jusqu'à la fin du tour.
+		(2 - Déclenchable) Si Dragonecro inflige des blessures de combat, créez un jeton Zombie noir X/X, où X est la force de la créature blessée.
+	flavor_text: <i-flavor></i-flavor>
+	power: 3
+	toughness: 1
+	card_code_text: 002/015 R

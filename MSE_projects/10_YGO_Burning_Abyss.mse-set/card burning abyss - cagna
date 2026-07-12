@@ -1,0 +1,27 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: sevenhalf
+	stylesheet_version: 2024-05-30
+	has_styling: false
+	notes: Source: 11_archetype_burning_abyss.md
+	time_created: 2026-07-11 01:36:28
+	time_modified: 2026-07-11 11:51:41
+	name: Burning Abyss - Cagna
+	casting_cost: B
+	image: mse_images/image6.png
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
+	super_type: <word-list-type-en>Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	rarity: common
+	rule_text:
+		(1 - Passif) <b>Malédiction abyssale</b>
+		(2 - Activable Hard Linked) <b>Descente</b>
+		(3 - Déclenchable Hard Linked) <b>On Send GY</b> — Envoyez 1 carte “Burning Abyss” depuis votre Deck au GY.
+	flavor_text: <i-flavor></i-flavor>
+	power: 2
+	toughness: 2
+	card_code_text: 006/030 C
+	card_code_text_2: 006/030 C
+	card_code_text_3: 006/030 C

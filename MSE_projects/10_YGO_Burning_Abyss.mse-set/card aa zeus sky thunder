@@ -1,0 +1,28 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-spellbook
+	stylesheet_version: 2020-05-03
+	has_styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time_created: 2026-07-11 16:40:30
+	time_modified: 2026-07-11 16:40:30
+	name: AA-ZEUS - Sky Thunder
+	casting_cost: 2RW
+	image: mse_images/divine_arsenal_aa_zeus_sky_thunder.jpg
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
+	super_type: <word-list-type-en>Xyz Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Machine</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	rarity: mythic rare
+	rule_text:
+		<i>Xyz — 2 créatures MV 4</i>
+		Xyz Coût Alternatif — 1 créature Xyz qui a attaqué ce tour-ci. Ses matériels se transfèrent.
+		(1 - Activable Flash Soft) <b>Detach 2<b> : envoyez tous les autres permanents au GY.
+		(2 - Déclenchable Soft) Si une autre carte que vous contrôlez est détruite par combat ou par un effet adverse, attachez 1 carte depuis votre main, Deck ou Extra Deck à cette carte comme matériel.
+	flavor_text: <i-flavor></i-flavor>
+	power: 6
+	toughness: 6
+	card_code_text: 001/030 M
+	card_code_text_2: 001/030 M
+	card_code_text_3: 001/030 M

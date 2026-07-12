@@ -1,0 +1,31 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-sketch
+	stylesheet_version: 2024-09-01
+	has_styling: false
+	notes: Source: 06_synchro.md
+	time_created: 2026-07-11 12:11:57
+	time_modified: 2026-07-11 12:11:57
+	name: Stardust Dragon
+	casting_cost: G
+	image: mse_images/image12.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Synchro Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2:
+	sub_type_3:
+	sub_type_4:
+	rarity: rare
+	rule_text:
+		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Synchro</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 1 Tuner + 1+ non-Tuner</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Activable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Sacrifiez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Stardust Dragon : <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>contrecarrez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>un</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> sort <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ou</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>capacité</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>qui</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>détruirait</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>carte</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>sur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> champ <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>de</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>bataille</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Au <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>début</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>de</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>prochaine</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>étape</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>de</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> fin, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>renvoyez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Stardust Dragon <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>votre</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>cimetière</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>sur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> champ <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>de</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>bataille</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+	flavor_text: <i-flavor></i-flavor>
+	power: 2
+	toughness: 2
+	card_code_text: 012/015 R
+	card_code_text_2: 012/015 R
+	card_code_text_3: 012/015 R
+	copyright: 

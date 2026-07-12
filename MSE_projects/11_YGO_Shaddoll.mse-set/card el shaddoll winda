@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time_created: 2026-07-11 00:33:44
+	time_modified: 2026-07-11 00:33:44
+	name: Shaddoll - Winda
+	casting_cost: 1B
+	image: mse_images/image12.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Puppet</word-list-race-en>
+	rarity: common
+	rule_text:
+		Chaque joueur ne peut lancer qu'une seule créature par tour.
+		Une fois par tour, si El Shaddoll Winda devait être détruite par un effet, elle n'est pas détruite.
+		<b>On Send GY</b> — Renvoyez une carte "Shaddoll" non-créature depuis votre cimetière dans votre main.
+	flavor_text: <i-flavor></i-flavor>
+	power: 4
+	toughness: 3
+	card_code_text: 025/025 C

@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: 05_fusion.md
+	time_created: 2026-07-11 12:11:28
+	time_modified: 2026-07-11 12:11:28
+	name: Millennium-Eyes Restrict
+	casting_cost: B
+	image: mse_images/image6.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Wizard</word-list-race-en>
+	rarity: rare
+	rule_text:
+		<i>Fusion — 1 créature Effect + 1 créature Restrict</i>
+		(1 - Déclenchable Soft) Si un adversaire active une capacité de créature, exilez cette créature jusqu'à ce que Millennium-Eyes quitte le champ de bataille.
+		(2 - Passif) Les cartes avec le même nom qu'une carte exilée par Millennium-Eyes ne peuvent pas activer leurs capacités.
+	flavor_text: <i-flavor></i-flavor>
+	power: 0
+	toughness: 1
+	card_code_text: 006/015 R

@@ -1,0 +1,26 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-spellbook
+	stylesheet_version: 2024-09-01
+	has_styling: false
+	notes: Source: docs/07_xyz.md
+	time_created: 2026-07-11 17:03:48
+	time_modified: 2026-07-11 18:12:47
+	name: Leviair the Sea Dragon
+	casting_cost: G
+	image: image7.png
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
+	super_type: <word-list-type-en>Xyz Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Aqua</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	rarity: rare
+	rule_text:
+		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Xyz</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Activable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Sorcery Soft)</i-auto> <b>Detach 1</b> : <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>mettez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> en <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>jeu</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ou</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>moins</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>exilée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+	flavor_text: <i-flavor></i-flavor>
+	power: 3
+	toughness: 3
+	card_code_text: 028/030 R
+	card_code_text_2: 028/030 R
+	card_code_text_3: 028/030 R

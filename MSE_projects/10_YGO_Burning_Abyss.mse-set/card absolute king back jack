@@ -1,0 +1,26 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: sevenhalf
+	stylesheet_version: 2024-05-30
+	has_styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time_created: 2026-07-11 16:40:30
+	time_modified: 2026-07-12 01:01:17
+	name: Absolute King Back Jack
+	casting_cost: B
+	image: mse_images/absolute_king_back_jack.jpg
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
+	super_type: <word-list-type-en>Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	rarity: uncommon
+	rule_text:
+		(1 - Déclenchable Hard Linked) <b>On Send GY</b> — Regard 3.
+		(2 - Activable Flash Hard Linked) Depuis votre GY, exilez cette carte : révélez la carte du dessus de votre Deck. Si c’est un Piège, mettez-la face cachée sur le terrain et vous pouvez l’activer ce tour-ci. Sinon, envoyez-la au GY.
+	flavor_text: <i-flavor></i-flavor>
+	power: 0
+	toughness: 1
+	card_code_text: 002/030 U
+	card_code_text_2: 002/030 U
+	card_code_text_3: 002/030 U

@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: 05_fusion.md
+	time_created: 2026-07-11 16:45:00
+	time_modified: 2026-07-11 16:45:00
+	name: El Shaddoll Winda
+	casting_cost: B
+	image: mse_images/image19.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Wizard</word-list-race-en>
+	rarity: rare
+	rule_text:
+		<i>Fusion — 1 Shaddoll + 1 DARK</i>
+		(1 - Passif) Chaque joueur ne peut invoquer spécialement qu’une fois par tour.
+		(2 - Déclenchable) <b>On Send GY</b> — Renvoyez une carte Shaddoll depuis votre cimetière dans votre main.
+	flavor_text: <i-flavor></i-flavor>
+	power: 2
+	toughness: 2
+	card_code_text: 019/030 R

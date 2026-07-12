@@ -1,0 +1,29 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: sevenhalf
+	stylesheet_version: 2024-05-30
+	has_styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time_created: 2026-07-11 00:33:44
+	time_modified: 2026-07-11 00:33:44
+	name: Shaddoll - Core
+	casting_cost: B
+	image: mse_images/image21.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Enchantment</word-list-type-en>
+	sub_type:
+	rarity: common
+	rule_text:
+		Shaddoll Core ne peut être lancé que face verso.
+		Il ne peut pas être mis sur le champ de bataille par un autre effet.
+		Lorsqu'il est retourné face visible, il devient une :
+		Créature-Enchantment — Marionnette
+		Shaddoll Core est de toutes les couleurs.
+		Tant qu'il est une créature, il peut être utilisé comme matériau pour n'importe quelle créature Fusion “Shaddoll” à la place d'un matériau requis.
+		<b>Corruption</b> — Renvoyez une carte Shaddoll depuis votre cimetière dans votre main.
+	flavor_text: <i-flavor></i-flavor>
+	power: 0
+	toughness: 3
+	card_code_text: 007/025 C

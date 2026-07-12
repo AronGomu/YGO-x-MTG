@@ -1,0 +1,23 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: sevenhalf
+	stylesheet_version: 2024-05-30
+	has_styling: false
+	notes: Source: 03_non_archetype_creature.md
+	time_created: 2026-07-10 23:49:32
+	time_modified: 2026-07-10 23:49:32
+	name: Effect Veiler
+	casting_cost: W
+	image: mse_images/image4.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Magicien</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en>Syntoniseur</word-list-class-en>
+	rarity: common
+	rule_text:
+		Défaussez-vous d'Effect Veiler : la créature ciblée perd toutes ses capacités jusqu'à la fin du tour. N'activez cette capacité que pendant la phase principale d'un adversaire.
+	flavor_text: <i-flavor></i-flavor>
+	power: 0
+	toughness: 1
+	card_code_text: 006/024 C

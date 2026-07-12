@@ -1,0 +1,23 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-showcase-capenna-art-deco
+	stylesheet_version: 2024-10-01
+	has_styling: false
+	notes: Source: 08_link.md
+	time_created: 2026-07-11 12:12:35
+	time_modified: 2026-07-11 12:12:35
+	name: Knightmare Unicorn
+	casting_cost: B
+	image: mse_images/image8.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Link Lvl 3 Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Fiend</word-list-race-en>
+	rarity: rare
+	rule_text:
+		(1 - Déclenchable) Si Unicorn arrive, vous pouvez vous défausser d'une carte. Si vous faites ainsi, mélangez une carte ciblée dans la bibliothèque de son propriétaire, puis piochez une carte si Unicorn est co-liée.
+	flavor_text: <i-flavor></i-flavor>
+	power: 2
+	toughness: 5
+	card_code_text: 008/015 R

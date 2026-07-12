@@ -1,0 +1,29 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-sketch
+	stylesheet_version: 2024-09-01
+	has_styling: false
+	notes: Source: 06_synchro.md
+	time_created: 2026-07-11 12:11:51
+	time_modified: 2026-07-11 12:11:51
+	name: Herald of the Arc Light
+	casting_cost: W
+	image: mse_images/image10.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Synchro Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Fairy</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2:
+	sub_type_3:
+	sub_type_4:
+	rarity: rare
+	rule_text:
+		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Synchro</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 1 Tuner + 1+ non-Tuner</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>carte</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>devait</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>être</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>mise</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>dans</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>un</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>cimetière</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> main <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ou</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>bibliothèque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>exilez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>-la <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la place.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <b>On Send GY</b> — <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Cherchez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Ritual <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ou</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>carte</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Ritual.
+	flavor_text: <i-flavor></i-flavor>
+	power: 1
+	toughness: 1
+	card_code_text: 010/015 R
+	copyright: 

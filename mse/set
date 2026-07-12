@@ -1,0 +1,2067 @@
+﻿mse version: 2.0.2
+game: magic
+stylesheet: magic-m15
+set info:
+	title: Yu-Gi-Oh! of the Magic Yu-Oh! Cube
+	artist:
+	copyright: Fan-made custom cards for private cube playtesting
+	set code: YGO
+	automatic card numbers: true
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Scarm, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Cherchez une créature Burning Abyss dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power: 1
+	toughness: 4
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 1
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Graff, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Renvoyez sur le champ de bataille une créature Burning Abyss ayant une valeur de mana de 1 ou moins depuis votre cimetière.
+	flavor text:
+	power: 2
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 2
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Cir, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Renvoyez une créature Burning Abyss ciblée depuis votre cimetière sur le champ de bataille.
+	flavor text:
+	power: 3
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 3
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Farfa, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Exilez une créature ciblée jusqu'à la prochaine étape de fin.
+	flavor text:
+	power: 2
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 4
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Libic, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Vous pouvez lancer une créature Burning Abyss depuis votre main sans payer son coût de mana ce tour-ci.
+	flavor text:
+	power: 2
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 5
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Barbar, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Exilez jusqu'à trois cartes Burning Abyss de votre cimetière. Barbar inflige 3 blessures à l'adversaire ciblé.
+	flavor text:
+	power: 3
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 6
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Alich, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Jusqu'à la fin du tour, une créature ciblée perd toutes ses capacités et devient 0/0.
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 7
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Calcab, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Renvoyez un permanent non-terrain ciblé dans la main de son propriétaire.
+	flavor text:
+	power: 3
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 8
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Cagna, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Cherchez une carte Burning Abyss dans votre bibliothèque et mettez-la dans votre cimetière.
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 9
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Draghig, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		On Send GY — Défaussez-vous d'une carte, puis piochez une carte.
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 10
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Rubic, Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Créature Syntoniseur
+	sub type: Fiend
+	rarity: common
+	rule text: Descente
+
+		Aucune capacité On Send GY.
+
+
+		# Extra Deck
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 11
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Dante, Voyageur de l'Abîme Ardent
+	casting cost: W
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier Esprit
+	rarity: rare
+	rule text: Xyz 2
+
+		Une seule fois par tour, <b>Detach 1<b> :
+
+		• <b>Mill up to 3</b> ;
+		• Dante gagne +1/+0 pour chaque carte meulée et acquiert la vigilance ce tour-ci ;
+		• Dante acquiert la vigilance jusqu'à la fin du tour.
+
+		Si Dante est mis dans votre cimetière depuis n'importe où :
+
+		• renvoyez une carte Burning Abyss depuis votre cimetière dans votre main.
+	flavor text:
+	power: 2
+	toughness: 5
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 12
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Virgil, Rock Star of the Burning Abyss
+	casting cost: 1W
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien
+	rarity: rare
+	rule text: Synchro
+
+		Une seule fois par tour :
+
+		Défaussez-vous d'une carte Burning Abyss.
+
+		Choisissez un permanent.
+
+		Son propriétaire le mélange dans sa bibliothèque.
+
+		Si Virgil est mis dans votre cimetière depuis n'importe où :
+
+		Piochez une carte.
+
+
+		# Magies et Pièges
+	flavor text:
+	power: 5
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 13
+
+card:
+	has styling: false
+	notes: Source: docs/10_archetype_burning_abyss.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Fire Lake of the Burning Abyss
+	casting cost: B
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: En tant que coût supplémentaire pour lancer ce sort :
+
+		Sacrifiez deux créatures Burning Abyss.
+
+		Détruisez jusqu'à trois permanents non-terrain ciblés.
+
+
+		# Notes de design
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/10_archetype_burning_abyss.md
+	number: 14
+
+card:
+	has styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Shaddoll Beast
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Marionnette
+	rarity: common
+	rule text: Flip — Piochez deux cartes, puis défaussez-vous d'une carte.
+
+		Corruption — Piochez une carte.
+	flavor text:
+	power: 4
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/11_archetype_shaddoll.md
+	number: 15
+
+card:
+	has styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Shaddoll Falco
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Marionnette
+	rarity: common
+	rule text: Flip — Renvoyez une créature Shaddoll ciblée depuis votre cimetière sur le champ de bataille face verso.
+
+		Corruption — Renvoyez cette carte sur le champ de bataille face verso.
+	flavor text:
+	power: 1
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/11_archetype_shaddoll.md
+	number: 16
+
+card:
+	has styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: El Shaddoll Construct
+	casting cost: 2W
+	image:
+	super type:
+	card type: Créature
+	sub type: Marionnette
+	rarity: rare
+	rule text: Fusion — 1 créature Shaddoll + 1 créature LUMIÈRE
+
+		À chaque fois que El Shaddoll Construct combat une créature ayant commencé la partie dans un Extra Deck, détruisez cette créature avant que les blessures de combat ne soient infligées.
+
+		Corruption (une seule fois par tour) — Si El Shaddoll Construct est mise dans votre cimetière par un effet de carte, renvoyez une carte Shaddoll non-créature depuis votre cimetière dans votre main.
+	flavor text:
+	power: 5
+	toughness: 5
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/11_archetype_shaddoll.md
+	number: 17
+
+card:
+	has styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Shaddoll Fusion
+	casting cost: 1B
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Choisissez une créature Fusion depuis votre Extra Deck.
+
+		Mettez-la directement sur le champ de bataille en envoyant au cimetière les matériaux indiqués sur cette carte depuis :
+
+		• votre main ;
+		• le champ de bataille ;
+		• votre cimetière.
+
+		Si un adversaire contrôle une créature ayant commencé la partie dans un Extra Deck, vous pouvez également envoyer les matériaux depuis votre bibliothèque.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/11_archetype_shaddoll.md
+	number: 18
+
+card:
+	has styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: El Shaddoll Fusion
+	casting cost: 1B
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: Choisissez une créature Fusion depuis votre Extra Deck.
+
+		Mettez-la directement sur le champ de bataille en envoyant au cimetière les matériaux indiqués sur cette carte depuis :
+
+		• votre main ;
+		• le champ de bataille ;
+		• votre cimetière.
+
+
+		# Cartes prévues
+
+		Les cartes suivantes pourront être adaptées ultérieurement.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/11_archetype_shaddoll.md
+	number: 19
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Brionac
+	casting cost: 1U
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier Rituel
+	rarity: common
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Brionac qu'une seule fois par tour.
+
+		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : cherchez une créature Necroz, révélez-la, mettez-la dans votre main, puis mélangez.
+		• À tout moment où vous pourriez lancer un rituel, ciblez une créature ayant été lancée depuis un Sideboard. Mélangez cette créature dans le Sideboard de son propriétaire.
+	flavor text:
+	power: 4
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 20
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Clausolas
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier Rituel
+	rarity: common
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Clausolas qu'une seule fois par tour.
+
+		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : cherchez une carte Rituel avec "Necroz" dans son nom, révélez-la, mettez-la dans votre main, puis mélangez.
+		• À tout moment où vous pourriez lancer un rituel, ciblez une créature sur le champ de bataille. Jusqu'à la fin du tour, sa puissance devient 0 et elle perd toutes ses capacités.
+	flavor text:
+	power: 2
+	toughness: 4
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 21
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Unicore
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier Rituel
+	rarity: common
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Unicore qu'une seule fois par tour.
+
+		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : ciblez une carte Necroz dans votre cimetière. Ajoutez-la à votre main.
+		• Les créatures ayant été lancées depuis un Sideboard perdent toutes leurs capacités.
+	flavor text:
+	power: 4
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 22
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Trishula
+	casting cost: 2U
+	image:
+	super type:
+	card type: Créature
+	sub type: Dragon Rituel
+	rarity: rare
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Trishula qu'une seule fois par tour.
+
+		• Vous pouvez vous défausser de cette carte : lorsqu'un sort ou une capacité cible une créature Necroz que vous contrôlez, contrecarrez ce sort ou cette capacité.
+		• Lorsque Nekroz - Trishula arrive sur le champ de bataille, choisissez :
+		  • un permanent non-terrain contrôlé par un adversaire ;
+		  • une carte de la main d'un adversaire choisie au hasard ;
+		  • une carte du cimetière d'un adversaire.
+
+		  Exilez ces cartes.
+
+		  (Cet effet ne peut se résoudre que si les trois cibles existent.)
+	flavor text:
+	power: 5
+	toughness: 4
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 23
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Valkyrus
+	casting cost: 2U
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier Rituel
+	rarity: rare
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Valkyrus qu'une seule fois par tour.
+
+		• Vous pouvez vous défausser de cette carte : jusqu'à la fin du tour, prévenez toutes les blessures de combat qui devraient vous être infligées.
+		• Une seule fois par tour, à tout moment où vous pourriez lancer un rituel, vous pouvez sacrifier jusqu'à deux créatures Necroz. Piochez une carte pour chaque créature sacrifiée de cette manière.
+	flavor text:
+	power: 5
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 24
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Gungnir
+	casting cost: 2U
+	image:
+	super type:
+	card type: Créature
+	sub type: Dragon Rituel
+	rarity: rare
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Gungnir qu'une seule fois par tour.
+
+		• Vous pouvez vous défausser de cette carte : cherchez une carte Necroz dans votre cimetière, révélez-la, puis ajoutez-la à votre main.
+		• Une seule fois par tour, vous pouvez vous défausser d'une carte Necroz : une créature Necroz ciblée que vous contrôlez gagne l'indestructible jusqu'à la fin du tour.
+	flavor text:
+	power: 5
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 25
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Decisive Armor
+	casting cost: 2U
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier Rituel
+	rarity: rare
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Decisive Armor qu'une seule fois par tour.
+
+		• Vous pouvez vous défausser de cette carte : une créature Necroz ciblée que vous contrôlez gagne +2/+2 jusqu'à la fin du tour.
+		• Une seule fois par tour, à tout moment où vous pourriez lancer un rituel, ciblez une créature. Jusqu'à la fin du tour, cette créature gagne -2/-0.
+	flavor text:
+	power: 6
+	toughness: 6
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 26
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Catastor
+	casting cost: 1U
+	image:
+	super type:
+	card type: Créature
+	sub type: Machine Rituel
+	rarity: common
+	rule text: Cette carte ne peut être lancée que par une invocation Rituel.
+
+		Rituel
+
+		Vous ne pouvez utiliser chaque effet de Nekroz - Catastor qu'une seule fois par tour.
+
+		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : ciblez une créature Necroz dans votre cimetière. Mettez cette créature sur le champ de bataille.
+		• Les créatures Necroz que vous contrôlez ne peuvent pas être la cible de sorts ou de capacités contrôlés par vos adversaires.
+
+
+		# Cartes de soutien
+	flavor text:
+	power: 4
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 27
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Shurit
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Guerrier
+	rarity: common
+	rule text: Si cette carte est utilisée comme matériau pour lancer une créature Rituel Necroz, elle compte comme si sa valeur de mana était suffisante pour satisfaire à elle seule le coût Rituel de cette créature.
+
+		Lorsque l'un ou plusieurs Nekroz - Shurit sont utilisés comme matériau pour lancer une créature Rituel Necroz, cherchez une créature Necroz dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+
+		Vous ne pouvez utiliser cet effet de "Nekroz - Shurit" qu'une seule fois par tour.
+	flavor text:
+	power: 1
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 28
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Dance Princess
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien
+	rarity: common
+	rule text: À chaque fois que vous lancez une carte Rituel avec "Necroz" dans son nom, les adversaires ne peuvent pas lancer de sorts ni activer de capacités jusqu'à la résolution de ce sort.
+
+		Les créatures Rituel Necroz que vous contrôlez ne peuvent pas être la cible de sorts ou de capacités contrôlés par vos adversaires.
+
+		Vous ne pouvez utiliser cet effet de Nekroz - Dance Princess qu'une seule fois par tour.
+
+		Lorsque cette carte est utilisée comme matériau pour lancer une créature Rituel Necroz, vous pouvez cibler une carte Necroz exilée autre que Nekroz - Dance Princess. Ajoutez-la à votre main.
+	flavor text:
+	power: 3
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 29
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Great Sorcerer
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien
+	rarity: common
+	rule text: Vous ne pouvez utiliser qu'un effet de Nekroz - Great Sorcerer par tour, et uniquement une fois ce tour-là.
+
+		• Lorsque cette carte est utilisée comme matériau pour lancer une créature Rituel, cherchez une carte Rituel avec "Necroz" dans son nom, révélez-la, mettez-la dans votre main, puis mélangez.
+		• Lorsque cette carte est exilée, ciblez une carte Necroz exilée autre que Nekroz - Great Sorcerer. Ajoutez-la à votre main.
+	flavor text:
+	power: 3
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 30
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Exa
+	casting cost: 1U
+	image:
+	super type:
+	card type: Créature
+	sub type: Dragon
+	rarity: common
+	rule text: Vous ne pouvez utiliser qu'un effet de Nekroz - Exa par tour, et uniquement une fois ce tour-là.
+
+		• Lorsque cette carte est utilisée comme matériau pour lancer une créature Rituel, cherchez une créature Rituel de type Dragon avec "Necroz" dans son nom, révélez-la, mettez-la dans votre main, puis mélangez.
+		• Lorsque cette carte est exilée, ciblez une créature Necroz exilée autre que Nekroz - Exa. Mettez cette créature sur le champ de bataille.
+	flavor text:
+	power: 4
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 31
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Manju of the Ten Thousand Hands
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Fée
+	rarity: common
+	rule text: Lorsque Manju of the Ten Thousand Hands arrive sur le champ de bataille, cherchez dans votre bibliothèque :
+
+		• une créature Rituel, ou
+		• une carte Rituel.
+
+		Révélez cette carte, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 32
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Senju of the Thousand Hands
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Fée
+	rarity: common
+	rule text: Lorsque Senju of the Thousand Hands arrive sur le champ de bataille, cherchez une créature Rituel dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 33
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Herald
+	casting cost: W
+	image:
+	super type:
+	card type: Créature
+	sub type: Psychique
+	rarity: common
+	rule text: Cette carte ne peut être lancée que par une invocation Synchro.
+
+		Synchro
+
+		Si une carte devait être mise dans un cimetière depuis une main ou une bibliothèque, exilez-la à la place.
+
+		Lorsque Nekroz - Herald est mis dans votre cimetière, cherchez :
+
+		• une créature Rituel, ou
+		• une carte Rituel.
+
+		Révélez cette carte, mettez-la dans votre main, puis mélangez.
+
+
+		# Magies Rituel
+	flavor text:
+	power: 1
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 34
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Kaleidoscope
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Choisissez une créature Rituel Necroz dans votre main.
+
+		Au lieu de sacrifier des créatures pour lancer cette carte, vous pouvez envoyer une créature depuis votre Sideboard dans votre cimetière.
+
+		La valeur de mana de cette créature remplace entièrement le coût Rituel.
+
+		Lancez ensuite la créature Rituel Necroz choisie.
+
+
+		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre cimetière, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Kaleidoscope, révélez-la, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 35
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Mirror
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Choisissez une créature Rituel Necroz dans votre main.
+
+		Vous pouvez exiler des créatures depuis votre cimetière. Si vous ne le faites pas, sacrifiez des créatures depuis votre main ou le champ de bataille.
+
+		La valeur de mana totale des créatures utilisées de cette manière doit être supérieure ou égale à celle de la créature choisie.
+
+		Lancez ensuite cette créature Rituel Necroz.
+
+
+		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre cimetière, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Mirror, révélez-la, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 36
+
+card:
+	has styling: false
+	notes: Source: docs/12_archetype_necroz.md
+	time created: 1783631682
+	time modified: 1783631682
+	name: Nekroz - Cycle
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Choisissez une créature Rituel Necroz dans votre main ou votre cimetière.
+
+		Sacrifiez des créatures depuis votre main ou le champ de bataille dont la valeur de mana totale est supérieure ou égale à celle de cette créature.
+
+		Lancez ensuite cette créature Rituel Necroz.
+
+
+		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre cimetière, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Cycle, révélez-la, mettez-la dans votre main, puis mélangez.
+
+
+		# Philosophie de design
+
+		Necroz doit être un archétype très consistant, mais dépendant de la bonne séquence de ressources.
+
+		Les cartes doivent encourager :
+
+		• la recherche de pièces spécifiques ;
+		• la transformation de cartes en main en effets utilitaires ;
+		• l'utilisation stratégique du cimetière et de l'exil ;
+		• la punition des créatures issues du Sideboard ;
+		• une progression par avantage incrémental plutôt que par combo létal immédiat.
+
+
+		# Progression d'une partie
+
+		Le déroulement attendu d'une partie est le suivant :
+
+		1. Chercher une magie Rituel et une créature Rituel Necroz grâce aux effets de défausse ou aux cartes de soutien.
+		2. Utiliser Shurit, Great Sorcerer, Manju ou Senju pour stabiliser la main.
+		3. Lancer une première créature Rituel Necroz.
+		4. Contrôler les créatures adverses issues du Sideboard avec Unicore, Brionac ou Trishula.
+		5. Recycler les magies Rituel depuis le cimetière lorsque le champ est vide.
+		6. Reprendre l'avantage grâce à Cycle, Mirror et Kaleidoscope.
+		7. Terminer la partie avec des créatures Rituel résilientes et une main continuellement rechargée.
+
+
+		# Contraintes de design
+
+		Toutes les futures cartes Necroz devront respecter les principes suivants :
+
+		• conserver une identité Rituel forte ;
+		• éviter les créatures lancées normalement trop efficaces ;
+		• donner aux créatures Rituel des effets utiles même lorsqu'elles sont en main ;
+		• limiter les effets de recherche par des restrictions « une fois par tour » ;
+		• faire du Sideboard une ressource et une cible d'interaction ;
+		• maintenir le bleu comme couleur principale de consistance, tempo et contrôle.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/12_archetype_necroz.md
+	number: 37
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Guide des Enfers
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Humain et Fiend
+	rarity: common
+	rule text: Si le Guide des Enfers arrive sur le champ de bataille, si vous l'avez lancé depuis votre main, vous pouvez chercher dans votre bibliothèque une carte de créature Fiend avec une valeur de mana de 1, la mettre sur le champ de bataille engagée, puis mélanger. Cette créature perd toutes ses capacités tant qu'elle reste sur le champ de bataille.
+	flavor text:
+	power: 2
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 38
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Maxx « C »
+	casting cost: G
+	image:
+	super type:
+	card type: Créature
+	sub type: Insecte
+	rarity: common
+	rule text: À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : jusqu'à la fin du tour, à chaque fois qu'une créature arrive sur le champ de bataille sous le contrôle d'un adversaire, si elle n'a pas été lancée depuis la main, piochez une carte.
+
+		Vous ne pouvez activer qu'une seule capacité de Maxx « C » par tour.
+	flavor text:
+	power: 0
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 39
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Ash Blossom & Joyous Spring
+	casting cost: W
+	image:
+	super type:
+	card type: Créature
+	sub type: Zombie et Syntoniseur
+	rarity: common
+	rule text: À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : contrecarrez le sort ou la capacité ciblé si celui-ci ferait au moins l'une des choses suivantes :
+
+		• fait piocher une ou plusieurs cartes à un joueur ;
+		• permet à un joueur de chercher une ou plusieurs cartes dans sa bibliothèque ;
+		• met une ou plusieurs créatures sur le champ de bataille depuis une bibliothèque.
+
+		Vous ne pouvez activer qu'une seule capacité de Ash Blossom & Joyous Spring par tour.
+	flavor text:
+	power: 0
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 40
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Effect Veiler
+	casting cost: W
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien et Syntoniseur
+	rarity: common
+	rule text: Défaussez-vous d'Effect Veiler : la créature ciblée perd toutes ses capacités jusqu'à la fin du tour. N'activez cette capacité que pendant la phase principale d'un adversaire.
+	flavor text:
+	power: 0
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 41
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Mathématicien
+	casting cost: G
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien
+	rarity: common
+	rule text: Si le Mathématicien arrive sur le champ de bataille, vous pouvez mettre une carte de créature avec une valeur de mana de 1 de votre bibliothèque dans votre cimetière.
+
+		Si le Mathématicien meurt, piochez une carte.
+	flavor text:
+	power: 3
+	toughness: 2
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 42
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Corbeau D.D.
+	casting cost: B
+	image:
+	super type:
+	card type: Créature
+	sub type: Ailé
+	rarity: common
+	rule text: À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : exilez la carte ciblée d'un cimetière.
+	flavor text:
+	power: 2
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 43
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Préparation des Rites
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Cherchez dans votre bibliothèque une carte de créature Rituel avec une valeur de mana inférieure ou égale à 2, révélez-la, mettez-la dans votre main, puis mélangez.
+
+		Vous pouvez renvoyer dans votre main une carte de Rituel depuis votre cimetière.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 44
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Raigeki
+	casting cost: 1W
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Détruisez toutes les créatures que vos adversaires contrôlent.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 45
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Dark Hole
+	casting cost: 1B
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Détruisez toutes les créatures.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 46
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Foolish Burial
+	casting cost: B
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Mettez une carte de créature de votre bibliothèque dans votre cimetière.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 47
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Monster Reborn
+	casting cost: W
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Renvoyez sur le champ de bataille, sous votre contrôle, la carte de créature ciblée depuis un cimetière.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 48
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Allure of Darkness
+	casting cost: B
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Piochez deux cartes.
+
+		Puis exilez une carte noire de votre main. Si vous ne le faites pas, défaussez votre main.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 49
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Upstart Goblin
+	casting cost: B
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, un adversaire ciblé gagne 5 points de vie.
+
+		Piochez une carte.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 50
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Instant Fusion
+	casting cost: R
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: En tant que coût supplémentaire pour lancer ce sort, payez 4 points de vie.
+
+		Mettez sur le champ de bataille une carte de créature Fusion avec une valeur de mana de 1 depuis votre extra deck.
+
+		Sacrifiez cette créature au début de la prochaine étape de fin.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 51
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Book of Moon
+	casting cost: U
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: Retournez la créature ciblée face verso. Son contrôleur ne peut pas la retourner face recto avant le début de son prochain tour. Cette restriction ne s'applique pas si un effet ou une règle de combat la retourne face recto.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 52
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Mystical Space Typhoon
+	casting cost: R
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: Détruisez le permanent non-créature non-terrain ciblé.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 53
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Twin Twisters
+	casting cost: R
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+
+		Détruisez jusqu'à deux permanents non-créature non-terrain ciblés.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 54
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Super Polymerization
+	casting cost: B/RB/R
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+
+		Exilez une ou plusieurs créatures du champ de bataille. Si vous faites ainsi, mettez sur le champ de bataille une carte de créature Fusion de votre extra deck qui pourrait être lancée en utilisant uniquement ces créatures comme matériaux.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 55
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Phoenix Wing Wind Blast
+	casting cost: B
+	image:
+	super type:
+	card type: Éphémère
+	sub type: Piège
+	rarity: common
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+
+		Mettez le permanent ciblé au-dessus de la bibliothèque de son propriétaire.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 56
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Karma Cut
+	casting cost: B
+	image:
+	super type:
+	card type: Éphémère
+	sub type: Piège
+	rarity: common
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+
+		Exilez la créature ciblée.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 57
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Compulsory Evacuation Device
+	casting cost: U
+	image:
+	super type:
+	card type: Éphémère
+	sub type: Piège
+	rarity: common
+	rule text: Renvoyez le permanent ciblé dans la main de son propriétaire.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 58
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Breakthrough Skill
+	casting cost: R
+	image:
+	super type:
+	card type: Éphémère
+	sub type: Piège
+	rarity: common
+	rule text: La créature ciblée perd toutes ses capacités jusqu'à la fin du tour.
+
+		Vous pouvez lancer cette carte depuis votre cimetière. Si vous faites ainsi, exilez-la lorsqu'elle quitte la pile.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 59
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Torrential Tribute
+	casting cost: R
+	image:
+	super type:
+	card type: Éphémère
+	sub type: Piège
+	rarity: common
+	rule text: Lancez ce sort uniquement si une créature est arrivée sur le champ de bataille ce tour-ci.
+
+		Détruisez toutes les créatures.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 60
+
+card:
+	has styling: false
+	notes: Source: 09_non_archetype_non_creature.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Book of Eclipse
+	casting cost: U
+	image:
+	super type:
+	card type: Éphémère
+	sub type:
+	rarity: common
+	rule text: Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas les retourner face recto avant le début de leur prochain tour. Cette restriction ne s'applique pas si un effet ou une règle de combat les retourne face recto.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: 09_non_archetype_non_creature.md
+	number: 61
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook Magician of Prophecy
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien et Spellbook
+	rarity: common
+	rule text: Si vous avez lancé une carte Spellbook non-créature ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Si Spellbook Magician of Prophecy arrive sur le champ de bataille, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+	flavor text:
+	power: 1
+	toughness: 1
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 62
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Justice of Prophecy
+	casting cost: U
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien et Spellbook
+	rarity: common
+	rule text: Si vous avez mis une carte Spellbook de votre bibliothèque dans votre main ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Si Justice of Prophecy arrive sur le champ de bataille, au début de votre prochaine étape de fin, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+	flavor text:
+	power: 3
+	toughness: 3
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 63
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: High Priestess of Prophecy
+	casting cost: 2W
+	image:
+	super type:
+	card type: Créature
+	sub type: Magicien et Spellbook
+	rarity: common
+	rule text: Vous pouvez révéler trois cartes Spellbook non-créature de votre main plutôt que de payer le coût de mana de ce sort.
+
+		Exilez une carte Spellbook de votre main ou de votre cimetière : détruisez le permanent ciblé.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+	flavor text:
+	power: 5
+	toughness: 4
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 64
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Secrets
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		Cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 65
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Judgment
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		Jusqu'à la fin du tour, chaque fois que vous lancez une carte Spellbook, mettez un marqueur jugement sur Spellbook of Judgment.
+
+		Au début de votre étape de fin, cherchez dans votre bibliothèque jusqu'à X cartes Spellbook, révélez-les, mettez-les dans votre main, puis mélangez, X étant le nombre de marqueurs jugement sur Spellbook of Judgment.
+
+		Vous pouvez ensuite mettre sur le champ de bataille une carte de créature Spellbook avec une valeur de mana inférieure ou égale à X depuis votre bibliothèque.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 66
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Fate
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		Exilez jusqu'à trois cartes Spellbook de votre cimetière. Choisissez l'un :
+
+		• Une carte : retournez la créature ciblée face verso.
+		• Deux cartes : renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
+		• Trois cartes : exilez un permanent (ce permanent n'est pas ciblé ; il est choisi lors de la résolution de ce sort).
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 67
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Power
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		La créature Spellbook ciblée gagne +2/+2 jusqu'à la fin du tour.
+
+		Si cette créature détruit une créature au combat ou inflige des blessures de combat à un adversaire ce tour-ci, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 68
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Wisdom
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		La créature Spellbook ciblée n'est pas affectée par les effets des sorts et des permanents non-créature jusqu'à la fin du tour.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 69
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Eternity
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		Renvoyez dans votre main la carte Spellbook ciblée depuis votre zone d'exil.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 70
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of the Master
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		Révélez une autre carte Spellbook de votre main face visible.
+
+		Choisissez une carte Spellbook dans votre cimetière. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 71
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Life
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		En tant que coût supplémentaire pour lancer ce sort, exilez une carte de créature Spellbook de votre cimetière et une autre carte Spellbook de votre main ou de votre cimetière.
+
+		Renvoyez sur le champ de bataille une carte de créature Spellbook de votre cimetière avec une valeur de mana inférieure ou égale à celle de la créature exilée.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 72
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Knowledge
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		En tant que coût supplémentaire pour lancer ce sort, sacrifiez une créature Spellbook ou défaussez-vous d'une carte Spellbook.
+
+		Piochez deux cartes.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 73
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook Library of the Crescent
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		Si vous contrôlez une créature Magicien avec une valeur de mana de 2 ou plus, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+
+		Sinon, révélez trois cartes Spellbook de votre bibliothèque. Un adversaire en choisit une. Mettez cette carte dans votre main, puis mélangez les autres dans votre bibliothèque.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 74
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook of Miracles
+	casting cost: U
+	image:
+	super type:
+	card type: Rituel
+	sub type:
+	rarity: common
+	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+
+		En tant que coût supplémentaire pour lancer ce sort, exilez un nombre de cartes Spellbook de votre cimetière dont le nombre est supérieur ou égal à la valeur de mana de la créature ciblée.
+
+		Renvoyez sur le champ de bataille la carte de créature Spellbook ciblée depuis votre cimetière.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 75
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: Spellbook Star Hall
+	casting cost: U
+	image:
+	super type:
+	card type: Enchantement
+	sub type:
+	rarity: common
+	rule text: Chaque fois que vous lancez une carte Spellbook, mettez un marqueur savoir sur Spellbook Star Hall.
+
+		Les créatures Spellbook que vous contrôlez gagnent +1/+1 pour chaque groupe de cinq marqueurs savoir sur Spellbook Star Hall.
+
+		Si Spellbook Star Hall quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature Spellbook avec une valeur de mana inférieure ou égale au nombre de marqueurs savoir sur Spellbook Star Hall, la révéler, la mettre dans votre main, puis mélangez.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 76
+
+card:
+	has styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time created: 1783717789
+	time modified: 1783717789
+	name: The Grand Spellbook Tower
+	casting cost: U
+	image:
+	super type:
+	card type: Enchantement
+	sub type: Terrain
+	rarity: common
+	rule text: Au début de votre entretien, vous pouvez mettre une carte Spellbook de votre cimetière au-dessous de votre bibliothèque. Si vous faites ainsi, piochez une carte.
+
+		Si The Grand Spellbook Tower quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature Spellbook, la mettre sur le champ de bataille, puis mélanger.
+
+		Vous ne pouvez activer chaque capacité qu'une seule fois par tour.
+	flavor text:
+	power:
+	toughness:
+	loyalty:
+	card code text:
+	illustrator:
+	notes: Source: docs/13_archetype_spellbook.md
+	number: 77

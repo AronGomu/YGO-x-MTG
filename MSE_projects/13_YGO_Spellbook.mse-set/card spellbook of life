@@ -1,0 +1,24 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: sevenhalf
+	stylesheet_version: 2024-05-30
+	has_styling: false
+	notes: Source: docs/13_archetype_spellbook.md
+	time_created: 2026-07-10 23:49:32
+	time_modified: 2026-07-10 23:49:32
+	name: Spellbook of Life
+	casting_cost: U
+	image: mse_images/image11.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Sorcery</word-list-type-en>
+	sub_type:
+	rarity: common
+	rule_text:
+		Si vous contrôlez une créature “Spellbook”, vous pouvez lancer ce sort sans payer son coût de mana.
+		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		En tant que coût supplémentaire pour lancer ce sort, exilez une carte de créature “Spellbook” de votre cimetière et une autre carte “Spellbook” de votre main ou de votre cimetière.
+		Renvoyez sur le champ de bataille une carte de créature “Spellbook” de votre cimetière avec une valeur de mana inférieure ou égale à celle de la créature exilée.
+	flavor_text: <i-flavor></i-flavor>
+	card_code_text: 009/016 C

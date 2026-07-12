@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-showcase-capenna-art-deco
+	stylesheet_version: 2024-10-01
+	has_styling: false
+	notes: Source: 08_link.md
+	time_created: 2026-07-11 12:12:40
+	time_modified: 2026-07-11 12:12:40
+	name: Topologic Zeroboros
+	casting_cost: B
+	image: mse_images/image14.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Link Lvl 4 Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Cyberse</word-list-race-en>
+	rarity: rare
+	rule_text:
+		(1 - Passif) Zeroboros gagne +1/+1 pour chaque carte exilée.
+		(2 - Déclenchable Soft) Si une créature arrive dans une zone pointée par une Link Creature, exilez toutes les cartes sur le champ de bataille.
+		(3 - Déclenchable) Au prochain entretien, renvoyez Zeroboros exilé par lui-même sur le champ de bataille.
+	flavor_text: <i-flavor></i-flavor>
+	power: 3
+	toughness: 6
+	card_code_text: 014/015 R

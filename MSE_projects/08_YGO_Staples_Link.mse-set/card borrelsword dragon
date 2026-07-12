@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-showcase-capenna-art-deco
+	stylesheet_version: 2024-10-01
+	has_styling: false
+	notes: Source: 08_link.md
+	time_created: 2026-07-11 12:12:32
+	time_modified: 2026-07-11 12:12:32
+	name: Borrelsword Dragon
+	casting_cost: B
+	image: mse_images/image3.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Link Lvl 4 Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Dragon</word-list-race-en>
+	rarity: rare
+	rule_text:
+		(1 - Passif) Borrelsword ne peut pas être détruit au combat.
+		(2 - Activable Flash Soft) Une créature ciblée ne peut pas attaquer ce tour-ci ; Borrelsword peut attaquer une fois supplémentaire ce tour-ci.
+		(3 - Déclenchable) Si Borrelsword attaque une créature, il gagne +X/+0 et cette créature gagne -X/-0 jusqu'à la fin du tour, où X est la moitié de sa force.
+	flavor_text: <i-flavor></i-flavor>
+	power: 3
+	toughness: 6
+	card_code_text: 003/015 R

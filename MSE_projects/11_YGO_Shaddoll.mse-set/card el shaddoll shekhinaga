@@ -1,0 +1,24 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: docs/11_archetype_shaddoll.md
+	time_created: 2026-07-11 00:33:44
+	time_modified: 2026-07-11 00:33:44
+	name: Shaddoll - Shekhinaga
+	casting_cost: 2G
+	image: mse_images/image14.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Puppet</word-list-race-en>
+	rarity: common
+	rule_text:
+		Une seule fois par tour, lorsqu'une capacité déclenchée est mise sur la pile, vous pouvez vous défausser d'une carte Shaddoll. Si vous faites ainsi, contrecarrez cette capacité.
+		<b>Corruption</b> (une seule fois par tour) — Renvoyez une carte Shaddoll non-créature depuis votre cimetière dans votre main.
+	flavor_text: <i-flavor></i-flavor>
+	power: 5
+	toughness: 6
+	card_code_text: 020/025 C

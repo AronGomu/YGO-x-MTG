@@ -1,0 +1,50 @@
+﻿mse_version: 2.0.2
+game: magic
+game_version: 2025-06-14
+stylesheet: sevenhalf
+stylesheet_version: 2024-05-30
+set_info:
+	title: Yu-Gi-Oh × Magic Cube — Shaddoll
+	description: Cartes personnalisées du cube Yu-Gi-Oh × Magic, générées depuis le projet Obsidian.
+	artist:
+	copyright: 
+	set_code: YSH
+	set_language: FR
+	symbol:
+	masterpiece_symbol:
+	card_language: French
+	automatic_reminder_text:
+	automatic_copyright: yes
+	automatic_card_numbers: yes
+styling:
+	magic-m15:
+		text_box_mana_symbols: magic-mana-small.mse-symbol-font
+		overlay:
+include_file: card curse of the shadow prison
+include_file: card el shaddoll anoyatyllis
+include_file: card el shaddoll apkallone
+include_file: card el shaddoll construct
+include_file: card el shaddoll fusion
+include_file: card el shaddoll grysta
+include_file: card el shaddoll shekhinaga
+include_file: card el shaddoll wendigo
+include_file: card el shaddoll winda
+include_file: card helshaddoll hollow
+include_file: card naelshaddoll ariel
+include_file: card purushaddoll aeon
+include_file: card qadshaddoll keios
+include_file: card reeshaddoll wendi
+include_file: card resh shaddoll incarnation
+include_file: card shaddoll beast
+include_file: card shaddoll core
+include_file: card shaddoll dragon
+include_file: card shaddoll falco
+include_file: card shaddoll fusion
+include_file: card shaddoll hedgehog
+include_file: card shaddoll hound
+include_file: card shaddoll schism
+include_file: card shaddoll squamata
+include_file: card sinister shadow games
+version_control:
+	type: none
+apprentice_code:

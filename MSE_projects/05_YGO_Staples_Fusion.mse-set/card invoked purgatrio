@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: 05_fusion.md
+	time_created: 2026-07-11 16:45:00
+	time_modified: 2026-07-11 16:45:00
+	name: Invoked Purgatrio
+	casting_cost: R
+	image: mse_images/image24.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Fiend</word-list-race-en>
+	rarity: rare
+	rule_text:
+		<i>Fusion — Aleister + 1 FIRE</i>
+		(1 - Passif) Menace.
+		(2 - Passif) Purgatrio gagne +1/+0 pour chaque carte adverse et peut attaquer chaque créature adverse.
+	flavor_text: <i-flavor></i-flavor>
+	power: 3
+	toughness: 1
+	card_code_text: 024/030 R

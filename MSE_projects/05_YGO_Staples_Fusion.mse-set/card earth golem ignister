@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: 05_fusion.md
+	time_created: 2026-07-11 12:11:26
+	time_modified: 2026-07-11 12:11:26
+	name: Earth Golem @Ignister
+	casting_cost: G
+	image: mse_images/image3.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Cyberse</word-list-race-en>
+	rarity: rare
+	rule_text:
+		<i>Fusion — 1 Cyberse + 1 Link Creature</i>
+		(1 - Déclenchable) Si Earth Golem arrive, prévenez les prochaines blessures que les Link Creatures vous infligeraient ce tour-ci.
+		(2 - Déclenchable) Si Earth Golem détruit une créature au combat, il inflige 2 blessures à son contrôleur.
+	flavor_text: <i-flavor></i-flavor>
+	power: 2
+	toughness: 2
+	card_code_text: 003/015 R

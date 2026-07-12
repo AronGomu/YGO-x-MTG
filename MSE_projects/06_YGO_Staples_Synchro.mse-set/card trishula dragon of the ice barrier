@@ -1,0 +1,27 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: m15-sketch
+	stylesheet_version: 2024-09-01
+	has_styling: false
+	notes: Source: 06_synchro.md
+	time_created: 2026-07-11 12:12:00
+	time_modified: 2026-07-11 12:12:00
+	name: Trishula, Dragon of the Ice Barrier
+	casting_cost: U
+	image: mse_images/image15.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Synchro Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2:
+	sub_type_3:
+	sub_type_4:
+	rarity: rare
+	rule_text:
+		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Synchro</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 1 Tuner + 2+ non-Tuner</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Si</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Trishula</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> arrive, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>exilez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>jusqu’à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>carte</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la main, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> champ <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>de</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>bataille</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>et</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>cimetière</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>d’un</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>adversaire</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+	flavor_text: <i-flavor></i-flavor>
+	power: 3
+	toughness: 2
+	card_code_text: 015/015 R

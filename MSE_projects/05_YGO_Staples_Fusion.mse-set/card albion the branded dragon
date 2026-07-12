@@ -1,0 +1,25 @@
+﻿mse_version: 2.5.8
+card:
+	stylesheet: kasu-eldrazi_750
+	stylesheet_version: 2024-08-01
+	has_styling: false
+	notes: Source: 05_fusion.md
+	time_created: 2026-07-11 16:45:00
+	time_modified: 2026-07-11 16:45:00
+	name: Albion the Branded Dragon
+	casting_cost: W
+	image: mse_images/image27.png
+	image_2:
+	mainframe_image:
+	mainframe_image_2:
+	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-spell>Invocation Fusion</word-list-spell>
+	rarity: rare
+	rule_text:
+		<i>Fusion — Fallen of Albaz + 1 LIGHT</i>
+		(1 - Déclenchable) <b>On Enter</b> — Vous pouvez mettre en jeu 1 Fusion Creature depuis votre extra deck en exilant ses matériaux depuis votre main, champ de bataille ou cimetière.
+		(2 - Déclenchable) <b>On Send GY</b> — Cherchez une carte Branded.
+	flavor_text: <i-flavor></i-flavor>
+	power: 2
+	toughness: 2
+	card_code_text: 027/030 R
