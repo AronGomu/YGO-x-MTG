@@ -11,7 +11,7 @@ Example:
     python .script/create_proxy_pdf.py
 
 Specific render folder:
-    python .script/create_proxy_pdf.py --input MSE_projects/YGO_Burning_Abyss.mse-set/render
+    python .script/create_proxy_pdf.py --input MSE_projects/10_YGO_Burning_Abyss.mse-set/render
 
 Default output naming:
     print/burning_abyss_proxies.pdf

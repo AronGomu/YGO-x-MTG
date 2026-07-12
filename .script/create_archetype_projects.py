@@ -15,8 +15,7 @@ TYPE_MAP = {
 }
 RARITY_CODE = {'common': 'C', 'uncommon': 'U', 'rare': 'R', 'mythic rare': 'M'}
 PROJECTS = {
-    '10_archetype_burning_abyss.md': ('YGO_Burning_Abyss.mse-set', 'YGO x MTG -- Burning Abyss', 'YBA'),
-    '11_archetype_shaddoll.md': ('YGO_Shaddoll.mse-set', 'YGO x MTG -- Shaddoll', 'YSH'),
+    # Shaddoll is intentionally excluded: its checked-in MSE save is the source of truth.
     '12_archetype_necroz.md': ('YGO_Necroz.mse-set', 'YGO x MTG -- Necroz', 'YNK'),
     '09_non_archetype_non_creature.md': ('YGO_Non_Archetype.mse-set', 'YGO x MTG -- Non-archetype', 'YUT'),
     '13_archetype_spellbook.md': ('YGO_Spellbook.mse-set', 'YGO x MTG -- Spellbook', 'YSB'),
@@ -59,7 +58,7 @@ def rich_subtype(sub_type):
     rest = ''.join(f'<soft><atom-sep> </atom-sep></soft><word-list-class-en>{p}</word-list-class-en>' for p in parts[1:])
     return first + rest
 
-KEYWORDS = ['Malédiction abyssale, Descente', 'Descente', 'On Send GY', 'On Send GY', 'Flip', 'Corruption', 'Fusion', 'Xyz 2', 'Xyz', 'Synchro', 'Piège', 'Rituel']
+KEYWORDS = ['Malédiction abyssale, Descente', 'Descente', 'On Send GY', 'On Send GY', 'Flip', 'Corruption', 'Fusion', 'Xyz 2', 'Xyz', 'Synchro', 'Rituel']
 
 def bold_keywords(line):
     for keyword in KEYWORDS:
@@ -94,8 +93,13 @@ def emit_card_file(project, card, idx, total, source_project_exists):
 
     rarity = card.get('rarity', 'common') or 'common'
     rarity_code = RARITY_CODE.get(rarity, 'C')
-    super_type = TYPE_MAP.get(card.get('card type', ''), card.get('card type', ''))
-    sub_type = card.get('sub type', '')
+    card_type = TYPE_MAP.get(card.get('card type', ''), card.get('card type', ''))
+    source_super_type = card.get('super type', '').strip()
+    sub_type = card.get('sub type', '').strip()
+    if sub_type == 'Piège':
+        source_super_type = 'Trap'
+        sub_type = ''
+    super_type = ' '.join(part for part in (source_super_type, card_type) if part)
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     card_stylesheets = {
         'Xyz': ('m15-spellbook', '2024-09-01'),

@@ -1,26 +1,31 @@
 from pathlib import Path
 import re, urllib.parse, requests, time
 
-ROOT = Path(__file__).resolve().parents[1] / 'MSE_projects'
-PROJECTS = [ROOT / 'YGO_Shaddoll.mse-set', ROOT / 'YGO_Shaddoll_embedded.mse-set']
+from PIL import Image, ImageOps
+
+from original_image_assets import original_image_path, safe_slug
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+ROOT = REPO_ROOT / 'MSE_projects'
+PROJECTS = [ROOT / '11_YGO_Shaddoll.mse-set']
 API = 'https://db.ygoprodeck.com/api/v7/cardinfo.php?name='
 
 NAME_MAP = {
-    'Shaddoll - Shadow Prison': 'Curse of the Shadow Prison',
-    'Shaddoll - Anoyatyllis': 'El Shaddoll Anoyatyllis',
-    'Shaddoll - Apkallone': 'El Shaddoll Apkallone',
-    'Shaddoll - Construct': 'El Shaddoll Construct',
-    'Shaddoll - El Fusion': 'El Shaddoll Fusion',
-    'Shaddoll - Grysta': 'El Shaddoll Grysta',
-    'Shaddoll - Shekhinaga': 'El Shaddoll Shekhinaga',
-    'Shaddoll - Wendigo': 'El Shaddoll Wendigo',
-    'Shaddoll - Winda': 'El Shaddoll Winda',
-    'Shaddoll - Hollow': 'Helshaddoll Hollow',
-    'Shaddoll - Ariel': 'Naelshaddoll Ariel',
-    'Shaddoll - Aeon': 'Purushaddoll Aeon',
-    'Shaddoll - Keios': 'Qadshaddoll Keios',
-    'Shaddoll - Wendi': 'Reeshaddoll Wendi',
-    'Shaddoll - Incarnation': 'Resh Shaddoll Incarnation',
+    'Curse of the Shadow Prison': 'Curse of the Shadow Prison',
+    'El Shaddoll - Anoyatyllis': 'El Shaddoll Anoyatyllis',
+    'El Shaddoll - Apkallone': 'El Shaddoll Apkallone',
+    'El Shaddoll - Construct': 'El Shaddoll Construct',
+    'El Shaddoll - Fusion': 'El Shaddoll Fusion',
+    'El Shaddoll - Grysta': 'El Shaddoll Grysta',
+    'El Shaddoll - Shekhinaga': 'El Shaddoll Shekhinaga',
+    'El Shaddoll - Wendigo': 'El Shaddoll Wendigo',
+    'El Shaddoll - Winda': 'El Shaddoll Winda',
+    'Hel Shaddoll - Hollow': 'Helshaddoll Hollow',
+    'Nael Shaddoll - Ariel': 'Naelshaddoll Ariel',
+    'Puru Shaddoll - Aeon': 'Purushaddoll Aeon',
+    'Qad Shaddoll - Keios': 'Qadshaddoll Keios',
+    'Ree Shaddoll - Wendi': 'Reeshaddoll Wendi',
+    'Resh Shaddoll - Incarnation': 'Resh Shaddoll Incarnation',
     'Shaddoll - Beast': 'Shaddoll Beast',
     'Shaddoll - Core': 'Shaddoll Core',
     'Shaddoll - Dragon': 'Shaddoll Dragon',
@@ -30,26 +35,39 @@ NAME_MAP = {
     'Shaddoll - Hound': 'Shaddoll Hound',
     'Shaddoll - Schism': 'Shaddoll Schism',
     'Shaddoll - Squamata': 'Shaddoll Squamata',
-    'Shaddoll - Sinister Shadow Games': 'Sinister Shadow Games',
+    'Sinister Shadow Games': 'Sinister Shadow Games',
 }
-
-def slug(s):
-    return re.sub(r'_+', '_', re.sub(r'[^a-z0-9]+', '_', s.lower())).strip('_')
 
 def name_of(text):
     m = re.search(r'(?m)^\s*name:\s*(.+)$', text)
     return m.group(1).strip() if m else None
 
-def download(query, out):
+def download(query):
     r = requests.get(API + urllib.parse.quote(query), timeout=30)
     r.raise_for_status()
     data = r.json()['data'][0]
-    url = data['card_images'][0].get('image_url_cropped') or data['card_images'][0]['image_url']
-    img = requests.get(url, timeout=45)
-    img.raise_for_status()
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_bytes(img.content)
-    return data['name']
+    out = original_image_path(data)
+    if not out.exists():
+        url = data['card_images'][0].get('image_url_cropped') or data['card_images'][0]['image_url']
+        img = requests.get(url, timeout=45)
+        img.raise_for_status()
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(img.content)
+    return data, out
+
+
+def resize_cover(source, output, width=316, height=231):
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with Image.open(source) as image:
+        image = ImageOps.exif_transpose(image).convert('RGB')
+        scale = max(width / image.width, height / image.height)
+        resized = image.resize(
+            (round(image.width * scale), round(image.height * scale)),
+            Image.Resampling.LANCZOS,
+        )
+        left = (resized.width - width) // 2
+        top = (resized.height - height) // 2
+        resized.crop((left, top, left + width, top + height)).save(output, 'PNG')
 
 def set_image_in_text(text, rel):
     lines = text.splitlines()
@@ -67,7 +85,6 @@ errors = []
 for project in PROJECTS:
     if not project.exists():
         continue
-    img_dir = project / 'images' / 'Shaddoll'
     files = sorted(project.glob('card *'))
     for card in files:
         text = card.read_text(encoding='utf-8-sig', errors='replace')
@@ -75,17 +92,21 @@ for project in PROJECTS:
         if not display:
             continue
         query = NAME_MAP.get(display, display)
-        out = img_dir / f'{slug(query)}.jpg'
-        if not out.exists():
-            try:
-                found = download(query, out)
-                print(f'DOWNLOADED | {display} -> {found}')
-                time.sleep(0.15)
-            except Exception as e:
-                errors.append(f'{display} -> {query}: {e}')
-                print('ERROR | ' + errors[-1])
-                continue
-        rel = out.relative_to(project).as_posix()
+        try:
+            data, source = download(query)
+            time.sleep(0.15)
+        except Exception as e:
+            errors.append(f'{display} -> {query}: {e}')
+            print('ERROR | ' + errors[-1])
+            continue
+        current = re.search(r'(?m)^\s*image:\s*(.+?)\s*$', text)
+        current_value = current.group(1) if current else ''
+        current_path = project / current_value if current_value else None
+        if current_value.startswith('mse_images/') and current_path and current_path.is_file():
+            continue
+        output = project / 'mse_images' / f'{safe_slug(data["name"])}.png'
+        resize_cover(source, output)
+        rel = output.relative_to(project).as_posix()
         new = set_image_in_text(text, rel)
         if new != text:
             card.write_text(new, encoding='utf-8')

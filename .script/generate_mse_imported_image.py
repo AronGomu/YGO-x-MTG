@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Generate an MSE-style imported root imageN.png from a source art file.
+"""Generate a project-local MSE image from a centralized source-art file.
 
-MSE GUI saves imported/resized card art as root-level PNG files such as
-image1.png, image2.png, etc. This helper reproduces that safer format so card
-files can use `image: imageN.png` instead of pointing directly at source JPGs.
+Original artwork remains under assets/original_images/. This helper creates an
+imported/resized PNG under the target project's mse_images/ folder so card files
+never point directly at the source JPG.
 """
 
 from __future__ import annotations
@@ -16,15 +16,17 @@ from PIL import Image, ImageOps
 
 
 def next_image_path(project: Path) -> Path:
+    image_dir = project / "mse_images"
+    image_dir.mkdir(parents=True, exist_ok=True)
     used = set()
-    for path in project.glob("image*.png"):
+    for path in image_dir.glob("image*.png"):
         match = re.fullmatch(r"image(\d+)\.png", path.name)
         if match:
             used.add(int(match.group(1)))
     index = 1
     while index in used:
         index += 1
-    return project / f"image{index}.png"
+    return image_dir / f"image{index}.png"
 
 
 def resize_cover(source: Path, output: Path, width: int, height: int) -> None:
@@ -49,7 +51,7 @@ def update_card_image(card_file: Path, image_name: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Create an MSE-safe root imageN.png from source art.")
+    parser = argparse.ArgumentParser(description="Create an MSE-safe mse_images/imageN.png from source art.")
     parser.add_argument("project", type=Path, help="Path to the .mse-set project folder")
     parser.add_argument("source_image", type=Path, help="Source image to import/resize")
     parser.add_argument("--card-file", type=Path, help="Optional card file to update to image: imageN.png")
@@ -73,9 +75,9 @@ def main() -> None:
             card_file = project / card_file
         if not card_file.is_file():
             raise SystemExit(f"Card file not found: {card_file}")
-        update_card_image(card_file, output.name)
+        update_card_image(card_file, output.relative_to(project).as_posix())
 
-    print(output.name)
+    print(output.relative_to(project).as_posix())
 
 
 if __name__ == "__main__":

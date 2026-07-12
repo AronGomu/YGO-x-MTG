@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Normalize an MSE folder project so images use root-level imported imageN.png files.
+"""Normalize an MSE folder project to project-local mse_images/imageN.png files.
 
-This addresses MSE GUI Save failures observed when cards reference source JPGs in
-nested images/... folders. For each included card, every non-empty `image:` field
-that is not already a root `imageN.png` is converted to a new MSE-style PNG and
-the card file is updated. Includes are sorted by visible `name:` and collection
-numbers are rewritten.
+This addresses MSE GUI Save failures observed when cards reference centralized
+source JPGs or legacy nested source folders. Each non-empty image field outside
+mse_images/ is converted to a resized PNG in that folder and the card file is
+updated. Includes are sorted by visible name and collection numbers are rewritten.
 """
 
 from __future__ import annotations
@@ -19,20 +18,22 @@ from datetime import datetime
 from PIL import Image, ImageOps
 
 IMAGE_FIELDS = ("image", "image_2", "mainframe_image", "mainframe_image_2")
-ROOT_IMAGE_RE = re.compile(r"image\d+\.png")
+MSE_IMAGE_RE = re.compile(r"image\d+\.png")
 CODE_RE = re.compile(r"^([ \t]*card_code_text(?:_[23])?:[ \t]*)(.*)$", re.M)
 
 
 def next_image_path(project: Path) -> Path:
+    image_dir = project / "mse_images"
+    image_dir.mkdir(parents=True, exist_ok=True)
     used = set()
-    for path in project.glob("image*.png"):
-        match = ROOT_IMAGE_RE.fullmatch(path.name)
+    for path in image_dir.glob("image*.png"):
+        match = MSE_IMAGE_RE.fullmatch(path.name)
         if match:
             used.add(int(path.stem.replace("image", "")))
     index = 1
     while index in used:
         index += 1
-    return project / f"image{index}.png"
+    return image_dir / f"image{index}.png"
 
 
 def resize_cover(source: Path, output: Path, width: int = 316, height: int = 231) -> None:
@@ -60,15 +61,18 @@ def normalize_images(project: Path, card_file: Path, text: str) -> tuple[str, li
 
     def replace_field(match: re.Match[str]) -> str:
         indent, field, value = match.group(1), match.group(2), match.group(3).strip()
-        if not value or value.startswith("<") or ROOT_IMAGE_RE.fullmatch(Path(value).name):
+        if not value or value.startswith("<"):
+            return match.group(0)
+        if value.startswith("mse_images/") and MSE_IMAGE_RE.fullmatch(Path(value).name):
             return match.group(0)
         source = project / value
         if not source.exists():
             raise FileNotFoundError(f"{card_file.name}: missing referenced {field}: {value}")
         output = next_image_path(project)
         resize_cover(source, output)
-        changed.append(f"{card_file.name}: {field} {value} -> {output.name}")
-        return f"{indent}{field}: {output.name}"
+        relative_output = output.relative_to(project).as_posix()
+        changed.append(f"{card_file.name}: {field} {value} -> {relative_output}")
+        return f"{indent}{field}: {relative_output}"
 
     pattern = r"^([ \t]*)({fields}):[ \t]*(.*)$".format(fields="|".join(map(re.escape, IMAGE_FIELDS)))
     new_text = re.sub(pattern, replace_field, text, flags=re.M)
@@ -134,7 +138,7 @@ def backup_project(project: Path) -> Path:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Normalize included MSE card images to root imageN.png files.")
+    parser = argparse.ArgumentParser(description="Normalize included MSE card images to mse_images/imageN.png files.")
     parser.add_argument("projects", nargs="+", type=Path)
     parser.add_argument("--backup", action="store_true")
     parser.add_argument("--keep-orphans", action="store_true")

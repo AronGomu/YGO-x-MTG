@@ -13,16 +13,18 @@ from datetime import datetime
 import requests
 from PIL import Image, ImageOps
 
+from original_image_assets import original_image_path
+
 REPO = Path(__file__).resolve().parents[1]
 OUT_ROOT = REPO / "MSE_projects"
 DOC = REPO / "09_non_archetype_non_creature.md"
 API = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
 
 PROJECTS = {
-    "Fusion": ("YGO_Staples_Fusion.mse-set", "YGO x MTG -- Staples Fusion", "YSF", "Fusion Creature", "images/Staples_Fusion"),
-    "Synchro": ("YGO_Staples_Synchro.mse-set", "YGO x MTG -- Staples Synchro", "YSS", "Synchro Creature", "images/Staples_Synchro"),
-    "Xyz": ("YGO_Staples_Xyz.mse-set", "YGO x MTG -- Staples Xyz", "YSX", "Xyz Creature", "images/Staples_Xyz"),
-    "Link": ("YGO_Staples_Link.mse-set", "YGO x MTG -- Staples Link", "YSL", "Link Creature", "images/Staples_Link"),
+    "Fusion": ("YGO_Staples_Fusion.mse-set", "YGO x MTG -- Staples Fusion", "YSF", "Fusion Creature"),
+    "Synchro": ("YGO_Staples_Synchro.mse-set", "YGO x MTG -- Staples Synchro", "YSS", "Synchro Creature"),
+    "Xyz": ("YGO_Staples_Xyz.mse-set", "YGO x MTG -- Staples Xyz", "YSX", "Xyz Creature"),
+    "Link": ("YGO_Staples_Link.mse-set", "YGO x MTG -- Staples Link", "YSL", "Link Creature"),
 }
 
 CARDS = {
@@ -146,14 +148,14 @@ def stats(card: dict, kind: str) -> tuple[int, int]:
 
 
 def emit_project(kind: str) -> list[dict]:
-    dirname, title, code, super_type, image_dir_rel = PROJECTS[kind]
+    dirname, title, code, super_type = PROJECTS[kind]
     project = OUT_ROOT / dirname
     if project.exists():
         import shutil
         shutil.rmtree(project)
     project.mkdir(parents=True)
-    image_dir = project / image_dir_rel
-    image_dir.mkdir(parents=True)
+    mse_image_dir = project / "mse_images"
+    mse_image_dir.mkdir(parents=True)
     cards_out = []
     fetched = []
     for requested, material, rules in CARDS[kind]:
@@ -167,14 +169,15 @@ def emit_project(kind: str) -> list[dict]:
         name = card["name"]
         inc = include_name(name)
         includes.append(inc)
-        src_jpg = image_dir / f"{slug(name)}.jpg"
+        src_jpg = original_image_path(card)
         image_url = card["card_images"][0].get("image_url_cropped") or card["card_images"][0].get("image_url")
         if not src_jpg.exists():
             img_response = requests.get(image_url, timeout=60)
             img_response.raise_for_status()
+            src_jpg.parent.mkdir(parents=True, exist_ok=True)
             src_jpg.write_bytes(img_response.content)
-        root_png = project / f"image{index}.png"
-        resize_cover(src_jpg, root_png)
+        mse_png = mse_image_dir / f"image{index}.png"
+        resize_cover(src_jpg, mse_png)
         power, toughness = stats(card, kind)
         cost = ATTRIBUTE_COST.get(card.get("attribute"), "C")
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -187,7 +190,7 @@ def emit_project(kind: str) -> list[dict]:
             f"\ttime_modified: {now}",
             f"\tname: {name}",
             f"\tcasting_cost: {cost}",
-            f"\timage: {root_png.name}",
+            f"\timage: {mse_png.relative_to(project).as_posix()}",
             "\timage_2: ",
             "\tmainframe_image: ",
             "\tmainframe_image_2: ",

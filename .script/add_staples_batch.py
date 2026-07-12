@@ -5,6 +5,9 @@ try:
     from PIL import Image
 except Exception:
     Image = None
+
+from original_image_assets import original_image_path
+
 ROOT=Path(__file__).resolve().parents[1]
 DOCS=ROOT/'docs'
 MSE=ROOT/'MSE_projects'
@@ -44,6 +47,18 @@ def image(data, out):
     else:
         out.write_bytes(b)
 
+def resize_cover(source, output, width=316, height=231):
+    if Image is None:
+        raise RuntimeError('Pillow is required to create MSE-resized artwork')
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with Image.open(source) as im:
+        im = im.convert('RGB')
+        scale = max(width / im.width, height / im.height)
+        resized = im.resize((round(im.width * scale), round(im.height * scale)), Image.Resampling.LANCZOS)
+        left = (resized.width - width) // 2
+        top = (resized.height - height) // 2
+        resized.crop((left, top, left + width, top + height)).save(output, 'PNG')
+
 def append_doc(doc, entries):
     p=DOCS/doc
     txt=p.read_text(encoding='utf-8')
@@ -69,8 +84,9 @@ def append_mse(project, source, entries):
         if (base/fn).exists() or f'include_file: {fn}' in txt: continue
         n+=1
         data=fetch(e['name'])
-        image(data, base/'mse_images'/f'image{n}.png')
-        image(data, base/'original_images'/(slug(e['name']).replace(' ', '_')+'.jpg'))
+        source_image=original_image_path(data)
+        image(data, source_image)
+        resize_cover(source_image, base/'mse_images'/f'image{n}.png')
         rules=[]
         if e.get('req'): rules.append(f"\t\t<i>{e['req']}</i>")
         rules += ['\t\t'+r.replace('**','<b>',1).replace('**','</b>',1) if '**' in r else '\t\t'+r for r in e['rules']]
@@ -122,10 +138,9 @@ xyz_names=['Tornado Dragon','Time Thief Redoer','Daigusto Emeral','Gagaga Cowboy
 xyz=[]
 for n in xyz_names:
     xyz.append((n,'U','Xyz Creature — Machine' if 'Cyber' in n else 'Xyz Creature — Warrior','2 / 2','Xyz 2',[f'(1 - Activable Flash Soft) Détachez un matériau : appliquez l’effet signature de {n.split(":")[-1].strip()} sur une carte ciblée.',f'(2 - Déclenchable Soft) Quand {n.split(":")[-1].strip()} quitte le champ de bataille, recyclez une ressource liée à ses matériaux.']))
-link_names=['Crystron Halqifibrax','Predaplant Verte Anaconda','Isolde, Two Tales of the Noble Knights','Heavymetalfoes Electrumite','Cherubini, Ebon Angel of the Burning Abyss','Hieratic Seal of the Heavenly Spheres','Striker Dragon','Union Carrier','Spright Elf','Tri-Brigade Ferrijit the Barren Blossom','Tri-Brigade Shuraig the Ominous Omen','Dharc the Dark Charmer, Gloomy','Hiita the Fire Charmer, Ablaze','Selene, Queen of the Master Magicians','Underworld Goddess of the Closed World','Topologic Bomber Dragon']
+# Link cards are curated directly in docs/08_link.md and the MSE project. Do not
+# regenerate them here: most intentionally contain only a name and artwork.
 link=[]
-for n in link_names:
-    link.append((n,'B','Link Lvl 2+ Creature — Cyberse','2 / 4',None,[f'(1 - Déclenchable) Si {n.split(",")[0]} arrive, cherchez ou mettez en jeu une ressource compatible avec ses matériaux.',f'(2 - Activable Sorcery Soft) Utilisez une carte de votre cimetière comme extension de combo pour {n.split(",")[0]}.']))
 
 batches=[('05_fusion.md','YGO_Staples_Fusion.mse-set','05_fusion.md',E(fusion,None,None)),('06_synchro.md','YGO_Staples_Synchro.mse-set','06_synchro.md',E(synchro,None,None)),('07_xyz.md','YGO_Staples_Xyz.mse-set','07_xyz.md',E(xyz,None,None)),('08_link.md','YGO_Staples_Link.mse-set','08_link.md',E(link,None,None))]
 for doc,proj,src,entries in batches:
