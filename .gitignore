@@ -1,0 +1,8 @@
+# Machine-local Magic Set Editor configuration
+.env
+.env.*.tmp
+.mse_launcher.log
+
+# Python bytecode
+__pycache__/
+*.py[cod]

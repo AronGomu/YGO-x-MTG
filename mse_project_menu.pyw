@@ -7,16 +7,39 @@ folder-form .mse-set directly with Magic Set Editor.
 
 from __future__ import annotations
 
+import logging
 import re
 import subprocess
 import sys
+import threading
+import time
 from pathlib import Path
 import tkinter as tk
 from tkinter import messagebox, ttk
 
+from mse_config import MSEConfig
+
 ROOT = Path(__file__).resolve().parent
-MSE_EXE = Path(r"F:/Softwares/Magic-Set-Editor-Full/mse.exe")
-PROJECTS_ROOT = ROOT / "MSE_projects"
+LOGGER = logging.getLogger("mse_project_menu")
+LOGGER.setLevel(logging.INFO)
+LOGGING_ERROR: OSError | None = None
+try:
+    log_handler = logging.FileHandler(ROOT / ".mse_launcher.log", encoding="utf-8")
+    log_handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
+    LOGGER.addHandler(log_handler)
+except OSError as exc:
+    LOGGING_ERROR = exc
+    LOGGER.addHandler(logging.NullHandler())
+
+try:
+    MSE_CONFIG = MSEConfig.load()
+    CONFIG_ERROR = None
+    LOGGER.info("event=config.mse.loaded env_path=%s", ROOT / ".env")
+except (OSError, UnicodeError, RuntimeError) as exc:
+    LOGGER.exception("event=config.mse.failed env_path=%s", ROOT / ".env")
+    MSE_CONFIG = None
+    CONFIG_ERROR = str(exc)
+PROJECTS_ROOT = MSE_CONFIG.projects_dir if MSE_CONFIG else ROOT / "MSE_projects"
 
 BG = "#181922"
 PANEL = "#20222e"
@@ -89,16 +112,55 @@ def discover_projects() -> list[dict[str, object]]:
     return projects
 
 
+def _observe_process(process: subprocess.Popen[bytes], project_path: Path, started_at: float) -> None:
+    return_code = process.wait()
+    duration = round(time.monotonic() - started_at, 2)
+    log = LOGGER.info if return_code == 0 else LOGGER.error
+    log(
+        "event=spawn.mse.exited pid=%s project=%s return_code=%s duration_seconds=%s",
+        process.pid,
+        project_path,
+        return_code,
+        duration,
+    )
+
+
 def open_project(project_path: Path) -> None:
-    if not MSE_EXE.exists():
-        messagebox.showerror("MSE introuvable", f"Impossible de trouver MSE :\n{MSE_EXE}")
+    if MSE_CONFIG is None:
+        LOGGER.error("event=spawn.mse.rejected reason=not_configured project=%s", project_path)
+        messagebox.showerror("MSE non configuré", CONFIG_ERROR or "Run `python setup_mse.py` first.")
         return
-    if not project_path.exists():
-        messagebox.showerror("Projet introuvable", f"Impossible de trouver le projet :\n{project_path}")
+    if not MSE_CONFIG.executable.is_file():
+        LOGGER.error("event=spawn.mse.rejected reason=missing_executable project=%s", project_path)
+        messagebox.showerror(
+            "MSE introuvable",
+            f"Impossible de trouver MSE :\n{MSE_CONFIG.executable}\n\nRelancez `python setup_mse.py`.",
+        )
+        return
+    if not project_path.is_dir() or not (project_path / "set").is_file():
+        LOGGER.error("event=spawn.mse.rejected reason=invalid_project project=%s", project_path)
+        messagebox.showerror("Projet introuvable", f"Projet MSE invalide :\n{project_path}")
         return
     try:
-        subprocess.Popen([str(MSE_EXE), str(project_path)], close_fds=True)
-    except Exception as exc:  # pragma: no cover - GUI safety net
+        LOGGER.info(
+            "event=spawn.mse.starting cmd=%s args=%s cwd=%s",
+            MSE_CONFIG.executable,
+            [str(project_path)],
+            ROOT,
+        )
+        started_at = time.monotonic()
+        process = subprocess.Popen(
+            [str(MSE_CONFIG.executable), str(project_path)],
+            close_fds=True,
+        )
+        LOGGER.info("event=spawn.mse.started pid=%s project=%s", process.pid, project_path)
+        threading.Thread(
+            target=_observe_process,
+            args=(process, project_path, started_at),
+            daemon=True,
+        ).start()
+    except OSError as exc:  # pragma: no cover - GUI safety net
+        LOGGER.exception("event=spawn.mse.failed project=%s", project_path)
         messagebox.showerror("Erreur MSE", f"Impossible d'ouvrir :\n{project_path}\n\n{exc}")
 
 
@@ -114,6 +176,13 @@ def build_gui(projects: list[dict[str, object]]) -> None:
     root.geometry("900x760")
     root.minsize(760, 520)
     root.configure(bg=BG)
+    if LOGGING_ERROR is not None:
+        root.after_idle(
+            lambda: messagebox.showwarning(
+                "Journal MSE indisponible",
+                f"Impossible d'écrire .mse_launcher.log :\n{LOGGING_ERROR}",
+            )
+        )
 
     style = ttk.Style(root)
     try:
@@ -279,9 +348,10 @@ def build_gui(projects: list[dict[str, object]]) -> None:
     render_projects()
     search_entry.focus_set()
 
+    executable_label = str(MSE_CONFIG.executable) if MSE_CONFIG else "not configured — run python setup_mse.py"
     footer = tk.Label(
         root,
-        text=f"MSE executable: {MSE_EXE}",
+        text=f"MSE executable: {executable_label}",
         font=("Segoe UI", 9),
         fg=MUTED,
         bg=BG,
