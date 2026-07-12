@@ -8,9 +8,16 @@ Shaddoll est un deck **Contrôle / Value / Fusion**.
 
 L'archétype repose sur deux mécaniques principales :
 
-- **Flip**
+- **Flip** ;
+- **Corruption**.
 
-- **Corruption**
+## Conventions propres à Shaddoll
+
+Les noms cube utilisent le format `[préfixe optionnel] Shaddoll - [nom]`. Les préfixes officiels `El`, `Hel`, `Nael`, `Puru`, `Qad`, `Ree` et `Resh` sont séparés de `Shaddoll`. `Curse of the Shadow Prison` et `Sinister Shadow Games` conservent exceptionnellement leur nom officiel complet.
+
+Les créatures Shaddoll conservent le type et le sous-type individuels définis dans leur carte MSE ; leur race n’est pas uniformisée en `Puppet`. `Shaddoll - Falco` est une `Tuner Creature`. `Resh Shaddoll - Incarnation` et `Sinister Shadow Games` sont des `Trap Instant`, tandis que `Shaddoll - Core` est un `Trap Enchantment`.
+
+Les cartes incluses par `MSE_projects/11_YGO_Shaddoll.mse-set/set` sont la source de vérité des valeurs carte par carte de cet archétype. Ce document, les scripts et les tests doivent les refléter. Les restrictions générales de Summon restent applicables sauf mention explicite contraire sur une carte.
 
 ---
 
@@ -26,11 +33,9 @@ Couleur principale : **Noir**
 
 Lorsque cette créature est retournée face visible, appliquez l'effet indiqué.
 
----
-
 ### Corruption
 
-Lorsque cette carte est mise dans votre cimetière **par un effet de carte**, appliquez l'effet indiqué.
+Lorsque cette carte est mise dans votre GYD par un effet de carte, appliquez l'effet indiqué.
 
 ---
 
@@ -42,15 +47,13 @@ Lorsque cette carte est mise dans votre cimetière **par un effet de carte**, ap
 
 **Coût :** {1}{B}
 
-Creature — Puppet
+Creature — Beast
 
 **4 / 3**
 
-**Flip** — Piochez deux cartes, puis défaussez-vous d'une carte.
+(1 - Déclenchable Hard Linked) **Flip** — Piochez 2 cartes, puis défaussez 1 carte.
 
-**Corruption** — Piochez une carte.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Piochez 1 carte.
 
 ---
 
@@ -58,15 +61,13 @@ Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une se
 
 **Coût :** {B}
 
-Creature — Puppet
+Creature — Dragon
 
 **3 / 2**
 
-**Flip** — Renvoyez un permanent non-terrain ciblé dans la main de son propriétaire.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 permanent non-terrain ; renvoyez-le dans la main de son propriétaire.
 
-**Corruption** — Détruisez un permanent non-creature ciblé.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Ciblez 1 permanent non-terrain non-créature ; détruisez-le.
 
 ---
 
@@ -74,15 +75,13 @@ Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une se
 
 **Coût :** {B}
 
-Creature — Puppet
+Creature — Beast
 
 **2 / 2**
 
-**Flip** — Cherchez une carte **"Shaddoll" non-créature**.
+(1 - Déclenchable Hard Linked) **Flip** — Cherchez 1 carte “Shaddoll” non-créature.
 
-**Corruption** — Cherchez une créature **"Shaddoll"**.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Cherchez 1 créature “Shaddoll”.
 
 ---
 
@@ -94,11 +93,9 @@ Creature — Puppet
 
 **3 / 2**
 
-**Flip** — Détruisez une créature ciblée.
+(1 - Déclenchable Hard Linked) **Flip** — Détruisez 1 créature ciblée.
 
-**Corruption** — Envoyez une carte **Shaddoll** depuis votre bibliothèque dans votre cimetière.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD.
 
 ---
 
@@ -106,15 +103,13 @@ Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une se
 
 **Coût :** {B}
 
-Creature — Puppet
+Tuner Creature — Bird
 
 **1 / 2**
 
-**Flip** — Renvoyez une créature **Shaddoll** ciblée depuis votre cimetière sur le champ de bataille face verso.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 créature “Shaddoll” dans votre GYD ; **Reanimate** la créature ciblée face verso.
 
-**Corruption** — Renvoyez cette carte sur le champ de bataille face verso.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — **Reanimate** cette carte face verso.
 
 ---
 
@@ -122,197 +117,185 @@ Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une se
 
 **Coût :** {B}
 
-Creature — Puppet
+Creature — Beast
 
-**Statistiques à déterminer**
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 carte “Shaddoll” dans votre GYD ; renvoyez-la dans votre main.
 
-**Flip** — Choisissez une créature. Retournez-la face verso ou face visible.
-
-**Corruption** — Vous pouvez retourner une créature face verso que vous contrôlez face visible.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Vous pouvez retourner face visible ou face verso 1 créature que vous contrôlez.
 
 ---
 
-## Reeshaddoll Wendi => Shaddoll - Wendi
+## Reeshaddoll Wendi => Ree Shaddoll - Wendi
 
 **Coût :** {G}
 
-Creature — Puppet
+Creature — Psychic
 
-**Statistiques à déterminer**
+(1 - Déclenchable Hard Linked) **Flip** — **Summon** 1 créature “Shaddoll” depuis votre Deck face visible ou face verso.
 
-**Flip** — Cherchez une créature **Shaddoll** dans votre bibliothèque et mettez-la sur le champ de bataille face verso.
-
-**Corruption** — Cherchez une créature **Shaddoll** dans votre bibliothèque et mettez-la sur le champ de bataille face verso.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — **Summon** 1 créature “Shaddoll” depuis votre Deck face verso.
 
 ---
 
-## Naelshaddoll Ariel => Shaddoll - Ariel
+## Naelshaddoll Ariel => Nael Shaddoll - Ariel
 
 **Coût :** {U}
 
-Creature — Puppet
+Creature — Psychic
 
-**2 / 4**
+**2 / 3**
 
-**Flip** — Exilez jusqu'à trois cartes ciblées depuis un cimetière.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 de vos créatures “Shaddoll” exilées ; **Summon**-la face verso.
 
-**Corruption** —  Vous pouvez renvoyez 1 créature **Shaddoll** exilées sur le champ de bataille face verso.
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Ciblez 3 cartes dans les GYD ; exilez-les.
 
 ---
 
-## Qadshaddoll Keios => Shaddoll - Keios
+## Qadshaddoll Keios => Qad Shaddoll - Keios
 
 **Coût :** {W}
 
-Creature — Puppet
+Creature — Wizard
 
-**Statistiques à déterminer**
+**1 / 1**
 
-**Flip** — Une créature ciblée gagne +2/+2 jusqu'à la fin du tour.
+(1 - Déclenchable Hard Linked) **Flip** — **Summon** 1 créature “Shaddoll” depuis votre main face visible ou face verso.
 
-**Corruption** — Envoyez une créature **Shaddoll** depuis votre bibliothèque dans votre cimetière. ?????????????
-
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Défaussez-vous d’1 créature “Shaddoll” ; les créatures que vous contrôlez gagnent +X/+X jusqu’à la fin du tour, X étant la MV de la carte défaussée.
 
 ---
 
-## Helshaddoll Hollow => Shaddoll - Hollow
+## Helshaddoll Hollow => Hel Shaddoll - Hollow
 
 **Coût :** {2}{R}
 
-Creature — Puppet
+Creature — Fiend
 
 **5 / 5**
 
-**Flip** — Détruisez une créature dont la force est inférieure ou égale au nombre de cartes **Shaddoll** dans votre cimetière.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 créature contrôlée par un adversaire ; envoyez 1 créature “Shaddoll” depuis votre Sideboard dans votre GYD, puis, si les 2 cartes sont de la même couleur, exilez la cible.
 
-**Corruption** — Ajoutez cette carte à votre main.
+(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — **Mill X**, X étant le nombre de couleurs parmi les créatures que vous contrôlez.
 
-Vous ne pouvez utiliser qu'un seul des effets de cette carte par tour, et une seule fois par tour.
+---
 
 # Créatures Fusion
 
 ---
 
-## El Shaddoll Construct => Shaddoll - Construct
+## El Shaddoll Construct => El Shaddoll - Construct
 
-**Coût :** **{2}{W}**
+**Coût :** {2}{W}
 
-Fusion Creature — Puppet
-
-**5 / 5**
-
-* **Fusion** — 1 créature “Shaddoll” + 1 créature blanche*
-
-Lorsque El Shaddoll Construct entre, envoyez une carte **Shaddoll** depuis votre bibliothèque dans votre cimetière.
-
-À chaque fois que El Shaddoll Construct bloque ou est bloquée par une créature ayant été lancée depuis un **Sideboard**, par une telle créature, détruisez cette créature.
-
-**On Send GY** — Renvoyez une **carte Shaddoll non-créature** depuis votre cimetière dans votre main.
-
----
-
-## El Shaddoll Winda => Shaddoll - Winda
-
-**Coût :** **{1}{B}**
-
-Fusion Creature — Puppet
-
-**4 / 3**
-
-* **Fusion** — 1 créature “Shaddoll” + 1 créature noire*
-
-Chaque joueur ne peut lancer qu'une seule créature par tour.
-
-Une fois par tour, si El Shaddoll Winda devait être détruite par un effet, elle n'est pas détruite.
-
-**On Send GY** — Renvoyez une **carte "Shaddoll" non-créature** depuis votre cimetière dans votre main.
-
----
-
-## El Shaddoll Apkallone => Shaddoll - Apkallone
-
-**Coût :** **{2}{U}**
-
-Fusion Creature — Puppet
+Fusion Creature — Fairy
 
 **5 / 5**
 
-* **Fusion** — 1 créature “Shaddoll” + 1 créature bleue*
+*1 créature “Shaddoll” + 1 créature blanche*
 
-Lorsque El Shaddoll Apkallone arrive sur le champ de bataille, choisissez un permanent. Ce permanent perd toutes ses capacités tant que El Shaddoll Apkallone reste sur le champ de bataille.
+(1 - Déclenchable) **On Enter** — Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD.
 
-**Corruption** _(une seule fois par tour)_ — Défaussez-vous d'une carte, puis cherchez une carte **Shaddoll**.
+(2 - Déclenchable) **On Block / Blocked** — Si l’autre créature a été Summon, détruisez-la.
+
+(3 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
 
 ---
 
-## El Shaddoll Shekhinaga => Shaddoll - Shekhinaga
+## El Shaddoll Winda => El Shaddoll - Winda
 
-**Coût :** **{2}{G}**
+**Coût :** {1}{B}
 
-Fusion Creature — Puppet
+Fusion Creature — Wizard
+
+**4 / 1**
+
+*1 créature “Shaddoll” + 1 créature noire*
+
+(1 - Passif) Chaque joueur ne peut lancer qu’1 créature par tour.
+
+(2 - Passif) **Indestructible contre les effets**.
+
+(3 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+
+---
+
+## El Shaddoll Apkallone => El Shaddoll - Apkallone
+
+**Coût :** {2}{U}
+
+Fusion Creature — Wizard
+
+**5 / 5**
+
+*1 créature “Shaddoll” + 1 créature bleue*
+
+(1 - Déclenchable Hard) **On Enter** — Ciblez 1 permanent ; il perd toutes ses capacités tant que cette carte reste sur le terrain.
+
+(2 - Déclenchable Hard) **Corruption** — Défaussez 1 carte, puis cherchez 1 carte “Shaddoll”.
+
+---
+
+## El Shaddoll Shekhinaga => El Shaddoll - Shekhinaga
+
+**Coût :** {2}{G}
+
+Fusion Creature — Machine
 
 **5 / 6**
 
-* **Fusion** — 1 créature “Shaddoll” + 1 créature verte*
+*1 créature “Shaddoll” + 1 créature verte*
 
-Une seule fois par tour, lorsqu'une capacité déclenchée est mise sur la pile, vous pouvez vous défausser d'une carte **Shaddoll**. Si vous faites ainsi, contrecarrez cette capacité.
+(1 - Déclenchable Flash Hard) Vous pouvez révéler 1 carte “Shaddoll” de votre main et cibler 1 capacité ; défaussez la carte révélée et contrecarrez la capacité ciblée.
 
-**Corruption** _(une seule fois par tour)_ — Renvoyez une carte **Shaddoll non-créature** depuis votre cimetière dans votre main.
+(2 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
 
 ---
 
-## El Shaddoll Grysta => Shaddoll - Grysta
+## El Shaddoll Grysta => El Shaddoll - Grysta
 
-**Coût :** **{2}{R}**
+**Coût :** {2}{R}
 
-Fusion Creature — Puppet
+Fusion Creature — Elemental
 
 **5 / 4**
 
-* **Fusion** — 1 créature “Shaddoll” + 1 créature rouge*
+*1 créature “Shaddoll” + 1 créature rouge*
 
-Une seule fois par tour, lorsqu'une créature ayant été lancée depuis un **Sideboard** arrive sur le champ de bataille, vous pouvez vous défausser d'une carte **Shaddoll**. Si vous faites ainsi, contrecarrez toutes les capacités déclenchées de cette créature, puis détruisez-la.
+(1 - Déclenchable Soft) **On Opponent Summon** — Vous pouvez révéler 1 carte “Shaddoll” de votre main ; défaussez la carte révélée, contrecarrez toutes les capacités déclenchées de cette créature, puis détruisez-la.
 
-**Corruption** _(une seule fois par tour)_ — Renvoyez une carte **Shaddoll non-créature** depuis votre cimetière dans votre main.
+(2 - Déclenchable Soft) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
 
 ---
 
-## El Shaddoll Anoyatyllis => Shaddoll - Anoyatyllis
+## El Shaddoll Anoyatyllis => El Shaddoll - Anoyatyllis
 
-**Coût :** **{2}{U}**
+**Coût :** {2}{U}
 
-Fusion Creature — Puppet
+Fusion Creature — Fiend
 
 **5 / 5**
 
-* **Fusion** — 1 créature “Shaddoll” + 1 créature bleue*
+*1 créature “Shaddoll” + 1 créature bleue*
 
-Si une créature devait arriver sur le champ de bataille sans avoir été lancée, exilez-la à la place.
+(1 - Passif) Si une créature devait arriver sur le terrain sans avoir été lancée depuis une main ou un GYD, exilez-la à la place.
 
-**Corruption** _(une seule fois par tour)_ — Renvoyez une carte **Shaddoll non-créature** depuis votre cimetière dans votre main.
+(2 - Déclenchable) **On Send GYD** — Ciblez 1 carte “Shaddoll” non-créature dans votre GYD ; renvoyez-la dans votre main.
 
 ---
 
-## El Shaddoll Wendigo => Shaddoll - Wendigo
+## El Shaddoll Wendigo => El Shaddoll - Wendigo
 
-**Coût :** **{2}{G}**
+**Coût :** {2}{U}
 
-Fusion Creature — Puppet
+Fusion Creature — Psychic
 
-**4 / 5**
+**1 / 5**
 
-* **Fusion** — 1 créature “Shaddoll” + 1 créature verte*
+*1 créature “Shaddoll” + 1 créature verte*
 
-Une seule fois par tour, une créature ciblée gagne **l'indestructible** jusqu'à la fin du tour.
+(1 - Activable Flash Hard) La créature ciblée gagne **indestructible** jusqu’à la fin du tour.
 
-**Corruption** _(une seule fois par tour)_ — Renvoyez une carte **Shaddoll non-créature** depuis votre cimetière dans votre main.
+(2 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
 
 ---
 
@@ -322,132 +305,88 @@ Une seule fois par tour, une créature ciblée gagne **l'indestructible** jusqu'
 
 ## Shaddoll Fusion => Shaddoll - Fusion
 
-**Coût :** **{1}{B}**
+**Coût :** {B/G}
 
-**Sorcery — Invocation Fusion**
+Fusion Summon Sorcery
 
-Choisissez une Fusion Creature dans votre Sideboard.
-
-Mettez cette créature sur le champ de bataille en envoyant dans votre cimetière les matériaux indiqués sur cette carte depuis :
-
-- votre main ;
-
-- le champ de bataille.
-
-
-Si un adversaire contrôle une créature ayant commencé la partie dans un **Sideboard**, vous pouvez également envoyer les matériaux depuis votre bibliothèque.
+(1 - Résolution) **Fusion Summon** 1 créature en utilisant des créatures depuis votre main ou terrain comme matériaux. Si un adversaire contrôle une créature ayant commencé la partie dans un Sideboard, vous pouvez aussi utiliser des créatures depuis votre Deck.
 
 ---
 
-## El Shaddoll Fusion => Shaddoll - El Fusion
+## El Shaddoll Fusion => El Shaddoll - Fusion
 
-**Coût :** **{1}{B}**
+**Coût :** {U/B}
 
-**Instant — Invocation Fusion**
+Fusion Summon Instant
 
-Choisissez une Fusion Creature dans votre Sideboard.
-
-Mettez cette créature sur le champ de bataille en envoyant dans votre cimetière les matériaux indiqués sur cette carte depuis :
-
-- votre main ;
-
-- le champ de bataille.
-
+(1 - Résolution) **Fusion Summon** 1 créature “Shaddoll” en utilisant des créatures depuis votre main ou terrain comme matériaux.
 
 ---
 
 ## Shaddoll Schism => Shaddoll - Schism
 
-**Coût :** **{1}{B}**
+**Coût :** {W/B}
 
-Enchantment — Invocation Fusion
+Fusion Summon Enchantment
 
-Une seule fois par tour, à tout moment où vous pourriez lancer une Sorcery :
-
-Choisissez une Fusion Creature dans votre Sideboard.
-
-Exilez les matériaux indiqués sur cette carte depuis votre champ de bataille ou votre cimetière.
-
-Si vous faites ainsi, mettez cette créature sur le champ de bataille.
-
-Puis exilez une créature contrôlée par un adversaire partageant une couleur avec cette créature Fusion.
+(1 - Activable Sorcery Soft) **Fusion Summon** 1 créature “Shaddoll” en exilant les matériaux indiqués depuis votre terrain ou GYD. Puis envoyez au GYD 1 créature contrôlée par un adversaire qui partage une couleur avec cette créature.
 
 ---
 
 ## Shaddoll Core => Shaddoll - Core
 
-**Coût :** **{B}**
+**Coût :** {B}
 
-Enchantment
-
-Shaddoll Core ne peut être lancé **que face verso**.
-
-Il ne peut pas être mis sur le champ de bataille par un autre effet.
-
-Lorsqu'il est retourné face visible, il devient une :
-
-**Enchantment Creature — Puppet**
+Trap Enchantment
 
 **0 / 3**
 
-Shaddoll Core est de toutes les couleurs.
+(1 - Résolution) Core devient une Enchantment Creature — Puppet 2/3 de toutes les couleurs avec « Cette carte peut être utilisée comme matériau pour n’importe quelle Fusion Creature “Shaddoll” à la place d’un matériau requis. »
 
-Tant qu'il est une créature, il peut être utilisé comme matériau pour n'importe quelle créature **Fusion Shaddoll** à la place d'un matériau requis.
-
-**Corruption** — Renvoyez une carte **Shaddoll** depuis votre cimetière dans votre main.
+(2 - Déclenchable) **On Send GYD by Effect** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
 
 ---
 
-## Resh Shaddoll Incarnation => Shaddoll - Incarnation
+## Resh Shaddoll Incarnation => Resh Shaddoll - Incarnation
 
-**Coût :** **{B}**
+**Coût :** {B}
 
-Instant
+Trap Instant
 
-Renvoyez une créature **Shaddoll** ciblée depuis votre cimetière sur le champ de bataille face verso.
+(1 - Résolution Hard Linked) Renvoyez 1 créature “Shaddoll” ciblée depuis votre GYD sur le terrain face visible ou face verso.
 
-Depuis votre cimetière :
-
-Exilez cette carte ainsi qu'une carte **Shaddoll** de votre cimetière : retournez une créature que vous contrôlez face visible ou face verso.
+(2 - Activable Flash Hard Linked) Depuis votre GYD, exilez cette carte et 1 autre carte “Shaddoll” ; choisissez 1 créature que vous contrôlez et retournez-la face visible ou face verso.
 
 ---
 
-## Sinister Shadow Games => Shaddoll - Sinister Shadow Games
+## Sinister Shadow Games => Sinister Shadow Games
 
-**Coût :** **{B}**
+**Coût :** {B}
 
-Instant
+Trap Instant
 
-Envoyez une carte **Shaddoll** depuis votre bibliothèque dans votre cimetière.
-
-Puis vous pouvez retourner une créature face verso que vous contrôlez face visible.
+(1 - Résolution) Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD, puis vous pouvez retourner face visible autant de créatures “Shaddoll” face verso que vous contrôlez.
 
 ---
 
-## Curse of the Shadow Prison => Shaddoll - Shadow Prison
+## Curse of the Shadow Prison => Curse of the Shadow Prison
 
-**Coût :** **{B}**
+**Coût :** {B}
 
 Legendary Enchantment
 
-À chaque fois qu'une ou plusieurs cartes **Shaddoll** sont mises dans votre cimetière par un effet de carte, mettez un **compteur Prison** sur Curse of the Shadow Prison.
+(1 - Déclenchable) Si 1+ cartes “Shaddoll” sont mises dans votre GYD par un effet de carte, mettez 1 compteur Magie sur cette carte.
 
-Pendant le tour de chaque adversaire, les créatures que ce joueur contrôle gagnent **-1/-0** pour chaque groupe de cinq compteurs Prison sur Curse of the Shadow Prison.
+(2 - Passif) Pendant le tour de chaque adversaire, les créatures qu’il contrôle gagnent -1/-0 pour chaque groupe de 5 compteurs Magie sur cette carte.
 
-Lorsque vous choisissez les matériaux d'une invocation **Fusion Shaddoll**, vous pouvez retirer **trois compteurs Prison** de Curse of the Shadow Prison. Si vous faites ainsi, vous pouvez utiliser une créature contrôlée par un adversaire comme matériau de Fusion pour cette invocation.
+(3 - Passif) Si vous choisissez les matériaux pour une **Fusion Summon** “Shaddoll”, vous pouvez retirer 3 compteurs Magie de cette carte. Si vous faites ainsi, vous pouvez utiliser 1 créature contrôlée par un adversaire comme matériel pour cette invocation.
 
 ---
 
-## Purushaddoll Aeon => Shaddoll - Aeon
+## Purushaddoll Aeon => Puru Shaddoll - Aeon
 
-**Coût :** **{B}**
+**Coût :** {0}
 
-Instant
+Trap Instant
 
-Choisissez une créature **Shaddoll** que vous contrôlez.
-
-Envoyez une carte **Shaddoll** de votre main dans votre cimetière.
-
-Si vous faites ainsi, cette créature gagne **+2/+2** jusqu'à la fin du tour.
-
-Au début de votre prochaine étape de fin, retournez cette créature face verso.
+(1 - Résolution) Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au GYD, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.

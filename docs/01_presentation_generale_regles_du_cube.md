@@ -34,6 +34,16 @@ Le cube est un environnement fermé : toutes les cartes sont équilibrées uniqu
 - des invocations fréquentes depuis l'Extra Deck ;
 - de l'interaction forte pour empêcher les boucles infinies et les fins de partie non interactives.
 
+## Mulligan spécifique au cube
+
+À la place du mulligan de Magic, avant le début de la partie, chaque joueur peut effectuer une seule fois la procédure suivante :
+
+1. choisir n'importe quel nombre de cartes de sa main de départ, y compris zéro ;
+2. placer les cartes choisies sous son Deck, dans l'ordre de son choix ;
+3. piocher le même nombre de cartes.
+
+Le Deck n'est pas mélangé pendant cette procédure.
+
 ## Archétypes documentés
 
 ### Burning Abyss

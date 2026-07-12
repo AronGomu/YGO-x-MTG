@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-07-11
 title: 09 - Non-archetype Non-creature
 tags:
@@ -16,9 +16,9 @@ Cartes non-créature et non archétypales.
 
 **{B}**
 
-Piochez 2 cartes.
+Sorcery
 
-Puis exilez 1 carte noire de votre main. Si vous ne le faites pas, défaussez votre main.
+(1 - Résolution) Piochez 2 cartes, puis exilez 1 carte noire de votre main. Si vous ne le faites pas, défaussez votre main.
 
 ---
 
@@ -26,7 +26,9 @@ Puis exilez 1 carte noire de votre main. Si vous ne le faites pas, défaussez vo
 
 **{1}{B}**
 
-Détruisez toutes les créatures.
+Sorcery
+
+(1 - Résolution) Détruisez toutes les créatures.
 
 ---
 
@@ -34,7 +36,9 @@ Détruisez toutes les créatures.
 
 **{B}**
 
-Mettez 1 carte de créature depuis votre bibliothèque dans votre GY.
+Sorcery
+
+(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GY.
 
 ---
 
@@ -42,11 +46,9 @@ Mettez 1 carte de créature depuis votre bibliothèque dans votre GY.
 
 **{R}**
 
-**Sorcery — Invocation Fusion**
+Sorcery — Invocation Fusion
 
-Mettez en jeu 1 Fusion Creature avec une MV de 1 depuis votre Sideboard.
-
-Sacrifiez cette créature au début de la prochaine étape de fin.
+(1 - Résolution) Mettez en jeu 1 Fusion Creature MV 1 depuis votre Sideboard. Sacrifiez-la au début de la prochaine étape de fin.
 
 ---
 
@@ -54,7 +56,9 @@ Sacrifiez cette créature au début de la prochaine étape de fin.
 
 **{W}**
 
-Renvoyez sur le champ de bataille, sous votre contrôle, 1 carte de créature ciblée depuis un GY.
+Sorcery
+
+(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis un GY.
 
 ---
 
@@ -62,7 +66,9 @@ Renvoyez sur le champ de bataille, sous votre contrôle, 1 carte de créature ci
 
 **{1}{W}**
 
-Détruisez toutes les créatures que vos adversaires contrôlent.
+Sorcery
+
+(1 - Résolution) Détruisez toutes les créatures que vos adversaires contrôlent.
 
 ---
 
@@ -70,9 +76,11 @@ Détruisez toutes les créatures que vos adversaires contrôlent.
 
 **{B}**
 
-Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, un adversaire ciblé gagne 5 points de vie.
+Sorcery
 
-Piochez 1 carte.
+Coût Alternatif — Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, 1 adversaire ciblé gagne 5 points de vie.
+
+(1 - Résolution) Piochez 1 carte.
 
 ---
 
@@ -82,7 +90,9 @@ Piochez 1 carte.
 
 **{U}**
 
-Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas les retourner face recto avant le début de leur prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat les retourne face recto.
+Instant
+
+(1 - Résolution) Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas les retourner face recto avant le début de leur prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat les retourne face recto.
 
 ---
 
@@ -90,7 +100,9 @@ Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas le
 
 **{U}**
 
-Retournez la créature ciblée face verso. Son contrôleur ne peut pas la retourner face recto avant le début de son prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat la retourne face recto.
+Instant
+
+(1 - Résolution) Retournez la créature ciblée face verso. Son contrôleur ne peut pas la retourner face recto avant le début de son prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat la retourne face recto.
 
 ---
 
@@ -98,13 +110,11 @@ Retournez la créature ciblée face verso. Son contrôleur ne peut pas la retour
 
 **{R}**
 
-**Instant — Piège**
+Trap Instant
 
-**Piège**
+(1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
 
-La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
-
-Vous pouvez lancer cette carte depuis votre GY. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
 
 ---
 
@@ -112,11 +122,9 @@ Vous pouvez lancer cette carte depuis votre GY. Si vous faites ainsi, exilez-la 
 
 **{U}**
 
-**Instant — Piège**
+Trap Instant
 
-**Piège**
-
-Renvoyez le permanent ciblé dans la main de son propriétaire.
+(1 - Résolution) Renvoyez le permanent ciblé dans la main de son propriétaire.
 
 ---
 
@@ -124,13 +132,11 @@ Renvoyez le permanent ciblé dans la main de son propriétaire.
 
 **{B}**
 
-**Instant — Piège**
+Trap Instant
 
-**Piège**
+En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d’1 carte.
-
-Exilez la créature ciblée.
+(1 - Résolution) Exilez la créature ciblée.
 
 ---
 
@@ -138,7 +144,9 @@ Exilez la créature ciblée.
 
 **{R}**
 
-Détruisez le permanent non-créature non-terrain ciblé.
+Instant
+
+(1 - Résolution) Détruisez le permanent non-créature non-terrain ciblé.
 
 ---
 
@@ -146,13 +154,11 @@ Détruisez le permanent non-créature non-terrain ciblé.
 
 **{B}**
 
-**Instant — Piège**
+Trap Instant
 
-**Piège**
+En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d’1 carte.
-
-Mettez le permanent ciblé au-dessus de la bibliothèque de son propriétaire.
+(1 - Résolution) Mettez le permanent ciblé au-dessus du Deck de son propriétaire.
 
 ---
 
@@ -160,11 +166,11 @@ Mettez le permanent ciblé au-dessus de la bibliothèque de son propriétaire.
 
 **{B/R}{B/R}**
 
-**Instant — Invocation Fusion**
+Instant — Invocation Fusion
 
-En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d’1 carte.
+En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-Exilez 1 ou plusieurs créatures du champ de bataille comme matériaux Fusion ; mettez en jeu depuis votre Sideboard 1 Fusion Creature dont les matériaux peuvent être entièrement satisfaits par les créatures exilées ainsi.
+(1 - Résolution) Exilez 1 ou plusieurs créatures du terrain comme matériaux Fusion ; mettez en jeu depuis votre Sideboard 1 Fusion Creature dont les matériaux peuvent être entièrement satisfaits par les créatures ainsi exilées.
 
 ---
 
@@ -172,13 +178,11 @@ Exilez 1 ou plusieurs créatures du champ de bataille comme matériaux Fusion ; 
 
 **{R}**
 
-**Instant — Piège**
+Trap Instant
 
-**Piège**
+Vous ne pouvez lancer ce sort que si 1 créature est arrivée sur le terrain ce tour-ci.
 
-Vous ne pouvez lancer ce sort que si une créature est arrivée sur le champ de bataille ce tour-ci.
-
-Détruisez toutes les créatures.
+(1 - Résolution) Détruisez toutes les créatures.
 
 ---
 
@@ -186,6 +190,8 @@ Détruisez toutes les créatures.
 
 **{R}**
 
-En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d’1 carte.
+Instant
 
-Détruisez jusqu’à 2 permanents non-créature non-terrain ciblés.
+En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
+
+(1 - Résolution) Détruisez jusqu’à 2 permanents non-créature non-terrain ciblés.

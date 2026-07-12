@@ -1,4 +1,4 @@
-﻿mse_version: 2.0.2
+mse_version: 2.0.2
 game: magic
 game_version: 2025-06-14
 stylesheet: m15-showcase-capenna-art-deco
@@ -23,7 +23,6 @@ styling:
 include_file: card accesscode talker
 include_file: card apollousa bow of the goddess
 include_file: card borrelsword dragon
-include_file: card cherubini ebon angel of the burning abyss
 include_file: card cross sheep
 include_file: card crystron halqifibrax
 include_file: card dharc the dark charmer gloomy

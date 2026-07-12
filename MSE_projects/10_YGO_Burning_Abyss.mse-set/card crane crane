@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/10_archetype_burning_abyss.md
 	time_created: 2026-07-11 16:40:30
-	time_modified: 2026-07-12 01:26:16
+	time_modified: 2026-07-12 12:55:26
 	name: Crane Crane
 	casting_cost: G
 	image: mse_images/crane_crane.jpg
@@ -15,7 +15,8 @@ card:
 	super_type: <word-list-type-en>Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Winged</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Beast</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
-	rule_text: <i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Hard)</i-auto> Si <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>elle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> arrive <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>sur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> terrain, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>renvoyez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>sur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> terrain 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>votre</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>GY</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>. <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Elle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>perd</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ses</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>capacités</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+	rule_text:
+		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Ciblez 1 créature MV 1 de votre GYD ; <b>Reanimate</b> la cible. La cible perd ses capacités sur le terrain.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 2

@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-showcase-capenna-art-deco
 	stylesheet_version: 2024-10-01
@@ -7,18 +7,7 @@ card:
 	time_created: 2026-07-11 12:12:33
 	time_modified: 2026-07-11 12:12:33
 	name: I:P Masquerena
-	casting_cost: B
 	image: mse_images/image5.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
-	super_type: <word-list-type-en>Link Lvl 2 Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Cyberse</word-list-race-en>
-	rarity: rare
-	rule_text:
-		(1 - Activable Flash Soft) Invoquez une Link Creature depuis votre extra deck en utilisant vos créatures comme matériaux.
-		(2 - Passif) Une Link Creature invoquée avec I:P comme matériau a indestructible contre les effets de carte.
-	flavor_text: <i-flavor></i-flavor>
-	power: 1
-	toughness: 4
-	card_code_text: 005/015 R

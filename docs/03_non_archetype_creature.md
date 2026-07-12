@@ -1,5 +1,5 @@
 ---
-date: 2026-07-11
+date: 2026-07-12
 title: 03 - Non-archetype Creature
 tags:
   - utility-cards
@@ -12,50 +12,42 @@ Cartes de créature non archétypales.
 
 ## Cartes
 
-### Maxx « C »
+### Ash Blossom & Joyous Spring
 
-**{G}**
-Créature — Insecte
+**{R}**
+Creature — Tuner Zombie
 **0/1**
 
-À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : jusqu'à la fin du tour, à chaque fois qu'une créature arrive sur le champ de bataille sous le contrôle d'un adversaire, si elle n'a pas été lancée depuis la main, piochez une carte.
-
-Vous ne pouvez activer qu'une seule capacité de Maxx « C » par tour.
+(1 - Activable Flash Hard) Défaussez Ash Blossom & Joyous Spring ; ciblez 1 sort ou capacité. Si son effet interagit avec le Deck (pioche, Mill, recherche, etc.), contrecarrez-le.
 
 ---
 
-### Ash Blossom & Joyous Spring
+### D.D Crow
 
-**{W}**
-Créature — Zombie et Syntoniseur
+**{B}**
+Creature — Bird
 **0/1**
 
-À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : contrecarrez le sort ou la capacité ciblé si celui-ci ferait au moins l'une des choses suivantes :
-
-* fait piocher une ou plusieurs cartes à un joueur ;
-* permet à un joueur de chercher une ou plusieurs cartes dans sa bibliothèque ;
-* met une ou plusieurs créatures sur le champ de bataille depuis une bibliothèque.
-
-Vous ne pouvez activer qu'une seule capacité de Ash Blossom & Joyous Spring par tour.
+(1 - Activable Flash) Défaussez D.D Crow ; exilez 1 carte ciblée dans 1 GY.
 
 ---
 
 ### Effect Veiler
 
 **{W}**
-Créature — Magicien et Syntoniseur
+Creature — Tuner Wizard
 **0/1**
 
-Défaussez-vous d'Effect Veiler : la créature ciblée perd toutes ses capacités jusqu'à la fin du tour. N'activez cette capacité que pendant la phase principale d'un adversaire.
+(1 - Activable Flash) Défaussez Effect Veiler ; ciblez 1 créature sur le terrain. Jusqu'à la fin du tour, elle perd toutes ses capacités et contrecarrez toutes ses capacités.
 
 ---
 
-### Corbeau D.D.
+### Maxx « C »
 
-**{B}**
-Créature — Ailé
-**2/1**
+**{G}**
+Creature — Insect
+**0/1**
 
-À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : exilez la carte ciblée d'un cimetière.
+(1 - Activable Flash Hard) Défaussez Maxx « C » ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d'un adversaire ce tour-ci, jusqu'à la fin du tour, piochez 1 carte **On Opponent Creature Enter**.
 
 ---

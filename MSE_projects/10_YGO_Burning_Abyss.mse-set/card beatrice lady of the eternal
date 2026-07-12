@@ -3,9 +3,9 @@ card:
 	stylesheet: m15-spellbook
 	stylesheet_version: 2024-09-01
 	has_styling: false
-	notes: Source: 11_archetype_burning_abyss.md
+	notes: Source: docs/10_archetype_burning_abyss.md
 	time_created: 2026-07-11 01:36:28
-	time_modified: 2026-07-12 01:02:03
+	time_modified: 2026-07-12 12:55:26
 	name: Beatrice, Lady of the Eternal
 	casting_cost: 1W
 	image: image1.png
@@ -14,15 +14,15 @@ card:
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Xyz Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Fairy</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
-	sub_type_2: 
-	sub_type_3: 
-	sub_type_4: 
+	sub_type_2:
+	sub_type_3:
+	sub_type_4:
 	rarity: common
 	rule_text:
-		<i>Xyz — 2 créatures MV 2</i>
-		Xyz Coût Alternatif — W, défaussez 1 créature “Burning Abyss” ; 1 “Dante” que vous contrôlez. Ses matériels se transfèrent.
-		(1 - Activable Flash Soft) <b>Detach 1</b> ; envoyez 1 carte depuis votre Deck au GY.
-		(2 - Déclenchable) <b>On Destroy</b> — Vous pouvez mettre en jeu 1 créature “Burning Abyss” depuis votre Sideboard.
+		<i>2 créatures MV 2</i>
+		Xyz Coût Alternatif — <sym-auto>W</sym-auto>, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez. Ses matériels se transfèrent.
+		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 1</b> ; envoyez 1 carte depuis votre Deck au GYD.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Destroy</b> — <b>Summon</b> 1 créature “Burning Abyss” depuis votre Sideboard.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

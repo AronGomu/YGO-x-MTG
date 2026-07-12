@@ -3,9 +3,9 @@ card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
 	has_styling: false
-	notes: Source: 11_archetype_burning_abyss.md
+	notes: Source: docs/10_archetype_burning_abyss.md
 	time_created: 2026-07-11 01:36:28
-	time_modified: 2026-07-11 15:25:04
+	time_modified: 2026-07-12 12:55:26
 	name: Burning Abyss - Cir
 	casting_cost: B
 	image: image4.png
@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <b><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Malédiction</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>abyssale</b></error-spelling:en_US:/magic.mse-game/dictionary/magic-words>
-		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Activable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Hard Linked)</i-auto> <b><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Descente</b></error-spelling:en_US:/magic.mse-game/dictionary/magic-words>
-		<i-auto>(3 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Hard Linked)</i-auto> <b>On Send <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>GY</b></error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Renvoyez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> “Burning Abyss” <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>votre</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>GY</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>sur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> terrain.
+		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
+		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
+		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD</b> — Ciblez 1 créature “Burning Abyss” de votre GYD ; <b>Reanimate</b> la cible.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

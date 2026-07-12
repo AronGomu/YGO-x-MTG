@@ -5,19 +5,18 @@ card:
 	has_styling: false
 	notes: Source: docs/10_archetype_burning_abyss.md
 	time_created: 2026-07-11 16:40:30
-	time_modified: 2026-07-11 16:40:30
+	time_modified: 2026-07-12 15:01:54
 	name: Fiend Griefing
 	casting_cost: B
 	image: mse_images/fiend_griefing.jpg
 	image_2: 
 	mainframe_image: 
 	mainframe_image_2: 
-	super_type: <word-list-type-en>Instant</word-list-type-en>
-	sub_type: <word-list-spell>Piège</word-list-spell><soft><atom-sep> </atom-sep></soft><word-list-spell></word-list-spell>
+	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
+	sub_type:
 	rarity: uncommon
 	rule_text:
-		<b><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Piège</b></error-spelling:en_US:/magic.mse-game/dictionary/magic-words>
-		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Résolution</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Mélangez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>GY</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>d’un</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>adversaire</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>dans</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> son Deck, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>puis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>vous</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>pouvez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>envoyer</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Fiend <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>depuis</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>votre</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Deck <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>au</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>GY</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature dans le GYD de votre adversaire ; mélangez la cible dans le Deck, puis vous pouvez envoyer 1 créature Fiend de votre Deck au GYD.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 026/030 U
 	card_code_text_2: 026/030 U

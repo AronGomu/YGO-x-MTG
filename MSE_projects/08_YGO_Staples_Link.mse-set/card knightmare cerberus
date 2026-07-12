@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-showcase-capenna-art-deco
 	stylesheet_version: 2024-10-01
@@ -7,17 +7,7 @@ card:
 	time_created: 2026-07-11 12:12:34
 	time_modified: 2026-07-11 12:12:34
 	name: Knightmare Cerberus
-	casting_cost: G
 	image: mse_images/image6.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
-	super_type: <word-list-type-en>Link Lvl 2 Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Fiend</word-list-race-en>
-	rarity: rare
-	rule_text:
-		(1 - Déclenchable) Si Cerberus arrive, vous pouvez vous défausser d'une carte. Si vous faites ainsi, détruisez une créature ciblée, puis piochez une carte si Cerberus est co-liée.
-	flavor_text: <i-flavor></i-flavor>
-	power: 2
-	toughness: 4
-	card_code_text: 006/015 R

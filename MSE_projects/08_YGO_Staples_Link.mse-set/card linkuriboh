@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-showcase-capenna-art-deco
 	stylesheet_version: 2024-10-01
@@ -7,18 +7,7 @@ card:
 	time_created: 2026-07-11 12:12:36
 	time_modified: 2026-07-11 12:12:36
 	name: Linkuriboh
-	casting_cost: B
 	image: mse_images/image9.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
-	super_type: <word-list-type-en>Link Lvl 1 Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Cyberse</word-list-race-en>
-	rarity: rare
-	rule_text:
-		(1 - Activable Flash Soft) Sacrifiez Linkuriboh : une créature attaquante ciblée devient 0/1 jusqu'à la fin du tour.
-		(2 - Activable Sorcery Soft) Sacrifiez une créature de valeur de mana 1 : renvoyez Linkuriboh depuis votre cimetière sur le champ de bataille.
-	flavor_text: <i-flavor></i-flavor>
-	power: 1
-	toughness: 3
-	card_code_text: 009/015 R

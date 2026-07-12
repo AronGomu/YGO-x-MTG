@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-showcase-capenna-art-deco
 	stylesheet_version: 2024-10-01
@@ -7,19 +7,7 @@ card:
 	time_created: 2026-07-11 12:12:40
 	time_modified: 2026-07-11 12:12:40
 	name: Underworld Goddess of the Closed World
-	casting_cost: W
 	image: mse_images/image15.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
-	super_type: <word-list-type-en>Link Lvl 5 Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Fiend</word-list-race-en>
-	rarity: rare
-	rule_text:
-		(1 - Passif) Vous pouvez utiliser une créature adverse comme matériau pour invoquer Underworld Goddess.
-		(2 - Déclenchable) Si Underworld Goddess arrive, les créatures adverses perdent toutes leurs capacités jusqu'à la fin du tour.
-		(3 - Activable Flash Soft) Contrecarrez une capacité qui cible une carte dans un cimetière.
-	flavor_text: <i-flavor></i-flavor>
-	power: 3
-	toughness: 7
-	card_code_text: 015/015 R

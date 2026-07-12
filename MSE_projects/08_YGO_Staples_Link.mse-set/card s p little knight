@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-showcase-capenna-art-deco
 	stylesheet_version: 2024-10-01
@@ -7,18 +7,7 @@ card:
 	time_created: 2026-07-11 12:12:38
 	time_modified: 2026-07-11 12:12:38
 	name: S:P Little Knight
-	casting_cost: B
 	image: mse_images/image12.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
-	super_type: <word-list-type-en>Link Lvl 2 Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Warrior</word-list-race-en>
-	rarity: rare
-	rule_text:
-		(1 - Déclenchable) Si S:P arrive, si elle a utilisé une Extra Deck Creature comme matériau, exilez une carte ciblée sur le champ de bataille jusqu'à votre prochaine étape de fin.
-		(2 - Activable Flash Soft) Si un adversaire active un effet, exilez S:P et une créature ciblée jusqu'à la fin du tour.
-	flavor_text: <i-flavor></i-flavor>
-	power: 2
-	toughness: 4
-	card_code_text: 012/015 R

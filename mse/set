@@ -1,4 +1,4 @@
-﻿mse version: 2.0.2
+mse version: 2.0.2
 game: magic
 stylesheet: magic-m15
 set info:
@@ -1094,76 +1094,68 @@ card:
 
 card:
 	has styling: false
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
 	time modified: 1783717789
 	name: Maxx « C »
 	casting cost: G
 	image:
 	super type:
-	card type: Créature
-	sub type: Insecte
+	card type: Creature
+	sub type: Insect
 	rarity: common
-	rule text: À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : jusqu'à la fin du tour, à chaque fois qu'une créature arrive sur le champ de bataille sous le contrôle d'un adversaire, si elle n'a pas été lancée depuis la main, piochez une carte.
-
-		Vous ne pouvez activer qu'une seule capacité de Maxx « C » par tour.
+	rule text: (1 - Activable Flash Hard) Défaussez Maxx « C » ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d'un adversaire ce tour-ci, jusqu'à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.
 	flavor text:
 	power: 0
 	toughness: 1
 	loyalty:
 	card code text:
 	illustrator:
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	number: 39
 
 card:
 	has styling: false
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
 	time modified: 1783717789
 	name: Ash Blossom & Joyous Spring
-	casting cost: W
+	casting cost: R
 	image:
 	super type:
-	card type: Créature
-	sub type: Zombie et Syntoniseur
+	card type: Creature
+	sub type: Tuner Zombie
 	rarity: common
-	rule text: À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : contrecarrez le sort ou la capacité ciblé si celui-ci ferait au moins l'une des choses suivantes :
-
-		• fait piocher une ou plusieurs cartes à un joueur ;
-		• permet à un joueur de chercher une ou plusieurs cartes dans sa bibliothèque ;
-		• met une ou plusieurs créatures sur le champ de bataille depuis une bibliothèque.
-
-		Vous ne pouvez activer qu'une seule capacité de Ash Blossom & Joyous Spring par tour.
+	rule text: (1 - Activable Flash Hard) Défaussez Ash Blossom & Joyous Spring ; ciblez 1 sort ou capacité. Si son effet interagit avec le Deck (pioche, Mill, recherche, etc.), contrecarrez-le.
 	flavor text:
 	power: 0
 	toughness: 1
 	loyalty:
 	card code text:
 	illustrator:
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	number: 40
 
 card:
 	has styling: false
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
 	time modified: 1783717789
 	name: Effect Veiler
 	casting cost: W
 	image:
 	super type:
-	card type: Créature
-	sub type: Magicien et Syntoniseur
+	card type: Creature
+	sub type: Tuner Wizard
 	rarity: common
-	rule text: Défaussez-vous d'Effect Veiler : la créature ciblée perd toutes ses capacités jusqu'à la fin du tour. N'activez cette capacité que pendant la phase principale d'un adversaire.
+	rule text: (1 - Activable Flash) Défaussez Effect Veiler ; ciblez 1 créature sur le terrain. Jusqu'à la fin du tour, elle perd toutes ses capacités et contrecarrez toutes ses capacités.
 	flavor text:
 	power: 0
 	toughness: 1
 	loyalty:
 	card code text:
 	illustrator:
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	number: 41
 
 card:
@@ -1192,24 +1184,24 @@ card:
 
 card:
 	has styling: false
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
 	time modified: 1783717789
-	name: Corbeau D.D.
+	name: D.D Crow
 	casting cost: B
 	image:
 	super type:
-	card type: Créature
-	sub type: Ailé
+	card type: Creature
+	sub type: Bird
 	rarity: common
-	rule text: À tout moment où vous pourriez lancer un éphémère, vous pouvez vous défausser de cette carte : exilez la carte ciblée d'un cimetière.
+	rule text: (1 - Activable Flash) Défaussez D.D Crow ; exilez 1 carte ciblée dans 1 GY.
 	flavor text:
-	power: 2
+	power: 0
 	toughness: 1
 	loyalty:
 	card code text:
 	illustrator:
-	notes: Source: 09_non_archetype_non_creature.md
+	notes: Source: 03_non_archetype_creature.md
 	number: 43
 
 card:
@@ -1498,9 +1490,9 @@ card:
 	name: Phoenix Wing Wind Blast
 	casting cost: B
 	image:
-	super type:
+	super type: Trap
 	card type: Éphémère
-	sub type: Piège
+	sub type:
 	rarity: common
 	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
 
@@ -1522,9 +1514,9 @@ card:
 	name: Karma Cut
 	casting cost: B
 	image:
-	super type:
+	super type: Trap
 	card type: Éphémère
-	sub type: Piège
+	sub type:
 	rarity: common
 	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
 
@@ -1546,9 +1538,9 @@ card:
 	name: Compulsory Evacuation Device
 	casting cost: U
 	image:
-	super type:
+	super type: Trap
 	card type: Éphémère
-	sub type: Piège
+	sub type:
 	rarity: common
 	rule text: Renvoyez le permanent ciblé dans la main de son propriétaire.
 	flavor text:
@@ -1568,9 +1560,9 @@ card:
 	name: Breakthrough Skill
 	casting cost: R
 	image:
-	super type:
+	super type: Trap
 	card type: Éphémère
-	sub type: Piège
+	sub type:
 	rarity: common
 	rule text: La créature ciblée perd toutes ses capacités jusqu'à la fin du tour.
 
@@ -1592,9 +1584,9 @@ card:
 	name: Torrential Tribute
 	casting cost: R
 	image:
-	super type:
+	super type: Trap
 	card type: Éphémère
-	sub type: Piège
+	sub type:
 	rarity: common
 	rule text: Lancez ce sort uniquement si une créature est arrivée sur le champ de bataille ce tour-ci.
 

@@ -1,10 +1,6 @@
 # Frames MSE candidates pour les types Extra Deck / spéciaux
 
-Chemin analysé :
-
-```text
-F:\Softwares\Magic-Set-Editor-Full\data
-```
+Chemin analysé : `MSE_DATA_DIR` dans le fichier `.env` local, généré avec `python setup_mse.py`.
 
 Ce document liste les styles/frames MSE repérés pour différencier visuellement les types spéciaux du cube Yu-Gi-Oh × Magic.
 

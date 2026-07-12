@@ -238,11 +238,11 @@ Xyz Creature — Plant
 
 **0 / 5**
 
-*Xyz — 2 créatures MV 1*
+*2 créatures MV 1*
 
 (1 - Passif) Cette carte n’est pas affectée par les effets des Trap.
 
-(2 - Activable Flash Soft) **Detach 1** et envoyez 1 Trap depuis votre Deck au GY : copiez son effet de Résolution.
+(2 - Activable Flash Soft) **Detach 1** et envoyez 1 Trap depuis votre Deck au GYD : copiez son effet de Résolution.
 
 ---
 

@@ -1,6 +1,10 @@
 from pathlib import Path
-import re, urllib.parse, time
+import re, sys, time
 import requests
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / '.script'))
+from original_image_assets import original_image_path
 
 ROOT = Path(__file__).resolve().parent
 API = 'https://db.ygoprodeck.com/api/v7/cardinfo.php'
@@ -27,24 +31,24 @@ NAME_MAP = {
     'Burning Abyss - Malacoda': 'Malacoda, Netherlord of the Burning Abyss',
     'Burning Abyss - Terminus': 'The Terminus of the Burning Abyss',
     'Burning Abyss - Traveler': 'The Traveler and the Burning Abyss',
-    'Shaddoll - Shadow Prison': 'Curse of the Shadow Prison',
-    'Shaddoll - Anoyatyllis': 'El Shaddoll Anoyatyllis',
-    'Shaddoll - Apkallone': 'El Shaddoll Apkallone',
-    'Shaddoll - Construct': 'El Shaddoll Construct',
-    'Shaddoll - El Fusion': 'El Shaddoll Fusion',
-    'Shaddoll - Grysta': 'El Shaddoll Grysta',
-    'Shaddoll - Shekhinaga': 'El Shaddoll Shekhinaga',
-    'Shaddoll - Wendigo': 'El Shaddoll Wendigo',
-    'Shaddoll - Winda': 'El Shaddoll Winda',
-    'Shaddoll - Hollow': 'Helshaddoll Hollow',
-    'Shaddoll - Ariel': 'Naelshaddoll Ariel',
-    'Shaddoll - Aeon': 'Purushaddoll Aeon',
-    'Shaddoll - Keios': 'Qadshaddoll Keios',
-    'Shaddoll - Wendi': 'Reeshaddoll Wendi',
-    'Shaddoll - Incarnation': 'Resh Shaddoll Incarnation',
-    'Shaddoll - Sinister Shadow Games': 'Sinister Shadow Games',
+    'Curse of the Shadow Prison': 'Curse of the Shadow Prison',
+    'El Shaddoll - Anoyatyllis': 'El Shaddoll Anoyatyllis',
+    'El Shaddoll - Apkallone': 'El Shaddoll Apkallone',
+    'El Shaddoll - Construct': 'El Shaddoll Construct',
+    'El Shaddoll - Fusion': 'El Shaddoll Fusion',
+    'El Shaddoll - Grysta': 'El Shaddoll Grysta',
+    'El Shaddoll - Shekhinaga': 'El Shaddoll Shekhinaga',
+    'El Shaddoll - Wendigo': 'El Shaddoll Wendigo',
+    'El Shaddoll - Winda': 'El Shaddoll Winda',
+    'Hel Shaddoll - Hollow': 'Helshaddoll Hollow',
+    'Nael Shaddoll - Ariel': 'Naelshaddoll Ariel',
+    'Puru Shaddoll - Aeon': 'Purushaddoll Aeon',
+    'Qad Shaddoll - Keios': 'Qadshaddoll Keios',
+    'Ree Shaddoll - Wendi': 'Reeshaddoll Wendi',
+    'Resh Shaddoll - Incarnation': 'Resh Shaddoll Incarnation',
+    'Sinister Shadow Games': 'Sinister Shadow Games',
     'Comp�tence de Perc�e': 'Breakthrough Skill',
-    'Corbeau D.D.': 'D.D. Crow',
+    'D.D Crow': 'D.D. Crow',
     "Dispositif d'�vacuation Obligatoire": 'Compulsory Evacuation Device',
     'Double Tornade': 'Twin Twisters',
     'Enterrement Pr�cipit�': 'Foolish Burial',
@@ -64,9 +68,6 @@ NAME_MAP = {
     "Typhon d'Espace Mystique": 'Mystical Space Typhoon',
 }
 
-def slug(s):
-    return re.sub(r'_+', '_', re.sub(r'[^a-z0-9]+', '_', s.lower())).strip('_')
-
 def card_name(text):
     m = re.search(r'(?m)^\s*name:\s*(.+)$', text)
     return m.group(1).strip() if m else None
@@ -85,8 +86,7 @@ def fetch(query):
 
 errors=[]
 for project in sorted(ROOT.glob('*.mse-set')):
-    orig = project / 'original_images'
-    orig.mkdir(exist_ok=True)
+    downloaded = 0
     set_text = (project/'set').read_text(encoding='utf-8-sig', errors='replace') if (project/'set').exists() else ''
     includes = re.findall(r'(?m)^include_file:\s*(.+)$', set_text)
     card_files = [project/i.strip() for i in includes] if includes else list(project.glob('card *'))
@@ -98,21 +98,23 @@ for project in sorted(ROOT.glob('*.mse-set')):
         if not display:
             continue
         query = NAME_MAP.get(display, display)
-        out = orig / f'{slug(query)}.jpg'
-        if out.exists():
-            continue
         try:
             data = fetch(query)
+            out = original_image_path(data)
+            if out.exists():
+                continue
             url = data['card_images'][0].get('image_url_cropped') or data['card_images'][0]['image_url']
             img = requests.get(url, timeout=45)
             img.raise_for_status()
+            out.parent.mkdir(parents=True, exist_ok=True)
             out.write_bytes(img.content)
-            print(f'DOWNLOADED | {project.name} | {display} -> {data["name"]}')
+            downloaded += 1
+            print(f'DOWNLOADED | {project.name} | {display} -> {out.relative_to(REPO_ROOT)}')
             time.sleep(0.1)
         except Exception as e:
             errors.append(f'{project.name} | {display} -> {query}: {e}')
             print('ERROR | ' + errors[-1])
-    print(f'{project.name}: original_images={len(list(orig.glob("*")))}')
+    print(f'{project.name}: downloaded={downloaded}')
 if errors:
     print('\nFAILED:')
     for e in errors:
