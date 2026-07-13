@@ -1768,19 +1768,25 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook Magician of Prophecy
 	casting cost: U
 	image:
 	super type:
-	card type: Créature
-	sub type: Magicien et Spellbook
+	card type: Creature
+	sub type: Wizard — Spellbook
 	rarity: common
-	rule text: Si vous avez lancé une carte Spellbook non-créature ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Book Affinity</b>
 
-		Si Spellbook Magician of Prophecy arrive sur le champ de bataille, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+		(1 - Déclenchable Hard) <b>On Enter</b> — Cherchez 1 “Spellbook”.
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 1
+
+			toughness: 1
+
+			card_code_text: 004/016 C
 	flavor text:
 	power: 1
 	toughness: 1
@@ -1794,19 +1800,25 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Justice of Prophecy
 	casting cost: U
 	image:
 	super type:
-	card type: Créature
-	sub type: Magicien et Spellbook
+	card type: Creature
+	sub type: Wizard — Spellbook
 	rarity: common
-	rule text: Si vous avez mis une carte Spellbook de votre bibliothèque dans votre main ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Book Affinity</b>
 
-		Si Justice of Prophecy arrive sur le champ de bataille, au début de votre prochaine étape de fin, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+		(1 - Déclenchable Hard) <b>On Enter</b> — Au début de votre prochaine étape de fin, cherchez 1 “Spellbook”.
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 3
+
+			toughness: 3
+
+			card_code_text: 002/016 C
 	flavor text:
 	power: 3
 	toughness: 3
@@ -1820,19 +1832,25 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: High Priestess of Prophecy
 	casting cost: 2W
 	image:
 	super type:
-	card type: Créature
-	sub type: Magicien et Spellbook
+	card type: Creature
+	sub type: Wizard — Spellbook
 	rarity: common
-	rule text: Vous pouvez révéler trois cartes Spellbook non-créature de votre main plutôt que de payer le coût de mana de ce sort.
+	rule text: <b>Book Affinity</b>
 
-		Exilez une carte Spellbook de votre main ou de votre cimetière : détruisez le permanent ciblé.
+		(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou GYD et ciblez 1 permanent ; détruisez-le.
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 5
+
+			toughness: 4
+
+			card_code_text: 001/016 C
 	flavor text:
 	power: 5
 	toughness: 4
@@ -1846,19 +1864,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Secrets
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) Cherchez 1 “Spellbook”.
 
-		Cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 012/016 C
 	flavor text:
 	power:
 	toughness:
@@ -1872,23 +1892,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Judgment
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) Jusqu’à la fin du tour, mettez 1 marqueur jugement sur cette carte <b>On Your Cast “Spellbook”</b>. Au début de votre étape de fin, cherchez jusqu’à X “Spellbook”, X étant le nombre de marqueurs jugement sur cette carte, puis vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook” MV X ou moins.
 
-		Jusqu'à la fin du tour, chaque fois que vous lancez une carte Spellbook, mettez un marqueur jugement sur Spellbook of Judgment.
+			flavor_text: <i-flavor></i-flavor>
 
-		Au début de votre étape de fin, cherchez dans votre bibliothèque jusqu'à X cartes Spellbook, révélez-les, mettez-les dans votre main, puis mélangez, X étant le nombre de marqueurs jugement sur Spellbook of Judgment.
-
-		Vous pouvez ensuite mettre sur le champ de bataille une carte de créature Spellbook avec une valeur de mana inférieure ou égale à X depuis votre bibliothèque.
+			card_code_text: 007/016 C
 	flavor text:
 	power:
 	toughness:
@@ -1902,23 +1920,27 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Fate
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :
 
-		Exilez jusqu'à trois cartes Spellbook de votre cimetière. Choisissez l'un :
+		• 1 — Retournez la créature ciblée face verso.
 
-		• Une carte : retournez la créature ciblée face verso.
-		• Deux cartes : renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
-		• Trois cartes : exilez un permanent (ce permanent n'est pas ciblé ; il est choisi lors de la résolution de ce sort).
+		• 2 — Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
+
+		• 3 — Exilez 1 permanent. Cet effet ne cible pas.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 006/016 C
 	flavor text:
 	power:
 	toughness:
@@ -1932,21 +1954,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Power
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) La créature “Spellbook” ciblée gagne +2/+2 jusqu’à la fin du tour. Si cette créature détruit 1 créature au combat ou inflige des blessures de combat à 1 adversaire ce tour-ci, cherchez 1 “Spellbook”.
 
-		La créature Spellbook ciblée gagne +2/+2 jusqu'à la fin du tour.
+			flavor_text: <i-flavor></i-flavor>
 
-		Si cette créature détruit une créature au combat ou inflige des blessures de combat à un adversaire ce tour-ci, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+			card_code_text: 011/016 C
 	flavor text:
 	power:
 	toughness:
@@ -1960,19 +1982,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Wisdom
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) La créature “Spellbook” ciblée n’est pas affectée par les effets des sorts et des permanents non-créature jusqu’à la fin du tour.
 
-		La créature Spellbook ciblée n'est pas affectée par les effets des sorts et des permanents non-créature jusqu'à la fin du tour.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 014/016 C
 	flavor text:
 	power:
 	toughness:
@@ -1986,19 +2010,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Eternity
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) Renvoyez dans votre main le “Spellbook” ciblé depuis votre zone d’exil.
 
-		Renvoyez dans votre main la carte Spellbook ciblée depuis votre zone d'exil.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 005/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2012,21 +2038,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of the Master
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre GYD. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
 
-		Révélez une autre carte Spellbook de votre main face visible.
+			flavor_text: <i-flavor></i-flavor>
 
-		Choisissez une carte Spellbook dans votre cimetière. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
+			card_code_text: 013/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2040,21 +2066,23 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Life
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		En tant que coût supplémentaire pour lancer ce sort, exilez 1 créature “Spellbook” de votre GYD et 1 autre “Spellbook” de votre main ou GYD.
 
-		En tant que coût supplémentaire pour lancer ce sort, exilez une carte de créature Spellbook de votre cimetière et une autre carte Spellbook de votre main ou de votre cimetière.
+		(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre GYD dont la MV est inférieure ou égale à celle de la créature exilée.
 
-		Renvoyez sur le champ de bataille une carte de créature Spellbook de votre cimetière avec une valeur de mana inférieure ou égale à celle de la créature exilée.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 009/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2068,21 +2096,23 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Knowledge
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		En tant que coût supplémentaire pour lancer ce sort, sacrifiez 1 créature “Spellbook” ou défaussez 1 “Spellbook”.
 
-		En tant que coût supplémentaire pour lancer ce sort, sacrifiez une créature Spellbook ou défaussez-vous d'une carte Spellbook.
+		(1 - Résolution) Piochez 2 cartes.
 
-		Piochez deux cartes.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 008/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2096,21 +2126,21 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook Library of the Crescent
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		(1 - Résolution) Si vous contrôlez 1 Wizard Creature MV 2+, cherchez 1 “Spellbook”. Sinon, révélez 3 “Spellbook” de votre Deck. 1 adversaire en choisit 1. Mettez-le dans votre main, puis mélangez les autres dans votre Deck.
 
-		Si vous contrôlez une créature Magicien avec une valeur de mana de 2 ou plus, cherchez une carte Spellbook dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+			flavor_text: <i-flavor></i-flavor>
 
-		Sinon, révélez trois cartes Spellbook de votre bibliothèque. Un adversaire en choisit une. Mettez cette carte dans votre main, puis mélangez les autres dans votre bibliothèque.
+			card_code_text: 003/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2124,21 +2154,23 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook of Miracles
 	casting cost: U
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Si vous contrôlez une créature Spellbook, vous pouvez lancer ce sort sans payer son coût de mana.
+	rule text: <b>Spell Affinity</b>
 
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre GYD un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
 
-		En tant que coût supplémentaire pour lancer ce sort, exilez un nombre de cartes Spellbook de votre cimetière dont le nombre est supérieur ou égal à la valeur de mana de la créature ciblée.
+		(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre GYD.
 
-		Renvoyez sur le champ de bataille la carte de créature Spellbook ciblée depuis votre cimetière.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 010/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2152,19 +2184,23 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Spellbook Star Hall
 	casting cost: U
 	image:
 	super type:
-	card type: Enchantement
+	card type: Enchantment
 	sub type:
 	rarity: common
-	rule text: Chaque fois que vous lancez une carte Spellbook, mettez un marqueur savoir sur Spellbook Star Hall.
+	rule text: (1 - Déclenchable) <b>On Your Cast “Spellbook”</b> — Mettez 1 marqueur savoir sur cette carte.
 
-		Les créatures Spellbook que vous contrôlez gagnent +1/+1 pour chaque groupe de cinq marqueurs savoir sur Spellbook Star Hall.
+		(2 - Passif) Les créatures “Spellbook” que vous contrôlez gagnent +1/+1 pour chaque groupe de 5 marqueurs savoir sur cette carte.
 
-		Si Spellbook Star Hall quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature Spellbook avec une valeur de mana inférieure ou égale au nombre de marqueurs savoir sur Spellbook Star Hall, la révéler, la mettre dans votre main, puis mélangez.
+		(3 - Déclenchable) Si cette carte quitte le terrain, vous pouvez chercher 1 créature “Spellbook” MV X ou moins, X étant le nombre de marqueurs savoir sur cette carte.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 015/016 C
 	flavor text:
 	power:
 	toughness:
@@ -2178,19 +2214,27 @@ card:
 	has styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: The Grand Spellbook Tower
 	casting cost: U
 	image:
 	super type:
-	card type: Enchantement
-	sub type: Terrain
+	card type: Enchantment
+	sub type: Land
 	rarity: common
-	rule text: Au début de votre entretien, vous pouvez mettre une carte Spellbook de votre cimetière au-dessous de votre bibliothèque. Si vous faites ainsi, piochez une carte.
+	rule text: (1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre GYD au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
 
-		Si The Grand Spellbook Tower quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature Spellbook, la mettre sur le champ de bataille, puis mélanger.
+		(2 - Déclenchable Soft) Si cette carte quitte le terrain, vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook”.
 
-		Vous ne pouvez activer chaque capacité qu'une seule fois par tour.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 016/016 C
+
+		version_control:
+
+			type: none
+
+		apprentice_code:
 	flavor text:
 	power:
 	toughness:

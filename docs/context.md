@@ -129,6 +129,7 @@ Les coûts, coûts alternatifs, coûts supplémentaires et conditions de lanceme
 
 - Les coûts supplémentaires d'un effet sont intégrés à la capacité qu'ils modifient, avant `;` ou `:` selon le templating.
 - Les coûts alternatifs de lancement sont écrits sur une ligne non numérotée avec le label français `Coût Alternatif -`.
+- Un mot-clé d’affinité propre à un archétype peut remplacer ce label lorsqu’il est explicitement documenté comme coût alternatif. Son nom est écrit en gras sur une ligne non numérotée avant les capacités ; le document de l’archétype définit sa condition, la substitution du coût, sa fréquence et les types de cartes concernés.
 - Les coûts alternatifs de lancement Xyz utilisent le label français spécifique `Xyz Coût Alternatif —`. Cette ligne remplace entièrement les matériaux normaux, utilise la créature indiquée comme matériel et réalise une invocation Xyz correcte. Le coût et le matériel peuvent être intégrés dans une même proposition avec `et utilisez`, par exemple `W, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez.` Finir par `Ses matériels se transfèrent.` si les matériels de la créature utilisée doivent être conservés.
 
 Exemples :
@@ -309,6 +310,8 @@ Exemple :
 
 Cette convention implique par défaut la recherche dans la bibliothèque, la révélation si nécessaire, la mise dans la main, puis le mélange.
 
+Pour tout effet et toute zone, lorsqu’un sélecteur est déjà restreint par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`. Écrire par exemple `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre GYD`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs qui restreignent les objets éligibles, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
+
 ## Magic Set Editor
 
 L'édition et le rendu final des cartes se font avec **Magic Set Editor (MSE)**.
@@ -423,7 +426,7 @@ Ce script sauvegarde le projet, génère des `mse_images/imageN.png` pour toutes
 ## Conventions de rédaction des types, recherches et zones
 
 - Toujours écrire `Ritual Creature`, jamais `créature Ritual` ni `Ritual créature`. Au pluriel, écrire `Ritual Creatures`.
-- Pour une recherche, écrire le type avant le nom d’archétype : `Cherchez 1 Ritual Creature “Nekroz”.` Pour une carte d’invocation non-créature, écrire `Cherchez 1 carte non-créature Ritual Summon “Nekroz”.` Si une race est requise, la placer avant le type : `Dragon Ritual Creature`.
+- Pour une recherche, écrire le type avant le nom d’archétype : `Cherchez 1 Ritual Creature “Nekroz”.` Pour une carte d’invocation non-créature, écrire `Cherchez 1 non-créature Ritual Summon “Nekroz”.` Si une race est requise, la placer avant le type : `Dragon Ritual Creature`.
 - Pour un coût de Ritual Summon fondé sur la valeur de mana, comparer explicitement les valeurs. La valeur par défaut est l’égalité ; une carte peut indiquer `supérieure ou égale` pour autoriser le surpaiement, comme Good & Evil.
 - Si plusieurs Ritual Creatures peuvent être mises en jeu, accorder au pluriel : `leur(s) coût(s) Ritual`.
 - Ne jamais énumérer les zones avec plusieurs possessifs. Écrire `depuis votre main ou terrain`, jamais `depuis votre main ou terrain`, `depuis votre main ou terrain` ni `depuis votre main ou terrain`.

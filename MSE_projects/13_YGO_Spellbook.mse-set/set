@@ -4,10 +4,10 @@ game_version: 2025-06-14
 stylesheet: sevenhalf
 stylesheet_version: 2024-05-30
 set_info:
-	title: Yu-Gi-Oh × Magic Cube — Spellbook
+	title: YGO x MTG -- Spellbook
 	description: Cartes personnalisées du cube Yu-Gi-Oh × Magic, générées depuis le projet Obsidian.
 	artist:
-	copyright: 
+	copyright:
 	set_code: YSB
 	set_language: FR
 	symbol:
@@ -20,6 +20,8 @@ styling:
 	magic-m15:
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 		overlay:
+	magic-sevenhalf:
+		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 include_file: card high priestess of prophecy
 include_file: card justice of prophecy
 include_file: card spellbook library of the crescent

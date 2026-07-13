@@ -5,21 +5,22 @@ card:
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-10 23:49:32
+	time_modified: 2026-07-14 00:18:30
 	name: Justice of Prophecy
 	casting_cost: U
-	image: mse_images/image2.png
+	image: image4.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
 	super_type: <word-list-type-en>Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Magicien</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en>Spellbook</word-list-class-en>
+	sub_type: <word-list-race-en>Wizard</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Spellbook</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		Si vous avez mis une carte “Spellbook” de votre bibliothèque dans votre main ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
-		Si Justice of Prophecy arrive sur le champ de bataille, au début de votre prochaine étape de fin, cherchez une carte “Spellbook”.
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+		<b>Book Affinity</b>
+		(1 - Déclenchable Hard) <b>On Enter</b> — Au début de votre prochaine étape de fin, cherchez 1 “Spellbook”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3
 	card_code_text: 002/016 C
+	card_code_text_2: 002/016 C
+	card_code_text_3: 002/016 C

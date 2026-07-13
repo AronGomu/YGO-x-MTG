@@ -82,6 +82,14 @@ Exemple :
 (2 - Déclenchable Hard) **On Send GYD** — Défaussez 1 carte et ciblez 1 créature contrôlée par un adversaire ; exilez-la.
 ```
 
+### Coûts alternatifs et mots-clés d’affinité
+
+Un coût alternatif est placé sur une ligne non numérotée avant les capacités. Le label général est `Coût Alternatif -`. Un mot-clé d’affinité propre à un archétype peut remplacer ce label lorsqu’il est explicitement défini comme coût alternatif : son nom est écrit en gras sur une ligne non numérotée et le document de l’archétype précise sa condition, la substitution du coût, sa fréquence et les types de cartes concernés.
+
+### Sélecteurs de cartes nommées
+
+Lorsqu’un effet sélectionne un ou plusieurs objets déjà restreints par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`, quelle que soit la zone ou l’action. Écrire `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre GYD`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs restrictifs, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
+
 ### Passif
 
 Effet statique toujours actif.

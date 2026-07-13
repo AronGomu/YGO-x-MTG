@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-10 23:49:32
+	time_modified: 2026-07-13 23:04:58
 	name: Spellbook Star Hall
 	casting_cost: U
 	image: mse_images/image15.png
@@ -13,11 +13,13 @@ card:
 	mainframe_image:
 	mainframe_image_2:
 	super_type: <word-list-type-en>Enchantment</word-list-type-en>
-	sub_type:
+	sub_type: <word-list-enchantment></word-list-enchantment>
 	rarity: common
 	rule_text:
-		Chaque fois que vous lancez une carte “Spellbook”, mettez un marqueur savoir sur Spellbook Star Hall.
-		Les créatures “Spellbook” que vous contrôlez gagnent +1/+1 pour chaque groupe de cinq marqueurs savoir sur Spellbook Star Hall.
-		Si Spellbook Star Hall quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature “Spellbook” avec une valeur de mana inférieure ou égale au nombre de marqueurs savoir sur Spellbook Star Hall, la révéler, la mettre dans votre main, puis mélangez.
+		(1 - Déclenchable) <b>On Your Cast “Spellbook”</b> — Mettez 1 marqueur savoir sur cette carte.
+		(2 - Passif) Les créatures “Spellbook” que vous contrôlez gagnent +1/+1 pour chaque groupe de 5 marqueurs savoir sur cette carte.
+		(3 - Déclenchable) Si cette carte quitte le terrain, vous pouvez chercher 1 créature “Spellbook” MV X ou moins, X étant le nombre de marqueurs savoir sur cette carte.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/016 C
+	card_code_text_2: 015/016 C
+	card_code_text_3: 015/016 C

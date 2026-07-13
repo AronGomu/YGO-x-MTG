@@ -1,5 +1,5 @@
 ---
-date: 2026-07-10
+date: 2026-07-13
 title: Archétype Spellbook
 tags:
   - project
@@ -13,57 +13,63 @@ tags:
 
 # Archétype **Spellbook**
 
+## Mots-clés d’affinité
+
+Les mots-clés d’affinité de cet archétype remplacent le label `Coût Alternatif —` et représentent chacun un coût alternatif de lancement. Ils sont écrits en gras sur une ligne non numérotée avant les capacités.
+
+**Book Affinity** s’applique aux Creatures “Spellbook” ou “Prophecy” : « Si vous avez lancé 1 “Spellbook” non-creature ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana. »
+
+**Spell Affinity** s’applique aux Sorceries “Spellbook” : « Si vous contrôlez 1 créature “Spellbook”, vous pouvez lancer ce sort sans payer son coût de mana. » Un joueur ne peut utiliser ce coût alternatif qu’une fois par tour.
+
 ## Créatures
 
 ### Spellbook Magician of Prophecy => Spellbook - Magician
 
 **{U}**
-Creature — Wizard et Spellbook
-**1/1**
 
-Si vous avez lancé une carte **Spellbook** non-créature ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
+Creature — Wizard Spellbook
 
-Si **Spellbook Magician of Prophecy** arrive sur le champ de bataille, cherchez une carte **Spellbook**.
+**1 / 1**
 
-Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+**Book Affinity**
+
+(1 - Déclenchable Hard) **On Enter** — Cherchez 1 “Spellbook”.
 
 ---
 
 ### Justice of Prophecy => Spellbook - Justice
 
 **{U}**
-Creature — Wizard et Spellbook
-**3/3**
 
-Si vous avez mis une carte **Spellbook** de votre bibliothèque dans votre main ce tour-ci, vous pouvez lancer ce sort sans payer son coût de mana.
+Creature — Wizard Spellbook
 
-Si **Justice of Prophecy** arrive sur le champ de bataille, au début de votre prochaine étape de fin, cherchez une carte **Spellbook**.
+**3 / 3**
 
-Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+**Book Affinity**
+
+(1 - Déclenchable Hard) **On Enter** — Au début de votre prochaine étape de fin, cherchez 1 “Spellbook”.
 
 ---
 
 ### High Priestess of Prophecy => Spellbook - High Priestess
 
 **{2}{W}**
-Creature — Wizard et Spellbook
-**5/4**
 
-Vous pouvez révéler trois cartes **Spellbook** non-créature de votre main plutôt que de payer le coût de mana de ce sort.
+Creature — Wizard Spellbook
 
-Exilez une carte **Spellbook** de votre main ou de votre cimetière : détruisez le permanent ciblé.
+**5 / 4**
 
-Vous ne pouvez activer cette capacité qu'une seule fois par tour.
+**Book Affinity**
+
+(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou GYD et ciblez 1 permanent ; détruisez-le.
 
 ---
 
-## Sorcerys
+## Sorceries
 
-> **Règle commune à toutes les cartes “Spellbook” non-créature :**
+> **Règle commune aux Sorceries “Spellbook” :**
 >
-> **Si vous contrôlez une créature “Spellbook”, vous pouvez lancer ce sort sans payer son coût de mana.**
->
-> **Vous ne pouvez activer cette capacité qu'une seule fois par tour.**
+> **Spell Affinity**
 
 ---
 
@@ -71,7 +77,11 @@ Vous ne pouvez activer cette capacité qu'une seule fois par tour.
 
 **{U}**
 
-Cherchez une carte **Spellbook**.
+Sorcery
+
+**Spell Affinity**
+
+(1 - Résolution) Cherchez 1 “Spellbook”.
 
 ---
 
@@ -79,11 +89,11 @@ Cherchez une carte **Spellbook**.
 
 **{U}**
 
-Jusqu'à la fin du tour, chaque fois que vous lancez une carte **Spellbook**, mettez un marqueur jugement sur **Spellbook of Judgment**.
+Sorcery
 
-Au début de votre étape de fin, cherchez jusqu'à X cartes **Spellbook**, X étant le nombre de marqueurs jugement sur **Spellbook of Judgment**.
+**Spell Affinity**
 
-Vous pouvez ensuite mettre sur le champ de bataille une carte de créature **Spellbook** avec une valeur de mana inférieure ou égale à X depuis votre bibliothèque.
+(1 - Résolution) Jusqu’à la fin du tour, mettez 1 marqueur jugement sur cette carte **On Your Cast “Spellbook”**. Au début de votre étape de fin, cherchez jusqu’à X “Spellbook”, X étant le nombre de marqueurs jugement sur cette carte, puis vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook” MV X ou moins.
 
 ---
 
@@ -91,11 +101,15 @@ Vous pouvez ensuite mettre sur le champ de bataille une carte de créature **Spe
 
 **{U}**
 
-Exilez jusqu'à trois cartes **Spellbook** de votre cimetière. Choisissez l'un :
+Sorcery
 
-* Une carte : retournez la créature ciblée face verso.
-* Deux cartes : renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
-* Trois cartes : exilez un permanent **(ce permanent n'est pas ciblé ; il est choisi lors de la résolution de ce sort).**
+**Spell Affinity**
+
+(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :
+
+- 1 — Retournez la créature ciblée face verso.
+- 2 — Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
+- 3 — Exilez 1 permanent. Cet effet ne cible pas.
 
 ---
 
@@ -103,9 +117,11 @@ Exilez jusqu'à trois cartes **Spellbook** de votre cimetière. Choisissez l'un 
 
 **{U}**
 
-La créature **Spellbook** ciblée gagne **+2/+2** jusqu'à la fin du tour.
+Sorcery
 
-Si cette créature détruit une créature au combat ou inflige des blessures de combat à un adversaire ce tour-ci, cherchez une carte **Spellbook**.
+**Spell Affinity**
+
+(1 - Résolution) La créature “Spellbook” ciblée gagne +2/+2 jusqu’à la fin du tour. Si cette créature détruit 1 créature au combat ou inflige des blessures de combat à 1 adversaire ce tour-ci, cherchez 1 “Spellbook”.
 
 ---
 
@@ -113,7 +129,11 @@ Si cette créature détruit une créature au combat ou inflige des blessures de 
 
 **{U}**
 
-La créature **Spellbook** ciblée n'est pas affectée par les effets des sorts et des permanents non-créature jusqu'à la fin du tour.
+Sorcery
+
+**Spell Affinity**
+
+(1 - Résolution) La créature “Spellbook” ciblée n’est pas affectée par les effets des sorts et des permanents non-créature jusqu’à la fin du tour.
 
 ---
 
@@ -121,7 +141,11 @@ La créature **Spellbook** ciblée n'est pas affectée par les effets des sorts 
 
 **{U}**
 
-Renvoyez dans votre main la carte **Spellbook** ciblée depuis votre zone d'exil.
+Sorcery
+
+**Spell Affinity**
+
+(1 - Résolution) Renvoyez dans votre main le “Spellbook” ciblé depuis votre zone d’exil.
 
 ---
 
@@ -129,9 +153,11 @@ Renvoyez dans votre main la carte **Spellbook** ciblée depuis votre zone d'exil
 
 **{U}**
 
-Révélez une autre carte **Spellbook** de votre main face visible.
+Sorcery
 
-Choisissez une carte **Spellbook** dans votre cimetière. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
+**Spell Affinity**
+
+(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre GYD. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
 
 ---
 
@@ -139,9 +165,13 @@ Choisissez une carte **Spellbook** dans votre cimetière. Copiez son texte. Vous
 
 **{U}**
 
-En tant que coût supplémentaire pour lancer ce sort, exilez une carte de créature **Spellbook** de votre cimetière et une autre carte **Spellbook** de votre main ou de votre cimetière.
+Sorcery
 
-Renvoyez sur le champ de bataille une carte de créature **Spellbook** de votre cimetière avec une valeur de mana inférieure ou égale à celle de la créature exilée.
+**Spell Affinity**
+
+En tant que coût supplémentaire pour lancer ce sort, exilez 1 créature “Spellbook” de votre GYD et 1 autre “Spellbook” de votre main ou GYD.
+
+(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre GYD dont la MV est inférieure ou égale à celle de la créature exilée.
 
 ---
 
@@ -149,9 +179,13 @@ Renvoyez sur le champ de bataille une carte de créature **Spellbook** de votre 
 
 **{U}**
 
-En tant que coût supplémentaire pour lancer ce sort, sacrifiez une créature **Spellbook** ou défaussez-vous d'une carte **Spellbook**.
+Sorcery
 
-Piochez deux cartes.
+**Spell Affinity**
+
+En tant que coût supplémentaire pour lancer ce sort, sacrifiez 1 créature “Spellbook” ou défaussez 1 “Spellbook”.
+
+(1 - Résolution) Piochez 2 cartes.
 
 ---
 
@@ -159,9 +193,11 @@ Piochez deux cartes.
 
 **{U}**
 
-Si vous contrôlez une créature **Magicien** avec une valeur de mana de **2 ou plus**, cherchez une carte **Spellbook**.
+Sorcery
 
-Sinon, révélez trois cartes **Spellbook** de votre bibliothèque. Un adversaire en choisit une. Mettez cette carte dans votre main, puis mélangez les autres dans votre bibliothèque.
+**Spell Affinity**
+
+(1 - Résolution) Si vous contrôlez 1 Wizard Creature MV 2+, cherchez 1 “Spellbook”. Sinon, révélez 3 “Spellbook” de votre Deck. 1 adversaire en choisit 1. Mettez-le dans votre main, puis mélangez les autres dans votre Deck.
 
 ---
 
@@ -169,9 +205,13 @@ Sinon, révélez trois cartes **Spellbook** de votre bibliothèque. Un adversair
 
 **{U}**
 
-En tant que coût supplémentaire pour lancer ce sort, exilez un nombre de cartes **Spellbook** de votre cimetière dont le nombre est supérieur ou égal à la valeur de mana de la créature ciblée.
+Sorcery
 
-Renvoyez sur le champ de bataille la carte de créature **Spellbook** ciblée depuis votre cimetière.
+**Spell Affinity**
+
+En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre GYD un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
+
+(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre GYD.
 
 ---
 
@@ -180,23 +220,25 @@ Renvoyez sur le champ de bataille la carte de créature **Spellbook** ciblée de
 ### Spellbook Star Hall => Spellbook - Star Hall
 
 **{U}**
+
 Enchantment
 
-Chaque fois que vous lancez une carte **Spellbook**, mettez un marqueur savoir sur **Spellbook Star Hall**.
+(1 - Déclenchable) **On Your Cast “Spellbook”** — Mettez 1 marqueur savoir sur cette carte.
 
-Les créatures **Spellbook** que vous contrôlez gagnent **+1/+1 pour chaque groupe de cinq marqueurs savoir** sur **Spellbook Star Hall**.
+(2 - Passif) Les créatures “Spellbook” que vous contrôlez gagnent +1/+1 pour chaque groupe de 5 marqueurs savoir sur cette carte.
 
-Si **Spellbook Star Hall** quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature **Spellbook** avec une valeur de mana inférieure ou égale au nombre de marqueurs savoir sur **Spellbook Star Hall**, la révéler, la mettre dans votre main, puis mélangez.
+(3 - Déclenchable) Si cette carte quitte le terrain, vous pouvez chercher 1 créature “Spellbook” MV X ou moins, X étant le nombre de marqueurs savoir sur cette carte.
 
 ---
 
 ### The Grand Spellbook Tower => Spellbook - The Grand Tower
 
 **{U}**
-Enchantment — Terrain
 
-Au début de votre entretien, vous pouvez mettre une carte **Spellbook** de votre cimetière au-dessous de votre bibliothèque. Si vous faites ainsi, piochez une carte.
+Enchantment — Land
 
-Si **The Grand Spellbook Tower** quitte le champ de bataille, vous pouvez chercher dans votre bibliothèque une carte de créature **Spellbook**, la mettre sur le champ de bataille, puis mélanger.
+(1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre GYD au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
 
-Vous ne pouvez activer chaque capacité qu'une seule fois par tour.
+(2 - Déclenchable Soft) Si cette carte quitte le terrain, vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook”.
+
+---

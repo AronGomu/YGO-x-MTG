@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-10 23:49:32
+	time_modified: 2026-07-13 23:04:58
 	name: Spellbook of Fate
 	casting_cost: U
 	image: mse_images/image6.png
@@ -13,14 +13,15 @@ card:
 	mainframe_image:
 	mainframe_image_2:
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
-	sub_type:
+	sub_type: <word-list-spell></word-list-spell>
 	rarity: common
 	rule_text:
-		Si vous contrôlez une créature “Spellbook”, vous pouvez lancer ce sort sans payer son coût de mana.
-		Vous ne pouvez activer cette capacité qu'une seule fois par tour.
-		Exilez jusqu'à trois cartes “Spellbook” de votre cimetière. Choisissez l'un :
-		• Une carte : retournez la créature ciblée face verso.
-		• Deux cartes : renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
-		• Trois cartes : exilez un permanent (ce permanent n'est pas ciblé ; il est choisi lors de la résolution de ce sort).
+		<b>Spell Affinity</b>
+		<margin:0:0:5>(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :</margin:0:0:5>
+		<li><bullet>• </bullet>1 — Retournez la créature ciblée face verso.
+		</li><li><bullet>• </bullet>2 — Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
+		</li><li><bullet>• </bullet>3 — Exilez 1 permanent. Cet effet ne cible pas.</li>
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 006/016 C
+	card_code_text_2: 006/016 C
+	card_code_text_3: 006/016 C
