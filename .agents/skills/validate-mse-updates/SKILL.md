@@ -27,7 +27,7 @@ Use `AskUserQuestion` only for direct card-mechanic classifications, missing val
 - Numbered archetype documents own their archetype-specific mechanics, exceptions, and card values, and mirror the corresponding MSE project.
 - Generator/update scripts under `.script/` must not be allowed to regenerate stale data over accepted MSE edits.
 - Local MSE paths come from the gitignored `.env` through `mse_config.py`; never hardcode an installation path.
-- Original source illustrations live under `assets/original_images/<archetype_ygo>/`, classified by actual Yu-Gi-Oh! archetype metadata; project-local `mse_images/` contains only imported/resized copies used by MSE cards.
+- Original source illustrations live under `original_images/<card_type>/`, using the same card-type folders and Windows-safe official card names as `original_cards/`; project-local `mse_images/` contains only imported/resized copies used by MSE cards.
 - Preserve unrelated working-tree changes. Do not reset, checkout, or regenerate an entire project over hand edits.
 
 ## Phase 0 — Establish scope and protect the hand edit
@@ -159,11 +159,7 @@ Do not delegate ordinary card or archetype changes. For every confirmed pattern 
 Skill(skill="update-rules", args="Pattern destroyer: <conflicting syntax>. Evidence: <difference ID, MSE card text, affected cards, current general rule>. normalize=false")
 ```
 
-`update-rules` writes a Markdown review file under `rule_reviews/` and stops. Record its path and stop this workflow without making partial rule-dependent edits. Ask the user to complete every decision in that file, set `Status: READY`, and resume with:
-
-```text
-Skill(skill="update-rules", args="review_file=<path> normalize=false")
-```
+`update-rules` writes a Markdown review file under `rule_reviews/` and stops. Record its path and stop this workflow without making partial rule-dependent edits. Tell the user to answer every question directly in that file, set `Status: READY`, save it, and say `continue`. In the same conversation, `update-rules` resumes the recorded path automatically; an explicit `review_file=<path>` is only needed when conversation context no longer identifies it.
 
 Continue only after the review file reaches `Status: APPLIED`. Rejected pattern changes return to Phase 3 if the provisional MSE syntax still contradicts the established general rule. Accepted archetype-only changes never edit `docs/context.md`.
 
@@ -211,7 +207,7 @@ Treat the reconciled MSE files as the final data source and update every consume
 - `.script/` generators, batch lists, update scripts, and fixtures that could restore old data;
 - tests and validation fixtures;
 - indexes or cross-references that list removed/renamed cards;
-- central source artwork under `assets/original_images/` and project-local resized files under `mse_images/` only when they are added, replaced, or proven orphaned.
+- central source artwork under `original_images/` and project-local resized files under `mse_images/` only when they are added, replaced, or proven orphaned.
 
 When updating a card document:
 
@@ -254,7 +250,7 @@ Delegate all pattern makers together when they belong to the same scope:
 Skill(skill="update-rules", args="Pattern makers: <candidate wording and evidence for each R ID>. normalize=false")
 ```
 
-The delegated skill writes a Markdown review file under `rule_reviews/` and pauses. Stop this workflow until the user completes every item, sets `Status: READY`, and asks to continue. Resume `update-rules` with that file; continue this workflow only after it reaches `Status: APPLIED`.
+The delegated skill writes one Markdown review file under `rule_reviews/` containing every rule question and possible new pattern, then pauses. Stop this workflow until the user answers directly in that file, sets `Status: READY`, saves it, and says `continue`. In the same conversation, resume the recorded review automatically; continue this workflow only after it reaches `Status: APPLIED`.
 
 Record accepted, revised, and rejected candidate IDs from the completed file. Do not add rejected candidates to project docs. After application, rescan the MSE data against the final rules; any new contradiction returns to Phase 3.
 

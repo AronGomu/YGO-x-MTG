@@ -24,8 +24,17 @@ class UpdateRulesSkillTest(unittest.TestCase):
         self.assertIn("## New possible rules — pattern makers", self.skill)
         self.assertIn("Status: AWAITING_USER", self.skill)
         self.assertIn("Status: READY", self.skill)
+        self.assertIn("- Question: <the exact ruling choice", self.skill)
+        self.assertIn("Answer directly in this Markdown file", self.skill)
         self.assertIn("Never use `AskUserQuestion`", self.skill)
         self.assertNotIn("Call `AskUserQuestion`", self.skill)
+
+    def test_continue_resumes_the_review_without_another_interview(self) -> None:
+        self.assertIn("## Phase 3 — Resume when the user says continue", self.skill)
+        self.assertIn("use the exact review path generated earlier", self.skill)
+        self.assertIn("Resume only when exactly one candidate exists", self.skill)
+        self.assertIn("apply every completed item immediately without asking", self.skill)
+        self.assertIn("Never poll or watch the review file", self.skill)
 
     def test_only_pattern_destroyers_and_makers_create_rule_items(self) -> None:
         self.assertIn("### Pattern destroyer", self.skill)
@@ -53,6 +62,7 @@ class UpdateRulesSkillTest(unittest.TestCase):
         self.assertIn("Status: READY", self.validate_skill)
         self.assertIn("Status: APPLIED", self.validate_skill)
         self.assertIn("accepted archetype/card change", self.validate_skill)
+        self.assertIn("say `continue`", self.validate_skill)
 
 
 if __name__ == "__main__":
