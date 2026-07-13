@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-12 11:30:00
+	time_modified: 2026-07-13 23:04:58
 	name: Maxx « C »
 	casting_cost: G
 	image: mse_images/image2.png
@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-race-en>Insect</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Activable Flash Hard) Défaussez Maxx « C » ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d'un adversaire ce tour-ci, jusqu'à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.
+		(1 - Activable Flash Hard) Défaussez cette carte ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d’un adversaire ce tour-ci, jusqu’à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

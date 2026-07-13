@@ -7,17 +7,18 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 PROJECT = REPO_ROOT / "MSE_projects" / "03_YGO_Non_Archetype_Creatures.mse-set"
 
 EXPECTED_RULES = {
-    "card ash blossom and joyous spring": "(1 - Activable Flash Hard) Défaussez Ash Blossom & Joyous Spring ; ciblez 1 sort ou capacité. Si son effet interagit avec le Deck (pioche, Mill, recherche, etc.), contrecarrez-le.",
-    "card d d crow": "(1 - Activable Flash) Défaussez D.D Crow ; exilez 1 carte ciblée dans 1 GY.",
-    "card effect veiler": "(1 - Activable Flash) Défaussez Effect Veiler ; ciblez 1 créature sur le terrain. Jusqu'à la fin du tour, elle perd toutes ses capacités et contrecarrez toutes ses capacités.",
-    "card maxx c": "(1 - Activable Flash Hard) Défaussez Maxx « C » ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d'un adversaire ce tour-ci, jusqu'à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.",
+    "card ash blossom and joyous spring": "(1 - Activable Flash Hard) Défaussez cette carte et ciblez 1 sort ou capacité ; si son effet interagit avec le Deck (pioche, <b>Mill</b>, recherche, etc.), contrecarrez-le.",
+    "card d d crow": "(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 GYD ; exilez-la.",
+    "card effect veiler": "(1 - Activable Flash) Défaussez cette carte et ciblez 1 créature sur le terrain ; jusqu’à la fin du tour, elle perd toutes ses capacités, et contrecarrez toutes ses capacités.",
+    "card maxx c": "(1 - Activable Flash Hard) Défaussez cette carte ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d’un adversaire ce tour-ci, jusqu’à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.",
 }
 
 EXPECTED_CARDS = {
     "card ash blossom and joyous spring": (
         "name: Ash Blossom & Joyous Spring",
         "casting_cost: R",
-        "sub_type: <word-list-class-en>Tuner</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-race-en>Zombie</word-list-race-en>",
+        "super_type: <word-list-type-en>Tuner Creature</word-list-type-en>",
+        "sub_type: <word-list-race-en>Zombie</word-list-race-en>",
         "(1 - Activable Flash Hard)",
         "power: 0",
         "toughness: 1",
@@ -35,7 +36,8 @@ EXPECTED_CARDS = {
     "card effect veiler": (
         "name: Effect Veiler",
         "casting_cost: W",
-        "sub_type: <word-list-class-en>Tuner</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-race-en>Wizard</word-list-race-en>",
+        "super_type: <word-list-type-en>Tuner Creature</word-list-type-en>",
+        "sub_type: <word-list-race-en>Wizard</word-list-race-en>",
         "(1 - Activable Flash)",
         "power: 0",
         "toughness: 1",
@@ -82,6 +84,9 @@ class NonArchetypeCreatureTests(unittest.TestCase):
         self.assertNotIn("Corbeau D.D.", card_doc)
         for rule_text in EXPECTED_RULES.values():
             self.assertIn(rule_text.replace("<b>", "**").replace("</b>", "**"), card_doc)
+        self.assertIn("\nTuner Creature — Zombie\n", card_doc)
+        self.assertIn("\nTuner Creature — Wizard\n", card_doc)
+        self.assertNotIn(" 1 GY ", card_doc)
 
         rules = (REPO_ROOT / "docs" / "02_rules_keywords_card_design.md").read_text(
             encoding="utf-8-sig"

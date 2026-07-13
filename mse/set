@@ -1096,7 +1096,7 @@ card:
 	has styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Maxx « C »
 	casting cost: G
 	image:
@@ -1104,7 +1104,15 @@ card:
 	card type: Creature
 	sub type: Insect
 	rarity: common
-	rule text: (1 - Activable Flash Hard) Défaussez Maxx « C » ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d'un adversaire ce tour-ci, jusqu'à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.
+	rule text: (1 - Activable Flash Hard) Défaussez cette carte ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d’un adversaire ce tour-ci, jusqu’à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 0
+
+			toughness: 1
+
+			card_code_text: 004/004 C
 	flavor text:
 	power: 0
 	toughness: 1
@@ -1118,15 +1126,23 @@ card:
 	has styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Ash Blossom & Joyous Spring
 	casting cost: R
 	image:
-	super type:
+	super type: Tuner
 	card type: Creature
-	sub type: Tuner Zombie
+	sub type: Zombie
 	rarity: common
-	rule text: (1 - Activable Flash Hard) Défaussez Ash Blossom & Joyous Spring ; ciblez 1 sort ou capacité. Si son effet interagit avec le Deck (pioche, Mill, recherche, etc.), contrecarrez-le.
+	rule text: (1 - Activable Flash Hard) Défaussez cette carte et ciblez 1 sort ou capacité ; si son effet interagit avec le Deck (pioche, <b>Mill</b>, recherche, etc.), contrecarrez-le.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 0
+
+			toughness: 1
+
+			card_code_text: 001/004 C
 	flavor text:
 	power: 0
 	toughness: 1
@@ -1140,15 +1156,23 @@ card:
 	has styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Effect Veiler
 	casting cost: W
 	image:
-	super type:
+	super type: Tuner
 	card type: Creature
-	sub type: Tuner Wizard
+	sub type: Wizard
 	rarity: common
-	rule text: (1 - Activable Flash) Défaussez Effect Veiler ; ciblez 1 créature sur le terrain. Jusqu'à la fin du tour, elle perd toutes ses capacités et contrecarrez toutes ses capacités.
+	rule text: (1 - Activable Flash) Défaussez cette carte et ciblez 1 créature sur le terrain ; jusqu’à la fin du tour, elle perd toutes ses capacités, et contrecarrez toutes ses capacités.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 0
+
+			toughness: 1
+
+			card_code_text: 003/004 C
 	flavor text:
 	power: 0
 	toughness: 1
@@ -1186,7 +1210,7 @@ card:
 	has styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: D.D Crow
 	casting cost: B
 	image:
@@ -1194,7 +1218,15 @@ card:
 	card type: Creature
 	sub type: Bird
 	rarity: common
-	rule text: (1 - Activable Flash) Défaussez D.D Crow ; exilez 1 carte ciblée dans 1 GY.
+	rule text: (1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 GYD ; exilez-la.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			power: 0
+
+			toughness: 1
+
+			card_code_text: 002/004 C
 	flavor text:
 	power: 0
 	toughness: 1
@@ -1232,15 +1264,19 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Raigeki
 	casting cost: 1W
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Détruisez toutes les créatures que vos adversaires contrôlent.
+	rule text: (1 - Résolution) Détruisez toutes les créatures que vos adversaires contrôlent.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 013/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1254,15 +1290,23 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Dark Hole
 	casting cost: 1B
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Détruisez toutes les créatures.
+	rule text: (1 - Résolution) Détruisez toutes les créatures.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 006/017 C
+
+			card_code_text_2: 006/017 C
+
+			card_code_text_3: 006/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1276,15 +1320,23 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Foolish Burial
 	casting cost: B
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Mettez une carte de créature de votre bibliothèque dans votre cimetière.
+	rule text: (1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 007/017 C
+
+			card_code_text_2: 007/017 C
+
+			card_code_text_3: 007/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1298,15 +1350,19 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Monster Reborn
 	casting cost: W
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Renvoyez sur le champ de bataille, sous votre contrôle, la carte de créature ciblée depuis un cimetière.
+	rule text: (1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 010/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1320,17 +1376,23 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Allure of Darkness
 	casting cost: B
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Piochez deux cartes.
+	rule text: (1 - Résolution) Piochez 2 cartes, puis exilez 1 carte noire de votre main. Si vous ne le faites pas, défaussez votre main.
 
-		Puis exilez une carte noire de votre main. Si vous ne le faites pas, défaussez votre main.
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 001/017 C
+
+			card_code_text_2: 001/017 C
+
+			card_code_text_3: 001/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1344,17 +1406,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Upstart Goblin
 	casting cost: B
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, un adversaire ciblé gagne 5 points de vie.
+	rule text: Coût Alternatif — Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, 1 adversaire ciblé gagne 5 points de vie.
 
-		Piochez une carte.
+		(1 - Résolution) Piochez 1 carte.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 017/017 C
+
+			card_code_text_2: 017/017 C
+
+			card_code_text_3: 017/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1368,19 +1438,23 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Instant Fusion
 	casting cost: R
 	image:
 	super type:
-	card type: Rituel
+	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: En tant que coût supplémentaire pour lancer ce sort, payez 4 points de vie.
+	rule text: (1 - Résolution) <b>Summon</b> 1 Fusion Creature MV 1 depuis votre Sideboard en ignorant les restrictions de Summon. Sacrifiez-la au début de la prochaine étape de fin.
 
-		Mettez sur le champ de bataille une carte de créature Fusion avec une valeur de mana de 1 depuis votre extra deck.
+			flavor_text: <i-flavor></i-flavor>
 
-		Sacrifiez cette créature au début de la prochaine étape de fin.
+			card_code_text: 008/017 C
+
+			card_code_text_2: 008/017 C
+
+			card_code_text_3: 008/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1394,15 +1468,19 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Book of Moon
 	casting cost: U
 	image:
 	super type:
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: Retournez la créature ciblée face verso. Son contrôleur ne peut pas la retourner face recto avant le début de son prochain tour. Cette restriction ne s'applique pas si un effet ou une règle de combat la retourne face recto.
+	rule text: (1 - Résolution) Retournez la créature ciblée face verso. Son contrôleur ne peut pas la retourner face recto avant le début de son prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat la retourne face recto.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 003/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1416,15 +1494,23 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Mystical Space Typhoon
 	casting cost: R
 	image:
 	super type:
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: Détruisez le permanent non-créature non-terrain ciblé.
+	rule text: (1 - Résolution) Détruisez le permanent non-créature non-terrain ciblé.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 011/017 C
+
+			card_code_text_2: 011/017 C
+
+			card_code_text_3: 011/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1438,17 +1524,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Twin Twisters
 	casting cost: R
 	image:
 	super type:
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-		Détruisez jusqu'à deux permanents non-créature non-terrain ciblés.
+		(1 - Résolution) Détruisez jusqu’à 2 permanents non-créature non-terrain ciblés.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 016/017 C
+
+			card_code_text_2: 016/017 C
+
+			card_code_text_3: 016/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1462,17 +1556,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Super Polymerization
 	casting cost: B/RB/R
 	image:
-	super type:
-	card type: Éphémère
+	super type: Fusion Summon
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-		Exilez une ou plusieurs créatures du champ de bataille. Si vous faites ainsi, mettez sur le champ de bataille une carte de créature Fusion de votre extra deck qui pourrait être lancée en utilisant uniquement ces créatures comme matériaux.
+		(1 - Résolution) Exilez 1 ou plusieurs créatures du terrain comme matériaux ; <b>Fusion Summon</b> 1 Fusion Creature dont les matériaux peuvent être entièrement satisfaits par les créatures ainsi exilées.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 014/017 C
+
+			card_code_text_2: 014/017 C
+
+			card_code_text_3: 014/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1486,17 +1588,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Phoenix Wing Wind Blast
 	casting cost: B
 	image:
 	super type: Trap
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-		Mettez le permanent ciblé au-dessus de la bibliothèque de son propriétaire.
+		(1 - Résolution) Mettez le permanent ciblé au-dessus du Deck de son propriétaire.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 012/017 C
+
+			card_code_text_2: 012/017 C
+
+			card_code_text_3: 012/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1510,17 +1620,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Karma Cut
 	casting cost: B
 	image:
 	super type: Trap
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez-vous d'une carte.
+	rule text: En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-		Exilez la créature ciblée.
+		(1 - Résolution) Exilez la créature ciblée.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 009/017 C
+
+			card_code_text_2: 009/017 C
+
+			card_code_text_3: 009/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1534,15 +1652,19 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Compulsory Evacuation Device
 	casting cost: U
 	image:
 	super type: Trap
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: Renvoyez le permanent ciblé dans la main de son propriétaire.
+	rule text: (1 - Résolution) Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 005/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1556,17 +1678,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Breakthrough Skill
 	casting cost: R
 	image:
 	super type: Trap
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: La créature ciblée perd toutes ses capacités jusqu'à la fin du tour.
+	rule text: (1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
 
-		Vous pouvez lancer cette carte depuis votre cimetière. Si vous faites ainsi, exilez-la lorsqu'elle quitte la pile.
+		(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 004/017 C
+
+			card_code_text_2: 004/017 C
+
+			card_code_text_3: 004/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1580,17 +1710,25 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Torrential Tribute
 	casting cost: R
 	image:
 	super type: Trap
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: Lancez ce sort uniquement si une créature est arrivée sur le champ de bataille ce tour-ci.
+	rule text: Vous ne pouvez lancer ce sort que si 1 créature est arrivée sur le terrain ce tour-ci.
 
-		Détruisez toutes les créatures.
+		(1 - Résolution) Détruisez toutes les créatures.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 015/017 C
+
+			card_code_text_2: 015/017 C
+
+			card_code_text_3: 015/017 C
 	flavor text:
 	power:
 	toughness:
@@ -1604,15 +1742,19 @@ card:
 	has styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time created: 1783717789
-	time modified: 1783717789
+	time modified: 1783976819
 	name: Book of Eclipse
 	casting cost: U
 	image:
 	super type:
-	card type: Éphémère
+	card type: Instant
 	sub type:
 	rarity: common
-	rule text: Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas les retourner face recto avant le début de leur prochain tour. Cette restriction ne s'applique pas si un effet ou une règle de combat les retourne face recto.
+	rule text: (1 - Résolution) Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas les retourner face recto avant le début de leur prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat les retourne face recto.
+
+			flavor_text: <i-flavor></i-flavor>
+
+			card_code_text: 002/017 C
 	flavor text:
 	power:
 	toughness:

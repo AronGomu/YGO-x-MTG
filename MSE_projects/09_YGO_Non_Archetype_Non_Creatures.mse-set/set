@@ -7,7 +7,7 @@ set_info:
 	title: YGO x MTG -- Non-archetype Non-creatures
 	description: Cartes personnalisées du cube Yu-Gi-Oh × Magic, générées depuis le projet Obsidian.
 	artist:
-	copyright: 
+	copyright:
 	set_code: YNN
 	set_language: FR
 	symbol:
@@ -20,6 +20,8 @@ styling:
 	magic-m15:
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 		overlay:
+	magic-sevenhalf:
+		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 include_file: card allure of darkness
 include_file: card book of eclipse
 include_file: card book of moon

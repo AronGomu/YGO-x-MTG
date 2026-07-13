@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-12 15:01:54
+	time_modified: 2026-07-13 23:04:58
 	name: Breakthrough Skill
 	casting_cost: R
 	image: mse_images/image22.png
@@ -20,3 +20,5 @@ card:
 		(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 004/017 C
+	card_code_text_2: 004/017 C
+	card_code_text_3: 004/017 C

@@ -22,21 +22,21 @@ EXPECTED_RULES = {
         "(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD.",
     ),
     "card compulsory evacuation device": (
-        "(1 - Résolution) Renvoyez le permanent ciblé dans la main de son propriétaire.",
+        "(1 - Résolution) Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.",
     ),
     "card dark hole": ("(1 - Résolution) Détruisez toutes les créatures.",),
     "card foolish burial": (
-        "(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GY.",
+        "(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.",
     ),
     "card instant fusion": (
-        "(1 - Résolution) Mettez en jeu 1 Fusion Creature MV 1 depuis votre Sideboard.",
+        "(1 - Résolution) <b>Summon</b> 1 Fusion Creature MV 1 depuis votre Sideboard en ignorant les restrictions de Summon.",
     ),
     "card karma cut": (
         "En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.",
         "(1 - Résolution) Exilez la créature ciblée.",
     ),
     "card monster reborn": (
-        "(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis un GY.",
+        "(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.",
     ),
     "card mystical space typhoon": (
         "(1 - Résolution) Détruisez le permanent non-créature non-terrain ciblé.",
@@ -50,7 +50,7 @@ EXPECTED_RULES = {
     ),
     "card super polymerization": (
         "En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.",
-        "(1 - Résolution) Exilez 1 ou plusieurs créatures du terrain comme matériaux Fusion",
+        "(1 - Résolution) Exilez 1 ou plusieurs créatures du terrain comme matériaux ; <b>Fusion Summon</b>",
     ),
     "card torrential tribute": (
         "Vous ne pouvez lancer ce sort que si 1 créature est arrivée sur le terrain ce tour-ci.",
@@ -89,6 +89,28 @@ class NonArchetypeNonCreatureTests(unittest.TestCase):
                 rule_text = text.split("\trule_text:\n", 1)[1].split("\tflavor_text:", 1)[0]
                 for stale_term in stale_terms:
                     self.assertNotIn(stale_term, rule_text)
+                self.assertNotIn("error-spelling", rule_text)
+                self.assertRegex(text, r"(?m)^\tsub_type:\s*$")
+
+    def test_fusion_actions_use_current_types_and_keywords(self) -> None:
+        instant_fusion = (PROJECT / "card instant fusion").read_text(
+            encoding="utf-8-sig"
+        )
+        self.assertIn(
+            "super_type: <word-list-type-en>Sorcery</word-list-type-en>",
+            instant_fusion,
+        )
+        self.assertIn("<b>Summon</b>", instant_fusion)
+        self.assertIn("en ignorant les restrictions de Summon", instant_fusion)
+
+        super_polymerization = (PROJECT / "card super polymerization").read_text(
+            encoding="utf-8-sig"
+        )
+        self.assertIn(
+            "super_type: <word-list-type-en>Fusion Summon Instant</word-list-type-en>",
+            super_polymerization,
+        )
+        self.assertIn("<b>Fusion Summon</b>", super_polymerization)
 
     def test_docs_mirror_the_updated_mse_rules(self) -> None:
         doc = DOC.read_text(encoding="utf-8-sig")

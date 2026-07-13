@@ -5,18 +5,18 @@ card:
 	has_styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-12 11:30:00
+	time_modified: 2026-07-13 23:04:58
 	name: Ash Blossom & Joyous Spring
 	casting_cost: R
 	image: mse_images/image3.png
 	image_2:
 	mainframe_image:
 	mainframe_image_2:
-	super_type: <word-list-type-en>Creature</word-list-type-en>
-	sub_type: <word-list-class-en>Tuner</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-race-en>Zombie</word-list-race-en>
+	super_type: <word-list-type-en>Tuner Creature</word-list-type-en>
+	sub_type: <word-list-race-en>Zombie</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Activable Flash Hard) Défaussez Ash Blossom & Joyous Spring ; ciblez 1 sort ou capacité. Si son effet interagit avec le Deck (pioche, Mill, recherche, etc.), contrecarrez-le.
+		(1 - Activable Flash Hard) Défaussez cette carte et ciblez 1 sort ou capacité ; si son effet interagit avec le Deck (pioche, <b>Mill</b>, recherche, etc.), contrecarrez-le.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

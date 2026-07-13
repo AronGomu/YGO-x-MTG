@@ -1,5 +1,5 @@
 ﻿from pathlib import Path
-import re, shutil, unicodedata
+import re, unicodedata
 from datetime import datetime
 
 repo = Path(__file__).resolve().parents[1]
@@ -15,10 +15,13 @@ TYPE_MAP = {
 }
 RARITY_CODE = {'common': 'C', 'uncommon': 'U', 'rare': 'R', 'mythic rare': 'M'}
 PROJECTS = {
-    # Shaddoll is intentionally excluded: its checked-in MSE save is the source of truth.
-    '12_archetype_necroz.md': ('YGO_Necroz.mse-set', 'YGO x MTG -- Necroz', 'YNK'),
-    '09_non_archetype_non_creature.md': ('YGO_Non_Archetype.mse-set', 'YGO x MTG -- Non-archetype', 'YUT'),
-    '13_archetype_spellbook.md': ('YGO_Spellbook.mse-set', 'YGO x MTG -- Spellbook', 'YSB'),
+    # Shaddoll and Necroz are intentionally excluded: their checked-in MSE saves are the source of truth.
+    '09_non_archetype_non_creature.md': (
+        '09_YGO_Non_Archetype_Non_Creatures.mse-set',
+        'YGO x MTG -- Non-archetype Non-creatures',
+        'YNN',
+    ),
+    'docs/13_archetype_spellbook.md': ('13_YGO_Spellbook.mse-set', 'YGO x MTG -- Spellbook', 'YSB'),
 }
 
 def parse_blocks(text):
@@ -58,7 +61,24 @@ def rich_subtype(sub_type):
     rest = ''.join(f'<soft><atom-sep> </atom-sep></soft><word-list-class-en>{p}</word-list-class-en>' for p in parts[1:])
     return first + rest
 
-KEYWORDS = ['Malédiction abyssale, Descente', 'Descente', 'On Send GY', 'On Send GY', 'Flip', 'Corruption', 'Fusion', 'Xyz 2', 'Xyz', 'Synchro', 'Rituel']
+KEYWORDS = [
+    'Book Affinity',
+    'Spell Affinity',
+    'Malédiction abyssale, Descente',
+    'Descente',
+    'On Send GYD by Effect',
+    'On Send GYD',
+    'On Enter',
+    'On Your Cast',
+    'Flip',
+    'Corruption',
+    'Fusion Summon',
+    'Fusion',
+    'Xyz 2',
+    'Xyz',
+    'Synchro',
+    'Rituel',
+]
 
 def bold_keywords(line):
     for keyword in KEYWORDS:
@@ -83,10 +103,19 @@ def emit_card_file(project, card, idx, total, source_project_exists):
     filename = include_name(name)
     card_path = project / filename
 
+    existing = (
+        card_path.read_text(encoding='utf-8-sig', errors='replace')
+        if card_path.exists()
+        else ''
+    )
+
+    def existing_field(key):
+        match = re.search(rf'(?m)^\t{re.escape(key)}:\s*(.*)$', existing)
+        return match.group(1) if match else ''
+
     # Keep manual edits to Scarm's rules text; it was corrected directly in MSE by the user.
     existing_rule_text = None
-    if name == 'Scarm, Burning Abyss' and card_path.exists():
-        existing = card_path.read_text(encoding='utf-8-sig', errors='replace')
+    if name == 'Scarm, Burning Abyss' and existing:
         m = re.search(r'(?ms)^\trule_text:\s*\n((?:\t\t.*\n?)*)', existing)
         if m:
             existing_rule_text = m.group(1).rstrip('\n')
@@ -129,10 +158,10 @@ def emit_card_file(project, card, idx, total, source_project_exists):
         f'\ttime_modified: {now}',
         f'\tname: {name}',
         f"\tcasting_cost: {card.get('casting cost','')}",
-        '\timage: ',
-        '\timage_2: ',
-        '\tmainframe_image: ',
-        '\tmainframe_image_2: ',
+        f"\timage: {existing_field('image')}",
+        f"\timage_2: {existing_field('image_2')}",
+        f"\tmainframe_image: {existing_field('mainframe_image')}",
+        f"\tmainframe_image_2: {existing_field('mainframe_image_2')}",
         f'\tsuper_type: {rich_type(super_type)}',
         f'\tsub_type: {rich_subtype(sub_type)}',
         f'\trarity: {rarity}',
@@ -155,13 +184,11 @@ def emit_project(cards, dirname, title, code):
     project = out_root / dirname
     existed = project.exists()
     project.mkdir(parents=True, exist_ok=True)
-    for child in project.iterdir():
-        if child.is_file() and child.name != 'card scarm burning abyss':
-            child.unlink()
-        elif child.is_dir():
-            shutil.rmtree(child)
 
     include_files = [emit_card_file(project, c, i, len(cards), existed) for i, c in enumerate(cards, 1)]
+    for child in project.glob('card *'):
+        if child.name not in include_files:
+            child.unlink()
     lines = [
         '\ufeffmse_version: 2.0.2',
         'game: magic',
@@ -200,5 +227,18 @@ for c in cards:
         by_source[m.group(1)].append(c)
 
 for src, spec in PROJECTS.items():
-    project = emit_project(by_source[src], *spec)
-    print(f'{project}: {len(by_source[src])} cards')
+    document = repo / src if src.startswith('docs/') else repo / 'docs' / src
+    documented_names = {
+        name.strip()
+        for heading in re.findall(
+            r'(?m)^#{2,4}\s+(.+?)\s*$',
+            document.read_text(encoding='utf-8-sig'),
+        )
+        for name in heading.split('=>')
+    }
+    cards_for_project = sorted(
+        (card for card in by_source[src] if card.get('name', '') in documented_names),
+        key=lambda card: card.get('name', '').casefold(),
+    )
+    project = emit_project(cards_for_project, *spec)
+    print(f'{project}: {len(cards_for_project)} cards')

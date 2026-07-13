@@ -1,5 +1,5 @@
 ---
-date: 2026-07-11
+date: 2026-07-13
 title: 09 - Non-archetype Non-creature
 tags:
   - utility-cards
@@ -38,7 +38,7 @@ Sorcery
 
 Sorcery
 
-(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GY.
+(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.
 
 ---
 
@@ -46,9 +46,9 @@ Sorcery
 
 **{R}**
 
-Sorcery — Invocation Fusion
+Sorcery
 
-(1 - Résolution) Mettez en jeu 1 Fusion Creature MV 1 depuis votre Sideboard. Sacrifiez-la au début de la prochaine étape de fin.
+(1 - Résolution) **Summon** 1 Fusion Creature MV 1 depuis votre Sideboard en ignorant les restrictions de Summon. Sacrifiez-la au début de la prochaine étape de fin.
 
 ---
 
@@ -58,7 +58,7 @@ Sorcery — Invocation Fusion
 
 Sorcery
 
-(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis un GY.
+(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.
 
 ---
 
@@ -124,7 +124,7 @@ Trap Instant
 
 Trap Instant
 
-(1 - Résolution) Renvoyez le permanent ciblé dans la main de son propriétaire.
+(1 - Résolution) Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
 
 ---
 
@@ -166,11 +166,11 @@ En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
 **{B/R}{B/R}**
 
-Instant — Invocation Fusion
+Fusion Summon Instant
 
 En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
-(1 - Résolution) Exilez 1 ou plusieurs créatures du terrain comme matériaux Fusion ; mettez en jeu depuis votre Sideboard 1 Fusion Creature dont les matériaux peuvent être entièrement satisfaits par les créatures ainsi exilées.
+(1 - Résolution) Exilez 1 ou plusieurs créatures du terrain comme matériaux ; **Fusion Summon** 1 Fusion Creature dont les matériaux peuvent être entièrement satisfaits par les créatures ainsi exilées.
 
 ---
 
@@ -195,3 +195,5 @@ Instant
 En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
 
 (1 - Résolution) Détruisez jusqu’à 2 permanents non-créature non-terrain ciblés.
+
+---
