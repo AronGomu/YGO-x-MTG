@@ -61,10 +61,9 @@ class LinkCardContentTests(unittest.TestCase):
         self.assertTrue(
             (
                 REPO_ROOT
-                / "assets"
                 / "original_images"
-                / "burning_abyss"
-                / "cherubini_ebon_angel_of_the_burning_abyss.jpg"
+                / "Link"
+                / "Cherubini, Ebon Angel of the Burning Abyss.jpg"
             ).is_file()
         )
         batch_script = (REPO_ROOT / ".script" / "add_staples_batch.py").read_text(

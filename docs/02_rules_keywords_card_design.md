@@ -240,9 +240,9 @@ Dans MSE, ce choix se met au niveau du fichier `card ...` avec les champs `style
 
 ## Images MSE
 
-Toutes les illustrations sources sont centralisées sous `assets/original_images/<archetype_ygo>/`, selon leur archétype Yu-Gi-Oh! réel. Les cartes sans archétype vont dans `assets/original_images/non_archetype/`; le classement des documents et projets du cube ne doit pas influencer ce rangement.
+Toutes les illustrations sources sont centralisées sous `original_images/<type_de_carte>/`, avec les mêmes catégories que `original_cards/` (`Effect Monster`, `Normal Monster`, `Ritual`, `Fusion`, `Synchro`, `Xyz`, `Link`, `Spell`, `Trap`). Chaque JPG porte le nom anglais officiel de la carte, rendu compatible avec Windows selon la même convention que le fichier Markdown correspondant (`:` devient ` -`, `"` devient `'`, les slashs deviennent ` - `) ; seule l’extension diffère. Une illustration alternative ajoute ` - variant N` après le nom de la carte.
 
-Chaque projet MSE conserve ses copies importées et redimensionnées dans le projet. Préférer `mse_images/imageN.png` pour les nouveaux imports, mais préserver les chemins racine `imageN.png` ou JPEG existants lorsqu’ils résolvent et passent la sauvegarde/export. Ne jamais pointer directement vers les JPG de `assets/original_images/`. Après toute modification validée, régénérer `render/`, utiliser les noms `name:` exacts et supprimer les rendus obsolètes.
+Chaque projet MSE conserve ses copies importées et redimensionnées dans le projet. Préférer `mse_images/imageN.png` pour les nouveaux imports, mais préserver les chemins racine `imageN.png` ou JPEG existants lorsqu’ils résolvent et passent la sauvegarde/export. Ne jamais pointer directement vers les JPG de `original_images/`. Après toute modification validée, régénérer `render/`, utiliser les noms `name:` exacts et supprimer les rendus obsolètes.
 
 ```powershell
 python .script/fix_mse_project_images.py --backup "CHEMIN\Projet.mse-set"

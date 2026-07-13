@@ -237,7 +237,7 @@ After all conflict decisions are applied, the reconciled normalized record becom
    - prefer a user-supplied local image path or URL if included;
    - otherwise use YGOPRODeck only to discover cropped artwork by card name;
    - prefer `card_images[0].image_url_cropped`, falling back to the full image;
-   - store the source illustration under `assets/original_images/<archetype_ygo>/<safe_slug>.jpg`, classified by its actual Yu-Gi-Oh! archetype metadata rather than the cube document/MSE project, or under `non_archetype/` when it has no archetype;
+   - store the source illustration under `original_images/<card_type>/<official_card_name>.jpg`, using the same card-type folder and Windows-safe official-name convention as the matching `original_cards/<card_type>/<official_card_name>.md` record;
    - create the resized/imported copy under the target project's `mse_images/` folder and point the MSE card only to that copy;
    - never overwrite another card's image number.
 6. If artwork cannot be resolved unambiguously, keep the new card work pending and ask the user rather than inserting a broken image reference.

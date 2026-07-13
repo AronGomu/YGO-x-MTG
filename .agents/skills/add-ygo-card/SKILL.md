@@ -51,7 +51,7 @@ Convert the persisted official card record into concise, cube-playable French Ma
 
 ## Artwork
 
-Use YGOPRODeck only for artwork discovery. Prefer `card_images[0].image_url_cropped`; use the full card image only if cropped artwork is unavailable. Store the source illustration under `assets/original_images/<archetype_ygo>/<safe_slug>.jpg`, using the card's actual Yu-Gi-Oh! archetype metadata rather than the cube document or MSE project grouping; use `non_archetype` when no Yu-Gi-Oh! archetype exists. Create a separate resized/imported copy under the target project's `mse_images/` folder and point the MSE card only to that project-local copy.
+Use YGOPRODeck only for artwork discovery. Prefer `card_images[0].image_url_cropped`; use the full card image only if cropped artwork is unavailable. Store the source illustration under `original_images/<card_type>/<official_card_name>.jpg`, using the same card-type folder and Windows-safe official-name convention as `original_cards/<card_type>/<official_card_name>.md`. Create a separate resized/imported copy under the target project's `mse_images/` folder and point the MSE card only to that project-local copy.
 
 ## Editing
 

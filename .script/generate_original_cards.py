@@ -16,6 +16,8 @@ from urllib.parse import quote
 import requests
 from lxml import html
 
+from original_image_assets import card_filename
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 OUTPUT = ROOT / "original_cards"
@@ -177,10 +179,7 @@ def category(card: dict) -> tuple[str, str]:
 
 
 def filename(name: str) -> str:
-    for old, new in {':': " -", '"': "'", '/': " - ", '\\': " - ", '?': "", '*': "",
-                     '<': "", '>': "", '|': "-"}.items():
-        name = name.replace(old, new)
-    return re.sub(r"\s+", " ", name).strip().rstrip(".") + ".md"
+    return card_filename(name, ".md")
 
 
 def render(card: dict, card_type: str) -> str:

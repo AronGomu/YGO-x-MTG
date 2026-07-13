@@ -8,10 +8,11 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MSE_PROJECTS = REPO_ROOT / "MSE_projects"
-ORIGINAL_IMAGES = REPO_ROOT / "assets" / "original_images"
+ORIGINAL_CARDS = REPO_ROOT / "original_cards"
+ORIGINAL_IMAGES = REPO_ROOT / "original_images"
 sys.path.insert(0, str(REPO_ROOT / ".script"))
 
-from original_image_assets import archetype_folder, original_image_path
+from original_image_assets import card_filename, card_type_folder, original_image_path
 
 
 class OriginalImageAssetTests(unittest.TestCase):
@@ -32,31 +33,44 @@ class OriginalImageAssetTests(unittest.TestCase):
                 self.assertEqual(path.parent.parent, ORIGINAL_IMAGES)
                 self.assertEqual(path.suffix.lower(), ".jpg")
 
-    def test_actual_ygo_archetypes_override_cube_grouping(self) -> None:
-        expected = (
-            ORIGINAL_IMAGES
-            / "burning_abyss"
-            / "beatrice_lady_of_the_eternal.jpg"
-        )
-        self.assertTrue(expected.is_file())
+    def test_library_is_grouped_by_card_type_and_official_name(self) -> None:
         self.assertTrue(
-            (ORIGINAL_IMAGES / "d_d" / "d_d_crow.jpg").is_file()
+            (ORIGINAL_IMAGES / "Xyz" / "Beatrice, Lady of the Eternal.jpg").is_file()
         )
         self.assertTrue(
-            (ORIGINAL_IMAGES / "non_archetype" / "preparation_of_rites.jpg").is_file()
+            (ORIGINAL_IMAGES / "Effect Monster" / "D.D. Crow.jpg").is_file()
         )
         self.assertTrue(
-            (ORIGINAL_IMAGES / "shaddoll" / "el_shaddoll_winda_variant_2.jpg").is_file()
+            (ORIGINAL_IMAGES / "Spell" / "Preparation of Rites.jpg").is_file()
+        )
+        self.assertTrue(
+            (ORIGINAL_IMAGES / "Fusion" / "El Shaddoll Winda - variant 2.jpg").is_file()
         )
 
-    def test_path_helper_uses_api_archetype_metadata(self) -> None:
-        card = {"name": "D.D. Crow", "archetype": "D.D."}
-        self.assertEqual(archetype_folder(card), "d_d")
+    def test_original_card_records_use_official_name_filenames(self) -> None:
+        records = sorted(ORIGINAL_CARDS.rglob("*.md"))
+        self.assertTrue(records)
+        for path in records:
+            with self.subTest(path=path):
+                heading = re.search(
+                    r"(?m)^# (.+)$", path.read_text(encoding="utf-8-sig")
+                )
+                self.assertIsNotNone(heading)
+                self.assertEqual(path.parent.parent, ORIGINAL_CARDS)
+                self.assertEqual(path.name, card_filename(heading.group(1), ".md"))
+
+    def test_path_helper_uses_api_card_type_metadata(self) -> None:
+        card = {"name": "D.D. Crow", "type": "Effect Monster"}
+        self.assertEqual(card_type_folder(card), "Effect Monster")
         self.assertEqual(
             original_image_path(card),
-            ORIGINAL_IMAGES / "d_d" / "d_d_crow.jpg",
+            ORIGINAL_IMAGES / "Effect Monster" / "D.D. Crow.jpg",
         )
-        self.assertEqual(archetype_folder({"name": "Ash Blossom"}), "non_archetype")
+        self.assertEqual(
+            original_image_path({"name": "Number 39: Utopia", "type": "XYZ Monster"}),
+            ORIGINAL_IMAGES / "Xyz" / "Number 39 - Utopia.jpg",
+        )
+        self.assertEqual(card_filename('Maxx "C"', ".md"), "Maxx 'C'.md")
 
     def test_mse_cards_only_reference_project_local_images(self) -> None:
         for project in MSE_PROJECTS.glob("*.mse-set"):

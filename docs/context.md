@@ -395,19 +395,19 @@ Après chaque création ou modification d'un projet `.mse-set`, vérifier que le
 
 Convention d'images MSE du cube :
 
-- `assets/original_images/<archetype_ygo>/` contient toutes les illustrations sources haute résolution téléchargées depuis YGOPRODeck (`image_url_cropped`). Le classement suit l'archétype réel indiqué par les données Yu-Gi-Oh!, jamais le document ou le projet MSE du cube. Une carte sans archétype Yu-Gi-Oh! va dans `assets/original_images/non_archetype/`.
+- `original_images/<type_de_carte>/` contient toutes les illustrations sources haute résolution téléchargées depuis YGOPRODeck (`image_url_cropped`). Les dossiers reprennent exactement les catégories de `original_cards/` : `Effect Monster`, `Normal Monster`, `Ritual`, `Fusion`, `Synchro`, `Xyz`, `Link`, `Spell` et `Trap`. Chaque JPG porte le nom anglais officiel de la carte selon la même convention Windows que son fichier Markdown (`:` devient ` -`, `"` devient `'`, les slashs deviennent ` - `) ; une illustration alternative ajoute ` - variant N`.
 - Aucun projet `.mse-set` ne doit contenir de dossier source `original_images/` ou `images/`. Ces sources centralisées servent à recadrer ou régénérer les images MSE.
 - `mse_images/` reste propre à chaque projet `.mse-set` et contient de préférence les nouveaux imports adaptés : PNG recadrés/redimensionnés, typiquement `316x231`, nommés `imageN.png` ou avec un slug stable. Les chemins racine `imageN.png` et les JPEG nommés existants restent valides lorsqu’ils résolvent dans le projet et passent la sauvegarde/export.
 - `render/` contient les images finales rendues/exportées par MSE pour un projet `.mse-set` ; c'est le dossier de sortie canonique des rendus de cartes.
 - Après toute modification validée d’une carte MSE, régénérer `render/` depuis le projet final. Chaque image doit être renommée avec le nom exact défini dans `name:`, par exemple `Burning Abyss - Dante.png`, et non rester au format générique `card.png`, `card.1.png`, etc. Supprimer les anciens rendus dont le nom ne correspond plus.
-- Toute référence `image:` non vide doit résoudre dans le projet. Préférer `mse_images/imageN.png` pour les nouveaux imports ; préserver les chemins racine ou JPEG existants lorsqu’ils se sauvegardent et s’exportent correctement. Ne jamais pointer directement vers `assets/original_images/...`.
+- Toute référence `image:` non vide doit résoudre dans le projet. Préférer `mse_images/imageN.png` pour les nouveaux imports ; préserver les chemins racine ou JPEG existants lorsqu’ils se sauvegardent et s’exportent correctement. Ne jamais pointer directement vers `original_images/...`.
 
-Cas identifié le 2026-07-11 sur **Burning Abyss** : une sauvegarde peut échouer tant que des cartes incluses pointent directement vers les images sources `.jpg`. Après redimensionnement/import dans MSE, la sauvegarde réussie produit un fichier d'environ `316x231`, sans métadonnées EXIF, et met à jour la carte. Pour prévenir ce bug, conserver les sources dans `assets/original_images/`, puis utiliser une copie importée/redimensionnée propre au projet ; `mse_images/` reste l’emplacement préféré pour les nouveaux imports.
+Cas identifié le 2026-07-11 sur **Burning Abyss** : une sauvegarde peut échouer tant que des cartes incluses pointent directement vers les images sources `.jpg`. Après redimensionnement/import dans MSE, la sauvegarde réussie produit un fichier d'environ `316x231`, sans métadonnées EXIF, et met à jour la carte. Pour prévenir ce bug, conserver les sources dans `original_images/`, puis utiliser une copie importée/redimensionnée propre au projet ; `mse_images/` reste l’emplacement préféré pour les nouveaux imports.
 
 Pour générer ce format sans passer par l'interface MSE, utiliser le helper :
 
 ```powershell
-python .script/generate_mse_imported_image.py "CHEMIN\Projet.mse-set" "assets/original_images/<archetype_ygo>/source.jpg" --card-file "card fichier a mettre a jour"
+python .script/generate_mse_imported_image.py "CHEMIN\Projet.mse-set" "original_images/<type_de_carte>/<nom_de_carte>.jpg" --card-file "card fichier a mettre a jour"
 ```
 
 Le script crée le prochain `mse_images/imageN.png` disponible dans le projet et, si `--card-file` est fourni, remplace le champ `image:` de la carte par ce nouveau chemin.

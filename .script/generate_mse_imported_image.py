@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate a project-local MSE image from a centralized source-art file.
 
-Original artwork remains under assets/original_images/. This helper creates an
+Original artwork remains under original_images/. This helper creates an
 imported/resized PNG under the target project's mse_images/ folder so card files
 never point directly at the source JPG.
 """
