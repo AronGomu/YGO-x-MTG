@@ -1,7 +1,7 @@
 ﻿mse_version: 2.5.8
 card:
-	stylesheet: kasu-eldrazi_750
-	stylesheet_version: 2024-08-01
+	stylesheet: genevensis-00-main
+	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 16:45:00
@@ -9,17 +9,23 @@ card:
 	name: Chimeratech Megafleet Dragon
 	casting_cost: B
 	image: mse_images/image18.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Machine</word-list-race-en>
+	sub_type: <word-list-race-en>Machine</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>Fusion — Cyber Dragon + 1+ créatures dans une zone extra</i>
-		(1 - Passif) Vous pouvez utiliser les créatures adverses dans une zone extra comme matériaux.
-		(2 - Passif) Megafleet gagne +1/+0 pour chaque matériau utilisé.
+		<i>Fusion — <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Cyber</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Dragon + 1+ <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>dans</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> zone extra</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Vous</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>pouvez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>utiliser</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>adverses</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>dans</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> zone extra <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>comme</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>matériaux</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Megafleet</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>gagne</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> +1/+0 pour <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chaque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>matériau</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>utilisé</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2
 	card_code_text: 018/030 R
+	card_code_text_2: 018/030 R
+	card_code_text_3: 018/030 R
+	copyright: 

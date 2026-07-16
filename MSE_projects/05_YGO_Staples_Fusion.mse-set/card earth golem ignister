@@ -1,7 +1,7 @@
 ﻿mse_version: 2.5.8
 card:
-	stylesheet: kasu-eldrazi_750
-	stylesheet_version: 2024-08-01
+	stylesheet: genevensis-00-main
+	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 12:11:26
@@ -9,17 +9,22 @@ card:
 	name: Earth Golem @Ignister
 	casting_cost: G
 	image: mse_images/image3.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Cyberse</word-list-race-en>
+	sub_type: <word-list-race-en>Cyberse</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>Fusion — 1 Cyberse + 1 Link Creature</i>
-		(1 - Déclenchable) Si Earth Golem arrive, prévenez les prochaines blessures que les Link Creatures vous infligeraient ce tour-ci.
-		(2 - Déclenchable) Si Earth Golem détruit une créature au combat, il inflige 2 blessures à son contrôleur.
+		<i>Fusion — 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Cyberse</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> + 1 Link Creature</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si Earth Golem arrive, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>prévenez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>prochaines</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>blessures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>que</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Link Creatures <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>vous</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>infligeraient</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ce</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> tour-<error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ci</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si Earth Golem <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>détruit</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>au</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> combat, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>il</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>inflige</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>blessures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> son <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>contrôleur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2
 	card_code_text: 003/015 R
+	card_code_text_2: 003/015 R
+	card_code_text_3: 003/015 R

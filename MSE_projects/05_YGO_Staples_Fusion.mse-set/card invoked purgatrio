@@ -1,7 +1,7 @@
 ﻿mse_version: 2.5.8
 card:
-	stylesheet: kasu-eldrazi_750
-	stylesheet_version: 2024-08-01
+	stylesheet: genevensis-00-main
+	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 16:45:00
@@ -9,17 +9,22 @@ card:
 	name: Invoked Purgatrio
 	casting_cost: R
 	image: mse_images/image24.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Fiend</word-list-race-en>
+	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>Fusion — Aleister + 1 FIRE</i>
-		(1 - Passif) Menace.
-		(2 - Passif) Purgatrio gagne +1/+0 pour chaque carte adverse et peut attaquer chaque créature adverse.
+		<i>Fusion — <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Aleister</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> + 1 FIRE</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <kw-a><nospellcheck><key>Menace</key></nospellcheck></kw-a>.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Purgatrio</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>gagne</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> +1/+0 pour <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chaque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>carte</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> adverse <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>et</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>peut</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>attaquer</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chaque</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> adverse.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 1
 	card_code_text: 024/030 R
+	card_code_text_2: 024/030 R
+	card_code_text_3: 024/030 R

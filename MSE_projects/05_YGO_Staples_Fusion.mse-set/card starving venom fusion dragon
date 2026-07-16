@@ -1,7 +1,7 @@
 ﻿mse_version: 2.5.8
 card:
-	stylesheet: kasu-eldrazi_750
-	stylesheet_version: 2024-08-01
+	stylesheet: genevensis-00-main
+	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 12:11:32
@@ -9,17 +9,22 @@ card:
 	name: Starving Venom Fusion Dragon
 	casting_cost: B
 	image: mse_images/image13.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Fusion Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Dragon</word-list-race-en>
+	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>Fusion — 2 créatures DARK</i>
-		(1 - Déclenchable) Si Starving Venom arrive, il gagne +X/+0 jusqu'à la fin du tour, où X est la force d'une créature adverse ciblée.
-		(2 - Déclenchable) Si Starving Venom meurt, détruisez toutes les créatures adverses qui ont des marqueurs.
+		<i>Fusion — 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> DARK</i>
+		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si Starving Venom arrive, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>il</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>gagne</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> +X/+0 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>jusqu’à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la fin <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>du</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> tour, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>où</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> X est la force <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>d’une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> adverse <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si Starving Venom <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>meurt</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>détruisez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>toutes</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>adverses</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>qui</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ont</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>des</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>marqueurs</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2
 	card_code_text: 013/015 R
+	card_code_text_2: 013/015 R
+	card_code_text_3: 013/015 R
