@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
-		<margin:0:0:5>(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :</margin:0:0:5>
+		<margin:0:0:5>(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre Grave, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :</margin:0:0:5>
 		<li><bullet>• </bullet>1 — Retournez la créature ciblée face verso.
 		</li><li><bullet>• </bullet>2 — Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
 		</li><li><bullet>• </bullet>3 — Exilez 1 permanent. Cet effet ne cible pas.</li>

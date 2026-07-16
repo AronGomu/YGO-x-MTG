@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Cherchez 1 carte “Shaddoll” non-créature.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Cherchez 1 créature “Shaddoll”.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Cherchez 1 créature “Shaddoll”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

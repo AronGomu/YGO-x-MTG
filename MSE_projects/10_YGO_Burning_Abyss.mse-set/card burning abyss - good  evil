@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Résolution)</i-auto> <b>Ritual Summon</b> 1 “Burning Abyss” en sacrifiant des créatures depuis votre main ou terrain dont la MV totale est supérieure ou égale à la MV de la Ritual Creature.
-		<i-auto>(2 - Activable Sorcery Hard)</i-auto> Depuis votre GYD, exilez cette carte et défaussez 1 créature “Burning Abyss” ; cherchez 1 carte “Burning Abyss”.
+		<i-auto>(2 - Activable Sorcery Hard)</i-auto> Depuis votre Grave, exilez cette carte et défaussez 1 créature “Burning Abyss” ; cherchez 1 carte “Burning Abyss”.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/030 C
 	card_code_text_2: 015/030 C

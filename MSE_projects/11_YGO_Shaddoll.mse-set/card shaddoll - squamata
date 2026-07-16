@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Détruisez 1 créature ciblée.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

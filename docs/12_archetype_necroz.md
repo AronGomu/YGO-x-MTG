@@ -52,7 +52,7 @@ Sauf indication contraire :
 
 ## Nekroz Recovery
 
-**Nekroz Recovery** signifie : « Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre GYD ; cherchez 1 carte non-créature Ritual Summon “Nekroz”. » Les cartes non-créature “Nekroz” qui partagent cet effet écrivent le texte complet après le tiret cadratin.
+**Nekroz Recovery** signifie : « Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre Grave ; cherchez 1 carte non-créature Ritual Summon “Nekroz”. » Les cartes non-créature “Nekroz” qui partagent cet effet écrivent le texte complet après le tiret cadratin.
 
 ---
 

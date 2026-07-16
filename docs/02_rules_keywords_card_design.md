@@ -79,7 +79,7 @@ Le mot-clé qui exprime la condition ou l’événement vient en gras immédiate
 Exemple :
 
 ```text
-(2 - Déclenchable Hard) **On Send GYD** — Défaussez 1 carte et ciblez 1 créature contrôlée par un adversaire ; exilez-la.
+(2 - Déclenchable Hard) **On Send Grave** — Défaussez 1 carte et ciblez 1 créature contrôlée par un adversaire ; exilez-la.
 ```
 
 ### Coûts alternatifs et mots-clés d’affinité
@@ -88,7 +88,7 @@ Un coût alternatif est placé sur une ligne non numérotée avant les capacité
 
 ### Sélecteurs de cartes nommées
 
-Lorsqu’un effet sélectionne un ou plusieurs objets déjà restreints par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`, quelle que soit la zone ou l’action. Écrire `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre GYD`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs restrictifs, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
+Lorsqu’un effet sélectionne un ou plusieurs objets déjà restreints par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`, quelle que soit la zone ou l’action. Écrire `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre Grave`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs restrictifs, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
 
 ### Passif
 
@@ -114,17 +114,17 @@ Le choix d’une cible n’est pas un coût. Le verbe `ciblez` peut néanmoins a
 
 **On Opponent Summon** se déclenche lorsqu’un adversaire Summon une créature. Il répond uniquement à l’action **Summon**, pas au lancement normal d’une créature ; les lancements adverses relèvent de **On Opponent's Cast** ou d’une formulation explicite.
 
-### On Send GYD
+### On Send Grave
 
-Lorsque cette carte est mise dans un GYD depuis n’importe quelle zone, appliquez son effet **On Send GYD**. `GYD` est la notation canonique de la zone historiquement appelée `GY`.
+Lorsque cette carte est mise dans un Grave depuis n’importe quelle zone, appliquez son effet **On Send Grave**. `Grave` est la notation canonique de la zone historiquement appelée `GY`.
 
-### On Send GYD by Effect
+### On Send Grave by Effect
 
-Lorsque cette carte est mise dans un GYD par un effet de carte, appliquez son effet **On Send GYD by Effect**. Contrairement à **On Send GYD**, cet événement exclut les coûts, règles et actions qui ne sont pas des effets.
+Lorsque cette carte est mise dans un Grave par un effet de carte, appliquez son effet **On Send Grave by Effect**. Contrairement à **On Send Grave**, cet événement exclut les coûts, règles et actions qui ne sont pas des effets.
 
 ### Mill X
 
-Envoyez les X cartes du dessus de votre Deck dans votre GYD. Utiliser `**Mill 1**`, `**Mill 2**` ou `**Mill 3**` selon le nombre de cartes à envoyer. Si le joueur choisit librement la quantité, utiliser `**Mill up to 3**`.
+Envoyez les X cartes du dessus de votre Deck dans votre Grave. Utiliser `**Mill 1**`, `**Mill 2**` ou `**Mill 3**` selon le nombre de cartes à envoyer. Si le joueur choisit librement la quantité, utiliser `**Mill up to 3**`.
 
 ### On Destroy
 
@@ -160,7 +160,7 @@ Face cachée, elle est traitée comme un permanent non-créature non-terrain san
 
 À partir du tour suivant celui où elle a été Set, son contrôleur peut la retourner face visible et la lancer depuis le terrain à tout moment où il pourrait lancer un `Instant`, en payant normalement son coût de mana et ses coûts supplémentaires. Elle quitte alors le terrain pour la pile, utilise la pile et compte comme lancée depuis le terrain. Si un effet précise qu’une Trap peut être lancée ou activée pendant le tour où elle a été Set, cette permission contourne explicitement et uniquement l’attente d’un tour ; toutes les autres règles de lancement des Trap restent applicables.
 
-Après résolution, une `Trap Instant` ou `Trap Sorcery` est mise au GYD normalement. Une Trap d’un type de permanent arrive face visible sur le terrain selon les règles normales de ce type. Une permission explicite de lancement depuis une autre zone reste applicable et ne compte pas comme un lancement depuis le terrain.
+Après résolution, une `Trap Instant` ou `Trap Sorcery` est mise au Grave normalement. Une Trap d’un type de permanent arrive face visible sur le terrain selon les règles normales de ce type. Une permission explicite de lancement depuis une autre zone reste applicable et ne compte pas comme un lancement depuis le terrain.
 
 ## Invocations spéciales
 
@@ -182,7 +182,7 @@ Après avoir été correctement invoquée au moins une fois, la carte peut être
 
 ### Summon et Reanimate
 
-**Summon** met la carte indiquée sur le terrain depuis la zone précisée, sans la lancer ni payer son coût de mana. **Reanimate** renvoie la carte ciblée depuis son GYD sur le terrain. Ces actions ne contournent pas l’obligation d’invocation correcte des cartes d’Extra Deck ou Ritual. Une capacité qui autorise une Summon normalement illégale doit porter la mention explicite `en ignorant les restrictions de Summon`. Cette permission rend la Summon légale, mais ne constitue pas une invocation correcte pour les déplacements futurs. Lors de la conception ou de la mise à jour d’une telle carte, toujours demander à l’utilisateur s’il faut ajouter cette permission au lieu de la déduire.
+**Summon** met la carte indiquée sur le terrain depuis la zone précisée, sans la lancer ni payer son coût de mana. **Reanimate** renvoie la carte ciblée depuis son Grave sur le terrain. Ces actions ne contournent pas l’obligation d’invocation correcte des cartes d’Extra Deck ou Ritual. Une capacité qui autorise une Summon normalement illégale doit porter la mention explicite `en ignorant les restrictions de Summon`. Cette permission rend la Summon légale, mais ne constitue pas une invocation correcte pour les déplacements futurs. Lors de la conception ou de la mise à jour d’une telle carte, toujours demander à l’utilisateur s’il faut ajouter cette permission au lieu de la déduire.
 
 ### Attach
 
@@ -220,7 +220,7 @@ Une Synchro Creature est invoquée depuis l'Extra Deck avec une créature Tuner 
 
 Une Xyz Creature est invoquée depuis l'Extra Deck avec le nombre de créatures indiqué, de même valeur de mana. Les matériaux sont placés sous la créature Xyz. Sa première ligne indique les matériaux sans répéter `Xyz —`. Une ligne `Xyz Coût Alternatif —` remplace entièrement ces matériaux, utilise la créature indiquée comme matériel et réalise une invocation Xyz correcte.
 
-**Detach X** signifie : envoyez X matériels attachés à cette Xyz Creature dans leur GYD. Sur une carte, remplacer X par le nombre requis (`**Detach 1**`, `**Detach 2**`, etc.). Conserver `**Detach X**` lorsque n’importe quel nombre de matériels peut être détaché. Avant `:` ou `;`, Detach est un coût ; après un événement et un tiret cadratin, il est une action de l’effet déclenché.
+**Detach X** signifie : envoyez X matériels attachés à cette Xyz Creature dans leur Grave. Sur une carte, remplacer X par le nombre requis (`**Detach 1**`, `**Detach 2**`, etc.). Conserver `**Detach X**` lorsque n’importe quel nombre de matériels peut être détaché. Avant `:` ou `;`, Detach est un coût ; après un événement et un tiret cadratin, il est une action de l’effet déclenché.
 
 ### Link
 

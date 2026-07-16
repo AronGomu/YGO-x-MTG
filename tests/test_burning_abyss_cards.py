@@ -87,13 +87,13 @@ class BurningAbyssCardTests(unittest.TestCase):
                 for fragment in fragments:
                     self.assertIn(fragment, text)
 
-    def test_burning_abyss_uses_gyd_consistently(self) -> None:
+    def test_burning_abyss_uses_Grave_consistently(self) -> None:
         for include in self.includes:
             text = (PROJECT / include).read_text(encoding="utf-8-sig")
             self.assertNotRegex(text, r"\bGY\b")
         document = DOCUMENT.read_text(encoding="utf-8-sig")
         self.assertNotRegex(document, r"\bGY\b")
-        self.assertIn("**On Send GYD**", document)
+        self.assertIn("**On Send Grave**", document)
 
     def test_accepted_rules_are_documented(self) -> None:
         context = (ROOT / "docs" / "context.md").read_text(encoding="utf-8-sig")
@@ -109,7 +109,7 @@ class BurningAbyssCardTests(unittest.TestCase):
             "**Slow Blink X Any Creature**",
             "**Ritual Summon**",
             "**Fusion Summon**",
-            "**On Send GYD**",
+            "**On Send Grave**",
         ):
             self.assertIn(fragment, context)
         self.assertIn("### On Creature you Control Destroy", detailed)

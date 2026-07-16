@@ -45,7 +45,7 @@ A pattern maker is a reusable convention that is not yet documented clearly. Exa
 
 - a new event or action keyword;
 - a repeated, consistent way to express a process;
-- a reusable PSCT clause such as `Depuis votre GYD, exilez cette carte ; ...`;
+- a reusable PSCT clause such as `Depuis votre Grave, exilez cette carte ; ...`;
 - a generalization that replaces several equivalent wordings with one stable form.
 
 Prefer at least two supporting examples. A single example is allowed only when it introduces an explicit keyword or an obviously reusable process boundary.

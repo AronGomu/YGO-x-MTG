@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-enchantment>Land</word-list-enchantment><soft><atom-sep> </atom-sep></soft><word-list-enchantment></word-list-enchantment>
 	rarity: common
 	rule_text:
-		(1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre GYD au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
+		(1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre Grave au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
 		(2 - Déclenchable Soft) Si cette carte quitte le terrain, vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook”.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 016/016 C

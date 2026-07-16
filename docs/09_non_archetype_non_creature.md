@@ -38,7 +38,7 @@ Sorcery
 
 Sorcery
 
-(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.
+(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au Grave.
 
 ---
 
@@ -58,7 +58,7 @@ Sorcery
 
 Sorcery
 
-(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.
+(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 Grave.
 
 ---
 
@@ -114,7 +114,7 @@ Trap Instant
 
 (1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
 
-(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+(2 - Passif) Vous pouvez lancer cette carte depuis votre Grave. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
 
 ---
 

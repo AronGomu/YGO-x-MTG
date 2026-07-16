@@ -16,7 +16,7 @@ card:
 	sub_type:
 	rarity: uncommon
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature dans le GYD de votre adversaire ; mélangez la cible dans le Deck, puis vous pouvez envoyer 1 créature Fiend de votre Deck au GYD.
+		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature dans le Grave de votre adversaire ; mélangez la cible dans le Deck, puis vous pouvez envoyer 1 créature Fiend de votre Deck au Grave.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 026/030 U
 	card_code_text_2: 026/030 U

@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-race-en>Winged</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Beast</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Ciblez 1 créature MV 1 de votre GYD ; <b>Reanimate</b> la cible. La cible perd ses capacités sur le terrain.
+		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Ciblez 1 créature MV 1 de votre Grave ; <b>Reanimate</b> la cible. La cible perd ses capacités sur le terrain.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 2

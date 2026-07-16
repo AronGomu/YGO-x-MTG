@@ -15,7 +15,7 @@ SPELL_AFFINITY = "<b>Spell Affinity</b>"
 EXPECTED_RULES = {
     "card high priestess of prophecy": (
         BOOK_AFFINITY,
-        "(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou GYD",
+        "(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou Grave",
     ),
     "card justice of prophecy": (
         BOOK_AFFINITY,
@@ -35,7 +35,7 @@ EXPECTED_RULES = {
         "(1 - Résolution) Renvoyez dans votre main le “Spellbook” ciblé depuis votre zone d’exil.",
     ),
     "card spellbook of fate": (
-        "(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD",
+        "(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre Grave",
         "3 — Exilez 1 permanent. Cet effet ne cible pas.",
     ),
     "card spellbook of judgment": (
@@ -48,13 +48,13 @@ EXPECTED_RULES = {
         "(1 - Résolution) Piochez 2 cartes.",
     ),
     "card spellbook of life": (
-        "1 autre “Spellbook” de votre main ou GYD",
-        "(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre GYD",
+        "1 autre “Spellbook” de votre main ou Grave",
+        "(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre Grave",
     ),
     "card spellbook of miracles": (
         "un nombre de “Spellbook” supérieur ou égal",
         "MV de la créature “Spellbook” ciblée",
-        "(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre GYD.",
+        "(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre Grave.",
     ),
     "card spellbook of power": (
         "(1 - Résolution) La créature “Spellbook” ciblée gagne +2/+2",
@@ -65,7 +65,7 @@ EXPECTED_RULES = {
     ),
     "card spellbook of the master": (
         "(1 - Résolution) Révélez 1 autre “Spellbook” de votre main",
-        "choisissez 1 “Spellbook” dans votre GYD",
+        "choisissez 1 “Spellbook” dans votre Grave",
     ),
     "card spellbook of wisdom": (
         "(1 - Résolution) La créature “Spellbook” ciblée n’est pas affectée",
@@ -76,7 +76,7 @@ EXPECTED_RULES = {
     ),
     "card the grand spellbook tower": (
         "(1 - Déclenchable Soft) Au début de votre entretien",
-        "mettre 1 “Spellbook” depuis votre GYD",
+        "mettre 1 “Spellbook” depuis votre Grave",
         "mettre en jeu depuis votre Deck 1 créature “Spellbook”",
     ),
 }

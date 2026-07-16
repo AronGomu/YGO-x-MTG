@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i>2 créatures MV 1</i>
 		<i-auto>(1 - Activable Soft)</i-auto> <b>Detach 1 et Mill 3</b> ; Dante gagne +1/+0 pour chaque carte meulée et acquiert la vigilance ce tour-ci.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send GYD</b> — Renvoyez 1 autre carte “Burning Abyss” depuis votre GYD dans votre main.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Renvoyez 1 autre carte “Burning Abyss” depuis votre Grave dans votre main.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 5

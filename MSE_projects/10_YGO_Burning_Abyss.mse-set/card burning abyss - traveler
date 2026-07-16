@@ -16,7 +16,7 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Renvoyez sur le terrain n’importe quel nombre de créatures “Burning Abyss” envoyées à votre GYD ce tour-ci.
+		<i-auto>(1 - Résolution)</i-auto> Renvoyez sur le terrain n’importe quel nombre de créatures “Burning Abyss” envoyées à votre Grave ce tour-ci.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 022/030 C
 	card_code_text_2: 022/030 C

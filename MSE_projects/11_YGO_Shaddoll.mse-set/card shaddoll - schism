@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-enchantment></word-list-enchantment>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Fusion Summon</b> 1 créature “Shaddoll” en exilant les matériaux indiqués depuis votre terrain ou GYD. Puis envoyez au GYD 1 créature contrôlée par un adversaire qui partage une couleur avec cette créature.
+		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Fusion Summon</b> 1 créature “Shaddoll” en exilant les matériaux indiqués depuis votre terrain ou Grave. Puis envoyez au Grave 1 créature contrôlée par un adversaire qui partage une couleur avec cette créature.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 023/025 C
 	card_code_text_2: 023/025 C

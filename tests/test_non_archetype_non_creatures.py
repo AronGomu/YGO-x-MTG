@@ -19,14 +19,14 @@ EXPECTED_RULES = {
     ),
     "card breakthrough skill": (
         "(1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.",
-        "(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD.",
+        "(2 - Passif) Vous pouvez lancer cette carte depuis votre Grave.",
     ),
     "card compulsory evacuation device": (
         "(1 - Résolution) Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.",
     ),
     "card dark hole": ("(1 - Résolution) Détruisez toutes les créatures.",),
     "card foolish burial": (
-        "(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.",
+        "(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au Grave.",
     ),
     "card instant fusion": (
         "(1 - Résolution) <b>Summon</b> 1 Fusion Creature MV 1 depuis votre Sideboard en ignorant les restrictions de Summon.",
@@ -36,7 +36,7 @@ EXPECTED_RULES = {
         "(1 - Résolution) Exilez la créature ciblée.",
     ),
     "card monster reborn": (
-        "(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.",
+        "(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 Grave.",
     ),
     "card mystical space typhoon": (
         "(1 - Résolution) Détruisez le permanent non-créature non-terrain ciblé.",

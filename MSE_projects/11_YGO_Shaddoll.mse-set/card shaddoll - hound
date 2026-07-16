@@ -22,8 +22,8 @@ card:
 	sub_type_4:
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 carte “Shaddoll” dans votre GYD ; renvoyez-la dans votre main.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Vous pouvez retourner face visible ou face verso 1 créature que vous contrôlez.
+		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 carte “Shaddoll” dans votre Grave ; renvoyez-la dans votre main.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Vous pouvez retourner face visible ou face verso 1 créature que vous contrôlez.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 022/025 C
 	card_code_text_2: 022/025 C

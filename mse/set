@@ -1218,7 +1218,7 @@ card:
 	card type: Creature
 	sub type: Bird
 	rarity: common
-	rule text: (1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 GYD ; exilez-la.
+	rule text: (1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 Grave ; exilez-la.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -1328,7 +1328,7 @@ card:
 	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: (1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.
+	rule text: (1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au Grave.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -1358,7 +1358,7 @@ card:
 	card type: Sorcery
 	sub type:
 	rarity: common
-	rule text: (1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.
+	rule text: (1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 Grave.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -1688,7 +1688,7 @@ card:
 	rarity: common
 	rule text: (1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
 
-		(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+		(2 - Passif) Vous pouvez lancer cette carte depuis votre Grave. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -1842,7 +1842,7 @@ card:
 	rarity: common
 	rule text: <b>Book Affinity</b>
 
-		(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou GYD et ciblez 1 permanent ; détruisez-le.
+		(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou Grave et ciblez 1 permanent ; détruisez-le.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -1930,7 +1930,7 @@ card:
 	rarity: common
 	rule text: <b>Spell Affinity</b>
 
-		(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :
+		(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre Grave, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :
 
 		• 1 — Retournez la créature ciblée face verso.
 
@@ -2048,7 +2048,7 @@ card:
 	rarity: common
 	rule text: <b>Spell Affinity</b>
 
-		(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre GYD. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
+		(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre Grave. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -2076,9 +2076,9 @@ card:
 	rarity: common
 	rule text: <b>Spell Affinity</b>
 
-		En tant que coût supplémentaire pour lancer ce sort, exilez 1 créature “Spellbook” de votre GYD et 1 autre “Spellbook” de votre main ou GYD.
+		En tant que coût supplémentaire pour lancer ce sort, exilez 1 créature “Spellbook” de votre Grave et 1 autre “Spellbook” de votre main ou Grave.
 
-		(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre GYD dont la MV est inférieure ou égale à celle de la créature exilée.
+		(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre Grave dont la MV est inférieure ou égale à celle de la créature exilée.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -2164,9 +2164,9 @@ card:
 	rarity: common
 	rule text: <b>Spell Affinity</b>
 
-		En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre GYD un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
+		En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre Grave un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
 
-		(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre GYD.
+		(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre Grave.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -2222,7 +2222,7 @@ card:
 	card type: Enchantment
 	sub type: Land
 	rarity: common
-	rule text: (1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre GYD au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
+	rule text: (1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre Grave au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
 
 		(2 - Déclenchable Soft) Si cette carte quitte le terrain, vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook”.
 

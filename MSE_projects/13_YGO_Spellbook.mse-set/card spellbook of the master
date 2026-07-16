@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
-		(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre GYD. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
+		(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre Grave. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 013/016 C
 	card_code_text_2: 013/016 C

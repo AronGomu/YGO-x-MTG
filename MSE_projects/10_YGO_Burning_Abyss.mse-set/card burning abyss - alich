@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
 		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD</b> — La créature ciblée perd toutes ses capacités et devient 0/0 jusqu’à la fin du tour.
+		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — La créature ciblée perd toutes ses capacités et devient 0/0 jusqu’à la fin du tour.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

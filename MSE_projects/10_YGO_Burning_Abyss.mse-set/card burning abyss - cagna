@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
 		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD</b> — Envoyez 1 carte “Burning Abyss” depuis votre Deck au GYD.
+		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Envoyez 1 carte “Burning Abyss” depuis votre Deck au Grave.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

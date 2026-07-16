@@ -122,7 +122,7 @@ L’ordre canonique d’une capacité est :
 Exemple :
 
 ```text
-(2 - Déclenchable Hard) **On Send GYD** — Défaussez 1 carte et ciblez 1 créature contrôlée par un adversaire ; exilez-la.
+(2 - Déclenchable Hard) **On Send Grave** — Défaussez 1 carte et ciblez 1 créature contrôlée par un adversaire ; exilez-la.
 ```
 
 Les coûts, coûts alternatifs, coûts supplémentaires et conditions de lancement ne sont pas des effets : ils ne doivent pas recevoir leur propre numéro de capacité. Tous les types de coûts et conditions de lancement doivent être listés avant les capacités numérotées et avant les mots-clés evergreen.
@@ -169,7 +169,7 @@ Exemple :
 ```text
 (1 - Passif) **Malédiction abyssale**
 (2 - Activable Hard Linked) **Descente**
-(3 - Déclenchable Hard Linked) **On Send GYD** — À la prochaine étape de fin, cherchez une créature “Burning Abyss”.
+(3 - Déclenchable Hard Linked) **On Send Grave** — À la prochaine étape de fin, cherchez une créature “Burning Abyss”.
 ```
 
 Ne pas regrouper plusieurs mots-clés sur une seule ligne si ce regroupement empêche de numéroter ou typer chaque capacité.
@@ -204,9 +204,9 @@ Exemples :
 
 - Écrire `1 créature MV 1`, pas `1 créature avec une valeur de mana de 1`.
 - Écrire `depuis votre Deck`, pas `depuis votre bibliothèque`.
-- Écrire `du Deck au GYD`, pas `depuis votre bibliothèque dans votre cimetière`.
+- Écrire `du Deck au Grave`, pas `depuis votre bibliothèque dans votre cimetière`.
 
-Toujours utiliser `GYD` pour `cimetière` dans les textes de carte. `GYD` désigne la même zone que l’ancien raccourci `GY`, désormais conservé uniquement comme notation historique. Garder `cimetière` seulement dans les explications de règles, commentaires de design ou documentation hors texte de carte.
+Toujours utiliser `Grave` pour `cimetière` dans les textes de carte. `Grave` désigne la même zone que l’ancien raccourci `GY`, désormais conservé uniquement comme notation historique. Garder `cimetière` seulement dans les explications de règles, commentaires de design ou documentation hors texte de carte.
 
 Pour donner indestructible, écrire `gagne indestructible`, pas `a indestructible`.
 
@@ -243,9 +243,9 @@ Après le périmètre, ajouter si nécessaire les paramètres qui définissent l
 
 **On Opponent Summon** signifie : « Lorsqu’un adversaire Summon une créature. » Ce déclencheur répond uniquement à l’action **Summon**, pas au lancement normal d’une créature ; utiliser **On Opponent's Cast** ou une formulation explicite pour les événements de lancement.
 
-**On Send GYD** signifie : « Lorsque cette carte est mise dans un GYD depuis n’importe quelle zone. » Utiliser ce mot-clé pour toute capacité de cette carte qui se déclenche lorsqu’elle est envoyée au GYD.
+**On Send Grave** signifie : « Lorsque cette carte est mise dans un Grave depuis n’importe quelle zone. » Utiliser ce mot-clé pour toute capacité de cette carte qui se déclenche lorsqu’elle est envoyée au Grave.
 
-**On Send GYD by Effect** signifie : « Lorsque cette carte est mise dans un GYD par un effet de carte. » Contrairement à **On Send GYD**, il ne se déclenche pas lorsque la carte est mise au GYD par un coût, une règle ou une action qui n’est pas un effet.
+**On Send Grave by Effect** signifie : « Lorsque cette carte est mise dans un Grave par un effet de carte. » Contrairement à **On Send Grave**, il ne se déclenche pas lorsque la carte est mise au Grave par un coût, une règle ou une action qui n’est pas un effet.
 
 **On Creature you Control Destroy** signifie : « Lorsqu’une créature que vous contrôlez est détruite. » Sauf restriction écrite sur la carte, l’événement compte quelle que soit la cause de la destruction.
 
@@ -255,15 +255,15 @@ Après le périmètre, ajouter si nécessaire les paramètres qui définissent l
 
 **On Sacrifice** signifie : « Lorsque cette carte est sacrifiée ou utilisée comme matériel pour lancer une créature Ritual. » Utiliser ce mot-clé pour remplacer les formulations comme `Si cette carte est utilisée comme matériel Ritual`.
 
-**Detach X** signifie : « Détachez X matériels de cette Xyz Creature et envoyez-les au GYD. » `X` représente le nombre de matériels à détacher. Sur une carte, remplacer X par la valeur requise (`**Detach 1**`, `**Detach 2**`, etc.). Si n’importe quel nombre peut être détaché, conserver `**Detach X**`. Detach est un coût lorsqu’il précède `:` ou `;`. Placé après un événement avec un tiret cadratin, comme `**On Attack / Block** — **Detach 1**`, il est une action obligatoire de l’effet déclenché.
+**Detach X** signifie : « Détachez X matériels de cette Xyz Creature et envoyez-les au Grave. » `X` représente le nombre de matériels à détacher. Sur une carte, remplacer X par la valeur requise (`**Detach 1**`, `**Detach 2**`, etc.). Si n’importe quel nombre peut être détaché, conserver `**Detach X**`. Detach est un coût lorsqu’il précède `:` ou `;`. Placé après un événement avec un tiret cadratin, comme `**On Attack / Block** — **Detach 1**`, il est une action obligatoire de l’effet déclenché.
 
-**Mill X** signifie : « Envoyez les X cartes du dessus de votre Deck dans votre GYD. » Sur une carte, remplacer X par la valeur requise : `**Mill 1**`, `**Mill 2**` ou `**Mill 3**`. Si le joueur choisit librement entre ces trois valeurs, écrire `**Mill up to 3**`.
+**Mill X** signifie : « Envoyez les X cartes du dessus de votre Deck dans votre Grave. » Sur une carte, remplacer X par la valeur requise : `**Mill 1**`, `**Mill 2**` ou `**Mill 3**`. Si le joueur choisit librement entre ces trois valeurs, écrire `**Mill up to 3**`.
 
 **Summon** signifie : « Mettez la carte indiquée sur le terrain depuis la zone précisée, sans la lancer et sans payer son coût de mana. » Une Summon ne constitue pas à elle seule une invocation correcte d’une carte d’Extra Deck ou Ritual. Tout effet autorisé à effectuer une Summon normalement illégale doit écrire explicitement `en ignorant les restrictions de Summon`. Cette permission rend uniquement la Summon légale : elle ne constitue pas une invocation correcte pour les déplacements futurs.
 
 Lors de l’ajout ou de la mise à jour d’une carte, si un effet effectuerait une Summon illégale — notamment depuis le Sideboard sans la méthode d’invocation requise — demander obligatoirement à l’utilisateur s’il faut ajouter `en ignorant les restrictions de Summon` à l’effet. Ne jamais déduire cette permission silencieusement.
 
-**Reanimate** signifie : « Renvoyez la carte ciblée depuis son GYD sur le terrain. » Cette action ne contourne pas l’obligation d’invocation correcte des cartes d’Extra Deck ou Ritual.
+**Reanimate** signifie : « Renvoyez la carte ciblée depuis son Grave sur le terrain. » Cette action ne contourne pas l’obligation d’invocation correcte des cartes d’Extra Deck ou Ritual.
 
 **Attach** signifie : « Attachez la carte indiquée à la Xyz Creature indiquée comme matériel. »
 
@@ -297,7 +297,7 @@ Tant qu’elle est face cachée, la carte est traitée comme un permanent non-cr
 
 À partir du tour suivant celui où elle a été Set, son contrôleur peut la retourner face visible et la lancer depuis le terrain à tout moment où il pourrait lancer un `Instant`. Il paie alors normalement son coût de mana et ses coûts supplémentaires. La carte quitte le terrain pour la pile : ce lancement utilise la pile et compte comme un sort lancé depuis le terrain. Lorsqu’un effet précise qu’une Trap peut être lancée ou activée pendant le tour où elle a été Set, cette permission contourne explicitement et uniquement la règle qui impose d’attendre le tour suivant ; toutes les autres règles de lancement des Trap restent applicables.
 
-Après sa résolution, une `Trap Instant` ou `Trap Sorcery` est mise au GYD normalement. Une Trap d’un type de permanent se résout et arrive face visible sur le terrain selon les règles normales de ce type. Une Trap lancée depuis une autre zone par une permission explicite suit cette permission et n’est pas considérée comme lancée depuis le terrain.
+Après sa résolution, une `Trap Instant` ou `Trap Sorcery` est mise au Grave normalement. Une Trap d’un type de permanent se résout et arrive face visible sur le terrain selon les règles normales de ce type. Une Trap lancée depuis une autre zone par une permission explicite suit cette permission et n’est pas considérée comme lancée depuis le terrain.
 
 ## Raccourci de recherche
 
@@ -310,7 +310,7 @@ Exemple :
 
 Cette convention implique par défaut la recherche dans la bibliothèque, la révélation si nécessaire, la mise dans la main, puis le mélange.
 
-Pour tout effet et toute zone, lorsqu’un sélecteur est déjà restreint par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`. Écrire par exemple `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre GYD`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs qui restreignent les objets éligibles, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
+Pour tout effet et toute zone, lorsqu’un sélecteur est déjà restreint par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`. Écrire par exemple `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre Grave`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs qui restreignent les objets éligibles, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
 
 ## Magic Set Editor
 
@@ -433,10 +433,10 @@ Ce script sauvegarde le projet, génère des `mse_images/imageN.png` pour toutes
 - Lorsqu’un effet ne cible pas au sens des règles, l’indiquer explicitement avec `Cet effet ne cible pas.`
 - Plusieurs actions à mot-clé appartenant à une même capacité sont écrites dans un même groupe en gras et reliées par `et`, par exemple `**Detach 1 et Mill 3**`.
 - Le choix d’une cible n’est jamais un coût, même lorsque `ciblez ...` est placé dans le groupe d’instructions qui précède `;` ou `:`.
-- Un effet activé depuis le GYD peut commencer par `Depuis votre GYD, exilez cette carte ; ...` ou intégrer l’exil et le ciblage avant `;` lorsque la carte emploie ce templating.
+- Un effet activé depuis le Grave peut commencer par `Depuis votre Grave, exilez cette carte ; ...` ou intégrer l’exil et le ciblage avant `;` lorsque la carte emploie ce templating.
 - Pour désigner la carte elle-même, utiliser son nom si celui-ci est aussi court ou plus court que `cette carte` ; sinon, utiliser `cette carte`.
-- Pour déplacer une carte depuis le Deck, réserver `Cherchez` aux cartes mises en main. Utiliser `Envoyez ... depuis votre Deck au GYD` et `Mettez en jeu ... depuis votre Deck` pour les autres destinations.
-- Toujours écrire les zones, types et mécaniques avec leur casse et leur orthographe validées : `Deck`, `GYD`, `Sideboard`, `Ritual Creature`, `Fusion Creature` et `Trap`.
+- Pour déplacer une carte depuis le Deck, réserver `Cherchez` aux cartes mises en main. Utiliser `Envoyez ... depuis votre Deck au Grave` et `Mettez en jeu ... depuis votre Deck` pour les autres destinations.
+- Toujours écrire les zones, types et mécaniques avec leur casse et leur orthographe validées : `Deck`, `Grave`, `Sideboard`, `Ritual Creature`, `Fusion Creature` et `Trap`.
 - Dans les cartes du cube, `Sideboard` est le nom de la zone MSE qui représente l’Extra Deck. Les règles générales peuvent parler d’Extra Deck ; le texte compact des cartes emploie Sideboard.
 - La ligne de matériaux d’une Fusion Creature utilise `*[matériaux]*` ; le super-type `Fusion Creature` porte déjà l’information Fusion.
 - La ligne de matériaux d’une Synchro Creature place toujours le Tuner en premier : `*1 Tuner + 1+ non-Tuner*` ; le préfixe `Synchro —` est omis.

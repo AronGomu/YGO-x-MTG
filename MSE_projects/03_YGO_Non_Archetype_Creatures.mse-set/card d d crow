@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-race-en>Bird</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 GYD ; exilez-la.
+		(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 Grave ; exilez-la.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

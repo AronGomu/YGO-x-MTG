@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		<b>Book Affinity</b>
-		(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou GYD et ciblez 1 permanent ; détruisez-le.
+		(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou Grave et ciblez 1 permanent ; détruisez-le.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

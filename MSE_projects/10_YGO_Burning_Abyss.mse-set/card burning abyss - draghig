@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
 		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD</b> — Défaussez 1 carte, puis piochez 1 carte.
+		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Défaussez 1 carte, puis piochez 1 carte.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

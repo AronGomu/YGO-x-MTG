@@ -43,7 +43,7 @@ Couleur principale : **Noir**
 # Mécaniques utilisées
 
 * **Descente**
-* **On Send GYD**
+* **On Send Grave**
 * **Xyz**
 * **Synchro**
 * **Malédiction abyssale**
@@ -76,7 +76,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — À la prochaine étape de fin : cherchez 1 créature “Burning Abyss”.
+(3 - Déclenchable Hard Linked) **On Send Grave** — À la prochaine étape de fin : cherchez 1 créature “Burning Abyss”.
 
 ---
 
@@ -92,7 +92,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — **Summon** 1 créature “Burning Abyss” du Deck.
+(3 - Déclenchable Hard Linked) **On Send Grave** — **Summon** 1 créature “Burning Abyss” du Deck.
 
 ---
 
@@ -108,7 +108,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — Ciblez 1 créature “Burning Abyss” de votre GYD ; **Reanimate** la cible.
+(3 - Déclenchable Hard Linked) **On Send Grave** — Ciblez 1 créature “Burning Abyss” de votre Grave ; **Reanimate** la cible.
 
 ---
 
@@ -124,7 +124,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — **Slow Blink 1 Any Creature**.
+(3 - Déclenchable Hard Linked) **On Send Grave** — **Slow Blink 1 Any Creature**.
 
 ---
 
@@ -140,7 +140,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — **Summon** 1 créature “Burning Abyss” de la main.
+(3 - Déclenchable Hard Linked) **On Send Grave** — **Summon** 1 créature “Burning Abyss” de la main.
 
 ---
 
@@ -156,7 +156,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — Exilez jusqu’à 3 cartes “Burning Abyss” de votre GYD ; Barbar inflige 1 blessure à l’adversaire ciblé pour chaque carte exilée.
+(3 - Déclenchable Hard Linked) **On Send Grave** — Exilez jusqu’à 3 cartes “Burning Abyss” de votre Grave ; Barbar inflige 1 blessure à l’adversaire ciblé pour chaque carte exilée.
 
 ---
 
@@ -172,7 +172,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — La créature ciblée perd toutes ses capacités et devient 0/0 jusqu’à la fin du tour.
+(3 - Déclenchable Hard Linked) **On Send Grave** — La créature ciblée perd toutes ses capacités et devient 0/0 jusqu’à la fin du tour.
 
 ---
 
@@ -188,7 +188,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — Renvoyez 1 permanent non-terrain ciblé dans la main de son propriétaire.
+(3 - Déclenchable Hard Linked) **On Send Grave** — Renvoyez 1 permanent non-terrain ciblé dans la main de son propriétaire.
 
 ---
 
@@ -204,7 +204,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — Envoyez 1 carte “Burning Abyss” depuis votre Deck au GYD.
+(3 - Déclenchable Hard Linked) **On Send Grave** — Envoyez 1 carte “Burning Abyss” depuis votre Deck au Grave.
 
 ---
 
@@ -220,7 +220,7 @@ Creature — Fiend
 
 (2 - Activable Hard Linked) **Descente**
 
-(3 - Déclenchable Hard Linked) **On Send GYD** — Défaussez 1 carte, puis piochez 1 carte.
+(3 - Déclenchable Hard Linked) **On Send Grave** — Défaussez 1 carte, puis piochez 1 carte.
 
 ---
 
@@ -254,7 +254,7 @@ Xyz Creature — Human
 
 (1 - Activable Soft) **Detach 1 et Mill 3** ; Dante gagne +1/+0 pour chaque carte meulée et acquiert la vigilance ce tour-ci.
 
-(2 - Déclenchable) **On Send GYD** — Renvoyez 1 autre carte “Burning Abyss” depuis votre GYD dans votre main.
+(2 - Déclenchable) **On Send Grave** — Renvoyez 1 autre carte “Burning Abyss” depuis votre Grave dans votre main.
 
 ---
 
@@ -270,7 +270,7 @@ Synchro Creature — Wizard
 
 (1 - Activable Sorcery Soft) Défaussez 1 carte et ciblez 1 permanent non-terrain ; mélangez la cible dans le Deck.
 
-(2 - Déclenchable) **On Send GYD** — Piochez 1 carte.
+(2 - Déclenchable) **On Send Grave** — Piochez 1 carte.
 
 ---
 
@@ -286,7 +286,7 @@ Xyz Creature — Fairy
 
 Xyz Coût Alternatif — W, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez. Ses matériels se transfèrent.
 
-(1 - Activable Flash Soft) **Detach 1** ; envoyez 1 carte depuis votre Deck au GYD.
+(1 - Activable Flash Soft) **Detach 1** ; envoyez 1 carte depuis votre Deck au Grave.
 
 (2 - Déclenchable) **On Destroy** — **Summon** 1 créature “Burning Abyss” depuis votre Sideboard.
 
@@ -302,7 +302,7 @@ Ritual Creature — Fiend
 
 (1 - Activable Flash Soft) Défaussez 1 créature “Burning Abyss”, ciblez 1 créature ; la cible gagne -X/-X ce tour-ci, où X est la force de la carte envoyée.
 
-(2 - Déclenchable) **On Send GYD** — Ciblez 1 permanent non-terrain ; envoyez-le dans le GYD.
+(2 - Déclenchable) **On Send Grave** — Ciblez 1 permanent non-terrain ; envoyez-le dans le Grave.
 
 ---
 
@@ -318,7 +318,7 @@ Fusion Creature — Fairy
 
 (1 - Passif) **Défense talismanique**.
 
-(2 - Activable Flash Soft) Envoyez 1 carte “Burning Abyss” de votre main à votre GYD ; piochez 1 carte.
+(2 - Activable Flash Soft) Envoyez 1 carte “Burning Abyss” de votre main à votre Grave ; piochez 1 carte.
 
 (3 - Déclenchable) **On Destroy** — Ciblez 1 adversaire ; il se défausse d’1 carte au hasard.
 
@@ -338,7 +338,7 @@ Link Lvl 2 Creature — Fairy
 
 (2 - Passif) Si Cherubini devait être détruite, vous pouvez sacrifier 1 autre permanent à la place.
 
-(3 - Activable Sorcery Soft) Envoyez 1 créature MV 1 du Deck au GYD : 1 créature “Burning Abyss” ciblée gagne +X/+X ce tour-ci, X étant sa force.
+(3 - Activable Sorcery Soft) Envoyez 1 créature MV 1 du Deck au Grave : 1 créature “Burning Abyss” ciblée gagne +X/+X ce tour-ci, X étant sa force.
 
 ---
 # Magies et Pièges
@@ -353,7 +353,7 @@ Ritual Summon Sorcery
 
 (1 - Résolution) **Ritual Summon** 1 “Burning Abyss” en sacrifiant des créatures depuis votre main ou terrain dont la MV totale est supérieure ou égale à la MV de la Ritual Creature.
 
-(2 - Activable Sorcery Hard) Depuis votre GYD, exilez cette carte et défaussez 1 créature “Burning Abyss” ; cherchez 1 carte “Burning Abyss”.
+(2 - Activable Sorcery Hard) Depuis votre Grave, exilez cette carte et défaussez 1 créature “Burning Abyss” ; cherchez 1 carte “Burning Abyss”.
 
 ---
 
@@ -365,7 +365,7 @@ Fusion Summon Sorcery
 
 (1 - Résolution) **Fusion Summon** 1 Creature “Burning Abyss” en utilisant des créatures depuis votre main ou terrain comme matériaux.
 
-(2 - Activable Sorcery Soft) Depuis votre GYD, exilez Terminus, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
+(2 - Activable Sorcery Soft) Depuis votre Grave, exilez Terminus, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
 
 ---
 
@@ -375,7 +375,7 @@ Fusion Summon Sorcery
 
 Trap Instant
 
-(1 - Résolution) Renvoyez sur le terrain n’importe quel nombre de créatures “Burning Abyss” envoyées à votre GYD ce tour-ci.
+(1 - Résolution) Renvoyez sur le terrain n’importe quel nombre de créatures “Burning Abyss” envoyées à votre Grave ce tour-ci.
 
 ---
 
@@ -411,7 +411,7 @@ Creature — Fiend
 
 (1 - Passif) Les autres créatures Fiend que vous contrôlez sont **Indestructibles**.
 
-(2 - Déclenchable Hard) **On Send GYD** — Envoyez 1 créature Fiend de votre Deck au GYD.
+(2 - Déclenchable Hard) **On Send Grave** — Envoyez 1 créature Fiend de votre Deck au Grave.
 
 ---
 
@@ -423,7 +423,7 @@ Creature — Wizard
 
 **3 / 2**
 
-(1 - Déclenchable Hard) **On Enter** — Envoyez 1 créature MV 1 de votre Deck au GYD.
+(1 - Déclenchable Hard) **On Enter** — Envoyez 1 créature MV 1 de votre Deck au Grave.
 
 (2 - Déclenchable) **On Destroy** — Piochez 1 carte.
 
@@ -437,7 +437,7 @@ Creature — Winged Beast
 
 **1 / 2**
 
-(1 - Déclenchable Hard) **On Enter** — Ciblez 1 créature MV 1 de votre GYD ; **Reanimate** la cible. La cible perd ses capacités sur le terrain.
+(1 - Déclenchable Hard) **On Enter** — Ciblez 1 créature MV 1 de votre Grave ; **Reanimate** la cible. La cible perd ses capacités sur le terrain.
 
 ---
 
@@ -449,9 +449,9 @@ Creature — Fiend
 
 **0 / 1**
 
-(1 - Déclenchable Hard Linked) **On Send GYD** — Regard 3.
+(1 - Déclenchable Hard Linked) **On Send Grave** — Regard 3.
 
-(2 - Activable Flash Hard Linked) Depuis votre GYD, exilez cette carte ; révélez la carte du dessus de votre Deck. Si c’est une Trap, **Set** la carte face cachée sur le terrain ; vous pouvez la lancer ce tour-ci. Sinon, envoyez-la au GYD.
+(2 - Activable Flash Hard Linked) Depuis votre Grave, exilez cette carte ; révélez la carte du dessus de votre Deck. Si c’est une Trap, **Set** la carte face cachée sur le terrain ; vous pouvez la lancer ce tour-ci. Sinon, envoyez-la au Grave.
 
 ---
 
@@ -461,7 +461,7 @@ Creature — Fiend
 
 Trap Instant
 
-(1 - Résolution) Ciblez 1 créature dans le GYD de votre adversaire ; mélangez la cible dans le Deck, puis vous pouvez envoyer 1 créature Fiend de votre Deck au GYD.
+(1 - Résolution) Ciblez 1 créature dans le Grave de votre adversaire ; mélangez la cible dans le Deck, puis vous pouvez envoyer 1 créature Fiend de votre Deck au Grave.
 
 ---
 
@@ -511,7 +511,7 @@ Xyz Creature — Machine
 
 Xyz Coût Alternatif — 1 créature Xyz qui a attaqué ce tour-ci. Ses matériels se transfèrent.
 
-(1 - Activable Flash Soft) **Detach 2** ; envoyez tous les autres permanents non-terrain au GYD.
+(1 - Activable Flash Soft) **Detach 2** ; envoyez tous les autres permanents non-terrain au Grave.
 
 (2 - Déclenchable Soft) **On Creature you Control Destroy** — **Attach** la créature détruite à ZEUS.
 

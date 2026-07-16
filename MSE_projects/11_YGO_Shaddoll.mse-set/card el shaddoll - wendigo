@@ -24,7 +24,7 @@ card:
 	rule_text:
 		<i>1 créature “Shaddoll” + 1 créature verte</i>
 		<i-auto>(1 - Activable Flash Hard)</i-auto> La créature ciblée gagne <b>indestructible</b> jusqu’à la fin du tour.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send GYD</b> — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 5

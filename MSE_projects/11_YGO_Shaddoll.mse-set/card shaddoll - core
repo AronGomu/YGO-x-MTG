@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Résolution)</i-auto> Core devient une Enchantment Creature — Puppet 2/3 de toutes les couleurs avec « Cette carte peut être utilisée comme matériau pour n’importe quelle Fusion Creature “Shaddoll” à la place d’un matériau requis. »
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send GYD by Effect</b> — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave by Effect</b> — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 3

@@ -23,8 +23,8 @@ card:
 	rarity: common
 	rule_text:
 		<i>1 créature “Shaddoll” + 1 créature bleue</i>
-		<i-auto>(1 - Passif)</i-auto> Si une créature devait arriver sur le terrain sans avoir été lancée depuis une main ou un GYD, exilez-la à la place.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send GYD</b> — Ciblez 1 carte “Shaddoll” non-créature dans votre GYD ; renvoyez-la dans votre main.
+		<i-auto>(1 - Passif)</i-auto> Si une créature devait arriver sur le terrain sans avoir été lancée depuis une main ou un Grave, exilez-la à la place.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Ciblez 1 carte “Shaddoll” non-créature dans votre Grave ; renvoyez-la dans votre main.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

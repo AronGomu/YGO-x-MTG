@@ -17,8 +17,8 @@ card:
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
-		En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre GYD un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
-		(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre GYD.
+		En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre Grave un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
+		(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre Grave.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 010/016 C
 	card_code_text_2: 010/016 C

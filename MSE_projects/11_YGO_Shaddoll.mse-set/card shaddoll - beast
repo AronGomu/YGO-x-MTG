@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Piochez 2 cartes, puis défaussez 1 carte.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Piochez 1 carte.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Piochez 1 carte.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 3

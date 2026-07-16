@@ -61,7 +61,7 @@ Creature — Wizard Spellbook
 
 **Book Affinity**
 
-(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou GYD et ciblez 1 permanent ; détruisez-le.
+(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou Grave et ciblez 1 permanent ; détruisez-le.
 
 ---
 
@@ -105,7 +105,7 @@ Sorcery
 
 **Spell Affinity**
 
-(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre GYD, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :
+(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre Grave, puis choisissez 1 mode selon le nombre de cartes ainsi exilées :
 
 - 1 — Retournez la créature ciblée face verso.
 - 2 — Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
@@ -157,7 +157,7 @@ Sorcery
 
 **Spell Affinity**
 
-(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre GYD. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
+(1 - Résolution) Révélez 1 autre “Spellbook” de votre main, puis choisissez 1 “Spellbook” dans votre Grave. Copiez son texte. Vous pouvez lancer la copie sans payer son coût de mana.
 
 ---
 
@@ -169,9 +169,9 @@ Sorcery
 
 **Spell Affinity**
 
-En tant que coût supplémentaire pour lancer ce sort, exilez 1 créature “Spellbook” de votre GYD et 1 autre “Spellbook” de votre main ou GYD.
+En tant que coût supplémentaire pour lancer ce sort, exilez 1 créature “Spellbook” de votre Grave et 1 autre “Spellbook” de votre main ou Grave.
 
-(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre GYD dont la MV est inférieure ou égale à celle de la créature exilée.
+(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre Grave dont la MV est inférieure ou égale à celle de la créature exilée.
 
 ---
 
@@ -209,9 +209,9 @@ Sorcery
 
 **Spell Affinity**
 
-En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre GYD un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
+En tant que coût supplémentaire pour lancer ce sort, exilez depuis votre Grave un nombre de “Spellbook” supérieur ou égal à la MV de la créature “Spellbook” ciblée.
 
-(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre GYD.
+(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre Grave.
 
 ---
 
@@ -237,7 +237,7 @@ Enchantment
 
 Enchantment — Land
 
-(1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre GYD au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
+(1 - Déclenchable Soft) Au début de votre entretien, vous pouvez mettre 1 “Spellbook” depuis votre Grave au-dessous de votre Deck. Si vous faites ainsi, piochez 1 carte.
 
 (2 - Déclenchable Soft) Si cette carte quitte le terrain, vous pouvez mettre en jeu depuis votre Deck 1 créature “Spellbook”.
 

@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Envoyez 1 créature MV 1 de votre Deck au GYD.
+		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Envoyez 1 créature MV 1 de votre Deck au Grave.
 		<i-auto>(2 - Déclenchable)</i-auto> <b>On Destroy</b> — Piochez 1 carte.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3

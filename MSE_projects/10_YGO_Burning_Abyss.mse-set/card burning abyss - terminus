@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 Creature “Burning Abyss” en utilisant des créatures depuis votre main ou terrain comme matériaux.
-		<i-auto>(2 - Activable Sorcery Soft)</i-auto> Depuis votre GYD, exilez Terminus, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
+		<i-auto>(2 - Activable Sorcery Soft)</i-auto> Depuis votre Grave, exilez Terminus, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 021/030 C
 	card_code_text_2: 021/030 C

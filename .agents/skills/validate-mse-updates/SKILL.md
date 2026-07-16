@@ -227,7 +227,7 @@ A candidate must be a pattern maker, such as:
 - a genuinely new keyword or event;
 - an evolution/generalization of an existing global rule;
 - a repeated templating convention;
-- a consistent reusable PSCT process such as `Depuis votre GYD, exilez cette carte ; ...`;
+- a consistent reusable PSCT process such as `Depuis votre Grave, exilez cette carte ; ...`;
 - a project-wide frame/type/material mapping;
 - a consistent grammar or zone convention shared across cards.
 

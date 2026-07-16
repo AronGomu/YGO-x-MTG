@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		(1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
-		(2 - Passif) Vous pouvez lancer cette carte depuis votre GYD. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+		(2 - Passif) Vous pouvez lancer cette carte depuis votre Grave. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 004/017 C
 	card_code_text_2: 004/017 C

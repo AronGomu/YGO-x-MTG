@@ -21,7 +21,7 @@ card:
 	rule_text:
 		<i>2 créatures MV 2</i>
 		Xyz Coût Alternatif — <sym-auto>W</sym-auto>, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez. Ses matériels se transfèrent.
-		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 1</b> ; envoyez 1 carte depuis votre Deck au GYD.
+		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 1</b> ; envoyez 1 carte depuis votre Deck au Grave.
 		<i-auto>(2 - Déclenchable)</i-auto> <b>On Destroy</b> — <b>Summon</b> 1 créature “Burning Abyss” depuis votre Sideboard.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5

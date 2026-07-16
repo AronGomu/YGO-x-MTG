@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Activable Flash Soft)</i-auto> Défaussez 1 créature “Burning Abyss”, ciblez 1 créature ; la cible gagne -X/-X ce tour-ci, où X est la force de la carte envoyée.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send GYD</b> — Ciblez 1 permanent non-terrain ; envoyez-le dans le GYD.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Ciblez 1 permanent non-terrain ; envoyez-le dans le Grave.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

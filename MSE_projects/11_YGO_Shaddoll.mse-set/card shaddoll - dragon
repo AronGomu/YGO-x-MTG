@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 permanent non-terrain ; renvoyez-le dans la main de son propriétaire.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Ciblez 1 permanent non-terrain non-créature ; détruisez-le.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Ciblez 1 permanent non-terrain non-créature ; détruisez-le.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

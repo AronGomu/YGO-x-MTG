@@ -67,7 +67,7 @@ Build a short rules checklist before editing. It must cover every applicable cur
 - ability numbering, labels, timings, and frequencies;
 - costs, alternative costs, casting conditions, and evergreen keywords;
 - bold event/action keywords and em-dash placement;
-- canonical vocabulary and zones such as `MV`, `Deck`, `GYD`, and `Sideboard`;
+- canonical vocabulary and zones such as `MV`, `Deck`, `Grave`, and `Sideboard`;
 - material/invocation lines and Extra Deck types;
 - MSE markup, field order, frame selection, image fields, collection numbers, and docs equivalents;
 - casting-cost and power/toughness representation.

@@ -158,8 +158,8 @@ class ShaddollCardsTest(unittest.TestCase):
     def test_approved_anoyatyllis_and_aeon_mechanics_are_preserved(self) -> None:
         by_name = {field(text, "name"): text for text in self.cards.values()}
         anoyatyllis = by_name["El Shaddoll - Anoyatyllis"]
-        self.assertIn("depuis une main ou un GYD", anoyatyllis)
-        self.assertIn("<b>On Send GYD</b>", anoyatyllis)
+        self.assertIn("depuis une main ou un Grave", anoyatyllis)
+        self.assertIn("<b>On Send Grave</b>", anoyatyllis)
         self.assertIn("Ciblez 1 carte", anoyatyllis)
         self.assertNotIn("Soft", "\n".join(rules(anoyatyllis)))
 

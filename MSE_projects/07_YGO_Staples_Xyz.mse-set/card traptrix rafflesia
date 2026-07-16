@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i>2 créatures MV 1</i>
 		(1 - Passif) Cette carte n’est pas affectée par les effets des Trap.
-		(2 - Activable Flash Soft) <b>Detach 1</b> et envoyez 1 Trap depuis votre Deck au GYD : copiez son effet de Résolution.
+		(2 - Activable Flash Soft) <b>Detach 1</b> et envoyez 1 Trap depuis votre Deck au Grave : copiez son effet de Résolution.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 5

@@ -40,7 +40,7 @@ class UpdateRulesSkillTest(unittest.TestCase):
         self.assertIn("### Pattern destroyer", self.skill)
         self.assertIn("### Pattern maker", self.skill)
         self.assertIn("a one-card mechanic with no reusable syntax implication", self.skill)
-        self.assertIn("Depuis votre GYD, exilez cette carte ; ...", self.skill)
+        self.assertIn("Depuis votre Grave, exilez cette carte ; ...", self.skill)
 
     def test_general_and_archetype_rules_have_separate_owners(self) -> None:
         self.assertIn("docs/context.md` contient uniquement les règles générales", self.context)
@@ -55,7 +55,7 @@ class UpdateRulesSkillTest(unittest.TestCase):
             self.assertIn("Problem-Solving Card Text (PSCT)", text)
             self.assertIn("**mot-clé de condition** —", text)
             self.assertIn("coûts et cibles ;", text)
-            self.assertIn("**On Send GYD** — Défaussez 1 carte", text)
+            self.assertIn("**On Send Grave** — Défaussez 1 carte", text)
 
     def test_validate_mse_waits_for_the_completed_review_file(self) -> None:
         self.assertIn("only pattern destroyers and pattern makers", self.validate_skill)

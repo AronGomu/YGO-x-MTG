@@ -81,11 +81,11 @@ class TrapSupertypeTests(unittest.TestCase):
         )
         rafflesia = rafflesia_path.read_text(encoding="utf-8-sig")
         self.assertIn("<i>2 créatures MV 1</i>", rafflesia)
-        self.assertIn("1 Trap depuis votre Deck au GYD", rafflesia)
+        self.assertIn("1 Trap depuis votre Deck au Grave", rafflesia)
         self.assertNotIn("error-spelling", rafflesia)
         rafflesia_doc = document_section(ROOT / "docs/07_xyz.md", "Traptrix Rafflesia")
         self.assertIn("*2 créatures MV 1*", rafflesia_doc)
-        self.assertIn("1 Trap depuis votre Deck au GYD", rafflesia_doc)
+        self.assertIn("1 Trap depuis votre Deck au Grave", rafflesia_doc)
 
         back_jack_path = (
             ROOT / "MSE_projects/10_YGO_Burning_Abyss.mse-set/card absolute king back jack"

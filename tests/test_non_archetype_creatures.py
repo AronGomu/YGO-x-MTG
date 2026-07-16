@@ -8,7 +8,7 @@ PROJECT = REPO_ROOT / "MSE_projects" / "03_YGO_Non_Archetype_Creatures.mse-set"
 
 EXPECTED_RULES = {
     "card ash blossom and joyous spring": "(1 - Activable Flash Hard) Défaussez cette carte et ciblez 1 sort ou capacité ; si son effet interagit avec le Deck (pioche, <b>Mill</b>, recherche, etc.), contrecarrez-le.",
-    "card d d crow": "(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 GYD ; exilez-la.",
+    "card d d crow": "(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 Grave ; exilez-la.",
     "card effect veiler": "(1 - Activable Flash) Défaussez cette carte et ciblez 1 créature sur le terrain ; jusqu’à la fin du tour, elle perd toutes ses capacités, et contrecarrez toutes ses capacités.",
     "card maxx c": "(1 - Activable Flash Hard) Défaussez cette carte ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d’un adversaire ce tour-ci, jusqu’à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.",
 }

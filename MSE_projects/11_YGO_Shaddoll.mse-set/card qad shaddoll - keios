@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — <b>Summon</b> 1 créature “Shaddoll” depuis votre main face visible ou face verso.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Défaussez-vous d’1 créature “Shaddoll” ; les créatures que vous contrôlez gagnent +X/+X jusqu’à la fin du tour, X étant la MV de la carte défaussée.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Défaussez-vous d’1 créature “Shaddoll” ; les créatures que vous contrôlez gagnent +X/+X jusqu’à la fin du tour, X étant la MV de la carte défaussée.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 1

@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-spell></word-list-spell>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au GYD, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.
+		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au Grave, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 012/025 C
 	card_code_text_2: 012/025 C

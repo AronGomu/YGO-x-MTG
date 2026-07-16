@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-enchantment></word-list-enchantment>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable)</i-auto> Si 1+ cartes “Shaddoll” sont mises dans votre GYD par un effet de carte, mettez 1 compteur Magie sur cette carte.
+		<i-auto>(1 - Déclenchable)</i-auto> Si 1+ cartes “Shaddoll” sont mises dans votre Grave par un effet de carte, mettez 1 compteur Magie sur cette carte.
 		<i-auto>(2 - Passif)</i-auto> Pendant le tour de chaque adversaire, les créatures qu’il contrôle gagnent -1/-0 pour chaque groupe de 5 compteurs Magie sur cette carte.
 		<i-auto>(3 - Passif)</i-auto> Si vous choisissez les matériaux pour une <b>Fusion Summon</b> “Shaddoll”, vous pouvez retirer 3 compteurs Magie de cette carte. Si vous faites ainsi, vous pouvez utiliser 1 créature contrôlée par un adversaire comme matériel pour cette invocation.
 	flavor_text: <i-flavor></i-flavor>

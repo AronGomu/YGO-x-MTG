@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
 		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD</b> — Exilez jusqu’à 3 cartes “Burning Abyss” de votre GYD ; Barbar inflige 1 blessure à l’adversaire ciblé pour chaque carte exilée.
+		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Exilez jusqu’à 3 cartes “Burning Abyss” de votre Grave ; Barbar inflige 1 blessure à l’adversaire ciblé pour chaque carte exilée.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

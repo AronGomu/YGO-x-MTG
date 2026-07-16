@@ -32,7 +32,7 @@ Creature — Bird
 
 **0 / 1**
 
-(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 GYD ; exilez-la.
+(1 - Activable Flash) Défaussez cette carte et ciblez 1 carte dans 1 Grave ; exilez-la.
 
 ---
 

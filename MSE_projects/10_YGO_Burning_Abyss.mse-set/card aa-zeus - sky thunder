@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i>2 créatures MV 4</i>
 		Xyz Coût Alternatif — 1 créature Xyz qui a attaqué ce tour-ci. Ses matériels se transfèrent.
-		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 2</b> ; envoyez tous les autres permanents non-terrain au GYD.
+		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 2</b> ; envoyez tous les autres permanents non-terrain au Grave.
 		<i-auto>(2 - Déclenchable Soft)</i-auto> <b>On Creature you Control Destroy</b> — <b>Attach</b> la créature détruite à ZEUS.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6

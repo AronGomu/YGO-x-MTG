@@ -22,8 +22,8 @@ card:
 	sub_type_4:
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution Hard Linked)</i-auto> Renvoyez 1 créature “Shaddoll” ciblée depuis votre GYD sur le terrain face visible ou face verso.
-		<i-auto>(2 - Activable Flash Hard Linked)</i-auto> Depuis votre GYD, exilez cette carte et 1 autre carte “Shaddoll” ; choisissez 1 créature que vous contrôlez et retournez-la face visible ou face verso.
+		<i-auto>(1 - Résolution Hard Linked)</i-auto> Renvoyez 1 créature “Shaddoll” ciblée depuis votre Grave sur le terrain face visible ou face verso.
+		<i-auto>(2 - Activable Flash Hard Linked)</i-auto> Depuis votre Grave, exilez cette carte et 1 autre carte “Shaddoll” ; choisissez 1 créature que vous contrôlez et retournez-la face visible ou face verso.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/025 C
 	card_code_text_2: 015/025 C

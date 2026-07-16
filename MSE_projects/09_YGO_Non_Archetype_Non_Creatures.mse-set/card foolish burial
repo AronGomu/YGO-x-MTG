@@ -16,7 +16,7 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au GYD.
+		(1 - Résolution) Envoyez 1 carte de créature depuis votre Deck au Grave.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 007/017 C
 	card_code_text_2: 007/017 C

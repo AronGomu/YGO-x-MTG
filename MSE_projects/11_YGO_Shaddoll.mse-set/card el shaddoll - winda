@@ -25,7 +25,7 @@ card:
 		<i>1 créature “Shaddoll” + 1 créature noire</i>
 		<i-auto>(1 - Passif)</i-auto> Chaque joueur ne peut lancer qu’1 créature par tour.
 		<i-auto>(2 - Passif)</i-auto> <b>Indestructible contre les effets</b>.
-		<i-auto>(3 - Déclenchable)</i-auto> <b>On Send GYD</b> — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+		<i-auto>(3 - Déclenchable)</i-auto> <b>On Send Grave</b> — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 1

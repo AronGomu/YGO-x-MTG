@@ -35,7 +35,7 @@ Lorsque cette créature est retournée face visible, appliquez l'effet indiqué.
 
 ### Corruption
 
-Lorsque cette carte est mise dans votre GYD par un effet de carte, appliquez l'effet indiqué.
+Lorsque cette carte est mise dans votre Grave par un effet de carte, appliquez l'effet indiqué.
 
 ---
 
@@ -53,7 +53,7 @@ Creature — Beast
 
 (1 - Déclenchable Hard Linked) **Flip** — Piochez 2 cartes, puis défaussez 1 carte.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Piochez 1 carte.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Piochez 1 carte.
 
 ---
 
@@ -67,7 +67,7 @@ Creature — Dragon
 
 (1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 permanent non-terrain ; renvoyez-le dans la main de son propriétaire.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Ciblez 1 permanent non-terrain non-créature ; détruisez-le.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Ciblez 1 permanent non-terrain non-créature ; détruisez-le.
 
 ---
 
@@ -81,7 +81,7 @@ Creature — Beast
 
 (1 - Déclenchable Hard Linked) **Flip** — Cherchez 1 carte “Shaddoll” non-créature.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Cherchez 1 créature “Shaddoll”.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Cherchez 1 créature “Shaddoll”.
 
 ---
 
@@ -95,7 +95,7 @@ Creature — Puppet
 
 (1 - Déclenchable Hard Linked) **Flip** — Détruisez 1 créature ciblée.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave.
 
 ---
 
@@ -107,9 +107,9 @@ Tuner Creature — Bird
 
 **1 / 2**
 
-(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 créature “Shaddoll” dans votre GYD ; **Reanimate** la créature ciblée face verso.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 créature “Shaddoll” dans votre Grave ; **Reanimate** la créature ciblée face verso.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — **Reanimate** cette carte face verso.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — **Reanimate** cette carte face verso.
 
 ---
 
@@ -119,9 +119,9 @@ Tuner Creature — Bird
 
 Creature — Beast
 
-(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 carte “Shaddoll” dans votre GYD ; renvoyez-la dans votre main.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 carte “Shaddoll” dans votre Grave ; renvoyez-la dans votre main.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Vous pouvez retourner face visible ou face verso 1 créature que vous contrôlez.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Vous pouvez retourner face visible ou face verso 1 créature que vous contrôlez.
 
 ---
 
@@ -133,7 +133,7 @@ Creature — Psychic
 
 (1 - Déclenchable Hard Linked) **Flip** — **Summon** 1 créature “Shaddoll” depuis votre Deck face visible ou face verso.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — **Summon** 1 créature “Shaddoll” depuis votre Deck face verso.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — **Summon** 1 créature “Shaddoll” depuis votre Deck face verso.
 
 ---
 
@@ -147,7 +147,7 @@ Creature — Psychic
 
 (1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 de vos créatures “Shaddoll” exilées ; **Summon**-la face verso.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Ciblez 3 cartes dans les GYD ; exilez-les.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Ciblez 3 cartes dans les Grave ; exilez-les.
 
 ---
 
@@ -161,7 +161,7 @@ Creature — Wizard
 
 (1 - Déclenchable Hard Linked) **Flip** — **Summon** 1 créature “Shaddoll” depuis votre main face visible ou face verso.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — Défaussez-vous d’1 créature “Shaddoll” ; les créatures que vous contrôlez gagnent +X/+X jusqu’à la fin du tour, X étant la MV de la carte défaussée.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — Défaussez-vous d’1 créature “Shaddoll” ; les créatures que vous contrôlez gagnent +X/+X jusqu’à la fin du tour, X étant la MV de la carte défaussée.
 
 ---
 
@@ -173,9 +173,9 @@ Creature — Fiend
 
 **5 / 5**
 
-(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 créature contrôlée par un adversaire ; envoyez 1 créature “Shaddoll” depuis votre Sideboard dans votre GYD, puis, si les 2 cartes sont de la même couleur, exilez la cible.
+(1 - Déclenchable Hard Linked) **Flip** — Ciblez 1 créature contrôlée par un adversaire ; envoyez 1 créature “Shaddoll” depuis votre Sideboard dans votre Grave, puis, si les 2 cartes sont de la même couleur, exilez la cible.
 
-(2 - Déclenchable Hard Linked) **On Send GYD by Effect** — **Mill X**, X étant le nombre de couleurs parmi les créatures que vous contrôlez.
+(2 - Déclenchable Hard Linked) **On Send Grave by Effect** — **Mill X**, X étant le nombre de couleurs parmi les créatures que vous contrôlez.
 
 ---
 
@@ -193,11 +193,11 @@ Fusion Creature — Fairy
 
 *1 créature “Shaddoll” + 1 créature blanche*
 
-(1 - Déclenchable) **On Enter** — Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD.
+(1 - Déclenchable) **On Enter** — Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave.
 
 (2 - Déclenchable) **On Block / Blocked** — Si l’autre créature a été Summon, détruisez-la.
 
-(3 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+(3 - Déclenchable) **On Send Grave** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 
 ---
 
@@ -215,7 +215,7 @@ Fusion Creature — Wizard
 
 (2 - Passif) **Indestructible contre les effets**.
 
-(3 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+(3 - Déclenchable) **On Send Grave** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 
 ---
 
@@ -247,7 +247,7 @@ Fusion Creature — Machine
 
 (1 - Déclenchable Flash Hard) Vous pouvez révéler 1 carte “Shaddoll” de votre main et cibler 1 capacité ; défaussez la carte révélée et contrecarrez la capacité ciblée.
 
-(2 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+(2 - Déclenchable) **On Send Grave** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 
 ---
 
@@ -263,7 +263,7 @@ Fusion Creature — Elemental
 
 (1 - Déclenchable Soft) **On Opponent Summon** — Vous pouvez révéler 1 carte “Shaddoll” de votre main ; défaussez la carte révélée, contrecarrez toutes les capacités déclenchées de cette créature, puis détruisez-la.
 
-(2 - Déclenchable Soft) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+(2 - Déclenchable Soft) **On Send Grave** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 
 ---
 
@@ -277,9 +277,9 @@ Fusion Creature — Fiend
 
 *1 créature “Shaddoll” + 1 créature bleue*
 
-(1 - Passif) Si une créature devait arriver sur le terrain sans avoir été lancée depuis une main ou un GYD, exilez-la à la place.
+(1 - Passif) Si une créature devait arriver sur le terrain sans avoir été lancée depuis une main ou un Grave, exilez-la à la place.
 
-(2 - Déclenchable) **On Send GYD** — Ciblez 1 carte “Shaddoll” non-créature dans votre GYD ; renvoyez-la dans votre main.
+(2 - Déclenchable) **On Send Grave** — Ciblez 1 carte “Shaddoll” non-créature dans votre Grave ; renvoyez-la dans votre main.
 
 ---
 
@@ -295,7 +295,7 @@ Fusion Creature — Psychic
 
 (1 - Activable Flash Hard) La créature ciblée gagne **indestructible** jusqu’à la fin du tour.
 
-(2 - Déclenchable) **On Send GYD** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+(2 - Déclenchable) **On Send Grave** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 
 ---
 
@@ -329,7 +329,7 @@ Fusion Summon Instant
 
 Fusion Summon Enchantment
 
-(1 - Activable Sorcery Soft) **Fusion Summon** 1 créature “Shaddoll” en exilant les matériaux indiqués depuis votre terrain ou GYD. Puis envoyez au GYD 1 créature contrôlée par un adversaire qui partage une couleur avec cette créature.
+(1 - Activable Sorcery Soft) **Fusion Summon** 1 créature “Shaddoll” en exilant les matériaux indiqués depuis votre terrain ou Grave. Puis envoyez au Grave 1 créature contrôlée par un adversaire qui partage une couleur avec cette créature.
 
 ---
 
@@ -343,7 +343,7 @@ Trap Enchantment
 
 (1 - Résolution) Core devient une Enchantment Creature — Puppet 2/3 de toutes les couleurs avec « Cette carte peut être utilisée comme matériau pour n’importe quelle Fusion Creature “Shaddoll” à la place d’un matériau requis. »
 
-(2 - Déclenchable) **On Send GYD by Effect** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre GYD dans votre main.
+(2 - Déclenchable) **On Send Grave by Effect** — Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main.
 
 ---
 
@@ -353,9 +353,9 @@ Trap Enchantment
 
 Trap Instant
 
-(1 - Résolution Hard Linked) Renvoyez 1 créature “Shaddoll” ciblée depuis votre GYD sur le terrain face visible ou face verso.
+(1 - Résolution Hard Linked) Renvoyez 1 créature “Shaddoll” ciblée depuis votre Grave sur le terrain face visible ou face verso.
 
-(2 - Activable Flash Hard Linked) Depuis votre GYD, exilez cette carte et 1 autre carte “Shaddoll” ; choisissez 1 créature que vous contrôlez et retournez-la face visible ou face verso.
+(2 - Activable Flash Hard Linked) Depuis votre Grave, exilez cette carte et 1 autre carte “Shaddoll” ; choisissez 1 créature que vous contrôlez et retournez-la face visible ou face verso.
 
 ---
 
@@ -365,7 +365,7 @@ Trap Instant
 
 Trap Instant
 
-(1 - Résolution) Envoyez 1 carte “Shaddoll” depuis votre Deck au GYD, puis vous pouvez retourner face visible autant de créatures “Shaddoll” face verso que vous contrôlez.
+(1 - Résolution) Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave, puis vous pouvez retourner face visible autant de créatures “Shaddoll” face verso que vous contrôlez.
 
 ---
 
@@ -375,7 +375,7 @@ Trap Instant
 
 Legendary Enchantment
 
-(1 - Déclenchable) Si 1+ cartes “Shaddoll” sont mises dans votre GYD par un effet de carte, mettez 1 compteur Magie sur cette carte.
+(1 - Déclenchable) Si 1+ cartes “Shaddoll” sont mises dans votre Grave par un effet de carte, mettez 1 compteur Magie sur cette carte.
 
 (2 - Passif) Pendant le tour de chaque adversaire, les créatures qu’il contrôle gagnent -1/-0 pour chaque groupe de 5 compteurs Magie sur cette carte.
 
@@ -389,4 +389,4 @@ Legendary Enchantment
 
 Trap Instant
 
-(1 - Résolution) Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au GYD, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.
+(1 - Résolution) Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au Grave, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.

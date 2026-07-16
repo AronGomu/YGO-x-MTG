@@ -22,7 +22,7 @@ card:
 		<i>2 Creatures MV 1</i>
 		<i-auto>(1 - Passif)</i-auto> <b>Bounded 1</b> — La créature <b>bounded</b> gagne <b>Indestructible</b> contre les effets.
 		<i-auto>(2 - Passif)</i-auto> Si Cherubini devait être détruite, vous pouvez sacrifier 1 autre permanent à la place.
-		<i-auto>(3 - Activable Sorcery Soft)</i-auto> Envoyez 1 créature MV 1 du Deck au GYD : 1 créature “Burning Abyss” ciblée gagne +X/+X ce tour-ci, X étant sa force.
+		<i-auto>(3 - Activable Sorcery Soft)</i-auto> Envoyez 1 créature MV 1 du Deck au Grave : 1 créature “Burning Abyss” ciblée gagne +X/+X ce tour-ci, X étant sa force.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 1

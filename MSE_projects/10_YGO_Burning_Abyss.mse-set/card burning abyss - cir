@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
 		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD</b> — Ciblez 1 créature “Burning Abyss” de votre GYD ; <b>Reanimate</b> la cible.
+		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Ciblez 1 créature “Burning Abyss” de votre Grave ; <b>Reanimate</b> la cible.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

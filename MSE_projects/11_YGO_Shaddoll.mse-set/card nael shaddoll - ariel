@@ -23,7 +23,7 @@ card:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 de vos créatures “Shaddoll” exilées ; <b>Summon</b>-la face verso.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send GYD by Effect</b> — Ciblez 3 cartes dans les GYD ; exilez-les.
+		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Ciblez 3 cartes dans les Grave ; exilez-les.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 3

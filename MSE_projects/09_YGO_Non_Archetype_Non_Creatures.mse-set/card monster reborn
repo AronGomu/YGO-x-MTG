@@ -16,6 +16,6 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 GYD.
+		(1 - Résolution) Renvoyez sur le terrain sous votre contrôle 1 carte de créature ciblée depuis 1 Grave.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 010/017 C
