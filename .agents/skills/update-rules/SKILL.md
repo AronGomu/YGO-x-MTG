@@ -22,7 +22,7 @@ Keep general rules separate from archetype-specific design:
 
 - `docs/context.md` contains only syntax, PSCT, formatting, vocabulary, and structural conventions that apply to every card in the project.
 - `docs/02_rules_keywords_card_design.md` mirrors detailed global card-design and templating rules when the same global rule belongs there.
-- Each archetype’s numbered document under `docs/` owns that archetype’s names, mechanics, card-specific exceptions, costs, stats, types, and effects. Do not promote those facts into `docs/context.md` unless they form a reusable project-wide pattern.
+- Each archetype’s numbered document under `docs/` owns that archetype’s identity, mechanics, and design exceptions. Card-by-card costs, stats, types, and effects live only in `MSE_projects/*.mse-set/`. Do not reintroduce full card blocks into docs. Do not promote card-specific facts into `docs/context.md` unless they form a reusable project-wide pattern.
 
 ## What merits a rule review
 
@@ -45,7 +45,7 @@ A pattern maker is a reusable convention that is not yet documented clearly. Exa
 
 - a new event or action keyword;
 - a repeated, consistent way to express a process;
-- a reusable PSCT clause such as `Depuis votre Grave, exilez cette carte ; ...`;
+- a reusable PSCT clause or keyword such as `**Exile from Grave** ; ...`;
 - a generalization that replaces several equivalent wordings with one stable form.
 
 Prefer at least two supporting examples. A single example is allowed only when it introduces an explicit keyword or an obviously reusable process boundary.
@@ -82,10 +82,18 @@ If there are no pattern destroyers or pattern makers, do not create a pending de
 
 Create `rule_reviews/` if needed. Consolidate every unresolved rule question and possible reusable pattern from the current scope into one review file; never scatter one review across multiple files. Every decision-bearing issue must appear as a `D*` pattern-destroyer item or an `R*` pattern-maker item. Do not keep hidden questions in chat, prose summaries, or an internal ledger.
 
-Write a deterministic Markdown file named:
+**Pre-written proposals file:** if the caller (for example `fix-mse-cards` Phase 8) already created a complete `rule_reviews/*-rule-proposals.md` (or another path) that lists every `D*` / `R*` with `Status: AWAITING_USER`, open that file as the review. Do not regenerate a second file and do not drop items. Only rewrite the file when it is missing required sections or items that Phase 1 still classifies as open pattern destroyers/makers.
+
+Otherwise write a deterministic Markdown file named:
 
 ```text
 rule_reviews/YYYY-MM-DD-<scope-slug>.md
+```
+
+Prefer the suffix `-rule-proposals` when the scope is an MSE reconciliation run, for example:
+
+```text
+rule_reviews/YYYY-MM-DD-<mse-project-slug>-rule-proposals.md
 ```
 
 If that path exists for a different review, append `-2`, `-3`, and so on. Never overwrite a user-completed review.

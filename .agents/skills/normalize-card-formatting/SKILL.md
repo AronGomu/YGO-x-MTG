@@ -14,7 +14,7 @@ The supplied MSE save data is the source of truth for mechanics. Preserve target
 
 Use the neighboring workflows instead when appropriate:
 
-- `validate-mse-updates` for user-authored MSE changes that may intentionally alter mechanics or project rules;
+- `fix-mse-cards` for user-authored MSE changes that may intentionally alter mechanics or project rules;
 - `update-card-from-ai` for `[ADD]` or `[UPDATE]` Markdown card definitions;
 - `add-ygo-card` for a new conversion from an original Yu-Gi-Oh! card name.
 
@@ -132,7 +132,7 @@ Never silently change:
 - card name, mana value, color, type, material requirement, or numeric stats;
 - the definition or behavior of a keyword.
 
-If a proposed grammar/templating correction crosses this boundary, leave the original mechanic unchanged and add it to an unresolved semantic ledger. This skill does not evolve `docs/context.md` or `docs/02_rules_keywords_card_design.md`; route those entries through `validate-mse-updates`.
+If a proposed grammar/templating correction crosses this boundary, leave the original mechanic unchanged and add it to an unresolved semantic ledger. This skill does not evolve `docs/context.md` or `docs/02_rules_keywords_card_design.md`; route those entries through `fix-mse-cards`.
 
 If a scoped effect would perform a normally illegal Summon, especially from the Sideboard without the required invocation method, call `AskUserQuestion` for that card before editing and ask whether to add `en ignorant les restrictions de Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a correct invocation.
 

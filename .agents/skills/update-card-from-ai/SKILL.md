@@ -12,7 +12,7 @@ Add or modify converted cube cards directly from structured Markdown supplied by
 
 The supplied converted card data is the **provisional source of truth** for card mechanics. Preserve it unless the user explicitly classifies a difference as an input error. Correct spelling, grammar, established vocabulary, and MSE markup, but never silently redesign the mechanic.
 
-This workflow has two mandatory interview loops, matching `validate-mse-updates`:
+This workflow has two mandatory interview loops, matching `fix-mse-cards`:
 
 1. **Conflict interview** — every difference between supplied card data and established rules must be classified.
 2. **Rule-candidate interview** — every inferred new or evolved rule must be accepted, rejected, or revised.
@@ -22,7 +22,7 @@ Use `AskUserQuestion` for every classification or confirmation. Do not replace a
 This skill differs from the other project workflows:
 
 - Use `add-ygo-card` when the user gives only an original Yu-Gi-Oh! card name and wants the agent to research and design the conversion.
-- Use `validate-mse-updates` when the user edited MSE files manually and those file edits are the source of truth.
+- Use `fix-mse-cards` when the user edited MSE files manually and those file edits are the source of truth.
 - Use this skill when the user already designed cards in Markdown and wants those definitions applied to docs and a specified MSE project.
 
 ## Accepted input
@@ -63,7 +63,7 @@ Accept harmless variations:
 - multiple cards separated by `---`;
 - `[ADD]` and `[UPDATE]` in the same request.
 
-Do not support `[REMOVE]` through this skill. Route removals through `validate-mse-updates` or a dedicated removal workflow because assets and generator references require destructive reconciliation.
+Do not support `[REMOVE]` through this skill. Route removals through `fix-mse-cards` or a dedicated removal workflow because assets and generator references require destructive reconciliation.
 
 If the target MSE project is missing, ambiguous, or outside `MSE_projects/`, use `AskUserQuestion` to select the intended checked-in `.mse-set` folder. If a card block lacks a mechanic-bearing field (name, cost, type, stats when applicable, or effect section), ask for the missing value before editing.
 
@@ -80,7 +80,7 @@ If the target MSE project is missing, ambiguous, or outside `MSE_projects/`, use
 3. Resolve the target under `MSE_projects/` by exact path or exact `.mse-set` filename.
 4. Read completely:
    - target `set` manifest;
-   - matching numbered document under `docs/`;
+   - matching archetype design doc under `docs/` only if mechanics/identity change (no full card text duplication);
    - `docs/context.md`;
    - `docs/02_rules_keywords_card_design.md`;
    - all existing target cards with matching names;
@@ -111,9 +111,9 @@ Show a concise parsed summary before editing when input is ambiguous. Do not inf
 Automatically correct mechanical-neutral issues:
 
 - French accents, spelling, agreement, apostrophes, and punctuation;
-- `GY` instead of `cimetière` in card text when project rules require it;
+- `Grave` instead of `Grave` in card text when project rules require it;
 - established English card types/subtypes (`Creature`, `Tuner`, `Zombie`, `Bird`, `Wizard`, `Insect`);
-- capitalization of `Deck`, `GY`, `Link Lvl`, and established event keywords;
+- capitalization of `Deck`, `Grave`, `Link Lvl`, and established event keywords;
 - `1 sort ou capacité ciblé` and similar target agreement;
 - Markdown `**keyword**` to MSE `<b>keyword</b>`;
 - Markdown `*material line*` to MSE `<i>material line</i>`;
@@ -152,7 +152,7 @@ Compare every parsed record against rules in these categories:
 2. keyword definitions and event timing;
 3. ability labels (`Passif`, `Activable`, `Déclenchable`, `Soft`, `Hard`, `Hard Linked`);
 4. invocation/material syntax;
-5. zones and project vocabulary (`GY`, Extra Deck, terrain, etc.);
+5. zones and project vocabulary (`Grave`, Extra Deck, terrain, etc.);
 6. card type, Link Lvl, frame, and stylesheet mapping;
 7. cost/stat conversion rules;
 8. French grammar, spelling, punctuation, accents, and templating;

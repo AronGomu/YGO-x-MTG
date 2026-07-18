@@ -27,20 +27,20 @@ Then read the generated `original_cards/<type>/<card name>.md` file. Treat that 
 
 ## Destination
 
-Prefer the existing matching files:
+Prefer the existing matching MSE project (source of truth for translated card text):
 
-- Utility creatures: `docs/03_non_archetype_creature.md` and `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set`
-- Fusion/Synchro/Xyz/Link staples: `docs/05_fusion.md` through `docs/08_link.md` and their numbered MSE projects
-- Utility spells/traps: `docs/09_non_archetype_non_creature.md` and its MSE project
-- Archetypes: numbered `docs/*archetype*.md` and matching `MSE_projects/*.mse-set`
+- Utility creatures: `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set`
+- Fusion/Synchro/Xyz/Link staples: `MSE_projects/05_YGO_Staples_Fusion.mse-set` through `08_YGO_Staples_Link.mse-set`
+- Utility spells/traps: `MSE_projects/09_YGO_Non_Archetype_Non_Creatures.mse-set`
+- Archetypes: matching `MSE_projects/*_YGO_*.mse-set`
 
-Docs headings use `[original Yu-Gi-Oh! name] => [cube display name]`; MSE `name:` uses the cube display name.
+Archetype design docs under `docs/10_`–`docs/13_` keep identity/mechanics only — do not reintroduce full card blocks there. MSE `name:` uses the cube display name.
 
 ## Conversion
 
 Convert the persisted official card record into concise, cube-playable French Magic rules text while preserving the Yu-Gi-Oh! identity.
 
-- Use the current vocabulary from project context: **Passif**, **Activable Sorcery**, **Activable Flash**, **Déclenchable**, **On Send GY**, **On Destroy**, **On Link Summon**, and existing summon mechanics.
+- Use the current vocabulary from project context: **Passif**, **Activable Sorcery**, **Activable Flash**, **Déclenchable**, **On Send Grave**, **On Destroy**, **On Link Summon**, and existing summon mechanics.
 - Match exact sibling wording for recurring archetype abilities.
 - Number abilities as `(1 - Type Metadata) ...`.
 - Docs use `**keyword**`; MSE uses `<b>keyword</b>`.
