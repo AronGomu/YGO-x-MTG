@@ -37,7 +37,6 @@ styling:
 	magic-m15-spellbook:
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 		overlay: 
-include_file: card aa zeus sky thunder
 include_file: card bagooska
 include_file: card bamboozling gossip shadow
 include_file: card big eye

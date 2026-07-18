@@ -3,7 +3,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 UPDATE_RULES = ROOT / ".agents" / "skills" / "update-rules" / "SKILL.md"
-VALIDATE_MSE = ROOT / ".agents" / "skills" / "validate-mse-updates" / "SKILL.md"
+VALIDATE_MSE = ROOT / ".agents" / "skills" / "fix-mse-cards" / "SKILL.md"
 CONTEXT = ROOT / "docs" / "context.md"
 RULES = ROOT / "docs" / "02_rules_keywords_card_design.md"
 SHADDOLL = ROOT / "docs" / "11_archetype_shaddoll.md"
@@ -40,7 +40,7 @@ class UpdateRulesSkillTest(unittest.TestCase):
         self.assertIn("### Pattern destroyer", self.skill)
         self.assertIn("### Pattern maker", self.skill)
         self.assertIn("a one-card mechanic with no reusable syntax implication", self.skill)
-        self.assertIn("Depuis votre Grave, exilez cette carte ; ...", self.skill)
+        self.assertIn("**Exile from Grave** ; ...", self.skill)
 
     def test_general_and_archetype_rules_have_separate_owners(self) -> None:
         self.assertIn("docs/context.md` contient uniquement les règles générales", self.context)
@@ -48,7 +48,8 @@ class UpdateRulesSkillTest(unittest.TestCase):
         self.assertNotIn("Les créatures Shaddoll conservent le type", self.context)
         self.assertIn("## Conventions propres à Shaddoll", self.shaddoll)
         self.assertIn("Les créatures Shaddoll conservent le type", self.shaddoll)
-        self.assertIn("Les mécaniques, exceptions et valeurs propres à un archétype", self.rules)
+        self.assertIn("Les mécaniques et exceptions propres à un archétype", self.rules)
+        self.assertIn("Les valeurs carte par carte vivent uniquement dans `MSE_projects/*.mse-set/`", self.rules)
 
     def test_psct_order_is_documented(self) -> None:
         for text in (self.context, self.rules):
@@ -58,7 +59,7 @@ class UpdateRulesSkillTest(unittest.TestCase):
             self.assertIn("**On Send Grave** — Défaussez 1 carte", text)
 
     def test_validate_mse_waits_for_the_completed_review_file(self) -> None:
-        self.assertIn("only pattern destroyers and pattern makers", self.validate_skill)
+        self.assertIn("every pattern destroyer and pattern maker", self.validate_skill)
         self.assertIn("Status: READY", self.validate_skill)
         self.assertIn("Status: APPLIED", self.validate_skill)
         self.assertIn("accepted archetype/card change", self.validate_skill)

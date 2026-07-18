@@ -1,14 +1,14 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: genevensis-00-main
 	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 12:11:32
-	time_modified: 2026-07-11 12:11:32
+	time_modified: 2026-07-17 23:18:10
 	name: Starving Venom Fusion Dragon
-	casting_cost: B
-	image: mse_images/image13.png
+	casting_cost: 1BR
+	image: image12.png
 	image_2: 
 	mainframe_image: 
 	mainframe_image_2: 
@@ -19,12 +19,14 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>Fusion — 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> DARK</i>
-		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si Starving Venom arrive, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>il</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>gagne</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> +X/+0 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>jusqu’à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la fin <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>du</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> tour, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>où</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> X est la force <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>d’une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> adverse <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
-		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si Starving Venom <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>meurt</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>détruisez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>toutes</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>adverses</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>qui</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ont</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>des</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>marqueurs</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i>2 créatures noires du terrain sauf jetons.</i>
+		<i-auto>(1 - Déclenchable)</i-auto> <b>On Fusion Summon</b> — Il gagne +X/+0, où X est la force d’une créature adverse ciblée.
+		<i-auto>(2 - Activable Sorcery Soft)</i-auto> Ciblez 1 créature adverse MV 2+ : le nom de Venom devient celui de la cible et il gagne ses capacités.
+		<i-auto>(3 - Déclenchable)</i-auto> On Destroy — Détruisez toutes les créatures adverses.
 	flavor_text: <i-flavor></i-flavor>
-	power: 3
-	toughness: 2
-	card_code_text: 013/015 R
-	card_code_text_2: 013/015 R
-	card_code_text_3: 013/015 R
+	power: 5
+	toughness: 4
+	card_code_text: 011/012 R
+	card_code_text_2: 011/012 R
+	card_code_text_3: 011/012 R
+	copyright: 

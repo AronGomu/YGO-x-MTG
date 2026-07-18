@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,15 +9,15 @@ card:
 	name: Justice of Prophecy
 	casting_cost: U
 	image: image4.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Spellbook</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
 		<b>Book Affinity</b>
-		(1 - Déclenchable Hard) <b>On Enter</b> — Au début de votre prochaine étape de fin, cherchez 1 “Spellbook”.
+		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Au début de votre prochaine étape de fin, cherchez 1 “Spellbook”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

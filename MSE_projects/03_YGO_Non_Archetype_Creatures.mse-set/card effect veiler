@@ -5,18 +5,17 @@ card:
 	has_styling: false
 	notes: Source: 03_non_archetype_creature.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-13 23:04:58
+	time_modified: 2026-07-17 23:08:58
 	name: Effect Veiler
 	casting_cost: W
 	image: mse_images/image4.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Tuner Creature</word-list-type-en>
-	sub_type: <word-list-race-en>Wizard</word-list-race-en>
+	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
-	rule_text:
-		(1 - Activable Flash) Défaussez cette carte et ciblez 1 créature sur le terrain ; jusqu’à la fin du tour, elle perd toutes ses capacités, et contrecarrez toutes ses capacités.
+	rule_text: <i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a>)</i-auto> Défaussez Effect Veiler et ciblez 1 créature sur le terrain ; jusqu’à la fin du tour, elle perd toutes ses capacités, et contrecarrez toutes ses capacités.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

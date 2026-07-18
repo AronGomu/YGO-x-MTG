@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,14 +9,13 @@ card:
 	name: El Shaddoll - Fusion
 	casting_cost: U/B
 	image: mse_images/image19.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Fusion Summon Instant</word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	rarity: common
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 créature “Shaddoll” en utilisant des créatures depuis votre main ou terrain comme matériaux.
+	rule_text: <i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 créature “Shaddoll” en utilisant des créatures depuis votre main ou terrain comme matériaux.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 005/025 C
 	card_code_text_2: 005/025 C

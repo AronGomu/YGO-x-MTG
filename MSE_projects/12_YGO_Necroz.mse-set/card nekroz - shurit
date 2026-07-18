@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		(1 - Passif) Shurit peut satisfaire seul le coût de sacrifice pour une Invocation Ritual d’une Ritual Creature “Nekroz”.
-		(2 - Déclenchable Hard) <b>On Sacrifice</b> — Cherchez 1 créature “Nekroz”.
+		<i-auto>(1 - Passif)</i-auto> Shurit peut satisfaire seul le coût de sacrifice pour une Ritual Summon d’une Ritual Creature “Nekroz”.
+		<i-auto>(2 - Déclenchable Hard)</i-auto> <b>On Sacrifice</b> — Cherchez 1 créature “Nekroz”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 3

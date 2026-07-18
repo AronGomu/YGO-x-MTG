@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,15 +9,15 @@ card:
 	name: Upstart Goblin
 	casting_cost: B
 	image: mse_images/image13.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
 	sub_type:
 	rarity: common
 	rule_text:
 		Coût Alternatif — Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, 1 adversaire ciblé gagne 5 points de vie.
-		(1 - Résolution) Piochez 1 carte.
+		<i-auto>(1 - Résolution)</i-auto> Piochez 1 carte.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 017/017 C
 	card_code_text_2: 017/017 C

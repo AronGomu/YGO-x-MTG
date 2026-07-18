@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,15 +9,15 @@ card:
 	name: Breakthrough Skill
 	casting_cost: R
 	image: mse_images/image22.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	sub_type:
 	rarity: common
 	rule_text:
-		(1 - Résolution) La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
-		(2 - Passif) Vous pouvez lancer cette carte depuis votre Grave. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+		<i-auto>(1 - Résolution)</i-auto> La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
+		<i-auto>(2 - Passif)</i-auto> Vous pouvez lancer cette carte depuis votre Grave. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 004/017 C
 	card_code_text_2: 004/017 C

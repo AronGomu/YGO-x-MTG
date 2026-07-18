@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,14 +9,13 @@ card:
 	name: Shaddoll - Fusion
 	casting_cost: B/G
 	image: mse_images/image18.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Fusion Summon Sorcery</word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	rarity: common
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 créature en utilisant des créatures depuis votre main ou terrain comme matériaux. Si un adversaire contrôle une créature ayant commencé la partie dans un Sideboard, vous pouvez aussi utiliser des créatures depuis votre Deck.
+	rule_text: <i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 créature en utilisant des créatures depuis votre main ou terrain comme matériaux. Si un adversaire contrôle une créature ayant commencé la partie dans un Sideboard, vous pouvez aussi utiliser des créatures depuis votre Deck.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 020/025 C
 	card_code_text_2: 020/025 C

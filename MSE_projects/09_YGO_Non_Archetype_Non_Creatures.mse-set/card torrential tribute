@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,15 +9,15 @@ card:
 	name: Torrential Tribute
 	casting_cost: R
 	image: mse_images/image23.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	sub_type:
 	rarity: common
 	rule_text:
 		Vous ne pouvez lancer ce sort que si 1 créature est arrivée sur le terrain ce tour-ci.
-		(1 - Résolution) Détruisez toutes les créatures.
+		<i-auto>(1 - Résolution)</i-auto> Détruisez toutes les créatures.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/017 C
 	card_code_text_2: 015/017 C

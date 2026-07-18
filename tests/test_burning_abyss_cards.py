@@ -104,7 +104,7 @@ class BurningAbyssCardTests(unittest.TestCase):
             "**Summon** signifie",
             "**Reanimate** signifie",
             "**Bounded X**",
-            "**Indestructible contre les effets**",
+            "**Indestructible des Effets**",
             "**Défense talismanique**",
             "**Slow Blink X Any Creature**",
             "**Ritual Summon**",
@@ -125,7 +125,7 @@ class BurningAbyssCardTests(unittest.TestCase):
         skill_paths = (
             ".agents/skills/add-ygo-card/SKILL.md",
             ".agents/skills/update-card-from-ai/SKILL.md",
-            ".agents/skills/validate-mse-updates/SKILL.md",
+            ".agents/skills/fix-mse-cards/SKILL.md",
             ".agents/skills/normalize-card-formatting/SKILL.md",
         )
         for relative_path in skill_paths:

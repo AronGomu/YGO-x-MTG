@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,15 +9,15 @@ card:
 	name: Karma Cut
 	casting_cost: B
 	image: mse_images/image20.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	sub_type:
 	rarity: common
 	rule_text:
 		En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
-		(1 - Résolution) Exilez la créature ciblée.
+		<i-auto>(1 - Résolution)</i-auto> Exilez la créature ciblée.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 009/017 C
 	card_code_text_2: 009/017 C

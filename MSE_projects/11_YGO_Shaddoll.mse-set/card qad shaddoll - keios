@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,17 +9,17 @@ card:
 	name: Qad Shaddoll - Keios
 	casting_cost: W
 	image: image8.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Creature</word-list-type-en>
 	super_type_2: <word-list-type-en></word-list-type-en>
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — <b>Summon</b> 1 créature “Shaddoll” depuis votre main face visible ou face verso.

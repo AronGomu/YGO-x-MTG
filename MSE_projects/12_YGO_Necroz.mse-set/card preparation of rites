@@ -1,11 +1,11 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
 	has_styling: false
 	notes: Source: docs/12_archetype_necroz.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-12 00:47:44
+	time_modified: 2026-07-17 22:50:28
 	name: Preparation of Rites
 	casting_cost: U
 	image: image18.png
@@ -13,11 +13,10 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	rarity: common
 	rule_text:
-		Cherchez 1 Ritual Creature avec une valeur de mana inférieure ou égale à 2.
-		Vous pouvez renvoyer dans votre main 1 carte Invocation Ritual depuis votre cimetière.
+		<i-auto>(1 - Résolution)</i-auto> Cherchez 1 Ritual Creature MV 2 ou moins. Vous pouvez <b>Salvage</b> 1 non-créature Ritual Summon.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 018/019 C
 	card_code_text_2: 018/019 C

@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-spellbook
 	stylesheet_version: 2024-09-01
@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Aqua</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Xyz</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1</i>
-		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Activable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Sorcery Soft)</i-auto> <b>Detach 1</b> : <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>mettez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> en <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>jeu</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 1 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ou</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>moins</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>exilée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i>2 créatures MV 1</i>
+		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Detach 1</b> : mettez en jeu 1 créature MV 1 ou moins exilée ciblée.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

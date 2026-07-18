@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -16,7 +16,7 @@ card:
 	sub_type: <word-list-race-en>Fairy</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		(1 - Déclenchable) <b>On Enter</b> — Cherchez 1 Ritual Creature ou 1 carte non-créature Invocation Ritual.
+		<i-auto>(1 - Déclenchable)</i-auto> <b>On Enter</b> — Cherchez 1 Ritual Creature ou 1 non-créature Ritual Summon.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

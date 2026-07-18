@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,14 +9,13 @@ card:
 	name: Puru Shaddoll - Aeon
 	casting_cost: 0
 	image: image2.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	rarity: common
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au Grave, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.
+	rule_text: <i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au Grave, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 012/025 C
 	card_code_text_2: 012/025 C

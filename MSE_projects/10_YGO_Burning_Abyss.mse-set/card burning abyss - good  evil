@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -16,14 +16,14 @@ card:
 	super_type_2: <word-list-type-en></word-list-type-en>
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	sub_type_2:
 	sub_type_3:
 	sub_type_4:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Résolution)</i-auto> <b>Ritual Summon</b> 1 “Burning Abyss” en sacrifiant des créatures depuis votre main ou terrain dont la MV totale est supérieure ou égale à la MV de la Ritual Creature.
-		<i-auto>(2 - Activable Sorcery Hard)</i-auto> Depuis votre Grave, exilez cette carte et défaussez 1 créature “Burning Abyss” ; cherchez 1 carte “Burning Abyss”.
+		<i-auto>(2 - Activable Sorcery Hard)</i-auto> <b>Exile from Grave</b> et défaussez 1 créature “Burning Abyss” ; cherchez 1 carte “Burning Abyss”.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/030 C
 	card_code_text_2: 015/030 C

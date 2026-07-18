@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-spellbook
 	stylesheet_version: 2024-09-01
@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i><error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Xyz</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> — 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>MV</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 3</i>
-		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Activable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Sorcery Soft)</i-auto> <b>Detach 1</b> : <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>acquérez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>le</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>contrôle</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>de</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> la <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ciblée</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>tant</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>que</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>vous</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>contrôlez</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> Big Eye. Big Eye <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ne</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>peut</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> pas <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>attaquer</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ce</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> tour-<error-spelling:en_US:/magic.mse-game/dictionary/magic-words>ci</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i>2 créatures MV 3</i>
+		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Detach 1</b> : acquérez le contrôle de la créature ciblée tant que vous contrôlez Big Eye. Big Eye ne peut pas attaquer ce tour-ci.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

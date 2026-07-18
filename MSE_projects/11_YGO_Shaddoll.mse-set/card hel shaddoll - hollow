@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,17 +9,17 @@ card:
 	name: Hel Shaddoll - Hollow
 	casting_cost: 2R
 	image: image7.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Creature</word-list-type-en>
 	super_type_2: <word-list-type-en></word-list-type-en>
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 créature contrôlée par un adversaire ; envoyez 1 créature “Shaddoll” depuis votre Sideboard dans votre Grave, puis, si les 2 cartes sont de la même couleur, exilez la cible.

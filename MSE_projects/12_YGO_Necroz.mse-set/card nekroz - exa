@@ -1,11 +1,11 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
 	has_styling: false
 	notes: Source: docs/12_archetype_necroz.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-12 00:46:28
+	time_modified: 2026-07-17 22:41:46
 	name: Nekroz - Exa
 	casting_cost: 1U
 	image: image9.png
@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		(1 - Déclenchable Hard) <b>On Sacrifice</b> — Cherchez 1 Dragon Ritual Creature “Nekroz”.
-		(2 - Déclenchable Hard) <b>On Exile</b> — Renvoyez sur le terrain 1 autre créature “Nekroz” ciblée depuis l’exil.
+		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Sacrifice</b> — Cherchez 1 Dragon Ritual Creature “Nekroz”.
+		<i-auto>(2 - Déclenchable Hard)</i-auto> <b>On Exile</b> — Ciblez 1 autre créature “Nekroz” dans votre exil ; <b>Release</b> la cible en ignorant les restrictions de Summon.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

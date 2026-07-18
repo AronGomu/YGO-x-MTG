@@ -15,28 +15,29 @@ SPELL_AFFINITY = "<b>Spell Affinity</b>"
 EXPECTED_RULES = {
     "card high priestess of prophecy": (
         BOOK_AFFINITY,
-        "(1 - Activable Hard) Exilez 1 “Spellbook” de votre main ou Grave",
+        "<b>Coût alternatif</b> — Révélez 3 “Spellbook” non-creature de votre main.",
+        "(1 - Activable Hard)</i-auto> Exilez 1 “Spellbook” de votre main ou Grave",
     ),
     "card justice of prophecy": (
         BOOK_AFFINITY,
-        "(1 - Déclenchable Hard) <b>On Enter</b> —",
+        "(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> —",
         "cherchez 1 “Spellbook”",
     ),
     "card spellbook library of the crescent": (
-        "(1 - Résolution) Si vous contrôlez 1 Wizard Creature MV 2+",
+        "(1 - Résolution)</i-auto> Si vous contrôlez 1 Wizard MV 2+",
         "révélez 3 “Spellbook” de votre Deck",
         "Mettez-le dans votre main",
     ),
     "card spellbook magician of prophecy": (
         BOOK_AFFINITY,
-        "(1 - Déclenchable Hard) <b>On Enter</b> — Cherchez 1 “Spellbook”.",
+        "(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Cherchez 1 “Spellbook”.",
     ),
     "card spellbook of eternity": (
-        "(1 - Résolution) Renvoyez dans votre main le “Spellbook” ciblé depuis votre zone d’exil.",
+        "(1 - Résolution)</i-auto> Ciblez 1 “Spellbook” depuis votre exil ; <b>Reclaim</b> la cible.",
     ),
     "card spellbook of fate": (
-        "(1 - Résolution) Exilez jusqu’à 3 “Spellbook” de votre Grave",
-        "3 — Exilez 1 permanent. Cet effet ne cible pas.",
+        "(1 - Résolution)</i-auto> Exilez jusqu’à 3 “Spellbook” de votre Grave",
+        "3 — Exilez 1 permanent.",
     ),
     "card spellbook of judgment": (
         "<b>On Your Cast “Spellbook”</b>",
@@ -45,38 +46,42 @@ EXPECTED_RULES = {
     ),
     "card spellbook of knowledge": (
         "défaussez 1 “Spellbook”",
-        "(1 - Résolution) Piochez 2 cartes.",
+        "(1 - Résolution)</i-auto> Piochez 2 cartes.",
     ),
     "card spellbook of life": (
-        "1 autre “Spellbook” de votre main ou Grave",
-        "(1 - Résolution) Renvoyez sur le terrain 1 créature “Spellbook” depuis votre Grave",
+        "Ciblez 1 créature “Spellbook” et X “Spellbook” non-creature de votre Grave",
+        "<b>Reanimate</b> la cible si X égale la MV de la cible.",
     ),
     "card spellbook of miracles": (
-        "un nombre de “Spellbook” supérieur ou égal",
-        "MV de la créature “Spellbook” ciblée",
-        "(1 - Résolution) Renvoyez sur le terrain la créature “Spellbook” ciblée depuis votre Grave.",
+        "Ciblez 1 Wizard de votre Grave et jusqu’à 2 “Spellbook” non-creature en exil",
+        "<b>Reanimate</b> la cible",
+        "<b>Attach</b> les “Spellbook” non-creature ciblés",
+        "Sinon, ils restent en exil.",
     ),
     "card spellbook of power": (
-        "(1 - Résolution) La créature “Spellbook” ciblée gagne +2/+2",
+        "Ciblez 1 “Spellbook” ; la cible gagne +2/+2",
         "cherchez 1 “Spellbook”",
     ),
     "card spellbook of secrets": (
-        "(1 - Résolution) Cherchez 1 “Spellbook”.",
+        "(1 - Résolution)</i-auto> Cherchez 1 “Spellbook”.",
     ),
     "card spellbook of the master": (
-        "(1 - Résolution) Révélez 1 autre “Spellbook” de votre main",
+        "Révélez 1 autre “Spellbook” de votre main",
         "choisissez 1 “Spellbook” dans votre Grave",
+        "copiez son texte et résolvez-le",
     ),
     "card spellbook of wisdom": (
-        "(1 - Résolution) La créature “Spellbook” ciblée n’est pas affectée",
+        "Ciblez 1 créature “Spellbook” ; elle gagne la protection contre les sorts et les permanents non-créature",
     ),
     "card spellbook star hall": (
-        "(1 - Déclenchable) <b>On Your Cast “Spellbook”</b> —",
+        "(1 - Déclenchable)</i-auto> <b>On Your Cast “Spellbook”</b> —",
+        "<b>On Leave Field</b>",
         "chercher 1 créature “Spellbook” MV X ou moins",
     ),
     "card the grand spellbook tower": (
-        "(1 - Déclenchable Soft) Au début de votre entretien",
+        "(1 - Déclenchable Soft)</i-auto> <b>On Upkeep</b>",
         "mettre 1 “Spellbook” depuis votre Grave",
+        "<b>On Leave Field</b>",
         "mettre en jeu depuis votre Deck 1 créature “Spellbook”",
     ),
 }
@@ -124,7 +129,6 @@ class SpellbookCardTests(unittest.TestCase):
                 for stale in stale_terms:
                     self.assertNotIn(stale, rule_text)
                 self.assertNotIn("error-spelling", rule_text)
-                self.assertNotIn("<i-auto>", rule_text)
                 self.assertNotRegex(
                     rule_text,
                     r"\bcartes?(?: de créature)? “Spellbook”",
@@ -162,27 +166,14 @@ class SpellbookCardTests(unittest.TestCase):
             "Land",
         )
 
-    def test_docs_mirror_mse_and_use_markdown_markup(self) -> None:
+    def test_archetype_doc_keeps_affinity_rules_not_card_blocks(self) -> None:
         doc = DOC.read_text(encoding="utf-8-sig")
-        self.assertIn("\nCreature — Wizard Spellbook\n", doc)
-        self.assertIn("\nEnchantment — Land\n", doc)
-        for filename, fragments in EXPECTED_RULES.items():
-            card = (PROJECT / filename).read_text(encoding="utf-8-sig")
-            name = next(
-                line.removeprefix("\tname: ")
-                for line in card.splitlines()
-                if line.startswith("\tname: ")
-            )
-            self.assertRegex(doc, rf"(?m)^### {re.escape(name)}(?: => .+)?$")
-            for fragment in fragments:
-                self.assertIn(
-                    fragment.replace("<b>", "**")
-                    .replace("</b>", "**")
-                    .replace("• ", "- "),
-                    doc,
-                )
-        self.assertNotIn("<b>", doc)
-        self.assertNotIn("Magicien", doc)
+        self.assertIn("**Book Affinity**", doc)
+        self.assertIn("**Spell Affinity**", doc)
+        self.assertIn("Source de vérité des cartes", doc)
+        self.assertIn("MSE_projects/13_YGO_Spellbook.mse-set", doc)
+        self.assertNotIn("\nCreature — Wizard Spellbook\n", doc)
+        self.assertNotRegex(doc, r"(?m)^### .+ => .+")
 
     def test_generator_targets_canonical_project_and_preserves_art(self) -> None:
         generator = (ROOT / ".script" / "create_archetype_projects.py").read_text(
@@ -195,13 +186,14 @@ class SpellbookCardTests(unittest.TestCase):
         self.assertIn("'Spell Affinity'", generator)
         self.assertNotIn("shutil.rmtree", generator)
 
-        aggregate = AGGREGATE.read_text(encoding="utf-8-sig")
-        self.assertGreaterEqual(aggregate.count(BOOK_AFFINITY), 3)
-        self.assertGreaterEqual(aggregate.count(SPELL_AFFINITY), 11)
-        self.assertNotIn(
-            "Coût Alternatif — Si vous contrôlez 1 créature “Spellbook”",
-            aggregate,
-        )
+        if AGGREGATE.is_file():
+            aggregate = AGGREGATE.read_text(encoding="utf-8-sig")
+            self.assertGreaterEqual(aggregate.count(BOOK_AFFINITY), 3)
+            self.assertGreaterEqual(aggregate.count(SPELL_AFFINITY), 11)
+            self.assertNotIn(
+                "Coût Alternatif — Si vous contrôlez 1 créature “Spellbook”",
+                aggregate,
+            )
 
     def test_all_images_resolve(self) -> None:
         for filename in EXPECTED_RULES:

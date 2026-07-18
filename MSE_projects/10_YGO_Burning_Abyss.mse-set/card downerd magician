@@ -20,7 +20,7 @@ card:
 		Xyz Coût Alternatif — 1 créature Xyz MV 1. Ses matériels se transfèrent.
 		<b>Piétinement</b>
 		<i-auto>(1 - Passif)</i-auto> +1/+0 pour chaque matériel attaché.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Attack / Block</b> — <b>Detach 1</b>.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Attack or Block</b> — <b>Detach 1</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 1

@@ -40,35 +40,17 @@ styling:
 		overlay:
 		casting_cost_mana_symbols: magic-mana-large.mse-symbol-font
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
-include_file: card albion the branded dragon
-include_file: card chimeratech fortress dragon
-include_file: card chimeratech megafleet dragon
 include_file: card coordius the triphasic dealmon
-include_file: card dragonecro nethersoul dragon
-include_file: card earth golem ignister
-include_file: card el shaddoll winda
 include_file: card elder entity ntss
-include_file: card first of the dragons
 include_file: card garura wings of resonant life
-include_file: card grapha dragon overlord of dark world
 include_file: card guardian chimera
-include_file: card invoked caliga
-include_file: card invoked mechaba
-include_file: card invoked purgatrio
-include_file: card millennium-eyes restrict
-include_file: card mirrorjade the iceblade dragon
 include_file: card mudragon of the swamp
 include_file: card mysterion the dragon crown
-include_file: card naturia exterio
 include_file: card panzer dragon
 include_file: card predaplant dragostapelia
 include_file: card predaplant triphyoverutum
-include_file: card salamangreat violet chimera
 include_file: card sea monster of theseus
 include_file: card starving venom fusion dragon
-include_file: card thousand-eyes restrict
-include_file: card thunder dragon colossus
-include_file: card thunder dragon titan
 include_file: card world chalice guardragon almarduke
 version_control:
 	type: none

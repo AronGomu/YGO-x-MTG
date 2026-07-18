@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -16,14 +16,14 @@ card:
 	super_type_2: <word-list-type-en></word-list-type-en>
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	sub_type_2:
 	sub_type_3:
 	sub_type_4:
 	rarity: common
 	rule_text:
 		<i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 Creature “Burning Abyss” en utilisant des créatures depuis votre main ou terrain comme matériaux.
-		<i-auto>(2 - Activable Sorcery Soft)</i-auto> Depuis votre Grave, exilez Terminus, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
+		<i-auto>(2 - Activable Sorcery Soft)</i-auto> <b>Exile from Grave</b>, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 021/030 C
 	card_code_text_2: 021/030 C

@@ -22,7 +22,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Cherchez une créature Burning Abyss dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
+		On Send Grave — Cherchez une créature Burning Abyss dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez.
 	flavor text:
 	power: 1
 	toughness: 4
@@ -46,7 +46,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Renvoyez sur le champ de bataille une créature Burning Abyss ayant une valeur de mana de 1 ou moins depuis votre cimetière.
+		On Send Grave — Renvoyez sur le champ de bataille une créature Burning Abyss ayant une valeur de mana de 1 ou moins depuis votre Grave.
 	flavor text:
 	power: 2
 	toughness: 3
@@ -70,7 +70,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Renvoyez une créature Burning Abyss ciblée depuis votre cimetière sur le champ de bataille.
+		On Send Grave — Renvoyez une créature Burning Abyss ciblée depuis votre Grave sur le champ de bataille.
 	flavor text:
 	power: 3
 	toughness: 2
@@ -94,7 +94,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Exilez une créature ciblée jusqu'à la prochaine étape de fin.
+		On Send Grave — Exilez une créature ciblée jusqu'à la prochaine étape de fin.
 	flavor text:
 	power: 2
 	toughness: 3
@@ -118,7 +118,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Vous pouvez lancer une créature Burning Abyss depuis votre main sans payer son coût de mana ce tour-ci.
+		On Send Grave — Vous pouvez lancer une créature Burning Abyss depuis votre main sans payer son coût de mana ce tour-ci.
 	flavor text:
 	power: 2
 	toughness: 1
@@ -142,7 +142,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Exilez jusqu'à trois cartes Burning Abyss de votre cimetière. Barbar inflige 3 blessures à l'adversaire ciblé.
+		On Send Grave — Exilez jusqu'à trois cartes Burning Abyss de votre Grave. Barbar inflige 3 blessures à l'adversaire ciblé.
 	flavor text:
 	power: 3
 	toughness: 2
@@ -166,7 +166,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Jusqu'à la fin du tour, une créature ciblée perd toutes ses capacités et devient 0/0.
+		On Send Grave — Jusqu'à la fin du tour, une créature ciblée perd toutes ses capacités et devient 0/0.
 	flavor text:
 	power: 2
 	toughness: 2
@@ -190,7 +190,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Renvoyez un permanent non-terrain ciblé dans la main de son propriétaire.
+		On Send Grave — Renvoyez un permanent non-terrain ciblé dans la main de son propriétaire.
 	flavor text:
 	power: 3
 	toughness: 1
@@ -214,7 +214,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Cherchez une carte Burning Abyss dans votre bibliothèque et mettez-la dans votre cimetière.
+		On Send Grave — Cherchez une carte Burning Abyss dans votre bibliothèque et mettez-la dans votre Grave.
 	flavor text:
 	power: 2
 	toughness: 2
@@ -238,7 +238,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		On Send GY — Défaussez-vous d'une carte, puis piochez une carte.
+		On Send Grave — Défaussez-vous d'une carte, puis piochez une carte.
 	flavor text:
 	power: 2
 	toughness: 2
@@ -262,7 +262,7 @@ card:
 	rarity: common
 	rule text: Descente
 
-		Aucune capacité On Send GY.
+		Aucune capacité On Send Grave.
 
 
 		# Extra Deck
@@ -295,9 +295,9 @@ card:
 		• Dante gagne +1/+0 pour chaque carte meulée et acquiert la vigilance ce tour-ci ;
 		• Dante acquiert la vigilance jusqu'à la fin du tour.
 
-		Si Dante est mis dans votre cimetière depuis n'importe où :
+		Si Dante est mis dans votre Grave depuis n'importe où :
 
-		• renvoyez une carte Burning Abyss depuis votre cimetière dans votre main.
+		• renvoyez une carte Burning Abyss depuis votre Grave dans votre main.
 	flavor text:
 	power: 2
 	toughness: 5
@@ -329,7 +329,7 @@ card:
 
 		Son propriétaire le mélange dans sa bibliothèque.
 
-		Si Virgil est mis dans votre cimetière depuis n'importe où :
+		Si Virgil est mis dans votre Grave depuis n'importe où :
 
 		Piochez une carte.
 
@@ -387,7 +387,7 @@ card:
 	rarity: common
 	rule text: Flip — Piochez deux cartes, puis défaussez-vous d'une carte.
 
-		Corruption — Piochez une carte.
+		On Send Grave by Effect — Piochez une carte.
 	flavor text:
 	power: 4
 	toughness: 3
@@ -409,9 +409,9 @@ card:
 	card type: Créature
 	sub type: Marionnette
 	rarity: common
-	rule text: Flip — Renvoyez une créature Shaddoll ciblée depuis votre cimetière sur le champ de bataille face verso.
+	rule text: Flip — Renvoyez une créature Shaddoll ciblée depuis votre Grave sur le champ de bataille face verso.
 
-		Corruption — Renvoyez cette carte sur le champ de bataille face verso.
+		On Send Grave by Effect — Renvoyez cette carte sur le champ de bataille face verso.
 	flavor text:
 	power: 1
 	toughness: 3
@@ -437,7 +437,7 @@ card:
 
 		À chaque fois que El Shaddoll Construct combat une créature ayant commencé la partie dans un Extra Deck, détruisez cette créature avant que les blessures de combat ne soient infligées.
 
-		Corruption (une seule fois par tour) — Si El Shaddoll Construct est mise dans votre cimetière par un effet de carte, renvoyez une carte Shaddoll non-créature depuis votre cimetière dans votre main.
+		Shaddoll Recovery
 	flavor text:
 	power: 5
 	toughness: 5
@@ -461,11 +461,11 @@ card:
 	rarity: common
 	rule text: Choisissez une créature Fusion depuis votre Extra Deck.
 
-		Mettez-la directement sur le champ de bataille en envoyant au cimetière les matériaux indiqués sur cette carte depuis :
+		Mettez-la directement sur le champ de bataille en envoyant au Grave les matériaux indiqués sur cette carte depuis :
 
 		• votre main ;
 		• le champ de bataille ;
-		• votre cimetière.
+		• votre Grave.
 
 		Si un adversaire contrôle une créature ayant commencé la partie dans un Extra Deck, vous pouvez également envoyer les matériaux depuis votre bibliothèque.
 	flavor text:
@@ -491,11 +491,11 @@ card:
 	rarity: common
 	rule text: Choisissez une créature Fusion depuis votre Extra Deck.
 
-		Mettez-la directement sur le champ de bataille en envoyant au cimetière les matériaux indiqués sur cette carte depuis :
+		Mettez-la directement sur le champ de bataille en envoyant au Grave les matériaux indiqués sur cette carte depuis :
 
 		• votre main ;
 		• le champ de bataille ;
-		• votre cimetière.
+		• votre Grave.
 
 
 		# Cartes prévues
@@ -586,7 +586,7 @@ card:
 
 		Vous ne pouvez utiliser chaque effet de Nekroz - Unicore qu'une seule fois par tour.
 
-		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : ciblez une carte Necroz dans votre cimetière. Ajoutez-la à votre main.
+		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : ciblez une carte Necroz dans votre Grave. Ajoutez-la à votre main.
 		• Les créatures ayant été lancées depuis un Sideboard perdent toutes leurs capacités.
 	flavor text:
 	power: 4
@@ -619,7 +619,7 @@ card:
 		• Lorsque Nekroz - Trishula arrive sur le champ de bataille, choisissez :
 		  • un permanent non-terrain contrôlé par un adversaire ;
 		  • une carte de la main d'un adversaire choisie au hasard ;
-		  • une carte du cimetière d'un adversaire.
+		  • une carte du Grave d'un adversaire.
 
 		  Exilez ces cartes.
 
@@ -680,7 +680,7 @@ card:
 
 		Vous ne pouvez utiliser chaque effet de Nekroz - Gungnir qu'une seule fois par tour.
 
-		• Vous pouvez vous défausser de cette carte : cherchez une carte Necroz dans votre cimetière, révélez-la, puis ajoutez-la à votre main.
+		• Vous pouvez vous défausser de cette carte : cherchez une carte Necroz dans votre Grave, révélez-la, puis ajoutez-la à votre main.
 		• Une seule fois par tour, vous pouvez vous défausser d'une carte Necroz : une créature Necroz ciblée que vous contrôlez gagne l'indestructible jusqu'à la fin du tour.
 	flavor text:
 	power: 5
@@ -738,7 +738,7 @@ card:
 
 		Vous ne pouvez utiliser chaque effet de Nekroz - Catastor qu'une seule fois par tour.
 
-		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : ciblez une créature Necroz dans votre cimetière. Mettez cette créature sur le champ de bataille.
+		• À tout moment où vous pourriez lancer un rituel, vous pouvez vous défausser de cette carte : ciblez une créature Necroz dans votre Grave. Mettez cette créature sur le champ de bataille.
 		• Les créatures Necroz que vous contrôlez ne peuvent pas être la cible de sorts ou de capacités contrôlés par vos adversaires.
 
 
@@ -921,9 +921,9 @@ card:
 
 		Synchro
 
-		Si une carte devait être mise dans un cimetière depuis une main ou une bibliothèque, exilez-la à la place.
+		Si une carte devait être mise dans un Grave depuis une main ou une bibliothèque, exilez-la à la place.
 
-		Lorsque Nekroz - Herald est mis dans votre cimetière, cherchez :
+		Lorsque Nekroz - Herald est mis dans votre Grave, cherchez :
 
 		• une créature Rituel, ou
 		• une carte Rituel.
@@ -955,14 +955,14 @@ card:
 	rarity: common
 	rule text: Choisissez une créature Rituel Necroz dans votre main.
 
-		Au lieu de sacrifier des créatures pour lancer cette carte, vous pouvez envoyer une créature depuis votre Sideboard dans votre cimetière.
+		Au lieu de sacrifier des créatures pour lancer cette carte, vous pouvez envoyer une créature depuis votre Sideboard dans votre Grave.
 
 		La valeur de mana de cette créature remplace entièrement le coût Rituel.
 
 		Lancez ensuite la créature Rituel Necroz choisie.
 
 
-		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre cimetière, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Kaleidoscope, révélez-la, mettez-la dans votre main, puis mélangez.
+		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre Grave, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Kaleidoscope, révélez-la, mettez-la dans votre main, puis mélangez.
 	flavor text:
 	power:
 	toughness:
@@ -986,14 +986,14 @@ card:
 	rarity: common
 	rule text: Choisissez une créature Rituel Necroz dans votre main.
 
-		Vous pouvez exiler des créatures depuis votre cimetière. Si vous ne le faites pas, sacrifiez des créatures depuis votre main ou le champ de bataille.
+		Vous pouvez exiler des créatures depuis votre Grave. Si vous ne le faites pas, sacrifiez des créatures depuis votre main ou le champ de bataille.
 
 		La valeur de mana totale des créatures utilisées de cette manière doit être supérieure ou égale à celle de la créature choisie.
 
 		Lancez ensuite cette créature Rituel Necroz.
 
 
-		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre cimetière, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Mirror, révélez-la, mettez-la dans votre main, puis mélangez.
+		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre Grave, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Mirror, révélez-la, mettez-la dans votre main, puis mélangez.
 	flavor text:
 	power:
 	toughness:
@@ -1015,14 +1015,14 @@ card:
 	card type: Rituel
 	sub type:
 	rarity: common
-	rule text: Choisissez une créature Rituel Necroz dans votre main ou votre cimetière.
+	rule text: Choisissez une créature Rituel Necroz dans votre main ou votre Grave.
 
 		Sacrifiez des créatures depuis votre main ou le champ de bataille dont la valeur de mana totale est supérieure ou égale à celle de cette créature.
 
 		Lancez ensuite cette créature Rituel Necroz.
 
 
-		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre cimetière, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Cycle, révélez-la, mettez-la dans votre main, puis mélangez.
+		Vous pouvez exiler cette carte ainsi qu'une autre carte Necroz depuis votre Grave, uniquement si vous ne contrôlez aucune créature : cherchez une carte Rituel avec "Necroz" dans son nom, autre que Nekroz - Cycle, révélez-la, mettez-la dans votre main, puis mélangez.
 
 
 		# Philosophie de design
@@ -1033,7 +1033,7 @@ card:
 
 		• la recherche de pièces spécifiques ;
 		• la transformation de cartes en main en effets utilitaires ;
-		• l'utilisation stratégique du cimetière et de l'exil ;
+		• l'utilisation stratégique du Grave et de l'exil ;
 		• la punition des créatures issues du Sideboard ;
 		• une progression par avantage incrémental plutôt que par combo létal immédiat.
 
@@ -1046,7 +1046,7 @@ card:
 		2. Utiliser Shurit, Great Sorcerer, Manju ou Senju pour stabiliser la main.
 		3. Lancer une première créature Rituel Necroz.
 		4. Contrôler les créatures adverses issues du Sideboard avec Unicore, Brionac ou Trishula.
-		5. Recycler les magies Rituel depuis le cimetière lorsque le champ est vide.
+		5. Recycler les magies Rituel depuis le Grave lorsque le champ est vide.
 		6. Reprendre l'avantage grâce à Cycle, Mirror et Kaleidoscope.
 		7. Terminer la partie avec des créatures Rituel résilientes et une main continuellement rechargée.
 
@@ -1134,7 +1134,7 @@ card:
 	card type: Creature
 	sub type: Zombie
 	rarity: common
-	rule text: (1 - Activable Flash Hard) Défaussez cette carte et ciblez 1 sort ou capacité ; si son effet interagit avec le Deck (pioche, <b>Mill</b>, recherche, etc.), contrecarrez-le.
+	rule text: (1 - Activable Flash Hard) Défaussez cette carte et ciblez 1 sort ou capacité ; si son effet interagit avec le Deck (pioche, <b>Mill 1</b>, recherche, etc.), contrecarrez-le.
 
 			flavor_text: <i-flavor></i-flavor>
 
@@ -1194,7 +1194,7 @@ card:
 	card type: Créature
 	sub type: Magicien
 	rarity: common
-	rule text: Si le Mathématicien arrive sur le champ de bataille, vous pouvez mettre une carte de créature avec une valeur de mana de 1 de votre bibliothèque dans votre cimetière.
+	rule text: Si le Mathématicien arrive sur le champ de bataille, vous pouvez mettre une carte de créature avec une valeur de mana de 1 de votre bibliothèque dans votre Grave.
 
 		Si le Mathématicien meurt, piochez une carte.
 	flavor text:
@@ -1250,7 +1250,7 @@ card:
 	rarity: common
 	rule text: Cherchez dans votre bibliothèque une carte de créature Rituel avec une valeur de mana inférieure ou égale à 2, révélez-la, mettez-la dans votre main, puis mélangez.
 
-		Vous pouvez renvoyer dans votre main une carte de Rituel depuis votre cimetière.
+		Vous pouvez renvoyer dans votre main une carte de Rituel depuis votre Grave.
 	flavor text:
 	power:
 	toughness:

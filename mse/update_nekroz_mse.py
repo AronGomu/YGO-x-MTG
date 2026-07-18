@@ -15,19 +15,19 @@ CARDS = {
         "(2 - Activable Sorcery Hard) La créature ciblée devient 0/1 et perd toutes ses capacités jusqu’à la fin du tour.",
     ]),
     "nekroz of unicore": ("Ritual Creature", "Warrior", [
-        "(1 - Activable Sorcery Hard) Défaussez cette carte : renvoyez 1 carte “Nekroz” ciblée depuis votre GY dans votre main.",
+        "(1 - Activable Sorcery Hard) Défaussez cette carte : renvoyez 1 carte “Nekroz” ciblée depuis votre Grave dans votre main.",
         "(2 - Passif) Les créatures mises en jeu depuis un Sideboard perdent toutes leurs capacités.",
     ]),
     "nekroz of trishula": ("Ritual Creature", "Dragon", [
         "(1 - Activable Flash Hard) Défaussez cette carte : contrecarrez 1 sort ou capacité ciblant 1 créature “Nekroz” que vous contrôlez.",
-        "(2 - Déclenchable Hard) <b>On Enter</b> — Exilez 1 permanent non-terrain adverse ciblé, 1 carte aléatoire de la main de cet adversaire et 1 carte ciblée de son GY. Cet effet ne se résout que si vous pouvez exiler les 3 cartes.",
+        "(2 - Déclenchable Hard) <b>On Enter</b> — Exilez 1 permanent non-terrain adverse ciblé, 1 carte aléatoire de la main de cet adversaire et 1 carte ciblée de son Grave. Cet effet ne se résout que si vous pouvez exiler les 3 cartes.",
     ]),
     "nekroz of valkyrus": ("Ritual Creature", "Warrior", [
         "(1 - Activable Flash Hard) Si vous ne contrôlez aucune créature sur le terrain, défaussez cette carte : prévenez toutes les blessures de combat qui devraient vous être infligées ce tour-ci.",
         "(2 - Activable Sorcery Hard) Sacrifiez jusqu’à 2 créatures depuis votre main ou terrain ; piochez 1 carte pour chaque créature sacrifiée ainsi.",
     ]),
     "nekroz of gungnir": ("Ritual Creature", "Dragon", [
-        "(1 - Activable Flash Hard) Défaussez cette carte : renvoyez 1 carte “Nekroz” ciblée depuis votre GY dans votre main.",
+        "(1 - Activable Flash Hard) Défaussez cette carte : renvoyez 1 carte “Nekroz” ciblée depuis votre Grave dans votre main.",
         "(2 - Activable Flash Hard) Défaussez 1 carte “Nekroz” : 1 créature “Nekroz” ciblée gagne indestructible jusqu’à la fin du tour.",
     ]),
     "nekroz of decisive armor": ("Ritual Creature", "Warrior", [
@@ -35,7 +35,7 @@ CARDS = {
         "(2 - Activable Sorcery Hard) La créature ciblée gagne -2/-0 jusqu’à la fin du tour.",
     ]),
     "nekroz of catastor": ("Ritual Creature", "Machine", [
-        "(1 - Activable Sorcery Hard) Défaussez cette carte : renvoyez sur le terrain 1 créature “Nekroz” ciblée depuis votre GY.",
+        "(1 - Activable Sorcery Hard) Défaussez cette carte : renvoyez sur le terrain 1 créature “Nekroz” ciblée depuis votre Grave.",
         "(2 - Passif) Les créatures “Nekroz” que vous contrôlez ont ward 2.",
     ]),
     "shurit strategist of the nekroz": ("Creature", "Warrior", [
@@ -63,20 +63,20 @@ CARDS = {
     ]),
     "herald of the arc light": ("Synchro Creature", "Psychic", [
         "<i>Synchro — 1 Tuner + 1+ non-Tuner</i>",
-        "(1 - Passif) Si une carte devait être mise au GY depuis une main ou un Deck, exilez-la à la place.",
-        "(2 - Déclenchable) <b>On Send GY</b> — Cherchez 1 Ritual Creature ou 1 carte non-créature avec le sous-type Invocation Ritual.",
+        "(1 - Passif) Si une carte devait être mise au Grave depuis une main ou un Deck, exilez-la à la place.",
+        "(2 - Déclenchable) <b>On Send Grave</b> — Cherchez 1 Ritual Creature ou 1 carte non-créature avec le sous-type Invocation Ritual.",
     ]),
     "nekroz kaleidoscope": ("Sorcery", "Invocation Ritual", [
-        "(1 - Résolution) Mettez en jeu 1 ou plusieurs créatures Ritual “Nekroz” depuis votre main en envoyant 1 créature depuis votre Sideboard au GY comme matériel dont la MV satisfait seule leur(s) coût Ritual.",
-        "(2 - Activable Sorcery Hard) <b>Nekroz Recovery</b> — Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre GY ; cherchez 1 carte non-créature Invocation Ritual “Nekroz”.",
+        "(1 - Résolution) Mettez en jeu 1 ou plusieurs créatures Ritual “Nekroz” depuis votre main en envoyant 1 créature depuis votre Sideboard au Grave comme matériel dont la MV satisfait seule leur(s) coût Ritual.",
+        "(2 - Activable Sorcery Hard) <b>Nekroz Recovery</b> — Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre Grave ; cherchez 1 carte non-créature Invocation Ritual “Nekroz”.",
     ]),
     "nekroz mirror": ("Sorcery", "Invocation Ritual", [
-        "(1 - Résolution) Mettez en jeu 1 créature Ritual “Nekroz” depuis votre main en exilant des créatures depuis votre GY ou en sacrifiant des créatures depuis votre main ou terrain dont la MV totale satisfait son coût Ritual.",
-        "(2 - Activable Sorcery Hard) <b>Nekroz Recovery</b> — Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre GY ; cherchez 1 carte non-créature Invocation Ritual “Nekroz”.",
+        "(1 - Résolution) Mettez en jeu 1 créature Ritual “Nekroz” depuis votre main en exilant des créatures depuis votre Grave ou en sacrifiant des créatures depuis votre main ou terrain dont la MV totale satisfait son coût Ritual.",
+        "(2 - Activable Sorcery Hard) <b>Nekroz Recovery</b> — Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre Grave ; cherchez 1 carte non-créature Invocation Ritual “Nekroz”.",
     ]),
     "nekroz cycle": ("Sorcery", "Invocation Ritual", [
-        "(1 - Résolution) Mettez en jeu 1 créature Ritual “Nekroz” depuis votre main ou GY en sacrifiant des créatures depuis votre main ou terrain dont la MV totale satisfait son coût Ritual.",
-        "(2 - Activable Sorcery Hard) <b>Nekroz Recovery</b> — Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre GY ; cherchez 1 carte non-créature Invocation Ritual “Nekroz”.",
+        "(1 - Résolution) Mettez en jeu 1 créature Ritual “Nekroz” depuis votre main ou Grave en sacrifiant des créatures depuis votre main ou terrain dont la MV totale satisfait son coût Ritual.",
+        "(2 - Activable Sorcery Hard) <b>Nekroz Recovery</b> — Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre carte “Nekroz” depuis votre Grave ; cherchez 1 carte non-créature Invocation Ritual “Nekroz”.",
     ]),
 }
 

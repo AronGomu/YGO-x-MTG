@@ -6,14 +6,14 @@ stylesheet_version: 2024-09-01
 set_info:
 	title: Yu-Gi-Oh × Magic Cube — Staples Synchro
 	description: Staples génériques Extra Deck populaires dans l'histoire compétitive de Yu-Gi-Oh, adaptés pour le cube.
-	artist:
+	artist: 
 	copyright: 
 	set_code: YSS
 	set_language: FR
-	symbol:
-	masterpiece_symbol:
+	symbol: 
+	masterpiece_symbol: 
 	card_language: French
-	automatic_reminder_text:
+	automatic_reminder_text: 
 	automatic_copyright: yes
 	automatic_card_numbers: yes
 styling:
@@ -41,7 +41,7 @@ styling:
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 	magic-m15-sketch:
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
-		overlay:
+		overlay: 
 	magic-m15-spellbook:
 		text_box_mana_symbols: magic-mana-small.mse-symbol-font
 		overlay:
@@ -62,4 +62,4 @@ include_file: card t.g. hyper librarian
 include_file: card trishula dragon of the ice barrier
 version_control:
 	type: none
-apprentice_code:
+apprentice_code: 

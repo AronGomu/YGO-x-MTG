@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,16 +9,16 @@ card:
 	name: Spellbook of Knowledge
 	casting_cost: U
 	image: mse_images/image12.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
+	sub_type:
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
 		En tant que coût supplémentaire pour lancer ce sort, sacrifiez 1 créature “Spellbook” ou défaussez 1 “Spellbook”.
-		(1 - Résolution) Piochez 2 cartes.
+		<i-auto>(1 - Résolution)</i-auto> Piochez 2 cartes.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 008/016 C
 	card_code_text_2: 008/016 C

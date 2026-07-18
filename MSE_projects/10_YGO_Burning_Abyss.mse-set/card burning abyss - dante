@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-spellbook
 	stylesheet_version: 2024-09-01
@@ -18,7 +18,7 @@ card:
 	rule_text:
 		<i>2 créatures MV 1</i>
 		<i-auto>(1 - Activable Soft)</i-auto> <b>Detach 1 et Mill 3</b> ; Dante gagne +1/+0 pour chaque carte meulée et acquiert la vigilance ce tour-ci.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Renvoyez 1 autre carte “Burning Abyss” depuis votre Grave dans votre main.
+		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — <b>Salvage</b> 1 autre “Burning Abyss”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 5

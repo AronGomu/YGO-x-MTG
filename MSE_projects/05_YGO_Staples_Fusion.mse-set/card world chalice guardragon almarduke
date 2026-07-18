@@ -1,14 +1,14 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: genevensis-00-main
 	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 12:11:34
-	time_modified: 2026-07-11 12:11:34
+	time_modified: 2026-07-16 23:34:57
 	name: World Chalice Guardragon Almarduke
-	casting_cost: G
-	image: mse_images/image15.png
+	casting_cost: 1RG
+	image: image13.png
 	image_2: 
 	mainframe_image: 
 	mainframe_image_2: 
@@ -19,12 +19,14 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>Fusion — 3 Link Creatures</i>
-		<i-auto>(1 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Passif</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Peut</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>attaquer</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>toutes</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>les</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créatures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>adverses</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>fois</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>chacune</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
-		<i-auto>(2 - <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Déclenchable</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>)</i-auto> Si <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>Almarduke</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>détruit</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>une</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>créature</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>au</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> combat, <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>il</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>inflige</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> 2 <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>blessures</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>à</error-spelling:en_US:/magic.mse-game/dictionary/magic-words> son <error-spelling:en_US:/magic.mse-game/dictionary/magic-words>contrôleur</error-spelling:en_US:/magic.mse-game/dictionary/magic-words>.
+		<i>3 Link Creatures</i>
+		<kw-a><nospellcheck><key>Vigilance</key></nospellcheck></kw-a>, Protection contre les créatures
+		<i-auto>(1 - Passif)</i-auto> Toutes les créatures adverses doivent bloquer Almarduke.
+		<i-auto>(2 - Déclenchable)</i-auto> Si une Link Creature bloque : détruisez-la puis infligez X blessures à son contrôleur, X étant la force de la créature détruite.
 	flavor_text: <i-flavor></i-flavor>
-	power: 3
-	toughness: 3
-	card_code_text: 015/015 R
-	card_code_text_2: 015/015 R
-	card_code_text_3: 015/015 R
+	power: 6
+	toughness: 5
+	card_code_text: 012/012 R
+	card_code_text_2: 012/012 R
+	card_code_text_3: 012/012 R
+	copyright: 

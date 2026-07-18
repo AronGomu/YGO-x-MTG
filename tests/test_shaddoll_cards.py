@@ -46,9 +46,16 @@ def rules(text: str) -> list[str]:
     match = re.search(
         r"(?ms)^\trule_text:\n(?P<body>(?:\t\t.*\n)+?)(?=^\tflavor_text:)", text
     )
-    if not match:
+    if match:
+        body = match.group("body")
+        return [line.strip() for line in body.splitlines() if line.strip()]
+    inline = re.search(
+        r"(?m)^\trule_text:\s*(?P<body>.+)$", text
+    )
+    if not inline:
         return []
-    return [line[2:] for line in match.group("body").splitlines()]
+    body = inline.group("body").strip()
+    return [body] if body else []
 
 
 def markdown_rule(line: str) -> str:
@@ -116,7 +123,7 @@ class ShaddollCardsTest(unittest.TestCase):
 
     def test_rules_use_current_formatting(self) -> None:
         forbidden = re.compile(
-            r"\b(?:bibliothèque|cimetière)\b|On Send GY(?!D)|\?{2,}|\b(?:Declenchable|creature Blue)\b",
+            r"\b(?:bibliothèque|cimetière|GYD)\b|\?{2,}|\b(?:Declenchable|creature Blue)\b",
             re.IGNORECASE,
         )
         for text in self.cards.values():
@@ -130,22 +137,32 @@ class ShaddollCardsTest(unittest.TestCase):
                         continue
                     self.assertRegex(line, r"^<i-auto>\(\d+ - .+\)</i-auto> ")
 
-    def test_mse_rules_are_mirrored_in_numbered_doc(self) -> None:
-        sections = {
-            match.group("cube").strip(): match.group("body")
-            for match in re.finditer(
-                r"(?ms)^## [^\n]+ => (?P<cube>[^\n]+)\n(?P<body>.*?)(?=\n---|\Z)",
-                self.doc,
-            )
+    def test_archetype_doc_keeps_identity_not_card_blocks(self) -> None:
+        self.assertIn("## Identité de l'archétype", self.doc)
+        self.assertIn("## Conventions propres à Shaddoll", self.doc)
+        self.assertIn("Source de vérité des cartes", self.doc)
+        self.assertIn("MSE_projects/11_YGO_Shaddoll.mse-set", self.doc)
+        self.assertIn("**Shaddoll Recovery**", self.doc)
+        self.assertNotIn("Corruption", self.doc)
+        self.assertNotRegex(self.doc, r"(?m)^## .+ => .+")
+
+    def test_shaddoll_recovery_keyword_and_no_corruption(self) -> None:
+        recovery_cards = {
+            "El Shaddoll - Grysta",
+            "El Shaddoll - Shekhinaga",
+            "El Shaddoll - Wendigo",
+            "El Shaddoll - Winda",
         }
-        self.assertEqual(EXPECTED_NAMES, set(sections))
-        for text in self.cards.values():
-            name = field(text, "name")
+        by_name = {field(text, "name"): text for text in self.cards.values()}
+        for name in recovery_cards:
             with self.subTest(card=name):
-                section = sections[name]
-                self.assertIn(f"**Coût :** {{{field(text, 'casting_cost')}}}".replace("{1B}", "{1}{B}").replace("{2U}", "{2}{U}").replace("{2W}", "{2}{W}").replace("{2G}", "{2}{G}").replace("{2R}", "{2}{R}"), section)
-                for line in rules(text):
-                    self.assertIn(markdown_rule(line), section)
+                self.assertIn("<b>Shaddoll Recovery</b>", by_name[name])
+                self.assertNotIn(
+                    "Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main",
+                    by_name[name],
+                )
+        for text in self.cards.values():
+            self.assertNotIn("Corruption", text)
 
     def test_render_names_match_card_names_exactly(self) -> None:
         expected = {
@@ -160,7 +177,7 @@ class ShaddollCardsTest(unittest.TestCase):
         anoyatyllis = by_name["El Shaddoll - Anoyatyllis"]
         self.assertIn("depuis une main ou un Grave", anoyatyllis)
         self.assertIn("<b>On Send Grave</b>", anoyatyllis)
-        self.assertIn("Ciblez 1 carte", anoyatyllis)
+        self.assertIn("<b>Shaddoll Recovery</b>", anoyatyllis)
         self.assertNotIn("Soft", "\n".join(rules(anoyatyllis)))
 
         aeon = by_name["Puru Shaddoll - Aeon"]

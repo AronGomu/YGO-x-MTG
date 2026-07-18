@@ -19,8 +19,8 @@ card:
 		<i>Link — 2+ Creatures</i>
 		Célérité
 		(1 — Passif) Vos adversaires ne peuvent pas répondre aux capacités d'Accesscode Talker.
-		(1 - Déclenchable) <b>On Link Summon</b> — Accesscode gagne +X/+0 jusqu'à la fin du tour, où X est 2 fois le Link Lvl d'une Link Creature de votre GY.
-		(2 - Activable Sorcery Hard) Exilez une Link Creature de votre terrain ou GY : détruisez une carte ciblée.
+		(1 - Déclenchable) <b>On Link Summon</b> — Accesscode gagne +X/+0 jusqu'à la fin du tour, où X est 2 fois le Link Lvl d'une Link Creature de votre Grave.
+		(2 - Activable Sorcery Hard) Exilez une Link Creature de votre terrain ou Grave : détruisez une carte ciblée.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 4

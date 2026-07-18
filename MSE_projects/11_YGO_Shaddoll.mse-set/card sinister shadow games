@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -9,20 +9,19 @@ card:
 	name: Sinister Shadow Games
 	casting_cost: B
 	image: mse_images/image23.png
-	image_2:
-	mainframe_image:
-	mainframe_image_2:
+	image_2: 
+	mainframe_image: 
+	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	super_type_2: <word-list-type-en></word-list-type-en>
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
-	sub_type: <word-list-spell></word-list-spell>
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type:
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: common
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave, puis vous pouvez retourner face visible autant de créatures “Shaddoll” face verso que vous contrôlez.
+	rule_text: <i-auto>(1 - Résolution)</i-auto> Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave, puis vous pouvez retourner face visible autant de créatures “Shaddoll” face verso que vous contrôlez.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 025/025 C
 	card_code_text_2: 025/025 C

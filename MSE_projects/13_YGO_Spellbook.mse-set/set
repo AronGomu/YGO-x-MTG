@@ -6,14 +6,14 @@ stylesheet_version: 2024-05-30
 set_info:
 	title: YGO x MTG -- Spellbook
 	description: Cartes personnalisées du cube Yu-Gi-Oh × Magic, générées depuis le projet Obsidian.
-	artist:
-	copyright:
+	artist: 
+	copyright: 
 	set_code: YSB
 	set_language: FR
-	symbol:
-	masterpiece_symbol:
+	symbol: 
+	masterpiece_symbol: 
 	card_language: French
-	automatic_reminder_text:
+	automatic_reminder_text: 
 	automatic_copyright: yes
 	automatic_card_numbers: yes
 styling:
@@ -40,4 +40,4 @@ include_file: card spellbook star hall
 include_file: card the grand spellbook tower
 version_control:
 	type: none
-apprentice_code:
+apprentice_code: 

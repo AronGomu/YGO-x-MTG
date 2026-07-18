@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -17,7 +17,7 @@ card:
 	rarity: uncommon
 	rule_text:
 		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Regard 3.
-		<i-auto>(2 - Activable Flash Hard Linked)</i-auto> Depuis votre Grave, exilez cette carte ; révélez la carte du dessus de votre Deck. Si c’est une Trap, <b>Set</b> la carte face cachée sur le terrain ; vous pouvez la lancer ce tour-ci. Sinon, envoyez-la au Grave.
+		<i-auto>(2 - Activable Flash Hard Linked)</i-auto> <b>Exile from Grave</b> ; révélez la carte du dessus de votre Deck. Si c’est une Trap, <b>Set</b> la carte face cachée sur le terrain ; vous pouvez la lancer ce tour-ci. Sinon, envoyez-la au Grave.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1
