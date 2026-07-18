@@ -16,7 +16,7 @@ tags:
 
 `docs/context.md` contient uniquement les règles générales de syntaxe, de PSCT, de formatage, de vocabulaire et de structure qui s’appliquent à toutes les cartes du projet. `docs/02_rules_keywords_card_design.md` détaille ces conventions globales lorsqu’elles nécessitent davantage d’exemples.
 
-Chaque archétype possède ses propres règles, mécaniques, exceptions et valeurs carte par carte dans son document numéroté sous `docs/`. Une règle propre à un archétype doit être écrite dans ce document d’archétype, pas dans `docs/context.md`. Une observation ne devient une règle générale que si elle constitue un motif réutilisable à l’échelle du projet.
+Chaque archétype possède ses propres règles, mécaniques, exceptions et philosophie de design dans son document numéroté sous `docs/`. Les **valeurs carte par carte** (texte Magic, coût, stats, type, frame) sont définies uniquement dans les projets `MSE_projects/*.mse-set/` ; les docs ne les dupliquent plus. Une règle propre à un archétype doit être écrite dans ce document d’archétype, pas dans `docs/context.md`. Une observation ne devient une règle générale que si elle constitue un motif réutilisable à l’échelle du projet.
 
 ## Langue de rédaction
 
@@ -128,7 +128,7 @@ Exemple :
 Les coûts, coûts alternatifs, coûts supplémentaires et conditions de lancement ne sont pas des effets : ils ne doivent pas recevoir leur propre numéro de capacité. Tous les types de coûts et conditions de lancement doivent être listés avant les capacités numérotées et avant les mots-clés evergreen.
 
 - Les coûts supplémentaires d'un effet sont intégrés à la capacité qu'ils modifient, avant `;` ou `:` selon le templating.
-- Les coûts alternatifs de lancement sont écrits sur une ligne non numérotée avec le label français `Coût Alternatif -`.
+- Les coûts alternatifs de lancement sont écrits sur une ligne non numérotée avec le mot-clé gras **Alternative Cost** (forme française acceptée : **Coût alternatif**), suivi de ` — ` et de la condition ou du paiement.
 - Un mot-clé d’affinité propre à un archétype peut remplacer ce label lorsqu’il est explicitement documenté comme coût alternatif. Son nom est écrit en gras sur une ligne non numérotée avant les capacités ; le document de l’archétype définit sa condition, la substitution du coût, sa fréquence et les types de cartes concernés.
 - Les coûts alternatifs de lancement Xyz utilisent le label français spécifique `Xyz Coût Alternatif —`. Cette ligne remplace entièrement les matériaux normaux, utilise la créature indiquée comme matériel et réalise une invocation Xyz correcte. Le coût et le matériel peuvent être intégrés dans une même proposition avec `et utilisez`, par exemple `W, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez.` Finir par `Ses matériels se transfèrent.` si les matériels de la créature utilisée doivent être conservés.
 
@@ -174,7 +174,9 @@ Exemple :
 
 Ne pas regrouper plusieurs mots-clés sur une seule ligne si ce regroupement empêche de numéroter ou typer chaque capacité.
 
-Les mots-clés evergreen Magic comme `Piétinement`, `Vol`, `Vigilance`, `Lien de vie`, `Menace`, etc. ne doivent pas être écrits comme des capacités passives numérotées. Les écrire seuls sur leur propre ligne, sans `(x - Passif)`. Ils doivent venir après les lignes de coût / coût alternatif / condition de lancement, mais avant les capacités numérotées.
+Tout mot-clé imprimé sur une carte — événement, action, coût, affinité, evergreen Magic, zone canonique `Grave`, action `Set`, `Bounded`, `Indestructible` / `Indestructible des Effets`, ou label de coût alternatif `Alternative Cost` — doit être écrit en gras (`**mot-clé**` dans les docs, `<b>mot-clé</b>` dans MSE).
+
+Les mots-clés evergreen Magic comme **Piétinement**, **Vol**, **Vigilance**, **Lien de vie**, **Menace**, **Protection contre tout**, **Protection contre [qualité]**, etc. ne doivent pas être écrits comme des capacités passives numérotées. Les écrire seuls sur leur propre ligne, en gras, sans `(x - Passif)`. Ils doivent venir après les lignes de coût / coût alternatif / condition de lancement, mais avant les capacités numérotées. **Protection contre tout** équivaut à *protection from everything* ; **Protection contre [qualité]** suit les règles Magic de protection.
 
 ### Compacité du texte de carte
 
@@ -204,11 +206,11 @@ Exemples :
 
 - Écrire `1 créature MV 1`, pas `1 créature avec une valeur de mana de 1`.
 - Écrire `depuis votre Deck`, pas `depuis votre bibliothèque`.
-- Écrire `du Deck au Grave`, pas `depuis votre bibliothèque dans votre cimetière`.
+- Écrire `du Deck au Grave`, pas `depuis votre bibliothèque dans votre Grave`.
 
-Toujours utiliser `Grave` pour `cimetière` dans les textes de carte. `Grave` désigne la même zone que l’ancien raccourci `GY`, désormais conservé uniquement comme notation historique. Garder `cimetière` seulement dans les explications de règles, commentaires de design ou documentation hors texte de carte.
+Toujours utiliser **Grave** pour la zone cimetière / *graveyard* dans tout le projet (textes de carte, docs, scripts, tests). Ne plus écrire `cimetière`, `GY` ni `GYD`. **Grave** est le mot-clé de zone canonique : le mettre en gras dans les textes de carte (`**Grave**` / `<b>Grave</b>`).
 
-Pour donner indestructible, écrire `gagne indestructible`, pas `a indestructible`.
+Pour donner indestructible, écrire `gagne **Indestructible**` (ou `gagne **Indestructible des Effets**` pour la variante), pas `a indestructible` sans gras.
 
 Dans les textes d'effets, écrire `Si` au lieu de `Quand` pour les déclencheurs et conditions d'événement.
 
@@ -227,9 +229,25 @@ Exemples :
 
 **On Blocked** signifie : « Lorsque cette créature devient bloquée par une ou plusieurs créatures. »
 
-**On Attack / Block** signifie : « Lorsque cette créature attaque ou bloque. » Utiliser une barre oblique lorsque plusieurs mots-clés d'événement s'appliquent au même effet.
+**On Attack or Block** signifie : « Lorsque cette créature attaque ou bloque. »
+
+**On Block or Blocked** signifie : « Lorsque cette créature bloque ou devient bloquée. »
+
+Plusieurs mots-clés d'événement déjà définis peuvent être combinés sur une même capacité lorsqu'ils partagent le même effet. Le seul séparateur autorisé est ` or ` (en gras dans le mot-clé combiné), par exemple `**On Enter or MV2+ Opponent Creature Enter**`. Ne pas utiliser `/` ni `OR` en majuscules. Chaque composant conserve sa définition ; le texte combiné n'introduit pas un nouveau mot-clé isolé.
+
+Par défaut, un mot-clé d'événement sans précision de contrôleur ne regarde que **votre côté** (cette carte, ou des objets que vous contrôlez, selon le mot-clé). Pour inclure un adversaire, l'écrire explicitement (`Opponent`, `On Opponent …`, ou `Yours or Opponent`). Exemple : **On Enter Synchro** regarde vos Synchro ; un effet qui regarde aussi l'adversaire s'écrit avec `Opponent` dans le mot-clé.
+
+**On Leave Field** signifie : « Lorsque cette carte quitte le champ de bataille. »
+
+**On Upkeep** signifie : « Au début de votre entretien. » Si le déclencheur vise l'entretien d'un autre joueur, l'écrire explicitement (par exemple **On Opponent Upkeep**).
+
+**On Fusion Summon** fonctionne comme **On Enter**, mais uniquement lorsqu’une `Fusion Creature` arrive sur le champ de bataille via sa propre invocation Fusion. Une `Fusion Creature` mise directement sur le champ de bataille par un autre effet ne déclenche pas **On Fusion Summon**.
 
 **On Link Summon** fonctionne comme **On Enter**, mais uniquement lorsqu’une `Link Creature` arrive sur le champ de bataille via sa propre invocation Link. Une `Link Creature` mise directement sur le champ de bataille par un autre effet ne déclenche pas **On Link Summon**.
+
+**On Enter Synchro** signifie : « À chaque fois qu’une Synchro Creature arrive sur le champ de bataille sous votre contrôle. » Inclut cette carte si elle est elle-même une Synchro Creature qui arrive. Ne pas écrire `On Enter Your Synchro` : le côté « vous » est le défaut (voir règle ci-dessus).
+
+**On Opponent Activation or Attack** signifie : « Lorsqu’un adversaire active une capacité ou déclare une attaque avec une créature. » Peut introduire une capacité Déclenchable ou restreindre le moment d’activation d’une capacité Activable Flash. « Activation » = activation de capacité sur la pile, pas le lancement d’un sort (utiliser **On Opponent's Cast** pour les sorts).
 
 **On Opponent Creature Enter** signifie : « À chaque fois qu'une créature arrive sur le terrain sous le contrôle d'un adversaire. » Lorsqu'il est placé après une instruction, cette instruction est répétée à chaque occurrence de cet événement pendant la durée indiquée.
 
@@ -249,27 +267,51 @@ Après le périmètre, ajouter si nécessaire les paramètres qui définissent l
 
 **On Creature you Control Destroy** signifie : « Lorsqu’une créature que vous contrôlez est détruite. » Sauf restriction écrite sur la carte, l’événement compte quelle que soit la cause de la destruction.
 
-**On Destroy** signifie : « Lorsque cette carte est détruite et envoyée au cimetière. »
+**On Destroy** signifie : « Lorsque cette carte est détruite et envoyée au Grave. »
 
 **On Exile** signifie : « Lorsque cette carte est exilée. » Utiliser ce mot-clé pour toute capacité de cette carte qui se déclenche lorsqu’elle est exilée, quelle que soit la zone depuis laquelle elle est exilée.
 
 **On Sacrifice** signifie : « Lorsque cette carte est sacrifiée ou utilisée comme matériel pour lancer une créature Ritual. » Utiliser ce mot-clé pour remplacer les formulations comme `Si cette carte est utilisée comme matériel Ritual`.
 
-**Detach X** signifie : « Détachez X matériels de cette Xyz Creature et envoyez-les au Grave. » `X` représente le nombre de matériels à détacher. Sur une carte, remplacer X par la valeur requise (`**Detach 1**`, `**Detach 2**`, etc.). Si n’importe quel nombre peut être détaché, conserver `**Detach X**`. Detach est un coût lorsqu’il précède `:` ou `;`. Placé après un événement avec un tiret cadratin, comme `**On Attack / Block** — **Detach 1**`, il est une action obligatoire de l’effet déclenché.
+**Detach X** signifie : « Détachez X matériels de cette Xyz Creature et envoyez-les au Grave. » `X` représente le nombre de matériels à détacher. Sur une carte, remplacer X par la valeur requise (`**Detach 1**`, `**Detach 2**`, etc.). Si n’importe quel nombre peut être détaché, conserver `**Detach X**`. Detach est un coût lorsqu’il précède `:` ou `;`. Placé après un événement avec un tiret cadratin, comme `**On Attack or Block** — **Detach 1**`, il est une action obligatoire de l’effet déclenché.
 
-**Mill X** signifie : « Envoyez les X cartes du dessus de votre Deck dans votre Grave. » Sur une carte, remplacer X par la valeur requise : `**Mill 1**`, `**Mill 2**` ou `**Mill 3**`. Si le joueur choisit librement entre ces trois valeurs, écrire `**Mill up to 3**`.
+**Mill X** signifie : « Envoyez les X cartes du dessus de votre Deck dans votre Grave. » Sur une carte, remplacer X par la valeur requise : `**Mill 1**`, `**Mill 2**` ou `**Mill 3**`. Ne jamais écrire le mot-clé nu `**Mill**` sans quantité : une carte qui envoie 1 carte utilise `**Mill 1**`. Si le joueur choisit librement entre ces trois valeurs, écrire `**Mill up to 3**`.
 
 **Summon** signifie : « Mettez la carte indiquée sur le terrain depuis la zone précisée, sans la lancer et sans payer son coût de mana. » Une Summon ne constitue pas à elle seule une invocation correcte d’une carte d’Extra Deck ou Ritual. Tout effet autorisé à effectuer une Summon normalement illégale doit écrire explicitement `en ignorant les restrictions de Summon`. Cette permission rend uniquement la Summon légale : elle ne constitue pas une invocation correcte pour les déplacements futurs.
+
+**Hand Summon** signifie : « **Summon** la créature indiquée depuis votre main. » Sur une carte, écrire `**Hand Summon**` puis les filtres (`1 créature MV 1 ou moins`, etc.). Mêmes restrictions d’invocation correcte que **Summon**.
 
 Lors de l’ajout ou de la mise à jour d’une carte, si un effet effectuerait une Summon illégale — notamment depuis le Sideboard sans la méthode d’invocation requise — demander obligatoirement à l’utilisateur s’il faut ajouter `en ignorant les restrictions de Summon` à l’effet. Ne jamais déduire cette permission silencieusement.
 
 **Reanimate** signifie : « Renvoyez la carte ciblée depuis son Grave sur le terrain. » Cette action ne contourne pas l’obligation d’invocation correcte des cartes d’Extra Deck ou Ritual.
 
+**Salvage** signifie : « Renvoyez la carte indiquée depuis votre Grave dans votre main. » Sur une carte, écrire le mot-clé en gras puis le sélecteur : `**Salvage** 1 “Shaddoll” non-créature`, `**Salvage** 1 autre “Burning Abyss”`, `Ciblez 1 “Nekroz” de votre Grave ; **Salvage** la cible`. **Salvage** ne renvoie pas sur le terrain (**Reanimate**), n’exile pas (**Exile from Grave**), et ne renvoie pas un permanent depuis le champ de bataille (**Bounce**).
+
+**Reclaim** signifie : « Renvoyez la carte indiquée depuis l’exil dans votre main. » Écrire `**Reclaim**` en gras, puis le sélecteur ou `la cible` : `Ciblez 1 “Spellbook” depuis votre exil ; **Reclaim** la cible`. Distinct de **Salvage** (Grave → main) et de **Release** (exil → terrain).
+
+**Release** signifie : « Mettez la carte indiquée depuis l’exil sur le terrain. » Écrire `**Release**` en gras, puis le sélecteur ou `la cible`. Mêmes restrictions d’invocation correcte que **Summon** / **Reanimate** : ajouter `en ignorant les restrictions de Summon` si la mise en jeu serait autrement illégale. Distinct de **Reanimate** (Grave → terrain) et de **Reclaim** (exil → main).
+
+**Exile from Grave** signifie : « Activez uniquement depuis votre Grave. En tant que coût, exilez cette carte depuis votre Grave. » Sur une carte, écrire uniquement le mot-clé en gras à la place de `Depuis votre Grave, exilez cette carte`. Les coûts ou choix supplémentaires (défausse, exil d’une autre carte, ciblage, etc.) restent écrits après le mot-clé, avant `;` ou `:` le cas échéant. Exemples : `**Exile from Grave** ; révélez…`, `**Exile from Grave** et défaussez 1 créature “Burning Abyss” ; …`, `**Exile from Grave**, ciblez 1 créature ; …`.
+
+**Exile N [selector] from Grave** signifie : « En tant que coût, exilez N cartes de votre **Grave** qui correspondent au sélecteur. » Exemple : `**Exile 1 Plant from Grave**`. Distinct de **Exile from Grave**, qui exile *cette* carte et fixe la zone d’activation. `N` est un entier positif ; le sélecteur suit les règles de nommage et de type du projet.
+
 **Attach** signifie : « Attachez la carte indiquée à la Xyz Creature indiquée comme matériel. »
+
+**Bounce** signifie : « Renvoyez le permanent indiqué dans la main de son propriétaire. »
+
+**Negate** exige une cible : un permanent, un sort, ou une capacité sur la pile. Si la cible est un permanent : ce permanent perd toutes ses capacités et toutes ses capacités déjà sur la pile sont contrecarrées. Si la cible est un sort ou une capacité : contrecarrez-le / contrecarrez-la.
+
+**Negate & Destroy** signifie la même chose que **Negate**, puis détruit la carte qui a activé l’effet (ou le permanent / sort ciblé selon le contexte de la carte). Une carte peut être détruite ainsi depuis le terrain, la main, le Deck ou le Sideboard. Elle ne peut pas être détruite depuis le **Grave** ni depuis l’exil. Cette destruction déclenche les effets **On Destroy** de la carte détruite lorsqu’ils s’appliquent.
+
+**Grave** est le mot-clé de zone pour le Grave dans les textes de carte. L'écrire en gras lorsqu'il désigne la zone en tant que terme de règle isolé ou mis en évidence ; dans une phrase courante (`depuis votre Grave`, `dans le Grave`), le capitaliser comme zone canonique et le mettre en gras uniquement s'il est traité comme mot-clé dans ce contexte d'affichage du projet.
+
+**Set** signifie : « Mettre une carte face cachée sur le terrain selon les règles Trap (ou une permission équivalente). » **Set** est un mot-clé d'action : l'écrire en gras dans le texte de règle. Set n'utilise pas la pile, ne lance pas la carte, ne paie pas le coût de lancement et ne déclenche pas **On Cast**.
+
+**Alternative Cost** (français d'affichage également accepté : **Coût alternatif**) désigne un coût de lancement alternatif. Sur une carte, écrire le label en gras, puis la condition ou le paiement : `**Alternative Cost** — ...` ou `**Coût alternatif** — ...`. Un mot-clé d'affinité documenté peut remplacer ce label.
 
 **Bounded X** lie jusqu’à X autres créatures que vous contrôlez à la carte qui porte la capacité, appelée le `bounder`. Lorsque Bounded X devient actif, le contrôleur du bounder choisit jusqu’à X autres créatures qu’il contrôle ; elles deviennent `bounded`. Un permanent bounded bénéficie du bonus ou de l’effet indiqué uniquement tant que son bounder reste sur le terrain. Si le bounder quitte le terrain, tous ses liens et effets Bounded prennent fin immédiatement. Si un permanent bounded quitte le terrain, le contrôleur peut immédiatement en choisir un nouveau dans la limite X.
 
-**Indestructible contre les effets** signifie que la créature ne peut pas être détruite par un sort ou une capacité, mais peut toujours être détruite par les règles du combat ou par une action qui n’est pas un effet.
+**Indestructible** (evergreen Magic) et **Indestructible des Effets** sont des mots-clés à écrire en gras. **Indestructible des Effets** signifie que la créature ne peut pas être détruite par un sort ou une capacité, mais peut toujours être détruite par les règles du combat ou par une action qui n’est pas un effet. Pour l'evergreen complet, écrire **Indestructible** ; pour la variante limitée aux effets, écrire **Indestructible des Effets**.
 
 **Défense talismanique** signifie : « Cette carte ne peut pas être ciblée par les sorts ou capacités de vos adversaires. »
 
@@ -281,9 +323,9 @@ Lors de l’ajout ou de la mise à jour d’une carte, si un effet effectuerait 
 
 Le nom ou l’archétype placé après **Ritual Summon** ou **Fusion Summon** filtre les créatures compatibles sans qu’il soit nécessaire de répéter `Ritual Creature`, `Fusion Creature` ou `Sideboard` dans le texte de la carte.
 
-Pour tout effet déclenché par l'arrivée de la carte sur le champ de bataille, utiliser **On Enter**, ou **On Link Summon** si l'effet exige spécifiquement une invocation Link. Pour tout effet déclenché par une attaque, un blocage effectué ou le fait de devenir bloqué, utiliser respectivement **On Attack**, **On Block** ou **On Blocked**. Utiliser **On Attack / Block** si les deux premiers événements déclenchent le même effet. Ne pas reformuler ces événements avec `Si ... arrive`, `Si ... attaque` ou `Si ... bloque`.
+Pour tout effet déclenché par l'arrivée de la carte sur le champ de bataille, utiliser **On Enter**, **On Fusion Summon** si l'effet exige spécifiquement une invocation Fusion, ou **On Link Summon** si l'effet exige spécifiquement une invocation Link. Pour tout effet déclenché par une attaque, un blocage effectué ou le fait de devenir bloqué, utiliser respectivement **On Attack**, **On Block** ou **On Blocked**. Utiliser **On Attack or Block** ou **On Block or Blocked** si les événements combinés déclenchent le même effet. Pour une Synchro qui arrive sous votre contrôle (pas seulement cette carte), utiliser **On Enter Synchro**. Pour un départ du champ de bataille, utiliser **On Leave Field**. Pour un déclencheur d'entretien, utiliser **On Upkeep**. Ne pas reformuler ces événements avec `Si ... arrive`, `Si ... attaque` ou `Si ... bloque`.
 
-Un mot-clé d’événement qui introduit une capacité doit être écrit en gras et suivi d’un tiret cadratin : `**On Enter** — ...`, `**On Exile** — ...`, etc. Un mot-clé placé après une instruction répétée, comme `Piochez 1 carte **On Opponent Creature Enter**`, ne prend pas de tiret cadratin.
+Un mot-clé d’événement qui introduit une capacité doit être écrit en gras et suivi d’un tiret cadratin : `**On Enter** — ...`, `**On Exile** — ...`, `**On Leave Field** — ...`, `**On Upkeep** — ...`, etc. Un mot-clé placé après une instruction répétée, comme `Piochez 1 carte **On Opponent Creature Enter**`, ne prend pas de tiret cadratin.
 
 Utiliser les mots-clés d'événement pour raccourcir les effets déclenchés.
 
@@ -291,7 +333,7 @@ Utiliser les mots-clés d'événement pour raccourcir les effets déclenchés.
 
 `Trap` est un super-type anglais réservé aux cartes non-créature. Il précède le type Magic sur la ligne de type : `Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc. `Trap` n’est pas un mot-clé, une capacité ou un sous-type : ne pas écrire `**Piège**` dans le texte de règle ni `Instant — Piège` sur la ligne de type.
 
-Une carte Trap ne peut pas être lancée depuis la main. Depuis sa main, son propriétaire peut la **Set** face cachée sur le terrain. Set est une action spéciale qui n’utilise pas la pile, ne lance pas la carte, ne demande pas de payer son coût de lancement et ne déclenche pas **On Cast**. Un effet qui met une carte Trap face cachée sur le terrain la Set et satisfait ce prérequis ; activer ensuite cette carte revient à la lancer. Une permission explicite peut autoriser cette activation pendant le tour où elle a été Set.
+Une carte Trap ne peut pas être lancée depuis la main. Depuis sa main, son propriétaire peut la **Set** face cachée sur le terrain. **Set** est un mot-clé d’action spéciale qui n’utilise pas la pile, ne lance pas la carte, ne demande pas de payer son coût de lancement et ne déclenche pas **On Cast**. Un effet qui met une carte Trap face cachée sur le terrain la Set et satisfait ce prérequis ; activer ensuite cette carte revient à la lancer. Une permission explicite peut autoriser cette activation pendant le tour où elle a été Set.
 
 Tant qu’elle est face cachée, la carte est traitée comme un permanent non-créature non-terrain sans nom, couleur, coût de mana, MV, type, sous-type, super-type, capacité, force ni endurance. Elle reste sur le terrain comme un permanent sans effet ; elle n’est pas un `Enchantment`.
 
@@ -433,11 +475,12 @@ Ce script sauvegarde le projet, génère des `mse_images/imageN.png` pour toutes
 - Lorsqu’un effet ne cible pas au sens des règles, l’indiquer explicitement avec `Cet effet ne cible pas.`
 - Plusieurs actions à mot-clé appartenant à une même capacité sont écrites dans un même groupe en gras et reliées par `et`, par exemple `**Detach 1 et Mill 3**`.
 - Le choix d’une cible n’est jamais un coût, même lorsque `ciblez ...` est placé dans le groupe d’instructions qui précède `;` ou `:`.
-- Un effet activé depuis le Grave peut commencer par `Depuis votre Grave, exilez cette carte ; ...` ou intégrer l’exil et le ciblage avant `;` lorsque la carte emploie ce templating.
+- Un effet activé depuis le Grave en exilant cette carte commence par le mot-clé gras `**Exile from Grave**` (définition ci-dessus), jamais par la phrase longue `Depuis votre Grave, exilez cette carte`. Les coûts et choix supplémentaires restent avant `;` ou `:`.
 - Pour désigner la carte elle-même, utiliser son nom si celui-ci est aussi court ou plus court que `cette carte` ; sinon, utiliser `cette carte`.
 - Pour déplacer une carte depuis le Deck, réserver `Cherchez` aux cartes mises en main. Utiliser `Envoyez ... depuis votre Deck au Grave` et `Mettez en jeu ... depuis votre Deck` pour les autres destinations.
 - Toujours écrire les zones, types et mécaniques avec leur casse et leur orthographe validées : `Deck`, `Grave`, `Sideboard`, `Ritual Creature`, `Fusion Creature` et `Trap`.
 - Dans les cartes du cube, `Sideboard` est le nom de la zone MSE qui représente l’Extra Deck. Les règles générales peuvent parler d’Extra Deck ; le texte compact des cartes emploie Sideboard.
+- Pour toute créature de type Sideboard / Extra Deck (`Xyz Creature`, `Synchro Creature`, `Fusion Creature`, `Link Creature`), la ligne de matériaux en italique **ne répète jamais** le type d’invocation : pas de préfixe `Xyz —`, `Synchro —`, `Fusion —` ni `Link —`. Le super-type de la carte porte déjà cette information. Écrire seulement les matériaux, par ex. `*2 créatures MV 1*`, `*1 Tuner + 1+ non-Tuner*`, `*1 créature “Shaddoll” + 1 créature blanche*`, `*2+ Creatures*`.
 - La ligne de matériaux d’une Fusion Creature utilise `*[matériaux]*` ; le super-type `Fusion Creature` porte déjà l’information Fusion.
 - La ligne de matériaux d’une Synchro Creature place toujours le Tuner en premier : `*1 Tuner + 1+ non-Tuner*` ; le préfixe `Synchro —` est omis.
 - Une protection par remplacement de destruction utilise `Si cette carte devait être détruite, vous pouvez sacrifier ... à la place.`
@@ -453,13 +496,13 @@ Pour les créatures d'Extra Deck, le type spécial doit être placé dans le `su
 
 ### Ligne de matériaux Xyz
 
-La première ligne de texte d'une `Xyz Creature` doit indiquer ses matériaux en italique, sans répéter le préfixe `Xyz —`. Par défaut, utiliser :
+La première ligne de texte d'une `Xyz Creature` doit indiquer ses matériaux en italique, **sans** préfixe `Xyz —` / `Xyz -` (le super-type `Xyz Creature` suffit). Par défaut, utiliser :
 
 ```text
 2 créatures MV N
 ```
 
-où `N` est la valeur de mana de la carte Xyz elle-même. Exemple : une Xyz coûtant `{2}{U}` utilise `2 créatures MV 3`. Les exceptions existent seulement si le design de la carte exige explicitement `2+ créatures` ou un matériel nommé, mais la baseline du projet est `2 créatures MV N`.
+où `N` est la valeur de mana de la carte Xyz elle-même. Exemple : une Xyz coûtant `{2}{U}` utilise `2 créatures MV 3`. Les exceptions existent seulement si le design de la carte exige explicitement `2+ créatures` ou un matériel nommé, mais la baseline du projet est `2 créatures MV N`. Ne jamais écrire `Xyz — 2 créatures MV 1` ; écrire `2 créatures MV 1`. Le label de coût alternatif `Xyz Coût Alternatif —` reste distinct et autorisé.
 - `Synchro Creature` pour les créatures Synchro ;
 - `Fusion Creature` pour les créatures Fusion ;
 - `Link Creature` pour les créatures Link.
@@ -500,11 +543,11 @@ Les frames Fusion et Ritual ne s'appliquent qu'aux **créatures**. Une carte non
 
 Voir aussi `frame_candidates.md` pour la liste des candidats et validations visuelles.
 
-La première ligne du texte de règle d'une créature d'Extra Deck doit être la condition d'invocation en italique, sans répéter son super-type :
+La première ligne du texte de règle d'une créature d'Extra Deck / Sideboard doit être la condition d'invocation en italique, **sans** répéter le type d'invocation ni le super-type (`Xyz`, `Synchro`, `Fusion`, `Link`) :
 
-- `*2 créatures MV N*` pour une Xyz Creature ;
-- `*1 Tuner + 1+ non-Tuner*` pour une Synchro Creature ;
-- `*1 créature “Shaddoll” + 1 créature blanche*` pour une Fusion Creature ;
-- `*2+ Creatures*` pour une Link Creature.
+- `*2 créatures MV N*` pour une Xyz Creature — jamais `*Xyz — 2 créatures MV N*` ;
+- `*1 Tuner + 1+ non-Tuner*` pour une Synchro Creature — jamais `*Synchro — …*` ;
+- `*1 créature “Shaddoll” + 1 créature blanche*` pour une Fusion Creature — jamais `*Fusion — …*` ;
+- `*2+ Creatures*` pour une Link Creature — jamais `*Link — …*`.
 
 Pour une `Link Creature`, le niveau Link reste porté par le type de carte (`Link Lvl 4 Creature`, par exemple), tandis que la première ligne indique seulement le nombre ou les propriétés des matériaux requis. La MV ou le niveau des matériaux n'a pas d'importance sauf mention explicite sur la carte, comme `2 Creatures MV 1` pour Cherubini.

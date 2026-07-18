@@ -48,11 +48,11 @@ Le Deck n'est pas mélangé pendant cette procédure.
 
 ### Burning Abyss
 
-Archétype noir centré sur les petites créatures Fiend, le cimetière, le sacrifice et les invocations Xyz. Les cartes veulent être envoyées au cimetière et convertissent chaque ressource perdue en value.
+Archétype noir centré sur les petites créatures Fiend, le Grave, le sacrifice et les invocations Xyz. Les cartes veulent être envoyées au Grave et convertissent chaque ressource perdue en value.
 
 ### Shaddoll
 
-Archétype noir orienté Flip, envoi au cimetière et Fusion. Les créatures ont souvent un effet lorsqu'elles sont retournées face visible et un autre lorsqu'elles sont envoyées au cimetière par un effet.
+Archétype noir orienté Flip, envoi au Grave et Fusion. Les créatures ont souvent un effet lorsqu'elles sont retournées face visible et un autre lorsqu'elles sont envoyées au Grave par un effet.
 
 ### Nekroz
 
@@ -65,14 +65,9 @@ Archétype Wizard / sort-chain. Le deck accumule des cartes “Spellbook”, tra
 ## Documents principaux
 
 - [[02_rules_keywords_card_design|02 - Règles, mots-clés et design des cartes]]
-- [[03_non_archetype_creature|03 - Non-archetype Creature]]
-- [[04_ritual|04 - Ritual]]
-- [[05_fusion|05 - Fusion]]
-- [[06_synchro|06 - Synchro]]
-- [[07_xyz|07 - Xyz]]
-- [[08_link|08 - Link]]
-- [[09_non_archetype_non_creature|09 - Non-archetype Non-creature]]
 - [[10_archetype_burning_abyss|10 - Archétype : Burning Abyss]]
 - [[11_archetype_shaddoll|11 - Archétype : Shaddoll]]
 - [[12_archetype_necroz|12 - Archétype : Nekroz]]
 - [[13_archetype_spellbook|13 - Archétype : Spellbook]]
+
+Les listes et textes carte par carte ne sont plus dans `docs/` : source de vérité = projets `MSE_projects/*.mse-set/`.
