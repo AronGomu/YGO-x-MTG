@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "project": "05_YGO_Staples_Fusion.mse-set",
+  "exportedAt": "2026-07-19T15:30:25.252141Z",
+  "mse": {
+    "version": "2.0.2",
+    "game": "magic",
+    "stylesheet": "genevensis-00-main",
+    "cli": "mse.com"
+  },
+  "cards": [
+    {
+      "id": "card coordius the triphasic dealmon",
+      "name": "Coordius the Triphasic Dealmon",
+      "manifestIndex": 0,
+      "sourceHash": "4bee5eab9c3527f6b8633ce48d5b06a740380b355d823fdd5b146cb281fc1260",
+      "artworkHash": "97d2912eb6992e44e496b1340d17ea5ee01e34311ee914fa40547366260d0129",
+      "render": "Coordius the Triphasic Dealmon.png",
+      "renderHash": "f49a5eff16c8ac772d6d155273aeb2c9546f065110344f063941623c66a39b66",
+      "renderPixelHash": "086c137e76c6fa4fa0fba61fd238923f5b59226ca1afa9c05b60eaa22e0991aa"
+    },
+    {
+      "id": "card elder entity ntss",
+      "name": "Elder Entity N'tss",
+      "manifestIndex": 1,
+      "sourceHash": "172b53b18d03d5a79dc093b7da698d0c1f7fa1883c2a48a913c3d2e94ab338f4",
+      "artworkHash": "cfcbca842a33c28134a7ef405381d32a7cf693831dad682c2b9bba7c27d48479",
+      "render": "Elder Entity N'tss.png",
+      "renderHash": "2f0b6ad2a1eadb3c1e6f38a48a1f71fffbe11ae9184b79a88b9a017da624d023",
+      "renderPixelHash": "dd9b7cae62a56b7e199a2b06c79535fa9a7d412abb871a4422678aa2f0bf79a1"
+    },
+    {
+      "id": "card garura wings of resonant life",
+      "name": "Garura, Wings of Resonant Life",
+      "manifestIndex": 2,
+      "sourceHash": "ea147cce1d15029e6d339d82d558d1becd844f6bb3a7fc4bca8e93756f8ff014",
+      "artworkHash": "a904c13b06ec24764320b39261938fb74ab990a6dbafd96b4321e7442c59c79a",
+      "render": "Garura, Wings of Resonant Life.png",
+      "renderHash": "811df2b6a08a35e70ee0f2a0ae77604a55f63c59272baa6c773f83d528446cd4",
+      "renderPixelHash": "ce6f1197ccb299f453c7ad5f3d39023c59f5b245f7fb72c6405c3124897a0db9"
+    },
+    {
+      "id": "card guardian chimera",
+      "name": "Guardian Chimera",
+      "manifestIndex": 3,
+      "sourceHash": "8a66ccb4cbb5acf1b35f696f8c30240e41c6a1c47ac098c17688601455aba978",
+      "artworkHash": "6fab34a9864fce9fa6889bfc92130877b044143aec6e3fcad34ba10f647f7871",
+      "render": "Guardian Chimera.png",
+      "renderHash": "88c34c1d080ab889e914bdcb08591db073f5b34de63b11acb72e4e1603fb2458",
+      "renderPixelHash": "c919fb8daa872a0f3dd07f6bfe4ae5bed3c2cddae0a5ba30ce2f3e64dd205fd5"
+    },
+    {
+      "id": "card mudragon of the swamp",
+      "name": "Mudragon of the Swamp",
+      "manifestIndex": 4,
+      "sourceHash": "ab97bb1383e21ef20360d3b9ae0a8c1ff0a09266048d7dd2397cf9e81accdc52",
+      "artworkHash": "305dda396645d713db38b43a0d0e366c1c37e75dabf4f8e89fbc449d427bd02d",
+      "render": "Mudragon of the Swamp.png",
+      "renderHash": "864db4e5a04436d2f464a3b4c6b4eb9c90b7f09f095aaecbd0d60281df2f9c3e",
+      "renderPixelHash": "cb8e5658b2fb11207d566f701c3f24f12d636d61e02fccaee30df213afd6e593"
+    },
+    {
+      "id": "card mysterion the dragon crown",
+      "name": "Mysterion the Dragon Crown",
+      "manifestIndex": 5,
+      "sourceHash": "65426c288c9880bddbaf0ab3435c23d53f4ad3a05c8ca40c638f09051182dce1",
+      "artworkHash": "f11d6e74cfa7a60b11533b0029cde8f4dcabfdc3ad4cae98ce5b8d21a3416cee",
+      "render": "Mysterion the Dragon Crown.png",
+      "renderHash": "363bff307f7eb0e321bee6d8052ce18e47c1369aad90018210af80e0bb133469",
+      "renderPixelHash": "36cf48611a2c549ff4632d0b7e4cef3b29bcb3f50f48e16abaef0a29c4390e71"
+    },
+    {
+      "id": "card panzer dragon",
+      "name": "Panzer Dragon",
+      "manifestIndex": 6,
+      "sourceHash": "9e5e665ff50be5a7b2fc728973b6da239331b6c76d89147e2598c372990bd6af",
+      "artworkHash": "61e8badc8357920cd799f8a4e8da2b5e2f458f700ffa7df6bb8dcbb03ed40f96",
+      "render": "Panzer Dragon.png",
+      "renderHash": "f392137e35e17f794c22e897ed2247e3c5d3bc9f08e1123db9e88b91a0fe74ce",
+      "renderPixelHash": "7b58fc67f91f506159e43a6b74f2391f7af5dad0ac93e3d690dec818009e93bc"
+    },
+    {
+      "id": "card predaplant dragostapelia",
+      "name": "Predaplant Dragostapelia",
+      "manifestIndex": 7,
+      "sourceHash": "575c90c3f7c7858ac7b225c80081f00ee94d0c56160f639dd23238587962c404",
+      "artworkHash": "358bf2f986391b10bf940b3c8057816d65e48184d6ec25351618d45fbe4a00dc",
+      "render": "Predaplant Dragostapelia.png",
+      "renderHash": "92c85bc819b45ff21dfd966fc483fa8a80e4c532030018e86b2a30f51f924833",
+      "renderPixelHash": "351ad87ae8dd2ccfef30f82759a69da74e9f468d6148ae2b7c60edbd78d1a316"
+    },
+    {
+      "id": "card predaplant triphyoverutum",
+      "name": "Predaplant Triphyoverutum",
+      "manifestIndex": 8,
+      "sourceHash": "5b720a1788b96f846182bcbf2fa2aba6d0db18379bfeb0cbd532b09f4f01e518",
+      "artworkHash": "6993bb9fa4e537b17be0f0ac5e3a418a6e4dfd8893b256f01a169f4d18c5906e",
+      "render": "Predaplant Triphyoverutum.png",
+      "renderHash": "59684de3dbeec2ef13e322a89e02976309846ef66a595a09fc5de8ee68170dd9",
+      "renderPixelHash": "fe635af3e54220a246d16b57801c5bd6ba2a3ad44273da047fdc8ad064814947"
+    },
+    {
+      "id": "card sea monster of theseus",
+      "name": "Sea Monster of Theseus",
+      "manifestIndex": 9,
+      "sourceHash": "3dab347e0ab0effbf6a9fe6903558629330da09fd42d6dd1160a9b1f0d8a1586",
+      "artworkHash": "e4a26c7250d684c67462218e4b0b0853b41d0ad78e9d35c27da851acfdb4f729",
+      "render": "Sea Monster of Theseus.png",
+      "renderHash": "eabfff99972929ed8ea1addd4d18c21fba431aac9d63ad42c0dee18fa6affa66",
+      "renderPixelHash": "05e5dad40b6817c3e61df4f7e88bb5a50b2402eb24321c81b34c0d4cfc8277fd"
+    },
+    {
+      "id": "card starving venom fusion dragon",
+      "name": "Starving Venom Fusion Dragon",
+      "manifestIndex": 10,
+      "sourceHash": "d01d96f1d994b7d2332bc11f90d0fbf7d8dc164038351c83883f158ed1b5e451",
+      "artworkHash": "bc54a995073b4992b90a7a6e5d254bbb103a26c94a3f7980f89e56ff4ce02474",
+      "render": "Starving Venom Fusion Dragon.png",
+      "renderHash": "ff4952f6d38732d3fa419572f86710cc54bd2fd58c60e539ff45bc3ba606a781",
+      "renderPixelHash": "8e9e1d497f6e675371b305f9dd9744aa8944946c837f5ab7a872d647bce6064f"
+    },
+    {
+      "id": "card world chalice guardragon almarduke",
+      "name": "World Chalice Guardragon Almarduke",
+      "manifestIndex": 11,
+      "sourceHash": "7d9c1ae98b50d087756dfc092b5012806bb3bb39a85dbd2b7fe6de2f7109441f",
+      "artworkHash": "9665ea74e2c1396b825ea207c7850d1396bc88c8f8453582f1400d84bd4731ba",
+      "render": "World Chalice Guardragon Almarduke.png",
+      "renderHash": "e1d8323547f0514558fb54c122686b8b9bdd5bac8285e74ce90a292c047f3f8c",
+      "renderPixelHash": "d000917abc412c808d07b24f8d0f936c3491d10593c3bff8f124436b4409349d"
+    }
+  ]
+}

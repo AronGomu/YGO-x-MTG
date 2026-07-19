@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "project": "13_YGO_Spellbook.mse-set",
+  "exportedAt": "2026-07-19T15:30:57.069541Z",
+  "mse": {
+    "version": "2.0.2",
+    "game": "magic",
+    "stylesheet": "sevenhalf",
+    "cli": "mse.com"
+  },
+  "cards": [
+    {
+      "id": "card high priestess of prophecy",
+      "name": "High Priestess of Prophecy",
+      "manifestIndex": 0,
+      "sourceHash": "19c953641d39063a6774e889682af7403b89d635998f48e695bce237d3bd2f97",
+      "artworkHash": "5fbe3fa1ce4fd53757c63fdf4fd98d90a7d9d097e05eff47889d09aa9d60b55d",
+      "render": "High Priestess of Prophecy.png",
+      "renderHash": "fba4eccc94f59681dfb96f35879366cf87af69c2479f35957da7b0c6b18b0359",
+      "renderPixelHash": "78445c3abc7af4349d92f487751a3fb70a989a35d9cfb90f5b82d644d061ac67"
+    },
+    {
+      "id": "card justice of prophecy",
+      "name": "Justice of Prophecy",
+      "manifestIndex": 1,
+      "sourceHash": "c293208018c587226e75e3d8b32579f0109996cf63e3410f48fae69887d779f2",
+      "artworkHash": "cb5ad55eb00ea841329cd658ea13e8554603dc0e4b7589d44bc41e9d9e96245c",
+      "render": "Justice of Prophecy.png",
+      "renderHash": "5be532c1fff9c6eef52f0ea8fbfad9d6a556b743bccc92d74cb82eb0672b5e4e",
+      "renderPixelHash": "acbfaf4af07110542113154f0f94e15b9b1c9f72d973062b3fd256a2230d4317"
+    },
+    {
+      "id": "card spellbook library of the crescent",
+      "name": "Spellbook Library of the Crescent",
+      "manifestIndex": 2,
+      "sourceHash": "59e9538fd8e11e88e3aea6cba611e83541dfc1b29cdf73b7dee4ac39d8eb53fb",
+      "artworkHash": "f13c2cb7ac70d2d15a88dbee91cbc084d7d85b9459fd4d1e2ce30826cec6b220",
+      "render": "Spellbook Library of the Crescent.png",
+      "renderHash": "9dbd176f501ab80df831df9b8701cfb0d37f5fbce03438fcc2895a42f34b04ba",
+      "renderPixelHash": "99831066ff44b884e279f098636093df05439931f9eed95d66b9a6c9ff0f654b"
+    },
+    {
+      "id": "card spellbook magician of prophecy",
+      "name": "Spellbook Magician of Prophecy",
+      "manifestIndex": 3,
+      "sourceHash": "ac07d4a1704e6a509936897cf354a4b7726e6aa972620035fe57e5b84642ac50",
+      "artworkHash": "1706f69b900764b406ce8a1a71c24059198aa2bb710ab09a950f87bbb6a45610",
+      "render": "Spellbook Magician of Prophecy.png",
+      "renderHash": "b9efaa174946e001558f7d3160f89eb8548e1c72bd1e40bd93136b1e6d39e8bb",
+      "renderPixelHash": "3f2bce8d9840e464a8e4feb329eb5585879e57d93e38a9dbf97007c48849f57b"
+    },
+    {
+      "id": "card spellbook of eternity",
+      "name": "Spellbook of Eternity",
+      "manifestIndex": 4,
+      "sourceHash": "34858cde94e64f4ea5cb0aadbfd295abdba48198ddacc87ae31918da3f58b945",
+      "artworkHash": "fa0044bcee7b2980932976acad116efdc115cf8eac38272a52bb152d8304ea19",
+      "render": "Spellbook of Eternity.png",
+      "renderHash": "b7545fffae6c70eb98518505abc5437420149e7095fba16c676cd080ec107dcd",
+      "renderPixelHash": "473f75d24edccab9d26eac7cd880e684f545e38a1e049ba8d789d5f551d11dbb"
+    },
+    {
+      "id": "card spellbook of fate",
+      "name": "Spellbook of Fate",
+      "manifestIndex": 5,
+      "sourceHash": "05189243253305bcfa39214eb5e253819c5741007a55e59761b30f23997a8e5a",
+      "artworkHash": "a3878b49bd49d61badc103b509a9cc6418794a52e451620edbccb40c4c7df457",
+      "render": "Spellbook of Fate.png",
+      "renderHash": "5f7627a2fa1d22c20bc0ebd2c605afe006a91ab7755eaee0a5f209bab4711189",
+      "renderPixelHash": "43cab8b99ec136183ad57e16deca2fef36282dd0c75e1e4cf19bc2e1709c55ce"
+    },
+    {
+      "id": "card spellbook of judgment",
+      "name": "Spellbook of Judgment",
+      "manifestIndex": 6,
+      "sourceHash": "315e1e9f436e1c383e3d3ab7a20c0060d852eaacaf1f503ad3a38b0aa13b35b7",
+      "artworkHash": "fa039db76eae7cf86d03cbb21260c22d183a3a695979b16c3ae212cc8887dbd1",
+      "render": "Spellbook of Judgment.png",
+      "renderHash": "874d53a0d2c8a01aec41a4b0794d3a9d0b6bab4d3f9ee16143ad1ba46cd230dc",
+      "renderPixelHash": "c219df245b3a4f2a47ecdbfc2a72f56d66269b52824fb6d755ae0b2b0d8d6dd4"
+    },
+    {
+      "id": "card spellbook of knowledge",
+      "name": "Spellbook of Knowledge",
+      "manifestIndex": 7,
+      "sourceHash": "63cc76b360039edceb0ee1b0146f37153226ee3a1011589c753dcc2d1e53a63e",
+      "artworkHash": "ec1625173d51c78ac4de4ab20f7547e06bdb9b1147349509cae9ff31259f87a9",
+      "render": "Spellbook of Knowledge.png",
+      "renderHash": "274ab537be0591eb18174a4cefdbe9aaac3d5760978d1b4d7c564cd25ae6aec3",
+      "renderPixelHash": "e68d744792135defae25106be6a371c3639e336691e8ef12d5c73ab154dbc15b"
+    },
+    {
+      "id": "card spellbook of life",
+      "name": "Spellbook of Life",
+      "manifestIndex": 8,
+      "sourceHash": "a98db82f0d1c7f2014b387ccfab45e05c635146cc048e24304fbc239e768580a",
+      "artworkHash": "331c4ccf0314ff21419f4dcd2298a94763dc01aab19121b0216ae0dcbf5fd398",
+      "render": "Spellbook of Life.png",
+      "renderHash": "802843271b69dcb4e6255926aa1d6602b71ad48ce92290907beba955735a5723",
+      "renderPixelHash": "96e0e13b10823cb575510ae80ca27da2ef2be1c72636e55cd11fc305557b8599"
+    },
+    {
+      "id": "card spellbook of miracles",
+      "name": "Spellbook of Miracles",
+      "manifestIndex": 9,
+      "sourceHash": "0f0e8308b49506a45a3e8d76966abdbed42b2bb899b6e887882fdf31794edcdc",
+      "artworkHash": "558edaab8279a89587425fb3ef17fe2948a3df993f753e1233b0262b9ebaf61c",
+      "render": "Spellbook of Miracles.png",
+      "renderHash": "b3349ef96d1819821e9c78110b42e4810a116a8a0e378f462cd026249be39b20",
+      "renderPixelHash": "8e6b47564d344480cb406728fa6e041c73825f901f95a63a92e236419acc6340"
+    },
+    {
+      "id": "card spellbook of power",
+      "name": "Spellbook of Power",
+      "manifestIndex": 10,
+      "sourceHash": "1b895448865b9e3890ef4db5b240f20641d9653bc89edd1a9c4cde8d997595ce",
+      "artworkHash": "294bb616d5f1ad8db6ca79e7b78f865a083b76b86b0d93930d2798a0a23a7a84",
+      "render": "Spellbook of Power.png",
+      "renderHash": "a0ac2a3a54358ca5f4d6c404e2c1f6596ef90dd6212419591040219b03072a8c",
+      "renderPixelHash": "d60c95ef05132c80bf3f1ba6fa70313585a20c5e071239d9b66d6a51b9bc6391"
+    },
+    {
+      "id": "card spellbook of secrets",
+      "name": "Spellbook of Secrets",
+      "manifestIndex": 11,
+      "sourceHash": "4de8be0b1d6cb71542b6bc257a2c38ab64b95f57d5e9e95066b21cd0cc58d927",
+      "artworkHash": "442c37a1f219cbe187aa15094069dee9ab052f3ca8f2d14a5d6bf6c370fbcb7a",
+      "render": "Spellbook of Secrets.png",
+      "renderHash": "d911a9b67e97671888ce210b40cdadd3a85943a59cca0c649827f98a173c5c47",
+      "renderPixelHash": "b94dd61a1f6cc6ddbf3f17ccecf09bc9a9f26e2c5b91f27c857f0c8e9d96b74c"
+    },
+    {
+      "id": "card spellbook of the master",
+      "name": "Spellbook of the Master",
+      "manifestIndex": 12,
+      "sourceHash": "ac927ea259e186f372603afc26315a5338df47da783b3b9aad36963378e1efef",
+      "artworkHash": "0ac0a5048e2f92239c848e1beaf54e422031194cfac85c6ce7330246419b5b86",
+      "render": "Spellbook of the Master.png",
+      "renderHash": "78fb1d658eba6fa176b84a29c2865779a7a8f6fccaaad6139a13dc13e9866ed2",
+      "renderPixelHash": "79e04f315154be29a8b3944b6ce973580473d4b587b7c32314ce840808d574e4"
+    },
+    {
+      "id": "card spellbook of wisdom",
+      "name": "Spellbook of Wisdom",
+      "manifestIndex": 13,
+      "sourceHash": "7f2b9103deebbd48a9e2fb72b17189c133010ef50c91030f917db1fee5ca45fb",
+      "artworkHash": "858ece65f4744981c6b35e4d1c156b1b154a3ead3ca82a8a40337598995b6083",
+      "render": "Spellbook of Wisdom.png",
+      "renderHash": "fa82a015b7eff9aa7a8be4ff79984603042f3969b3917bbaadbd526f7a938332",
+      "renderPixelHash": "9b4eadea88027878a154226da7972738aa96453bd334e26baf53fac211fb5ada"
+    },
+    {
+      "id": "card spellbook star hall",
+      "name": "Spellbook Star Hall",
+      "manifestIndex": 14,
+      "sourceHash": "cc42f659e7e967ef599732394d56f94c6df1ba6d83611542061fae636de677e5",
+      "artworkHash": "b0ce34619b658c7fbedda99d13bff9072eabd5c12e89484c2a2fdf0331b6f378",
+      "render": "Spellbook Star Hall.png",
+      "renderHash": "56f8ef9bc51c9cf6bf74e782a699a7325b15aee323275906b45f1990d167ad78",
+      "renderPixelHash": "c632798008faf41a2687645215a7a05886d79f7c59a22cbf4c18802832458eae"
+    },
+    {
+      "id": "card the grand spellbook tower",
+      "name": "The Grand Spellbook Tower",
+      "manifestIndex": 15,
+      "sourceHash": "a8b2c85648d3f7daf0ec8a50f963f7fdd3ccc6d2dbbe73ec5ecd77942912980a",
+      "artworkHash": "77f70d7dca4b24c8e8145ea35cb41276be91cd84a39221b88ca3d5d27c452b23",
+      "render": "The Grand Spellbook Tower.png",
+      "renderHash": "32fa459b0498c9d2e271bbdc4ee01502e045355bfc598ae322801b296a5e22e6",
+      "renderPixelHash": "9e326b6bdfe749e2928c633fd580d43f7ee37fb78dfa90f72a067299d9bda98b"
+    }
+  ]
+}

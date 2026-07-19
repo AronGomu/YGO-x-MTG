@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "project": "06_YGO_Staples_Synchro.mse-set",
+  "exportedAt": "2026-07-19T15:30:28.880256Z",
+  "mse": {
+    "version": "2.0.2",
+    "game": "magic",
+    "stylesheet": "m15-sketch",
+    "cli": "mse.com"
+  },
+  "cards": [
+    {
+      "id": "card ancient fairy dragon",
+      "name": "Ancient Fairy Dragon",
+      "manifestIndex": 0,
+      "sourceHash": "891f3fefa45bcbc0b40b2e50ae048277a566ad9a030e5e75ddd8ed070e6b521a",
+      "artworkHash": "f381990dde3347e654b31723453cd5201351576f946e9fb23eb2b3218fbede53",
+      "render": "Ancient Fairy Dragon.png",
+      "renderHash": "d831adfa01296af819a85a5c4d13ecf431ba20c9db01e9a834b9d26c31f1ac6d",
+      "renderPixelHash": "88dee81e38f4ea8324e428f4e4d96af72e6483b8c749eb231a24a396d376347d"
+    },
+    {
+      "id": "card black rose dragon",
+      "name": "Black Rose Dragon",
+      "manifestIndex": 1,
+      "sourceHash": "bf3ba693b99c4f72dc8b86fa2250e6ee8a4c1e96cc9685b684689233449aeba5",
+      "artworkHash": "1c94e8819e6d36118969e7a537fa10ab7de0ed5496e92896593e6e4f2128bafb",
+      "render": "Black Rose Dragon.png",
+      "renderHash": "faf75bce75ce01524ae401b2f85d8a3d65a3cdcc3ae233639f027526be6cf76c",
+      "renderPixelHash": "55045b971655ff10ea7bebe841e231881bed6708d4ee05848c8ab242c90d7576"
+    },
+    {
+      "id": "card black rose moonlight dragon",
+      "name": "Black Rose Moonlight Dragon",
+      "manifestIndex": 2,
+      "sourceHash": "7595e471e53d30bc9748f353dc236a25f841863f7101b5fd43ea9701135891d5",
+      "artworkHash": "a348f19d7ac47e077a026aede428bf5d9347d32fd37e96c68814edcc563e29a2",
+      "render": "Black Rose Moonlight Dragon.png",
+      "renderHash": "83e4e54a22c308070ac4c8351a9828031249ddc30a69fc99d2d941a22b16782c",
+      "renderPixelHash": "978e4e6775e04ff17266c20457f370de4c1155cd688af3e618537e65ae9e1c7d"
+    },
+    {
+      "id": "card brionac dragon of the ice barrier",
+      "name": "Brionac, Dragon of the Ice Barrier",
+      "manifestIndex": 3,
+      "sourceHash": "bb8e093d94cdb679ab0b2fb5344ce43ff190c1bd850d5c1a593fe005e2ecc86e",
+      "artworkHash": "5e08ea8dbd6d58d8aa17371e478bb61a1b3b9617405e04d7c99fbfc8bc59eafc",
+      "render": "Brionac, Dragon of the Ice Barrier.png",
+      "renderHash": "9f6faaadc1ccff073926f9ae12083aa74a12be8d3fbd1d89345f83986aec50b9",
+      "renderPixelHash": "f1e9d2e52d8549c1ba9a21552165bf0262a984d01dce3245ca741d5c3d4ae500"
+    },
+    {
+      "id": "card chaos angel",
+      "name": "Chaos Angel",
+      "manifestIndex": 4,
+      "sourceHash": "5788b51d8f2a8224aac98dddd5a6ab7132808becf0d9f40707066a6147c4bb49",
+      "artworkHash": "4ef44d615da7816d0f4a20ebe5f0f2451b0fefa72b13c63970f7843224034086",
+      "render": "Chaos Angel.png",
+      "renderHash": "18ac719b75021acc1f9f67214db5427a4f71c7c235517d90c93dba517daa9c36",
+      "renderPixelHash": "f5d7ddcad3f06136b931c76c53c4bd4361a160a3a23b7448090039f9a6147532"
+    },
+    {
+      "id": "card coral dragon",
+      "name": "Coral Dragon",
+      "manifestIndex": 5,
+      "sourceHash": "5079e16066f001aff48889be103c49850aed10e21089d35d13c9aa614f343cbc",
+      "artworkHash": "6cf44d058942df63f0b041c34f0b28a767da6e265003f103c0a47df99cde3000",
+      "render": "Coral Dragon.png",
+      "renderHash": "0a7f9d9062af99925c4822a0d6a387cd4a22d9ed5d049a7fad51e4cb496a7cc2",
+      "renderPixelHash": "db0e6c6450599e10ce39faa1880cd52f0cd8e9b0126bd93c6e46de372b0a9ebe"
+    },
+    {
+      "id": "card formula synchron",
+      "name": "Formula Synchron",
+      "manifestIndex": 6,
+      "sourceHash": "16074fe6ffb21dd5d8297db0331972f884b84c1c4167a71383f8907773d4ee56",
+      "artworkHash": "087df47073b09f0ef0e2ba72615f5b6532865c265b4a3f1085d4ac8aa0c5284e",
+      "render": "Formula Synchron.png",
+      "renderHash": "40efa21d271164cc0f48dbc9a9eba210c2f272977f228b2c736f205051efe4f5",
+      "renderPixelHash": "8282de4dda70a9949f56b8c20bc4845a50a6bf069fc65dfd5087d5774491cf59"
+    },
+    {
+      "id": "card goyo guardian",
+      "name": "Goyo Guardian",
+      "manifestIndex": 7,
+      "sourceHash": "f7c863b35628830232fbb154afb87417261332585cf05b5546cdc4ed449e1fcd",
+      "artworkHash": "87896a57596274c42be3c42250dbd066de9893f244312af0979ec698b0c51715",
+      "render": "Goyo Guardian.png",
+      "renderHash": "2919ff6793ee2cf8d049c97faef190434b308a7d8a72b005c30858920bab0af4",
+      "renderPixelHash": "0db6b23148984b3c52d17ee5d40cd05093f857505a9cf8a50e6409ab610819e9"
+    },
+    {
+      "id": "card herald of the arc light",
+      "name": "Herald of the Arc Light",
+      "manifestIndex": 8,
+      "sourceHash": "0ee7422be9ad43238935faf19e228af54baa8897b37cfd03fa1bd4a1ec70cb01",
+      "artworkHash": "95805c4fda8d933d7d132f2355b8cc78dff1e4a464512dfbd68ad36046d16a43",
+      "render": "Herald of the Arc Light.png",
+      "renderHash": "d3e56afd970c981fb1ccc117ca1a3c3e3cae05e0614b2746f5cb4be1b64c627c",
+      "renderPixelHash": "19b2367232d5c983622be91d65724c4771027fba73e2c591a14b1afb2c7ccc67"
+    },
+    {
+      "id": "card hot red dragon archfiend abyss",
+      "name": "Hot Red Dragon Archfiend Abyss",
+      "manifestIndex": 9,
+      "sourceHash": "061401da014c66b399e967b4729c5e759bcaad35d38d790676e29fbee7d3d411",
+      "artworkHash": "665ad43ac1e765eff6a41b39d395c1b515430c6c7175bb6e7b4a487d259992e6",
+      "render": "Hot Red Dragon Archfiend Abyss.png",
+      "renderHash": "04598e9820145400cef35311a5fc3af0bf8ced39acb7af513970e8e1271eeedb",
+      "renderPixelHash": "090248755d84580dbfb543d2e34a50ee6278ac0817c86775eee5aa29d4d38687"
+    },
+    {
+      "id": "card red supernova dragon",
+      "name": "Red Supernova Dragon",
+      "manifestIndex": 10,
+      "sourceHash": "341d2c7cea5f507dde5ba6dbc6a1402bb0b3adf1d35ffd1c913cb3cdf44421db",
+      "artworkHash": "5fa0bbb0658f2fed699b0a1c8b57fc0789651c3bd0404d7052f40aff88d0ee93",
+      "render": "Red Supernova Dragon.png",
+      "renderHash": "32ba7105e7c499ab85446b54708d16081ffebd629e0a67775e4a7b80b17078e9",
+      "renderPixelHash": "46961599594492f7e64f9b3745e3f5966f931854b604c65da13e190b0d2fbbbb"
+    },
+    {
+      "id": "card scarlight red dragon archfiend",
+      "name": "Scarlight Red Dragon Archfiend",
+      "manifestIndex": 11,
+      "sourceHash": "90700c2820e84622e357ce5d462ce781c32d54be60f081825b0e0f269d1f3d27",
+      "artworkHash": "f9c96f17d3d6767cf5bc86ce4ab6de4a5d3f7bf2207b4bb5ba83b75092850340",
+      "render": "Scarlight Red Dragon Archfiend.png",
+      "renderHash": "acab84d2e0dce5561d1534ec811f7b4ddf73d6fceee6fdb7f20f8edc389a46e3",
+      "renderPixelHash": "051a287706f2603dd34ade9983882f20b9d78b9575dd4620e1aacf2d646b747f"
+    },
+    {
+      "id": "card stardust dragon",
+      "name": "Stardust Dragon",
+      "manifestIndex": 12,
+      "sourceHash": "7571ef716519fc8d4d398289dc3a8a71852a4eee5270932083b03defb15eac3d",
+      "artworkHash": "e6ce43834036f0aa1fb4cf680b1f2889b6e211ef299abd88f2aabc415b806334",
+      "render": "Stardust Dragon.png",
+      "renderHash": "d5ceda23c3766dd7990ddce71e0a9a4828edef00df28dc7ddad9e7f883080076",
+      "renderPixelHash": "30b841546094e3c96fe02b346d99b552a3bc875a362dc1017b4325234b7b2464"
+    },
+    {
+      "id": "card t.g. hyper librarian",
+      "name": "T.G. Hyper Librarian",
+      "manifestIndex": 13,
+      "sourceHash": "7cb8dcbcc19f641836246cd3519b2a8206960f85ae781f03c8d7182c6fcfd484",
+      "artworkHash": "02c98235f51fd8199493648192df448425d5ffe3af7413284cd821ab76f9ef8b",
+      "render": "T.G. Hyper Librarian.png",
+      "renderHash": "8c2b0cda0ae2a9323d2562ac407edb8ed0d3d10acd69aa5bce29fc8a47e4dd5e",
+      "renderPixelHash": "19e468bd5a3f49a464fcdb33bf376f650cbc718024caf06cacb915ea5ebb34b7"
+    },
+    {
+      "id": "card trishula dragon of the ice barrier",
+      "name": "Trishula, Dragon of the Ice Barrier",
+      "manifestIndex": 14,
+      "sourceHash": "f1f3f8994cb1e3f0e37b13fc3556e5fcb801249b89894105133e7b06c5d4535e",
+      "artworkHash": "d592ae2079269d33460462ea24c25291f54f7aaaa58e6abb2aad25b2063a99fa",
+      "render": "Trishula, Dragon of the Ice Barrier.png",
+      "renderHash": "58c0b1d936f4c31b2fd07f53c9edda48de44febefb12f68e8e4d80dc685d7658",
+      "renderPixelHash": "b6359c53dbd77d6a281ff14d3c68d272987a96daffe8ae562c1cb1e97afa6152"
+    }
+  ]
+}

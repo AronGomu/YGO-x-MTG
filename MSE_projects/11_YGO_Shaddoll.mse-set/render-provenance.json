@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "project": "11_YGO_Shaddoll.mse-set",
+  "exportedAt": "2026-07-19T15:30:51.783890Z",
+  "mse": {
+    "version": "2.0.2",
+    "game": "magic",
+    "stylesheet": "sevenhalf",
+    "cli": "mse.com"
+  },
+  "cards": [
+    {
+      "id": "card curse of the shadow prison",
+      "name": "Curse of the Shadow Prison",
+      "manifestIndex": 0,
+      "sourceHash": "2cb805fb8f6bbd320b77861977099b1c6f6bddb4cc4fdb68f6735dc191d4ad41",
+      "artworkHash": "2c24b439a0ec90d7bb6706d786ad69775563d3cbdd92c9016abfbf10a9f01b58",
+      "render": "Curse of the Shadow Prison.png",
+      "renderHash": "87bc5e72d0a0a6bcc18b4394a7d7bfeef7e14c1429adccdaa335f573d04b77a4",
+      "renderPixelHash": "69d17ec2e8f948e7b2d4d65a99a4a7a8a1d995def197cf245cce5c26ff167f21"
+    },
+    {
+      "id": "card el shaddoll - anoyatyllis",
+      "name": "El Shaddoll - Anoyatyllis",
+      "manifestIndex": 1,
+      "sourceHash": "147bd2a3fd1f31e2fabc73bd7db2a2a7a6638b748e3b52b6cb1a936112b317e5",
+      "artworkHash": "3414f70b4599b99c448d0476ce1cd4aa7a576a38253bcfbf932d219c0f12d54b",
+      "render": "El Shaddoll - Anoyatyllis.png",
+      "renderHash": "a9e1579b71143b1fd9f343cbef5b12230cddb620e9a1269a2bfd6a47e26990ba",
+      "renderPixelHash": "139932d50724f8fcff19e729e013f92d44de05c199faab45b1a25de150821074"
+    },
+    {
+      "id": "card el shaddoll - apkallone",
+      "name": "El Shaddoll - Apkallone",
+      "manifestIndex": 2,
+      "sourceHash": "c15468945515b0041283b449fdbb50a65a53f197ccffc8287843ef313f83a31e",
+      "artworkHash": "ab3f611165e8f8ce3288759748ebead57e17033a56603e4fbfc36183eca3f7e4",
+      "render": "El Shaddoll - Apkallone.png",
+      "renderHash": "ec089580e89c0de93bfef52a87ea4a4dbe13c65e12dececd16f8f028fa67a30b",
+      "renderPixelHash": "fdc09146286b1b44949ef26d99ca87fd320ca890f74bb938f8b2a410a645fa96"
+    },
+    {
+      "id": "card el shaddoll - construct",
+      "name": "El Shaddoll - Construct",
+      "manifestIndex": 3,
+      "sourceHash": "c8ee9b41dc68fd83f29576c32adb1bf54306da2a90a08736f470c5fd67001f1b",
+      "artworkHash": "1f2b200e128981665f383daba1f3a508e63d336644915444b1fa9a0d1165ffff",
+      "render": "El Shaddoll - Construct.png",
+      "renderHash": "cb0b4b760f658fd06ef54e20db125c935a197aa97e41300910ddb5ed2665a32e",
+      "renderPixelHash": "b20a51d7542a35f79a1f25445bbdef24d676f0ff4734bac35cdb10a98a73165f"
+    },
+    {
+      "id": "card el shaddoll - fusion",
+      "name": "El Shaddoll - Fusion",
+      "manifestIndex": 4,
+      "sourceHash": "09748581fa550f14f8e419f7b6181606dcf9ece000acd0a0e540b3d2584c615c",
+      "artworkHash": "16d5731cf93e54d159f3ee4f5eb2555293511b90a25eb24d82c2c6414588b9be",
+      "render": "El Shaddoll - Fusion.png",
+      "renderHash": "acb5f5555f9acbafa4208411b349881333962fa1078f0c3e34b55695ed76b611",
+      "renderPixelHash": "3dfc79414b6df4d86452b15104cfd15e980f2a9f3745c4681436fab8f21479ac"
+    },
+    {
+      "id": "card el shaddoll - grysta",
+      "name": "El Shaddoll - Grysta",
+      "manifestIndex": 5,
+      "sourceHash": "f9690429d76dce5901cb5f6a33ec103ae1e0626f8fb1c41cdd031b96bcf9db72",
+      "artworkHash": "6efc6629406f899d061f9f970a524881e9f46bb6d6c1670324401510cb11c35c",
+      "render": "El Shaddoll - Grysta.png",
+      "renderHash": "4d9f0235f99f31410d4bb11b5249187b5a60b66f7ae797710fe58ea0a6b84b32",
+      "renderPixelHash": "4b02a7c664a7aa6299c9f3c59b403eb7cfcb947157f9dc12481cf31ea02f1461"
+    },
+    {
+      "id": "card el shaddoll - shekhinaga",
+      "name": "El Shaddoll - Shekhinaga",
+      "manifestIndex": 6,
+      "sourceHash": "d8267b6369b4dd182984360bf052ea6cc2aa002791bbedd439f8a9d7cf7d17d2",
+      "artworkHash": "1f9825433aebde6450128f8bdc745e3374b2b85e06a20b9a5e5e98a399b6348c",
+      "render": "El Shaddoll - Shekhinaga.png",
+      "renderHash": "d757ff3fedd8654adbb50fc804ebebcbbbe945938ac4ebe04c8dcf5d9c70c2d9",
+      "renderPixelHash": "aae1d4fc259fd8bc99111b28fff4af7f5d6231bb363db4a4dae31dffae712d20"
+    },
+    {
+      "id": "card el shaddoll - wendigo",
+      "name": "El Shaddoll - Wendigo",
+      "manifestIndex": 7,
+      "sourceHash": "74d3c5d6f0a4f83756c253da4ff25536afb34393e69beec35c3b65ead6a1d6d4",
+      "artworkHash": "73d40d0c9a229b209b980cee857c65f70eb648259ac1af419391a146c3c1e6eb",
+      "render": "El Shaddoll - Wendigo.png",
+      "renderHash": "578550a0a9daf0d5f64341a6530c0bd5522ce86c8c40ef695a9d746d78b90bb8",
+      "renderPixelHash": "a13f0a96b04d202e8dee330d39ad7a24008353e37258e719d9780b90d5a8c3de"
+    },
+    {
+      "id": "card el shaddoll - winda",
+      "name": "El Shaddoll - Winda",
+      "manifestIndex": 8,
+      "sourceHash": "272e2b7e76888e226c0b8d5f98c0622ccf621327fe5eca7422c53e2839e822a3",
+      "artworkHash": "7ebff55523bd482f13c32d0fdfecb7b94bfacc0e521cec998da63015ad896227",
+      "render": "El Shaddoll - Winda.png",
+      "renderHash": "7303f177a7837e96fe64324d9729fb28dddc0f002ebd0f8cfcac2ea57b81b5b6",
+      "renderPixelHash": "3c06d03dabe4d61a0c879191752192c6346470024b5eb6c76eb9b0b9602f9176"
+    },
+    {
+      "id": "card hel shaddoll - hollow",
+      "name": "Hel Shaddoll - Hollow",
+      "manifestIndex": 9,
+      "sourceHash": "36b5d1525c0f37a3e109d44f24551db37e31ea79b7779c19a51b1b76844aa9fc",
+      "artworkHash": "039f154bfc670cc9c166c36f337f137040b6a91907e1d369a6c5d7ac144bfd18",
+      "render": "Hel Shaddoll - Hollow.png",
+      "renderHash": "da541d8d4d7a749fde3ca80721c50e12e3533cb0f77f3fca25aec322f30033c6",
+      "renderPixelHash": "e6c8d85ea19e9288c5a8ce88dc48945fbfa5638b8a1a94dba42987a3edefd486"
+    },
+    {
+      "id": "card nael shaddoll - ariel",
+      "name": "Nael Shaddoll - Ariel",
+      "manifestIndex": 10,
+      "sourceHash": "1c8a618703e6320437676ab92b3b158968303b00ca575edb72f0f8ca6d517f90",
+      "artworkHash": "5ca6a8812723268c6d3e47519f340a0838cd6d652537635f2abeeba25af07fce",
+      "render": "Nael Shaddoll - Ariel.png",
+      "renderHash": "945111df30d2a0230d963e82aaa3871809bb31aa9b2c5cec35ac192aea7a9758",
+      "renderPixelHash": "36bb48cb2fdc4353376e9f69de1c270dd1cdef9ffd50ca9b4c8c57df45eec343"
+    },
+    {
+      "id": "card puru shaddoll - aeon",
+      "name": "Puru Shaddoll - Aeon",
+      "manifestIndex": 11,
+      "sourceHash": "c5734ad7e53531f852a2100213c761882cbef20364a26eda498667f09c584048",
+      "artworkHash": "e099f252dc8e0c8d0d6840e0cec9686a282d58ab258f024cbb999a028b02ae1c",
+      "render": "Puru Shaddoll - Aeon.png",
+      "renderHash": "0ff425a1c097f4c138d065a49bfc2b708297986eb1b49cc1ae383eb69e1dd2bd",
+      "renderPixelHash": "9e843f351953493b91b45a7e9d7ff8b75ab5b6f93282db09520076a7832450f4"
+    },
+    {
+      "id": "card qad shaddoll - keios",
+      "name": "Qad Shaddoll - Keios",
+      "manifestIndex": 12,
+      "sourceHash": "c63896e30709bf9fd63814bb2ef3fa4906eead741aad31441c14bfc1dbed9fbb",
+      "artworkHash": "3abae15552f6b5412fe23d9ec6f9ff686fb94a077028472aec8f4cb0858130e6",
+      "render": "Qad Shaddoll - Keios.png",
+      "renderHash": "d0c3b4a6187ea21eaebc6ca069819e68dc4393b9f5287444a3d0f6747052f96a",
+      "renderPixelHash": "6a68e219174ad91c13d45c4e501700d2eaa46cb6b547313a0421ec087adeb162"
+    },
+    {
+      "id": "card ree shaddoll - wendi",
+      "name": "Ree Shaddoll - Wendi",
+      "manifestIndex": 13,
+      "sourceHash": "b25799f3a7c395935f325c6dce7f0cedf12b78a7e6257fa7efbb67593177ff83",
+      "artworkHash": "49ad023a8739e533d4d9614135118714f11083e4268fb45ba75d7347e55417ea",
+      "render": "Ree Shaddoll - Wendi.png",
+      "renderHash": "f01c5cd0d1f59a535813760534a26c570c825e2cdf842262f101d7566ea0c7da",
+      "renderPixelHash": "8595f3e6872900e86631cbdb45c7d22f50e02c8f355cba3ec552b1baa1bfafd4"
+    },
+    {
+      "id": "card resh shaddoll - incarnation",
+      "name": "Resh Shaddoll - Incarnation",
+      "manifestIndex": 14,
+      "sourceHash": "54f49559baf528e15715070b78778f8015e9e6746c71bb897b0be2c4392540c5",
+      "artworkHash": "b908b32a6fb3cdfa0b3fbd1f33b2ad4ee23964d78442325f5a911e9995ee7f00",
+      "render": "Resh Shaddoll - Incarnation.png",
+      "renderHash": "42c366bb3b3560df778c81285e3cd99ade877164de1c63b6e66ca09ec05faa62",
+      "renderPixelHash": "e9be4dc27e47732ed85141a757dfc9d4fdb5a3bddfb7a6f19d458260a69cfdaa"
+    },
+    {
+      "id": "card shaddoll - beast",
+      "name": "Shaddoll - Beast",
+      "manifestIndex": 15,
+      "sourceHash": "00f89581c39c627128613284346cc45c5ff8a83342d29e172419fd3ce6b81bfc",
+      "artworkHash": "311c5cebf0710a8290b46fe8ca61779f752273f45e76c7c271db9e0150771afb",
+      "render": "Shaddoll - Beast.png",
+      "renderHash": "9732c1d3dab7e6c84278a496eec1c86d790c2670cd659538eeff51da938bd6bd",
+      "renderPixelHash": "1344eda8117822172363ca98c5c7bd1bfb0a5694c4dda5d2c204b4e8512cc65c"
+    },
+    {
+      "id": "card shaddoll - core",
+      "name": "Shaddoll - Core",
+      "manifestIndex": 16,
+      "sourceHash": "a524d1aea7efd13e1aeb3a551d3d82f456f2c1c5bb0ad1fd405f8713fe66abcb",
+      "artworkHash": "17492fec8d1e2a625264e0a68a35bab9d82cfffcd4f4257f5eda1f7296c5d1fa",
+      "render": "Shaddoll - Core.png",
+      "renderHash": "13217def31f3b03486ef4622e976bee72996a0a0d5f9829cd50857528c60c133",
+      "renderPixelHash": "0e71e10fd850c9198b0191045661c6aac4791a3d6a0f79d296819431fffb94f1"
+    },
+    {
+      "id": "card shaddoll - dragon",
+      "name": "Shaddoll - Dragon",
+      "manifestIndex": 17,
+      "sourceHash": "704d0e5dddd7b65cafdf7261aefbc846a358480ad3ef3154174938ffcc423f2e",
+      "artworkHash": "1209d43a92e0e8fd62b41a8eb03bd5598d0e4a395aa73cb3e488b0a44c88cbc6",
+      "render": "Shaddoll - Dragon.png",
+      "renderHash": "ea18e825bff3df1a9d8c89fe3aaf7526093ca74b692c50ac66a40932e271b8a0",
+      "renderPixelHash": "19280c66035c76d93b8e2df1585ef35aa86c997d1e5d142d2cd4fd58588ca951"
+    },
+    {
+      "id": "card shaddoll - falco",
+      "name": "Shaddoll - Falco",
+      "manifestIndex": 18,
+      "sourceHash": "15d39ceb3faf0b6ec00928efc4e1c94bf80b1e25f3b3290a923cd2cfa2e31933",
+      "artworkHash": "e0a03c2a57a938a5dd3507111ede7b20aa3001454db8e32135bf726316987dce",
+      "render": "Shaddoll - Falco.png",
+      "renderHash": "e2ea437145c9cd7bc41dabe13636e116c5418e3bb61d9703a68e114a0f0b1135",
+      "renderPixelHash": "11f6b6a142424842e02297ea55e531844f8a6806a39bb4c12a9ad6d6acd21a80"
+    },
+    {
+      "id": "card shaddoll - fusion",
+      "name": "Shaddoll - Fusion",
+      "manifestIndex": 19,
+      "sourceHash": "7b4fb076a75311162037a33a25dc497c2d23e9047827d6441b8632dc1cf16d7c",
+      "artworkHash": "33d3c9f17015c2732863a124f0cc7e77d45dbce8d99b490fadcea69426358cb8",
+      "render": "Shaddoll - Fusion.png",
+      "renderHash": "2fb1248bb990d7508f93160c27d595e070e83f0bf1d2bd740e37f6d5bbab0b62",
+      "renderPixelHash": "a94aa126a495d0b148537f93b0e0be015515d67e9c7909a5ce9a0cfe10f7aad0"
+    },
+    {
+      "id": "card shaddoll - hedgehog",
+      "name": "Shaddoll - Hedgehog",
+      "manifestIndex": 20,
+      "sourceHash": "e412859f2a23f7635767b93383d5fbfed60c233d9804e379944a63e1dc16c32a",
+      "artworkHash": "7a8b7936cd9fc08239b352bc8e32f032ff1413fa5db8d97c441a087e4cfd2b46",
+      "render": "Shaddoll - Hedgehog.png",
+      "renderHash": "cd59cbb97f30b40c4ef32b090fa3dda031242d3aca65855b25bedd51bb735930",
+      "renderPixelHash": "bc7844b02b277ea889318a7e05de5efad92029bd3a55a172a4d2c8e23f5dca09"
+    },
+    {
+      "id": "card shaddoll - hound",
+      "name": "Shaddoll - Hound",
+      "manifestIndex": 21,
+      "sourceHash": "86e0e042585924ca4ef2da3708a4d0d2413aefb54e52674d6c4199662f774af2",
+      "artworkHash": "5279c0bb5bc410d4c086d9026d059b81374c3c881b204ae7c188030a9a4e41e5",
+      "render": "Shaddoll - Hound.png",
+      "renderHash": "65337ca5e2454e88d848235f918a07ed5ddbf83cf2d61b60c9108ca111cde8a6",
+      "renderPixelHash": "20f1f251007ae259e0e094e0fa956ab94ae7cb46518814673766569d5bd80d42"
+    },
+    {
+      "id": "card shaddoll - schism",
+      "name": "Shaddoll - Schism",
+      "manifestIndex": 22,
+      "sourceHash": "1b0468530f9e739dfcb1e5132c2dd691e864b6ad5c4b9be0549b04c256493aa5",
+      "artworkHash": "ad00b9713f31f3e87bcc9ac0e57d6e485d6fde3ae330c3491c9ef2719437b695",
+      "render": "Shaddoll - Schism.png",
+      "renderHash": "3d47bc26ca88506e1150f2e16256d0b47bcb23677701bafe8ea219be5c490d44",
+      "renderPixelHash": "1d27672105763df58e800aaac4afabb61d4acad51055951fb9c4d83f2bdc06c6"
+    },
+    {
+      "id": "card shaddoll - squamata",
+      "name": "Shaddoll - Squamata",
+      "manifestIndex": 23,
+      "sourceHash": "815b28cd402a6fa5bc93e77610e72fc7a8ac587749e3fc55741041a7b9d08efb",
+      "artworkHash": "6280c2ad47c391fef2667ef075a39c469f511c6d0777b4bd845539e77270abfc",
+      "render": "Shaddoll - Squamata.png",
+      "renderHash": "40e92cdb31325ab202d6f449d719549ad8b184a4e51818b79179b1f0b9127b1e",
+      "renderPixelHash": "265408c397b6d04aeb1690ce286966b9beed5d7bf0192f17ff73ba52fcc252d6"
+    },
+    {
+      "id": "card sinister shadow games",
+      "name": "Sinister Shadow Games",
+      "manifestIndex": 24,
+      "sourceHash": "ed9c91d1a73d90af0bdf66a528b7311dc019e411ed106bae9ebe1c06fd73bc2b",
+      "artworkHash": "8b7296d33fd2fd683581627be1de1eb24f6b694ae664679765dd9abe2bde3e62",
+      "render": "Sinister Shadow Games.png",
+      "renderHash": "83ee3f772af75f92dac4be4530bcf66b29817b0d2301b2a3fdad874810999bf3",
+      "renderPixelHash": "2abd973d57f11c65dc77ad8ae02a8ecfe4b5efe4aa4a6254ef7c816b03471e66"
+    }
+  ]
+}
