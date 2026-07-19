@@ -1,12 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "project": "05_YGO_Staples_Fusion.mse-set",
-  "exportedAt": "2026-07-19T15:30:25.252141Z",
+  "exportedAt": "2026-07-19T21:41:15.517064Z",
   "mse": {
     "version": "2.0.2",
     "game": "magic",
     "stylesheet": "genevensis-00-main",
     "cli": "mse.com"
+  },
+  "renderTransform": {
+    "id": "transparent-white-corners",
+    "version": 1
   },
   "cards": [
     {
@@ -16,8 +20,8 @@
       "sourceHash": "4bee5eab9c3527f6b8633ce48d5b06a740380b355d823fdd5b146cb281fc1260",
       "artworkHash": "97d2912eb6992e44e496b1340d17ea5ee01e34311ee914fa40547366260d0129",
       "render": "Coordius the Triphasic Dealmon.png",
-      "renderHash": "f49a5eff16c8ac772d6d155273aeb2c9546f065110344f063941623c66a39b66",
-      "renderPixelHash": "086c137e76c6fa4fa0fba61fd238923f5b59226ca1afa9c05b60eaa22e0991aa"
+      "renderHash": "5fab85d8c533b8b36bd56c235b4bab2a033fcf6e85597b27c6239507241ce50e",
+      "renderPixelHash": "a08746bccc74b4193fe75a2152f2bffec81165a952198362affad7fdba4b1d9e"
     },
     {
       "id": "card elder entity ntss",
@@ -26,8 +30,8 @@
       "sourceHash": "172b53b18d03d5a79dc093b7da698d0c1f7fa1883c2a48a913c3d2e94ab338f4",
       "artworkHash": "cfcbca842a33c28134a7ef405381d32a7cf693831dad682c2b9bba7c27d48479",
       "render": "Elder Entity N'tss.png",
-      "renderHash": "2f0b6ad2a1eadb3c1e6f38a48a1f71fffbe11ae9184b79a88b9a017da624d023",
-      "renderPixelHash": "dd9b7cae62a56b7e199a2b06c79535fa9a7d412abb871a4422678aa2f0bf79a1"
+      "renderHash": "babcc92c99ed3ef3a8b6857e4d3be3fae99b46ecf5e11ee3ce0c63cac449d452",
+      "renderPixelHash": "d04d42369e189d8a468bb3f0e2a4c2999a358aa34b5770ee2a6d0a6a1b498d57"
     },
     {
       "id": "card garura wings of resonant life",
@@ -36,8 +40,8 @@
       "sourceHash": "ea147cce1d15029e6d339d82d558d1becd844f6bb3a7fc4bca8e93756f8ff014",
       "artworkHash": "a904c13b06ec24764320b39261938fb74ab990a6dbafd96b4321e7442c59c79a",
       "render": "Garura, Wings of Resonant Life.png",
-      "renderHash": "811df2b6a08a35e70ee0f2a0ae77604a55f63c59272baa6c773f83d528446cd4",
-      "renderPixelHash": "ce6f1197ccb299f453c7ad5f3d39023c59f5b245f7fb72c6405c3124897a0db9"
+      "renderHash": "ea58756d2b9bd9da047619aeb83a39b01e0bffd6bcb60d5bd0f5ac5c6e640c9b",
+      "renderPixelHash": "62a7e6d51778f6334d60a3464fba5345f27dff63f3adbec15f05f92f68eb6f65"
     },
     {
       "id": "card guardian chimera",
@@ -46,8 +50,8 @@
       "sourceHash": "8a66ccb4cbb5acf1b35f696f8c30240e41c6a1c47ac098c17688601455aba978",
       "artworkHash": "6fab34a9864fce9fa6889bfc92130877b044143aec6e3fcad34ba10f647f7871",
       "render": "Guardian Chimera.png",
-      "renderHash": "88c34c1d080ab889e914bdcb08591db073f5b34de63b11acb72e4e1603fb2458",
-      "renderPixelHash": "c919fb8daa872a0f3dd07f6bfe4ae5bed3c2cddae0a5ba30ce2f3e64dd205fd5"
+      "renderHash": "bb35d00dc886aca0e04a257c563afe846d5511c8c9480502a16df97a89caada8",
+      "renderPixelHash": "177ce507fa438e158f9a04e40947c9b15e2234075680c6c60a15ff49855b384a"
     },
     {
       "id": "card mudragon of the swamp",
@@ -56,8 +60,8 @@
       "sourceHash": "ab97bb1383e21ef20360d3b9ae0a8c1ff0a09266048d7dd2397cf9e81accdc52",
       "artworkHash": "305dda396645d713db38b43a0d0e366c1c37e75dabf4f8e89fbc449d427bd02d",
       "render": "Mudragon of the Swamp.png",
-      "renderHash": "864db4e5a04436d2f464a3b4c6b4eb9c90b7f09f095aaecbd0d60281df2f9c3e",
-      "renderPixelHash": "cb8e5658b2fb11207d566f701c3f24f12d636d61e02fccaee30df213afd6e593"
+      "renderHash": "6dcfa07fbb1a3c25847b216bbea81a66fd1f46851166352d41b2683f1be15e35",
+      "renderPixelHash": "a46d76c04f65deaa0ffb517488f2500c6dda01ffd5957b09387036a250d37065"
     },
     {
       "id": "card mysterion the dragon crown",
@@ -66,8 +70,8 @@
       "sourceHash": "65426c288c9880bddbaf0ab3435c23d53f4ad3a05c8ca40c638f09051182dce1",
       "artworkHash": "f11d6e74cfa7a60b11533b0029cde8f4dcabfdc3ad4cae98ce5b8d21a3416cee",
       "render": "Mysterion the Dragon Crown.png",
-      "renderHash": "363bff307f7eb0e321bee6d8052ce18e47c1369aad90018210af80e0bb133469",
-      "renderPixelHash": "36cf48611a2c549ff4632d0b7e4cef3b29bcb3f50f48e16abaef0a29c4390e71"
+      "renderHash": "96741d4b542717e0c81c49c53f1f267152a12f9f8b406609745866ab36399fa4",
+      "renderPixelHash": "cb856fffcb5d7b6a82a4301a62b9a38ce8018d8d8a25c3034d5adf4ec81759ed"
     },
     {
       "id": "card panzer dragon",
@@ -76,8 +80,8 @@
       "sourceHash": "9e5e665ff50be5a7b2fc728973b6da239331b6c76d89147e2598c372990bd6af",
       "artworkHash": "61e8badc8357920cd799f8a4e8da2b5e2f458f700ffa7df6bb8dcbb03ed40f96",
       "render": "Panzer Dragon.png",
-      "renderHash": "f392137e35e17f794c22e897ed2247e3c5d3bc9f08e1123db9e88b91a0fe74ce",
-      "renderPixelHash": "7b58fc67f91f506159e43a6b74f2391f7af5dad0ac93e3d690dec818009e93bc"
+      "renderHash": "2f3daff368e7d818da61f6debaad669003a4d4c831d029b5bae38ffdf341fa8c",
+      "renderPixelHash": "beb7feb9587847d2e3aff0cad3fe633537b9b9392a6e2bb31fb509a9ec18cb6b"
     },
     {
       "id": "card predaplant dragostapelia",
@@ -86,8 +90,8 @@
       "sourceHash": "575c90c3f7c7858ac7b225c80081f00ee94d0c56160f639dd23238587962c404",
       "artworkHash": "358bf2f986391b10bf940b3c8057816d65e48184d6ec25351618d45fbe4a00dc",
       "render": "Predaplant Dragostapelia.png",
-      "renderHash": "92c85bc819b45ff21dfd966fc483fa8a80e4c532030018e86b2a30f51f924833",
-      "renderPixelHash": "351ad87ae8dd2ccfef30f82759a69da74e9f468d6148ae2b7c60edbd78d1a316"
+      "renderHash": "3d596c0ea59ed35668b792aefb8f681c95d1a5d43fd2158c4a21aafb0d8e8f79",
+      "renderPixelHash": "43acfc60ac66906accb0c26d32750878b3ad8bfa3ddf8ebae373afdedcc0f7ed"
     },
     {
       "id": "card predaplant triphyoverutum",
@@ -96,8 +100,8 @@
       "sourceHash": "5b720a1788b96f846182bcbf2fa2aba6d0db18379bfeb0cbd532b09f4f01e518",
       "artworkHash": "6993bb9fa4e537b17be0f0ac5e3a418a6e4dfd8893b256f01a169f4d18c5906e",
       "render": "Predaplant Triphyoverutum.png",
-      "renderHash": "59684de3dbeec2ef13e322a89e02976309846ef66a595a09fc5de8ee68170dd9",
-      "renderPixelHash": "fe635af3e54220a246d16b57801c5bd6ba2a3ad44273da047fdc8ad064814947"
+      "renderHash": "014ae204141a9a500c9c10e6c25635bcc95f37a31dd7864f6234660a24704343",
+      "renderPixelHash": "77ab484aabd32bd2700d3129e3d7167a20b86d7e3491a2076adade8b430e22e4"
     },
     {
       "id": "card sea monster of theseus",
@@ -106,8 +110,8 @@
       "sourceHash": "3dab347e0ab0effbf6a9fe6903558629330da09fd42d6dd1160a9b1f0d8a1586",
       "artworkHash": "e4a26c7250d684c67462218e4b0b0853b41d0ad78e9d35c27da851acfdb4f729",
       "render": "Sea Monster of Theseus.png",
-      "renderHash": "eabfff99972929ed8ea1addd4d18c21fba431aac9d63ad42c0dee18fa6affa66",
-      "renderPixelHash": "05e5dad40b6817c3e61df4f7e88bb5a50b2402eb24321c81b34c0d4cfc8277fd"
+      "renderHash": "d43cbff1334d9e71c9bd69295b220b570c43256ab422e997361ddbda4c6a3e85",
+      "renderPixelHash": "d4aec7ab1044fb77599a020f789ba908733b79d96789eebb5c970d0fe435c137"
     },
     {
       "id": "card starving venom fusion dragon",
@@ -116,8 +120,8 @@
       "sourceHash": "d01d96f1d994b7d2332bc11f90d0fbf7d8dc164038351c83883f158ed1b5e451",
       "artworkHash": "bc54a995073b4992b90a7a6e5d254bbb103a26c94a3f7980f89e56ff4ce02474",
       "render": "Starving Venom Fusion Dragon.png",
-      "renderHash": "ff4952f6d38732d3fa419572f86710cc54bd2fd58c60e539ff45bc3ba606a781",
-      "renderPixelHash": "8e9e1d497f6e675371b305f9dd9744aa8944946c837f5ab7a872d647bce6064f"
+      "renderHash": "fc36da2cdc1af8c159626efb64178deab9a91f252a8a2115a0a16f5417e11ae5",
+      "renderPixelHash": "a3aa85a561bfceeda17cf323d2926ee7386e081b9fab4aa1a4ae37584cdac5b8"
     },
     {
       "id": "card world chalice guardragon almarduke",
@@ -126,8 +130,8 @@
       "sourceHash": "7d9c1ae98b50d087756dfc092b5012806bb3bb39a85dbd2b7fe6de2f7109441f",
       "artworkHash": "9665ea74e2c1396b825ea207c7850d1396bc88c8f8453582f1400d84bd4731ba",
       "render": "World Chalice Guardragon Almarduke.png",
-      "renderHash": "e1d8323547f0514558fb54c122686b8b9bdd5bac8285e74ce90a292c047f3f8c",
-      "renderPixelHash": "d000917abc412c808d07b24f8d0f936c3491d10593c3bff8f124436b4409349d"
+      "renderHash": "853b0997730187f944ad62847c0373c2ee2b80c7008893ce41d8d295ad356028",
+      "renderPixelHash": "51fdfcbe636bd03ac4d941f440d0ab8a2b409ca698cfb2940f141031d819098d"
     }
   ]
 }

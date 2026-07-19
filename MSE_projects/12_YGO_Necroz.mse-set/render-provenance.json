@@ -1,12 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "project": "12_YGO_Necroz.mse-set",
-  "exportedAt": "2026-07-19T15:30:54.656339Z",
+  "exportedAt": "2026-07-19T21:42:27.164230Z",
   "mse": {
     "version": "2.0.2",
     "game": "magic",
     "stylesheet": "sevenhalf",
     "cli": "mse.com"
+  },
+  "renderTransform": {
+    "id": "transparent-white-corners",
+    "version": 1
   },
   "cards": [
     {
@@ -16,8 +20,8 @@
       "sourceHash": "41a6c507b6dd581e26ff13593be3ee23d36ded29c18e130eeb2a4c123bef7b3d",
       "artworkHash": "c565aa125e765c1c980a6afdfff8e3d8e54ade5754c117ed45346ac58c53c87b",
       "render": "Herald of the Arc Light.png",
-      "renderHash": "aad26e6e4c90ef7f4ab53c77f2814bdd142d0a32cc406af76c2a101a10021ffe",
-      "renderPixelHash": "3d55c518e808ebceec8f6f3c8cf2cdecf6f3b1c27974810c40ef392e4f2e7a29"
+      "renderHash": "8cb5e5d9adb6b4f7cbe3fd060ccac3266b11dc4725bc6b5e0f59437086099b4c",
+      "renderPixelHash": "74e3f413f8805552f1b64d7b25fa7672f4ad124403c8d2164e9eaa62cd16473e"
     },
     {
       "id": "card manju of the ten thousand hands",
@@ -26,8 +30,8 @@
       "sourceHash": "81f3d3c6e38e89ffa9fb25551e5e05386920bfabebd6d50c2576ba46d192a0a5",
       "artworkHash": "7f64fbccbf6539d8c564d10edd456f4f76ba90fd1171f12e912ff141ecc1ee29",
       "render": "Manju of the Ten Thousand Hands.png",
-      "renderHash": "c6b83486621b37ce6f05cd5b4981004d64aa5e6a722a1065b80c954216556f41",
-      "renderPixelHash": "7f664107f53f4f3e4a1eec3e97e4e3ade0d1500c7bdd98a144f420df2563d69d"
+      "renderHash": "ccb20c90e0ce0667c34c9d4bce1e54627b67cf90cf5a0fd1a47bd6745a18e954",
+      "renderPixelHash": "d6e12e6868a360463d602c32526e4cc3aaccc7ea344439a6d4ce85dcfbc05f3d"
     },
     {
       "id": "card nekroz - brionac",
@@ -36,8 +40,8 @@
       "sourceHash": "7d06a7dd59ad02ad71cf71ccf96c42a8b298dc4a1ba414b5fdf171722ac30295",
       "artworkHash": "d17b9d3c9297a0ce3496473056f9fb0417838aaae7d7d1e672ed28d3e12df7e7",
       "render": "Nekroz - Brionac.png",
-      "renderHash": "6be7da7047fb41d91550f51aad5a11869bff5c56b51a161a44298c4453f5eb4c",
-      "renderPixelHash": "3be7327e7cf1be84740bd253b0d41eccd16849ffa5d3e665be31c62f99368355"
+      "renderHash": "aec81cb390d824647bc9c8458ba321aff5736262a996de74a1ff61f55888ded3",
+      "renderPixelHash": "dd453b95c5c29bdcbeacf1ca7f998e030a0dd5f4e1124b7235f2fcf5fd68cedb"
     },
     {
       "id": "card nekroz - catastor",
@@ -46,8 +50,8 @@
       "sourceHash": "5f7f675c2bd049010ceb5afabf8db6ed0d93ccde4139cd95411389dd60aba8af",
       "artworkHash": "66dc27bcf82eeb062b830df2db79860a56330e4e911e0fb4c19cf38d62516335",
       "render": "Nekroz - Catastor.png",
-      "renderHash": "38c718c7b57380650db9f2534f1fb923cf3ff2c1dd74e39f3a9cc9b7a1bb6a87",
-      "renderPixelHash": "87464de17ba39a2fe59fcee089cecf972105eb4d9c04a5d37813f016c482c65a"
+      "renderHash": "820b9cad2954aa889a98eb3c24c1fe7705a5e5cbf9b364f36d089b1a870f685b",
+      "renderPixelHash": "698669e4e356a4e2af6b31e510e6953558ae38a8fd19a2938530c6bf19ffc6af"
     },
     {
       "id": "card nekroz - clausolas",
@@ -56,8 +60,8 @@
       "sourceHash": "6fdefc51855276c14166656694be9e1e175dad648bf1c285eeadeb18dc8e8637",
       "artworkHash": "17d2d214aba44ed4e1037e70828042ad88bcb609ce65642532b294e0a62b8c5f",
       "render": "Nekroz - Clausolas.png",
-      "renderHash": "56086251d2908d735f1a845c8807c9e2cc65351d252121d4391f602fd7a409e4",
-      "renderPixelHash": "4d45f6b8fd6d6245d3e7961fd5764d879276aad6a66de45aa5adddf2d84f10de"
+      "renderHash": "a6e01806f332453e329267471995636ae12aec92ba29b96f7b88b210023ee38f",
+      "renderPixelHash": "a3cba4fcaff1df1e0c84f90582c64c9696f1f03c6d70ed4cf5a9398e22f99c0c"
     },
     {
       "id": "card nekroz - cycle",
@@ -66,8 +70,8 @@
       "sourceHash": "aa131b564526fbb965bb0ec2ded3b865361a0e97aa6a466c0f2ba9c3595e0549",
       "artworkHash": "ac505389605a47350d0c995ecdb325e664f4ef5017cae7f55424f12edf112eb4",
       "render": "Nekroz - Cycle.png",
-      "renderHash": "e65d0afcf23bf4366f817d0193d6925f38964470ac694843c1eaf87669e8e143",
-      "renderPixelHash": "ccbe2ab57e531943648394cff137eada20f871ace1b53df2df66ea72cc6c2944"
+      "renderHash": "399fcb1b09c75fdf3fceb4768316000e6f627f76393fdcd9d9756e5b02cc26b4",
+      "renderPixelHash": "6dbbe780da70e454f5696718dab715c0c5bc27b52e600e4e352f130c93b92482"
     },
     {
       "id": "card nekroz - dance princess",
@@ -76,8 +80,8 @@
       "sourceHash": "f0cbb410c5096840f66f62617303215b6eff322f9445b98c57bff54efcf0c499",
       "artworkHash": "59d5193ad4f2d6c2cf70c0fcd36ee11de8e3554396a7088a6da715c4ceae5f2b",
       "render": "Nekroz - Dance Princess.png",
-      "renderHash": "7df7c55d64647d2e954eafd517153c0f32a856351086c9949467e5af9c7cf680",
-      "renderPixelHash": "8d69387aaab07ee4942a476d02fc42476ea17ae8c75c94a654f84ee50726837b"
+      "renderHash": "307b9ea98787237651c7acb0322ba977ccfbe00c938be894c77031c077329e6b",
+      "renderPixelHash": "a2bab46d8da6c7e04041272ba7908a562913abfcce239278239beb37e9dcbefd"
     },
     {
       "id": "card nekroz - decisive armor",
@@ -86,8 +90,8 @@
       "sourceHash": "da02c7e283298dc66b314f602a54bc726a5db93fe3c76d41dddff7893082272b",
       "artworkHash": "66d43cf87e53f7344466d8d5cee94ec0f08422274b58d8671d98834c80a8411f",
       "render": "Nekroz - Decisive Armor.png",
-      "renderHash": "5aa37ca907a25bdfb1bf483a05075914a7109a017514c2c82861a30f7fc7d1fb",
-      "renderPixelHash": "2af2f2452a369f2f59b586f4623c894a1f93d494c5ed2be1ec0324f75377ff05"
+      "renderHash": "bf3c03caed992d9b00f070887d3f3e41add0c78e7010736657830a6f6e5937e3",
+      "renderPixelHash": "804822141a1eaab513980a640d6181f51c63234db37f0049fa8f3cdfe2810c48"
     },
     {
       "id": "card nekroz - exa",
@@ -96,8 +100,8 @@
       "sourceHash": "e35c1ec7b2d095095604cafe96578cdf8b38dc90da3d6348d2c20b96cb9b4513",
       "artworkHash": "c12c9f2261f58403c8608f3ee4aa40af553206447ab94f30ed57560b40098b9c",
       "render": "Nekroz - Exa.png",
-      "renderHash": "2a6e2c51a7de1872fea8419ab8fbeedf59646a2bf2997f2fb5164443bcd89311",
-      "renderPixelHash": "5e8d3ac203dfc08203592bdc97a7fa3531c02030361b60096bb593a5c76f5938"
+      "renderHash": "b614cdd8c5f407c3799ac5cb4154dd8b212dc312c379acc513455845d23040e1",
+      "renderPixelHash": "f6075ecfae44aeed230f2ce60b8539c90d66dd1a0dca6d2addc8ce971f4bc7b7"
     },
     {
       "id": "card nekroz - great sorcerer",
@@ -106,8 +110,8 @@
       "sourceHash": "53f531740da5920682ddea26025e09948f620024d669a397dd357534ff755cac",
       "artworkHash": "718e31b056b3c35a749a2a00e696ab496318bf70d303d18dffcc7230a89084f9",
       "render": "Nekroz - Great Sorcerer.png",
-      "renderHash": "88dae7eee05a851b3cb1ac69cf8607444d4b5f3ab4f4e22ef7efbb429189fbe7",
-      "renderPixelHash": "905b7b08cb1dc7a5a83f679faf71a81f4fc41c5ea3b0d0f994e1cfeaf1a48f09"
+      "renderHash": "ca3cb8625e720cd047a4d2740c510dfe83f5d2796cf8bab50421b195a0f92c31",
+      "renderPixelHash": "adb7ed0102ab2a3d333fd34f409537314265d2df241ef0c13f72caaf3ab3b0c0"
     },
     {
       "id": "card nekroz - gungnir",
@@ -116,8 +120,8 @@
       "sourceHash": "df207ee66433182d0f7b796cf355d7315c655a551bdd61d9b015d97f57286aa1",
       "artworkHash": "e7c759649f6020b8b95962d81036aa20fb6535f6e9a328935ee19cd765a6b5eb",
       "render": "Nekroz - Gungnir.png",
-      "renderHash": "9f150605a03a51c4e0c68d8f2e0dc1434df18ae3e7af37e86d7d9c5892d74b8b",
-      "renderPixelHash": "19965bfc2a2b06c98d2178e1928b3eb124972036b1c97fd08edbbb6c63e3d9d3"
+      "renderHash": "f6aaf55c5d64305565e8b75c0a80feb60b1b6734f9a258749a92d0bfd368e7ae",
+      "renderPixelHash": "16c73c44775553f586a29ca536ae5e116cc4877b9257de550d33e23dc6371a89"
     },
     {
       "id": "card nekroz - kaleidoscope",
@@ -126,8 +130,8 @@
       "sourceHash": "ff970e8beb7a28609ab7d0cd7804ac07ce28f79c93e0521f9d5ea802ace941de",
       "artworkHash": "d5f762255ef4430e1d5d1fdcdaa0f63831a2e65d1c922380cd2609779d568c1a",
       "render": "Nekroz - Kaleidoscope.png",
-      "renderHash": "85fef8d63df6ba9155e5bc21122300e3923a8c5825e2a16d2685413c827fc079",
-      "renderPixelHash": "cee182c5a4d9c0c370f82b2d9fddf74ba78b2ac375403c1851cd60a1708bdf4a"
+      "renderHash": "76d6840992b5f70328087b9254bf194246eb8e019361c4fab128e51ae1a4937d",
+      "renderPixelHash": "a620f992e477276315ed02c64f652fd42486c8544da344e1220b629b55d80505"
     },
     {
       "id": "card nekroz - mirror",
@@ -136,8 +140,8 @@
       "sourceHash": "1e538705d580574553925498011ff0e7530345342c239236ae643cff9cf4b71e",
       "artworkHash": "f47bc6a19e60187ce9f96214cdcd23f561a8807c6247f43a705d65adb999c9a9",
       "render": "Nekroz - Mirror.png",
-      "renderHash": "7f8d554194b339de7c6548a5f0574f87df4c92906a187361b423007678085d8e",
-      "renderPixelHash": "f1a20c9e7ff112efb367fe710a794f77bede6e7b0cb2a78de5676403a0060570"
+      "renderHash": "e4e83f69b7ffc5f071868d073c6880654f630bb6902ffdc65f597f207481fd6d",
+      "renderPixelHash": "ba189f5e629a0bf36910e1a17b7a3f08bf22eb7b96451552bf7446006756b052"
     },
     {
       "id": "card nekroz - shurit",
@@ -146,8 +150,8 @@
       "sourceHash": "1c5e757a891a793e7bde2892ec12c3b66ca5e1d4c59165fd075241a90eae03d6",
       "artworkHash": "2e28aca6d7398ee1335291660e64c66454957f6827b1572200e13217369da776",
       "render": "Nekroz - Shurit.png",
-      "renderHash": "562d77dbe7b8907519b607052d2592a47cb46dc288a8a971aafdbebd51179424",
-      "renderPixelHash": "40befb0a030779870f71e1721c250d11ebf22606379684bfe7680b27dccb55f9"
+      "renderHash": "15a5b1da3f2c027816bb0acd5c33e06effdbf32fcb8dbf9012c27c160923aa6e",
+      "renderPixelHash": "e3e6c3a223104951671027b668d5cc2beacdf8ab21de573106cf5159c6c565c1"
     },
     {
       "id": "card nekroz - trishula",
@@ -156,8 +160,8 @@
       "sourceHash": "d309b574f57e0667fffdd6ac41dec6f92ca7971d3afad71e6c12a54a236d9972",
       "artworkHash": "c6c0fdf1dc432af3bd8441b08ad5054244d3117ff844efe7071f88b7a950d1af",
       "render": "Nekroz - Trishula.png",
-      "renderHash": "e0b2786734c6e0b350dc240bb912082db25517857b31ba7432429548ef9da607",
-      "renderPixelHash": "b43e023f38d63c812e7c1d0a45731fa76d3bec975c82e8c2e70e2aeb5c6e7bcf"
+      "renderHash": "21bb82ac29744a6542aa7a58822d803f3c6529e524955bd23cd4ff86a9700227",
+      "renderPixelHash": "dfdb2b5c75a0ac2372cb05eb19f89f0b181a5de888d2a46ea3accd9f58453ea0"
     },
     {
       "id": "card nekroz - unicore",
@@ -166,8 +170,8 @@
       "sourceHash": "e74518938a185f5d9f4010d4dad7bce2746a3bc8035b706d34dfca7fd764f6cd",
       "artworkHash": "ef76f76a71bf610a934a9c8cb3c13600ba98bcb712facc51e489ee1b33874ee5",
       "render": "Nekroz - Unicore.png",
-      "renderHash": "981afd959cec1d56c8a8694ab77a7bfb50c6e5aef0ee0e46190218f01d9ded30",
-      "renderPixelHash": "b5af872c31e9064e937a3b0274da17617908edaf52d25287e8c05d9af3da5da7"
+      "renderHash": "b2501c5e24d1a2e44af28217cb250b36d03f53f1aa11c11d70af6c445a61b88b",
+      "renderPixelHash": "4a5d183785101e56fe3a2c055459fd83a29732d4b12cc031d77211b566339e3b"
     },
     {
       "id": "card nekroz - valkyrus",
@@ -176,8 +180,8 @@
       "sourceHash": "3c76efed6526d81f1d57bcb062d118f42c47547d7711a1ae546629ec66fd01a1",
       "artworkHash": "5134430712188c52d49eab79644745e521527abeed23a0a89c65179b4e2a4216",
       "render": "Nekroz - Valkyrus.png",
-      "renderHash": "ad6c4c7c0e1f81664b4a8d90320e5dfe1994d9beaad0232ebcfc354e1935ef65",
-      "renderPixelHash": "30ac562489f20a4c29b9ffe3c541242cd6c717ecc2909fc7677b55e913d0127f"
+      "renderHash": "5e3f6fd42d503beb15fecff0b9a35342e343115fef659d5873543ae9c85abe0b",
+      "renderPixelHash": "9067f3a38a595948fb0098f146acbbe41fdeadf2aac0156306d65762fac8c293"
     },
     {
       "id": "card preparation of rites",
@@ -186,8 +190,8 @@
       "sourceHash": "691531fae0cb8734c73b9955f8b39744e417c3f6a610e4bb463d968656b709e6",
       "artworkHash": "99c136721246f91e1b75b96a7f90f5106cb7811a3a6c33adfb016e511df23390",
       "render": "Preparation of Rites.png",
-      "renderHash": "7162c47698a0c6da84bc8ff78d950a47d74889583b8ed67735567b240c765efe",
-      "renderPixelHash": "4f8501a5c92dc62e21c2677059d04b5846c48381c77e38e81f3393abc52ea590"
+      "renderHash": "7234bc1eeddd9e81ce264b990f249c85e22fa9c3164e5defbd0f97062af69d18",
+      "renderPixelHash": "de2bca23db7451fb62cb1aebaed507c68d46e44cf7c0217c1dc15faee6cd162a"
     },
     {
       "id": "card senju of the thousand hands",
@@ -196,8 +200,8 @@
       "sourceHash": "1ef9da81e9f166af7ac7a37071983d5b51acf88b583f82cb2b832f6708bb2a32",
       "artworkHash": "ad050c802ca3ed9ccf4f85c4d0865c3b13551672f796e0c5e24e87b8ff20e21a",
       "render": "Senju of the Thousand Hands.png",
-      "renderHash": "12a01b61cf1fb77e0e345a378a1781ed9c2920921fd32d9a0db2843fdcf25960",
-      "renderPixelHash": "a43edba03f38149203d283a1410b3c3b8dbdcfcb6189704dad156f62cd717a5d"
+      "renderHash": "b58338ff8c42af32ba5c718b7a90245a912824404ebb114f4bfc436166fb50dc",
+      "renderPixelHash": "27ca6e60f1d8d7901d02f4f2ca04359a8d264c9e57f5b9783fccce1992fa80f2"
     }
   ]
 }

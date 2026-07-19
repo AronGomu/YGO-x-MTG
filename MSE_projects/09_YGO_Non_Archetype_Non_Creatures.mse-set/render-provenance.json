@@ -1,12 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "project": "09_YGO_Non_Archetype_Non_Creatures.mse-set",
-  "exportedAt": "2026-07-19T15:30:42.671280Z",
+  "exportedAt": "2026-07-19T21:42:06.529075Z",
   "mse": {
     "version": "2.0.2",
     "game": "magic",
     "stylesheet": "sevenhalf",
     "cli": "mse.com"
+  },
+  "renderTransform": {
+    "id": "transparent-white-corners",
+    "version": 1
   },
   "cards": [
     {
@@ -16,8 +20,8 @@
       "sourceHash": "15ae0f1ec0a743625c91a3d6727cc16cda119b015c4a9a591b4a1625abac0926",
       "artworkHash": "425b0bf6a09b708c4a8a2ba7553c01e3ec45899544a3088c92946356bb96aaea",
       "render": "Allure of Darkness.png",
-      "renderHash": "94b9f60de7af070dd87e864ce0920f2f695e8095ec62109fcea355ee25f8431d",
-      "renderPixelHash": "9555bd6d66e71a15e028215359aa06f4b1d25569bcfa7539ae6140b7d5995211"
+      "renderHash": "ce9d9c97965323368107409226552ab4359398281b2e3538823c5e9417708577",
+      "renderPixelHash": "9aea644459bd13dc412839fbf03df86ff22a9212a829ff313e3fd2e66be0ca09"
     },
     {
       "id": "card book of eclipse",
@@ -26,8 +30,8 @@
       "sourceHash": "a4bd6c209da641477738698353160d43d3c0194d2adebde8230f403d1a10c490",
       "artworkHash": "45a4322555e007cfa10a4de7e4ac2295f0fdcd1f372c8c5fdb42274a118ec91d",
       "render": "Book of Eclipse.png",
-      "renderHash": "fe595f1bf7453f4ef21187202342816634fd32a89261c73dbd91d1e0c191b7e4",
-      "renderPixelHash": "b9282be15a4dbff86d8425da7ec529186112a0f2e816734ef1e6636b97a226f8"
+      "renderHash": "b0ba4bcac93d23fc75e4555b006cc4eed2e72497efd8262ecc7b3e6b7c4eeabb",
+      "renderPixelHash": "f8a4118868e2f29ab92957c72cb1509c37143eaf7fd40fc8421a82bb569576b1"
     },
     {
       "id": "card book of moon",
@@ -36,8 +40,8 @@
       "sourceHash": "49bf21fd0b40d57ab198256ea59964ad82c48f9075533a7f8d57edc516807351",
       "artworkHash": "9dfbf94163949aecf8349611cbb16884a6cb9776b9cba2597a898d94949b1ca6",
       "render": "Book of Moon.png",
-      "renderHash": "cb21e57878678226199b8ed6cfda43294ace65b0e399585ca70c58db0856bbd7",
-      "renderPixelHash": "5e9f2f281c326735d274c726bd45d1e067d4844a6b69841fc5b54585fd274a35"
+      "renderHash": "254f284bea65b16cb48a4eb3c7e94251dc527a577e886347fc8b6c3ce5c90ad5",
+      "renderPixelHash": "8ebc4b3bf3a77cbd579912b20e79090902d1a46ba351ab3666477503031d2830"
     },
     {
       "id": "card breakthrough skill",
@@ -46,8 +50,8 @@
       "sourceHash": "3f32e0b23639b299999114e14cfd0d278d3275df1b952df3ec667de1faf2fa42",
       "artworkHash": "40aef5d47afb16f25fc9e9aede538f302a587871549a0308d1101ba5066209e4",
       "render": "Breakthrough Skill.png",
-      "renderHash": "338934d1f014f498c71d2fa0f682fcc2d7991684ad18f9392d50b5a952c3ff97",
-      "renderPixelHash": "7100d5d828d495f48727f7662a1a578f7604005649400bcd33cfe1ddf073487d"
+      "renderHash": "4d6033e8983b9c19a4fdcf1f73892a9e04f570bef5d5a2c540d7d56b465adfac",
+      "renderPixelHash": "84e7abce33d6c9850f0dbc3c85d32acaf1572f3961b3a2b904a7918c6de6bd86"
     },
     {
       "id": "card compulsory evacuation device",
@@ -56,8 +60,8 @@
       "sourceHash": "31d89c9977242e83c7b9e04e5d230c5bc4d7f1078b828b1b753f9feab09cc8ad",
       "artworkHash": "ea7cd7450396fefb3c999b9bc4b1556b636399809ded224d8f1674989828cda6",
       "render": "Compulsory Evacuation Device.png",
-      "renderHash": "1be5d2963942c4acb741985d1a0c998f64bf972d8a49227971f29f709968c6cf",
-      "renderPixelHash": "6eb777b09e87b1283028ac6ab93e18398170557b46bd589b41f8a111d00200dc"
+      "renderHash": "b44a941384a4305323b0244a1dbd69841ae5bb584019d4f8adeb5545a733cbfa",
+      "renderPixelHash": "e0e36765cd20c6bcfca78472e4e4834c91eaaa3a14e868f80a80be3d4ed0c13b"
     },
     {
       "id": "card dark hole",
@@ -66,8 +70,8 @@
       "sourceHash": "c0fa1f23057305fc4916627a12aeeb33e71f5c3f4a5438303bff9637cccad555",
       "artworkHash": "a0484e4864278ce4d6f723ee41ef234b5503cebd01a0e53cff4c216e5689e686",
       "render": "Dark Hole.png",
-      "renderHash": "7bf932a5e5e6202ac2a82d7fdc94c5a632219a851849831ee93dc0e9a1d5e281",
-      "renderPixelHash": "67efa1eaaa76314f913d3af84bb8ce2148d9068cd82f585cfceef2416df5ea1c"
+      "renderHash": "bb8874c8e7c01417026f1f1e4233c2bb1fc323b9800fb3cf27d85c46eda5ce30",
+      "renderPixelHash": "78e55f0a48271c568ffa99860d542a3eb22c469253b43b43ebe915a377d5cfa0"
     },
     {
       "id": "card foolish burial",
@@ -76,8 +80,8 @@
       "sourceHash": "89b232b01344f89ffd3a02611a105d6b0fd27e0989c67c2d6deb86e4ef42442b",
       "artworkHash": "b09bcb372d979ed5c28be57388900ddf65a345e3e92f34fee04c6ca58e510d11",
       "render": "Foolish Burial.png",
-      "renderHash": "4b55a6440bb122d62405ee753f26ff7e9fcd9161e95179554c32b0007b89f89d",
-      "renderPixelHash": "0f228ba2995c1e9cd99afa2bbfc2b0493db18920142c62445f9f8794cc9ecfcc"
+      "renderHash": "32fcd544a8266e61abea0d5d749f7949cc442603b697689c6e22f8524a7ab29f",
+      "renderPixelHash": "82946c50738c46c16f44e8447885085a1f16c38288f7ea54e55ad05544690ffd"
     },
     {
       "id": "card instant fusion",
@@ -86,8 +90,8 @@
       "sourceHash": "5fd64fa29dc6ee8b6af93a2c9d47e506ade24fa5b0e39292334f5dbc3f5f48ba",
       "artworkHash": "13c03e23e84ac7f344561b8531d69dc200cba60f72b6d5b750a2b73de8b8b34b",
       "render": "Instant Fusion.png",
-      "renderHash": "ad639dfd6b4a5377a8e72e530584ba3b7cdc633859709e0c14e66b4e268cb0d2",
-      "renderPixelHash": "bb4f95d97c4506e2333875a05ea97dd54a6c1e7f8feaf9e4b4e9b63ba269578f"
+      "renderHash": "fd461e40e835c88404d2bbecb4618932754b4ec14986b152ef15ec40261cf68f",
+      "renderPixelHash": "5cf20ed179adfe643d9c64a0899613916bb3de95f59e6cff28c87b14a87a29d6"
     },
     {
       "id": "card karma cut",
@@ -96,8 +100,8 @@
       "sourceHash": "730a97544a7adf21a68ac810c2bc80120a58f35bd2911855edfa8ac084cf2038",
       "artworkHash": "d55c5f1f584d69ff773fb1692bedb66d59e6a2730dd8118d9ce697eb526ece63",
       "render": "Karma Cut.png",
-      "renderHash": "da140dffa273dddc7e7b04d8500eea0c7057be6fc13c95860f8dac94fadaceba",
-      "renderPixelHash": "d52be8d58cba5eae745d4061ed5fc67aeedfe1ac6964b2e1f957958efd62f7ae"
+      "renderHash": "14820b5f133ae5a7ad5a2b78664947ac0fe1bb942d550f50a0d75686690e91cb",
+      "renderPixelHash": "04c4cd4ba25b1e7bb517c2cce114780272da5f569f42631072e3371c70aff932"
     },
     {
       "id": "card monster reborn",
@@ -106,8 +110,8 @@
       "sourceHash": "1097d709b7f996fe643b5ac0c4cc0389e4a9c1a0bfa30c9bb059c99f3883d55d",
       "artworkHash": "784178bd8f7a2573a718d5a86b7b1cf82ccaad18a5f2add3a96d74d674c513f5",
       "render": "Monster Reborn.png",
-      "renderHash": "49559d4eac4f468081e70ef9c414bfe36224541fec09c62b980e3ac2adc9ab77",
-      "renderPixelHash": "0f0761f71ca1a88e8bb6f1e09b28d0b5fbb0cf2bc212e9b3b75ad582655491b0"
+      "renderHash": "08941331b951ae2222713d3ce3d8edd7e56cccd3aea89895ef0770826694e99d",
+      "renderPixelHash": "733c3fdd7db221cb42bbd9afc2aef93d1ada92d3522b39c8865565f6a334a99e"
     },
     {
       "id": "card mystical space typhoon",
@@ -116,8 +120,8 @@
       "sourceHash": "cabd470e4a1024345e2d77ee6c5252901e8834f0c0bf0c47a517f0734ae54838",
       "artworkHash": "c370ce38ecb669c8be11542153064429a7371a4293ee7bf04d1ef675cec09a52",
       "render": "Mystical Space Typhoon.png",
-      "renderHash": "8de204587c22e15c5b1f78199782aeb6a4005d9eac54a8230d4095e4fbce3144",
-      "renderPixelHash": "6b5524cdc2dcab2c2804775cf3474e6ced47497ecfc38e716f461d80105b57c2"
+      "renderHash": "d430de247729ad8166201f2fb49323ae88e9d1071c0e504febf9c41f5f700b0c",
+      "renderPixelHash": "a95fc01cb756f09634d00e5df85f36f46689b8322747d57594d013a0191ca6dc"
     },
     {
       "id": "card phoenix wing wind blast",
@@ -126,8 +130,8 @@
       "sourceHash": "bc962a11271e8aa9ba0adcf96643466f7c11d1e0502a7811cf72e785e67e8176",
       "artworkHash": "4e37509e0d74aab11ed02abd79b50e75f35b4ef4bc0a01c3491b315c4bee8ae0",
       "render": "Phoenix Wing Wind Blast.png",
-      "renderHash": "1992f838df675deec341cf448dfadf2b5697ab84d351321ce36a72b6bcf890eb",
-      "renderPixelHash": "f85f6d12d3ca953612e25f2634f97671e2b40148ef68f7c1617c19feef1686dd"
+      "renderHash": "bb29407cef0d4f9eda58b27befdd7e7b451fff1b4960cf86ef379e257f24a4c4",
+      "renderPixelHash": "304f1554277b0898515ed9f51c091dfdde258ecf6d88d57d550e6bcdd4304db8"
     },
     {
       "id": "card raigeki",
@@ -136,8 +140,8 @@
       "sourceHash": "986e819c9af4d3414f6c9edd9853119b4a55c9d7cb33d88c79c6cd32cb5c9901",
       "artworkHash": "55f4467b8b7a0da8e61a512d6a14f0ff82def574331794aebea902b2382fddea",
       "render": "Raigeki.png",
-      "renderHash": "129276dcd5a32db9445dbf886bd8387ba0346866356e34e2e008df840495837f",
-      "renderPixelHash": "dbb7e13f2491478d0190aeb1ca7088bd80b72a10ff20f200ceb4c14dee917f69"
+      "renderHash": "3a505d01f30dfb3b8753a23d592c7c789bfa4ffe9d0d7a3c140314389679e77b",
+      "renderPixelHash": "a784f47fec58e7b59b91ba2b5bd6ab29f2ab223ce458c2e73e126e767bc06b18"
     },
     {
       "id": "card super polymerization",
@@ -146,8 +150,8 @@
       "sourceHash": "29a9126cbd9be85b8c9b75886fbeca3b1364eea2652ae0c8e9f264b9366380b9",
       "artworkHash": "1424bb6dc6e2dd3089b348c78105e89045884fc46a22d0c2fe09d38e4dd1f3d1",
       "render": "Super Polymerization.png",
-      "renderHash": "8e1d99c324dcfc95dd4b9a0431e89db1a3d4c70ac727f8762f6f8151cd086945",
-      "renderPixelHash": "e7b3000e150d94717001408a2d429790a4b746463c707ff2fc4e92a1b0891eb9"
+      "renderHash": "8cac2e61b3e95aa93a0b89cc799628f348e4a6e805f72cdc1e3a4f01dd5f10fb",
+      "renderPixelHash": "a61751b082652f16f6e5510cfc8e7eaeace249b45a1fc6a8c7d99f3c9a7b03eb"
     },
     {
       "id": "card torrential tribute",
@@ -156,8 +160,8 @@
       "sourceHash": "a307df716268dce47029b46892168b4d8cab6793419397274d699a16d0bf84f1",
       "artworkHash": "3f58fdba03052eda090ed47f68de71c3640a892a74666d5863f51d5fda9153fb",
       "render": "Torrential Tribute.png",
-      "renderHash": "8985223ab4647a2dfd5221989ffdab994df38474af5185c178ab7e82720b62d2",
-      "renderPixelHash": "776e1fc3d3a09628a4d9d7bd75c0c065d8b17e2fc0cefc9a7d10eb0c7b0010fa"
+      "renderHash": "8714f85b9ca2aad468a187615d2d5645f6ae71b35901ad0c53ad84a6436555b7",
+      "renderPixelHash": "b86cc1fdb59edac4699227c0e3ac1528174bd633b4131b449061d09197fc7097"
     },
     {
       "id": "card twin twisters",
@@ -166,8 +170,8 @@
       "sourceHash": "2528196cbf22805ad799d391d2f4bb4ebdfdfdabe8dd97c46345fb19b3f10e31",
       "artworkHash": "5d8d7fa40109af7f5c0fedabea01fbb8826820d73c2e37af4d515669dcdc2c17",
       "render": "Twin Twisters.png",
-      "renderHash": "ee27b24681e3d9765d2d0d45b2591fc6c52ded1e5b8608123c30c24fbc455038",
-      "renderPixelHash": "bf09fc6eb4f81e69a49ce52c5942e68c27c60e70db1e033b3990ddd4c4e6eed7"
+      "renderHash": "11a84e0b1d788a5c3202f2ccc2444978fddb2894bfb14e13034b83eebb0967a1",
+      "renderPixelHash": "5c662dcbd04cf9892e57949e1c4da1c620edeed42b7f0689055f7c8b534be7b5"
     },
     {
       "id": "card upstart goblin",
@@ -176,8 +180,8 @@
       "sourceHash": "dd375f3790ce52ec829f094334e145a16c95ddd07ae71e15166b75087e5c8270",
       "artworkHash": "652f9c129b0415777021e9ce5e6baf519bba2b6e369cf1b85ec1dc1563990e27",
       "render": "Upstart Goblin.png",
-      "renderHash": "e1064b4a618a8aab77a7105defe10dcb2e48485079fffd474cd9251913d2fa48",
-      "renderPixelHash": "5c7592819da2e5cb526ea5dde93b99360297ee0f924b5a4dc4bf38f19ee1a853"
+      "renderHash": "2b7edb27297148da1301417b938f3c8706b56318e85c49ae0470e6ff9fafd655",
+      "renderPixelHash": "219f8f2458aa7a4b0f58e945be7efdf03968c21b4ef4fb03447f4faa846190ae"
     }
   ]
 }

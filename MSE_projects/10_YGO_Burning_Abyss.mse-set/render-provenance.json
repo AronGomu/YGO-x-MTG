@@ -1,12 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "project": "10_YGO_Burning_Abyss.mse-set",
-  "exportedAt": "2026-07-19T15:31:16.520135Z",
+  "exportedAt": "2026-07-19T21:42:14.301903Z",
   "mse": {
     "version": "2.0.2",
     "game": "magic",
     "stylesheet": "sevenhalf",
     "cli": "mse.com"
+  },
+  "renderTransform": {
+    "id": "transparent-white-corners",
+    "version": 1
   },
   "cards": [
     {
@@ -16,8 +20,8 @@
       "sourceHash": "d36121c8bc728015368ea0cc891090b893629d8e6db03fd60a6029fe35b30cbd",
       "artworkHash": "50d4b467eff61d01635fdf443715c1b37e097df42af592b41fd73d8f40fcd09c",
       "render": "AA-ZEUS - Sky Thunder.png",
-      "renderHash": "11c80808e5baf1d4fa296804df42a23b2870cb15c987da2650396dbad601f389",
-      "renderPixelHash": "88cc3c242e742f1baf6a87f82234cba0f025023199ea6eb6f71e667212d6064e"
+      "renderHash": "b25f76763b4524953ad25df4661c5c4c757304f7c9b906849952d95a90d02521",
+      "renderPixelHash": "f11b1528a7382c8f5fb424dd72bebb8b45418ad5ed8871e4cd598e3d6bf96456"
     },
     {
       "id": "card absolute king back jack",
@@ -26,8 +30,8 @@
       "sourceHash": "7cdfb663ca03618c599f3858a0e7592e7eb9d0fdc0d1a96b8399f2eebf157327",
       "artworkHash": "d7646cd411bb147aa5223b6e39166f0b344d619ee30c696e4f128fbd8edac272",
       "render": "Absolute King Back Jack.png",
-      "renderHash": "613741f5333e31e5971420186cfcf6f9f512a498c324652f609e5df9c55148ab",
-      "renderPixelHash": "e9bc61eda3c1ed3030b5a4add71d52d2cbc356b26494569c84f3bed9c6c5014d"
+      "renderHash": "a315541c4bbe3ab8f622f802a2f89467b880f3180aea02518d8600f5437c60c7",
+      "renderPixelHash": "d11fea742afdd2fa275b74c06f000dc62958b8da8767b083c8df07732bc425c9"
     },
     {
       "id": "card beatrice lady of the eternal",
@@ -36,8 +40,8 @@
       "sourceHash": "324b1fbb33a2c740ef18dba351218384f75e7cde71c11070f59cd2cd067ea4a2",
       "artworkHash": "af9c4d5583002cfbcb131f1921c6c26113d2fe4e8166e76a503fa7cfdf629461",
       "render": "Beatrice, Lady of the Eternal.png",
-      "renderHash": "c16c0b9179a71f86c87f8bdae20c9238cb04864e317a3926fd382ba8a805bfab",
-      "renderPixelHash": "055d2c89bef6d3788d098dffc5fafd6454892f1d378bb8cdf2cb1b858f4b3c6b"
+      "renderHash": "156a1620061b8a6b99c000c6bdc2f11f0baec8bcc77eee968d47b5ab60c949aa",
+      "renderPixelHash": "d271d293a261bf158d5941d0459f03a62b89683339d33d045bcc9fdabf9d38a3"
     },
     {
       "id": "card burning abyss - alich",
@@ -46,8 +50,8 @@
       "sourceHash": "6502858f8d2c9a266eb6944ea55d6a4f33cd42a44dd3e394d0e1d2eba6d2f320",
       "artworkHash": "6d320c5ecd8f602447063c41bb3c578232da52bffbac9ebe4ce535b6e22fe04e",
       "render": "Burning Abyss - Alich.png",
-      "renderHash": "d0b794ed7d4454727900f641873f03c9f8bfb7cda956f7371cf903bac592198d",
-      "renderPixelHash": "ff6ec645f2e535f44934d779a91494932fbf47ade991c2612f4df915e052bc49"
+      "renderHash": "60c814d60f8a032863a280bd081a0d34a161549fb9841da2db81002290f4757b",
+      "renderPixelHash": "4a1910b255fd6a292fee9aad67a996fc00958f45a680b2a1a19de2f5b7bd88fb"
     },
     {
       "id": "card burning abyss - barbar",
@@ -56,8 +60,8 @@
       "sourceHash": "60e6b6be114efde7aca1b71039f0acf7ecd67f58a93dd3994b1b221239dc1856",
       "artworkHash": "87457310956599ae60e2a7ac02efa819aacf953e063babcfa7e718a774744cb6",
       "render": "Burning Abyss - Barbar.png",
-      "renderHash": "f522a76525f11aefbcc16a6517df8a16a22bcf677735b943bed1071e123a083b",
-      "renderPixelHash": "0bf5d7f5be82b0a0e9743a9f57482df4a664c4c3bcbcd3e2f7095aab1a35cdfa"
+      "renderHash": "b9299ce044d5c99857f99d3cc04d2dc828461bf829cbb176da5fba75ad131570",
+      "renderPixelHash": "1dd227e9fa51af8c60e0ed178d586bbf73fd4befcb6f2cef010666494057944e"
     },
     {
       "id": "card burning abyss - cagna",
@@ -66,8 +70,8 @@
       "sourceHash": "d7945568df0d85044b55299f4eb909a0421e42a3d75ca967e989f2033f09ded1",
       "artworkHash": "d7d3aa028e37b377d1781e02d0b2fa9395b26c3d69b8ea4ed847eec0d71dbda2",
       "render": "Burning Abyss - Cagna.png",
-      "renderHash": "c611c33581ddf0167c606ef1ab104022e634cd84540ac682a1ec9a4d6295b2b9",
-      "renderPixelHash": "cbfb181a3259818d4eefd03ab43cfda1adaaf95e37de5c6db206ce74741d2602"
+      "renderHash": "6a6ae382960de2b83417bd8312249ee31340f7db69bf9bc70ccbf08a3b16c1e1",
+      "renderPixelHash": "b83f41baecec2c8cbadd209e1500c215091e8740f54108b2031a21c63872f8f5"
     },
     {
       "id": "card burning abyss - calcab",
@@ -76,8 +80,8 @@
       "sourceHash": "7628299220ca07f0f3b190048c8e5506d1580d6196d9eb33647cf46ec284485c",
       "artworkHash": "887b1bbcabe08dc033ee5155b2aedc1446058ec0d14918ed61031d658c2ba3d0",
       "render": "Burning Abyss - Calcab.png",
-      "renderHash": "064a31ad15c8375adc99043c163cf1a493b7c9e7afa3cd73884a95dd4017c0d9",
-      "renderPixelHash": "7c1b9171503562d3e1c02e5400e86b7846e675bdbecd0a6993ad5fec969cebd4"
+      "renderHash": "21c0af87fed8ac1b61f5ca01195fc4fa25172b6eed6d7981fc9b6a7892c38289",
+      "renderPixelHash": "a8536e1091b350e4afd5344586a73971f8cf490305c204d5e5679e7bf5099e41"
     },
     {
       "id": "card burning abyss - cherubini",
@@ -86,8 +90,8 @@
       "sourceHash": "ad1ab29b91273b1170d85d1073bfe52738145a421a1fc42eb9ecb3c127551e69",
       "artworkHash": "b30b61272e18b95a90a424e4e92cd71e262f20ef612469ed5158078b66d65f0f",
       "render": "Burning Abyss - Cherubini.png",
-      "renderHash": "df973d7dcd1b1f7554cfdb3dc2b02f1b20e675b23946b30698125e3ae5e02567",
-      "renderPixelHash": "af3fd08c6795cb9337c2c47d5ce4ea2812c9b8430401360c002e85a7815e5dec"
+      "renderHash": "167821e914df93aca6e5acc758e651eaf8fd1de4e0c9b6cdb2f888c9fcf27d2e",
+      "renderPixelHash": "7ccafd49b39f2a083fed18cd078cd3b39844c8c3daa4c8db6082c90eaaa5fdc0"
     },
     {
       "id": "card burning abyss - cir",
@@ -96,8 +100,8 @@
       "sourceHash": "fc4fa75afb8a6c1de02b3215edbf9463aa205c6c2fbc9e64d1f22c2ba12f7ac9",
       "artworkHash": "eaa06ea73c241681e436c958feadc7ef81741a9728f31c4322ca678b7d04c16e",
       "render": "Burning Abyss - Cir.png",
-      "renderHash": "425df39876eb21db75ef04e068e634c1d831b4563622433872c7e76d4afa7076",
-      "renderPixelHash": "aeb5c6c6ed9c2253ce13beb461da02d3f6b4dc75297facd0805cf652374a6790"
+      "renderHash": "ecd4decf162f4a531b7a923a82c3956a6b2bb1b1fe5b1cdb2c9b5713e19db96b",
+      "renderPixelHash": "a82e8d360a0960e10ab0ce48dc77244c4f4c16673f9fcd25a47625cea924d665"
     },
     {
       "id": "card burning abyss - dante",
@@ -106,8 +110,8 @@
       "sourceHash": "12dd5f4368e6253010d00aae291453b5e8c8c767f2b0188d51f24fd6419b3378",
       "artworkHash": "b2df765478321c8266e83b9fb75cf7b48ca7f5bcdc7ef279fe11a7a85ae51d8b",
       "render": "Burning Abyss - Dante.png",
-      "renderHash": "5e08989872c279fa192339255733fe8e7116264ded575588a10a40ed4fabff5e",
-      "renderPixelHash": "613019a1f5363748e97c78a7c1bd6a2c61dc0e107d2774881b212fb0ef45f6d6"
+      "renderHash": "c02498fb62eb572f2597f7cb154452fbd933a7f14a79befde571a17e9ff08677",
+      "renderPixelHash": "500027915ef6f5c3642f15e101a092439b02b5d314ea28f1a6b4a85b2617e2bc"
     },
     {
       "id": "card burning abyss - dante pilgrim",
@@ -116,8 +120,8 @@
       "sourceHash": "7b899afb3039343e6200888c8f322ece5aafbd1e14add41e2dc7c89e80a0c97c",
       "artworkHash": "390d3b7d45daadb21a5f9aac17bbca99ce5396a67c9c55b13b8932c8f4c4e293",
       "render": "Burning Abyss - Dante, Pilgrim.png",
-      "renderHash": "828baf2d5f1a0a8081326a137044219f58cb0710c9cda0ba4f4d082bc98321ce",
-      "renderPixelHash": "55874f7acafb4066072095cc2107f7d71d12c0cc2a00af9ff53c4424d6e3d535"
+      "renderHash": "0bd25f6dffb9bcd0da5bed55100b87970c1250be7c044c17c07ff23e26073618",
+      "renderPixelHash": "9a7e13adea2eeed6581ac18748e440db60498ff382903f8650cd37bce97875a7"
     },
     {
       "id": "card burning abyss - draghig",
@@ -126,8 +130,8 @@
       "sourceHash": "4430608c9b8f07aec205da4ef26d5091cb8ba1b9fdf0d376efaecc5cdc7abe14",
       "artworkHash": "ca8fa13738dedb060f81f06f8286ea3fdbe78d7e3c672bcf124f8348bdb10546",
       "render": "Burning Abyss - Draghig.png",
-      "renderHash": "501c6d730c87e9d842cb5b47eb51bad9301d3b89cb3adb6dd654af786592c6f3",
-      "renderPixelHash": "364b1704d047ce9376fed43ca03b2fc9359ef98db0ea513c27cb137c2babcf30"
+      "renderHash": "157837a3c037a88518eb905eb3c3b744a9f10f1280c51bf2b930cf5da29cc19a",
+      "renderPixelHash": "54f19d94961aa443a6a13edb6d5240dab4d2fdafe8d850d192d5a8dfdfaa27b0"
     },
     {
       "id": "card burning abyss - farfa",
@@ -136,8 +140,8 @@
       "sourceHash": "9de7b92c8da31b7188af5d6edf87e8004bbeaf84de41614e12c7b5f50934a2ae",
       "artworkHash": "e038bcce8423ef2f3de47f7e8aaccb1dd8fb69d9db09c3eccd4771b85d0ca36a",
       "render": "Burning Abyss - Farfa.png",
-      "renderHash": "4734d905b24ee913eaa73423ae4c22953fb27c2cdcb9bfedaf655769d837f76d",
-      "renderPixelHash": "9ff48e71c8a099e552f12372ecd2bda5a9b300c84e74adbba7e8f868ab216ee3"
+      "renderHash": "65118b28bc2d91895bd665ada1fd8ad7ada15b8d75a85483cd7fdde71e22fec0",
+      "renderPixelHash": "5e06074c4b225c6ae5fad351a74976501f709eff2b78f9b284074b4351ec2541"
     },
     {
       "id": "card burning abyss - fire lake",
@@ -146,8 +150,8 @@
       "sourceHash": "468a1e63b816355e2330ea688c5650bc80a7d136063239593055089ef7f594e5",
       "artworkHash": "a40b098d06bbffe0b7800cd55c99b7dcc4caafe76355ef6a542cbdbe59be7914",
       "render": "Burning Abyss - Fire Lake.png",
-      "renderHash": "ac946cfab264b039f1de32080eecc46146ff961808b342493af3c6db17bfa95d",
-      "renderPixelHash": "ffd1dfa3b94ed8d34e200384c7d4e8cd8e544455b36eb90cfb785e42b5b325b6"
+      "renderHash": "1fd8cbda25b24e1e0ee4cfbe083083f4b7f1d9dc403329a8db0e1d5bad7c3503",
+      "renderPixelHash": "df002e82a6ad46c4c58f327b0593feed2526b5a751f49485bd90a10b5ec1755d"
     },
     {
       "id": "card burning abyss - good  evil",
@@ -156,8 +160,8 @@
       "sourceHash": "9d79d5966f81df5a7efb96cf87524eac258f80e0536cdd07f62e9c7d8e1c9b11",
       "artworkHash": "746366767ab957d4592ac7a92b03dfb6b36516ff68bb8b74d1eeb12aa38823ad",
       "render": "Burning Abyss - Good & Evil.png",
-      "renderHash": "aaa3b790415c4ecc71f475674cdcaf4cd42ba574f62c27b598bd4af024846e73",
-      "renderPixelHash": "d1cb6f1847f5728bf70c50d29bdfdc3c88d2bda1f719f77741af5c65ade3a421"
+      "renderHash": "6923e7e22a9465b510c621c41211737c0b9008774d46fbdde5fb20d377634c61",
+      "renderPixelHash": "1493850073d34aa227e2a4886445043f10e608d4700af23359c2966b78acf280"
     },
     {
       "id": "card burning abyss - graff",
@@ -166,8 +170,8 @@
       "sourceHash": "85430d9711b29a79d5eabc685fefde4bef3b1c8b2733d83f7fd2a44d016af9cc",
       "artworkHash": "d77a78d532ee45699ef16cc95a7fe2dc4273197a6d76ce309fec77f190a8dca6",
       "render": "Burning Abyss - Graff.png",
-      "renderHash": "5c5b86c5ad21eec41c423d421c17611127d62811f3cfbddc2393b447803e5f93",
-      "renderPixelHash": "a0070c3148ab2816403da8c53adf2dfb8ce3d08263d06abbd213785d7e7642ff"
+      "renderHash": "3a9a0cb774113bbf5769326fb30d0b1bacb5b6e819907e54a05809bb5a0dae30",
+      "renderPixelHash": "4812e82cb1cee0f75519b3b02b90b15ab1abf68c197e442883dc5b0c65ffd0ff"
     },
     {
       "id": "card burning abyss - libic",
@@ -176,8 +180,8 @@
       "sourceHash": "861ad05d194f4049dd1e1e478e950a9f02d55e4f607ebd0ba6cc1a27031f69cb",
       "artworkHash": "3296fa854293767932deb8d1eed629829017710a4d572ec18543ccd349c6dd57",
       "render": "Burning Abyss - Libic.png",
-      "renderHash": "dd89ebc443bc7e6df65238f815bbbced8d995f102717d5219790a523c85946a5",
-      "renderPixelHash": "fa83721a6c73723b90d8d233afa337b48f06055ecc47cb51cf0cdb84e631e173"
+      "renderHash": "752b4f0dcad10f66a6e8e15db748cb47ad8443f965fc68121ddb95edcd43fa9e",
+      "renderPixelHash": "b030b9b757ad717bde3b354f812d9dfa43597caa5a1143c2abd670e857581263"
     },
     {
       "id": "card burning abyss - malacoda",
@@ -186,8 +190,8 @@
       "sourceHash": "dafed3d5a9da607c1c9f540e0d717879f8b420f68a5215064b110b9dc2c71730",
       "artworkHash": "29d94c87867021269a310d894016437a0ebd4a486fa253fac3f4522ea02db004",
       "render": "Burning Abyss - Malacoda.png",
-      "renderHash": "8eadcae6ef491c7c32a2a708d31e1dedade86c2f1349fe4b95888ecb2b923355",
-      "renderPixelHash": "0da7ebb700094a1648f8003555371e8304180906340caa6dffa5276214f867e6"
+      "renderHash": "cccaa1d68307104f61e0d0c48a342e300723e5b04658d00cc3f9cb2e03044f34",
+      "renderPixelHash": "c8bd8d497a153a1cf02e145e92a48adb0fd5096919438c6170c336ec77298770"
     },
     {
       "id": "card burning abyss - rubic",
@@ -196,8 +200,8 @@
       "sourceHash": "5a29987f1f662a846f27e58c834b4a1fd989d2d0a8883597124fe6219340c0d2",
       "artworkHash": "e8ff989dc10b135fa2bfe1bae215e7bd86c4dd61443e3ed6db5ec770d063c8eb",
       "render": "Burning Abyss - Rubic.png",
-      "renderHash": "7fd8151990cba0dd5d5c68a7031ad9f68e3523d74bdb47dd92b812fa306fbbae",
-      "renderPixelHash": "9043334ccab66e3c21f2b2c55d002ae9b07b43153cb85a1a8bd3af7047580376"
+      "renderHash": "1c24c5335b3e9771978c41abd88f606882202cd796f100394a440fb94e91db1d",
+      "renderPixelHash": "f494646c2dc4850276d1a8344f3d91495dc55abc6fdc9937eaf502dad90209b9"
     },
     {
       "id": "card burning abyss - scarm",
@@ -206,8 +210,8 @@
       "sourceHash": "d74cd2a74c97e6f6d201dd301fb93fe77b608e2d3118e3d990454729a22f3de7",
       "artworkHash": "dfbd8193543a78b68a8b916d1707710370363c46db2d6d1ef3764464d3d9e6c5",
       "render": "Burning Abyss - Scarm.png",
-      "renderHash": "deaf5beb9a2b4d33f54754492f3d890dabef115bb3e47adc1e0cb3bea4922843",
-      "renderPixelHash": "c80821a1a2d578e7f052ac9da2fdf245f3291d67e876b13917e7266911f5b9ea"
+      "renderHash": "bdd6a7a4126c1d65097caff12083294475b043797f1ad638678b100cfcc9933d",
+      "renderPixelHash": "98b6e85a536b867ffde82b40ade594366b938b274a29d0e1609f900584960a51"
     },
     {
       "id": "card burning abyss - terminus",
@@ -216,8 +220,8 @@
       "sourceHash": "a50c6b6c2993e73e0d772b367115ef37c97d1196ad765025053194ba8481a110",
       "artworkHash": "bf42514a849ebdfde33a6aa1d1229cb4caaab9c0df5befc61834d60abda84b13",
       "render": "Burning Abyss - Terminus.png",
-      "renderHash": "6b9d4402c431bff77abedec843fb3b551e106d6bee1b986bbf33170f848f52ed",
-      "renderPixelHash": "474b0ab01826abc93c95d57cfed21678acdcd21d61cf8c633d7dad0d268160e9"
+      "renderHash": "83ea50e74d27e73010cf9ef9781c12d79bc1ca2bccf02230d825bca4fc4531ff",
+      "renderPixelHash": "6b40c7e1c26ed069c482818c9c5568840949a9572761d56ae7c078f851a71927"
     },
     {
       "id": "card burning abyss - traveler",
@@ -226,8 +230,8 @@
       "sourceHash": "140c06534d7e09d10602ad24b0876f5618e3088a328d209b432b2687bd108f66",
       "artworkHash": "486edd160f8f7cf54097ba7069b4108cb4c0947656939482461dea274b8d4ace",
       "render": "Burning Abyss - Traveler.png",
-      "renderHash": "e5698b0acc9acd139c26f77ed654c7fef846003fb593a90108006b8f25f5da36",
-      "renderPixelHash": "eac96dcc384a882ffe5a3f288dc95d3364d0bd62ad8e958abdcccee3854dee0f"
+      "renderHash": "cc4cf7045e454c06a9e6f19a88c99007a572589ecf07b9d07a7344b0b1e71307",
+      "renderPixelHash": "d1cdc696e2d70602ed3c8c3385d548e4752d09adee2623ba3ca76ae852b4d4b8"
     },
     {
       "id": "card burning abyss - virgil",
@@ -236,8 +240,8 @@
       "sourceHash": "b21ec68ff7c19a58a1118f60ac7db392a7393e02ba49260ca728ad53e262a13c",
       "artworkHash": "280a8f0874877970dab5460d9ff6a0f1652c2abc435d9de039990804b5bcff3e",
       "render": "Burning Abyss - Virgil.png",
-      "renderHash": "d33075f515662c47e33025a68b753bd2c3edb04107985983679f24b00dd29955",
-      "renderPixelHash": "365883f89c4d0c909f8680c4dfdf22de9399e9d93e5e41b9c445c38eb82e5e04"
+      "renderHash": "7f5eb13fc6339b200144fe3f910e7a9d0bf9813cd044283b88d48e24f1453004",
+      "renderPixelHash": "78141dc0670707b6d72f25dbf91917d58a57a5b86ff672413f0db9762287f403"
     },
     {
       "id": "card crane crane",
@@ -246,8 +250,8 @@
       "sourceHash": "4973d97e5152a48093494958d5f70a4301e65d2ceed3ea1c2b5f27db5f325497",
       "artworkHash": "65f74816f73ad8e7bb4f5c8d451cd2ab15507c85794cc542c76fe916532ac6b3",
       "render": "Crane Crane.png",
-      "renderHash": "51a548f1303e3e1989703858b0958e0e6bc8d1e904052bb0c6eef49eb65619e9",
-      "renderPixelHash": "487e08079266c51a5c82adb99fc9eea613526b96369560540d2d6445a8b7ba2e"
+      "renderHash": "126bcb61c3100e7a0946d32d86de1aae05830658052762e47efa54680eb10abe",
+      "renderPixelHash": "a5ccd2ff645ed4328d34e6e78e1d53367b841d9a96d4208723d50fb1d32b81af"
     },
     {
       "id": "card downerd magician",
@@ -256,8 +260,8 @@
       "sourceHash": "797fcb392222392446e8ebc65c0f2a75a3b941a23bebe92692b8087c6e6f4a28",
       "artworkHash": "78880f829ecaf2ae3d01deb6fa1dbecba266a9570de1f39b2814e2167795e0be",
       "render": "Downerd Magician.png",
-      "renderHash": "e6d9e407a1dfa637128e3dffe3b363fc8281ab6e9dfa81f2b8a827275d24748a",
-      "renderPixelHash": "d5be7510a6db7bf884529328d6bd91276b9ea1148053c6ca6e1e7581e66b944d"
+      "renderHash": "53e49c3fa64200bf584012dd74dea7cab2be6cd9df1bfee71052cd5fe2a4f1aa",
+      "renderPixelHash": "70e2b0b5b63dfbf71252f1b2d1be657d95bf83bc5011cf642a3d5fc170c11fc8"
     },
     {
       "id": "card fiend griefing",
@@ -266,8 +270,8 @@
       "sourceHash": "07bd3c050abc03b1de33883e6ba0c5adbc370276fd62f60feaca890bd1126128",
       "artworkHash": "42ab87f51d5546c731abf9fba16b137281f625df5c6f390915f58a98733bd5cb",
       "render": "Fiend Griefing.png",
-      "renderHash": "2af31360c757ab9e3e91bbc9fc7745fc867d885f00221a20740e24b4176e696f",
-      "renderPixelHash": "08afab5959b8b45338a92c7dbc64bcda97c82b520cf9566cbdd483d4bb5018e5"
+      "renderHash": "a5ee4881e8afe0c1786b6a655d6fee27b6d027062b0f9723ace4df186c72741e",
+      "renderPixelHash": "f5756be0fe0f15390f70cbe51de060c2538aa57d03cbb0a61b56e1821bb4ff68"
     },
     {
       "id": "card fiendish rhino warrior",
@@ -276,8 +280,8 @@
       "sourceHash": "7349947440561bd6ce957e70ef74e3af94826a7dbf0fab68557d439783473284",
       "artworkHash": "982bde9f545a9c7cc984b163e0ef8705eb38a315d9e229a55ba583d78a374d11",
       "render": "Fiendish Rhino Warrior.png",
-      "renderHash": "2e9a29e4a457587cc99c013296e0f3434fd2fbb54bdec89d9ec406be24037aa6",
-      "renderPixelHash": "961a184abe82982f6bbf9cde23329b969b16db67cd8219cf4846550a345bdc91"
+      "renderHash": "271de7c1dc5230f0f6bb39e91580bedb5acae2aaa45ea30185814290881e39f1",
+      "renderPixelHash": "ee4bf1c59ef9e3d668a1bc3ce62b664758e735059b5757a60a99e7fdcad7064a"
     },
     {
       "id": "card leviair the sea dragon",
@@ -286,8 +290,8 @@
       "sourceHash": "b71f22db61edb74fe8101ba1243c1081996da0cbf43a88fc008a244ef7dcfd45",
       "artworkHash": "e3de72059a712fde32eef72636430efeb49944ee1f430c9fa27cae72c4f4181c",
       "render": "Leviair the Sea Dragon.png",
-      "renderHash": "330868e6f18af346335d478d2d0a9492c9e8d4d8c14ffaab556533708699d5b0",
-      "renderPixelHash": "f6f1339c1c9156c6af53e7aa5e001dd43cc1b921dc4545d21666589b0f838457"
+      "renderHash": "1cd94f9858105b10daf638a85114fb9183eb6b553f9a30a644be9ff6a7248e56",
+      "renderPixelHash": "1f73c895702f460ef41b3f4bfcbabce9526a439e1a857a02138d1f430e5598bd"
     },
     {
       "id": "card mathematician",
@@ -296,8 +300,8 @@
       "sourceHash": "3eea403562ab72aa2181b3d50648509c917f7d0f684a52941785bdd4871abe7b",
       "artworkHash": "87c3d865a73c20ccfbe50e6d159af281e298207c5a2039cd8531f5e1ced1ab98",
       "render": "Mathematician.png",
-      "renderHash": "9181ef31088cb0a1ab0ec7f7fe9d105ad413cc708bc260dc2f07b944b52d66f1",
-      "renderPixelHash": "06272aa79e89824ba78b5b21eca4de6a9a1c2b9651d9086e6ddcb7da9882a786"
+      "renderHash": "c695609ad94c361ccd03aa66b31c3a2ba0ac3f3b13ce3254e26e8e9ba330b753",
+      "renderPixelHash": "a7a784cbc37d00c0b1bc40744f7ccc2b6c4577f65737da15e08920aa504881c5"
     },
     {
       "id": "card tour guide from the underworld",
@@ -306,8 +310,8 @@
       "sourceHash": "d52fb6bdac2a5dafa5494736f9155df6cc3d1477494e302615183ca662b701d2",
       "artworkHash": "b1c347098a101ed8f9f71c8d10e9690a1020dcf8d06654fcd66745e22f985218",
       "render": "Tour Guide From the Underworld.png",
-      "renderHash": "cfcc7657115d3c65b3fc68a11fe753a96ed2216ce611c54abf61ce0a69d0dafd",
-      "renderPixelHash": "18e1b09b773dc049198f446712394a3d1799a3ee248a53adf54d0398b8676a68"
+      "renderHash": "c39ae5b717a55cde9d7c81aa1f9168d206f5ed6f14689bbc069a04d90aa07e5d",
+      "renderPixelHash": "1e74c5c21ea46ccb13b2606b8a6b391b177cbc8ea2226b64c72f7d8d5d33a362"
     }
   ]
 }
