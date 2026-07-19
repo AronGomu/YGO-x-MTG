@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CardPicture from '../components/CardPicture.astro';
+import StatusBadge from '../components/StatusBadge.astro';
+import { catalog, cardsById, withBase, formatDate } from '../lib/catalog';
+
+const base = import.meta.env.BASE_URL;
+const latest = catalog.updates
+  .slice(0, 12)
+  .map((update) => ({ ...update, card: cardsById.get(update.cardId)! }));
+const heroSection = catalog.sections.find(
+  (section) => section.slug === 'nekroz',
+)!;
+---
+
+<BaseLayout
+  title="YGO × MTG — The Blackfoil Archive"
+  description="Faithful Yu-Gi-Oh! gameplay identities rebuilt as playable Magic cards."
+  image={heroSection.image}
+  accent="ice"
+>
+  <section class="hero">
+    <img
+      class="hero-art"
+      src={withBase(base, heroSection.image)}
+      alt="Nekroz of Trishula artwork in icy ritual light"
+      width="1200"
+      height="800"
+      fetchpriority="high"
+    />
+    <div class="hero-content">
+      <h1>Yu-Gi-Oh! feel.<br />Playable under Magic rules.</h1>
+      <p>
+        Enter a source-backed archive of familiar identities rebuilt for a
+        custom cube—canonical renders, readable rules, stable card pages, and
+        visible history.
+      </p>
+      <div class="hero-actions">
+        <a class="primary-link" href={withBase(base, heroSection.route)}
+          >Explore Nekroz</a
+        ><a class="secondary-link" href={withBase(base, '/updates/')}
+          >See what changed</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="page-shell">
+    <div class="section-heading">
+      <div>
+        <h2>Latest from the archive</h2><p>
+          New additions and meaningful card changes, ordered by source
+          modification date.
+        </p>
+      </div><a href={withBase(base, '/updates/')}>View all updates →</a>
+    </div>
+    <ul class="update-list">
+      {
+        latest.map(({ card, status }, index) => (
+          <li class="update-item">
+            <a href={withBase(base, card.route)}>
+              <>
+                <CardPicture card={card} eager={index < 3} />
+                <span class="update-meta">
+                  <>
+                    <span>
+                      <>
+                        <strong>{card.name}</strong>
+                        <small>{formatDate(card.modified)}</small>
+                      </>
+                    </span>
+                    <StatusBadge status={status} />
+                  </>
+                </span>
+              </>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section aria-labelledby="catalog-heading">
+    <div class="page-shell section-heading">
+      <div>
+        <h2 id="catalog-heading">Ten sections. One cube.</h2><p>
+          Non-Archetype staples come first; defined archetypes follow as
+          complete mechanical packages. Shared structure keeps every gallery
+          legible while artwork controls its atmosphere.
+        </p>
+      </div>
+    </div>
+    <div class="section-menu">
+      {
+        catalog.sections.map((section) => (
+          <a class="section-tile" href={withBase(base, section.route)}>
+            <>
+              <img
+                src={withBase(base, section.image)}
+                alt=""
+                width="1200"
+                height="800"
+                loading="lazy"
+              />
+              <div>
+                <>
+                  <h3>{section.label}</h3>
+                  <p>
+                    {section.count} published cards · Updated{' '}
+                    {section.latestModified
+                      ? formatDate(section.latestModified)
+                      : '—'}
+                  </p>
+                </>
+              </div>
+            </>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

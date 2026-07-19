@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CardPicture from '../../components/CardPicture.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import {
+  catalog,
+  cardsById,
+  sectionsBySlug,
+  withBase,
+  formatDate,
+} from '../../lib/catalog';
+const base = import.meta.env.BASE_URL;
+const updates = catalog.updates.map((update) => ({
+  ...update,
+  card: cardsById.get(update.cardId)!,
+  section: sectionsBySlug.get(update.sectionSlug)!,
+}));
+---
+
+<BaseLayout
+  title="Card updates — YGO × MTG"
+  description="New and meaningfully updated cards across the YGO × MTG cube catalog."
+>
+  <div class="page-shell">
+    <header class="section-heading">
+      <div>
+        <h1>Card updates</h1><p>
+          Canonical feed for new and meaningfully changed cards across all
+          published sections.
+        </p>
+      </div>
+    </header>
+    <ul class="update-list">
+      {
+        updates.map(({ card, section, status }, index) => (
+          <li class="update-item">
+            <a href={withBase(base, card.route)}>
+              <>
+                <CardPicture {card} eager={index < 3} />
+                <span class="update-meta">
+                  <>
+                    <span>
+                      <>
+                        <strong>{card.name}</strong>
+                        <small>
+                          {section.label} · {formatDate(card.modified)}
+                        </small>
+                      </>
+                    </span>
+                    <StatusBadge {status} />
+                  </>
+                </span>
+              </>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

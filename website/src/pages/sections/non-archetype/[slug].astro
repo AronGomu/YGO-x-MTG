@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FilterGallery from '../../../components/FilterGallery.svelte';
+import {
+  catalog,
+  cardsById,
+  formatDate,
+  toGalleryCard,
+  withBase,
+} from '../../../lib/catalog';
+
+export function getStaticPaths() {
+  return catalog.sections
+    .filter((section) => section.kind === 'non-archetype')
+    .map((section) => ({ params: { slug: section.slug }, props: { section } }));
+}
+const { section } = Astro.props;
+const cards = section.cardIds.map((id: string) =>
+  toGalleryCard(cardsById.get(id)!),
+);
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title={`${section.label} cards — YGO × MTG`}
+  description={section.intro}
+  image={section.image}
+  accent={section.accent}
+>
+  <div class="page-shell">
+    <section class="catalog-hero">
+      <div>
+        <p><a href={base}>Archive</a> / Non-Archetype</p><h1>
+          {section.label}
+        </h1><p>{section.intro}</p><div class="catalog-stats">
+          <span><strong>{section.count}</strong> published cards</span>{
+            section.latestModified && (
+              <span>
+                Latest update{' '}
+                <strong>{formatDate(section.latestModified)}</strong>
+              </span>
+            )
+          }
+        </div>{
+          section.diagnostics.length > 0 && (
+            <p role="status">
+              {section.diagnostics.length} incomplete source cards are withheld
+              until their public rules data is complete.
+            </p>
+          )
+        }
+      </div>
+      <img
+        src={withBase(base, section.image)}
+        alt={`${section.label} iconic card artwork`}
+        width="1200"
+        height="800"
+        fetchpriority="high"
+      />
+    </section>
+    <FilterGallery client:load {cards} {base} accent={section.accent} />
+  </div>
+</BaseLayout>

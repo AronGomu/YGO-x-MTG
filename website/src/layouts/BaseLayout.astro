@@ -1,0 +1,74 @@
+---
+import Navigation from '../components/Navigation.svelte';
+import SearchPalette from '../components/SearchPalette.svelte';
+import Seo from '../components/Seo.astro';
+import { catalog } from '../lib/catalog';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  accent?: string;
+}
+const { title, description, image, accent = 'relic' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const navSections = catalog.sections.map(
+  ({ slug, label, kind, route, count }) => ({
+    slug,
+    label,
+    kind,
+    route,
+    count,
+  }),
+);
+const searchCards = catalog.cards.map(
+  ({ id, name, matchNames, route, sectionSlug, manifestIndex }) => ({
+    id,
+    name,
+    matchNames,
+    route,
+    sectionSlug,
+    manifestIndex,
+  }),
+);
+---
+
+<!doctype html>
+<html lang="en" data-accent={accent}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="oklch(0.08 0 0)" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-src 'none'; manifest-src 'self'"
+    />
+    <Seo {title} {description} {image} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <Navigation
+      client:load
+      sections={navSections}
+      currentPath={Astro.url.pathname}
+      {base}
+    />
+    <header class="site-header">
+      <a class="compact-brand" href={base}>YGO <span>×</span> MTG</a>
+      <SearchPalette client:load cards={searchCards} {base} />
+    </header>
+    <main id="main-content"><slot /></main>
+    <footer class="site-footer">
+      <p>
+        Fan-made card-design archive. Yu-Gi-Oh! and Magic: The Gathering remain
+        property of their respective owners.
+      </p>
+      <nav aria-label="Footer">
+        <a href={`${base}legal/`}>Attribution & provenance</a><a
+          href={`${base}updates/`}>Card updates</a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

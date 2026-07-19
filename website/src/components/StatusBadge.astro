@@ -1,0 +1,11 @@
+---
+interface Props {
+  status: 'new' | 'updated';
+}
+const { status } = Astro.props;
+---
+
+<span class={`status status--${status}`}
+  ><span aria-hidden="true">{status === 'new' ? '✦' : '↻'}</span>
+  {status === 'new' ? 'New' : 'Updated'}</span
+>

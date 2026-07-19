@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Attribution & provenance — YGO × MTG"
+  description="Fan-project, source, asset, and mana-symbol attribution for the YGO × MTG showcase."
+>
+  <article class="page-shell legal-copy">
+    <h1>Attribution & provenance</h1><p>
+      YGO × MTG is an independent, non-commercial fan design project. Yu-Gi-Oh!
+      card names and characters belong to Konami and their respective rights
+      holders. Magic: The Gathering terminology and mana symbols belong to
+      Wizards of the Coast.
+    </p><h2>Source-backed cards</h2><p>
+      Published text comes from English folder-form Magic Set Editor projects in
+      this repository. Card pages expose an allowlisted public data shape;
+      editor notes, local paths, and unknown source fields are never public.
+    </p><h2>Artwork and renders</h2><p>
+      Canonical card renders are preserved in source projects. Public copies are
+      regenerated without embedded source metadata. Publication remains subject
+      to project asset approval and withdrawal records; withdrawing an asset
+      removes it from future website output but cannot erase public Git history
+      or existing clones.
+    </p><h2>Historical snapshots</h2><p>
+      Snapshots preserve selected public card data and render hashes against a
+      complete section baseline. They document catalog history; they do not
+      replace source projects.
+    </p>
+  </article>
+</BaseLayout>

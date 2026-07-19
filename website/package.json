@@ -1,0 +1,49 @@
+{
+  "name": "ygo-mtg-showcase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node scripts/build-content.mjs && astro dev",
+    "build": "node scripts/build-content.mjs && astro build && node scripts/harden-csp.mjs && node scripts/scan-dist.mjs",
+    "preview": "astro preview",
+    "check": "node scripts/build-content.mjs && astro check",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "content:check": "node scripts/build-content.mjs --check",
+    "snapshots:check": "node scripts/check-snapshot-immutability.mjs",
+    "links:check": "node scripts/check-links.mjs",
+    "budgets:check": "node scripts/check-budgets.mjs",
+    "audit:deps": "npm audit --audit-level=high && npm run licenses:check",
+    "licenses:check": "node scripts/check-licenses.mjs",
+    "rights:check": "node scripts/check-rights.mjs",
+    "ci": "npm run format:check && npm run lint && npm run check && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "9.0.1",
+    "astro": "7.1.1",
+    "sharp": "0.34.5",
+    "svelte": "5.56.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.6",
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.61.1",
+    "@types/node": "25.0.3",
+    "eslint": "9.39.2",
+    "eslint-plugin-astro": "1.6.0",
+    "eslint-plugin-svelte": "3.15.0",
+    "prettier": "3.8.1",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-svelte": "3.4.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.53.1",
+    "vitest": "4.1.10"
+  }
+}

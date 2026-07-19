@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "pending-owner-approval",
+  "scope": "MSE_projects canonical renders and referenced artwork",
+  "policy": "Local builds are allowed. Public deployment remains blocked until owner approval and per-asset hashes are recorded.",
+  "approvedAt": null,
+  "approvedBy": null,
+  "assets": []
+}

@@ -1,0 +1,8 @@
+node_modules/
+.astro/
+dist*/
+public/generated/
+src/generated/
+playwright-report/
+test-results/
+coverage/

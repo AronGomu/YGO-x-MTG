@@ -1,0 +1,28 @@
+---
+import { catalog, withBase } from '../lib/catalog';
+export function getStaticPaths() {
+  return catalog.cards.flatMap((card) =>
+    card.routeAliases.map((alias) => ({
+      params: { alias: alias.replace(/^\/+|\/+$/g, '') },
+      props: { target: card.route },
+    })),
+  );
+}
+const target = withBase(import.meta.env.BASE_URL, Astro.props.target);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <link rel="canonical" href={new URL(target, Astro.site)} />
+    <title>Card route moved</title>
+  </head>
+  <body
+    ><p>
+      This card route moved. <a href={target}>Continue to current card page</a>.
+    </p></body
+  >
+</html>

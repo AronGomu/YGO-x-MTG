@@ -1,0 +1,12 @@
+---
+import { renderMseMarkup } from '../lib/mse-markup';
+
+interface Props {
+  value: string;
+  class?: string;
+}
+const { value, class: className } = Astro.props;
+const html = renderMseMarkup(value);
+---
+
+<div class={className} set:html={html} />

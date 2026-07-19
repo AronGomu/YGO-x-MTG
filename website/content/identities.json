@@ -1,0 +1,1400 @@
+{
+  "schemaVersion": 1,
+  "cards": [
+    {
+      "stableId": "aa-zeus-sky-thunder",
+      "currentName": "AA-ZEUS - Sky Thunder",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "absolute-king-back-jack",
+      "currentName": "Absolute King Back Jack",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "accesscode-talker",
+      "currentName": "Accesscode Talker",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "allure-of-darkness",
+      "currentName": "Allure of Darkness",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "ancient-fairy-dragon",
+      "currentName": "Ancient Fairy Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "apollousa-bow-of-the-goddess",
+      "currentName": "Apollousa, Bow of the Goddess",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "ash-blossom-and-joyous-spring",
+      "currentName": "Ash Blossom & Joyous Spring",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "bagooska",
+      "currentName": "Bagooska",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "bamboozling-gossip-shadow",
+      "currentName": "Bamboozling Gossip Shadow",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "beatrice-lady-of-the-eternal",
+      "currentName": "Beatrice, Lady of the Eternal",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "big-eye",
+      "currentName": "Big Eye",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "black-rose-dragon",
+      "currentName": "Black Rose Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "black-rose-moonlight-dragon",
+      "currentName": "Black Rose Moonlight Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "book-of-eclipse",
+      "currentName": "Book of Eclipse",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "book-of-moon",
+      "currentName": "Book of Moon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "borrelsword-dragon",
+      "currentName": "Borrelsword Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "breakthrough-skill",
+      "currentName": "Breakthrough Skill",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "brionac-dragon-of-the-ice-barrier",
+      "currentName": "Brionac, Dragon of the Ice Barrier",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-alich",
+      "currentName": "Burning Abyss - Alich",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-barbar",
+      "currentName": "Burning Abyss - Barbar",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-cagna",
+      "currentName": "Burning Abyss - Cagna",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-calcab",
+      "currentName": "Burning Abyss - Calcab",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-cherubini",
+      "currentName": "Burning Abyss - Cherubini",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-cir",
+      "currentName": "Burning Abyss - Cir",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-dante",
+      "currentName": "Burning Abyss - Dante",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-dante-pilgrim",
+      "currentName": "Burning Abyss - Dante, Pilgrim",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-draghig",
+      "currentName": "Burning Abyss - Draghig",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-farfa",
+      "currentName": "Burning Abyss - Farfa",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-fire-lake",
+      "currentName": "Burning Abyss - Fire Lake",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-good-and-evil",
+      "currentName": "Burning Abyss - Good & Evil",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-graff",
+      "currentName": "Burning Abyss - Graff",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-libic",
+      "currentName": "Burning Abyss - Libic",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-malacoda",
+      "currentName": "Burning Abyss - Malacoda",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-rubic",
+      "currentName": "Burning Abyss - Rubic",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-scarm",
+      "currentName": "Burning Abyss - Scarm",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-terminus",
+      "currentName": "Burning Abyss - Terminus",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-traveler",
+      "currentName": "Burning Abyss - Traveler",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "burning-abyss-virgil",
+      "currentName": "Burning Abyss - Virgil",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "chaos-angel",
+      "currentName": "Chaos Angel",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "compulsory-evacuation-device",
+      "currentName": "Compulsory Evacuation Device",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "constellar-pleiades",
+      "currentName": "Constellar Pleiades",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "coordius-the-triphasic-dealmon",
+      "currentName": "Coordius the Triphasic Dealmon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "coral-dragon",
+      "currentName": "Coral Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "crane-crane",
+      "currentName": "Crane Crane",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "curse-of-the-shadow-prison",
+      "currentName": "Curse of the Shadow Prison",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "d-d-crow",
+      "currentName": "D.D. Crow",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "daigusto-emeral",
+      "currentName": "Daigusto Emeral",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "dark-hole",
+      "currentName": "Dark Hole",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "downerd-magician",
+      "currentName": "Downerd Magician",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "dugares-the-timeless",
+      "currentName": "Dugares the Timeless",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "effect-veiler",
+      "currentName": "Effect Veiler",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-anoyatyllis",
+      "currentName": "El Shaddoll - Anoyatyllis",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-apkallone",
+      "currentName": "El Shaddoll - Apkallone",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-construct",
+      "currentName": "El Shaddoll - Construct",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-fusion",
+      "currentName": "El Shaddoll - Fusion",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-grysta",
+      "currentName": "El Shaddoll - Grysta",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-shekhinaga",
+      "currentName": "El Shaddoll - Shekhinaga",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-wendigo",
+      "currentName": "El Shaddoll - Wendigo",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "el-shaddoll-winda",
+      "currentName": "El Shaddoll - Winda",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "elder-entity-n-tss",
+      "currentName": "Elder Entity N'tss",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "evilswarm-exciton-knight",
+      "currentName": "Evilswarm Exciton Knight",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "fiend-griefing",
+      "currentName": "Fiend Griefing",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "fiendish-rhino-warrior",
+      "currentName": "Fiendish Rhino Warrior",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "foolish-burial",
+      "currentName": "Foolish Burial",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "formula-synchron",
+      "currentName": "Formula Synchron",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "gagaga-cowboy",
+      "currentName": "Gagaga Cowboy",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "garura-wings-of-resonant-life",
+      "currentName": "Garura, Wings of Resonant Life",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "goyo-guardian",
+      "currentName": "Goyo Guardian",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "guardian-chimera",
+      "currentName": "Guardian Chimera",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "hel-shaddoll-hollow",
+      "currentName": "Hel Shaddoll - Hollow",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "herald-of-the-arc-light",
+      "currentName": "Herald of the Arc Light",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "high-priestess-of-prophecy",
+      "currentName": "High Priestess of Prophecy",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "hope-harbinger-dragon",
+      "currentName": "Hope Harbinger Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "hot-red-dragon-archfiend-abyss",
+      "currentName": "Hot Red Dragon Archfiend Abyss",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "instant-fusion",
+      "currentName": "Instant Fusion",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "justice-of-prophecy",
+      "currentName": "Justice of Prophecy",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "karma-cut",
+      "currentName": "Karma Cut",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "leviair-the-sea-dragon",
+      "currentName": "Leviair the Sea Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "lyrilusc-assembled-nightingale",
+      "currentName": "Lyrilusc - Assembled Nightingale",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "manju-of-the-ten-thousand-hands",
+      "currentName": "Manju of the Ten Thousand Hands",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "mathematician",
+      "currentName": "Mathematician",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "maxx-c",
+      "currentName": "Maxx “C”",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "monster-reborn",
+      "currentName": "Monster Reborn",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "mudragon-of-the-swamp",
+      "currentName": "Mudragon of the Swamp",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "mysterion-the-dragon-crown",
+      "currentName": "Mysterion the Dragon Crown",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "mystical-space-typhoon",
+      "currentName": "Mystical Space Typhoon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nael-shaddoll-ariel",
+      "currentName": "Nael Shaddoll - Ariel",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-brionac",
+      "currentName": "Nekroz - Brionac",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-catastor",
+      "currentName": "Nekroz - Catastor",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-clausolas",
+      "currentName": "Nekroz - Clausolas",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-cycle",
+      "currentName": "Nekroz - Cycle",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-dance-princess",
+      "currentName": "Nekroz - Dance Princess",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-decisive-armor",
+      "currentName": "Nekroz - Decisive Armor",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-exa",
+      "currentName": "Nekroz - Exa",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-great-sorcerer",
+      "currentName": "Nekroz - Great Sorcerer",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-gungnir",
+      "currentName": "Nekroz - Gungnir",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-kaleidoscope",
+      "currentName": "Nekroz - Kaleidoscope",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-mirror",
+      "currentName": "Nekroz - Mirror",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-shurit",
+      "currentName": "Nekroz - Shurit",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-trishula",
+      "currentName": "Nekroz - Trishula",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-unicore",
+      "currentName": "Nekroz - Unicore",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "nekroz-valkyrus",
+      "currentName": "Nekroz - Valkyrus",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "panzer-dragon",
+      "currentName": "Panzer Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "phoenix-wing-wind-blast",
+      "currentName": "Phoenix Wing Wind Blast",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "predaplant-dragostapelia",
+      "currentName": "Predaplant Dragostapelia",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "predaplant-triphyoverutum",
+      "currentName": "Predaplant Triphyoverutum",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "preparation-of-rites",
+      "currentName": "Preparation of Rites",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "puru-shaddoll-aeon",
+      "currentName": "Puru Shaddoll - Aeon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "qad-shaddoll-keios",
+      "currentName": "Qad Shaddoll - Keios",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "raigeki",
+      "currentName": "Raigeki",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "red-supernova-dragon",
+      "currentName": "Red Supernova Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "ree-shaddoll-wendi",
+      "currentName": "Ree Shaddoll - Wendi",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "resh-shaddoll-incarnation",
+      "currentName": "Resh Shaddoll - Incarnation",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "scarlight-red-dragon-archfiend",
+      "currentName": "Scarlight Red Dragon Archfiend",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "sea-monster-of-theseus",
+      "currentName": "Sea Monster of Theseus",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "senju-of-the-thousand-hands",
+      "currentName": "Senju of the Thousand Hands",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-beast",
+      "currentName": "Shaddoll - Beast",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-core",
+      "currentName": "Shaddoll - Core",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-dragon",
+      "currentName": "Shaddoll - Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-falco",
+      "currentName": "Shaddoll - Falco",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-fusion",
+      "currentName": "Shaddoll - Fusion",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-hedgehog",
+      "currentName": "Shaddoll - Hedgehog",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-hound",
+      "currentName": "Shaddoll - Hound",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-schism",
+      "currentName": "Shaddoll - Schism",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "shaddoll-squamata",
+      "currentName": "Shaddoll - Squamata",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "silent-honor-ark",
+      "currentName": "Silent Honor ARK",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "sinister-shadow-games",
+      "currentName": "Sinister Shadow Games",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-library-of-the-crescent",
+      "currentName": "Spellbook Library of the Crescent",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-magician-of-prophecy",
+      "currentName": "Spellbook Magician of Prophecy",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-eternity",
+      "currentName": "Spellbook of Eternity",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-fate",
+      "currentName": "Spellbook of Fate",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-judgment",
+      "currentName": "Spellbook of Judgment",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-knowledge",
+      "currentName": "Spellbook of Knowledge",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-life",
+      "currentName": "Spellbook of Life",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-miracles",
+      "currentName": "Spellbook of Miracles",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-power",
+      "currentName": "Spellbook of Power",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-secrets",
+      "currentName": "Spellbook of Secrets",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-the-master",
+      "currentName": "Spellbook of the Master",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-of-wisdom",
+      "currentName": "Spellbook of Wisdom",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "spellbook-star-hall",
+      "currentName": "Spellbook Star Hall",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "stardust-dragon",
+      "currentName": "Stardust Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "starving-venom-fusion-dragon",
+      "currentName": "Starving Venom Fusion Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "stealth-kragen",
+      "currentName": "Stealth Kragen",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "super-polymerization",
+      "currentName": "Super Polymerization",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "t-g-hyper-librarian",
+      "currentName": "T.G. Hyper Librarian",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "the-grand-spellbook-tower",
+      "currentName": "The Grand Spellbook Tower",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "time-thief-redoer",
+      "currentName": "Time Thief Redoer",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "tornado-dragon",
+      "currentName": "Tornado Dragon",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "torrential-tribute",
+      "currentName": "Torrential Tribute",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "tour-guide-from-the-underworld",
+      "currentName": "Tour Guide From the Underworld",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "traptrix-rafflesia",
+      "currentName": "Traptrix Rafflesia",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "trishula-dragon-of-the-ice-barrier",
+      "currentName": "Trishula, Dragon of the Ice Barrier",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "twin-twisters",
+      "currentName": "Twin Twisters",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "upstart-goblin",
+      "currentName": "Upstart Goblin",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    },
+    {
+      "stableId": "world-chalice-guardragon-almarduke",
+      "currentName": "World Chalice Guardragon Almarduke",
+      "formerNames": [],
+      "formerFilenames": [],
+      "routeAliases": [],
+      "retired": false,
+      "withdrawn": false
+    }
+  ]
+}

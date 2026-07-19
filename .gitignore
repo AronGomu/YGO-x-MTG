@@ -6,3 +6,17 @@
 # Python bytecode
 __pycache__/
 *.py[cod]
+.pytest_cache/
+
+# Website dependencies, generated content, and browser output
+website/node_modules/
+website/.astro/
+website/dist*/
+website/public/generated/
+website/src/generated/
+website/playwright-report/
+website/test-results/
+website/coverage/
+
+# Agent run-state scratch
+.agentsystem/
