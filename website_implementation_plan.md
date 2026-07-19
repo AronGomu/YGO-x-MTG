@@ -1,5 +1,13 @@
 # YGO × MTG Showcase Website — Checked Implementation Plan
 
+## NOTE : For all design related implementation. Use Impeccable skills and use DESIGN.md.
+
+## Validation audit — 2026-07-19
+
+- **Result: not complete.** Every checkbox was reviewed under a proof-required rule.
+- Unchecked boxes remain unchecked where code, test, commit-history, external-setting, deployment, rights, or visual-approval evidence is missing.
+- Full evidence matrix: [`website_validation_report.md`](website_validation_report.md).
+
 ## Plan status
 
 - [x] Planning only. No application code built in this phase.

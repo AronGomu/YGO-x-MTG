@@ -23,6 +23,18 @@ Enter the root of your Magic Set Editor installation when prompted. The setup sc
 
 A successful run creates a gitignored `.env` containing `MSE_ROOT`, `MSE_EXECUTABLE`, `MSE_CLI`, `MSE_DATA_DIR`, `MSE_FONTS_DIR`, and `MSE_PROJECTS_DIR`. Run the setup again if either the repository or MSE installation is moved.
 
+## Showcase website
+
+`website/` contains the English-only static Astro + Svelte showcase. It derives allowlisted public data and metadata-stripped image variants from manifest-included cards; it never edits MSE source. Setup, content, testing, render export, snapshot, rights, and deployment procedures live in [`website/README.md`](website/README.md).
+
+```bash
+cd website
+npm ci
+npm run dev
+```
+
+Canonical render validation/export uses `.script/export_mse_renders.py`; shared source fingerprints and meaningful timestamp behavior live in `.script/mse_content.py`. Public deployment remains blocked until `website/content/asset-rights.json` records owner approval and per-asset hashes.
+
 For unattended setup, pass the installation directly:
 
 ```bash
