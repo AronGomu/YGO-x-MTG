@@ -1,7 +1,7 @@
 # Website implementation validation
 
-**Audit date:** 2026-07-19  
-**Scope:** every checkbox in `website_implementation_plan.md`, `website/`, root MSE tooling/tests, GitHub workflow files, local git history  
+**Audit date:** 2026-07-19
+**Scope:** every checkbox in `website_implementation_plan.md`, `website/`, root MSE tooling/tests, GitHub workflow files, local git history
 **Rule:** `[x]` requires direct code, test, history, runtime, or external-setting proof. Partial impl does not count.
 
 ## Verdict
