@@ -1,0 +1,70 @@
+name: Deploy verified website
+
+on:
+  workflow_run:
+    workflows: [Verify website]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.event == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: website-pages-${{ github.event.workflow_run.head_sha }}
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: verified
+      - name: Verify source and artifact digests
+        shell: bash
+        env:
+          TRUSTED_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          test "$(cat verified/website-pages.source-sha)" = "$TRUSTED_SHA"
+          (cd verified && sha256sum --check website-pages.sha256)
+          python - <<'PY'
+          from pathlib import PurePosixPath
+          import tarfile
+          archive = tarfile.open('verified/website-pages.tar')
+          for member in archive.getmembers():
+              path = PurePosixPath(member.name)
+              if path.is_absolute() or '..' in path.parts:
+                  raise SystemExit(f'unsafe artifact path: {member.name}')
+              if not (member.isfile() or member.isdir()):
+                  raise SystemExit(f'unsafe artifact type: {member.name}')
+          archive.extractall('pages', filter='data')
+          PY
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: pages
+      - id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Smoke-test deployed archive
+        shell: bash
+        env:
+          SITE: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for route in '' 'archetypes/nekroz/' 'sections/non-archetype/creatures/' 'cards/nekroz-trishula/' 'updates/' 'archetypes/nekroz/snapshots/001-2026-07-17/' 'robots.txt' '404.html'; do
+            curl --fail --location --retry 4 --retry-all-errors "${SITE}${route}" >/dev/null
+          done

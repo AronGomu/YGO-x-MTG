@@ -1,0 +1,5 @@
+# Update ownership if repository stewardship changes.
+/.github/workflows/ @AronGomu
+/website/package-lock.json @AronGomu
+/requirements-dev.lock @AronGomu
+/website/content/asset-rights.json @AronGomu
