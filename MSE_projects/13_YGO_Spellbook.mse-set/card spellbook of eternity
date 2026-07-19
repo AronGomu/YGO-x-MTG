@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-17 17:56:34
+	time_modified: 2026-07-19 11:52:17
 	name: Spellbook of Eternity
 	casting_cost: U
 	image: image1.png
@@ -13,11 +13,11 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
-	sub_type:
+	sub_type: 
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
-		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 “Spellbook” depuis votre exil ; <b>Reclaim</b> la cible.
+		<i-auto>(1 - Resolution Hard)</i-auto> Target 1 “Spellbook” from exile; <b>Reclaim</b> the target.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 005/016 C
 	card_code_text_2: 005/016 C

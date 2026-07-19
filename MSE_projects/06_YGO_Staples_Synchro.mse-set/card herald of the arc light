@@ -20,8 +20,8 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<i-auto>(1 - Passif)</i-auto> Si 1 carte devait être mise dans un <b>Grave</b> depuis une main ou un Deck, exilez-la à la place.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Cherchez 1 Ritual Creature ou 1 non-créature Ritual Summon.
+		<i-auto>(1 - Static)</i-auto> If 1 card would be put into a <b>Grave</b> from a hand or a Deck, exile it instead.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — Search 1 Ritual Creature or 1 non-creature Ritual Summon.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 1

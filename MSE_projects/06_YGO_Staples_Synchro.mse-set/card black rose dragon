@@ -20,9 +20,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<b>Vol</b>
-		<i-auto>(1 - Déclenchable)</i-auto> <b>On Enter</b> — Vous pouvez détruire toutes les cartes non-terrain.
-		<i-auto>(2 - Activable Sorcery Soft)</i-auto> <b>Exile 1 Plant from Grave</b> : 1 créature ciblée ne peut pas bloquer ce tour-ci.
+		<b>Flying</b>
+		<i-auto>(1 - Triggered)</i-auto> <b>On Enter</b> — You may destroy all nonland permanents.
+		<i-auto>(2 - Activated Sorcery Soft)</i-auto> <b>Exile 1 Plant from Grave</b>; target 1 creature. It cannot block this turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 3

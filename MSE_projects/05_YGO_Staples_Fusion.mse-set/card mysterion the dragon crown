@@ -20,7 +20,7 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Wizard + 1 Dragon</i>
-		<i-auto>(1 - Déclenchable Soft)</i-auto> Si votre adversaire active une capacité <b>Summon</b> d’une créature : contrecarrez la capacité puis exilez cette créature et exilez toutes les créatures avec le même type depuis le terrain de votre adversaire.
+		<i-auto>(1 - Triggered Soft)</i-auto> If your opponent activates a creature's <b>Summon</b> ability, counter that ability, then exile that creature and all creatures of the same type from your opponent's field.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 3

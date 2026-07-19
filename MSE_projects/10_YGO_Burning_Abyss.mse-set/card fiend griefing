@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -13,10 +13,9 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
-	sub_type:
+	sub_type: 
 	rarity: uncommon
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature dans le Grave de votre adversaire ; mélangez la cible dans le Deck, puis vous pouvez envoyer 1 créature Fiend de votre Deck au Grave.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Target 1 creature in your opponent’s Grave; shuffle the target into the Deck, then you may send 1 Fiend creature from your Deck to <b>Grave</b>.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 026/030 U
 	card_code_text_2: 026/030 U

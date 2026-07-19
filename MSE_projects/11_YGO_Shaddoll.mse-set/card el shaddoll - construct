@@ -22,10 +22,10 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 créature “Shaddoll” + 1 créature blanche</i>
-		<i-auto>(1 - Déclenchable)</i-auto> <b>On Enter</b> — Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Block or Blocked</b> — Si l’autre créature a été Summon, détruisez-la.
-		<i-auto>(3 - Déclenchable)</i-auto> <b>Shaddoll Recovery</b>
+		<i>1 “Shaddoll” creature + 1 white creature</i>
+		<i-auto>(1 - Triggered)</i-auto> <b>On Enter</b> — Send 1 “Shaddoll” card from your Deck to <b>Grave</b>.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Block or Blocked</b> — If the other creature was Summoned, destroy it.
+		<i-auto>(3 - Triggered)</i-auto> <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

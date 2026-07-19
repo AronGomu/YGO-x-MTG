@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 3</i>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Contrecarrez 1 sort non-créature ou 1 capacité déclenchée ciblée.
-		<i-auto>(2 - Déclenchable)</i-auto> Si un adversaire attaque, vous pouvez détacher n’importe quel nombre de matériels de cette carte. Elle peut bloquer 1 fois supplémentaire ce combat pour chaque matériel détaché ainsi.
+		<i>2 creatures MV 3</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Counter 1 non-creature spell or 1 target triggered ability.
+		<i-auto>(2 - Triggered)</i-auto> If an opponent attacks, you may detach any number of materials from this card. It can block 1 additional time this combat for each material detached this way.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 5

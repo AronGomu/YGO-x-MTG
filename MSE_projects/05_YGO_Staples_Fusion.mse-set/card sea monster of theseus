@@ -21,7 +21,7 @@ card:
 	sub_type_3: 
 	sub_type_4: 
 	rarity: rare
-	rule_text: <i>2 créatures Tuner</i>
+	rule_text: <i>2 Tuner creatures</i>
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 3

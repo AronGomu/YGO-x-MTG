@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Cherchez 1 carte “Shaddoll” non-créature.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Cherchez 1 créature “Shaddoll”.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Search 1 non-creature “Shaddoll” card.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Search 1 “Shaddoll” creature.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

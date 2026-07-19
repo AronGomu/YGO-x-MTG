@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
-		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Renvoyez 1 permanent non-terrain ciblé dans la main de son propriétaire.
+		<i-auto>(1 - Static)</i-auto> <b>Abyssal Curse</b>
+		<i-auto>(2 - Activated Hard Linked)</i-auto> <b>Descent</b>
+		<i-auto>(3 - Triggered Hard Linked)</i-auto> <b>On Send Grave</b> — Target 1 nonland permanent; return the target to its owner’s hand.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 1

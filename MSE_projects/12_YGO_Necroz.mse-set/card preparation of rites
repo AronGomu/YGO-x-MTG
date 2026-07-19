@@ -16,7 +16,7 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Cherchez 1 Ritual Creature MV 2 ou moins. Vous pouvez <b>Salvage</b> 1 non-créature Ritual Summon.
+		<i-auto>(1 - Resolution)</i-auto> Search 1 Ritual Creature MV 2 or less. You can <b>Salvage</b> 1 non-creature Ritual Summon.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 018/019 C
 	card_code_text_2: 018/019 C

@@ -22,9 +22,9 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>2 créatures avec le même type et la même couleur mais des noms différents</i>
-		Vol
-		<i-auto>(1 - Déclenchable)</i-auto> <b>On Send Grave</b> — Piochez une carte.
+		<i>2 creatures with the same type and color but different names</i>
+		<b>Flying</b>
+		<i-auto>(1 - Triggered)</i-auto> <b>On Send Grave</b> — Draw 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 4

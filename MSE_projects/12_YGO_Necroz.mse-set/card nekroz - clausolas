@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Activable Sorcery Hard)</i-auto> Défaussez Clausolas : cherchez 1 non-créature Ritual Summon “Nekroz”.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Ciblez 1 créature ; elle devient 0/1 et perd toutes ses capacités jusqu’à la fin du tour.
+		<i-auto>(1 - Activated Sorcery Hard)</i-auto> Discard Clausolas; Search 1 non-creature Ritual Summon “Nekroz”.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Target 1 creature; it becomes 0/1 and loses all its abilities until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 4

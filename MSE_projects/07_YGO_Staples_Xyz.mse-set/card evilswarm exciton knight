@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Si 1 adversaire a plus de cartes sur son terrain que vous avez de cartes sur le terrain et main, <b>Detach 1</b> : détruisez toutes les autres cartes non-terrain.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> If 1 opponent controls more cards than you control and have in your hand, <b>Detach 1</b>; destroy all other nonland permanents on the field.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 1

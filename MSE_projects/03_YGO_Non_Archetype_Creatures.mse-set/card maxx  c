@@ -6,7 +6,7 @@ card:
 	notes: Source: 03_non_archetype_creature.md
 	time_created: 2026-07-10 23:49:32
 	time_modified: 2026-07-17 23:09:40
-	name: Maxx « C »
+	name: Maxx “C”
 	casting_cost: G
 	image: mse_images/image2.png
 	image_2: 
@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Insect</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
-	rule_text: <i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Défaussez Maxx « C » ; si 1 créature est déjà arrivée sur le terrain sous le contrôle d’un adversaire ce tour-ci, jusqu’à la fin du tour, piochez 1 carte <b>On Opponent Creature Enter</b>.
+	rule_text: <i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Discard Maxx “C”; if 1 creature has already entered the field under the control of an opponent this turn, until the end of the turn, draw 1 card <b>On Opponent Creature Enter</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

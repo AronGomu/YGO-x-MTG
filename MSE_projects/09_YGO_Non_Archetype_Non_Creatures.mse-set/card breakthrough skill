@@ -16,8 +16,8 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> La créature ciblée perd toutes ses capacités jusqu’à la fin du tour.
-		<i-auto>(2 - Passif)</i-auto> Vous pouvez lancer cette carte depuis votre Grave. Si vous faites ainsi, exilez-la lorsqu’elle quitte la pile.
+		<i-auto>(1 - Resolution)</i-auto> Target creature loses all its abilities until the end of the turn.
+		<i-auto>(2 - Static)</i-auto> You may cast this card from your Grave. If you do, exile it when it leaves the stack.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 004/017 C
 	card_code_text_2: 004/017 C

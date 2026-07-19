@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Activable Sorcery Hard)</i-auto> Défaussez Brionac : cherchez 1 créature “Nekroz”.
-		<i-auto>(2 - Activable Sorcery Hard)</i-auto> Ciblez 1 créature qui a été mise en jeu depuis un Sideboard ; <b>Bounce</b> la cible.
+		<i-auto>(1 - Activated Sorcery Hard)</i-auto> Discard Brionac; Search 1 “Nekroz” creature.
+		<i-auto>(2 - Activated Sorcery Hard)</i-auto> Target 1 creature that was put onto the field from a Sideboard; <b>Bounce</b> the target.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

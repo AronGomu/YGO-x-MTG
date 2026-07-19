@@ -16,11 +16,11 @@ card:
 	sub_type: <word-list-race-en>Cyberse</word-list-race-en>
 	rarity: rare
 	rule_text:
-		<i>Link — 2+ Creatures</i>
-		Célérité
-		(1 — Passif) Vos adversaires ne peuvent pas répondre aux capacités d'Accesscode Talker.
-		(1 - Déclenchable) <b>On Link Summon</b> — Accesscode gagne +X/+0 jusqu'à la fin du tour, où X est 2 fois le Link Lvl d'une Link Creature de votre Grave.
-		(2 - Activable Sorcery Hard) Exilez une Link Creature de votre terrain ou Grave : détruisez une carte ciblée.
+		<i>2+ Creatures</i>
+		<b>Haste</b>
+		<i-auto>(1 - Static)</i-auto> Your opponents cannot respond to Accesscode Talker's abilities.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Link Summon</b> — Accesscode gains +X/+0 until the end of the turn, where X is 2 times the Link Lvl of a Link Creature from your <b>Grave</b>.
+		<i-auto>(3 - Activated Sorcery Hard)</i-auto> Exile 1 Link Creature from your field or <b>Grave</b> and target 1 card; destroy the target.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 4

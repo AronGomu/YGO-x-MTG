@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Puppet</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Détruisez 1 créature ciblée.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Destroy 1 target creature.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Send 1 “Shaddoll” card from your Deck to Grave.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

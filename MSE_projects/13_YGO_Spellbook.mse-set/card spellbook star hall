@@ -1,11 +1,11 @@
-mse_version: 2.5.8
+﻿mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-17 18:35:18
+	time_modified: 2026-07-19 11:59:23
 	name: Spellbook Star Hall
 	casting_cost: U
 	image: mse_images/image15.png
@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-enchantment></word-list-enchantment>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable)</i-auto> <b>On Your Cast “Spellbook”</b> — Mettez 1 marqueur savoir sur cette carte.
-		<i-auto>(2 - Passif)</i-auto> Les créatures “Spellbook” que vous contrôlez gagnent +1/+1 pour chaque groupe de 5 marqueurs savoir sur cette carte.
-		<i-auto>(3 - Déclenchable)</i-auto> <b>On Leave Field</b> — Vous pouvez chercher 1 créature “Spellbook” MV X ou moins, X étant le nombre de marqueurs savoir sur cette carte.
+		<i-auto>(1 - Triggered)</i-auto> <b>On Cast “Spellbook”</b> — Put 1 counter on this card.
+		<i-auto>(2 - Static)</i-auto> “Spellbook” creatures you control get +1/+1 for every 5 counters on Star Hall.
+		<i-auto>(3 - Triggered)</i-auto> <b>On Leave Field</b> — You may Search 1 “Spellbook” creature MV X or less, where X is the number of counters on Star Hall.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/016 C
 	card_code_text_2: 015/016 C

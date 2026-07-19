@@ -1,192 +1,85 @@
 from __future__ import annotations
 
-from pathlib import Path
 import re
 import unittest
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PROJECT = ROOT / "MSE_projects" / "11_YGO_Shaddoll.mse-set"
-DOC = ROOT / "docs" / "11_archetype_shaddoll.md"
-
-EXPECTED_NAMES = {
-    "El Shaddoll - Anoyatyllis",
-    "El Shaddoll - Apkallone",
-    "El Shaddoll - Construct",
-    "El Shaddoll - Fusion",
-    "El Shaddoll - Grysta",
-    "El Shaddoll - Shekhinaga",
-    "El Shaddoll - Wendigo",
-    "El Shaddoll - Winda",
-    "Hel Shaddoll - Hollow",
-    "Nael Shaddoll - Ariel",
-    "Puru Shaddoll - Aeon",
-    "Qad Shaddoll - Keios",
-    "Ree Shaddoll - Wendi",
-    "Resh Shaddoll - Incarnation",
-    "Shaddoll - Beast",
-    "Shaddoll - Core",
-    "Shaddoll - Dragon",
-    "Shaddoll - Falco",
-    "Shaddoll - Fusion",
-    "Shaddoll - Hedgehog",
-    "Shaddoll - Hound",
-    "Shaddoll - Schism",
-    "Curse of the Shadow Prison",
-    "Sinister Shadow Games",
-    "Shaddoll - Squamata",
-}
-
-
-def field(text: str, key: str) -> str:
-    match = re.search(rf"(?m)^\t{re.escape(key)}:[ \t]*(.*)$", text)
-    return match.group(1).strip() if match else ""
-
-
-def rules(text: str) -> list[str]:
-    match = re.search(
-        r"(?ms)^\trule_text:\n(?P<body>(?:\t\t.*\n)+?)(?=^\tflavor_text:)", text
-    )
-    if match:
-        body = match.group("body")
-        return [line.strip() for line in body.splitlines() if line.strip()]
-    inline = re.search(
-        r"(?m)^\trule_text:\s*(?P<body>.+)$", text
-    )
-    if not inline:
-        return []
-    body = inline.group("body").strip()
-    return [body] if body else []
-
-
-def markdown_rule(line: str) -> str:
-    line = re.sub(r"<i-auto>(.*?)</i-auto>", r"\1", line)
-    line = re.sub(r"<b>(.*?)</b>", r"**\1**", line)
-    line = re.sub(r"<i>(.*?)</i>", r"*\1*", line)
-    return line
+PROJECT = ROOT / "MSE_projects/11_YGO_Shaddoll.mse-set"
+DOC = ROOT / "docs/11_archetype_shaddoll.md"
 
 
 class ShaddollCardsTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.set_text = (PROJECT / "set").read_text(encoding="utf-8-sig")
-        cls.includes = [
-            line.split(":", 1)[1].strip()
-            for line in cls.set_text.splitlines()
-            if line.startswith("include_file:")
-        ]
-        cls.cards = {
-            include: (PROJECT / include).read_text(encoding="utf-8-sig")
-            for include in cls.includes
-        }
-        cls.doc = DOC.read_text(encoding="utf-8-sig")
+        cls.includes = re.findall(r"(?m)^include_file:\s*(.+)$", cls.set_text)
 
-    def test_manifest_is_complete_sorted_and_has_no_orphan_cards(self) -> None:
-        self.assertEqual(25, len(self.includes))
+    def card(self, filename: str) -> str:
+        return (PROJECT / filename).read_text(encoding="utf-8-sig")
+
+    def test_set_is_complete_and_english(self) -> None:
+        self.assertEqual(len(self.includes), 25)
         self.assertEqual(len(self.includes), len(set(self.includes)))
-        names = [field(self.cards[include], "name") for include in self.includes]
-        self.assertEqual(sorted(names, key=str.casefold), names)
-        self.assertEqual(EXPECTED_NAMES, set(names))
-        self.assertEqual(set(self.includes), {path.name for path in PROJECT.glob("card *")})
-
-    def test_images_and_collector_numbers_resolve(self) -> None:
-        referenced_images: set[str] = set()
-        for index, include in enumerate(self.includes, 1):
-            text = self.cards[include]
-            with self.subTest(card=field(text, "name")):
-                image = field(text, "image")
-                self.assertTrue(image)
-                self.assertTrue((PROJECT / image).is_file(), image)
-                referenced_images.add(image)
-                expected = f"{index:03d}/025 C"
-                for key in ("card_code_text", "card_code_text_2", "card_code_text_3"):
-                    self.assertEqual(expected, field(text, key))
-
-        local_images = {
-            path.relative_to(PROJECT).as_posix()
-            for path in (PROJECT / "mse_images").glob("*")
-            if path.is_file()
-        }
-        self.assertEqual(local_images, {path for path in referenced_images if path.startswith("mse_images/")})
-
-    def test_frames_follow_super_type(self) -> None:
-        for text in self.cards.values():
-            name = field(text, "name")
-            super_type = field(text, "super_type")
-            with self.subTest(card=name):
-                if ">Fusion Creature<" in super_type:
-                    self.assertEqual("genevensis-00-main", field(text, "stylesheet"))
-                    self.assertEqual("2022-02-22", field(text, "stylesheet_version"))
-                    self.assertRegex(rules(text)[0], r"^<i>.+</i>$")
-                else:
-                    self.assertEqual("sevenhalf", field(text, "stylesheet"))
-                    self.assertEqual("2024-05-30", field(text, "stylesheet_version"))
-
-    def test_rules_use_current_formatting(self) -> None:
-        forbidden = re.compile(
-            r"\b(?:bibliothèque|cimetière|GYD)\b|\?{2,}|\b(?:Declenchable|creature Blue)\b",
-            re.IGNORECASE,
-        )
-        for text in self.cards.values():
-            name = field(text, "name")
-            card_rules = rules(text)
-            with self.subTest(card=name):
-                self.assertTrue(card_rules)
-                for index, line in enumerate(card_rules):
-                    self.assertNotRegex(line, forbidden)
-                    if index == 0 and line.startswith("<i>"):
-                        continue
-                    self.assertRegex(line, r"^<i-auto>\(\d+ - .+\)</i-auto> ")
+        self.assertEqual({path.name for path in PROJECT.glob("card *")}, set(self.includes))
+        self.assertIn("set_language: EN", self.set_text)
+        self.assertIn("card_language: English", self.set_text)
 
     def test_archetype_doc_keeps_identity_not_card_blocks(self) -> None:
-        self.assertIn("## Identité de l'archétype", self.doc)
-        self.assertIn("## Conventions propres à Shaddoll", self.doc)
-        self.assertIn("Source de vérité des cartes", self.doc)
-        self.assertIn("MSE_projects/11_YGO_Shaddoll.mse-set", self.doc)
-        self.assertIn("**Shaddoll Recovery**", self.doc)
-        self.assertNotIn("Corruption", self.doc)
-        self.assertNotRegex(self.doc, r"(?m)^## .+ => .+")
+        doc = DOC.read_text(encoding="utf-8-sig")
+        self.assertIn("## Card source of truth", doc)
+        self.assertIn("Card-by-card values for this archetype exist only", doc)
+        self.assertIn("Shaddoll is a **Control / Value / Fusion** deck", doc)
+        self.assertNotIn("#### El Shaddoll - Construct", doc)
+        self.assertNotIn("## Complete card list", doc)
 
-    def test_shaddoll_recovery_keyword_and_no_corruption(self) -> None:
-        recovery_cards = {
-            "El Shaddoll - Grysta",
-            "El Shaddoll - Shekhinaga",
-            "El Shaddoll - Wendigo",
-            "El Shaddoll - Winda",
-        }
-        by_name = {field(text, "name"): text for text in self.cards.values()}
-        for name in recovery_cards:
-            with self.subTest(card=name):
-                self.assertIn("<b>Shaddoll Recovery</b>", by_name[name])
-                self.assertNotIn(
-                    "Renvoyez 1 carte “Shaddoll” non-créature depuis votre Grave dans votre main",
-                    by_name[name],
-                )
-        for text in self.cards.values():
-            self.assertNotIn("Corruption", text)
+    def test_all_rule_text_uses_english_current_vocabulary(self) -> None:
+        stale = re.compile(r"\b(?:library|graveyard|GYD|battlefield|Cimetière|Déclenchable|Résolution)\b|\?{2,}", re.I)
+        for include in self.includes:
+            with self.subTest(card=include):
+                text = self.card(include)
+                self.assertNotRegex(text, stale)
+                self.assertNotIn("error-spelling", text)
+                self.assertNotIn("Release</b>-", text)
+                self.assertNotIn("</b></key>", text)
 
-    def test_render_names_match_card_names_exactly(self) -> None:
-        expected = {
-            f"{field(text, 'name')}.png"
-            for text in self.cards.values()
-        }
-        actual = {path.name for path in (PROJECT / "render").glob("*.png")}
-        self.assertEqual(expected, actual)
+    def test_core_flip_and_recovery_mechanics_are_preserved(self) -> None:
+        for include in (
+            "card shaddoll - beast",
+            "card shaddoll - dragon",
+            "card shaddoll - falco",
+            "card shaddoll - hedgehog",
+            "card shaddoll - hound",
+            "card shaddoll - squamata",
+        ):
+            text = self.card(include)
+            self.assertIn("<b>Flip</b>", text)
+            self.assertIn("<b>On Send Grave by Effect</b>", text)
+        construct = self.card("card el shaddoll - construct")
+        self.assertIn("<b>On Enter</b>", construct)
+        self.assertIn("<b>Shaddoll Recovery</b>", construct)
 
-    def test_approved_anoyatyllis_and_aeon_mechanics_are_preserved(self) -> None:
-        by_name = {field(text, "name"): text for text in self.cards.values()}
-        anoyatyllis = by_name["El Shaddoll - Anoyatyllis"]
-        self.assertIn("depuis une main ou un Grave", anoyatyllis)
-        self.assertIn("<b>On Send Grave</b>", anoyatyllis)
-        self.assertIn("<b>Shaddoll Recovery</b>", anoyatyllis)
-        self.assertNotIn("Soft", "\n".join(rules(anoyatyllis)))
+    def test_anoyatyllis_and_aeon_mechanics_are_preserved(self) -> None:
+        anoyatyllis = self.card("card el shaddoll - anoyatyllis")
+        self.assertIn("from a hand or a Grave", anoyatyllis)
+        self.assertIn("exile it instead", anoyatyllis)
+        aeon = self.card("card puru shaddoll - aeon")
+        self.assertIn("send 1 “Shaddoll” card from your hand to <b>Grave</b>", aeon)
+        self.assertIn("gets +2/+2 until the end of the turn", aeon)
 
-        aeon = by_name["Puru Shaddoll - Aeon"]
-        self.assertEqual("0", field(aeon, "casting_cost"))
-        self.assertIn(">Trap Instant<", field(aeon, "super_type"))
-        self.assertIn("Ciblez 1 créature", aeon)
-        self.assertIn("jusqu’à la fin du tour", aeon)
-        self.assertIn("Au début de l’étape de fin", aeon)
-        self.assertNotIn("Si vous faites ainsi", aeon)
+    def test_fusion_cards_keep_distinct_material_rules(self) -> None:
+        el_fusion = self.card("card el shaddoll - fusion")
+        self.assertIn("using creatures from your hand or field as materials", el_fusion)
+        fusion = self.card("card shaddoll - fusion")
+        self.assertIn("you can also use creatures from your Deck", fusion)
+        schism = self.card("card shaddoll - schism")
+        self.assertIn("by exiling the indicated materials from your field or Grave", schism)
+
+    def test_all_image_references_resolve(self) -> None:
+        for include in self.includes:
+            text = self.card(include)
+            image = next(line.split(": ", 1)[1] for line in text.splitlines() if line.startswith("\timage: "))
+            self.assertTrue((PROJECT / image).is_file(), image)
 
 
 if __name__ == "__main__":

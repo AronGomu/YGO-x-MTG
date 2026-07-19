@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Défaussez Trishula et ciblez 1 sort ou capacité ciblant 1 créature “Nekroz” que vous contrôlez ; contrecarrez-le.
-		<i-auto>(2 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Exilez 1 permanent non-terrain adverse, 1 carte aléatoire de la main de cet adversaire et 1 carte de son Grave. Cet effet ne se résout pas si vous ne pouvez pas exiler les 3 cartes simultanément.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Discard Trishula and target 1 spell or ability targeting 1 “Nekroz” creature you control; counter it.
+		<i-auto>(2 - Triggered Hard)</i-auto> <b>On Enter</b> — Exile 1 opponent's nonland permanent, 1 random card from that opponent's hand, and 1 card from their <b>Grave</b>. This effect does not resolve if you cannot exile all 3 cards simultaneously.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

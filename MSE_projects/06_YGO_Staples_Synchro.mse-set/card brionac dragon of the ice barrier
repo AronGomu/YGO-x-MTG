@@ -20,8 +20,8 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<b>Vol</b>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> Défaussez X cartes ; renvoyez X permanents ciblés dans la main de leurs propriétaires.
+		<b>Flying</b>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> Discard X cards; return X target permanents to their owners' hands.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

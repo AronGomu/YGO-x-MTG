@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Passif) Les adversaires ne peuvent pas répondre à vos sorts “Nekroz” Ritual.
-		(2 - Passif) Les créatures Ritual “Nekroz” que vous contrôlez ont la défense talismanique.
-		(3 - Déclenchable Hard) <b>On Sacrifice</b> — Renvoyez 1 autre carte “Nekroz” ciblée depuis l’exil dans votre main.
+		(1 - Static) Opponents cannot respond to your “Nekroz” Ritual spells.
+		(2 - Static) “Nekroz” Ritual Creatures you control have hexproof.
+		(3 - Triggered Hard) <b>On Sacrifice</b> — Reclaim 1 other target “Nekroz”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 1

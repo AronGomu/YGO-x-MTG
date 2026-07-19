@@ -19,9 +19,9 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>3 créatures noires</i>
-		<i-auto>(1 - Passif)</i-auto> Triphyoverutum gagne +1/+1 pour chaque créature avec un marqueur Predator.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Ciblez 1 sort de créature lancé depuis le Sideboard ; contrecarrez-le.
+		<i>3 black creatures</i>
+		<i-auto>(1 - Static)</i-auto> Triphyoverutum gains +1/+1 for each creature with a Predator counter.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Target 1 creature spell cast from Sideboard; counter it.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

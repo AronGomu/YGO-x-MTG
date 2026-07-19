@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 3</i>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Detach 1</b> : acquérez le contrôle de la créature ciblée tant que vous contrôlez Big Eye. Big Eye ne peut pas attaquer ce tour-ci.
+		<i>2 creatures MV 3</i>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> <b>Detach 1</b> and target 1 creature; gain control of the target as long as you control Big Eye. Big Eye cannot attack this turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

@@ -17,8 +17,8 @@ card:
 	rarity: common
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> Défaussez 1 carte et ciblez 1 permanent non-terrain ; mélangez la cible dans le Deck.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Piochez 1 carte.
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> Discard 1 card and target 1 nonland permanent; shuffle the target into its owner’s Deck.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — Draw 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 2

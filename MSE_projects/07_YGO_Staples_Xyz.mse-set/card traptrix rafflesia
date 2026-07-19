@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Plant</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Passif)</i-auto> Cette carte n’est pas affectée par les effets des Trap.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> et envoyez 1 Trap depuis votre Deck au Grave : copiez son effet de Résolution.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Static)</i-auto> This card is not affected by Trap effects.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> and send 1 Trap from your Deck to <b>Grave</b>; copy its Resolution effect.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 5

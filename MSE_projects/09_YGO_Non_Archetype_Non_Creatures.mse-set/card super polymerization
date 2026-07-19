@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Fusion Summon Instant</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Défaussez 1 ; <b>Fusion Summon</b> 1 Fusion Creature en utilisant des creatures en jeu de tous les joueurs en tant que materiel.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Discard 1 card; <b>Fusion Summon</b> 1 Fusion Creature using creatures on the field controlled by any player as materials.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 014/017 C
 	card_code_text_2: 014/017 C

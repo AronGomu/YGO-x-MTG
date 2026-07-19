@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution Hard Linked)</i-auto> Renvoyez 1 créature “Shaddoll” ciblée depuis votre Grave sur le terrain face visible ou face verso.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard Linked)</i-auto> <b>Exile from Grave</b> et 1 autre carte “Shaddoll” ; choisissez 1 créature que vous contrôlez et retournez-la face visible ou face verso.
+		<i-auto>(1 - Resolution Hard Linked)</i-auto> Target 1 “Shaddoll” creature in your <b>Grave</b>; return it to the field face up or face down.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard Linked)</i-auto> <b>Exile from Grave</b> and exile 1 other “Shaddoll” card from your <b>Grave</b>; choose 1 creature you control and turn it face up or face down.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/025 C
 	card_code_text_2: 015/025 C

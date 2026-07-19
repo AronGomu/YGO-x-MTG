@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Wyrm</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> : détruisez 1 permanent non-créature non-terrain ciblé.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> and target 1 nonland noncreature permanent; destroy the target.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 4

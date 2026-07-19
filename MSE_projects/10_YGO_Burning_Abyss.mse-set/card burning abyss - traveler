@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -13,10 +13,9 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
-	sub_type:
+	sub_type: 
 	rarity: common
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Renvoyez sur le terrain n’importe quel nombre de créatures “Burning Abyss” envoyées à votre Grave ce tour-ci.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Return any number of “Burning Abyss” creatures sent to your <b>Grave</b> this turn to the field.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 022/030 C
 	card_code_text_2: 022/030 C

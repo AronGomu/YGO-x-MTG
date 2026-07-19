@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures blanches MV 2</i>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> : renvoyez 1 permanent non-terrain ciblé dans la main de son propriétaire.
+		<i>2 white creatures MV 2</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> and target 1 nonland permanent; return the target to its owner's hand.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

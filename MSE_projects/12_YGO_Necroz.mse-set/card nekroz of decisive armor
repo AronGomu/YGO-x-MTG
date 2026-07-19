@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en>
 	rarity: rare
 	rule_text:
-		(1 - Activable Flash Hard) Défaussez cette carte : 1 créature “Nekroz” ciblée gagne +2/+2 jusqu’à la fin du tour.
-		(2 - Activable Sorcery Hard) La créature ciblée gagne -2/-0 jusqu’à la fin du tour.
+		(1 - Activated Flash Hard) Discard this card: 1 targeted “Nekroz” creature gains +2/+2 until the end of the turn.
+		(2 - Activated Sorcery Hard) Target creature gains -2/-0 until end of turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

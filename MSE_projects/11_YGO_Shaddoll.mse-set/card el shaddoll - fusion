@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Fusion Summon Instant</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 créature “Shaddoll” en utilisant des créatures depuis votre main ou terrain comme matériaux.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> <b>Fusion Summon</b> 1 “Shaddoll” creature using creatures from your hand or field as materials.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 005/025 C
 	card_code_text_2: 005/025 C

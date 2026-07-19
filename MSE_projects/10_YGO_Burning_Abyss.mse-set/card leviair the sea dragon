@@ -17,13 +17,13 @@ card:
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
 	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Detach 1</b> et ciblez 1 créature MV 1 exilée ; <b>Release</b> la cible.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> <b>Detach 1</b> and target 1 exiled MV 1 creature; <b>Release</b> the target.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

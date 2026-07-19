@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 de vos créatures “Shaddoll” exilées ; <b>Release</b>-la face verso.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Ciblez 3 cartes dans les Grave ; exilez-les.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Target 1 of your exiled “Shaddoll” creatures; <b>Release</b> the target face down.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Target 3 cards in Grave; exile them.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 3

@@ -1,4 +1,4 @@
-mse_version: 2.5.8
+﻿mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Spellbook</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<b>Book Affinity</b>
-		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Cherchez 1 “Spellbook”.
+		<b>Alternative Cost</b> — If you cast 1 non-creature “Spellbook” this turn, you may cast this spell without paying its mana cost.
+		<i-auto>(1 - Triggered Hard)</i-auto> <b>On Enter</b> — Search 1 “Spellbook”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 1

@@ -17,8 +17,8 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<b>Vol</b>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> Détruisez toutes les autres créatures avec une puissance inférieure à celle de cette carte, puis infligez 3 dommages à vos adversaires pour chaque créature détruite de cette façon.
+		<b>Flying</b>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> Destroy all other creatures with power lower than this card's power, then deal 3 damage to your opponents for each creature destroyed this way.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 5

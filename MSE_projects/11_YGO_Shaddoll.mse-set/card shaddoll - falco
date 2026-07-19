@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 créature “Shaddoll” dans votre Grave ; <b>Reanimate</b> la créature ciblée face verso.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — <b>Reanimate</b> cette carte face verso.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Target 1 “Shaddoll” creature in your <b>Grave</b>; <b>Reanimate</b> the target face down.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — <b>Reanimate</b> this card face down.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 2

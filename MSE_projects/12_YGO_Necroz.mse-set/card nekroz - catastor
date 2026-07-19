@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Machine</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Activable Sorcery Hard)</i-auto> Défaussez Catastor et ciblez 1 créature “Nekroz” de votre Grave ; <b>Reanimate</b> la cible.
-		<i-auto>(2 - Passif)</i-auto> Les créatures “Nekroz” que vous contrôlez ont <kw-a><nospellcheck><key>ward <param-cost><sym-auto>2</sym-auto></param-cost></key></nospellcheck></kw-a>.
+		<i-auto>(1 - Activated Sorcery Hard)</i-auto> Discard Catastor and target 1 “Nekroz” creature in your <b>Grave</b>; <b>Reanimate</b> the target.
+		<i-auto>(2 - Static)</i-auto> “Nekroz” creatures you control have <b><kw-a><nospellcheck><key>Ward <param-cost><sym-auto>2</sym-auto></param-cost></key></nospellcheck></kw-a></b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

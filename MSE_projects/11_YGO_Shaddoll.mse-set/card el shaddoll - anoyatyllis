@@ -22,9 +22,9 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 créature “Shaddoll” + 1 créature bleue</i>
-		<i-auto>(1 - Passif)</i-auto> Si une créature devait arriver sur le terrain sans avoir été lancée depuis une main ou un Grave, exilez-la à la place.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — <b>Shaddoll Recovery</b>
+		<i>1 “Shaddoll” creature + 1 blue creature</i>
+		<i-auto>(1 - Static)</i-auto> If a creature would enter the field without having been cast from a hand or a Grave, exile it instead.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

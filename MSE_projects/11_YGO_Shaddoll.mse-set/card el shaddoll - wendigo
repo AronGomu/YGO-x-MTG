@@ -22,9 +22,9 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 créature “Shaddoll” + 1 créature verte</i>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> La créature ciblée gagne <b><kw-a><nospellcheck><key>indestructible</b></key></nospellcheck></kw-a> jusqu’à la fin du tour.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>Shaddoll Recovery</b>
+		<i>1 “Shaddoll” creature + 1 green creature</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Target creature gains <b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b> until end of turn.
+		<i-auto>(2 - Triggered)</i-auto> <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 5

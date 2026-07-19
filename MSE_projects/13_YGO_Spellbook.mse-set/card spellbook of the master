@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-17 18:27:11
+	time_modified: 2026-07-19 12:00:57
 	name: Spellbook of the Master
 	casting_cost: U
 	image: mse_images/image10.png
@@ -13,11 +13,11 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
-	sub_type:
+	sub_type: 
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
-		<i-auto>(1 - Résolution)</i-auto> Révélez 1 autre “Spellbook” de votre main et choisissez 1 “Spellbook” dans votre Grave ; copiez son texte et résolvez-le.
+		<i-auto>(1 - Resolution Hard)</i-auto> Reveal 1 other “Spellbook” from hand and target 1 “Spellbook” from <b>Grave</b>; copy the target's Resolution effect and resolve it.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 013/016 C
 	card_code_text_2: 013/016 C

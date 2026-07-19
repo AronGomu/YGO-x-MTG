@@ -39,7 +39,7 @@ class NecrozCardTests(unittest.TestCase):
         self.assertEqual(len(includes), 19)
 
     def test_included_cards_clean_and_images_resolve(self) -> None:
-        stale = ("cimetière", "GYD", "bibliothèque", "valeur de mana", "error-spelling")
+        stale = ("graveyard", "GYD", "library", "mana value", "error-spelling")
         for filename in INCLUDED:
             with self.subTest(filename=filename):
                 text = (PROJECT / filename).read_text(encoding="utf-8-sig")
@@ -57,14 +57,14 @@ class NecrozCardTests(unittest.TestCase):
     def test_key_mechanics_present(self) -> None:
         brionac = (PROJECT / "card nekroz - brionac").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Bounce</b>", brionac)
-        self.assertIn("Défaussez Brionac", brionac)
+        self.assertIn("Discard Brionac", brionac)
 
         catastor = (PROJECT / "card nekroz - catastor").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Reanimate</b>", catastor)
 
         exa = (PROJECT / "card nekroz - exa").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Release</b>", exa)
-        self.assertIn("en ignorant les restrictions de Summon", exa)
+        self.assertIn("ignoring the restrictions of Summon", exa)
 
         unicore = (PROJECT / "card nekroz - unicore").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Salvage</b>", unicore)
@@ -82,13 +82,13 @@ class NecrozCardTests(unittest.TestCase):
             text = (PROJECT / name).read_text(encoding="utf-8-sig")
             self.assertIn("<b>Ritual Summon</b>", text)
             self.assertIn("<b>Nekroz Recovery</b>", text)
-            self.assertIn("cherchez 1 non-créature Ritual Summon “Nekroz”", text)
+            self.assertIn("Search 1 non-creature Ritual Summon “Nekroz”", text)
 
     def test_archetype_doc_points_at_mse(self) -> None:
         doc = DOC.read_text(encoding="utf-8-sig")
         self.assertIn("MSE_projects/12_YGO_Necroz.mse-set", doc)
         self.assertIn("**Nekroz Recovery**", doc)
-        self.assertIn("1 non-créature Ritual Summon “Nekroz”", doc)
+        self.assertIn("1 non-creature Ritual Summon “Nekroz”", doc)
 
 
 if __name__ == "__main__":

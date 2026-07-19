@@ -16,10 +16,10 @@ card:
 	sub_type: <word-list-race-en>Machine</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 4</i>
-		Xyz Coût Alternatif — 1 créature Xyz qui a attaqué ce tour-ci. Ses matériels se transfèrent.
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a>)</i-auto> <b>Detach 2</b> : mettez toutes les autres cartes non-terrain dans les GYs de leurs propriétaires.
-		<i-auto>(2 - Déclenchable)</i-auto> Si une autre carte que vous contrôlez est détruite, attachez 1 carte de votre main, terrain ou Extra Deck à ZEUS comme matériau.
+		<i>2 creatures MV 4</i>
+		<b>Xyz Alternative Cost</b> — 1 Xyz creature that attacked this turn. Its materials are transferred.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a>)</i-auto> <b>Detach 2</b>; put all other nonland permanents on the field into their owners' Graves.
+		<i-auto>(2 - Triggered)</i-auto> If another card you control is destroyed, <b>Attach</b> 1 card from your hand, field, or Sideboard to ZEUS.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

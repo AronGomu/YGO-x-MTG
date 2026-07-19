@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -13,10 +13,9 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
-	sub_type:
+	sub_type: 
 	rarity: common
-	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Sacrifiez 2 créatures “Burning Abyss”, ciblez jusqu’à 3 permanents non-terrain ; détruisez-les.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Sacrifice 2 “Burning Abyss” creatures and target up to 3 nonland permanents; destroy them.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 014/030 C
 	card_code_text_2: 014/030 C

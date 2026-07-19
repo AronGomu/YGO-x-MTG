@@ -22,9 +22,9 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 créature “Shaddoll” + 1 créature bleue</i>
-		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Ciblez 1 permanent ; il perd toutes ses capacités tant que cette carte reste sur le terrain et contrecarrez toutes capacites sur la pile.
-		<i-auto>(2 - Déclenchable Hard)</i-auto> <b>On Send Grave</b> — Défaussez 1 carte, puis cherchez 1 carte “Shaddoll”.
+		<i>1 “Shaddoll” creature + 1 blue creature</i>
+		<i-auto>(1 - Triggered Hard)</i-auto> <b>On Enter</b> — Target 1 permanent; it loses all its abilities for as long as this card remains on the field, and all abilities of that permanent on the stack are countered.
+		<i-auto>(2 - Triggered Hard)</i-auto> <b>On Send Grave</b> — Discard 1 card, then Search 1 “Shaddoll” card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

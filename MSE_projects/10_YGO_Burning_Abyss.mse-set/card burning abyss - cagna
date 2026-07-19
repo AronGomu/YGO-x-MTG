@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
-		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Envoyez 1 carte “Burning Abyss” depuis votre Deck au Grave.
+		<i-auto>(1 - Static)</i-auto> <b>Abyssal Curse</b>
+		<i-auto>(2 - Activated Hard Linked)</i-auto> <b>Descent</b>
+		<i-auto>(3 - Triggered Hard Linked)</i-auto> <b>On Send Grave</b> — Send 1 “Burning Abyss” card from your Deck to <b>Grave</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

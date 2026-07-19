@@ -20,9 +20,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Synchro Creature + 1 Xyz Creature
-		Coût Alternatif Fusion — Envoyez les matériaux de votre terrain au <b>Grave </b>sans utiliser une Invocation Fusion.</i>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Summon</b> 1 créature MV 1 ou moins de votre main.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Ciblez 1 permanent non-créature ; détruisez-le.
+		<b>Fusion Alternative Cost</b> — Send the materials from your field to <b>Grave</b> without using a Fusion Summon.</i>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> <b>Summon</b> 1 creature with MV 1 or less from your hand.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — Target 1 noncreature permanent; destroy it.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 2

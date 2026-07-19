@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Activable Sorcery Hard)</i-auto> Défaussez Unicore et ciblez 1 “Nekroz” de votre Grave ; <b>Salvage</b> la cible.
-		<i-auto>(2 - Passif)</i-auto> Les créatures mises en jeu depuis un Sideboard perdent toutes leurs capacités.
+		<i-auto>(1 - Activated Sorcery Hard)</i-auto> Discard Unicore and target 1 “Nekroz” in your <b>Grave</b>; <b>Salvage</b> the target.
+		<i-auto>(2 - Static)</i-auto> Creatures put onto the field from a Sideboard lose all their abilities.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

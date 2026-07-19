@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Dragon</word-list-race-en>
 	rarity: rare
 	rule_text:
-		(1 - Activable Flash Hard) Défaussez cette carte : renvoyez 1 carte “Nekroz” ciblée depuis votre Grave dans votre main.
-		(2 - Activable Flash Hard) Défaussez 1 carte “Nekroz” : 1 créature “Nekroz” ciblée gagne indestructible jusqu’à la fin du tour.
+		(1 - Activated Flash Hard) Discard this card: Salvage 1 target “Nekroz”.
+		(2 - Activated Flash Hard) Discard 1 “Nekroz” card: 1 targeted “Nekroz” creature becomes indestructible until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 3

@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Fairy</word-list-race-en>
 	rarity: rare
 	rule_text:
-		<i>Link — 2+ Creatures avec des noms différents</i>
-		(1 — Passif) <b>On Link Summon</b> — Apollousa a X marqueurs +1/+1, où X est le nombre de matériels utilisés.
-		(1 - Déclenchable Sorcery Hard) Retirez 1 marqueur +1/+1 : contrecarrez une capacité de créature ciblée.
+		<i>2+ Creatures with different names</i>
+		<i-auto>(1 - Triggered)</i-auto> <b>On Link Summon</b> — Put X +1/+1 counters on Apollousa, where X is the number of materials used.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Remove 1 +1/+1 counter from Apollousa and target 1 creature ability; counter the target.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 0

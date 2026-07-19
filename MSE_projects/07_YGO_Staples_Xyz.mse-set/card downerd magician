@@ -16,11 +16,11 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2+ créatures MV 1</i>
-		Xyz Coût Alternatif — 1 créature Xyz MV 1 ou moins que vous contrôlez. Ses matériels se transfèrent.
-		Piétinement
-		<i-auto>(1 - Passif)</i-auto> Elle gagne +1/+0 pour chaque matériel attaché à elle.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Attack or Block</b> — <b>Detach 1<b>.
+		<i>2+ creatures MV 1</i>
+		<b>Xyz Alternative Cost</b> — 1 Xyz creature MV 1 or less you control. Its materials are transferred.
+		<b>Trample</b>
+		<i-auto>(1 - Static)</i-auto> Downerd Magician gets +1/+0 for each material attached to it.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Attack or Block</b> — <b>Detach 1</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 1

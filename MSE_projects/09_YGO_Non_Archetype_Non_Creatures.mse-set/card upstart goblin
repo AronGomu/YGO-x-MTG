@@ -16,8 +16,8 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		Coût Alternatif — Vous pouvez lancer ce sort sans payer son coût de mana. Si vous faites ainsi, 1 adversaire ciblé gagne 5 points de vie.
-		<i-auto>(1 - Résolution)</i-auto> Piochez 1 carte.
+		<b>Alternative Cost</b> — You may cast this spell without paying its mana cost. If you do, target 1 opponent; they gain 5 life.
+		<i-auto>(1 - Resolution)</i-auto> Draw 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 017/017 C
 	card_code_text_2: 017/017 C

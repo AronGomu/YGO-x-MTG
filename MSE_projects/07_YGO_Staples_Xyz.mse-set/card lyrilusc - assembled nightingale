@@ -16,10 +16,10 @@ card:
 	sub_type: <word-list-race-en>Winged</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Beast</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 0</i>
-		<i-auto>(1 - Passif)</i-auto> Elle peut attaquer 1 fois supplémentaire chaque combat pour chaque matériel attaché à elle.
-		<i-auto>(2 - Passif)</i-auto> Elle gagne +1/+1 pour chaque matériel attaché à elle.
-		<i-auto>(3 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> : les créatures “Lyrilusc” que vous contrôlez gagnent <kw-a><nospellcheck><key>indestructible</key></nospellcheck></kw-a> jusqu’à la fin du tour.
+		<i>2 creatures MV 0</i>
+		<i-auto>(1 - Static)</i-auto> Lyrilusc can attack 1 additional time each combat for each material attached to it.
+		<i-auto>(2 - Static)</i-auto> Lyrilusc gets +1/+1 for each material attached to it.
+		<i-auto>(3 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b>; “Lyrilusc” creatures you control gain <b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b> until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 1

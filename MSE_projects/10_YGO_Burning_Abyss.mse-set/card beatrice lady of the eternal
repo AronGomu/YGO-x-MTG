@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-spellbook
 	stylesheet_version: 2024-09-01
@@ -14,15 +14,15 @@ card:
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Xyz Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Fairy</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>2 créatures MV 2</i>
-		Xyz Coût Alternatif — <sym-auto>W</sym-auto>, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez. Ses matériels se transfèrent.
-		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 1</b> ; envoyez 1 carte depuis votre Deck au Grave.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Destroy</b> — <b>Summon</b> 1 créature “Burning Abyss” depuis votre Sideboard.
+		<i>2 creatures MV 2</i>
+		<b>Xyz Alternative Cost</b> — <sym-auto>W</sym-auto>, discard 1 “Burning Abyss” creature and use 1 “Dante” you control. Its materials are transferred.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b>; send 1 card from your Deck to <b>Grave</b>.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Destroy</b> — <b>Summon</b> 1 “Burning Abyss” creature from your Sideboard.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

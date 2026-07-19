@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Human</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Activable Soft)</i-auto> <b>Detach 1 et Mill 3</b> ; Dante gagne +1/+0 pour chaque carte meulée et acquiert la vigilance ce tour-ci.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — <b>Salvage</b> 1 autre “Burning Abyss”.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Activated Soft)</i-auto> <b>Detach 1 and Mill 3</b>; Dante gains +1/+0 for each card milled and gains <b><kw-a><nospellcheck><key>Vigilance</key></nospellcheck></kw-a></b> until the end of the turn.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — <b>Salvage</b> 1 other “Burning Abyss”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 5

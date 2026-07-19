@@ -19,10 +19,10 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>2 créatures noires du terrain sauf jetons.</i>
-		<i-auto>(1 - Déclenchable)</i-auto> <b>On Fusion Summon</b> — Il gagne +X/+0, où X est la force d’une créature adverse ciblée.
-		<i-auto>(2 - Activable Sorcery Soft)</i-auto> Ciblez 1 créature adverse MV 2+ : le nom de Venom devient celui de la cible et il gagne ses capacités.
-		<i-auto>(3 - Déclenchable)</i-auto> On Destroy — Détruisez toutes les créatures adverses.
+		<i>2 black creatures on the field except tokens.</i>
+		<i-auto>(1 - Triggered)</i-auto> <b>On Fusion Summon</b> — It gains +X/+0, where X is the power of a targeted opposing creature.
+		<i-auto>(2 - Activated Sorcery Soft)</i-auto> Target 1 opposing creature MV 2+: Venom's name becomes that of the target and it gains its abilities.
+		<i-auto>(3 - Triggered)</i-auto> <b>On Destroy</b> — Destroy all opposing creatures.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

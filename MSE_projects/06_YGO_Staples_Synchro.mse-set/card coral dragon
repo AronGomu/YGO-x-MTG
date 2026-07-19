@@ -23,8 +23,8 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> Défaussez 1 carte et ciblez 1 permanent non-créature ; détruisez-le.
-		<i-auto>(2 - Déclenchable Hard)</i-auto> <b>On Send Grave</b> — Piochez 1.
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> Discard 1 card and target 1 non-creature permanent; destroy it.
+		<i-auto>(2 - Triggered Hard)</i-auto> <b>On Send Grave</b> — Draw 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 1

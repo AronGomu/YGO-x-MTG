@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Rock</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Detach 1</b> : mélangez 3 créatures ciblées depuis votre Grave dans votre Deck, puis piochez 1 carte.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> <b>Detach 1</b> and target 3 creatures in your <b>Grave</b>; shuffle them into your Deck, then draw 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

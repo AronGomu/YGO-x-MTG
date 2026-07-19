@@ -22,10 +22,10 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 créature “Shaddoll” + 1 créature noire</i>
-		<i-auto>(1 - Passif)</i-auto> Chaque joueur ne peut lancer qu’1 créature par tour.
-		<i-auto>(2 - Passif)</i-auto> <b>Indestructible des Effets</b>.
-		<i-auto>(3 - Déclenchable)</i-auto> <b>Shaddoll Recovery</b>
+		<i>1 “Shaddoll” creature + 1 black creature</i>
+		<i-auto>(1 - Static)</i-auto> Each player can only cast 1 creature per turn.
+		<i-auto>(2 - Static)</i-auto> <b>Effect Indestructible</b>.
+		<i-auto>(3 - Triggered)</i-auto> <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 1

@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Envoyez 1 carte de créature depuis votre Deck au Grave.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Send 1 creature card from your Deck to <b>Grave</b>.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 007/017 C
 	card_code_text_2: 007/017 C

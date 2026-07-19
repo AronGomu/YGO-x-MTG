@@ -17,9 +17,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<b>Vol</b>
-		<i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Hand Summon</b> 1 créature MV 1 ou moins.
-		<i-auto>(2 - Activable Sorcery Soft)</i-auto> Détruisez autant d’enchantements que vous contrôlez. Gagnez 3 PV puis cherchez 1 enchantement de nom différent.
+		<b>Flying</b>
+		<i-auto>(1 - Activated Sorcery Soft)</i-auto> <b>Hand Summon</b> 1 creature MV 1 or less.
+		<i-auto>(2 - Activated Sorcery Soft)</i-auto> Destroy all enchantments you control. Gain 3 life, then Search 1 enchantment with a name different from those destroyed this way.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 6

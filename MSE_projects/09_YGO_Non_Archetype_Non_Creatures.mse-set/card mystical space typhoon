@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Instant</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Détruisez le permanent non-créature non-terrain ciblé.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Target 1 nonland noncreature permanent; destroy the target.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 011/017 C
 	card_code_text_2: 011/017 C

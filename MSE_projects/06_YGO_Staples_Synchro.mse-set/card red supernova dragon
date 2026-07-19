@@ -17,9 +17,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>3 Tuner + 1+ non-Tuner Synchro</i>
-		<b><kw-a><nospellcheck><key>Indestructible</b></key></nospellcheck></kw-a>, <b>Vol</b>
-		<i-auto>(1 - Passif)</i-auto> Gagne +1/+0 pour chaque Tuner dans votre <b>Grave</b>.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>On Opponent Activation or Attack</b> : vous pouvez exiler cette carte et si vous le faites, exilez tous les permanents non-terrain des terrains adverses. À votre prochaine étape de fin, <b>Summon</b> cette carte depuis l’exil.
+		<b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b>, <b>Flying</b>
+		<i-auto>(1 - Static)</i-auto> Red Supernova Dragon gains +1/+0 for each Tuner in your <b>Grave</b>.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>On Opponent Activation or Attack</b> — You may exile this card, and if you do, exile all nonland permanents from your opponents' fields. At your next end step, <b>Summon</b> this card from exile.
 	flavor_text: <i-flavor></i-flavor>
 	power: 8
 	toughness: 6

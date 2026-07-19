@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Activable Sorcery Hard) Défaussez cette carte : cherchez 1 créature “Nekroz”.
-		(2 - Activable Sorcery Hard) Mélangez dans le Sideboard 1 créature ciblée qui a été mise en jeu depuis un Sideboard.
+		(1 - Activated Sorcery Hard) Discard this card: Search 1 “Nekroz” creature.
+		(2 - Activated Sorcery Hard) Shuffle 1 target creature that was put onto the field from a Sideboard into the Sideboard.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

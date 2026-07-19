@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Ciblez 1 créature “Shaddoll” que vous contrôlez ; envoyez 1 carte “Shaddoll” depuis votre main au Grave, puis la créature ciblée gagne +2/+2 jusqu’à la fin du tour. Au début de l’étape de fin, retournez-la face verso.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Target 1 “Shaddoll” creature you control; send 1 “Shaddoll” card from your hand to <b>Grave</b>, then the target creature gets +2/+2 until the end of the turn. At the beginning of the end step, turn it face down.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 012/025 C
 	card_code_text_2: 012/025 C

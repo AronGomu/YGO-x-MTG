@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Piochez 2 cartes, puis défaussez 1 carte.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Piochez 1 carte.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Draw 2 cards, then discard 1 card.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Draw 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 3

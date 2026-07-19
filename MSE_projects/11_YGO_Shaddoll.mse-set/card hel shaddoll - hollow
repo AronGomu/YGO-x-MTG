@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 créature contrôlée par un adversaire ; envoyez 1 créature “Shaddoll” depuis votre Sideboard dans votre Grave, puis, si les 2 cartes sont de la même couleur, exilez la cible.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — <b>Mill X</b>, X étant le nombre de couleurs parmi les créatures que vous contrôlez.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Target 1 creature an opponent controls; send 1 “Shaddoll” creature from your Sideboard into your Grave, then, if the 2 cards are of the same color, exile the target.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — <b>Mill X</b>, where X is the number of colors among the creatures you control.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 5

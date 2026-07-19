@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Activable Flash Soft)</i-auto> Défaussez 1 créature “Burning Abyss”, ciblez 1 créature ; la cible gagne -X/-X ce tour-ci, où X est la force de la carte envoyée.
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave</b> — Ciblez 1 permanent non-terrain ; envoyez-le dans le Grave.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Discard 1 “Burning Abyss” creature and target 1 creature; the target gains -X/-X this turn, where X is the power of the discarded card.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — Target 1 nonland permanent; send it to <b>Grave</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

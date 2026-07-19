@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-enchantment></word-list-enchantment>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Passif)</i-auto> Si 1+ cartes “Shaddoll” sont mises dans votre Grave par un effet de carte, mettez 1 compteur Magie sur cette carte.
-		<i-auto>(2 - Passif)</i-auto> Si vous choisissez les matériaux pour une <b>Fusion Summon</b> “Shaddoll”, vous pouvez retirer 3 compteurs Magie de cette carte et vous pouvez utiliser 1 créature contrôlée par un adversaire comme matériel pour cette invocation.
+		<i-auto>(1 - Static)</i-auto> If 1+ “Shaddoll” cards are put into your Grave by a card effect, put 1 Magic counter on this card.
+		<i-auto>(2 - Static)</i-auto> If you choose materials for a “Shaddoll” <b>Fusion Summon</b>, you may remove 3 Magic counters from this card. If you do, you may use 1 creature an opponent controls as material for that summon.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 001/025 C
 	card_code_text_2: 001/025 C

@@ -16,14 +16,14 @@ card:
 	super_type_2: <word-list-type-en></word-list-type-en>
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
-	sub_type:
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type: 
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 Creature “Burning Abyss” en utilisant des créatures depuis votre main ou terrain comme matériaux.
-		<i-auto>(2 - Activable Sorcery Soft)</i-auto> <b>Exile from Grave</b>, ciblez 1 créature “Burning Abyss” ; la cible gagne +2/+2 jusqu’à la fin du prochain tour adverse.
+		<i-auto>(1 - Resolution)</i-auto> <b>Fusion Summon</b> 1 “Burning Abyss” creature using creatures from your hand or field as materials.
+		<i-auto>(2 - Activated Sorcery Soft)</i-auto> <b>Exile from Grave</b> and target 1 “Burning Abyss” creature; the target gains +2/+2 until the end of the opponent’s next turn.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 021/030 C
 	card_code_text_2: 021/030 C

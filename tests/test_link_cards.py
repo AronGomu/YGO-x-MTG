@@ -9,7 +9,7 @@ UPDATED_CARDS = {
     "card accesscode talker": (
         "casting_cost: RRWW",
         "super_type: <word-list-type-en>Link Lvl 4 Creature</word-list-type-en>",
-        "Célérité",
+        "Haste",
         "<b>On Link Summon</b>",
         "power: 4",
         "toughness: 4",
@@ -88,7 +88,7 @@ class LinkCardContentTests(unittest.TestCase):
             encoding="utf-8-sig"
         )
         self.assertIn("### On Link Summon", rules)
-        self.assertIn("uniquement lorsqu’une `Link Creature`", rules)
+        self.assertIn("only triggers when a `Link Creature`", rules)
 
 
 if __name__ == "__main__":

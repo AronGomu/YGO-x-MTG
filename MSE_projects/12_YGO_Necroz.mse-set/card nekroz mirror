@@ -13,10 +13,10 @@ card:
 	mainframe_image:
 	mainframe_image_2:
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
-	sub_type: <word-list-spell>Invocation Ritual</word-list-spell>
+	sub_type: <word-list-spell>Ritual Summon</word-list-spell>
 	rarity: common
 	rule_text:
-		(1 - Résolution) Mettez en jeu 1 créature Ritual “Nekroz” depuis votre main en exilant des créatures depuis votre Grave ou en sacrifiant des créatures depuis votre main ou terrain dont la MV totale satisfait son coût Ritual.
-		(2 - Activable Sorcery Hard) Si vous ne contrôlez aucune créature, exilez cette carte et 1 autre carte “Nekroz” depuis votre Grave : cherchez 1 autre carte non-créature “Nekroz” avec le sous-type Invocation Ritual.
+		(1 - Resolution) Put 1 “Nekroz” Ritual Creature onto the field from your hand by exiling creatures from your Grave or by sacrificing creatures from your hand or field whose total MV meets its Ritual cost.
+		(2 - Activated Sorcery Hard) If you control no creature, exile this card and 1 other “Nekroz” card from your Grave: Search 1 other “Nekroz” non-creature card with the Ritual Summon subtype.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 013/019 C

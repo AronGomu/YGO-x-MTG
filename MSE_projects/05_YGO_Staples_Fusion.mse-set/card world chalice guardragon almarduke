@@ -20,9 +20,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>3 Link Creatures</i>
-		<kw-a><nospellcheck><key>Vigilance</key></nospellcheck></kw-a>, Protection contre les créatures
-		<i-auto>(1 - Passif)</i-auto> Toutes les créatures adverses doivent bloquer Almarduke.
-		<i-auto>(2 - Déclenchable)</i-auto> Si une Link Creature bloque : détruisez-la puis infligez X blessures à son contrôleur, X étant la force de la créature détruite.
+		<b><kw-a><nospellcheck><key>Vigilance</key></nospellcheck></kw-a></b>, <b>Protection from creatures</b>
+		<i-auto>(1 - Static)</i-auto> All opposing creatures must block Almarduke.
+		<i-auto>(2 - Triggered)</i-auto> If a Link Creature blocks Almarduke, destroy it, then deal X damage to its controller, where X is the power of the destroyed creature.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 5

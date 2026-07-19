@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Passif)</i-auto> Les adversaires ne peuvent pas répondre à vos effets Ritual Summon qui <b>Ritual Summon</b> 1 créature “Nekroz”.
-		<i-auto>(2 - Passif)</i-auto> Les Ritual Creatures “Nekroz” que vous contrôlez ont la défense talismanique.
-		<i-auto>(3 - Déclenchable Hard)</i-auto> <b>On Sacrifice</b> — Ciblez 1 autre “Nekroz” de votre exil ; <b>Reclaim</b> la cible.
+		<i-auto>(1 - Static)</i-auto> Opponents cannot respond to your Ritual Summon effects that <b>Ritual Summon</b> 1 “Nekroz” creature.
+		<i-auto>(2 - Static)</i-auto> “Nekroz” Ritual Creatures you control have <b>Hexproof</b>.
+		<i-auto>(3 - Triggered Hard)</i-auto> <b>On Sacrifice</b> — Target 1 other “Nekroz” from your exile; <b>Reclaim</b> the target.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 1

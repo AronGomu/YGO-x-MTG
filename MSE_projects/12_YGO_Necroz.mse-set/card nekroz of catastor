@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Machine</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Activable Sorcery Hard) Défaussez cette carte : renvoyez sur le terrain 1 créature “Nekroz” ciblée depuis votre Grave.
-		(2 - Passif) Les créatures “Nekroz” que vous contrôlez ont ward 2.
+		(1 - Activated Sorcery Hard) Discard this card: Reanimate 1 target “Nekroz” creature from your Grave.
+		(2 - Static) “Nekroz” creatures you control have ward 2.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 2

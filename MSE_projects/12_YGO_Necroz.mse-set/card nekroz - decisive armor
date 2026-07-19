@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Défaussez Armor et ciblez 1 créature “Nekroz” ; la cible gagne +2/+2 jusqu’à la fin du tour.
-		<i-auto>(2 - Activable Sorcery Hard)</i-auto> Ciblez 1 créature ; elle gagne -2/-0 jusqu’à la fin du tour.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Discard Armor and target 1 “Nekroz” creature; the target gains +2/+2 until the end of the turn.
+		<i-auto>(2 - Activated Sorcery Hard)</i-auto> Target 1 creature; it gains -2/-0 until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

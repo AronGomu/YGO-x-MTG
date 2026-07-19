@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — <b>Summon</b> 1 créature “Shaddoll” depuis votre Deck face visible ou face verso.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — <b>Summon</b> 1 créature “Shaddoll” depuis votre Deck face verso.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — <b>Summon</b> 1 “Shaddoll” creature from your Deck face up or face down.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — <b>Summon</b> 1 “Shaddoll” creature from your Deck face down.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 014/025 C
 	card_code_text_2: 014/025 C

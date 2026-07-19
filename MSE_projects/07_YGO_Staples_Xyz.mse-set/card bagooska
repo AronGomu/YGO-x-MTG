@@ -16,10 +16,10 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Déclenchable)</i-auto> Au début de votre entretien, <b>Detach 1</b>. Si vous ne pouvez pas, détruisez cette carte.
-		<i-auto>(2 - Passif)</i-auto> Tant que “Bagooska” est dégagée, les créatures adverses ne peuvent pas attaquer.
-		<i-auto>(3 - Passif)</i-auto> Tant que “Bagooska” est engagée, toutes les autres créatures sur le terrain perdent toutes leurs capacités.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Triggered)</i-auto> At the start of your upkeep, <b>Detach 1</b>. If you can't, destroy this card.
+		<i-auto>(2 - Static)</i-auto> As long as “Bagooska” is untapped, opposing creatures cannot attack.
+		<i-auto>(3 - Static)</i-auto> As long as “Bagooska” is tapped, all other creatures on the field lose all their abilities.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 4

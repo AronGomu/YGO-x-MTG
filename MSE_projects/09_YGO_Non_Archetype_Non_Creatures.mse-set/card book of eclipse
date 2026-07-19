@@ -15,6 +15,6 @@ card:
 	super_type: <word-list-type-en>Instant</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Retournez toutes les créatures face verso. Leurs contrôleurs ne peuvent pas les retourner face recto avant le début de leur prochain tour. Cette restriction ne s’applique pas si un effet ou une règle de combat les retourne face recto.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Turn all creatures face down. Their controllers cannot turn them face up until the start of their next turn. This restriction does not apply if a combat effect or rule turns them face-up.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 002/017 C

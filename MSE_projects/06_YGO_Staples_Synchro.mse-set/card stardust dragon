@@ -20,8 +20,8 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<b>Vol</b>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Sacrifiez Stardust Dragon et ciblez 1 sort ou capacité qui détruirait 1 ou plusieurs cartes : <b>Negate & Destroy</b>. Au début de la prochaine étape de fin : <b>Reanimate</b> cette carte.
+		<b>Flying</b>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Sacrifice Stardust Dragon and target 1 spell or ability that would destroy 1 or more cards; <b>Negate & Destroy</b>. At the start of the next end step, <b>Reanimate</b> this card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

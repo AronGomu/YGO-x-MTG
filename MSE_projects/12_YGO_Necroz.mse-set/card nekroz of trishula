@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Dragon</word-list-race-en>
 	rarity: rare
 	rule_text:
-		(1 - Activable Flash Hard) Défaussez cette carte : contrecarrez 1 sort ou capacité ciblant 1 créature “Nekroz” que vous contrôlez.
-		(2 - Déclenchable Hard) <b>On Enter</b> — Exilez 1 permanent non-terrain adverse ciblé, 1 carte aléatoire de la main de cet adversaire et 1 carte ciblée de son Grave. Cet effet ne se résout que si vous pouvez exiler les 3 cartes.
+		(1 - Activated Flash Hard) Discard this card: Counter 1 spell or ability targeting 1 “Nekroz” creature you control.
+		(2 - Triggered Hard) <b>On Enter</b> — Exile 1 target opponent's nonland permanent, 1 random card from that opponent's hand, and 1 target card from their Grave. This effect only resolves if you can exile all 3 cards.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

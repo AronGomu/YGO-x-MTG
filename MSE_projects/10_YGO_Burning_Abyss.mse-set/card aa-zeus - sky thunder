@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: m15-spellbook
 	stylesheet_version: 2024-09-01
@@ -16,10 +16,10 @@ card:
 	sub_type: <word-list-race-en>Machine</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: mythic rare
 	rule_text:
-		<i>2 créatures MV 4</i>
-		Xyz Coût Alternatif — 1 créature Xyz qui a attaqué ce tour-ci. Ses matériels se transfèrent.
-		<i-auto>(1 - Activable Flash Soft)</i-auto> <b>Detach 2</b> ; envoyez tous les autres permanents non-terrain au Grave.
-		<i-auto>(2 - Déclenchable Soft)</i-auto> <b>On Creature you Control Destroy</b> — <b>Attach</b> la créature détruite à ZEUS.
+		<i>2 creatures MV 4</i>
+		<b>Xyz Alternative Cost</b> — 1 Xyz creature that attacked this turn. Its materials are transferred.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 2</b>; send all other nonland permanents on the field to <b>Grave</b>.
+		<i-auto>(2 - Triggered Soft)</i-auto> <b>On Creature you Control Destroy</b> — <b>Attach</b> the destroyed creature to ZEUS.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

@@ -16,9 +16,9 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b>
-		<i-auto>(2 - Activable Hard Linked)</i-auto> <b>Descente</b>
-		<i-auto>(3 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — La créature ciblée perd toutes ses capacités et devient 0/0 jusqu’à la fin du tour.
+		<i-auto>(1 - Static)</i-auto> <b>Abyssal Curse</b>
+		<i-auto>(2 - Activated Hard Linked)</i-auto> <b>Descent</b>
+		<i-auto>(3 - Triggered Hard Linked)</i-auto> <b>On Send Grave</b> — Target 1 creature; it loses all its abilities and becomes 0/0 until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

@@ -17,9 +17,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<b>Vol</b>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Ciblez 1 créature d’un adversaire : <b>Negate</b> la cible ce tour-ci.
-		<i-auto>(2 - Déclenchable)</i-auto> Si cette carte inflige des dommages de combat à un adversaire : ciblez 1 créature Tuner dans votre <b>Grave</b> ; <b>Reanimate</b>-la engagée.
+		<b>Flying</b>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Target 1 creature an opponent controls; <b>Negate</b> the target this turn.
+		<i-auto>(2 - Triggered)</i-auto> If this card deals combat damage to an opponent, target 1 Tuner creature in your <b>Grave</b>; <b>Reanimate</b> the target tapped.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 5

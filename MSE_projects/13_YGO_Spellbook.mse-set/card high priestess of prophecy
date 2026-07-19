@@ -1,11 +1,11 @@
-mse_version: 2.5.8
+﻿mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-17 17:40:34
+	time_modified: 2026-07-19 11:47:00
 	name: High Priestess of Prophecy
 	casting_cost: 2W
 	image: image2.png
@@ -16,9 +16,8 @@ card:
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><atom-sep> </atom-sep><word-list-class-en>Spellbook</word-list-class-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
 	rule_text:
-		<b>Book Affinity</b>
-		<b>Coût alternatif</b> — Révélez 3 “Spellbook” non-creature de votre main.
-		<i-auto>(1 - Activable Hard)</i-auto> Exilez 1 “Spellbook” de votre main ou Grave et ciblez 1 permanent ; détruisez-le.
+		<b>Alternative Cost</b> — Reveal 3 non-creature “Spellbook” from hand.
+		<i-auto>(1 - Activated Flash Soft)</i-auto> Exile 1 “Spellbook” from hand or <b>Grave</b> and target 1 nonland permanent; destroy it.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4

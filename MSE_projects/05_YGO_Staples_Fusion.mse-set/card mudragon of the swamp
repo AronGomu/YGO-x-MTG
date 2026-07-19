@@ -19,9 +19,9 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>2 créatures avec la même couleur mais des types différents</i>
-		<i-auto>(1 - Passif)</i-auto> Choisissez 1 couleur. Les créatures que vous contrôlez de la couleur choisie ont <kw-a><nospellcheck><key>ward <param-cost><sym-auto>3</sym-auto></param-cost></key></nospellcheck></kw-a>.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Choisissez une couleur ; Mudragon devient de cette couleur jusqu’à la fin du tour.
+		<i>2 creatures with the same color but different types</i>
+		<i-auto>(1 - Static)</i-auto> Choose 1 color. Creatures you control of the chosen color have <kw-a><nospellcheck><key>ward <param-cost><sym-auto>3</sym-auto></param-cost></key></nospellcheck></kw-a>.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Choose a color; Mudragon becomes that color until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

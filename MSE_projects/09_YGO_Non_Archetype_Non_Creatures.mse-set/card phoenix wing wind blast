@@ -16,8 +16,8 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
-		<i-auto>(1 - Résolution)</i-auto> Mettez le permanent non-terrain ciblé au-dessus du Deck de son propriétaire.
+		As an additional cost to cast this spell, discard 1 card.
+		<i-auto>(1 - Resolution)</i-auto> Put target nonland permanent on top of its owner's Deck.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 012/017 C
 	card_code_text_2: 012/017 C

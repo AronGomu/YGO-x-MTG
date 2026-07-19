@@ -19,8 +19,8 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>1 Fusion Creature + 1 créature noire</i>
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Ciblez 1 créature ; mettez un marqueur Predator sur la cible puis contrecarrez toutes ses capacités sur la pile. Les créatures adverses avec un marqueur Predator perdent toutes leurs capacités.
+		<i>1 Fusion Creature + 1 black creature</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Target 1 creature; put a Predator counter on the target, then counter all of its abilities on the stack. Creatures your opponents control with a Predator counter lose all their abilities.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 3

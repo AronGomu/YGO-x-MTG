@@ -20,10 +20,10 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Synchro + 1 Xyz + 1 Link</i>
-		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Fusion Summon</b> — Vous pouvez payer jusqu’à 3 fois 5 PV ; pour chaque 5 PV choisissez 1 seul de ces effets <i-auto>(pas de cible)</i-auto> :
-		- Ajoutez 1 non-créature de votre <b>Grave</b>.
-		- Détruisez 3 permanents non-créature.
-		- Mettez X marqueur +1/+1 sur Coordius, X étant la différence entre vos PV et ceux d’1 adversaire.
+		<i-auto>(1 - Triggered Hard)</i-auto> <b>On Fusion Summon</b> — You may pay 5 life up to 3 times; for each payment, choose 1 of these <i-auto>(no target)</i-auto> effects:
+		- Return 1 noncreature card from your <b>Grave</b> to your hand.
+		- Destroy 3 non-creature permanents.
+		- Put X +1/+1 counters on Coordius, where X is the difference between your life total and 1 opponent’s life total.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

@@ -4,15 +4,15 @@ game_version: 2025-06-14
 stylesheet: sevenhalf
 stylesheet_version: 2024-05-30
 set_info:
-	title: YGO x MTG -- Non-archetype Non-creatures
-	description: Cartes personnalisées du cube Yu-Gi-Oh × Magic, générées depuis le projet Obsidian.
+	title: YGO x MTG -- Non-Archetype Noncreatures
+	description: English canonical noncreature cards for the Yu-Gi-Oh! x Magic cube.
 	artist: 
 	copyright: 
 	set_code: YNN
-	set_language: FR
+	set_language: EN
 	symbol: 
 	masterpiece_symbol: 
-	card_language: French
+	card_language: English
 	automatic_reminder_text: 
 	automatic_copyright: yes
 	automatic_card_numbers: yes

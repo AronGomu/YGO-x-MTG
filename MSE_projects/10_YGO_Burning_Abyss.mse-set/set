@@ -5,14 +5,14 @@ stylesheet: sevenhalf
 stylesheet_version: 2024-05-30
 set_info:
 	title: YGO x MTG -- Burning Abyss
-	description: Cartes personnalisées du cube Yu-Gi-Oh × Magic — Burning Abyss, reconstruites avec images importées MSE.
+	description: Custom cards from the Yu-Gi-Oh × Magic — Burning Abyss cube, rebuilt with MSE imported images.
 	artist: 
 	copyright: 
 	set_code: YBA
-	set_language: FR
+	set_language: EN
 	symbol: 
 	masterpiece_symbol: 
-	card_language: French
+	card_language: English
 	automatic_reminder_text: 
 	automatic_copyright: yes
 	automatic_card_numbers: yes

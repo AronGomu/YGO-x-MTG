@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Dragon</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Défaussez cette carte et ciblez 1 créature “Nekroz” ; la cible gagne <kw-a><nospellcheck><key>indestructible</key></nospellcheck></kw-a> jusqu’à la fin du tour.
-		<i-auto>(2 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Défaussez 1 “Nekroz” et ciblez 1 créature “Nekroz” ; la cible gagne <kw-a><nospellcheck><key>indestructible</key></nospellcheck></kw-a> jusqu’à la fin du tour.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Discard this card and target 1 “Nekroz” creature; the target gains <b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b> until the end of the turn.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Discard 1 “Nekroz” and target 1 “Nekroz” creature; the target gains <b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b> until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 3

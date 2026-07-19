@@ -21,7 +21,7 @@ card:
 	sub_type_3: 
 	sub_type_4: 
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Envoyez 1 carte “Shaddoll” depuis votre Deck au Grave, puis vous pouvez retourner face visible autant de créatures “Shaddoll” face verso que vous contrôlez.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Send 1 “Shaddoll” card from your Deck to Grave, then you may turn any number of face-down “Shaddoll” creatures you control face up.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 025/025 C
 	card_code_text_2: 025/025 C

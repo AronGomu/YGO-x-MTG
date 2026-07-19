@@ -16,8 +16,8 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		Vous ne pouvez lancer ce sort que si 1 créature est arrivée sur le terrain ce tour-ci.
-		<i-auto>(1 - Résolution)</i-auto> Détruisez toutes les créatures.
+		You may cast this spell only if 1 creature has entered the field this turn.
+		<i-auto>(1 - Resolution)</i-auto> Destroy all creatures.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 015/017 C
 	card_code_text_2: 015/017 C

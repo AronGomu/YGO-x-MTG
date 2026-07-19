@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Passif) <b>On Sacrifice</b> — Pour une Invocation Ritual d’1 créature “Nekroz”, elle peut satisfaire seule son coût de MV.
-		(2 - Déclenchable Hard) <b>On Sacrifice</b> — Cherchez 1 créature “Nekroz”.
+		(1 - Static) <b>On Sacrifice</b> — For a Ritual Summon of 1 “Nekroz” creature, it can satisfy its MV cost alone.
+		(2 - Triggered Hard) <b>On Sacrifice</b> — Search 1 “Nekroz” creature.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 3

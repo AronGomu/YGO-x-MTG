@@ -16,8 +16,8 @@ card:
 	sub_type:
 	rarity: common
 	rule_text:
-		En tant que coût supplémentaire pour lancer ce sort, défaussez 1 carte.
-		<i-auto>(1 - Résolution)</i-auto> Exilez la créature ciblée.
+		As an additional cost to cast this spell, discard 1 card.
+		<i-auto>(1 - Resolution)</i-auto> Exile target creature.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 009/017 C
 	card_code_text_2: 009/017 C

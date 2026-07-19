@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Résolution)</i-auto> Core devient une Enchantment Creature — Puppet 2/3 de toutes les couleurs avec « Cette carte peut être utilisée comme matériau pour n’importe quelle Fusion Creature “Shaddoll” à la place d’un matériau requis. »
-		<i-auto>(2 - Déclenchable)</i-auto> <b>On Send Grave by Effect</b> — <b>Salvage</b> 1 “Shaddoll” non-créature.
+		<i-auto>(1 - Resolution)</i-auto> Core becomes a 2/3 Enchantment Creature — Puppet of all colors with “This card can be used as material for any “Shaddoll” Fusion Creature in place of a required material.”
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave by Effect</b> — <b>Salvage</b> 1 non-creature “Shaddoll”.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 3

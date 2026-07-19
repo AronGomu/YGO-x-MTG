@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Fusion Summon Enchantment</word-list-type-en>
 	sub_type: <word-list-enchantment></word-list-enchantment>
 	rarity: common
-	rule_text: <i-auto>(1 - Activable Sorcery Soft)</i-auto> <b>Fusion Summon</b> 1 créature “Shaddoll” en exilant les matériaux indiqués depuis votre terrain ou Grave. Puis envoyez au Grave 1 créature contrôlée par un adversaire qui partage une couleur avec cette créature.
+	rule_text: <i-auto>(1 - Activated Sorcery Soft)</i-auto> <b>Fusion Summon</b> 1 “Shaddoll” creature by exiling the indicated materials from your field or Grave. Then send 1 creature controlled by an opponent that shares a color with this creature to Grave.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 023/025 C
 	card_code_text_2: 023/025 C

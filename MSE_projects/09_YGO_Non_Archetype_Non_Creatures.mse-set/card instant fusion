@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Sorcery</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> <b>Summon</b> 1 Fusion Creature MV 1 depuis votre Sideboard en ignorant les restrictions de Summon. Sacrifiez-la au début de la prochaine étape de fin.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> <b>Summon</b> 1 Fusion Creature MV 1 from your Sideboard ignoring the restrictions of Summon. Sacrifice it at the start of the next end step.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 008/017 C
 	card_code_text_2: 008/017 C

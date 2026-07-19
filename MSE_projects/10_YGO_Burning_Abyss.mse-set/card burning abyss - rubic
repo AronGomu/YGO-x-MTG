@@ -1,4 +1,4 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -17,13 +17,13 @@ card:
 	super_type_3: <word-list-type-en></word-list-type-en>
 	super_type_4: <word-list-type-en></word-list-type-en>
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
-	sub_type_2:
-	sub_type_3:
-	sub_type_4:
+	sub_type_2: 
+	sub_type_3: 
+	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Passif)</i-auto> <b>Malédiction abyssale</b> — Si vous contrôlez 1 autre créature sans “Burning Abyss” dans son nom, détruisez cette créature.
-		<i-auto>(2 - Activable Hard)</i-auto> <b>Descente</b> — Si vous n’avez pas <b>Summon</b> de créature “Burning Abyss” ce tour-ci : <b>Summon</b> Rubic.
+		<i-auto>(1 - Static)</i-auto> <b>Abyssal Curse</b> — If you control 1 other creature without “Burning Abyss” in its name, destroy this creature.
+		<i-auto>(2 - Activated Hard)</i-auto> <b>Descent</b> — If you have not Summoned a “Burning Abyss” creature this turn, <b>Summon</b> Rubic.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2

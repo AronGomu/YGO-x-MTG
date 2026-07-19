@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en>
 	rarity: rare
 	rule_text:
-		(1 - Activable Flash Hard) Si vous ne contrôlez aucune créature sur le terrain, défaussez cette carte : prévenez toutes les blessures de combat qui devraient vous être infligées ce tour-ci.
-		(2 - Activable Sorcery Hard) Sacrifiez jusqu’à 2 créatures depuis votre main ou terrain ; piochez 1 carte pour chaque créature sacrifiée ainsi.
+		(1 - Activated Flash Hard) If you control no creatures on the field, discard this card: prevent all combat damage that would be dealt to you this turn.
+		(2 - Activated Sorcery Hard) Sacrifice up to 2 creatures from your hand or field; draw 1 card for each creature sacrificed this way.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 3

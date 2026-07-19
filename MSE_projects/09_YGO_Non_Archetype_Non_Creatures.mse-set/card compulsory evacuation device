@@ -15,6 +15,6 @@ card:
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> Renvoyez le permanent non-terrain ciblé dans la main de son propriétaire.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Return target nonland permanent to its owner's hand.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 005/017 C

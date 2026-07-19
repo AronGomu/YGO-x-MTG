@@ -19,9 +19,9 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>3 créatures avec des noms différents avec au moins 1 matériel du terrain et 1 matériel de la main.</i>
-		<i-auto>(1 - Déclenchable Hard)</i-auto> <b>On Enter</b> — Piochez X cartes puis détruisez X permanents non-créature que votre adversaire contrôle, X étant le nombre de matériels depuis la main.
-		<i-auto>(2 - Passif)</i-auto> Si “Polymerisation” est dans votre <b>Grave</b>, Guardian gagne <b>Défense Talismanique</b>.
+		<i>3 creatures with different names, including at least 1 material from the field and 1 from the hand</i>
+		<i-auto>(1 - Triggered Hard)</i-auto> <b>On Enter</b> — Draw X cards then destroy X non-creature permanents your opponent controls, X being the number of materials from hand.
+		<i-auto>(2 - Static)</i-auto> If “Polymerization” is in your <b>Grave</b>, Guardian gains <b>Hexproof</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

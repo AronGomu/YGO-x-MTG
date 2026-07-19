@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Tuner Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Wizard</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
-	rule_text: <i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a>)</i-auto> Défaussez Effect Veiler et ciblez 1 créature sur le terrain ; jusqu’à la fin du tour, elle perd toutes ses capacités, et contrecarrez toutes ses capacités.
+	rule_text: <i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a>)</i-auto> Discard Effect Veiler and target 1 creature on the field; until the end of the turn, the target loses all its abilities. Counter all of its abilities on the stack.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

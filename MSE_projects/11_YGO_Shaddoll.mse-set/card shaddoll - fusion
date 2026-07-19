@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Fusion Summon Sorcery</word-list-type-en>
 	sub_type:
 	rarity: common
-	rule_text: <i-auto>(1 - Résolution)</i-auto> <b>Fusion Summon</b> 1 créature en utilisant des créatures depuis votre main ou terrain comme matériaux. Si un adversaire contrôle une créature ayant commencé la partie dans un Sideboard, vous pouvez aussi utiliser des créatures depuis votre Deck.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> <b>Fusion Summon</b> 1 creature using creatures from your hand or field as materials. If an opponent controls a creature that started the game in a Sideboard, you can also use creatures from your Deck.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 020/025 C
 	card_code_text_2: 020/025 C

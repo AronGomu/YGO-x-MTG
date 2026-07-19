@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: uncommon
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave</b> — Regard 3.
-		<i-auto>(2 - Activable Flash Hard Linked)</i-auto> <b>Exile from Grave</b> ; révélez la carte du dessus de votre Deck. Si c’est une Trap, <b>Set</b> la carte face cachée sur le terrain ; vous pouvez la lancer ce tour-ci. Sinon, envoyez-la au Grave.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>On Send Grave</b> — <b><kw-a><nospellcheck><key>Scry</key></nospellcheck></kw-a> <param-number>3</param-number></b>.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard Linked)</i-auto> <b>Exile from Grave</b>; reveal the top card of your Deck. If it is a Trap, <b>Set</b> the card face down on the field; you may cast it this turn. Otherwise, send it to <b>Grave</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

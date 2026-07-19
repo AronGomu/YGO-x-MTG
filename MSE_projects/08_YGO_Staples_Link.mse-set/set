@@ -4,15 +4,15 @@ game_version: 2025-06-14
 stylesheet: m15-showcase-capenna-art-deco
 stylesheet_version: 2024-10-01
 set_info:
-	title: Yu-Gi-Oh × Magic Cube — Staples Link
-	description: Staples génériques Extra Deck populaires dans l'histoire compétitive de Yu-Gi-Oh, adaptés pour le cube.
+	title: YGO x MTG -- Link Staples
+	description: Generic Extra Deck staples popular throughout competitive Yu-Gi-Oh! history, adapted for the cube.
 	artist:
 	copyright: 
 	set_code: YSL
-	set_language: FR
+	set_language: EN
 	symbol:
 	masterpiece_symbol:
-	card_language: French
+	card_language: English
 	automatic_reminder_text:
 	automatic_copyright: yes
 	automatic_card_numbers: yes

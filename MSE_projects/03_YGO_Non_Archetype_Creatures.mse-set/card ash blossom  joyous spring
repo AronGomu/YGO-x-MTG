@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Tuner Creature</word-list-type-en>
 	sub_type: <word-list-race-en>Zombie</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: common
-	rule_text: <i-auto>(1 - Activable <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Défaussez Ash Blossom et ciblez 1 sort ou capacité si son effet interagit avec le Deck <i-auto>(pioche, <b>Mill X</b>, recherche, etc.)</i-auto> ; contrecarrez-le.
+	rule_text: <i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Discard Ash Blossom and target 1 spell or ability whose effect interacts with the Deck <i-auto>(draw, <b>Mill X</b>, search, etc.)</i-auto>; counter it.
 	flavor_text: <i-flavor></i-flavor>
 	power: 0
 	toughness: 1

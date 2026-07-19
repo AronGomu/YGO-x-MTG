@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en>
 	rarity: common
 	rule_text:
-		(1 - Activable Sorcery Hard) Défaussez cette carte : cherchez 1 carte non-créature “Nekroz” avec le sous-type Invocation Ritual.
-		(2 - Activable Sorcery Hard) La créature ciblée devient 0/1 et perd toutes ses capacités jusqu’à la fin du tour.
+		(1 - Activated Sorcery Hard) Discard this card: Search 1 “Nekroz” non-creature card with the Ritual Summon subtype.
+		(2 - Activated Sorcery Hard) The targeted creature becomes 0/1 and loses all its abilities until the end of the turn.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 4

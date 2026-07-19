@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i-auto>(1 - Déclenchable Hard Linked)</i-auto> <b>Flip</b> — Ciblez 1 permanent non-terrain ; renvoyez-le dans la main de son propriétaire.
-		<i-auto>(2 - Déclenchable Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Ciblez 1 permanent non-terrain non-créature ; détruisez-le.
+		<i-auto>(1 - Triggered Hard Linked)</i-auto> <b>Flip</b> — Target 1 nonland permanent; return it to its owner's hand.
+		<i-auto>(2 - Triggered Hard Linked)</i-auto> <b>On Send Grave by Effect</b> — Target 1 nonland noncreature permanent; destroy it.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 2

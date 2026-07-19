@@ -16,10 +16,10 @@ card:
 	sub_type: <word-list-race-en>Fiend</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 créatures MV 1</i>
-		<i-auto>(1 - Activable Sorcery Hard Linked)</i-auto> <b>Detach 2</b> : sautez votre prochaine étape de pioche. Piochez 2 cartes, puis défaussez 1 carte.
-		<i-auto>(2 - Activable Sorcery Hard Linked)</i-auto> <b>Detach 2</b> : renvoyez sur le terrain 1 créature ciblée depuis votre Grave. Sautez votre prochaine première phase principale.
-		<i-auto>(3 - Activable Sorcery Hard Linked)</i-auto> <b>Detach 2</b> : doublez la force et l’endurance d’1 créature ciblée jusqu’à la fin du tour. Sautez votre prochaine phase de combat.
+		<i>2 creatures MV 1</i>
+		<i-auto>(1 - Activated Sorcery Hard Linked)</i-auto> <b>Detach 2</b>; skip your next draw step. Draw 2 cards, then discard 1 card.
+		<i-auto>(2 - Activated Sorcery Hard Linked)</i-auto> <b>Detach 2</b> and target 1 creature in your <b>Grave</b>; <b>Reanimate</b> the target. Skip your next first main phase.
+		<i-auto>(3 - Activated Sorcery Hard Linked)</i-auto> <b>Detach 2</b> and target 1 creature; double its power and toughness until the end of the turn. Skip your next combat phase.
 	flavor_text: <i-flavor></i-flavor>
 	power: 2
 	toughness: 2
