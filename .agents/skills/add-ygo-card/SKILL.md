@@ -1,11 +1,11 @@
 ---
 name: add-ygo-card
-description: Project-specific Yu-Gi-Oh! × Magic cube workflow to add a card from its Yu-Gi-Oh! name. First delegates to fetch-original-ygo-card to persist official Konami card data, then converts that record into concise French Magic-style cube text, updates the appropriate docs and MSE project, downloads cropped artwork, and verifies the result. Use when the user says add, create, import, or convert a Yu-Gi-Oh! card for this cube.
+description: Project-specific Yu-Gi-Oh! × Magic cube workflow to add a card from its Yu-Gi-Oh! name. First delegates to fetch-original-ygo-card to persist official Konami card data, then converts that record into concise English Magic-style cube text, updates canonical MSE project and any affected archetype rules, downloads cropped artwork, and verifies result. Use when the user says add, create, import, or convert a Yu-Gi-Oh! card for this cube.
 ---
 
 # Add Yu-Gi-Oh! Card to the Yu-Gi-Oh! × Magic Cube
 
-Run from the `YGO-x-MTG` repository. User-facing explanations and project prose are French. Original card names, card types, and subtypes remain English.
+Run from the `YGO-x-MTG` repository. User-facing explanations and project prose are English. Original card names, card types, and subtypes remain English.
 
 ## Mandatory first step: fetch the original
 
@@ -36,16 +36,18 @@ Prefer the existing matching MSE project (source of truth for translated card te
 
 Archetype design docs under `docs/10_`–`docs/13_` keep identity/mechanics only — do not reintroduce full card blocks there. MSE `name:` uses the cube display name.
 
+Never write to frozen French snapshots under `MSE_projects/French/`, `docs/French/`, `rule_reviews/French/`, or `mse/French/`. They are archival references, not destinations or source-of-truth inputs.
+
 ## Conversion
 
-Convert the persisted official card record into concise, cube-playable French Magic rules text while preserving the Yu-Gi-Oh! identity.
+Convert the persisted official card record into concise, cube-playable English Magic rules text while preserving the Yu-Gi-Oh! identity.
 
-- Use the current vocabulary from project context: **Passif**, **Activable Sorcery**, **Activable Flash**, **Déclenchable**, **On Send Grave**, **On Destroy**, **On Link Summon**, and existing summon mechanics.
+- Use the current vocabulary from project context: **Static**, **Activated Sorcery**, **Activated Flash**, **Triggered**, **On Send Grave**, **On Destroy**, **On Link Summon**, and existing summon mechanics.
 - Match exact sibling wording for recurring archetype abilities.
 - Number abilities as `(1 - Type Metadata) ...`.
 - Docs use `**keyword**`; MSE uses `<b>keyword</b>`.
 - MSE material/reminder lines use `<i>...</i>`.
-- Before editing, detect every effect that would perform a normally illegal Summon, especially from the Sideboard without the required invocation method. For each affected card, call `AskUserQuestion` and ask whether to add `en ignorant les restrictions de Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a correct invocation.
+- Before editing, detect every effect that would perform a normally illegal Summon, especially from Sideboard without required summoning method. For each affected card, call `AskUserQuestion` and ask whether to add `ignoring the restrictions of Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a proper summon.
 - Do not leave blank lines inside MSE `rule_text`.
 - Keep card text compact enough for the selected frame.
 
@@ -55,7 +57,7 @@ Use YGOPRODeck only for artwork discovery. Prefer `card_images[0].image_url_crop
 
 ## Editing
 
-- Match the target markdown section and formatting exactly.
+- Update archetype Markdown only when card changes reusable identity, mechanics, exceptions, or design rules; never add card block.
 - Match sibling MSE fields, stylesheet, filename style, image path, and `include_file:` convention.
 - If an updater exists under `mse/` or `.script/`, update it so rerunning does not remove the card. Do not run an updater that would overwrite unsynchronized edits.
 - Preserve unrelated working-tree changes.
@@ -68,7 +70,7 @@ Use YGOPRODeck only for artwork discovery. Prefer `card_images[0].image_url_crop
 rg -n "Official Yu-Gi-Oh|CARD NAME" original_cards
 ```
 
-2. Confirm docs, MSE card file, set include, image, and any updater all agree:
+2. Confirm MSE card file, set include, image, updater, and any affected archetype rules agree:
 
 ```bash
 rg -n "ORIGINAL NAME|CUBE NAME" docs MSE_projects mse .script
@@ -79,4 +81,4 @@ rg -n "ORIGINAL NAME|CUBE NAME" docs MSE_projects mse .script
 
 ## Final response
 
-Respond in French with the original-record path, conversion assumption, doc path, MSE project/card path, artwork path, and verification results.
+Respond in English with the original-record path, conversion assumption, doc path, MSE project/card path, artwork path, and verification results.

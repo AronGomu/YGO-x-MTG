@@ -1,6 +1,6 @@
 ---
 name: normalize-card-formatting
-description: Normalize existing YGO-x-MTG card statistics and rules text to the current French templating and formatting rules, using an MSE card file or an entire .mse-set project as input, then mirror every scoped card into its numbered docs, validate MSE integrity, export renders, and build a printable proxy PDF. Use when the user asks to update, refresh, reformat, normalize, or bring card text in docs or MSE up to the current rules without redesigning the cards.
+description: Normalize existing YGO-x-MTG card statistics and rules text to current English templating and formatting rules, using an MSE card file or an entire .mse-set project as input, then synchronize affected archetype rules without duplicating card values, validate MSE integrity, export renders, and build a printable proxy PDF. Use when the user asks to update, refresh, reformat, normalize, or bring MSE card text up to current rules without redesigning cards.
 compatibility: YGO-x-MTG repository with Python 3, Pillow, and a configured Magic Set Editor installation for render validation.
 metadata:
   project: YGO-x-MTG
@@ -26,11 +26,11 @@ Accept one checked-in input beneath `MSE_projects/`:
 - `MSE_projects/<project>.mse-set/set`: normalize every `include_file:` card;
 - `MSE_projects/<project>.mse-set/`: normalize every `include_file:` card.
 
-A project means **all cards included by its manifest**, including cards whose docs section is currently only a heading. Do not silently limit project scope to modified cards.
+A project means **all cards included by its manifest**. Do not silently limit project scope to modified cards.
 
 If the user omits a path, use an exact uniquely named project/card from the request. Otherwise, select a unique modified MSE card/project from `git status --short`; if there is no unique safe scope, stop without editing and report the candidate paths.
 
-Canonical projects are folder-form `.mse-set` saves, not zip archives. Do not edit an archive in place. Never include nested backups, diagnostic projects, or export folders as cards.
+Canonical projects are folder-form `.mse-set` saves, not zip archives. Do not edit an archive in place. Never include nested backups, diagnostic projects, or export folders as cards. Reject any scope under `MSE_projects/French/`, `docs/French/`, `rule_reviews/French/`, or `mse/French/`; these are frozen snapshots and must also be excluded from render and proxy-PDF discovery.
 
 ## Phase 0 — Protect the working tree
 
@@ -42,7 +42,7 @@ Canonical projects are folder-form `.mse-set` saves, not zip archives. Do not ed
    git diff --name-status -- MSE_projects docs
    ```
 
-2. Record the exact input, parent project, manifest, scoped cards, and expected numbered docs file.
+2. Record exact input, parent project, manifest, scoped cards, and owning numbered archetype document.
 3. Preserve unrelated changes. Never reset, checkout, clean, or regenerate another project.
 4. Read MSE text with `utf-8-sig` semantics and preserve its BOM/newline convention. Do not create backups inside an active `.mse-set` folder.
 
@@ -52,7 +52,7 @@ Read these files **completely on every invocation**, because this skill exists s
 
 1. `docs/context.md`;
 2. `docs/02_rules_keywords_card_design.md`;
-3. the numbered card document matching the project;
+3. the numbered archetype document matching project;
 4. two or three complete sibling card files demonstrating each relevant card type/frame;
 5. `CONTEXT.md` under `MSE_ROOT`, if it exists, after loading `MSEConfig` from `mse_config.py`;
 6. any project-specific tests or generator/synchronizer that can rewrite the scoped cards.
@@ -61,15 +61,15 @@ Treat `docs/02_rules_keywords_card_design.md` as the concrete card-design/templa
 
 Build a short rules checklist before editing. It must cover every applicable current rule for:
 
-- French grammar, spelling, apostrophes, accents, punctuation, and compact quantities;
+- English grammar, spelling, apostrophes, punctuation, and compact quantities;
 - English card names, types, and subtypes;
 - quoted card/archetype references;
 - ability numbering, labels, timings, and frequencies;
 - costs, alternative costs, casting conditions, and evergreen keywords;
 - bold event/action keywords and em-dash placement;
 - canonical vocabulary and zones such as `MV`, `Deck`, `Grave`, and `Sideboard`;
-- material/invocation lines and Extra Deck types;
-- MSE markup, field order, frame selection, image fields, collection numbers, and docs equivalents;
+- material/summon lines and Extra Deck types;
+- MSE markup, field order, frame selection, image fields, and collection numbers;
 - casting-cost and power/toughness representation.
 
 ## Phase 2 — Inventory and parse the MSE source
@@ -87,9 +87,9 @@ Read every scoped card completely and capture:
 - `power` and `toughness`;
 - rarity and every present `card_code_text*` field;
 - image fields;
-- `notes: Source:` and matching docs heading.
+- `notes: Source:` and owning archetype document.
 
-Use `notes: Source:` first to identify the docs file, then the numeric project prefix and existing exact card heading. Archetype headings may use `[original name] => [cube name]`; keep the original-name side intact while matching MSE `name:` to the cube-name side. A blank docs heading is a valid destination that should be populated from a complete MSE card.
+Use `notes: Source:` first to identify owning archetype document, then numeric project prefix and current documentation index. Numbered docs contain archetype identity, mechanics, exceptions, and design philosophy only; they do not mirror card-by-card values.
 
 Do not invent fields for incomplete placeholder cards. Record them as skipped/incomplete and continue with the remaining cards.
 
@@ -101,22 +101,22 @@ Correct each complete scoped card according to the live Phase 1 checklist.
 
 Apply formatting-neutral corrections such as:
 
-- French spelling, agreement, accents, apostrophes, and punctuation;
+- English spelling, agreement, apostrophes, and punctuation;
 - Arabic digits for rule quantities;
 - canonical abbreviations and capitalization;
-- typographic French quotes around mechanically referenced card or archetype names;
+- typographic quotes around mechanically referenced card or archetype names;
 - `(x - Type)` labels and sequential ability numbers;
-- valid `Passif`, `Déclenchable`, `Activable Sorcery`, `Activable Flash`, `Résolution`, `Soft`, `Hard`, and `Hard Linked` forms;
+- valid `Static`, `Triggered`, `Activated Sorcery`, `Activated Flash`, `Resolution`, `Soft`, `Hard`, and `Hard Linked` forms;
 - costs/conditions before evergreen keywords, and evergreen keywords before numbered abilities;
 - bold current keywords and event-keyword em dashes;
 - current material-line wording and italics;
 - removal of blank lines from MSE `rule_text`;
-- `<b>...</b>` and `<i>...</i>` in MSE, with `**...**` and `*...*` equivalents in Markdown;
-- MSE mana costs without braces and docs costs with braces;
-- MSE `power`/`toughness` fields and docs `**P / T**` representation;
-- current type wrappers and frame fields when the card's existing super-type determines them unambiguously.
+- valid `<b>...</b>` and `<i>...</i>` MSE markup;
+- MSE mana costs without braces;
+- MSE `power`/`toughness` fields;
+- current type wrappers and frame fields when card's existing supertype determines them unambiguously.
 
-For statistics, synchronize cost, type, subtype, power, and toughness from MSE into docs and normalize their representation. Do **not** rebalance a card or recompute numeric P/T merely because the generic ATK/DEF conversion formula exists: the documented minimum and intentional adaptations make that a design decision. Recompute only when the user explicitly asks for conversion validation and an authoritative `original_cards/` record plus the current rules yield one unambiguous value with no applicable exception.
+For statistics, normalize MSE representation only. Do **not** rebalance a card or recompute numeric P/T merely because generic ATK/DEF conversion formula exists: documented minimum and intentional adaptations make that a design decision. Recompute only when user explicitly asks for conversion validation and an authoritative `original_cards/` record plus current rules yield one unambiguous value with no applicable exception.
 
 ### Semantic boundary
 
@@ -134,25 +134,19 @@ Never silently change:
 
 If a proposed grammar/templating correction crosses this boundary, leave the original mechanic unchanged and add it to an unresolved semantic ledger. This skill does not evolve `docs/context.md` or `docs/02_rules_keywords_card_design.md`; route those entries through `fix-mse-cards`.
 
-If a scoped effect would perform a normally illegal Summon, especially from the Sideboard without the required invocation method, call `AskUserQuestion` for that card before editing and ask whether to add `en ignorant les restrictions de Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a correct invocation.
+If a scoped effect would perform a normally illegal Summon, especially from the Sideboard without the required invocation method, call `AskUserQuestion` for that card before editing and ask whether to add `ignoring the restrictions of Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a proper summon.
 
 Preserve unrelated metadata and artwork. Update `time_modified` only on cards whose content changed.
 
-## Phase 4 — Mirror the final cards into docs
+## Phase 4 — Synchronize consumers without duplicating cards
 
-For every complete scoped card, update the matching numbered document in the same pass:
+MSE remains card source of truth. Do not add card names, costs, types, stats, material lines, or rules text to numbered docs.
 
-- MSE remains the mechanics source of truth;
-- mirror name, cost, type/subtype, P/T, material line, evergreen keywords, and all rule text;
-- preserve the document's heading depth, separators, original Yu-Gi-Oh! name, notes, and ordering;
-- strip MSE word-list wrappers from visible Markdown;
-- convert MSE bold/italics to Markdown;
-- never leave raw MSE tags in docs;
-- never erase a complete docs section because its MSE card is only a placeholder.
+Update owning archetype document only when normalized text changes reusable archetype identity, mechanic wording, exception, or design rule. Route general rule changes through `fix-mse-cards`; formatting-only card changes normally require no docs edit.
 
-Search docs, MSE files, `.script/`, `mse/`, and tests for stale old text. Update only generators/synchronizers or fixtures that would otherwise restore the old formatting. Do not run a stale generator before synchronizing it.
+Search English docs, canonical MSE files, `.script/`, `mse/`, and tests for stale old text. Update generators/synchronizers or fixtures that would otherwise restore old formatting. Do not run stale generator before synchronizing it.
 
-For project scope, sort all manifest `include_file:` entries alphabetically by visible MSE `name:` and renumber every present `card_code_text`, `card_code_text_2`, and `card_code_text_3` as `001/NNN`, preserving rarity suffixes. For card scope, validate existing order/numbers; fix them project-wide only when they violate the current mandatory convention.
+For project scope, sort manifest `include_file:` entries alphabetically by visible MSE `name:` and renumber every present `card_code_text`, `card_code_text_2`, and `card_code_text_3` as `001/NNN`, preserving rarity suffixes. For card scope, validate existing order/numbers; fix them project-wide only when they violate current mandatory convention.
 
 ## Phase 5 — Structural validation
 
@@ -164,7 +158,7 @@ Validate the complete parent project, even for one-card scope:
 - card image fields follow the current project image convention;
 - no backup, nested `.mse-set`, diagnostic, cache, or export folder can poison GUI save behavior;
 - collection totals and positions agree with manifest order;
-- docs and MSE agree for every scoped complete card;
+- owning archetype document remains consistent without card-value duplication;
 - no stale superseded wording remains in a regeneration source.
 
 Then run:
@@ -211,12 +205,12 @@ Delete the temporary folder afterward. Unless the user requests another quantity
 
 ## Final response
 
-Respond in French with:
+Respond in English with:
 
 - input path and whether scope was one card or the full project;
 - cards normalized and incomplete cards skipped;
 - formatting, grammar, markup, and stat-representation fixes;
-- MSE/docs/generator files synchronized;
+- MSE, affected archetype docs, and generator files synchronized;
 - unresolved semantic ledger entries, if any;
 - structural checks, tests, and `git diff --check` results;
 - MSE export count and render path;
@@ -228,8 +222,8 @@ Respond in French with:
 - Never redesign cards under a formatting request.
 - Never rewrite current project rules from patterns found in cards.
 - Never use docs to overwrite newer MSE mechanics.
-- Never update only MSE or only docs for a complete scoped card.
-- Never erase complete docs from an incomplete MSE placeholder.
+- Never duplicate card-by-card values into docs.
+- Never edit archetype docs for formatting-only card changes.
 - Never run stale generators over the input.
 - Never leave broken includes, image references, numbering, or stale renders.
 - Never put backups, temporary projects, or validation exports inside an active `.mse-set` folder.

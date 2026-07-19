@@ -24,11 +24,12 @@ Use `AskUserQuestion` only for direct card-mechanic classifications, missing val
 - Cards are `card <slug>` files referenced by `include_file:` entries in `set`.
 - `docs/context.md` contains general syntax, PSCT, formatting, vocabulary, and structural conventions that apply to every card.
 - `docs/02_rules_keywords_card_design.md` details duplicated global card-design and templating rules.
-- Numbered archetype documents own their archetype-specific mechanics, exceptions, and card values, and mirror the corresponding MSE project.
+- Numbered archetype documents own archetype-specific mechanics and exceptions. English MSE projects own card-by-card values; docs do not duplicate them.
 - Generator/update scripts under `.script/` must not be allowed to regenerate stale data over accepted MSE edits.
 - Local MSE paths come from the gitignored `.env` through `mse_config.py`; never hardcode an installation path.
 - Original source illustrations live under `original_images/<card_type>/`, using the same card-type folders and Windows-safe official card names as `original_cards/`; project-local `mse_images/` contains only imported/resized copies used by MSE cards.
 - Preserve unrelated working-tree changes. Do not reset, checkout, or regenerate an entire project over hand edits.
+- Never edit frozen snapshots under `MSE_projects/French/`, `docs/French/`, `rule_reviews/French/`, or `mse/French/`; exclude them from scope, synchronization, generators, renders, and proxy PDFs.
 
 ## Phase 0 — Establish scope and protect the hand edit
 
@@ -95,16 +96,16 @@ Compare the MSE source against rules in these categories:
 
 1. domain meaning and game mechanics;
 2. keyword definitions and event timing;
-3. ability labels (`Passif`, `Activable`, `Déclenchable`, `Soft`, `Hard`, `Hard Linked`);
-4. invocation/material syntax;
-5. zones and project vocabulary (`Grave`, Extra Deck, terrain, etc.);
+3. ability labels (`Static`, `Activated`, `Triggered`, `Soft`, `Hard`, `Hard Linked`);
+4. summon/material syntax;
+5. zones and project vocabulary (`Grave`, Extra Deck, field, etc.);
 6. card type, Link Lvl, frame, and stylesheet mapping;
 7. cost/stat conversion rules;
-8. French grammar, spelling, punctuation, accents, and templating;
+8. English grammar, spelling, punctuation, and templating;
 9. MSE file structure and reference integrity;
 10. docs/generator/test assumptions that now disagree with the MSE data.
 
-Before creating the difference ledger, detect every edited effect that would perform a normally illegal Summon, especially from the Sideboard without the required invocation method. For each affected card, call `AskUserQuestion` and ask whether to add `en ignorant les restrictions de Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a correct invocation. Record the answer in the ledger.
+Before creating the difference ledger, detect every edited effect that would perform a normally illegal Summon, especially from the Sideboard without the required invocation method. For each affected card, call `AskUserQuestion` and ask whether to add `ignoring the restrictions of Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a proper summon. Record the answer in the ledger.
 
 Create a **difference ledger**. Each entry must contain:
 
@@ -181,7 +182,7 @@ Apply two kinds of corrections:
 
 Correct:
 
-- French spelling, grammar, accents, agreement, and punctuation;
+- English spelling, grammar, agreement, and punctuation;
 - established capitalization (`Link Lvl`, keyword names, zones);
 - bold event keywords and em-dash formatting in MSE markup;
 - ability-label typography;
@@ -207,7 +208,7 @@ Preserve non-content metadata and artwork unless the accepted update removes or 
 
 Treat the reconciled MSE files as the final data source and update every consumer:
 
-- corresponding archetype design doc under `docs/` only when mechanics/identity change (never re-duplicate full card text);
+- corresponding English archetype design doc under `docs/` only when mechanics/identity change (never duplicate card text);
 - rule docs already changed through `update-rules`; do not edit `docs/context.md` or `docs/02_rules_keywords_card_design.md` directly in this phase;
 - project manifest `set` and card include order;
 - card numbering/totals where present;
@@ -216,12 +217,12 @@ Treat the reconciled MSE files as the final data source and update every consume
 - indexes or cross-references that list removed/renamed cards;
 - central source artwork under `original_images/` and project-local resized files under `mse_images/` only when they are added, replaced, or proven orphaned.
 
-When updating a card document:
+When updating archetype documentation:
 
-- mirror MSE mechanics, cost, type, subtype, stats, material line, and rule text;
-- use Markdown equivalents of MSE markup (`<b>` → `**`, `<i>` → `*`);
+- document only reusable archetype identity, mechanics, exceptions, and design rules;
+- never mirror card names, costs, types, stats, material lines, or full rules text;
 - retain document structure and project vocabulary;
-- do not invent flavor text or mechanics absent from MSE.
+- do not invent mechanics absent from MSE.
 
 Search globally for stale values and old names after synchronization.
 

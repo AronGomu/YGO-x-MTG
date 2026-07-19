@@ -10,7 +10,9 @@ metadata:
 
 Add or modify converted cube cards directly from structured Markdown supplied by the user. Do **not** require the user to open Magic Set Editor. The user must name the target MSE project and provide one or more `[ADD]` or `[UPDATE]` card blocks.
 
-The supplied converted card data is the **provisional source of truth** for card mechanics. Preserve it unless the user explicitly classifies a difference as an input error. Correct spelling, grammar, established vocabulary, and MSE markup, but never silently redesign the mechanic.
+The supplied converted card data is the **provisional source of truth** for card mechanics. Preserve it unless the user explicitly classifies a difference as an input error. Correct English spelling, grammar, established vocabulary, and MSE markup, but never silently redesign the mechanic.
+
+Only English canonical projects under `MSE_projects/*.mse-set/` may be destinations. Never edit frozen snapshots under `MSE_projects/French/`, `docs/French/`, `rule_reviews/French/`, or `mse/French/`, and exclude them from render and proxy-PDF discovery.
 
 This workflow has two mandatory interview loops, matching `fix-mse-cards`:
 
@@ -39,7 +41,7 @@ Creature - Tuner Zombie
 0/1
 
 Effect:
-(1 - Activable Flash Hard) Défaussez Ash Blossom ; ...
+(1 - Activated Flash Hard) Discard Ash Blossom; ...
 
 ---
 
@@ -50,12 +52,12 @@ Legendary Creature - Wizard
 2/3
 
 Effect:
-(1 - Déclenchable) **On Enter** — ...
+(1 - Triggered) **On Enter** — ...
 ```
 
 Accept harmless variations:
 
-- `Effect`, `Effects`, or `Effet`;
+- `Effect` or `Effects`;
 - `-`, `—`, or a newline between type and subtype;
 - `0/1` or `0 / 1`;
 - straight or typographic quotes;
@@ -101,7 +103,7 @@ Normalize every block into a record containing:
 - power/toughness when the card is a creature;
 - ordered effect lines;
 - Markdown bold/italic spans;
-- explicitly supplied material/invocation line;
+- explicitly supplied material/summon line;
 - any new keyword or event phrase.
 
 Show a concise parsed summary before editing when input is ambiguous. Do not infer omitted costs, stats, targets, timing, zones, or once-per-turn restrictions from the original Yu-Gi-Oh! card.
@@ -110,11 +112,11 @@ Show a concise parsed summary before editing when input is ambiguous. Do not inf
 
 Automatically correct mechanical-neutral issues:
 
-- French accents, spelling, agreement, apostrophes, and punctuation;
-- `Grave` instead of `Grave` in card text when project rules require it;
+- English spelling, agreement, apostrophes, and punctuation;
+- `Grave` instead of `graveyard` in card text when project rules require it;
 - established English card types/subtypes (`Creature`, `Tuner`, `Zombie`, `Bird`, `Wizard`, `Insect`);
 - capitalization of `Deck`, `Grave`, `Link Lvl`, and established event keywords;
-- `1 sort ou capacité ciblé` and similar target agreement;
+- `1 target spell or ability` and similar target agreement;
 - Markdown `**keyword**` to MSE `<b>keyword</b>`;
 - Markdown `*material line*` to MSE `<i>material line</i>`;
 - ability-label separators and em dashes.
@@ -150,16 +152,16 @@ Compare every parsed record against rules in these categories:
 
 1. domain meaning and game mechanics;
 2. keyword definitions and event timing;
-3. ability labels (`Passif`, `Activable`, `Déclenchable`, `Soft`, `Hard`, `Hard Linked`);
-4. invocation/material syntax;
-5. zones and project vocabulary (`Grave`, Extra Deck, terrain, etc.);
+3. ability labels (`Static`, `Activated`, `Triggered`, `Soft`, `Hard`, `Hard Linked`);
+4. summon/material syntax;
+5. zones and project vocabulary (`Grave`, Extra Deck, field, etc.);
 6. card type, Link Lvl, frame, and stylesheet mapping;
 7. cost/stat conversion rules;
-8. French grammar, spelling, punctuation, accents, and templating;
+8. English grammar, spelling, punctuation, and templating;
 9. MSE file structure and reference integrity;
 10. docs/generator/test assumptions that would disagree with the supplied card data.
 
-Before creating the difference ledger, detect every supplied effect that would perform a normally illegal Summon, especially from the Sideboard without the required invocation method. For each affected card, call `AskUserQuestion` and ask whether to add `en ignorant les restrictions de Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a correct invocation. Record the answer in the ledger.
+Before creating the difference ledger, detect every supplied effect that would perform a normally illegal Summon, especially from the Sideboard without the required invocation method. For each affected card, call `AskUserQuestion` and ask whether to add `ignoring the restrictions of Summon`. Offer exactly: **Add the explicit permission**, **Keep Summon restrictions**, and **Send a message** with custom text enabled. Never infer or insert the bypass silently. The permission makes the Summon legal but does not make it a proper summon. Record the answer in the ledger.
 
 Create a **difference ledger**. Each entry must contain:
 
@@ -205,7 +207,7 @@ After each round, show unresolved IDs and continue interviewing. Phase 4 ends on
 For every `update-rule` decision:
 
 1. Update `docs/context.md` with the accepted domain rule, using existing terminology and placing it beside the closest related rule.
-2. Update `docs/02_rules_keywords_card_design.md` when the change concerns card syntax, keywords, timing, types, invocation, frames, or templating.
+2. Update `docs/02_rules_keywords_card_design.md` when change concerns card syntax, keywords, timing, types, summoning, frames, or templating.
 3. Modify or remove old statements that directly contradict the accepted rule; do not append a second contradictory paragraph.
 4. Include scope and exclusions. For example, define whether a trigger is equivalent to `On Enter`, when it does not fire, and which card types it applies to.
 
@@ -224,7 +226,7 @@ After all conflict decisions are applied, the reconciled normalized record becom
 5. If the display name changes:
    - rename the `card <slug>` file;
    - update the manifest `include_file:`;
-   - update docs headings and all scripts/maps/tests using the old display name;
+   - update archetype references and all scripts/maps/tests using old display name;
    - preserve existing image files unless their names are intentionally normalized.
 
 ### ADD
@@ -232,7 +234,7 @@ After all conflict decisions are applied, the reconciled normalized record becom
 1. Fail if an exact or normalized-name card already exists; ask whether the operation should become `UPDATE`.
 2. Create `card <safe lowercase slug>` using sibling MSE field order and the frame dictated by card type in project rules.
 3. Add a sorted `include_file:` entry.
-4. Add the card to the matching docs using the document's existing heading/style.
+4. Update matching archetype doc only if addition introduces or changes reusable archetype identity, mechanics, exceptions, or design rules. Never add card block.
 5. Artwork:
    - prefer a user-supplied local image path or URL if included;
    - otherwise use YGOPRODeck only to discover cropped artwork by card name;
@@ -244,18 +246,9 @@ After all conflict decisions are applied, the reconciled normalized record becom
 
 Do not invoke `fetch-original-ygo-card` merely to second-guess supplied mechanics. The user has already designed the conversion. It may be used only when the user explicitly asks to verify original Yu-Gi-Oh! identity/data.
 
-## Phase 7 — Write docs and MSE consistently
+## Phase 7 — Write canonical MSE cards
 
-For each record, update the docs and MSE card in the same pass.
-
-### Markdown representation
-
-- Keep the user-facing name as a heading.
-- Render cost with braces.
-- Render type/subtype using the target document's convention.
-- Render stats as `**P/T**` or the sibling equivalent.
-- Preserve numbered ability labels.
-- Use Markdown bold and italics.
+For each record, update English canonical MSE card. Numbered docs must not duplicate card-by-card values.
 
 ### MSE representation
 
@@ -263,16 +256,17 @@ For each record, update the docs and MSE card in the same pass.
 - Cost contains symbols without braces.
 - Use `<word-list-type-en>`, `<word-list-race-en>`, and `<word-list-class-en>` consistently with siblings.
 - `rule_text` contains no blank lines.
-- Convert `**...**` to `<b>...</b>` and `*...*` to `<i>...</i>`.
+- Convert supplied Markdown `**...**` to `<b>...</b>` and `*...*` to `<i>...</i>`.
 - Keep `flavor_text` only according to sibling conventions; never invent flavor text.
 - Update `time_modified` without rewriting unrelated metadata.
+
+If card changes reusable archetype behavior, update only relevant archetype rule/exception in numbered doc. Do not add card heading, cost, type, stats, material line, or full rules text.
 
 After all card edits:
 
 1. Sort `include_file:` entries by visible card name.
 2. Renumber every present `card_code_text`, `card_code_text_2`, and `card_code_text_3` field as `001/NNN`, `002/NNN`, etc., retaining each rarity suffix.
-3. Ensure `NNN` equals the manifest card count.
-4. Update docs ordering to match the project's established convention, not necessarily manifest order if the doc intentionally groups cards.
+3. Ensure `NNN` equals manifest card count.
 
 ## Phase 8 — Synchronize regeneration sources and consumers
 
@@ -342,7 +336,7 @@ Add or update project tests that assert:
 
 - manifest includes resolve exactly once;
 - card filename and `name:` agree after rename/add;
-- docs and MSE share name, cost, type, stats, and key rule fragments;
+- canonical MSE fields contain expected name, cost, type, stats, and key rule fragments;
 - image references exist;
 - card numbering total matches manifest count;
 - removed/old names are absent from regeneration sources;
@@ -365,7 +359,7 @@ CLI export does not prove GUI Save/Save As. Report that limitation rather than c
 
 ## Final response
 
-Respond in French with:
+Respond in English with:
 
 - target docs and MSE project;
 - cards added and updated;
@@ -386,7 +380,7 @@ Respond in French with:
 - Never leave an interview ledger partially answered.
 - Never silently convert a failed UPDATE match into ADD.
 - Never overwrite direct MSE edits outside the named cards.
-- Never update docs without the MSE files, or MSE files without docs.
+- Never duplicate card-by-card values into docs.
 - Never leave stale generator mappings that can restore old content.
 - Never create backups or exports inside an active `.mse-set` folder.
 - Never commit `.env`, machine paths, temporary exports, or API responses.
