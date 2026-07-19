@@ -2,6 +2,10 @@
 
 Yu-Gi-Oh! cards adapted as Magic: The Gathering cards and saved as Magic Set Editor projects.
 
+## Source of truth
+
+English card data lives in `MSE_projects/*.mse-set/`; English project documentation lives in `docs/`. Frozen French snapshots live in `MSE_projects/French/`, `docs/French/`, `rule_reviews/French/`, and `mse/French/` and are not authoritative.
+
 ## First-time setup
 
 This repository does not commit machine-specific Magic Set Editor paths. After every fresh clone:

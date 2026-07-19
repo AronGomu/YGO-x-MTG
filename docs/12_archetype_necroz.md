@@ -1,6 +1,6 @@
 ---
 date: 2026-07-09
-title: 12 - Archétype : Necroz
+title: 12 - Archetype: Nekroz
 tags:
   - project
   - game-design
@@ -11,91 +11,76 @@ tags:
   - necroz
 ---
 
-# 12 - Archétype : Necroz
+# 12 - Archetype: Nekroz
 
-# Necroz
+#Nekroz
 
-## Identité de l'archétype
+## Archetype identity
 
-Necroz est un deck **Ritual / Toolbox / Anti-Extra Deck**.
+Nekroz is a **Ritual / Toolbox / Anti-Extra Deck** deck.
 
-### Convention des noms courts
+### Short-name convention
 
-Dans Magic Set Editor, chaque carte de cet archétype utilise le format `Nekroz - [card name]`. Le nom officiel complet est conservé dans `original_cards/` et la traçabilité se fait via les notes MSE / le nom d’affichage cube.
+In Magic Set Editor, each archetype card uses `Nekroz - [card name]`. The full official name remains under `original_cards/`; MSE notes and cube display name provide traceability.
 
----
+## Color
 
-# Couleur
+Main color: **Blue**
 
-Couleur principale : **Bleu**
+## Mechanics
 
----
+- **Ritual**
+- **Sideboard**
+- **Toolbox**
+- **Anti-Extra Deck**
+- **Grave**
+- **Exile**
 
-# Mécaniques utilisées
+## Archetype-specific rule
 
-* Ritual
-* Sideboard
-* Toolbox
-* Anti-Extra Deck
-* Grave
-* Exil
+**Nekroz Ritual Creatures** can only be cast through a **Ritual Summon**.
 
----
+Unless stated otherwise:
 
-# Règle propre à l'archétype
+> You can only use each effect of a **Nekroz** creature once per turn.
 
-Les créatures **Ritual Necroz** ne peuvent être lancées que par une invocation **Ritual**.
+### Nekroz Recovery
 
-Sauf indication contraire :
+**Nekroz Recovery** means: “If you control no creatures: exile this card and 1 other “Nekroz” from Grave; Search 1 non-creature Ritual Summon “Nekroz”.” Non-Nekroz cards sharing this effect print full text after em dash.
 
-> Vous ne pouvez utiliser chaque effet d'une créature **Necroz** qu'une seule fois par tour.
+## Card source of truth
 
-## Nekroz Recovery
+Card-by-card values for this archetype exist only in `MSE_projects/12_YGO_Necroz.mse-set/`. This document retains only identity, archetype rules, and design philosophy.
 
-**Nekroz Recovery** signifie : « Si vous ne contrôlez aucune créature : exilez cette carte et 1 autre “Nekroz” depuis votre Grave ; cherchez 1 non-créature Ritual Summon “Nekroz”. » Les non-créatures “Nekroz” qui partagent cet effet écrivent le texte complet après le tiret cadratin.
+## Design philosophy
 
----
+Nekroz should remain highly consistent but should depend on correct resource sequencing.
 
-## Source de vérité des cartes
+Cards should encourage:
 
-Les valeurs carte par carte de cet archétype sont définies uniquement dans `MSE_projects/12_YGO_Necroz.mse-set/`. Ce document ne conserve que l’identité, les règles d’archétype et la philosophie de design.
+- searching for specific pieces;
+- converting cards in hand into utility effects;
+- strategic use of Grave and exile;
+- punishing creatures from Sideboard;
+- incremental advantage rather than immediate lethal combos.
 
+## Expected game progression
 
-# Philosophie de design
+1. Search for a Ritual spell and a Nekroz Ritual Creature through discard effects or support cards.
+2. Use **Shurit**, **Great Sorcerer**, **Manju**, or **Senju** to stabilize the hand.
+3. Cast the first Nekroz Ritual Creature.
+4. Control opposing Sideboard creatures with **Unicore**, **Brionac**, or **Trishula**.
+5. Recycle Ritual spells from Grave while the field is empty.
+6. Regain advantage with **Cycle**, **Mirror**, and **Kaleidoscope**.
+7. Finish the game with resilient Ritual Creatures and continuously replenished hand.
 
-Necroz doit être un archétype très consistant, mais dépendant de la bonne séquence de ressources.
+## Design constraints
 
-Les cartes doivent encourager :
+All future “Nekroz” cards must:
 
-* la recherche de pièces spécifiques ;
-* la transformation de cartes en main en effets utilitaires ;
-* l'utilisation stratégique du Grave et de l'exil ;
-* la punition des créatures issues du Sideboard ;
-* une progression par avantage incrémental plutôt que par combo létal immédiat.
-
----
-
-# Progression d'une partie
-
-Le déroulement attendu d'une partie est le suivant :
-
-1. Chercher une magie Ritual et une créature Ritual Necroz grâce aux effets de défausse ou aux cartes de soutien.
-2. Utiliser **Shurit**, **Great Sorcerer**, **Manju** ou **Senju** pour stabiliser la main.
-3. Lancer une première créature Ritual Necroz.
-4. Contrôler les créatures adverses issues du Sideboard avec **Unicore**, **Brionac** ou **Trishula**.
-5. Recycler les magies Ritual depuis le Grave lorsque le champ est vide.
-6. Reprendre l'avantage grâce à **Cycle**, **Mirror** et **Kaleidoscope**.
-7. Terminer la partie avec des créatures Ritual résilientes et une main continuellement rechargée.
-
----
-
-# Contraintes de design
-
-Toutes les futures cartes “Necroz” devront respecter les principes suivants :
-
-* conserver une identité **Ritual** forte ;
-* éviter les créatures lancées normalement trop efficaces ;
-* donner aux créatures Ritual des effets utiles même lorsqu'elles sont en main ;
-* limiter les effets de recherche par des restrictions « une fois par tour » ;
-* faire du Sideboard une ressource et une cible d'interaction ;
-* maintenir le bleu comme couleur principale de consistance, tempo et contrôle.
+- maintain strong **Ritual** identity;
+- avoid making normally cast Creatures too efficient;
+- give Ritual Creatures useful effects while in hand;
+- limit search effects through once-per-turn restrictions;
+- make the Sideboard both a resource and an interaction target;
+- keep blue as the main color for consistency, tempo, and control.

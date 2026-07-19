@@ -18,15 +18,15 @@ For `REVISE`, write the replacement rule under `Final wording`. Use `Notes` for 
 
 ## Ruling contradictions — pattern destroyers
 
-### D1 — Ritual MV check: “satisfait son coût Ritual” vs explicit equality
+### D1 — Ritual MV check: “satisfies its Ritual cost” vs explicit equality
 
 - Scope: general (`docs/context.md` Ritual MV comparison)
 - Existing rule: For Ritual Summon mana-value costs, compare MV values explicitly; default is equality (`docs/context.md` Ritual Summon / MV cost section).
-- Conflicting MSE evidence: `card nekroz - cycle`, `card nekroz - mirror`, `card nekroz - kaleidoscope` use `dont la MV satisfait son/leur(s) coût(s) Ritual` instead of `dont la MV totale est égale à …`.
-- Why this destroys a pattern: “Satisfait” is vaguer than explicit equality / ≥ and may hide overpay policy.
-- Exact ruling question: May Ritual material lines use `dont la MV satisfait son coût Ritual` as the project default for exact-match ritual costs, or must cards keep explicit `égale` / `supérieure ou égale`?
+- Conflicting MSE evidence: `card nekroz - cycle` and `card nekroz - mirror` use `whose MV meets its Ritual cost`, while `card nekroz - kaleidoscope` uses `whose MV satisfies their Ritual cost(s)`, instead of explicit `whose total MV equals ...` wording.
+- Why this destroys a pattern: “Satisfies” is vaguer than explicit equality / ≥ and may hide overpay policy.
+- Exact ruling question: May Ritual material lines use `whose MV satisfies its Ritual cost` as the project default for exact-match ritual costs, or must cards keep explicit `equal` / `greater than or equal`?
 - Impacted cards/files: Cycle, Mirror, Kaleidoscope; future Ritual spells; `docs/context.md`.
-- Proposed resolution: Allow `dont la MV satisfait son coût Ritual` as shorthand for the documented default equality check. Keep `supérieure ou égale` when overpay is intended.
+- Proposed resolution: Allow `whose MV satisfies its Ritual cost` as shorthand for the documented default equality check. Keep `greater than or equal` when overpay is intended.
 - Side effects: Shorter ritual templates; equality remains the rules default unless stated otherwise.
 - Decision: TODO
 - Final wording:
@@ -48,41 +48,43 @@ For `REVISE`, write the replacement rule under `Final wording`. Use `Notes` for 
 
 ## New possible rules — pattern makers
 
-### R1 — Keyword **Bounce**
+### R1 — Brionac’s Sideboard return versus **Bounce**
 
-- Scope: general (`docs/context.md`, `docs/02_rules_keywords_card_design.md`)
-- Evidence: `card nekroz - brionac` ability 2: `Ciblez 1 créature qui a été mise en jeu depuis un Sideboard ; <b>Bounce</b> la cible.` Replaces prior “Mélangez dans le Sideboard …”.
-- Existing rule: None for **Bounce**. Sideboard return was fully written.
-- Exact proposed wording: **Bounce** means return the targeted permanent to its owner’s Sideboard (Extra Deck analogue), shuffled in if the zone is ordered as a deck zone; if Bounce targets a permanent not from Sideboard, return it to its owner’s hand instead—or define strictly as “return to Sideboard only when legal, else hand.” Prefer: **Bounce** = « Renvoyez le permanent ciblé dans le Sideboard de son propriétaire. »
-- Boundary and exceptions: Only for Sideboard-origin interaction unless Final wording expands.
-- Impacted cards/files: Brionac; any future bounce-to-sideboard effects.
-- Side effects: Needs bold keyword + optional reminder on first print.
+- Scope: card-specific conflict with the existing general **Bounce** rule
+- Evidence: `card nekroz - brionac` ability 2 says `Target 1 creature that was put onto the field from a Sideboard; <b>Bounce</b> the target.` This replaces prior `Shuffle ... into Sideboard` wording.
+- Existing rule: **Bounce** returns the targeted permanent to its owner's hand (`docs/context.md`, `docs/02_rules_keywords_card_design.md`).
+- Exact ruling question: Should Brionac use the existing **Bounce** keyword and return the target to its owner's hand, or restore explicit wording that shuffles the target into its owner's Sideboard?
+- Proposed resolution: Treat this as a card-specific destination decision. Do not redefine the global **Bounce** keyword.
+- Boundary and exceptions: If Sideboard return is selected, write the action in full rather than overloading **Bounce**.
+- Impacted cards/files: `card nekroz - brionac`; its tests and render.
+- Side effects: Determines Brionac's destination without changing the global keyword.
 - Decision: TODO
 - Final wording:
 - Notes:
 
-### R2 — Discard self by short card name (`Défaussez Brionac`)
+### R2 — Discard self by short card name (`Discard Brionac`)
 
 - Scope: general reusable templating
-- Evidence: Multiple Nekroz rituals: `Défaussez Brionac`, `Défaussez Catastor`, `Défaussez Clausolas`, `Défaussez Armor`, `Défaussez Trishula`, `Défaussez Unicore`, `Défaussez Valkyrus` instead of `Défaussez cette carte`.
-- Existing rule: Self-discard usually `Défaussez cette carte`.
-- Exact proposed wording: On a named creature, a hand ability may use the short display name after `Défaussez` (`Défaussez Brionac`) as equivalent to discarding this card from hand. Prefer short name when the MSE `name` line is `Nekroz - X` and the reminder name is `X` / last token.
-- Boundary and exceptions: Keep `cette carte` when the short name is ambiguous.
+- Evidence: Multiple Nekroz rituals: `Discard Brionac`, `Discard Catastor`, `Discard Clausolas`, `Discard Armor`, `Discard Trishula`, `Discard Unicore`, `Discard Valkyrus` instead of `Discard this card`.
+- Existing rule: Self-discard usually `Discard this card`.
+- Exact proposed wording: On a named creature, a hand ability may use the short display name after `Discard` (`Discard Brionac`) as equivalent to discarding this card from hand. Prefer short name when the MSE `name` line is `Nekroz - X` and the reminder name is `X` / last token.
+- Boundary and exceptions: Keep `this card` when the short name is ambiguous.
 - Impacted cards/files: Most Nekroz ritual monsters; generators/tests.
 - Side effects: Clearer YGO flavor; name must match printed short name.
 - Decision: TODO
 - Final wording:
 - Notes:
 
-### R3 — **Summon** from exile with `en ignorant les restrictions de Summon`
+### R3 — **Release** from exile with `ignoring the restrictions of Summon`
 
-- Scope: general (Summon restriction permission already exists)
-- Evidence: `card nekroz - exa` (2): `Ciblez 1 autre créature “Nekroz” dans votre exil ; <b>Summon</b> la cible en ignorant les restrictions de Summon.`
-- Existing rule: Illegal Summons need explicit `en ignorant les restrictions de Summon` (`docs/context.md` / Summon rules).
-- Exact proposed wording: When Summoning a Ritual (or Extra Deck) creature from exile/hand/Grave without the proper invocation method, always append `en ignorant les restrictions de Summon`. Reaffirm that this does not count as a correct Ritual Summon for future restriction checks unless the card says so.
-- Boundary and exceptions: Pure hand-to-hand returns do not need it.
-- Impacted cards/files: Exa; similar revive/summon-from-exile designs.
-- Side effects: Legal Summon of restricted types without fixing invocation correctness.
+- Scope: card-specific application of an existing general rule
+- Evidence: `card nekroz - exa` (2): `Target 1 other “Nekroz” creature in your exile; <b>Release</b> the target ignoring the restrictions of Summon.`
+- Existing rule: **Release** puts a card from exile onto the field and follows the same proper-summon restrictions as **Summon** and **Reanimate**. A normally illegal action needs explicit `ignoring the restrictions of Summon` (`docs/context.md`).
+- Exact ruling question: Should Exa retain `ignoring the restrictions of Summon` so it can Release a Ritual Creature that was not properly summoned?
+- Proposed resolution: Retain the permission on Exa. No new general rule is needed.
+- Boundary and exceptions: This permission makes the Release legal but does not count as a proper Ritual Summon.
+- Impacted cards/files: `card nekroz - exa` only.
+- Side effects: Makes the card's restricted-zone interaction explicit without changing general rules.
 - Decision: TODO
 - Final wording:
 - Notes:

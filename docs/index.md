@@ -1,6 +1,6 @@
 ---
 date: 2026-07-06
-title: Yu-Gi-Oh. × Magic Cube
+title: Yu-Gi-Oh! × Magic Cube
 tags:
   - project
   - game-design
@@ -10,30 +10,30 @@ tags:
 status: drafting
 ---
 
-# Yu-Gi-Oh. × Magic Cube
+# Yu-Gi-Oh! × Magic Cube
 
 ## Purpose
 
-Créer un cube composé de cartes originales inspirées des archétypes emblématiques de Yu-Gi-Oh., mais jouables avec les règles de Magic: The Gathering.
+Create a cube of original cards inspired by iconic Yu-Gi-Oh! archetypes and playable under Magic: The Gathering rules.
 
-## Source de vérité des cartes
+## Card source of truth
 
-Les textes Magic traduits, coûts, stats, types et frames des cartes sont définis uniquement dans les projets `MSE_projects/*.mse-set/`. Les documents sous `docs/` ne dupliquent plus ces valeurs carte par carte.
+English Magic rules text, costs, stats, types, and frames are defined only in `MSE_projects/*.mse-set/`. Documents under `docs/` no longer duplicate card-by-card values. Frozen French snapshots live under `MSE_projects/French/` and `docs/French/`; they are not authoritative.
 
 ## Documents
 
-- [[context|Contexte du projet]]
-- [[01_presentation_generale_regles_du_cube|01 - Présentation générale du cube]]
-- [[02_rules_keywords_card_design|02 - Règles, mots-clés et design des cartes]]
-- [[10_archetype_burning_abyss|10 - Archétype : Burning Abyss]]
-- [[11_archetype_shaddoll|11 - Archétype : Shaddoll]]
-- [[12_archetype_necroz|12 - Archétype : Nekroz]]
-- [[13_archetype_spellbook|13 - Archétype : Spellbook]]
-- [[frame_candidates|Frames MSE candidates]]
+- [[context|Project context]]
+- [[01_cube_overview|01 - Cube overview]]
+- [[02_rules_keywords_card_design|02 - Rules, keywords, and card design]]
+- [[10_archetype_burning_abyss|10 - Archetype: Burning Abyss]]
+- [[11_archetype_shaddoll|11 - Archetype: Shaddoll]]
+- [[12_archetype_necroz|12 - Archetype: Nekroz]]
+- [[13_archetype_spellbook|13 - Archetype: Spellbook]]
+- [[frame_candidates|Candidate MSE frames]]
 
-## Projets MSE (cartes)
+## MSE projects
 
-| Groupe | Projet |
+| Group | Project |
 | --- | --- |
 | Non-archetype creatures | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/` |
 | Fusion staples | `MSE_projects/05_YGO_Staples_Fusion.mse-set/` |
@@ -48,4 +48,4 @@ Les textes Magic traduits, coûts, stats, types et frames des cartes sont défin
 
 ## Status
 
-Les projets MSE sont la source de vérité des cartes traduites. Les docs d’archétype ne gardent que l’identité, les mécaniques et la philosophie de design.
+English MSE projects are card source of truth. Archetype docs retain only identity, mechanics, and design philosophy.

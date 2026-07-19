@@ -19,27 +19,27 @@ For `REVISE`, write the replacement rule under `Final wording`. Use `Notes` for 
 
 ## Ruling contradictions — pattern destroyers
 
-### D1 — Ability timing label `Activable Ritual Soft`
+### D1 — Ability timing label `Activated Ritual Soft`
 
 - Scope: general (`docs/context.md`, `docs/02_rules_keywords_card_design.md`)
-- Existing rule: Activable timing is `Sorcery` or `Flash` after `Activable` (`docs/02_rules_keywords_card_design.md` Activable section). `Ritual` is a super-type / summon procedure, not an activation speed.
-- Conflicting evidence: Pre-fix MSE on Black Rose Dragon used `(2 - Activable Ritual Soft)` with a plant-exile cost (`card black rose dragon`).
+- Existing rule: Activated timing is `Sorcery` or `Flash` after `Activated` (`docs/02_rules_keywords_card_design.md` Activated section). `Ritual` is a super-type / summon procedure, not an activation speed.
+- Conflicting evidence: Pre-fix MSE on Black Rose Dragon used `(2 - Activated Ritual Soft)` with a plant-exile cost (`card black rose dragon`).
 - Why this destroys a pattern: Introduces a third activation speed token that is not defined and collides with Ritual Summon vocabulary.
-- Question: Confirm that `Ritual` is never a legal Activable timing token and that the Black Rose line must use `Activable Sorcery Soft` (or Flash if intended)?
+- Question: Confirm that `Ritual` is never a legal Activated timing token and that the Black Rose line must use `Activated Sorcery Soft` (or Flash if intended)?
 - Impacted cards/files: `MSE_projects/06_YGO_Staples_Synchro.mse-set/card black rose dragon` (already corrected mechanically to Sorcery Soft pending this ruling).
-- Proposed resolution: Document explicitly that Activable timing tokens are only `Sorcery` and `Flash`. Never write `Activable Ritual`.
-- Side effects: Any future `Activable Ritual` is invalid markup.
+- Proposed resolution: Document explicitly that Activated timing tokens are only `Sorcery` and `Flash`. Never write `Activated Ritual`.
+- Side effects: Any future `Activated Ritual` is invalid markup.
 - Decision: REJECT
 - Final wording:
 - Notes:
 
 ## Application result
 
-- Accepted: R1 Hand Summon; R3 On Opponent Activation or Attack (+ `or` separator rule); R4 Exile N [selector] from Grave (AGREE→ACCEPT); R5 Protection contre tout (AGREE→ACCEPT)
+- Accepted: R1 Hand Summon; R3 On Opponent Activation or Attack (+ `or` separator rule); R4 Exile N [selector] from Grave; R5 Protection from everything
 - Revised: R2 → keyword **On Enter Synchro** (not On Enter Your Synchro); default controller-side for events without Opponent
-- Rejected: D1 (keep Activable **Ritual** as legal timing; Black Rose restored to Activable Ritual Soft)
+- Rejected: D1 (no global prohibition on `Activated Ritual`; current Black Rose card uses `Activated Sorcery Soft`)
 - Docs: `docs/context.md`, `docs/02_rules_keywords_card_design.md`
-- MSE: Black Rose Ritual Soft; Moonlight `or`; Hyper Librarian On Enter Synchro; slash→or on Xyz/BA/Shaddoll hits
+- MSE: Black Rose Sorcery Soft; Moonlight `or`; Hyper Librarian On Enter Synchro; slash→or on Xyz/BA/Shaddoll hits
 - Generator: `.script/create_extra_deck_staples_projects.py`
 - Skipped/failed: none
 
@@ -48,13 +48,13 @@ For `REVISE`, write the replacement rule under `Final wording`. Use `Notes` for 
 ### R1 — Keyword **Hand Summon**
 
 - Scope: general (`docs/context.md`, `docs/02_rules_keywords_card_design.md`)
-- Evidence: Ancient Fairy Dragon ability 1: `<b>Hand Summon</b> 1 créature MV 1 ou moins.` (`card ancient fairy dragon`).
+- Evidence: Ancient Fairy Dragon ability 1: `<b>Hand Summon</b> 1 creature MV 1 or less.` (`card ancient fairy dragon`).
 - Existing rule: **Summon** puts a card onto the battlefield from a stated zone without casting (`docs/context.md` Summon).
-- Question: Should **Hand Summon** become a documented action keyword meaning « **Summon** 1 créature depuis votre main » (with optional filters after the keyword)?
-- Proposed rule: **Hand Summon** signifie : « **Summon** la créature indiquée depuis votre main. » Sur une carte, écrire `**Hand Summon**` puis les filtres (`1 créature MV 1 ou moins`, etc.). Même restrictions d’invocation correcte que **Summon**.
-- Boundary and exceptions: Does not bypass Extra Deck / Ritual correct-invocation rules unless the effect also grants `en ignorant les restrictions de Summon`.
+- Question: Should **Hand Summon** become a documented action keyword meaning “**Summon** 1 creature from your hand” (with optional filters after the keyword)?
+- Proposed rule: **Hand Summon** means: “**Summon** the creature indicated from your hand.” On a card, write `**Hand Summon**` then the filters (`1 creature MV 1 or less`, etc.). Same proper-summon restrictions as **Summon**.
+- Boundary and exceptions: Does not bypass Extra Deck / Ritual proper-summon rules unless the effect also grants `ignoring the restrictions of Summon`.
 - Impacted cards/files: `card ancient fairy dragon`; global keyword docs; keyword inventory.
-- Side effects: Shortens repeated « Summon depuis votre main » lines.
+- Side effects: Shortens repeated “Summon from your hand” lines.
 - Decision: ACCEPT
 - Final wording:
 - Notes:
@@ -62,25 +62,25 @@ For `REVISE`, write the replacement rule under `Final wording`. Use `Notes` for 
 ### R2 — Event keyword **On Enter Your Synchro**
 
 - Scope: general
-- Evidence: T.G. Hyper Librarian: `<b>On Enter Your Synchro</b> — Piochez 1 carte.` (`card t.g. hyper librarian`).
+- Evidence: T.G. Hyper Librarian: `<b>On Enter Your Synchro</b> — Draw 1 card.` (`card t.g. hyper librarian`).
 - Existing rule: **On Enter** is self-enter only; opponent/filtered enters use other On* forms (`docs/context.md` event keywords).
-- Question: Document **On Enter Your Synchro** as « À chaque fois qu’une Synchro Creature arrive sur le champ de bataille sous votre contrôle »?
-- Proposed rule: **On Enter Your Synchro** signifie : « À chaque fois qu’une Synchro Creature arrive sur le champ de bataille sous votre contrôle. » Inclut cette carte si elle est elle-même une Synchro Creature qui arrive.
+- Question: Document **On Enter Your Synchro** as “Whenever a Synchro Creature enters the battlefield under your control”?
+- Proposed rule: **On Enter Your Synchro** means: “Whenever a Synchro Creature enters the battlefield under your control.” Include this card if it itself is an arriving Synchro Creature.
 - Boundary and exceptions: Scope is controller-based, type Synchro only. Other types need their own keyword or full PSCT.
 - Impacted cards/files: `card t.g. hyper librarian`; global docs.
 - Side effects: Parallel forms could appear later (On Enter Your Fusion, etc.).
-- Decision: REJECT 
+- Decision: REVISE
 - Final wording: On Enter Synchro
-- Notes: For all effect, if not precised, its always from card from our side that triggers it. Otherwise it would be : On Enter (Yours &) Opponent
+- Notes: For all effect, if not specified, its always from card from our side that triggers it. Otherwise it would be: On Enter (Yours &) Opponent
 
 ### R3 — Event / timing keyword **On Opponent Activation or Attack**
 
 - Scope: general
-- Evidence: Red Supernova Dragon ability 2 uses `<b>On Opponent Activation or Attack</b>` as the trigger window on an Activable Flash Soft line (`card red supernova dragon`).
+- Evidence: Red Supernova Dragon ability 2 uses `<b>On Opponent Activation or Attack</b>` as the trigger window on an Activated Flash Soft line (`card red supernova dragon`).
 - Existing rule: Attack events use **On Attack** family; cast/activation events use **On Cast** / ability responses; slash/OR combines defined events (`docs/context.md`).
-- Question: Should **On Opponent Activation or Attack** be a defined global keyword meaning « Lorsqu’un adversaire active une capacité ou attaque avec une créature » (and usable as a condition on Activable Flash lines)?
-- Proposed rule: **On Opponent Activation or Attack** signifie : « Lorsqu’un adversaire active une capacité ou déclare une attaque avec une créature. » Peut introduire une capacité Déclenchable ou restreindre le moment d’activation d’une capacité Activable Flash. Toujours en gras. Casing canonique : `Opponent` capitalisé.
-- Boundary and exceptions: « Activation » = activation de capacité (pile), pas le simple lancement de sort (use **On Opponent's Cast** for spells). Attack = declare attackers step / attack declaration as used elsewhere in the cube.
+- Question: Should **On Opponent Activation or Attack** be a defined global keyword meaning “When an opponent activates an ability or attacks with a creature” (and usable as a condition on Activated Flash lines)?
+- Proposed rule: **On Opponent Activation or Attack** means: “When an opponent activates an ability or declares an attack with a creature.” May introduce a Triggered ability or restrict when an Activated Flash ability activates. Always in bold. Canonical casing: capitalized `Opponent`.
+- Boundary and exceptions: “Activation” = ability activation (stack), not simple spell casting (use **On Opponent's Cast** for spells). Attack = declare attackers step / attack declaration as used elsewhere in the cube.
 - Impacted cards/files: `card red supernova dragon`; global docs.
 - Side effects: Distinct from pure **On Attack** on the source creature.
 - Decision: ACCEPT
@@ -90,26 +90,26 @@ For `REVISE`, write the replacement rule under `Final wording`. Use `Notes` for 
 ### R4 — Cost keyword pattern **Exile N [filter] from Grave**
 
 - Scope: general
-- Evidence: Black Rose Dragon: `<b>Exile 1 Plant from Grave</b> : …` (`card black rose dragon`). Related existing keyword **Exile from Grave** only covers exiling *this* card from your Grave as activation (`docs/context.md`).
-- Question: Document a reusable cost form **Exile N [selector] from Grave** meaning « En tant que coût, exilez N carte(s) correspondant au sélecteur depuis votre Grave » (other cards, not necessarily this card)?
-- Proposed rule: **Exile N [selector] from Grave** signifie : « En tant que coût, exilez N cartes de votre **Grave** qui correspondent au sélecteur. » Exemple : `**Exile 1 Plant from Grave**`. Distinct de **Exile from Grave**, qui exile *cette* carte et fixe la zone d’activation.
+- Evidence: Black Rose Dragon: `<b>Exile 1 Plant from Grave</b>: …` (`card black rose dragon`). Related existing keyword **Exile from Grave** only covers exiling *this* card from your Grave as activation (`docs/context.md`).
+- Question: Document a reusable cost form **Exile N [selector] from Grave** meaning “As a cost, exile N cards corresponding to the selector from your Grave” (other cards, not necessarily this card)?
+- Proposed rule: **Exile N [selector] from Grave** means: “As a cost, exile N cards from your **Grave** that match the selector.” Example: `**Exile 1 Plant from Grave**`. Distinct from **Exile from Grave**, which exiles *this* card and fixes the activation zone.
 - Boundary and exceptions: Selector uses project naming/type rules. N is a positive integer.
 - Impacted cards/files: `card black rose dragon`; global docs.
 - Side effects: Prevents overloading **Exile from Grave** for unrelated mill/cost exiles.
-- Decision: AGREE
+- Decision: ACCEPT
 - Final wording:
 - Notes:
 
-### R5 — Evergreen **Protection contre tout**
+### R5 — Evergreen **Protection from everything**
 
 - Scope: general
-- Evidence: Chaos Angel: `<b>Protection contre tout</b>` (`card chaos angel`).
-- Existing rule: Evergreen Magic keywords print bold on their own line or in text; French list includes Protection (`docs/context.md` evergreen paragraph).
-- Question: Confirm French evergreen form **Protection contre tout** (and **Protection contre [qualité]**) as bold keywords equivalent to Magic’s protection from everything / protection from [quality]?
-- Proposed rule: Les formes **Protection contre tout** et **Protection contre [qualité]** sont des mots-clés evergreen Magic en français. Les écrire en gras. **Protection contre tout** signifie la protection contre tout (comme *protection from everything*).
+- Evidence: Chaos Angel: `<b>Protection from everything</b>` (`card chaos angel`).
+- Existing rule: Evergreen Magic keywords print bold on their own line or in text; English list includes Protection (`docs/context.md` evergreen paragraph).
+- Question: Confirm English evergreen form **Protection from everything** (and **Protection from [quality]**) as bold keywords equivalent to Magic’s protection from everything / protection from [quality]?
+- Proposed rule: The forms **Protection from everything** and **Protection from [quality]** are evergreen Magic keywords in English. Write them in bold. **Protection from everything** means protection from everything (like *protection from everything*).
 - Boundary and exceptions: Same layered rules as Magic protection.
 - Impacted cards/files: `card chaos angel`; global docs.
-- Side effects: Aligns French protection wording.
-- Decision: AGREE
+- Side effects: Aligns protection wording with English Magic terminology.
+- Decision: ACCEPT
 - Final wording:
 - Notes:

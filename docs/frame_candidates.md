@@ -1,63 +1,64 @@
-# Frames MSE candidates pour les types Extra Deck / spéciaux
+# Candidate MSE frames for Extra Deck and special types
 
-Chemin analysé : `MSE_DATA_DIR` dans le fichier `.env` local, généré avec `python setup_mse.py`.
+Parsed path: `MSE_DATA_DIR` from local `.env`, generated with `python setup_mse.py`.
 
-Ce document liste les styles/frames MSE repérés pour différencier visuellement les types spéciaux du cube Yu-Gi-Oh × Magic.
+This document lists MSE styles/frames identified to distinguish special Yu-Gi-Oh! × Magic cube card types visually.
 
-## Mapping validé actuel
+## Current validated mapping
 
 ```text
-Normal / autres -> 7.5th Edition (`sevenhalf` / `magic-sevenhalf.mse-style`) — standard validé
-Fusion Creature  -> `gen main` — hi-res (`genevensis-00-main` / `magic-genevensis-00-main.mse-style`) — standard validé
-Xyz Creature     -> M15 Spellbook (`m15-spellbook` / `magic-m15-spellbook.mse-style`) — standard validé
-Synchro Creature -> M15 Sketch (`m15-sketch` / `magic-m15-sketch.mse-style`) — standard validé
-Link Creature    -> Art Deco — Capenna Showcase (`m15-showcase-capenna-art-deco`) — standard validé
-Ritual Creature  -> Praetor / Phyrexian Showcase (`m15-showcase-praetor` / `magic-m15-showcase-praetor.mse-style`) — standard validé
-Fusion/Ritual non-créature -> 7.5th Edition (`sevenhalf`) — standard validé
+Normal / other -> 7.5th Edition (`sevenhalf` / `magic-sevenhalf.mse-style`) — validated standard
+Fusion Creature -> `gen main` hi-res (`genevensis-00-main` / `magic-genevensis-00-main.mse-style`) — validated standard
+Xyz Creature -> M15 Spellbook (`m15-spellbook` / `magic-m15-spellbook.mse-style`) — validated standard
+Synchro Creature -> M15 Sketch (`m15-sketch` / `magic-m15-sketch.mse-style`) — validated standard
+Link Creature -> Art Deco / Capenna Showcase (`m15-showcase-capenna-art-deco`) — validated standard
+Ritual Creature -> Praetor / Phyrexian Showcase (`m15-showcase-praetor` / `magic-m15-showcase-praetor.mse-style`) — validated standard
+Non-creature Fusion Summon / Ritual Summon -> 7.5th Edition (`sevenhalf`) — validated standard
 ```
 
-Validation Synchro : le style **Sketch** a été choisi pour les cartes/projets Synchro et appliqué au projet MSE `06_YGO_Staples_Synchro.mse-set`.
+Synchro validation: **Sketch** style was selected for Synchro cards/projects and applied to `06_YGO_Staples_Synchro.mse-set`.
 
-À noter : `M15 big text` existe pour les cartes avec trop de texte.
+Note: `M15 big text` remains available for text-heavy cards.
 
 ---
 
-## Frames intéressantes par type
+## Interesting frames by type
 
 ### Fusion
 
-- `m15 spellbook` — w/ flavor bar
-- `gen main` — hi-res — **validé, frame standard obligatoire pour les Fusion Creature**
+- `m15 spellbook` — with flavor bar
+- `gen main` — hi-res — **validated standard required for Fusion Creatures**
 - `Eldrazi` — by kasu_mtg
 - `Elemental` — Avatar Showcase
 - `Woodland` — Bloomburrow Showcase
-- `Fable` — Lorwyn showcase
+- `Fable` — Lorwyn Showcase
 - `Mystical Archive` — Strixhaven Showcase
 
 ### Synchro
 
-- `m15 spellbook` — w/ flavor bar
+- `m15 spellbook` — with flavor bar
 - `gen main` — hi-res
 - `Eldrazi` — by katsu_mtg
 - `M15 Sketch` — MH2 Sketch
 - `Art Deco` — Capenna Showcase
 - `Ninja` — Kamigawa Showcase
-- `Ghostfire` — Tarkir showcase
+- `Ghostfire` — Tarkir Showcase
 - `Vault` — Thunder Junction Showcase
 
 ### Ritual
 
-- `m15 spellbook` — w/ flavor bar
+- `m15 spellbook` — with flavor bar
 - `Eldrazi` — by katsu_mtg
 - `Art Deco` — Capenna Showcase
 - `TARDIS` — Doctor Who Showcase
-- `Fable` — Lorwyn showcase
+- `Fable` — Lorwyn Showcase
 - `Scroll` — LotR Showcase
-- `Praetor` — Phyrexian Showcase — **validé, frame standard obligatoire pour les cartes Ritual**
+- `Praetor` — Phyrexian Showcase — **validated standard required for Ritual Creatures**
 - `Mystical Archive` — Strixhaven Showcase
 
 ### Link
 
+- `Art Deco` — Capenna Showcase — **validated standard required for Link Creatures**
 - `gen main` — hi-res
 - `Memory Corridor` — Assassin's Creed Showcase
 - `Eternal Night` — Double Feature
@@ -65,49 +66,48 @@ Validation Synchro : le style **Sketch** a été choisi pour les cartes/projets 
 
 ### Xyz
 
-- `Art Deco` — Capenna Showcase — **validé, frame standard obligatoire pour les créatures Xyz**.
-- `M15 black promo` — M15 Sleek — option historique non standard.
+- `m15 spellbook` — with flavor bar — **validated standard required for Xyz Creatures**
+- `Art Deco` — Capenna Showcase — non-standard historical option
+- `M15 black promo` — M15 Sleek — non-standard historical option
 
 ---
 
-## Frames repérées mais classées “other”
+## Frames classified as “other”
 
 - `b1234 style` — Buttock 1234 style
-- `sevenhalf` — 7.5 edition frames
+- `sevenhalf` — 7.5th Edition frames
 - `agClassic` — AgClassic Normal
-- `old style` — before 8th edition
-- `8th test` — 8th edition test prints
-- `classic shifted` — classic timeshift
-- `future mirror` — mirrored futureshift
-- `future clear` — futureshifted clear
-- `future` — futureshift
-- `planeshifted` — planar chaos timeshift
+- `old style` — pre-Eighth Edition
+- `8th test` — Eighth Edition test prints
+- `classic shifted` — classic timeshifted
+- `future mirror` — mirrored futureshifted
+- `future clear` — clear futureshifted
+- `future` — futureshifted
+- `planeshifted` — Planar Chaos timeshifted
 
 ---
 
-## Ancien mapping exploratoire
+## Old exploratory mapping
 
-Une exploration précédente proposait ces équivalents visuels Magic Set Editor :
+Previous exploration proposed these Magic Set Editor visual equivalents:
 
 ```text
-Fusion  -> magic-m15-split-fusable
+Fusion -> magic-m15-split-fusable
 Synchro -> magic-m15-future
-Ritual  -> magic-m15-invocation
-Link    -> magic-m15-showcase-spiderman-web-slinger
-Xyz     -> magic-m15-devoid
+Ritual -> magic-m15-invocation
+Link -> magic-m15-showcase-spiderman-web-slinger
+Xyz -> magic-m15-devoid
 ```
 
-Ces options restent utilisables comme références historiques, mais la liste ci-dessus reflète les choix visuels repérés ensuite dans l'installation MSE.
+These remain historical references. Current validated choices appear above.
 
-
-## Configuration MSE validée pour Xyz
+## Validated Xyz MSE configuration
 
 ```text
-stylesheet: m15-showcase-capenna-art-deco
-stylesheet_version: 2024-10-01
+stylesheet: m15-spellbook
+stylesheet_version: 2024-09-01
 styling:
-	magic-m15-showcase-capenna-art-deco:
-		overlay:
-		casting_cost_mana_symbols: magic-mana-large.mse-symbol-font
-		text_box_mana_symbols: magic-mana-small.mse-symbol-font
+magic-m15-spellbook:
+  overlay:
+  text_box_mana_symbols: magic-mana-small.mse-symbol-font
 ```

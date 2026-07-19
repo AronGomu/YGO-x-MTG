@@ -1,6 +1,6 @@
 ---
 date: 2026-07-06
-title: 10 - Archétype : Burning Abyss
+title: 10 - Archetype: Burning Abyss
 tags:
   - project
   - game-design
@@ -11,55 +11,48 @@ tags:
   - burning-abyss
 ---
 
-# 10 - Archétype : Burning Abyss
+# 10 - Archetype: Burning Abyss
 
-# Burning Abyss
+#BurningAbyss
 
-## Identité de l'archétype
+## Archetype identity
 
-Burning Abyss est un deck **Aristocrats / Graveyard / Value**.
+Burning Abyss is an **Aristocrats / Graveyard / Value** deck.
 
-L'archétype repose sur une succession de petites créatures très peu coûteuses qui génèrent de la valeur lorsqu'elles sont envoyées au Grave.
+The archetype relies on a succession of small, inexpensive creatures that generate value when sent to Grave.
 
-Le deck cherche à :
+The deck aims to:
 
-* développer rapidement son plateau grâce à **Descente** ;
-* envoyer volontairement ses créatures au Grave ;
-* accumuler progressivement des ressources ;
-* utiliser ces ressources pour invoquer des créatures Xyz ou Synchro ;
-* gagner la partie grâce à l'avantage de cartes généré.
+- develop the field quickly through **Descent**;
+- voluntarily send its creatures to Grave;
+- accumulate resources over time;
+- use those resources to summon Xyz or Synchro Creatures;
+- win through generated card advantage.
 
-L'archétype doit donner la sensation de jouer le véritable Burning Abyss de Yu-Gi-Oh.
+The archetype should feel like playing Yu-Gi-Oh!'s Burning Abyss.
 
----
+## Color
 
-# Couleur
+Main color: **Black**
 
-Couleur principale : **Noir**
+## Mechanics
 
+- **Descent**
+- **On Send Grave**
+- **Xyz**
+- **Synchro**
+- **Abyssal Curse**
 
----
+### Descent
 
-# Mécaniques utilisées
+**Descent** is an ability activated only at Sorcery speed: “If you have not Summoned a “Burning Abyss” creature this turn, Summon this card from hand.” This action does not cast the card and therefore does not trigger **On Cast** events.
 
-* **Descente**
-* **On Send Grave**
-* **Xyz**
-* **Synchro**
-* **Malédiction abyssale**
+### Abyssal Curse
 
-## Descente
+**Abyssal Curse** means: “If you control another creature without “Burning Abyss” in its name, destroy this creature.”
 
-**Descente** est une capacité activable uniquement à vitesse Sorcery : « Si vous n’avez pas Summon de créature “Burning Abyss” ce tour-ci, Summon cette carte depuis votre main. » Cette action n’est pas un lancement et ne déclenche donc pas les événements **On Cast**.
+This ability appears on every non-Ritual **Burning Abyss** creature in the Main Deck. Ritual Creatures such as Malacoda are excluded.
 
-## Malédiction abyssale
+## Card source of truth
 
-**Malédiction abyssale** signifie : « Si vous contrôlez une autre créature qui n’a pas “Burning Abyss” dans son nom, détruisez cette créature. »
-
-Cette capacité est présente sur toutes les créatures **Burning Abyss** non-Ritual du Main Deck. Les Ritual Creatures, comme Malacoda, en sont exclues.
-
----
-
-## Source de vérité des cartes
-
-Les valeurs carte par carte de cet archétype sont définies uniquement dans `MSE_projects/10_YGO_Burning_Abyss.mse-set/`. Ce document ne conserve que l’identité, les couleurs et les mécaniques d’archétype.
+Card-by-card values for this archetype exist only in `MSE_projects/10_YGO_Burning_Abyss.mse-set/`. This document retains only archetype identity, colors, and mechanics.

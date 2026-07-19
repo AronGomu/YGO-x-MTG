@@ -1,6 +1,6 @@
 ﻿---
 date: 2026-07-06
-title: Contexte du projet
+title: Project context
 tags:
   - project
   - context
@@ -10,62 +10,62 @@ tags:
   - magic-the-gathering
 ---
 
-# Contexte du projet
+# Project context
 
-## Portée des documents de règles
+## Scope of rules documents
 
-`docs/context.md` contient uniquement les règles générales de syntaxe, de PSCT, de formatage, de vocabulaire et de structure qui s’appliquent à toutes les cartes du projet. `docs/02_rules_keywords_card_design.md` détaille ces conventions globales lorsqu’elles nécessitent davantage d’exemples.
+`docs/context.md` contains only the general syntax, PSCT, formatting, vocabulary, and structure rules that apply to all cards in the project. `docs/02_rules_keywords_card_design.md` details these global conventions when they require more examples.
 
-Chaque archétype possède ses propres règles, mécaniques, exceptions et philosophie de design dans son document numéroté sous `docs/`. Les **valeurs carte par carte** (texte Magic, coût, stats, type, frame) sont définies uniquement dans les projets `MSE_projects/*.mse-set/` ; les docs ne les dupliquent plus. Une règle propre à un archétype doit être écrite dans ce document d’archétype, pas dans `docs/context.md`. Une observation ne devient une règle générale que si elle constitue un motif réutilisable à l’échelle du projet.
+Each archetype has its own rules, mechanics, exceptions and design philosophy in its numbered document under `docs/`. **Card-by-card values** (Magic text, cost, stats, type, frame) are defined only in `MSE_projects/*.mse-set/` projects; the docs no longer duplicate them. An archetype-specific rule must be written in this archetype document, not in `docs/context.md`. An observation only becomes a general rule if it constitutes a reusable project-wide pattern.
 
-## Langue de rédaction
+## Writing language
 
-Tout le contenu de ce projet doit être rédigé en **français**.
+All canonical project content must be written in **English**. Frozen snapshots under `MSE_projects/French/`, `docs/French/`, `rule_reviews/French/`, and `mse/French/` are immutable archival exceptions, not canonical sources.
 
-Cela inclut :
+Canonical maintenance, reconciliation, normalization, generators, rendering, proxy generation, global rewrites, and English-file counterpart checks must exclude these four archive roots. Ordinary work may inspect them and verify their bytes against `FRENCH_ARCHIVE_SHA256SUMS`, but must never edit or expand them. Replacing archive content requires a separate explicit archival operation and regeneration of the checksum manifest.
 
-- les documents de design ;
-- les règles ;
-- les descriptions de mécaniques ;
-- les notes d'équilibrage ;
-- les contraintes de design ;
-- les explications de gameplay.
+This includes:
 
-## Exception : noms propres
+- design documents;
+- the rules;
+- descriptions of mechanics;
+- balancing notes;
+- design constraints;
+- gameplay explanations.
 
-Les noms d'archétypes et les noms de cartes restent en **anglais**.
+## Exception: proper nouns
 
-Exemples :
+Archetype names and card names remain in **English**.
 
-- **Burning Abyss** ;
-- **Shaddoll** ;
-- **Scarm, Burning Abyss** ;
-- **El Shaddoll Construct** ;
+Examples:
+
+- **Burning Abyss**;
+- **Shaddoll**;
+- **Scarm, Burning Abyss**;
+- **El Shaddoll Construct**;
 - **Shaddoll Fusion**.
 
-## Convention de nommage des cartes
+## Card naming convention
 
-Chaque carte dans les documents d'archétype doit afficher le nom original complet de la carte Yu-Gi-Oh, suivi du nom raccourci utilisé dans le cube.
+MSE cards use the chosen cube name in their `name:` field. Full official Yu-Gi-Oh! names remain in `original_cards/`, which provides traceability without duplicating card-by-card values in archetype documents.
 
-Format obligatoire :
+When a document must explicitly map an official name to a cube name, use:
 
 ```text
-[original name] => [shortened name]
+[original name] => [cube name]
 ```
 
-Exemple :
+Example:
 
 ```text
 Scarm, Malebranche of the Burning Abyss => Burning Abyss - Scarm
 ```
 
-Le nom raccourci est celui à utiliser sur les cartes MSE si l'espace est limité, mais le document de design doit toujours conserver le nom original complet pour faciliter la traçabilité avec Yu-Gi-Oh.
+## Name language and card types
 
-## Langue des noms et types de cartes
+**Card names**, **types**, and **subtypes** must always be written in **English**.
 
-Les **noms de cartes**, **types** et **sous-types** doivent toujours être en **anglais**, même dans les documents français.
-
-Exemples :
+Examples:
 
 - `Creature — Fiend`
 - `Tuner Creature — Wizard`
@@ -75,453 +75,466 @@ Exemples :
 - `Enchantment`
 - `Fairy`
 
-`Tuner` est un super-type de carte, pas un sous-type/race/classe et pas une capacité écrite dans le texte de règle. Une carte Tuner doit donc utiliser une ligne de type comme `Tuner Creature — Fiend` ou `Fusion Tuner Creature — Zombie`, et ne doit pas avoir `(1 - Passif) **Tuner**`.
+`Tuner` is a supertype of card, not a subtype/race/class and not an ability written in the rules text. A Tuner card must therefore use a type line like `Tuner Creature — Fiend` or `Fusion Tuner Creature — Zombie`, and must not have `(1 - Static) **Tuner**`.
 
-## Convention générale
+## General convention
 
-Rédiger les phrases, titres explicatifs et commentaires en français, mais conserver les noms officiels ou choisis des cartes et archétypes en anglais pour préserver leur identité Yu-Gi-Oh.
+Write prose, explanatory headings, and comments in English. Keep official or chosen card and archetype names in English to preserve their Yu-Gi-Oh! identity.
 
-Dans les textes de carte, tout nom de carte, nom d'archétype ou fragment de nom de carte cité comme référence mécanique doit être entre guillemets typographiques français `“...”`. Exemple : écrire `les créatures “Lyrilusc” que vous contrôlez`, pas `les créatures “Lyrilusc” que vous contrôlez`. Ne pas mettre entre guillemets les types, sous-types, attributs ou supertypes génériques comme `Fiend`, `Wizard`, `Xyz`, `LIGHT`, `DARK`, `Fusion` ou `Rituel`.
+In card texts, any card name, archetype name, or card name fragment cited as mechanical reference must be enclosed in typographic quotation marks `“...”`. Example: write `the “Lyrilusc” creatures you control`, not `the Lyrilusc creatures you control`. Do not enclose generic types, subtypes, attributes or supertypes such as `Fiend`, `Wizard`, `Xyz`, `LIGHT`, `DARK`, `Fusion` or `Ritual` in quotation marks.
 
-## Mise en forme des capacités et mots-clés
+## Formatting abilities and keywords
 
-Tous les mots-clés de carte doivent être en **gras** dans les documents et dans les fichiers MSE.
+All card keywords must be in **bold** in documents and MSE files.
 
-Chaque effet ou capacité d'une carte doit être numéroté avec son type de capacité. Format obligatoire :
-
-```text
-(x - Type) Texte de l'effet.
-```
-
-Types de capacité :
-
-- **Passif** : effet statique ou mot-clé toujours actif.
-- **Déclenchable** : effet déclenché par un événement.
-- **Activable** : effet activé ou action que le joueur choisit d'utiliser.
-- **Résolution** : effet appliqué quand le rituel ou l'éphémère se résout normalement.
-
-Ne pas utiliser de types de capacité en anglais dans les textes de carte. Écrire `Résolution`, pas `Resolution`.
-
-### Ordre PSCT des effets
-
-Formater les effets selon le **Problem-Solving Card Text (PSCT)** et les rulings officiels Yu-Gi-Oh!, adaptés au français et au vocabulaire de zones du cube. Le PSCT détermine notamment ce qui est une condition, un coût, un ciblage, une action à l’activation ou une action à la résolution ; la reformulation ne doit jamais déplacer un élément d’un de ces rôles vers un autre.
-
-L’ordre canonique d’une capacité est :
+Each effect or ability on a card must be numbered with its ability type. Mandatory format:
 
 ```text
-(numéro - type timing fréquence) **mot-clé de condition** — procédure d’activation, coûts et cibles ; résolution de l’effet.
+(x - Type) Text of the effect.
 ```
 
-- Le numéro, le type de capacité, le timing éventuel et la fréquence viennent en premier.
-- Lorsqu’un mot-clé exprime la condition ou l’événement déclencheur, il vient immédiatement après le préfixe de capacité, en gras, puis est séparé du PSCT par un tiret cadratin `—` (forme typographique canonique du séparateur `--`).
-- Après le tiret, suivre l’ordre PSCT : conditions d’activation déjà non couvertes par le mot-clé, coûts et choix de cibles avant `;`, puis actions réalisées à la résolution après `;`.
-- Le choix d’une cible reste une action à l’activation, jamais un coût, même lorsqu’il apparaît avant `;`.
-- Utiliser `et` pour les actions simultanées, `puis` lorsque l’ordre ou la réussite de la première action conditionne la suivante, et `si vous faites ainsi` lorsqu’une action ultérieure dépend explicitement de la précédente.
-- Conserver explicitement l’optionalité avec `vous pouvez` et distinguer `ciblez` de `choisissez` conformément au ruling Yu-Gi-Oh! d’origine.
+Ability types:
 
-Exemple :
+- **Static**: static effect or keyword always active.
+- **Triggered**: effect triggered by an event.
+- **Activated**: activated effect or action that its controller chooses to activate.
+- **Resolution**: effect applied when the sorcery or instant resolves normally.
+
+Use canonical English ability labels in card text.
+
+### PSCT order of effects
+
+Format the effects according to the **Problem-Solving Card Text (PSCT)** and the official Yu-Gi-Oh! rulings, adapted to English and to the vocabulary of the cube zones. The PSCT determines in particular what is a condition, a cost, targeting, an action on activation or an action on resolution; reformulation should never move an element from one of these roles to another.
+
+The canonical order of an ability is:
 
 ```text
-(2 - Déclenchable Hard) **On Send Grave** — Défaussez 1 carte et ciblez 1 créature contrôlée par un adversaire ; exilez-la.
+(number - type timing frequency) **condition keyword** — activation procedure, costs and targets; resolution of the effect.
 ```
 
-Les coûts, coûts alternatifs, coûts supplémentaires et conditions de lancement ne sont pas des effets : ils ne doivent pas recevoir leur propre numéro de capacité. Tous les types de coûts et conditions de lancement doivent être listés avant les capacités numérotées et avant les mots-clés evergreen.
+- The number, type of ability, possible timing and frequency come first.
+- When a keyword expresses the triggering condition or event, it comes immediately after the ability prefix, in bold, then is separated from the PSCT by an em dash `—` (canonical typographic form of the separator `--`).
+- After the em dash, follow the order PSCT: activation conditions already not covered by the keyword, costs and choice of targets before `;`, then actions carried out at resolution after `;`.
+- This boundary applies to every ability type, including **Resolution**: text before `;` is performed or paid when the card or ability is activated, while text after `;` is its resolution. A **Resolution** label does not move a preceding cost into resolution.
+- Choosing a target remains an action upon activation, never a cost, even when it appears before `;`.
+- Use `and` for simultaneous actions, `then` when the order or success of the first action conditions the next one, and `if you do so` when a subsequent action explicitly depends on the previous one.
+- Explicitly retain optionality with `you may` and distinguish `target` from `choose` in accordance with the Yu-Gi-Oh! original.
 
-- Les coûts supplémentaires d'un effet sont intégrés à la capacité qu'ils modifient, avant `;` ou `:` selon le templating.
-- Les coûts alternatifs de lancement sont écrits sur une ligne non numérotée avec le mot-clé gras **Alternative Cost** (forme française acceptée : **Coût alternatif**), suivi de ` — ` et de la condition ou du paiement.
-- Un mot-clé d’affinité propre à un archétype peut remplacer ce label lorsqu’il est explicitement documenté comme coût alternatif. Son nom est écrit en gras sur une ligne non numérotée avant les capacités ; le document de l’archétype définit sa condition, la substitution du coût, sa fréquence et les types de cartes concernés.
-- Les coûts alternatifs de lancement Xyz utilisent le label français spécifique `Xyz Coût Alternatif —`. Cette ligne remplace entièrement les matériaux normaux, utilise la créature indiquée comme matériel et réalise une invocation Xyz correcte. Le coût et le matériel peuvent être intégrés dans une même proposition avec `et utilisez`, par exemple `W, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez.` Finir par `Ses matériels se transfèrent.` si les matériels de la créature utilisée doivent être conservés.
-
-Exemples :
-
-- Pour une carte Trap, écrire le super-type sur la ligne de type (`Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc.), puis commencer directement son texte par ses coûts, conditions ou capacités numérotées. Ne pas ajouter de ligne de mot-clé `**Piège**`.
-- Écrire `Xyz Coût Alternatif — W, défaussez 1 créature “Burning Abyss” et utilisez 1 “Dante” que vous contrôlez. Ses matériels se transfèrent.`
-- Pour les effets Ritual, utiliser le super-type `Ritual Summon` et écrire **Ritual Summon** en gras dans le texte de règle.
-- Pour les effets Fusion, utiliser le super-type `Fusion Summon` et écrire **Fusion Summon** en gras dans le texte de règle.
-- Ne pas écrire `**Piège**` ni `(1 - Passif) **Piège**` : `Trap` est un super-type, pas un mot-clé ni une capacité.
-- Ne pas écrire `(2 - Trap Supplemental Cost) ...`.
-- Ne pas écrire `(1 - Alternative Cost) ...`.
-
-Pour les capacités **Activable**, ajouter normalement le timing d'activation juste après `Activable`. Le timing peut être omis lorsqu’il est déjà fixé par un mot-clé défini ou par une action composée dont la règle fournit ce timing :
-
-- **Ritual** : capacité utilisable uniquement à vitesse rituel / sorcery speed.
-- **Flash** : capacité utilisable à tout moment où vous pourriez lancer un éphémère / instant speed.
-
-Exemples :
+Example:
 
 ```text
-(1 - Activable Sorcery Soft) ...
-(1 - Activable Flash Hard) ...
+(2 - Triggered Hard) **On Send Grave** — Discard 1 card and target 1 creature an opponent controls; exile it.
 ```
 
-Pour les capacités **Activable**, ajouter si nécessaire une fréquence d'activation après le type/timing.
+Costs, alternative costs, additional costs, and casting conditions are not effects: they should not be given their own ability number. All cost types and casting conditions must be listed before numbered abilities and before evergreen keywords.
 
-Les capacités **Déclenchable** n’emploient normalement pas de fréquence. Une capacité explicitement notée **Déclenchable Soft** ne peut toutefois se déclencher qu’une fois par tour pour cet objet ; une nouvelle instance de la carte constitue un nouvel objet.
+- The additional costs of an effect are integrated into the ability they modify, before `;` or `:` depending on the templating.
+- The alternative casting costs are written on an unnumbered line with the bold keyword **Alternative Cost**, followed by ` — ` and the condition or payment.
+- An affinity keyword specific to an archetype can replace this label when explicitly documented as an alternative cost. Its name must be written in bold on an unnumbered line before the abilities; the archetype document defines its condition, cost substitution, frequency, and card types involved.
+- Alternative Xyz casting costs use the label `Xyz Alternative Cost —`. This line completely replaces normal materials, uses the indicated creature as material, and performs a proper Xyz Summon. The cost and material can be integrated into the same proposition with `and use`, for example `W, discard 1 “Burning Abyss” creature and use 1 “Dante” that you control.` End with `Its materials transfer.` if the materials of the creature used must be kept.
 
-Pour les capacités **Déclenchable** et **Activable**, ajouter si nécessaire une fréquence d'activation après le type/timing :
+Examples:
 
-- **Soft** : « Vous ne pouvez utiliser cette capacité qu'une fois par tour. » Cette limite n'est pas liée au nom de la carte. Si la carte quitte le terrain et revient, elle peut utiliser l'effet à nouveau.
-- **Hard** : « Vous ne pouvez activer l'effet de X qu'une seule fois par tour. » Cette limite est liée au nom de la carte. Les autres copies ne peuvent pas activer la même capacité ce tour-ci.
-- **Hard Linked** : « Vous ne pouvez utiliser qu’un seul des Y effets de X qu’une seule fois par tour. » Cette limite est liée au nom de la carte et verrouille aussi les autres effets **Hard Linked** de cette carte.
+- For a Trap card, write the super-type on the type line (`Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc.), then start its text directly with its costs, conditions or numbered abilities. Do not add a `**Trap**` keyword line.
+- Write `Xyz Alternative Cost — W, discard 1 “Burning Abyss” creature and use 1 “Dante” you control. Its materials are transferred.`
+- For Ritual effects, use the super-type `Ritual Summon` and write **Ritual Summon** in bold in the rule text.
+- For Fusion effects, use the super-type `Fusion Summon` and write **Fusion Summon** in bold in the rule text.
+- Do not write `**Trap**` nor `(1 - Static) **Trap**`: `Trap` is a super-type, not a keyword or an ability.
+- Do not write `(2 - Trap Supplemental Cost) ...`.
+- Do not write `(1 - Alternative Cost) ...`.
 
-Exemple :
+For **Activated** abilities, normally add the activation timing just after `Activated`. The timing can be omitted when it is already fixed by a defined keyword or by a compound action whose rule provides this timing:
+
+- **Ritual**: ability usable only at sorcery speed.
+- **Flash**: ability usable at any time when you could cast an instant / instant speed.
+
+Examples:
 
 ```text
-(1 - Passif) **Malédiction abyssale**
-(2 - Activable Hard Linked) **Descente**
-(3 - Déclenchable Hard Linked) **On Send Grave** — À la prochaine étape de fin, cherchez une créature “Burning Abyss”.
+(1 - Activated Sorcery Soft) ...
+(1 - Activated Flash Hard) ...
 ```
 
-Ne pas regrouper plusieurs mots-clés sur une seule ligne si ce regroupement empêche de numéroter ou typer chaque capacité.
+For **Activated** abilities, add an activation frequency after the type/timing if necessary.
 
-Tout mot-clé imprimé sur une carte — événement, action, coût, affinité, evergreen Magic, zone canonique `Grave`, action `Set`, `Bounded`, `Indestructible` / `Indestructible des Effets`, ou label de coût alternatif `Alternative Cost` — doit être écrit en gras (`**mot-clé**` dans les docs, `<b>mot-clé</b>` dans MSE).
+**Triggered** abilities do not normally use frequency. An ability explicitly noted **Triggered Soft**, however, can only be triggered once per turn for this object; a new instance of the card constitutes a new object.
 
-Les mots-clés evergreen Magic comme **Piétinement**, **Vol**, **Vigilance**, **Lien de vie**, **Menace**, **Protection contre tout**, **Protection contre [qualité]**, etc. ne doivent pas être écrits comme des capacités passives numérotées. Les écrire seuls sur leur propre ligne, en gras, sans `(x - Passif)`. Ils doivent venir après les lignes de coût / coût alternatif / condition de lancement, mais avant les capacités numérotées. **Protection contre tout** équivaut à *protection from everything* ; **Protection contre [qualité]** suit les règles Magic de protection.
+For abilities **Triggered** and **Activated**, add an activation frequency after the type/timing if necessary:
 
-### Compacité du texte de carte
+- **Soft**: “You can only use this ability once per turn.” This limit is not linked to the name of the card. If the card leaves the field and returns, it can use the effect again.
+- **Hard**: “You can only activate the effect of X once per turn.” This limit is linked to the name of the card. Other copies cannot activate the same ability this turn.
+- **Hard Linked**: “You can only use one of the Y effects of X once per turn.” This limit is linked to the name of the card and also locks other **Hard Linked** effects of this card.
 
-Dans les textes de carte, écrire les quantités avec des chiffres arabes plutôt qu'en toutes lettres pour gagner de la place et rester cohérent avec le templating Yu-Gi-Oh / Magic du cube.
+**Hard** may also suffix a **Resolution** ability. **Resolution Hard** means the card can be activated only once per turn; every copy with the same card name shares that limit.
 
-Exemples :
+Example:
 
-- Écrire `Choisissez 1 autre créature`, pas `Choisissez une autre créature`.
-- Écrire `piochez 2 cartes`, pas `piochez deux cartes`.
-- Écrire `envoyez 1 carte`, pas `envoyez une carte`.
+```text
+(1 - Static) **Abyssal Curse**
+(2 - Activated Hard Linked) **Descent**
+(3 - Triggered Hard Linked) **On Send Grave** — At the next end step, Search 1 “Burning Abyss” creature.
+```
 
-Exception pour une cible déjà désignée : lorsqu'un effet commencerait par `1 créature ciblée`, remplacer cette formulation par `La créature ciblée`. Cette règle s'applique au début du texte de l'effet, immédiatement après son préfixe numéroté et son type. Elle ne s'applique pas lorsqu'une action introduit ensuite la cible, par exemple `Détruisez 1 créature ciblée`.
+Do not group several keywords on a single line if this grouping prevents each ability from being numbered or typed.
 
-Exemple :
+Any keyword printed on a card — event, action, cost, affinity, evergreen Magic, canonical zone `Grave`, action `Set`, `Bounded`, `Indestructible` / `Effect Indestructible`, or alternative cost label `Alternative Cost` — must be written in bold (`**keyword**` in the docs, `<b>keyword</b>` in MSE).
 
-- Écrire `(2 - Activable Hard) La créature ciblée gagne +1/+1 jusqu'à la fin du tour.`
-- Ne pas écrire `(2 - Activable Hard) 1 créature ciblée gagne +1/+1 jusqu'à la fin du tour.`
+Evergreen Magic keywords like **Trample**, **Flying**, **Vigilance**, **Lifelink**, **Menace**, **Protection from everything**, **Protection from [quality]**, etc. should not be written as numbered passive abilities. Write them alone on their own line, in bold, without `(x - Static)`. They should come after the cost/alternative cost/casting condition lines, but before the numbered abilities. **Protection from everything** is equivalent to *protection from everything*; **Protection from [quality]** follows Magic rules for protection.
 
-Garder les nombres en toutes lettres seulement dans les titres, commentaires de design, ou formulations où le nombre n'est pas une quantité de règle.
+### Compactness of card text
 
-Toujours utiliser les raccourcis suivants dans les textes de carte :
+In the card texts, write the quantities with Arabic numerals rather than in full to save space and remain consistent with the Yu-Gi-Oh / Magic templating of the cube.
 
-- `MV` pour `Mana Value` / `valeur de mana`.
-- `Deck` pour `bibliothèque` / `library`.
+Examples:
 
-Exemples :
+- Write `Choose 1 other creature`, not `Choose another creature`.
+- Write `draw 2 cards`, not `draw two cards`.
+- Write `send 1 card`, not `send a card`.
 
-- Écrire `1 créature MV 1`, pas `1 créature avec une valeur de mana de 1`.
-- Écrire `depuis votre Deck`, pas `depuis votre bibliothèque`.
-- Écrire `du Deck au Grave`, pas `depuis votre bibliothèque dans votre Grave`.
+Choose targets explicitly during the current ability: write `Target 1 creature; ...` before `;`, then refer to it as `the target`. Use `the targeted creature` only when an earlier instruction or linked effect has already designated that target.
 
-Toujours utiliser **Grave** pour la zone cimetière / *graveyard* dans tout le projet (textes de carte, docs, scripts, tests). Ne plus écrire `cimetière`, `GY` ni `GYD`. **Grave** est le mot-clé de zone canonique : le mettre en gras dans les textes de carte (`**Grave**` / `<b>Grave</b>`).
+Example:
 
-Pour donner indestructible, écrire `gagne **Indestructible**` (ou `gagne **Indestructible des Effets**` pour la variante), pas `a indestructible` sans gras.
+- Write `(2 - Activated Hard) Target 1 creature; the target gains +1/+1 until the end of the turn.`
+- Do not write `(2 - Activated Hard) The targeted creature gains +1/+1 until the end of the turn.` when no target was previously chosen.
 
-Dans les textes d'effets, écrire `Si` au lieu de `Quand` pour les déclencheurs et conditions d'événement.
+Keep numbers spelled out only in titles, design comments, or wording where the number is not a governing quantity.
 
-Exemples :
+Write inclusive numeric ranges with an en dash: `1–3` requires at least 1 and allows at most 3; `0–2` allows none. Always prefer compact dash ranges over `up to N` when the same bounds can be expressed as `0–N`. Never use a hyphen-minus for a numeric range.
 
-- Écrire **On Enter** — ..., pas `Si cette créature arrive`.
-- Écrire `Si cette carte est détruite, ...`, pas `Quand cette carte est détruite, ...`.
+Unqualified personal zones in card text are controller-scoped shortcuts: `hand`, `Deck`, `Grave`, and `exile` mean your corresponding zone. Specify `opponent`, `any player`, or another owner only when a different scope applies. The battlefield is shared and has no such default.
 
-## Mots-clés d'événement
+Always use the following shortcuts in card texts:
 
-**On Enter** signifie : « Lorsque cette carte arrive sur le champ de bataille. » Dans l'implémentation, ce déclencheur est `onEnterField`.
+- `MV` for `Mana Value` / `mana value`.
+- `Deck` for `library` / `library`.
 
-**On Attack** signifie : « Lorsque cette créature attaque. »
+Examples:
 
-**On Block** signifie : « Lorsque cette créature bloque. »
+- Write `1 creature MV 1`, not `1 creature with a mana value of 1`.
+- Write `from Deck`, not `from your library`.
+- Write `from Deck to Grave`, not `from your library into your Grave`.
 
-**On Blocked** signifie : « Lorsque cette créature devient bloquée par une ou plusieurs créatures. »
+Always use **Grave** for graveyard zone throughout project (card text, docs, scripts, and tests). Do not write `graveyard`, `GY`, or `GYD`. **Grave** is the canonical zone keyword: make it bold in card texts (`**Grave**` / `<b>Grave</b>`).
 
-**On Attack or Block** signifie : « Lorsque cette créature attaque ou bloque. »
+To give indestructible, write `gains **Indestructible**` (or `gains **Effect Indestructible**` for the variant), not `indestructible` without bold.
 
-**On Block or Blocked** signifie : « Lorsque cette créature bloque ou devient bloquée. »
+In effect texts, write `If` instead of `When` for triggers and event conditions.
 
-Plusieurs mots-clés d'événement déjà définis peuvent être combinés sur une même capacité lorsqu'ils partagent le même effet. Le seul séparateur autorisé est ` or ` (en gras dans le mot-clé combiné), par exemple `**On Enter or MV2+ Opponent Creature Enter**`. Ne pas utiliser `/` ni `OR` en majuscules. Chaque composant conserve sa définition ; le texte combiné n'introduit pas un nouveau mot-clé isolé.
+Examples:
 
-Par défaut, un mot-clé d'événement sans précision de contrôleur ne regarde que **votre côté** (cette carte, ou des objets que vous contrôlez, selon le mot-clé). Pour inclure un adversaire, l'écrire explicitement (`Opponent`, `On Opponent …`, ou `Yours or Opponent`). Exemple : **On Enter Synchro** regarde vos Synchro ; un effet qui regarde aussi l'adversaire s'écrit avec `Opponent` dans le mot-clé.
+- Write **On Enter** — ..., not `If this creature arrives`.
+- Write `If this card is destroyed, ...`, not `When this card is destroyed, ...`.
 
-**On Leave Field** signifie : « Lorsque cette carte quitte le champ de bataille. »
+## Event Keywords
 
-**On Upkeep** signifie : « Au début de votre entretien. » Si le déclencheur vise l'entretien d'un autre joueur, l'écrire explicitement (par exemple **On Opponent Upkeep**).
+**On Enter** means: “When this card enters the battlefield.” In the implementation, this trigger is `onEnterField`.
 
-**On Fusion Summon** fonctionne comme **On Enter**, mais uniquement lorsqu’une `Fusion Creature` arrive sur le champ de bataille via sa propre invocation Fusion. Une `Fusion Creature` mise directement sur le champ de bataille par un autre effet ne déclenche pas **On Fusion Summon**.
+**On Attack** means: “When this creature attacks.”
 
-**On Link Summon** fonctionne comme **On Enter**, mais uniquement lorsqu’une `Link Creature` arrive sur le champ de bataille via sa propre invocation Link. Une `Link Creature` mise directement sur le champ de bataille par un autre effet ne déclenche pas **On Link Summon**.
+**On Block** means: “When this creature blocks.”
 
-**On Enter Synchro** signifie : « À chaque fois qu’une Synchro Creature arrive sur le champ de bataille sous votre contrôle. » Inclut cette carte si elle est elle-même une Synchro Creature qui arrive. Ne pas écrire `On Enter Your Synchro` : le côté « vous » est le défaut (voir règle ci-dessus).
+**On Blocked** means: “When this creature becomes blocked by one or more creatures.”
 
-**On Opponent Activation or Attack** signifie : « Lorsqu’un adversaire active une capacité ou déclare une attaque avec une créature. » Peut introduire une capacité Déclenchable ou restreindre le moment d’activation d’une capacité Activable Flash. « Activation » = activation de capacité sur la pile, pas le lancement d’un sort (utiliser **On Opponent's Cast** pour les sorts).
+**On Attack or Block** means: “When this creature attacks or blocks.”
 
-**On Opponent Creature Enter** signifie : « À chaque fois qu'une créature arrive sur le terrain sous le contrôle d'un adversaire. » Lorsqu'il est placé après une instruction, cette instruction est répétée à chaque occurrence de cet événement pendant la durée indiquée.
+**On Block or Blocked** means: “When this creature blocks or becomes blocked.”
 
-**On Cast** signifie : « À chaque fois qu'un sort est lancé, avant sa résolution. » Cette famille de mots-clés se compose d'un périmètre, puis de paramètres optionnels, suivis de `:` et de l'effet :
+Multiple event keywords already defined can be combined on the same ability when they share the same effect. The only allowed separator is ` or ` (bold in the combined keyword), for example `**On Enter or MV2+ Opponent Creature Enter**`. Do not use `/` or `OR` in capital letters. Each component retains its definition; the combined text does not introduce a new isolated keyword.
 
-- **On Your Cast** compte uniquement les sorts lancés par vous ;
-- **On Opponent's Cast** compte uniquement les sorts lancés par un adversaire ;
-- **On Any Cast** compte les sorts lancés par n'importe quel joueur.
+By default, an event keyword without controller specification only looks at **your side** (this card, or objects you control, depending on the keyword). Never add `Your` to this controller-default form. To include an opponent, write `Opponent` or **On Opponent …**; to include every player, write **On Any …**. Example: **On Enter Synchro** looks at your Synchro; an effect that also looks at the opponent is written with `Opponent` in the keyword.
 
-Après le périmètre, ajouter si nécessaire les paramètres qui définissent les sorts concernés, par exemple `“Nekroz” Ritual` pour un sort Rituel dont le nom contient “Nekroz”. Le format est donc **On Your Cast [paramètres]** : effet.
+**On Leave Field** means: “When this card leaves the battlefield.”
 
-**On Opponent Summon** signifie : « Lorsqu’un adversaire Summon une créature. » Ce déclencheur répond uniquement à l’action **Summon**, pas au lancement normal d’une créature ; utiliser **On Opponent's Cast** ou une formulation explicite pour les événements de lancement.
+**On Upkeep** means: “At the start of your upkeep.” If the trigger is for the upkeep of another player, write it explicitly (for example **On Opponent Upkeep**).
 
-**On Send Grave** signifie : « Lorsque cette carte est mise dans un Grave depuis n’importe quelle zone. » Utiliser ce mot-clé pour toute capacité de cette carte qui se déclenche lorsqu’elle est envoyée au Grave.
+**On End Step** means: “At the beginning of your end step.” If the trigger is for another player, write it explicitly (for example **On Opponent End Step**).
 
-**On Send Grave by Effect** signifie : « Lorsque cette carte est mise dans un Grave par un effet de carte. » Contrairement à **On Send Grave**, il ne se déclenche pas lorsque la carte est mise au Grave par un coût, une règle ou une action qui n’est pas un effet.
+**This turn On End Step** introduces a non-recurring delayed end-step ability created by a resolving effect. Write `**This turn On End Step** — [effect]`. **On End Step** alone remains a recurring controller-default permanent trigger.
 
-**On Creature you Control Destroy** signifie : « Lorsqu’une créature que vous contrôlez est détruite. » Sauf restriction écrite sur la carte, l’événement compte quelle que soit la cause de la destruction.
+**On Fusion Summon** works like **On Enter**, but only when a `Fusion Creature` enters the battlefield via its own Fusion Summon. A `Fusion Creature` put directly onto the battlefield by another effect does not trigger **On Fusion Summon**.
 
-**On Destroy** signifie : « Lorsque cette carte est détruite et envoyée au Grave. »
+**On Link Summon** works like **On Enter**, but only when a `Link Creature` enters the battlefield via its own Link Summon. A `Link Creature` put directly onto the battlefield by another effect does not trigger **On Link Summon**.
 
-**On Exile** signifie : « Lorsque cette carte est exilée. » Utiliser ce mot-clé pour toute capacité de cette carte qui se déclenche lorsqu’elle est exilée, quelle que soit la zone depuis laquelle elle est exilée.
+**On Enter Synchro** means: “Whenever a Synchro Creature enters the battlefield under your control.” Include this card if it itself is an arriving Synchro Creature. Do not write `On Enter Your Synchro`: the “you” side is the default (see rule above).
 
-**On Sacrifice** signifie : « Lorsque cette carte est sacrifiée ou utilisée comme matériel pour lancer une créature Ritual. » Utiliser ce mot-clé pour remplacer les formulations comme `Si cette carte est utilisée comme matériel Ritual`.
+**On Opponent Activation or Attack** means: “When an opponent activates an ability or declares an attack with a creature.” May introduce a Triggered ability or restrict when an Activated Flash ability activates. “Activation” = ability activation on the stack, not casting a spell (use **On Opponent Cast** for spells).
 
-**Detach X** signifie : « Détachez X matériels de cette Xyz Creature et envoyez-les au Grave. » `X` représente le nombre de matériels à détacher. Sur une carte, remplacer X par la valeur requise (`**Detach 1**`, `**Detach 2**`, etc.). Si n’importe quel nombre peut être détaché, conserver `**Detach X**`. Detach est un coût lorsqu’il précède `:` ou `;`. Placé après un événement avec un tiret cadratin, comme `**On Attack or Block** — **Detach 1**`, il est une action obligatoire de l’effet déclenché.
+**On Opponent Creature Enter** means: “Whenever a creature enters the field under an opponent's control.” When placed after an instruction, that instruction is repeated on each occurrence of that event for the specified duration.
 
-**Mill X** signifie : « Envoyez les X cartes du dessus de votre Deck dans votre Grave. » Sur une carte, remplacer X par la valeur requise : `**Mill 1**`, `**Mill 2**` ou `**Mill 3**`. Ne jamais écrire le mot-clé nu `**Mill**` sans quantité : une carte qui envoie 1 carte utilise `**Mill 1**`. Si le joueur choisit librement entre ces trois valeurs, écrire `**Mill up to 3**`.
+**On Cast** means: “Every time you cast a spell, before it resolves.” This keyword family uses controller scope by default, followed by optional parameters:
 
-**Summon** signifie : « Mettez la carte indiquée sur le terrain depuis la zone précisée, sans la lancer et sans payer son coût de mana. » Une Summon ne constitue pas à elle seule une invocation correcte d’une carte d’Extra Deck ou Ritual. Tout effet autorisé à effectuer une Summon normalement illégale doit écrire explicitement `en ignorant les restrictions de Summon`. Cette permission rend uniquement la Summon légale : elle ne constitue pas une invocation correcte pour les déplacements futurs.
+- **On Cast** counts only spells cast by you;
+- **On Opponent Cast** counts only spells cast by an opponent;
+- **On Any Cast** counts spells cast by any player.
 
-**Hand Summon** signifie : « **Summon** la créature indiquée depuis votre main. » Sur une carte, écrire `**Hand Summon**` puis les filtres (`1 créature MV 1 ou moins`, etc.). Mêmes restrictions d’invocation correcte que **Summon**.
+After the scope, add parameters that define the spells concerned, for example `“Nekroz” Ritual`. The format is **On Cast [parameters]**. Reserve `cast` for spells; never use `played` when this spell-casting action is intended.
 
-Lors de l’ajout ou de la mise à jour d’une carte, si un effet effectuerait une Summon illégale — notamment depuis le Sideboard sans la méthode d’invocation requise — demander obligatoirement à l’utilisateur s’il faut ajouter `en ignorant les restrictions de Summon` à l’effet. Ne jamais déduire cette permission silencieusement.
+**On Opponent Summon** means: “When an opponent Summons a creature.” This trigger only responds to the **Summon** action, not to the normal casting of a creature; use **On Opponent Cast** or explicit wording for casting events.
 
-**Reanimate** signifie : « Renvoyez la carte ciblée depuis son Grave sur le terrain. » Cette action ne contourne pas l’obligation d’invocation correcte des cartes d’Extra Deck ou Ritual.
+**On Send Grave** means: “When this card is put into a Grave from any zone.” Use this keyword for any ability on this card that triggers when sent to Grave.
 
-**Salvage** signifie : « Renvoyez la carte indiquée depuis votre Grave dans votre main. » Sur une carte, écrire le mot-clé en gras puis le sélecteur : `**Salvage** 1 “Shaddoll” non-créature`, `**Salvage** 1 autre “Burning Abyss”`, `Ciblez 1 “Nekroz” de votre Grave ; **Salvage** la cible`. **Salvage** ne renvoie pas sur le terrain (**Reanimate**), n’exile pas (**Exile from Grave**), et ne renvoie pas un permanent depuis le champ de bataille (**Bounce**).
+**On Send Grave by Effect** means: “When this card is put into a Grave by a card effect.” Unlike **On Send Grave**, it does not trigger when the card is put into Grave by a cost, a rule or an action that is not an effect.
 
-**Reclaim** signifie : « Renvoyez la carte indiquée depuis l’exil dans votre main. » Écrire `**Reclaim**` en gras, puis le sélecteur ou `la cible` : `Ciblez 1 “Spellbook” depuis votre exil ; **Reclaim** la cible`. Distinct de **Salvage** (Grave → main) et de **Release** (exil → terrain).
+**On Creature you Control Destroy** means: “When a creature you control is destroyed.” Unless there is a restriction written on the card, the event counts regardless of the cause of the destruction.
 
-**Release** signifie : « Mettez la carte indiquée depuis l’exil sur le terrain. » Écrire `**Release**` en gras, puis le sélecteur ou `la cible`. Mêmes restrictions d’invocation correcte que **Summon** / **Reanimate** : ajouter `en ignorant les restrictions de Summon` si la mise en jeu serait autrement illégale. Distinct de **Reanimate** (Grave → terrain) et de **Reclaim** (exil → main).
+**On Destroy** means: “When this card is destroyed and sent to Grave.”
 
-**Exile from Grave** signifie : « Activez uniquement depuis votre Grave. En tant que coût, exilez cette carte depuis votre Grave. » Sur une carte, écrire uniquement le mot-clé en gras à la place de `Depuis votre Grave, exilez cette carte`. Les coûts ou choix supplémentaires (défausse, exil d’une autre carte, ciblage, etc.) restent écrits après le mot-clé, avant `;` ou `:` le cas échéant. Exemples : `**Exile from Grave** ; révélez…`, `**Exile from Grave** et défaussez 1 créature “Burning Abyss” ; …`, `**Exile from Grave**, ciblez 1 créature ; …`.
+**On Exile** means: “When this card is exiled.” Use this keyword for any ability of this card that triggers when it is exiled, regardless of the zone it is exiled from.
 
-**Exile N [selector] from Grave** signifie : « En tant que coût, exilez N cartes de votre **Grave** qui correspondent au sélecteur. » Exemple : `**Exile 1 Plant from Grave**`. Distinct de **Exile from Grave**, qui exile *cette* carte et fixe la zone d’activation. `N` est un entier positif ; le sélecteur suit les règles de nommage et de type du projet.
+**On Sacrifice** means: “When this card is sacrificed or used as material to cast a Ritual Creature.” Use this keyword to replace wording like `If this card is used as Ritual material`.
 
-**Attach** signifie : « Attachez la carte indiquée à la Xyz Creature indiquée comme matériel. »
+**Detach X** means: “Detach X materials from this Xyz Creature and send them to Grave.” `X` represents number of materials to detach. On a card, replace X with the required value (`**Detach 1**`, `**Detach 2**`, etc.). If any number can be detached, keep `**Detach X**`. Detach is a cost when it precedes `:` or `;`. Placed after an event with an em-dash, such as `**On Attack or Block** — **Detach 1**`, it is a mandatory action of the triggered effect.
 
-**Bounce** signifie : « Renvoyez le permanent indiqué dans la main de son propriétaire. »
+**Mill X** means: “Send top X cards of your Deck to Grave.” On a card, replace X with required value: `**Mill 1**`, `**Mill 2**` or `**Mill 3**`. Never write the bare keyword `**Mill**` without quantity: a card that sends 1 card uses `**Mill 1**`. If the player freely chooses the quantity from zero through three, write `**Mill 0–3**`.
 
-**Negate** exige une cible : un permanent, un sort, ou une capacité sur la pile. Si la cible est un permanent : ce permanent perd toutes ses capacités et toutes ses capacités déjà sur la pile sont contrecarrées. Si la cible est un sort ou une capacité : contrecarrez-le / contrecarrez-la.
+**Summon** means: “Put the indicated card onto the field from the specified zone, without casting it and without paying its mana cost.” A Summon alone does not constitute a proper summon of an Extra Deck or Ritual card. Any effect allowed to perform a normally illegal Summon must explicitly write `ignoring the restrictions of Summon`. This permission only makes Summon legal: it does not constitute a proper summon for future zone changes.
 
-**Negate & Destroy** signifie la même chose que **Negate**, puis détruit la carte qui a activé l’effet (ou le permanent / sort ciblé selon le contexte de la carte). Une carte peut être détruite ainsi depuis le terrain, la main, le Deck ou le Sideboard. Elle ne peut pas être détruite depuis le **Grave** ni depuis l’exil. Cette destruction déclenche les effets **On Destroy** de la carte détruite lorsqu’ils s’appliquent.
+**Hand Summon** means: “**Summon** the creature indicated from your hand.” On a card, write `**Hand Summon**` then the filters (`1 creature MV 1 or less`, etc.). Same proper-summon restrictions as **Summon**.
 
-**Grave** est le mot-clé de zone pour le Grave dans les textes de carte. L'écrire en gras lorsqu'il désigne la zone en tant que terme de règle isolé ou mis en évidence ; dans une phrase courante (`depuis votre Grave`, `dans le Grave`), le capitaliser comme zone canonique et le mettre en gras uniquement s'il est traité comme mot-clé dans ce contexte d'affichage du projet.
+When adding or updating a card, if an effect would perform an illegal Summon — especially from Sideboard without the required summon method — ask the user whether to add `ignoring the restrictions of Summon` to the effect. Never infer this permission silently.
 
-**Set** signifie : « Mettre une carte face cachée sur le terrain selon les règles Trap (ou une permission équivalente). » **Set** est un mot-clé d'action : l'écrire en gras dans le texte de règle. Set n'utilise pas la pile, ne lance pas la carte, ne paie pas le coût de lancement et ne déclenche pas **On Cast**.
+**Reanimate** means: “Return target card from its Grave to field.” This action does not circumvent the proper-summon requirement for Extra Deck or Ritual cards.
 
-**Alternative Cost** (français d'affichage également accepté : **Coût alternatif**) désigne un coût de lancement alternatif. Sur une carte, écrire le label en gras, puis la condition ou le paiement : `**Alternative Cost** — ...` ou `**Coût alternatif** — ...`. Un mot-clé d'affinité documenté peut remplacer ce label.
+For an exact-count gate with post-success cleanup, write `Target 1 [creature] MV X in Grave and choose X [additional cards] from Grave; **Reanimate** it, if you do, exile [move] chosen cards.` Only the creature is targeted unless the effect explicitly targets the additional cards.
 
-**Bounded X** lie jusqu’à X autres créatures que vous contrôlez à la carte qui porte la capacité, appelée le `bounder`. Lorsque Bounded X devient actif, le contrôleur du bounder choisit jusqu’à X autres créatures qu’il contrôle ; elles deviennent `bounded`. Un permanent bounded bénéficie du bonus ou de l’effet indiqué uniquement tant que son bounder reste sur le terrain. Si le bounder quitte le terrain, tous ses liens et effets Bounded prennent fin immédiatement. Si un permanent bounded quitte le terrain, le contrôleur peut immédiatement en choisir un nouveau dans la limite X.
+**Salvage** means: “Return indicated card from your Grave to your hand.” On a card, write the keyword in bold then the selector: `**Salvage** 1 non-creature “Shaddoll”`, `**Salvage** 1 other “Burning Abyss”`, `Target 1 “Nekroz” from Grave; **Salvage** the target`. **Salvage** does not return to the field (**Reanimate**), does not exile (**Exile from Grave**), and does not return a permanent from the battlefield (**Bounce**).
 
-**Indestructible** (evergreen Magic) et **Indestructible des Effets** sont des mots-clés à écrire en gras. **Indestructible des Effets** signifie que la créature ne peut pas être détruite par un sort ou une capacité, mais peut toujours être détruite par les règles du combat ou par une action qui n’est pas un effet. Pour l'evergreen complet, écrire **Indestructible** ; pour la variante limitée aux effets, écrire **Indestructible des Effets**.
+**Reclaim** means: “Return indicated card from exile to your hand.” Write `**Reclaim**` in bold, then the selector or `target`: `Target 1 “Spellbook” from exile; **Reclaim** the target`. Distinct from **Salvage** (Grave → hand) and **Release** (exile → field).
 
-**Défense talismanique** signifie : « Cette carte ne peut pas être ciblée par les sorts ou capacités de vos adversaires. »
+When an effect copies only a target card's **Resolution** ability, identify the target before `;`, then write `copy the target's Resolution effect and resolve it`. This does not cast the copied card. It replaces the copying effect's resolution with the copied card's Resolution effect only; it does not copy casting costs, alternative costs, restrictions, or non-Resolution abilities.
 
-**Slow Blink X Any Creature** signifie : « Ciblez jusqu’à X créatures ; exilez-les jusqu’à la prochaine étape de fin, puis renvoyez-les sur le terrain sous le contrôle de leur propriétaire. »
+**Release** means: “Put the indicated card from exile onto the field.” Write `**Release**` in bold, then the selector or `target`. Same restrictions on correct summoning as **Summon** / **Reanimate**: add `ignoring the restrictions of Summon` if casting would otherwise be illegal. Distinct from **Reanimate** (Grave → field) and **Reclaim** (exile → hand).
 
-**Ritual Summon** met sur le terrain une ou plusieurs `Ritual Creatures` en respectant les matériaux et conditions indiqués. Une carte non-créature qui porte cet effet utilise un super-type comme `Ritual Summon Sorcery`. Une `Ritual Creature` qui n’a pas encore été correctement invoquée ne peut être mise sur le terrain que par cet effet.
+**Exile from Grave** means: “Activate only from your Grave. As a cost, exile this card from your Grave.” On a card, write only the keyword in bold instead of `From your Grave, exile this card`. Additional costs or choices (discard, exile from another card, targeting, etc.) remain written after the keyword, before `;` or `:` if applicable. Examples: `**Exile from Grave**; reveal…`, `**Exile from Grave** and discard 1 “Burning Abyss” creature; …`, `**Exile from Grave**, target 1 creature; …`.
 
-**Fusion Summon** met sur le terrain une `Fusion Creature` depuis le Sideboard en utilisant les matériaux et zones indiqués. Une carte non-créature qui porte cet effet utilise un super-type comme `Fusion Summon Sorcery`. Une `Fusion Creature` qui n’a pas encore été correctement invoquée ne peut être mise sur le terrain que par cet effet.
+**Exile N [selector] from Grave** means: “As a cost, exile N cards from your **Grave** that match the selector.” Example: `**Exile 1 Plant from Grave**`. Distinct from **Exile from Grave**, which exiles *this* card and fixes the activation zone. `N` is a positive integer; The selector follows the project's naming and type rules.
 
-Le nom ou l’archétype placé après **Ritual Summon** ou **Fusion Summon** filtre les créatures compatibles sans qu’il soit nécessaire de répéter `Ritual Creature`, `Fusion Creature` ou `Sideboard` dans le texte de la carte.
+**Attach** means: “Attach indicated card to indicated Xyz Creature as material.”
 
-Pour tout effet déclenché par l'arrivée de la carte sur le champ de bataille, utiliser **On Enter**, **On Fusion Summon** si l'effet exige spécifiquement une invocation Fusion, ou **On Link Summon** si l'effet exige spécifiquement une invocation Link. Pour tout effet déclenché par une attaque, un blocage effectué ou le fait de devenir bloqué, utiliser respectivement **On Attack**, **On Block** ou **On Blocked**. Utiliser **On Attack or Block** ou **On Block or Blocked** si les événements combinés déclenchent le même effet. Pour une Synchro qui arrive sous votre contrôle (pas seulement cette carte), utiliser **On Enter Synchro**. Pour un départ du champ de bataille, utiliser **On Leave Field**. Pour un déclencheur d'entretien, utiliser **On Upkeep**. Ne pas reformuler ces événements avec `Si ... arrive`, `Si ... attaque` ou `Si ... bloque`.
+**Bounce** means: “Return indicated permanent to its owner's hand.”
 
-Un mot-clé d’événement qui introduit une capacité doit être écrit en gras et suivi d’un tiret cadratin : `**On Enter** — ...`, `**On Exile** — ...`, `**On Leave Field** — ...`, `**On Upkeep** — ...`, etc. Un mot-clé placé après une instruction répétée, comme `Piochez 1 carte **On Opponent Creature Enter**`, ne prend pas de tiret cadratin.
+**Negate** requires a target: a permanent, spell, or ability on the stack. If the target is a permanent: this permanent loses all its abilities and all its abilities already on the stack are countered. If the target is a spell or ability: counter it.
 
-Utiliser les mots-clés d'événement pour raccourcir les effets déclenchés.
+**Negate & Destroy** means the same as **Negate**, then destroys the card that activated the effect (or the targeted permanent/spell depending on the card's context). A card can be destroyed like this from the field, the hand, Deck or Sideboard. It cannot be destroyed from **Grave** nor from exile. This destruction triggers the **On Destroy** effects of the destroyed card when they apply.
+
+**Grave** is the zone keyword for Grave in card texts. Write it in bold when designating the zone as an isolated or highlighted rule term; in a common sentence (`from Grave`, `in Grave`), capitalize it as a canonical zone and put it in bold only if it is treated as a keyword in this project display context.
+
+**Set** means: “Put a card face down on the field according to Trap rules (or equivalent permission).” **Set** is an action keyword: write it in bold in the rule text. Set does not use the stack, does not cast the card, does not pay the casting cost, and does not trigger **On Cast**.
+
+**Alternative Cost** denotes an alternative casting cost. On a card, write label in bold, then condition or payment: `**Alternative Cost** — ...`. A documented affinity keyword can replace this label.
+
+**Bounded X** binds up to X other creatures you control to the card that carries the ability, called the `bounder`. When Bounded X becomes active, the bounder's controller chooses up to X other creatures they control; they become `bounded`. A bounded permanent benefits from the bonus or effect indicated only as long as its bounder remains on the field. If the bounder leaves the field, all its links and effects Bounded end immediately. If a bounded permanent leaves the field, the controller can immediately choose a new one within limit X.
+
+**Indestructible** (evergreen Magic) and **Effect Indestructible** are keywords to write in bold. **Effect Indestructible** means that the creature cannot be destroyed by a spell or ability, but can still be destroyed by the rules of combat or by an action that is not an effect. For full evergreen, write **Indestructible**; for the variant limited to effects, write **Effect Indestructible**.
+
+**Hexproof** means: “This card cannot be targeted by your opponents' spells or abilities.”
+
+**Slow Blink X Any Creature** means: “Target 0–X creatures; exile them until the next end step, then return them to the field under their owner's control.”
+
+**Ritual Summon** puts one or more `Ritual Creatures` onto the field while respecting the materials and conditions indicated. A noncreature card that carries this effect uses a supertype like `Ritual Summon Sorcery`. A `Ritual Creature` that has not yet been properly summoned can only be put on the field by this effect.
+
+**Fusion Summon** puts a `Fusion Creature` onto the field from Sideboard using the indicated materials and zones. A noncreature card that carries this effect uses a supertype like `Fusion Summon Sorcery`. A `Fusion Creature` that has not yet been properly summoned can only be put onto the field by this effect.
+
+The name or archetype placed after **Ritual Summon** or **Fusion Summon** filters compatible creatures without the need to repeat `Ritual Creature`, `Fusion Creature` or `Sideboard` in the card text.
+
+For any effect triggered by the card entering the battlefield, use **On Enter**, **On Fusion Summon** if the effect specifically requires a Fusion Summon, or **On Link Summon** if the effect specifically requires a Link Summon. For any effect triggered by an attack, a successful block, or becoming blocked, use **On Attack**, **On Block**, or **On Blocked** respectively. Use **On Attack or Block** or **On Block or Blocked** if the combined events trigger the same effect. For a Synchro that comes under your control (not just this card), use **On Enter Synchro**. To leave the battlefield, use **On Leave Field**. For an upkeep trigger, use **On Upkeep**. Do not rephrase these events with `If... happens`, `If... attacks` or `If... blocks`.
+
+An event keyword that introduces an ability must be written in bold and followed by an em dash: `**On Enter** — ...`, `**On Exile** — ...`, `**On Leave Field** — ...`, `**On Upkeep** — ...`, etc. A keyword placed after a repeated instruction, such as `Draw 1 card **On Opponent Creature Enter**`, does not take an em dash.
+
+Use event keywords to shorten triggered effects.
 
 ## Super-type Trap
 
-`Trap` est un super-type anglais réservé aux cartes non-créature. Il précède le type Magic sur la ligne de type : `Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc. `Trap` n’est pas un mot-clé, une capacité ou un sous-type : ne pas écrire `**Piège**` dans le texte de règle ni `Instant — Piège` sur la ligne de type.
+`Trap` is an English supertype reserved for noncreature cards. It precedes the Magic type on the type line: `Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc. `Trap` is not a keyword, ability or subtype: do not write `**Trap**` in the rule text or `Instant — Trap` on the type line.
 
-Une carte Trap ne peut pas être lancée depuis la main. Depuis sa main, son propriétaire peut la **Set** face cachée sur le terrain. **Set** est un mot-clé d’action spéciale qui n’utilise pas la pile, ne lance pas la carte, ne demande pas de payer son coût de lancement et ne déclenche pas **On Cast**. Un effet qui met une carte Trap face cachée sur le terrain la Set et satisfait ce prérequis ; activer ensuite cette carte revient à la lancer. Une permission explicite peut autoriser cette activation pendant le tour où elle a été Set.
+A Trap card cannot be cast from the hand. From hand, its owner may **Set** it face down on the field. **Set** is a special action keyword that does not use the stack, does not cast the card, does not require you to pay its casting cost, and does not trigger **On Cast**. An effect that puts a Trap card face down on field Sets it and satisfies this prerequisite; then activating this card amounts to casting it. An explicit permission can allow this activation during the turn it was Set.
 
-Tant qu’elle est face cachée, la carte est traitée comme un permanent non-créature non-terrain sans nom, couleur, coût de mana, MV, type, sous-type, super-type, capacité, force ni endurance. Elle reste sur le terrain comme un permanent sans effet ; elle n’est pas un `Enchantment`.
+While face down, the card is treated as a nonland noncreature permanent with no name, color, mana cost, MV, type, subtype, supertype, ability, power, or toughness. It remains on the field as a permanent without effect; it is not an `Enchantment`.
 
-À partir du tour suivant celui où elle a été Set, son contrôleur peut la retourner face visible et la lancer depuis le terrain à tout moment où il pourrait lancer un `Instant`. Il paie alors normalement son coût de mana et ses coûts supplémentaires. La carte quitte le terrain pour la pile : ce lancement utilise la pile et compte comme un sort lancé depuis le terrain. Lorsqu’un effet précise qu’une Trap peut être lancée ou activée pendant le tour où elle a été Set, cette permission contourne explicitement et uniquement la règle qui impose d’attendre le tour suivant ; toutes les autres règles de lancement des Trap restent applicables.
+From the turn following the one in which it was Set, its controller can turn it face up and cast it from the field at any time they could cast an `Instant`. They then pay its mana cost and additional costs normally. The card moves from the field to the stack: this casting uses the stack and counts as a spell cast from the field. When an effect specifies that a Trap can be cast or activated during the turn in which it was Set, this permission explicitly and only bypasses the rule which requires waiting for the next turn; all other Trap casting rules remain applicable.
 
-Après sa résolution, une `Trap Instant` ou `Trap Sorcery` est mise au Grave normalement. Une Trap d’un type de permanent se résout et arrive face visible sur le terrain selon les règles normales de ce type. Une Trap lancée depuis une autre zone par une permission explicite suit cette permission et n’est pas considérée comme lancée depuis le terrain.
+After its resolution, a `Trap Instant` or `Trap Sorcery` is put into Grave normally. A Trap with a permanent card type resolves and enters face up on the field according to the normal rules for that type. A Trap cast from another zone by an explicit permission follows this permission and is not considered to have been cast from the field.
 
-## Raccourci de recherche
+## Search shortcut
 
-Pour alléger les textes de cartes, tout effet qui cherche une carte dans la bibliothèque pour la révéler, la mettre en main, puis mélanger doit être écrit sous la forme courte : **« cherchez X »**.
+To simplify card texts, any effect that searches the library for a card to reveal it, put it in hand, and then shuffle must be written in the short form: **“Search X”**.
 
-Exemple :
+Example:
 
-- Ne pas écrire : « cherchez une créature “Burning Abyss” dans votre bibliothèque, révélez-la, mettez-la dans votre main, puis mélangez. »
-- Écrire : « cherchez une créature “Burning Abyss”. »
+- Do not write: “search your library for a “Burning Abyss” creature, reveal it, put it into your hand, then shuffle.”
+- Write: “Search 1 “Burning Abyss” creature.”
 
-Cette convention implique par défaut la recherche dans la bibliothèque, la révélation si nécessaire, la mise dans la main, puis le mélange.
+This convention defaults to searching the library, revealing if necessary, putting it in your hand, then shuffling.
 
-Pour tout effet et toute zone, lorsqu’un sélecteur est déjà restreint par un nom de carte, un nom d’archétype ou un fragment de nom entre guillemets, omettre le nom générique `carte(s)`. Écrire par exemple `Cherchez 1 “Spellbook”`, `ciblez 1 “Spellbook” dans votre Grave`, `révélez 3 “Spellbook” de votre main`, `1 créature “Spellbook”` ou `1 non-créature Ritual Summon “Nekroz”`. Conserver les types et qualificatifs qui restreignent les objets éligibles, mais pas le mot générique `carte(s)`. Conserver `carte(s)` lorsqu’aucun nom entre guillemets ne suit ou lorsque son retrait créerait une ambiguïté avec un permanent, un sort, une capacité ou un marqueur.
+For any effect and zone, when a selector is already restricted by a card name, archetype name, or name fragment in quotes, omit the generic name `card(s)`. Write for example `Search 1 “Spellbook”`, `target 1 “Spellbook” in Grave`, `reveal 3 “Spellbook” from hand`, `1 “Spellbook” creature` or `1 non-creature Ritual Summon “Nekroz”`. Keep types and qualifiers that restrict eligible objects, but not the generic word `card(s)`. Retain `card(s)` when no quoted name follows or when removing it would create ambiguity with a permanent, spell, ability, or counter.
 
 ## Magic Set Editor
 
-L'édition et le rendu final des cartes se font avec **Magic Set Editor (MSE)**.
+Editing and final rendering of the cards is done with **Magic Set Editor (MSE)**.
 
-- Configuration locale obligatoire : lancer `python setup_mse.py` après chaque clone pour générer le fichier `.env` ignoré par Git.
-- Installation MSE : chemin `MSE_ROOT` du fichier `.env`.
-- Contexte technique MSE à lire avant toute génération ou modification : `CONTEXT.md` sous `MSE_ROOT`, s'il existe.
-- Dossier des projets MSE du cube : chemin `MSE_PROJECTS_DIR` du fichier `.env`.
+- Mandatory local configuration: run `python setup_mse.py` after each clone to generate the `.env` file ignored by Git.
+- MSE installation: `MSE_ROOT` path of the `.env` file.
+- MSE technical context to read before any generation or modification: `CONTEXT.md` under `MSE_ROOT`, if it exists.
+- Cube MSE projects folder: `MSE_PROJECTS_DIR` path of the `.env` file.
 
-Les projets MSE doivent être sauvegardés dans le projet du vault au format dossier `.mse-set` contenant un fichier `set`, plutôt qu'en archive `.mse-set` zippée. Chaque archétype ou groupe de cartes non-archétypales doit avoir son propre projet MSE pour faciliter l'édition et le rendu séparé. L'installation MSE reste seulement l'outil d'ouverture/rendu, pas l'emplacement de sauvegarde canonique des cartes du cube.
+MSE projects must be saved in the vault project in the `.mse-set` folder format containing a `set` file, rather than in a zipped `.mse-set` archive. Each archetype or group of non-archetypal cards should have its own MSE project to facilitate separate editing and rendering. The MSE installation remains only the opening/rendering tool, not the canonical save location for cube cards.
 
-### Convention de titre des sauvegardes MSE
+### MSE save title convention
 
-Tout fichier de sauvegarde MSE qui correspond à un document du projet doit utiliser cette convention dans `set_info.title` :
+Any MSE save file that matches a project document must use this convention in `set_info.title`:
 
 ```text
 YGO x MTG -- [name]
 ```
 
-Exemples :
+Examples:
 
 - `YGO x MTG -- Burning Abyss`
 - `YGO x MTG -- Shaddoll`
-- `YGO x MTG -- Staples Synchro`
+- `YGO x MTG -- Synchro Staples`
 
-Ne pas utiliser les anciens préfixes `Yu-Gi-Oh × Magic Cube —` ou `Yugioh X Magic Cube --` dans les titres MSE.
+Do not use the old prefixes `Yu-Gi-Oh × Magic Cube —` or `Yugioh X Magic Cube --` in MSE titles.
 
-### Diagnostic des erreurs MSE / corruption apparente
+### Diagnosing MSE errors / apparent corruption
 
-Si MSE signale une corruption, refuse de sauvegarder, ou si `mse.com --export-images` retourne `3221225477` / `0xC0000005`, ne pas conclure immédiatement qu'une carte est corrompue.
+If MSE reports corruption, refuses to save, or if `mse.com --export-images` returns `3221225477` / `0xC0000005`, do not immediately conclude that a card is corrupt.
 
-Procédure obligatoire :
+Mandatory procedure:
 
-1. Créer un projet de test `.mse-set` autonome avec une seule carte :
-   - un fichier `set` minimal ;
-   - un seul `include_file: card ...` ;
-   - le fichier `card ...` correspondant ;
-   - les images référencées copiées localement dans `images/...`.
-2. Placer ces projets de diagnostic dans un dossier séparé/sibling, pas au milieu du projet MSE de production, sauf test explicitement temporaire. Éviter les dossiers `.mse-set` imbriqués dans un autre `.mse-set` de production.
-3. Vérifier avec une commande directe, une carte à la fois :
-
-```powershell
-<MSE_CLI depuis .env> --export-images "CHEMIN\Carte_Test.mse-set" "CHEMIN\Carte_Test.mse-set\out_direct.png"
-```
-
-4. Si la commande retourne une erreur mais crée quand même le PNG, relancer le même test directement depuis le shell avant de déclarer la carte corrompue. Des exécutions automatisées rapides via Python `subprocess` ont produit de faux `0xC0000005` sur toutes les cartes alors que les exports directs passaient.
-5. Pour isoler une vraie corruption, retirer/changer un champ à la fois dans le projet mono-carte : `image`, `rule_text`, `name`, `casting_cost`, `super_type`, `sub_type`, puis les réglages du `set`. Réintroduire ensuite les champs un par un pour identifier le champ fautif.
-
-Résultat connu du 2026-07-11 : les 21 cartes **Burning Abyss** ont été reconstruites en projets mono-carte sous `10_YGO_Burning_Abyss.mse-set/SingleCardProjectsClean/`. Les exports directs ont tous retourné `0` et produit `out_direct.png`. Aucun champ de carte spécifique, y compris Alich, n'a été identifié comme corrompu. Le bug observé était une corruption apparente/faux crash de diagnostic, probablement liée à la manière d'invoquer MSE en batch, pas aux données des cartes.
-
-### Ordre et numérotation des cartes MSE
-
-Après chaque ajout, suppression ou régénération de cartes dans un projet `.mse-set`, trier les `include_file:` par ordre alphabétique du champ `name:` visible de la carte, puis mettre à jour les numéros de collection dans les fichiers de sauvegarde.
-
-- Format obligatoire : `001/NNN R`, `002/NNN R`, etc.
-- Mettre à jour tous les champs présents : `card_code_text`, `card_code_text_2`, `card_code_text_3`.
-- Conserver le suffixe de rareté existant (`C`, `U`, `R`, etc.).
-- Le total `NNN` doit correspondre au nombre de cartes actuellement incluses dans le projet concerné.
-
-### Vérification obligatoire après création ou modification MSE
-
-Après chaque création ou modification d'un projet `.mse-set`, vérifier que le fichier n'est pas corrompu avant de considérer la tâche terminée.
-
-1. Lancer au minimum un export CLI :
+1. Create a standalone `.mse-set` test project with a single card:
+- a minimal `set` file;
+- a single `include_file: card ...`;
+- the corresponding `card ...` file;
+- referenced images copied locally in `images/...`.
+2. Place these diagnostic projects in a separate/sibling folder, not in the middle of the production MSE project, unless explicitly temporary testing. Avoid `.mse-set` folders nested in another production `.mse-set`.
+3. Check with a direct command, one card at a time:
 
 ```powershell
-<MSE_CLI depuis .env> --export-images "CHEMIN\Projet.mse-set" "CHEMIN\Projet.mse-set\verify_export\card.png"
+<MSE_CLI from .env> --export-images "PATH\Card_Test.mse-set" "PATH\Card_Test.mse-set\out_direct.png"
 ```
 
-2. Ne pas considérer l'export comme suffisant : un projet peut s'exporter correctement mais échouer au moment de sauvegarder dans l'interface MSE avec `Referencing an inexistant file!`.
-3. Quand le projet a été créé ou restructuré, ouvrir le projet dans MSE avec cette forme exacte de commande, puis faire un vrai test de **Save** ou **Save As** :
+4. If the command returns an error but still creates the PNG, rerun the same test directly from the shell before declaring the card corrupt. Quick automated runs via Python `subprocess` produced false `0xC0000005` on all cards while direct exports passed.
+5. To isolate a real corruption, remove/change one field at a time in the single-board project: `image`, `rule_text`, `name`, `casting_cost`, `super_type`, `sub_type`, then the `set` settings. Then reintroduce the fields one by one to identify the faulty field.
+
+### Order and numbering of MSE cards
+
+After each addition, deletion or regeneration of cards in a `.mse-set` project, sort the `include_file:` alphabetically from the visible `name:` field of the card, then update the collection numbers in the save files.
+
+- Mandatory format: `001/NNN R`, `002/NNN R`, etc.
+- Update all fields present: `card_code_text`, `card_code_text_2`, `card_code_text_3`.
+- Keep the existing rarity suffix (`C`, `U`, `R`, etc.).
+- The `NNN` total must correspond to the number of cards currently included in the respective project.
+
+### Mandatory verification after MSE creation or modification
+
+After each creation or modification of a `.mse-set` project, check that the file is not corrupted before considering the task complete.
+
+1. Run at least one CLI export:
 
 ```powershell
-<MSE_EXECUTABLE depuis .env> "CHEMIN/Projet.mse-set"
+<MSE_CLI from .env> --export-images "PATH\Project.mse-set" "PATH\Project.mse-set\verify_export\card.png"
 ```
 
-4. Si la sauvegarde échoue, chercher en priorité :
-   - des `include_file:` qui pointent vers un fichier absent ;
-   - des champs `image`, `image_2`, `mainframe_image`, `mainframe_image_2`, `symbol`, `masterpiece_symbol` non vides dont le fichier n'existe pas ;
-   - des fichiers de backup obsolètes comme `set.include_backup` contenant d'anciennes références ;
-   - des dossiers `.mse-set` imbriqués dans le projet actif ;
-   - des dossiers d'export/test générés à l'intérieur du projet actif.
-5. Garder une copie de sauvegarde du projet avant toute correction destructive.
-
-Convention d'images MSE du cube :
-
-- `original_images/<type_de_carte>/` contient toutes les illustrations sources haute résolution téléchargées depuis YGOPRODeck (`image_url_cropped`). Les dossiers reprennent exactement les catégories de `original_cards/` : `Effect Monster`, `Normal Monster`, `Ritual`, `Fusion`, `Synchro`, `Xyz`, `Link`, `Spell` et `Trap`. Chaque JPG porte le nom anglais officiel de la carte selon la même convention Windows que son fichier Markdown (`:` devient ` -`, `"` devient `'`, les slashs deviennent ` - `) ; une illustration alternative ajoute ` - variant N`.
-- Aucun projet `.mse-set` ne doit contenir de dossier source `original_images/` ou `images/`. Ces sources centralisées servent à recadrer ou régénérer les images MSE.
-- `mse_images/` reste propre à chaque projet `.mse-set` et contient de préférence les nouveaux imports adaptés : PNG recadrés/redimensionnés, typiquement `316x231`, nommés `imageN.png` ou avec un slug stable. Les chemins racine `imageN.png` et les JPEG nommés existants restent valides lorsqu’ils résolvent dans le projet et passent la sauvegarde/export.
-- `render/` contient les images finales rendues/exportées par MSE pour un projet `.mse-set` ; c'est le dossier de sortie canonique des rendus de cartes.
-- Après toute modification validée d’une carte MSE, régénérer `render/` depuis le projet final. Chaque image doit être renommée avec le nom exact défini dans `name:`, par exemple `Burning Abyss - Dante.png`, et non rester au format générique `card.png`, `card.1.png`, etc. Supprimer les anciens rendus dont le nom ne correspond plus.
-- Toute référence `image:` non vide doit résoudre dans le projet. Préférer `mse_images/imageN.png` pour les nouveaux imports ; préserver les chemins racine ou JPEG existants lorsqu’ils se sauvegardent et s’exportent correctement. Ne jamais pointer directement vers `original_images/...`.
-
-Cas identifié le 2026-07-11 sur **Burning Abyss** : une sauvegarde peut échouer tant que des cartes incluses pointent directement vers les images sources `.jpg`. Après redimensionnement/import dans MSE, la sauvegarde réussie produit un fichier d'environ `316x231`, sans métadonnées EXIF, et met à jour la carte. Pour prévenir ce bug, conserver les sources dans `original_images/`, puis utiliser une copie importée/redimensionnée propre au projet ; `mse_images/` reste l’emplacement préféré pour les nouveaux imports.
-
-Pour générer ce format sans passer par l'interface MSE, utiliser le helper :
+2. Do not consider export as sufficient: a project can export correctly but fail when saving in the MSE interface with `Referencing an inexistant file!`.
+3. When the project has been created or restructured, open the project in MSE with this exact form of command, then do a real test of **Save** or **Save As**:
 
 ```powershell
-python .script/generate_mse_imported_image.py "CHEMIN\Projet.mse-set" "original_images/<type_de_carte>/<nom_de_carte>.jpg" --card-file "card fichier a mettre a jour"
+<MSE_EXECUTABLE from .env> "PATH/Project.mse-set"
 ```
 
-Le script crée le prochain `mse_images/imageN.png` disponible dans le projet et, si `--card-file` est fourni, remplace le champ `image:` de la carte par ce nouveau chemin.
+4. If Save/Save As fails, search as a priority:
+- `include_file:` entries that point to an absent file;
+- non-empty `image`, `image_2`, `mainframe_image`, `mainframe_image_2`, `symbol`, `masterpiece_symbol` fields whose file does not exist;
+- obsolete backup files like `set.include_backup` containing old references;
+- `.mse-set` folders nested in the active project;
+- export/test files generated within the active project.
+5. Keep a backup copy of the project before any destructive corrections.
 
-Pour corriger un projet entier déjà généré avec des références `images/.../*.jpg`, utiliser :
+Cube MSE Image Convention:
+
+- `original_images/<card_type>/` contains all high-resolution source illustrations downloaded from YGOPRODeck (`image_url_cropped`). The folders match exactly the categories of `original_cards/`: `Effect Monster`, `Normal Monster`, `Ritual`, `Fusion`, `Synchro`, `Xyz`, `Link`, `Spell` and `Trap`. Each JPG bears the official English name of the card using the same Windows convention as its Markdown file (`:` becomes ` -`, `"` becomes `'`, slashes become ` - `); an alternate illustration adds ` - variant N`.
+- No `.mse-set` project may contain an `original_images/` or `images/` source folder. These centralized sources are used to crop or regenerate MSE images.
+- `mse_images/` remains specific to each `.mse-set` project and preferably contains the new adapted imports: cropped/resized PNGs, typically `316x231`, named `imageN.png` or with a stable slug. Existing `imageN.png` root paths and named JPEGs remain valid when they resolve into the project and pass save/export.
+- `render/` contains the final images rendered/exported by MSE for a `.mse-set` project; this is the canonical output folder for card renderings.
+- After any validated modification of an MSE card, regenerate `render/` from the final project. Each image should be renamed with the exact name defined in `name:`, for example `Burning Abyss - Dante.png`, and not left in the generic `card.png`, `card.1.png`, etc. format. Delete old renderings whose names no longer match.
+- Any non-empty `image:` reference must resolve in the project. Prefer `mse_images/imageN.png` for new imports; preserve existing root or JPEG paths when saving and exporting successfully. Never point directly to `original_images/...`.
+
+Case identified on 2026-07-11 for **Burning Abyss**: Save can fail as long as included cards point directly to the `.jpg` source images. After resizing/importing into MSE, the successful save produces a file approximately `316x231`, without EXIF metadata, and updates the card. To prevent this bug, keep the sources in `original_images/`, then use an imported/resized copy specific to the project; `mse_images/` remains the preferred location for new imports.
+
+To generate this format without going through the MSE interface, use the helper:
 
 ```powershell
-python .script/fix_mse_project_images.py --backup "CHEMIN\Projet.mse-set"
+python .script/generate_mse_imported_image.py "PATH\Project.mse-set" "original_images/<card_type>/<card_name>.jpg" --card-file "card file to update"
 ```
 
-Ce script sauvegarde le projet, génère des `mse_images/imageN.png` pour toutes les cartes incluses, met à jour les champs d'image, trie les `include_file:` par nom de carte et renumérote les `card_code_text`.
+The script creates the next `mse_images/imageN.png` available in the project and, if `--card-file` is provided, replaces the card's `image:` field with this new path.
 
-## Conventions de rédaction des types, recherches et zones
+To correct an entire project already generated with `images/.../*.jpg` references, use:
 
-- Toujours écrire `Ritual Creature`, jamais `créature Ritual` ni `Ritual créature`. Au pluriel, écrire `Ritual Creatures`.
-- Pour une recherche, écrire le type avant le nom d’archétype : `Cherchez 1 Ritual Creature “Nekroz”.` Pour une carte d’invocation non-créature, écrire `Cherchez 1 non-créature Ritual Summon “Nekroz”.` Si une race est requise, la placer avant le type : `Dragon Ritual Creature`.
-- Pour un coût de Ritual Summon fondé sur la valeur de mana, comparer explicitement les valeurs. La valeur par défaut est l’égalité ; une carte peut indiquer `supérieure ou égale` pour autoriser le surpaiement, comme Good & Evil.
-- Si plusieurs Ritual Creatures peuvent être mises en jeu, accorder au pluriel : `leur(s) coût(s) Ritual`.
-- Ne jamais énumérer les zones avec plusieurs possessifs. Écrire `depuis votre main ou terrain`, jamais `depuis votre main ou terrain`, `depuis votre main ou terrain` ni `depuis votre main ou terrain`.
-- Lorsqu’un effet ne cible pas au sens des règles, l’indiquer explicitement avec `Cet effet ne cible pas.`
-- Plusieurs actions à mot-clé appartenant à une même capacité sont écrites dans un même groupe en gras et reliées par `et`, par exemple `**Detach 1 et Mill 3**`.
-- Le choix d’une cible n’est jamais un coût, même lorsque `ciblez ...` est placé dans le groupe d’instructions qui précède `;` ou `:`.
-- Un effet activé depuis le Grave en exilant cette carte commence par le mot-clé gras `**Exile from Grave**` (définition ci-dessus), jamais par la phrase longue `Depuis votre Grave, exilez cette carte`. Les coûts et choix supplémentaires restent avant `;` ou `:`.
-- Pour désigner la carte elle-même, utiliser son nom si celui-ci est aussi court ou plus court que `cette carte` ; sinon, utiliser `cette carte`.
-- Pour déplacer une carte depuis le Deck, réserver `Cherchez` aux cartes mises en main. Utiliser `Envoyez ... depuis votre Deck au Grave` et `Mettez en jeu ... depuis votre Deck` pour les autres destinations.
-- Toujours écrire les zones, types et mécaniques avec leur casse et leur orthographe validées : `Deck`, `Grave`, `Sideboard`, `Ritual Creature`, `Fusion Creature` et `Trap`.
-- Dans les cartes du cube, `Sideboard` est le nom de la zone MSE qui représente l’Extra Deck. Les règles générales peuvent parler d’Extra Deck ; le texte compact des cartes emploie Sideboard.
-- Pour toute créature de type Sideboard / Extra Deck (`Xyz Creature`, `Synchro Creature`, `Fusion Creature`, `Link Creature`), la ligne de matériaux en italique **ne répète jamais** le type d’invocation : pas de préfixe `Xyz —`, `Synchro —`, `Fusion —` ni `Link —`. Le super-type de la carte porte déjà cette information. Écrire seulement les matériaux, par ex. `*2 créatures MV 1*`, `*1 Tuner + 1+ non-Tuner*`, `*1 créature “Shaddoll” + 1 créature blanche*`, `*2+ Creatures*`.
-- La ligne de matériaux d’une Fusion Creature utilise `*[matériaux]*` ; le super-type `Fusion Creature` porte déjà l’information Fusion.
-- La ligne de matériaux d’une Synchro Creature place toujours le Tuner en premier : `*1 Tuner + 1+ non-Tuner*` ; le préfixe `Synchro —` est omis.
-- Une protection par remplacement de destruction utilise `Si cette carte devait être détruite, vous pouvez sacrifier ... à la place.`
-- Une perte de capacités accompagnée d’un changement de statistiques utilise l’ordre `La créature ciblée perd toutes ses capacités et devient 0/0 jusqu’à la fin du tour.`
-- Lorsqu’une ligne de matériaux demande des créatures `différentes`, leurs noms doivent être différents.
-- Une perte de capacités précisée `sur le terrain` cesse dès que la carte quitte le terrain et ne s’applique pas dans les autres zones.
+```powershell
+python .script/fix_mse_project_images.py --backup "PATH\Project.mse-set"
+```
 
-## Convention Extra Deck / types MSE
+This script saves the project, generates `mse_images/imageN.png` for all included cards, updates the image fields, sorts the `include_file:` by card name and renumbers the `card_code_text`.
 
-Pour les créatures d'Extra Deck, le type spécial doit être placé dans le `super_type`, avant `Creature`, et non dans le sous-type/race :
+## Writing conventions for types, searches and zones
 
-- `Xyz Creature` pour les créatures Xyz ;
+- Always write `Ritual Creature`, never `Ritual creature` nor `Ritual creature`. In the plural, write `Ritual Creatures`.
+- For a search, write the type before the archetype name: `Search 1 Ritual Creature “Nekroz”.` For a non-creature summon card, write `Search 1 non-creature Ritual Summon “Nekroz”.` If a race is required, place it before the type: `Dragon Ritual Creature`.
+- For a cost of Ritual Summon based on mana value, compare the values explicitly. The default is equality; a card may say `greater than or equal` to allow overpayment, such as Good & Evil.
+- If several Ritual Creatures can be put onto field, use plural agreement: `their Ritual cost(s)`.
+- Personal zones are controller-scoped by default. Write `from hand or field`, not `from your hand or field`; specify another player only when needed.
+- A selector without `target` chooses on resolution. Add `This effect does not target.` only when omission leaves genuine ambiguity.
+- Several keyword actions belonging to the same ability are written in the same group in bold and linked by `and`, for example `**Detach 1 and Mill 3**`.
+- Choosing a target is never a cost, even when `target...` is placed in the group of instructions that precedes `;` or `:`.
+- An effect activated from Grave by exiling this card begins with the bold keyword `**Exile from Grave**` (definition above), never with the long phrase `From your Grave, exile this card`. Additional costs and choices remain before `;` or `:`.
+- To designate the card itself, use its name if it is as short or shorter than `this card`; otherwise, use `this card`.
+- To move a card from Deck, reserve `Search` for cards put into hand. Use `Send ... from Deck to Grave` and `Put ... onto field from Deck` for other destinations.
+- Always write zones, types and mechanics with their validated case and spelling: `Deck`, `Grave`, `Sideboard`, `Ritual Creature`, `Fusion Creature` and `Trap`.
+- In cube cards, `Sideboard` is the name of the MSE zone that represents the Extra Deck. General rules can talk about Extra Deck; compact text of cards uses Sideboard.
+- For any creature of type Sideboard / Extra Deck (`Xyz Creature`, `Synchro Creature`, `Fusion Creature`, `Link Creature`), the italicized material line **never repeats** the summon type: no prefix `Xyz —`, `Synchro —`, `Fusion —` nor `Link —`. The card's supertype already carries this information. Write only the materials, e.g. `*2 creatures MV 1*`, `*1 Tuner + 1+ non-Tuner*`, `*1 “Shaddoll” creature + 1 white creature*`, `*2+ Creatures*`.
+- A Fusion Creature's material line uses `*[materials]*`; the super-type `Fusion Creature` already carries the Fusion information.
+- The material line of a Synchro Creature always places the Tuner first: `*1 Tuner + 1+ non-Tuner*`; the `Synchro —` prefix is omitted.
+- A destruction replacement protection uses `If this card would be destroyed, you may sacrifice... instead.`
+- A loss of abilities accompanied by a change in statistics uses the command `The target creature loses all its abilities and becomes 0/0 until the end of the turn.`
+- When a material line requires `different` creatures, their names must be different.
+- A loss of abilities specified `on the field` ceases as soon as the card leaves the field and does not apply in other zones.
 
-### Ligne de matériaux Xyz
+## Extra Deck / MSE type convention
 
-La première ligne de texte d'une `Xyz Creature` doit indiquer ses matériaux en italique, **sans** préfixe `Xyz —` / `Xyz -` (le super-type `Xyz Creature` suffit). Par défaut, utiliser :
+For Extra Deck creatures, the special type must be placed in the `super_type`, before `Creature`, and not in the subtype/race:
+
+- `Xyz Creature` for Xyz creatures;
+
+### Xyz material line
+
+The first line of text of an `Xyz Creature` must indicate its materials in italics, **without** `Xyz —` / `Xyz -` prefix (the `Xyz Creature` supertype is sufficient). By default, use:
 
 ```text
-2 créatures MV N
+2 creatures MV N
 ```
 
-où `N` est la valeur de mana de la carte Xyz elle-même. Exemple : une Xyz coûtant `{2}{U}` utilise `2 créatures MV 3`. Les exceptions existent seulement si le design de la carte exige explicitement `2+ créatures` ou un matériel nommé, mais la baseline du projet est `2 créatures MV N`. Ne jamais écrire `Xyz — 2 créatures MV 1` ; écrire `2 créatures MV 1`. Le label de coût alternatif `Xyz Coût Alternatif —` reste distinct et autorisé.
-- `Synchro Creature` pour les créatures Synchro ;
-- `Fusion Creature` pour les créatures Fusion ;
-- `Link Creature` pour les créatures Link.
+where `N` is the mana value of the Xyz card itself. Example: an Xyz costing `{2}{U}` uses `2 creatures MV 3`. Exceptions only exist if the card design explicitly requires `2+ creatures` or named material, but the project baseline is `2 creatures MV N`. Never write `Xyz — 2 creatures MV 1`; write `2 creatures MV 1`. The alternative cost label `Xyz Alternative Cost —` remains distinct and permitted.
+- `Synchro Creature` for Synchro creatures;
+- `Fusion Creature` for Fusion creatures;
+- `Link Creature` for Link creatures.
 
-Pour toute carte non-créature qui effectue explicitement une invocation spéciale, placer la mécanique avant son type Magic dans le super-type :
+For any non-creature card that explicitly performs a Special Summon, place the mechanic before its Magic type in the supertype:
 
-- `Ritual Summon Sorcery`, `Ritual Summon Instant`, etc. pour une carte qui porte **Ritual Summon** ;
-- `Fusion Summon Sorcery`, `Fusion Summon Instant`, etc. pour une carte qui porte **Fusion Summon** ;
-- ne pas répéter cette mécanique dans le sous-type.
+- `Ritual Summon Sorcery`, `Ritual Summon Instant`, etc. for a card that bears **Ritual Summon**;
+- `Fusion Summon Sorcery`, `Fusion Summon Instant`, etc. for a card that bears **Fusion Summon**;
+- do not repeat this mechanic in the subtype.
 
-Dans les documents de cartes, utiliser la même forme sur la ligne de type, par exemple `Xyz Creature — Humain`. Pour une carte Trap, placer `Trap` au début du super-type, par exemple `Trap Instant` ; ne pas conserver le sous-type français `Piège`.
+In card documents, use the same shape on the type line, for example `Xyz Creature — Human`. For a Trap card, place `Trap` at the start of the super-type, for example `Trap Instant`; do not keep the legacy Trap subtype.
 
-### Styles MSE validés
+### Validated MSE styles
 
-Les choix de frames/styles validés doivent être conservés dans les projets MSE et les scripts générateurs. Les frames sont définies par **super-type de carte**, jamais par archétype.
+Validated frame/style choices must be retained in MSE projects and generator scripts. Frames are defined by **card super-type**, never by archetype.
 
-Un projet d'archétype (`10_YGO_Burning_Abyss`, `12_YGO_Necroz`, `11_YGO_Shaddoll`, etc.) peut donc contenir des cartes individuelles `Fusion`, `Synchro`, `Xyz`, `Link` ou `Ritual`. Ces cartes doivent utiliser la frame de leur super-type individuel, pas une frame globale propre à l'archétype.
+An archetype project (`10_YGO_Burning_Abyss`, `12_YGO_Necroz`, `11_YGO_Shaddoll`, etc.) can therefore contain individual `Fusion`, `Synchro`, `Xyz`, `Link` or `Ritual` cards. These cards must use the frame of their individual supertype, not a global frame specific to the archetype.
 
-Dans les fichiers MSE, une frame spécifique à une carte se déclare directement dans le fichier `card ...`, juste après `card:` :
+In MSE files, a card-specific frame is declared directly in the `card ...` file, just after `card:`:
 
 ```text
 card:
@@ -530,24 +543,24 @@ card:
 	has_styling: false
 ```
 
-Ne pas créer un projet `.mse-set` séparé uniquement pour changer la frame d'une carte : utiliser les champs `stylesheet` / `stylesheet_version` au niveau de la carte.
+Do not create a separate `.mse-set` project just to change the frame of a card: use the `stylesheet` / `stylesheet_version` fields at the card level.
 
-- **Xyz** : `m15-spellbook` (`magic-m15-spellbook.mse-style`) — frame M15 Spellbook validée.
-- **Fusion Creature** : `genevensis-00-main` (`magic-genevensis-00-main.mse-style`) — frame `gen main` hi-res validée.
-- **Synchro Creature** : `m15-sketch` (`magic-m15-sketch.mse-style`) — style Sketch validé.
-- **Link Creature** : `m15-showcase-capenna-art-deco` (`magic-m15-showcase-capenna-art-deco.mse-style`) — Art Deco / Capenna Showcase validé.
-- **Ritual Creature** : `m15-showcase-praetor` (`magic-m15-showcase-praetor.mse-style`) — frame Praetor / Phyrexian Showcase validée.
-- **Normal, autres cartes et non-créatures Fusion Summon/Ritual Summon** : `sevenhalf` (`magic-sevenhalf.mse-style`) — frame 7.5th Edition validée.
+- **Xyz**: `m15-spellbook` (`magic-m15-spellbook.mse-style`) — M15 Spellbook frame validated.
+- **Fusion Creature**: `genevensis-00-main` (`magic-genevensis-00-main.mse-style`) — `gen main` hi-res frame validated.
+- **Synchro Creature**: `m15-sketch` (`magic-m15-sketch.mse-style`) — Sketch style validated.
+- **Link Creature**: `m15-showcase-capenna-art-deco` (`magic-m15-showcase-capenna-art-deco.mse-style`) — Art Deco / Capenna Showcase validated.
+- **Ritual Creature**: `m15-showcase-praetor` (`magic-m15-showcase-praetor.mse-style`) — Praetor / Phyrexian Showcase frame validated.
+- **Normal, other cards and non-creatures Fusion Summon/Ritual Summon**: `sevenhalf` (`magic-sevenhalf.mse-style`) — frame 7.5th Edition validated.
 
-Les frames Fusion et Ritual ne s'appliquent qu'aux **créatures**. Une carte non-créature `Fusion Summon` ou `Ritual Summon` garde la frame par défaut `sevenhalf`.
+Fusion and Ritual frames only apply to **creatures**. A non-creature card `Fusion Summon` or `Ritual Summon` keeps the default frame `sevenhalf`.
 
-Voir aussi `frame_candidates.md` pour la liste des candidats et validations visuelles.
+See also `frame_candidates.md` for the list of candidates and visual validations.
 
-La première ligne du texte de règle d'une créature d'Extra Deck / Sideboard doit être la condition d'invocation en italique, **sans** répéter le type d'invocation ni le super-type (`Xyz`, `Synchro`, `Fusion`, `Link`) :
+The first line of a creature's rule text from Extra Deck / Sideboard must be the summoning condition in italics, **without** repeating the summoning type or super-type (`Xyz`, `Synchro`, `Fusion`, `Link`):
 
-- `*2 créatures MV N*` pour une Xyz Creature — jamais `*Xyz — 2 créatures MV N*` ;
-- `*1 Tuner + 1+ non-Tuner*` pour une Synchro Creature — jamais `*Synchro — …*` ;
-- `*1 créature “Shaddoll” + 1 créature blanche*` pour une Fusion Creature — jamais `*Fusion — …*` ;
-- `*2+ Creatures*` pour une Link Creature — jamais `*Link — …*`.
+- `*2 creatures MV N*` for an Xyz Creature — never `*Xyz — 2 MV N*` creatures;
+- `*1 Tuner + 1+ non-Tuner*` for a Synchro Creature — never `*Synchro — …*`;
+- `*1 “Shaddoll” creature + 1 white creature*` for a Fusion Creature — never `*Fusion — …*`;
+- `*2+ Creatures*` for a Link Creature — never `*Link — …*`.
 
-Pour une `Link Creature`, le niveau Link reste porté par le type de carte (`Link Lvl 4 Creature`, par exemple), tandis que la première ligne indique seulement le nombre ou les propriétés des matériaux requis. La MV ou le niveau des matériaux n'a pas d'importance sauf mention explicite sur la carte, comme `2 Creatures MV 1` pour Cherubini.
+For a `Link Creature`, the Link level remains carried by the card type (`Link Lvl 4 Creature`, for example), while the first line only indicates the number or properties of the required materials. MV or material level does not matter unless explicitly stated on the card, such as `2 Creatures MV 1` for Cherubini.

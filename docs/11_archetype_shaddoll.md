@@ -1,46 +1,40 @@
-# 11 - Archétype : Shaddoll
+# 11 - Archetype: Shaddoll
 
-# Règles générales
+## General rules
 
-## Identité de l'archétype
+### Archetype identity
 
-Shaddoll est un deck **Contrôle / Value / Fusion**.
+Shaddoll is a **Control / Value / Fusion** deck.
 
-L'archétype repose sur deux mécaniques principales :
+The archetype uses two main mechanics:
 
-- **Flip** ;
+- **Flip**;
 - **Shaddoll Recovery**.
 
-## Conventions propres à Shaddoll
+### Shaddoll-specific conventions
 
-Les noms cube utilisent le format `[préfixe optionnel] Shaddoll - [nom]`. Les préfixes officiels `El`, `Hel`, `Nael`, `Puru`, `Qad`, `Ree` et `Resh` sont séparés de `Shaddoll`. `Curse of the Shadow Prison` et `Sinister Shadow Games` conservent exceptionnellement leur nom officiel complet.
+Cube names use `[optional prefix] Shaddoll - [name]`. Official prefixes `El`, `Hel`, `Nael`, `Puru`, `Qad`, `Ree`, and `Resh` remain separate from `Shaddoll`. `Curse of the Shadow Prison` and `Sinister Shadow Games` exceptionally retain full official names.
 
-Les créatures Shaddoll conservent le type et le sous-type individuels définis dans leur carte MSE ; leur race n’est pas uniformisée en `Puppet`. `Shaddoll - Falco` est une `Tuner Creature`. `Resh Shaddoll - Incarnation` et `Sinister Shadow Games` sont des `Trap Instant`, tandis que `Shaddoll - Core` est un `Trap Enchantment`.
+Shaddoll creatures retain the type and subtype defined by their MSE cards; race is not standardized as `Puppet`. `Shaddoll - Falco` is a `Tuner Creature`. `Resh Shaddoll - Incarnation` and `Sinister Shadow Games` are `Trap Instant` cards, while `Shaddoll - Core` is a `Trap Enchantment`.
 
-Les cartes incluses par `MSE_projects/11_YGO_Shaddoll.mse-set/set` sont la source de vérité des valeurs carte par carte. Les scripts et les tests doivent les refléter. Les restrictions générales de Summon restent applicables sauf mention explicite contraire sur une carte.
+Cards included by `MSE_projects/11_YGO_Shaddoll.mse-set/set` are the source of truth for card-by-card values. Scripts and tests must reflect them. General Summon restrictions apply unless a card explicitly says otherwise.
 
----
+## Color
 
-## Couleur
+Main color: **Black**
 
-Couleur principale : **Noir**
-
----
-
-## Mécaniques
+## Mechanics
 
 ### Flip
 
-Lorsque cette créature est retournée face visible, appliquez l'effet indiqué.
+When this creature is turned face up, apply the indicated effect.
 
 ### Shaddoll Recovery
 
-**Shaddoll Recovery** signifie : « **On Send Grave** — **Salvage** 1 “Shaddoll” non-créature. » Sur les cartes, écrire uniquement le mot-clé en gras après le préfixe de capacité, sans rappeler le texte complet. **Salvage** est le mot-clé général Grave → main (`docs/context.md`).
+**Shaddoll Recovery** means: “**On Send Grave** — **Salvage** 1 non-creature “Shaddoll”.” Cards print only the bold keyword after the ability prefix, without repeating full text. **Salvage** is the general Grave → hand keyword defined in `docs/context.md`.
 
-`On Send Grave by Effect` reste un événement distinct. Il n’est pas absorbé par **Shaddoll Recovery** sauf si la carte imprime explicitement ce mot-clé.
+`On Send Grave by Effect` remains a separate event. It is not absorbed by **Shaddoll Recovery** unless card explicitly prints that keyword.
 
----
+## Card source of truth
 
-## Source de vérité des cartes
-
-Les valeurs carte par carte de cet archétype sont définies uniquement dans `MSE_projects/11_YGO_Shaddoll.mse-set/`. Ce document ne conserve que l’identité, les conventions de nommage et les mécaniques d’archétype.
+Card-by-card values for this archetype exist only in `MSE_projects/11_YGO_Shaddoll.mse-set/`. This document retains only identity, naming conventions, and archetype mechanics.
