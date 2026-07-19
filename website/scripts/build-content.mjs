@@ -12,6 +12,7 @@ import {
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
+import { isSupportedRenderProvenance } from './render-provenance.mjs';
 
 const WEBSITE = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -39,7 +40,7 @@ const projects = [
   ],
   [
     'fusions',
-    'Fusions',
+    'Fusion',
     'non-archetype',
     '05_YGO_Staples_Fusion.mse-set',
     'docs/01_cube_overview.md',
@@ -114,8 +115,8 @@ const accents = {
   spellbook: 'aether',
 };
 const iconicNames = {
-  'burning-abyss': 'Dante, Traveler of the Burning Abyss',
-  shaddoll: 'El Shaddoll Construct',
+  'burning-abyss': 'Burning Abyss - Dante',
+  shaddoll: 'El Shaddoll - Construct',
   nekroz: 'Nekroz - Trishula',
   spellbook: 'High Priestess of Prophecy',
 };
@@ -639,7 +640,7 @@ async function main() {
       );
       provenance = JSON.parse(await readFile(provenancePath, 'utf8'));
       if (
-        provenance.schemaVersion !== 1 ||
+        !isSupportedRenderProvenance(provenance) ||
         provenance.project !== path.basename(card.projectRoot) ||
         !Array.isArray(provenance.cards)
       )

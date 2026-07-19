@@ -72,7 +72,7 @@ Canonical update is atomic with `render-provenance.json`:
 python ../.script/export_mse_renders.py ../MSE_projects/12_YGO_Necroz.mse-set --canonical
 ```
 
-Exporter rejects linked/escaping paths, unresolved art, duplicate included names, stale extra renders, decode-limit violations, nonzero MSE exit, wrong counts, and wrong filenames. Canonical originals remain untouched by website derivative stripping.
+Exporter converts MSE's opaque RGB output to RGBA and makes only pure-white outer corner pixels transparent; enclosed white card content remains opaque. This versioned transform marks legacy opaque-render provenance stale. Export rejects linked/escaping paths, unresolved art, duplicate included names, stale extra renders, decode-limit violations, nonzero MSE exit, wrong counts, wrong filenames, and corners that remain opaque. Canonical originals remain untouched by website derivative stripping.
 
 ## Meaningful dates
 

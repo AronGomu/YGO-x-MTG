@@ -40,7 +40,11 @@ from mse_content import (  # noqa: E402
     visual_source_hash,
 )
 
-PROVENANCE_SCHEMA = 1
+PROVENANCE_SCHEMA = 2
+SUPPORTED_PROVENANCE_SCHEMAS = {1, PROVENANCE_SCHEMA}
+RENDER_TRANSFORM = {"id": "transparent-white-corners", "version": 1}
+CORNER_SCAN_DIVISOR = 10
+PIXEL_HASH_CHUNK_ROWS = 64
 UNSAFE_FILENAME = re.compile(r'[<>:"/\\|?*]')
 
 
@@ -94,13 +98,58 @@ def decode_png(path: Path) -> tuple[int, int]:
     return width, height
 
 
+def make_white_corners_transparent(path: Path) -> None:
+    """Remove pure-white outer corner runs while preserving enclosed card whites."""
+    Image.MAX_IMAGE_PIXELS = MAX_DECODED_PIXELS
+    with Image.open(path) as source:
+        rgba = source.convert("RGBA")
+
+    pixels = rgba.load()
+    span = max(1, min(rgba.size) // CORNER_SCAN_DIVISOR)
+    rows = (*range(span), *range(rgba.height - span, rgba.height))
+
+    def clear_white_run(y: int, start: int, step: int) -> None:
+        x = start
+        for _ in range(span):
+            pixel = pixels[x, y]
+            if pixel[3] != 0 and pixel[:3] != (255, 255, 255):
+                break
+            pixels[x, y] = (*pixel[:3], 0)
+            x += step
+
+    for y in rows:
+        clear_white_run(y, 0, 1)
+        clear_white_run(y, rgba.width - 1, -1)
+    corners = (
+        (0, 0),
+        (rgba.width - 1, 0),
+        (0, rgba.height - 1),
+        (rgba.width - 1, rgba.height - 1),
+    )
+    if any(rgba.getpixel(corner)[3] != 0 for corner in corners):
+        raise MSESourceError(f"render has opaque non-white corner: {path.name}")
+    rgba.save(path, format="PNG")
+
+
 def pixel_hash(path: Path) -> str:
+    size = path.stat().st_size
+    if size > MAX_IMAGE_BYTES:
+        raise MSESourceError(f"render exceeds {MAX_IMAGE_BYTES} bytes: {path.name}")
     Image.MAX_IMAGE_PIXELS = MAX_DECODED_PIXELS
     with Image.open(path) as image:
+        if image.format != "PNG":
+            raise MSESourceError(f"render is not PNG: {path.name}")
+        width, height = image.size
+        if width > MAX_IMAGE_WIDTH or height > MAX_IMAGE_HEIGHT:
+            raise MSESourceError(f"render dimensions exceed limits: {path.name}")
+        if width * height > MAX_DECODED_PIXELS:
+            raise MSESourceError(f"render decoded pixels exceed limit: {path.name}")
         normalized = image.convert("RGBA")
         digest = hashlib.sha256()
-        digest.update(f"{normalized.width}x{normalized.height}:RGBA\n".encode())
-        digest.update(normalized.tobytes())
+        digest.update(f"{width}x{height}:RGBA\n".encode())
+        for top in range(0, height, PIXEL_HASH_CHUNK_ROWS):
+            bottom = min(top + PIXEL_HASH_CHUNK_ROWS, height)
+            digest.update(normalized.crop((0, top, width, bottom)).tobytes())
         return digest.hexdigest()
 
 
@@ -113,7 +162,7 @@ def load_provenance(path: Path) -> dict[str, object] | None:
         raise MSESourceError(f"invalid existing render provenance: {path}") from exc
     if (
         not isinstance(value, dict)
-        or value.get("schemaVersion") != PROVENANCE_SCHEMA
+        or value.get("schemaVersion") not in SUPPORTED_PROVENANCE_SCHEMAS
         or not isinstance(value.get("cards"), list)
     ):
         raise MSESourceError(f"invalid existing render provenance schema: {path}")
@@ -135,6 +184,7 @@ def build_provenance(project: Path, cards: list, render_dir: Path, config: MSECo
             "stylesheet": stylesheet.group(1).strip() if stylesheet else "unknown",
             "cli": config.cli.name,
         },
+        "renderTransform": RENDER_TRANSFORM,
         "cards": [
             {
                 "id": card.source_name,
@@ -160,6 +210,11 @@ def inspect_project(project: Path) -> tuple[list, list[dict[str, object]]]:
         if isinstance(item, dict)
     }
     canonical = project / "render"
+    provenance_current = bool(
+        provenance
+        and provenance.get("schemaVersion") == PROVENANCE_SCHEMA
+        and provenance.get("renderTransform") == RENDER_TRANSFORM
+    )
     rows: list[dict[str, object]] = []
     expected: set[str] = set()
     for card in cards:
@@ -169,7 +224,18 @@ def inspect_project(project: Path) -> tuple[list, list[dict[str, object]]]:
         source_hash = visual_source_hash(project, card)
         prior = old_by_id.get(card.source_name, {})
         missing = not render.is_file()
-        stale = missing or prior.get("sourceHash") != source_hash
+        render_matches = not missing
+        if render_matches and provenance_current:
+            render_matches = (
+                prior.get("renderHash") == sha256_file(render)
+                and prior.get("renderPixelHash") == pixel_hash(render)
+            )
+        stale = (
+            missing
+            or not provenance_current
+            or prior.get("sourceHash") != source_hash
+            or not render_matches
+        )
         rows.append(
             {
                 "index": card.index,
@@ -217,6 +283,8 @@ def export(project: Path, output: Path, config: MSEConfig) -> dict[str, object]:
             if key in actual_by_key:
                 raise MSESourceError(f"MSE export filename collision: {exported.name}")
             actual_by_key[key] = exported
+            decode_png(exported)
+            make_white_corners_transparent(exported)
             decode_png(exported)
         expected_by_key: dict[str, object] = {}
         for card in cards:
