@@ -1,4 +1,4 @@
-"""Regenerate original_cards from card definitions in docs using Konami's official database."""
+"""Refresh existing original_cards records from Konami's official database."""
 
 from __future__ import annotations
 
@@ -19,18 +19,9 @@ from lxml import html
 from original_image_assets import card_filename
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / "docs"
 OUTPUT = ROOT / "original_cards"
 OFFICIAL = "https://www.db.yugioh-card.com/yugiohdb/card_search.action"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; YGO-x-MTG card documentation)"}
-CARD_LEVELS = {
-    "03_non_archetype_creature.md": 3,
-    "05_fusion.md": 4,
-    "06_synchro.md": 4,
-    "07_xyz.md": 4,
-    "08_link.md": 4,
-    "09_non_archetype_non_creature.md": 3,
-}
 NAME_OVERRIDES = {"ddcrow": "D.D. Crow"}
 LINK_DIRECTIONS = {
     "1": "Bottom-Left", "2": "Bottom", "3": "Bottom-Right", "4": "Left",
@@ -44,20 +35,19 @@ def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", value)
 
 
-def doc_card_names() -> list[str]:
-    names = {}
-    for path in sorted(DOCS.glob("*.md")):
-        for line in path.read_text(encoding="utf-8-sig").splitlines():
-            match = re.match(r"^(#{2,4})\s+(.+?)\s*$", line)
-            if not match:
-                continue
-            heading = match.group(2)
-            is_card = "=>" in heading or (
-                path.name in CARD_LEVELS and len(match.group(1)) == CARD_LEVELS[path.name]
-            )
-            if is_card:
-                name = heading.split("=>", 1)[0].strip()
-                names.setdefault(normalize(name), name)
+def original_card_names() -> list[str]:
+    names: dict[str, str] = {}
+    for path in sorted(OUTPUT.rglob("*.md")):
+        heading = next(
+            (
+                line.removeprefix("# ").strip()
+                for line in path.read_text(encoding="utf-8-sig").splitlines()
+                if line.startswith("# ")
+            ),
+            "",
+        )
+        if heading:
+            names.setdefault(normalize(heading), heading)
     return list(names.values())
 
 
@@ -86,11 +76,11 @@ def canonical_cards() -> list[dict]:
     response.raise_for_status()
     index = {normalize(card["name"]): card for card in response.json()["data"]}
     selected = []
-    for doc_name in doc_card_names():
-        key = normalize(doc_name)
-        card = index.get(normalize(NAME_OVERRIDES.get(key, doc_name)))
+    for original_name in original_card_names():
+        key = normalize(original_name)
+        card = index.get(normalize(NAME_OVERRIDES.get(key, original_name)))
         if not card:
-            raise RuntimeError(f"No canonical match for {doc_name!r}")
+            raise RuntimeError(f"No canonical match for {original_name!r}")
         selected.append(card)
     return sorted(selected, key=lambda card: card["name"].casefold())
 

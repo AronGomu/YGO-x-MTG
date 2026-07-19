@@ -2,7 +2,7 @@
 """Create a print-and-cut proxy PDF from MSE rendered card images.
 
 Default behavior:
-- scans every `render` folder under `MSE_projects`
+- scans canonical `MSE_projects/*.mse-set/render` folders only
 - puts each card in the PDF 3 times, for playtest proxy sets
 - prints at real Magic card size: 2.5 x 3.5 inches
 - uses A4 pages, 9 cards per page, separated by 1-pixel gray cut lines
@@ -45,8 +45,19 @@ def natural_key(path: Path) -> list[object]:
 
 def discover_render_folders(inputs: list[Path]) -> list[Path]:
     if inputs:
-        return [path if path.is_absolute() else (REPO / path) for path in inputs]
-    return sorted([path for path in MSE_PROJECTS.rglob("render") if path.is_dir()])
+        french_archive = (MSE_PROJECTS / "French").resolve()
+        folders = [
+            (path if path.is_absolute() else (REPO / path)).resolve()
+            for path in inputs
+        ]
+        if any(folder.is_relative_to(french_archive) for folder in folders):
+            raise ValueError("Frozen French render folders cannot be proxy-PDF inputs")
+        return folders
+    return sorted(
+        path / "render"
+        for path in MSE_PROJECTS.glob("*.mse-set")
+        if (path / "render").is_dir()
+    )
 
 
 def output_stem_from_render_folders(render_folders: list[Path]) -> str:
