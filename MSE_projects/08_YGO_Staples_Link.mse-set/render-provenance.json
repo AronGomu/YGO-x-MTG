@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "project": "08_YGO_Staples_Link.mse-set",
-  "exportedAt": "2026-07-19T21:42:59.287549Z",
+  "exportedAt": "2026-07-24T15:22:08.766086Z",
   "mse": {
     "version": "2.0.2",
     "game": "magic",
@@ -17,31 +17,31 @@
       "id": "card accesscode talker",
       "name": "Accesscode Talker",
       "manifestIndex": 0,
-      "sourceHash": "289113888337c38f8d5e665a0d759a1d966d09ac4a067a7603d2c7a2fe5ad3f8",
+      "sourceHash": "6da8f8601e156c1d4b6dee538d5361b9c2beba72fac7241ad4e897dad6988ef2",
       "artworkHash": "9a278b38cee3278bce869afc8a36b73b5ba38e66eafb7b578b31517e163d3da6",
       "render": "Accesscode Talker.png",
-      "renderHash": "d62ed60d2226dee272ba34959680a60adf4ef2a9d379f1143d44d8af1aa675f2",
-      "renderPixelHash": "ed79b95f64c428bc0b1cef792ca1861ce6cd8b919221ce5662e4b42f75b5a92a"
+      "renderHash": "bf9382fa77fb593806f941f176c6bf183d85e562e878057ebd795b3e9743fff1",
+      "renderPixelHash": "fcfe1f21a0233246db455679af0c31a9990cadd6c19d454d88b438cf9860059c"
     },
     {
       "id": "card apollousa bow of the goddess",
       "name": "Apollousa, Bow of the Goddess",
       "manifestIndex": 1,
-      "sourceHash": "91b381d828ed67fc79707ac8128db0e38bfa26bc04646e89cb11c707fd2b1523",
+      "sourceHash": "afe0f72a45ae1a885ce153c661c2540cf451b04594ee76b1b68a6c638a200bfc",
       "artworkHash": "5abde06d6f7713d0d5683d0afb8c1499d5f68625bcc88030d928f728281c06e3",
       "render": "Apollousa, Bow of the Goddess.png",
-      "renderHash": "ae8eecb8210f29189a5b3a825e608ab9bf9c45cc5bd1e5c7b9e8185fade0287b",
-      "renderPixelHash": "033e4475b3652835ca11c6865122a847951155f825a6f55e046030993c2fd2f2"
+      "renderHash": "1fabfdad3954e1ced6d703611184b65a768e23ca0514ac18301dd4f3ee29c771",
+      "renderPixelHash": "7b8b2d8f38e3686c2a5b885ec8b947eddeea87e149a0b723dbfefd0e5c8fb78d"
     },
     {
       "id": "card borrelsword dragon",
       "name": "Borrelsword Dragon",
       "manifestIndex": 2,
-      "sourceHash": "afa9be424ceb09f9f860f366e75dd8bc7e5bf79a6800eb97b942900ff522dbea",
+      "sourceHash": "6abb5b3eed637e8500999f87dac822338802c27fef5e387f2bd04911634a828e",
       "artworkHash": "bdc50759d6b4f352d14fa4b212e3180fe20b55ffc29431c7684d5f53a39d60aa",
       "render": "Borrelsword Dragon.png",
-      "renderHash": "4ea6804c9e8c46b55b324cc909f2643420631e39fd0b3d36a616a4c11c92e0f1",
-      "renderPixelHash": "9bb084a827a085333a2f7d2552c449fd99b45039bbd5fc93d1036eaa72536ae6"
+      "renderHash": "217558b06fb4e97ef3b9097d879a3680bc0d63dd9524f81c39966f55c793e38e",
+      "renderPixelHash": "9972df2ba7c0c16af1a0a805cb6b73061c5dc4e881d2b51e7da07434c020b57c"
     },
     {
       "id": "card cross sheep",

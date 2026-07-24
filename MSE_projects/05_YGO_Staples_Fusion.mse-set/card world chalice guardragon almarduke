@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 12:11:34
-	time_modified: 2026-07-16 23:34:57
+	time_modified: 2026-07-24 13:53:09
 	name: World Chalice Guardragon Almarduke
 	casting_cost: 1RG
 	image: image13.png
@@ -20,9 +20,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>3 Link Creatures</i>
-		<b><kw-a><nospellcheck><key>Vigilance</key></nospellcheck></kw-a></b>, <b>Protection from creatures</b>
-		<i-auto>(1 - Static)</i-auto> All opposing creatures must block Almarduke.
-		<i-auto>(2 - Triggered)</i-auto> If a Link Creature blocks Almarduke, destroy it, then deal X damage to its controller, where X is the power of the destroyed creature.
+		<b><kw-a><nospellcheck><key>Vigilance</key></nospellcheck></kw-a></b>, <b>Protection from Creatures</b>
+		<i-auto>(1 - Static)</i-auto> All opposing Creatures must block <i-auto>“Almarduke”</i-auto>.
+		<i-auto>(2 - Triggered)</i-auto> If a Link Creature blocks <i-auto>“Almarduke”</i-auto>, <b>Destroy</b> it, then deal X damage to its controller, where X is the power of the destroyed Creature.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 5

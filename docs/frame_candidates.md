@@ -13,7 +13,7 @@ Xyz Creature -> M15 Spellbook (`m15-spellbook` / `magic-m15-spellbook.mse-style`
 Synchro Creature -> M15 Sketch (`m15-sketch` / `magic-m15-sketch.mse-style`) — validated standard
 Link Creature -> Art Deco / Capenna Showcase (`m15-showcase-capenna-art-deco`) — validated standard
 Ritual Creature -> Praetor / Phyrexian Showcase (`m15-showcase-praetor` / `magic-m15-showcase-praetor.mse-style`) — validated standard
-Non-creature Fusion Summon / Ritual Summon -> 7.5th Edition (`sevenhalf`) — validated standard
+non-Creature Fusion Summon / Ritual Summon -> 7.5th Edition (`sevenhalf`) — validated standard
 ```
 
 Synchro validation: **Sketch** style was selected for Synchro cards/projects and applied to `06_YGO_Staples_Synchro.mse-set`.

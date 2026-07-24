@@ -1,11 +1,11 @@
-mse_version: 2.5.8
+﻿mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
 	has_styling: false
 	notes: Source: 09_non_archetype_non_creature.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-18 00:50:18
+	time_modified: 2026-07-24 17:10:06
 	name: Phoenix Wing Wind Blast
 	casting_cost: B
 	image: mse_images/image19.png
@@ -13,11 +13,9 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
-	sub_type:
+	sub_type: <word-list-spell></word-list-spell>
 	rarity: common
-	rule_text:
-		As an additional cost to cast this spell, discard 1 card.
-		<i-auto>(1 - Resolution)</i-auto> Put target nonland permanent on top of its owner's Deck.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> <b>Discard</b> 1 and <b>Target</b> 1 nonland permanent; Put it on top of Deck.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 012/017 C
 	card_code_text_2: 012/017 C

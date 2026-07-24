@@ -57,14 +57,14 @@ class NecrozCardTests(unittest.TestCase):
     def test_key_mechanics_present(self) -> None:
         brionac = (PROJECT / "card nekroz - brionac").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Bounce</b>", brionac)
-        self.assertIn("Discard Brionac", brionac)
+        self.assertIn("<b>Discard</b> <i-auto>“Brionac”</i-auto>", brionac)
 
         catastor = (PROJECT / "card nekroz - catastor").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Reanimate</b>", catastor)
 
         exa = (PROJECT / "card nekroz - exa").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Release</b>", exa)
-        self.assertIn("ignoring the restrictions of Summon", exa)
+        self.assertIn("ignoring the restrictions of summon", exa)
 
         unicore = (PROJECT / "card nekroz - unicore").read_text(encoding="utf-8-sig")
         self.assertIn("<b>Salvage</b>", unicore)
@@ -82,13 +82,13 @@ class NecrozCardTests(unittest.TestCase):
             text = (PROJECT / name).read_text(encoding="utf-8-sig")
             self.assertIn("<b>Ritual Summon</b>", text)
             self.assertIn("<b>Nekroz Recovery</b>", text)
-            self.assertIn("Search 1 non-creature Ritual Summon “Nekroz”", text)
+            self.assertIn("<b>Search</b> 1 non-Creature <b>Ritual Summon</b> <i-auto>“Nekroz”</i-auto>", text)
 
     def test_archetype_doc_points_at_mse(self) -> None:
         doc = DOC.read_text(encoding="utf-8-sig")
         self.assertIn("MSE_projects/12_YGO_Necroz.mse-set", doc)
         self.assertIn("**Nekroz Recovery**", doc)
-        self.assertIn("1 non-creature Ritual Summon “Nekroz”", doc)
+        self.assertIn("1 non-creature **Ritual Summon** *“Nekroz”*", doc)
 
 
 if __name__ == "__main__":

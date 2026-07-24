@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 06_synchro.md
 	time_created: 2026-07-11 16:45:00
-	time_modified: 2026-07-17 23:54:22
+	time_modified: 2026-07-24 13:53:09
 	name: Hot Red Dragon Archfiend Abyss
 	casting_cost: 1RR
 	image: mse_images/image23.png
@@ -18,8 +18,8 @@ card:
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
 		<b>Flying</b>
-		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Target 1 creature an opponent controls; <b>Negate</b> the target this turn.
-		<i-auto>(2 - Triggered)</i-auto> If this card deals combat damage to an opponent, target 1 Tuner creature in your <b>Grave</b>; <b>Reanimate</b> the target tapped.
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Target</b> 1 Creature an opponent controls; <b>Negate</b> the target this turn.
+		<i-auto>(2 - Triggered)</i-auto> If this card deals combat damage to an opponent, <b>Target</b> 1 Tuner Creature in your Grave; <b>Reanimate</b> the target tapped.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 5

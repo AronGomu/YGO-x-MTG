@@ -61,19 +61,19 @@ class ShaddollCardsTest(unittest.TestCase):
 
     def test_anoyatyllis_and_aeon_mechanics_are_preserved(self) -> None:
         anoyatyllis = self.card("card el shaddoll - anoyatyllis")
-        self.assertIn("from a hand or a Grave", anoyatyllis)
-        self.assertIn("exile it instead", anoyatyllis)
+        self.assertIn("from a Hand or a Grave", anoyatyllis)
+        self.assertIn("<b>Exile</b> it instead", anoyatyllis)
         aeon = self.card("card puru shaddoll - aeon")
-        self.assertIn("send 1 “Shaddoll” card from your hand to <b>Grave</b>", aeon)
+        self.assertIn("<b>Send</b> 1 <i-auto>“Shaddoll”</i-auto> card from your Hand to Grave", aeon)
         self.assertIn("gets +2/+2 until the end of the turn", aeon)
 
     def test_fusion_cards_keep_distinct_material_rules(self) -> None:
         el_fusion = self.card("card el shaddoll - fusion")
-        self.assertIn("using creatures from your hand or field as materials", el_fusion)
+        self.assertIn("using Creatures from your Hand or Field as materials", el_fusion)
         fusion = self.card("card shaddoll - fusion")
-        self.assertIn("you can also use creatures from your Deck", fusion)
+        self.assertIn("you can also use Creatures from your Deck", fusion)
         schism = self.card("card shaddoll - schism")
-        self.assertIn("by exiling the indicated materials from your field or Grave", schism)
+        self.assertIn("by exiling the indicated materials from your Field or Grave", schism)
 
     def test_all_image_references_resolve(self) -> None:
         for include in self.includes:

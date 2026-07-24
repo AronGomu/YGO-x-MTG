@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 06_synchro.md
 	time_created: 2026-07-11 12:11:51
-	time_modified: 2026-07-16 23:57:34
+	time_modified: 2026-07-24 13:53:09
 	name: Herald of the Arc Light
 	casting_cost: W
 	image: mse_images/image10.png
@@ -20,8 +20,8 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<i-auto>(1 - Static)</i-auto> If 1 card would be put into a <b>Grave</b> from a hand or a Deck, exile it instead.
-		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — Search 1 Ritual Creature or 1 non-creature Ritual Summon.
+		<i-auto>(1 - Static)</i-auto> If 1 card would be put into a Grave from a Hand or a Deck, <b>Exile</b> it instead.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — <b>Search</b> 1 Ritual Creature or 1 non-Creature <b>Ritual Summon</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 1
 	toughness: 1

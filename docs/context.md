@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-07-06
 title: Project context
 tags:
@@ -81,11 +81,18 @@ Examples:
 
 Write prose, explanatory headings, and comments in English. Keep official or chosen card and archetype names in English to preserve their Yu-Gi-Oh! identity.
 
-In card texts, any card name, archetype name, or card name fragment cited as mechanical reference must be enclosed in typographic quotation marks `“...”`. Example: write `the “Lyrilusc” creatures you control`, not `the Lyrilusc creatures you control`. Do not enclose generic types, subtypes, attributes or supertypes such as `Fiend`, `Wizard`, `Xyz`, `LIGHT`, `DARK`, `Fusion` or `Ritual` in quotation marks.
+In card texts, any card name, archetype name, or card-name fragment cited as a mechanical reference must be italic, including a self-name used as an activation condition, cost, target, or instruction. Full self-name references are italic without quotation marks; other card names, archetype names, and name fragments keep typographic quotation marks inside the italics. In Markdown write `*D.D. Crow*` and `*“Lyrilusc”*`; in MSE write `<i-auto>D.D. Crow</i-auto>` and `<i-auto>“Lyrilusc”</i-auto>`. For example, write `**Discard** *Effect Veiler*`, never `**Discard** Effect Veiler`. Do not italicize or quote generic types, subtypes, attributes, supertypes, zones, `this card`, or an archetype word that belongs to a bold custom keyword such as **Shaddoll Recovery**.
 
 ## Formatting abilities and keywords
 
-All card keywords must be in **bold** in documents and MSE files.
+A **keyword** is an atomic game term whose meaning is supplied by Magic rules, the global cube rules, or an archetype rule instead of being fully explained on each card. The closed keyword taxonomy is:
+
+1. **Action keywords** — named commands that perform a defined operation.
+2. **Ability keywords** — Magic evergreen abilities or custom global/archetype abilities.
+3. **Event keywords** — named trigger or event conditions.
+4. **Cost/procedure keywords** — named costs, summon procedures, or activation shortcuts.
+
+Render a complete keyword invocation in bold with canonical capitalization (`**Keyword**` in Markdown, `<b>Keyword</b>` in MSE). Unknown bold phrases are invalid until documented and added to the keyword catalog.
 
 Each effect or ability on a card must be numbered with its ability type. Mandatory format:
 
@@ -123,7 +130,7 @@ The canonical order of an ability is:
 Example:
 
 ```text
-(2 - Triggered Hard) **On Send Grave** — Discard 1 card and target 1 creature an opponent controls; exile it.
+(2 - Triggered Hard) **On Send Grave** — **Discard** 1 card and **Target** 1 Creature an opponent controls; **Exile** it.
 ```
 
 Costs, alternative costs, additional costs, and casting conditions are not effects: they should not be given their own ability number. All cost types and casting conditions must be listed before numbered abilities and before evergreen keywords.
@@ -131,12 +138,12 @@ Costs, alternative costs, additional costs, and casting conditions are not effec
 - The additional costs of an effect are integrated into the ability they modify, before `;` or `:` depending on the templating.
 - The alternative casting costs are written on an unnumbered line with the bold keyword **Alternative Cost**, followed by ` — ` and the condition or payment.
 - An affinity keyword specific to an archetype can replace this label when explicitly documented as an alternative cost. Its name must be written in bold on an unnumbered line before the abilities; the archetype document defines its condition, cost substitution, frequency, and card types involved.
-- Alternative Xyz casting costs use the label `Xyz Alternative Cost —`. This line completely replaces normal materials, uses the indicated creature as material, and performs a proper Xyz Summon. The cost and material can be integrated into the same proposition with `and use`, for example `W, discard 1 “Burning Abyss” creature and use 1 “Dante” that you control.` End with `Its materials transfer.` if the materials of the creature used must be kept.
+- Alternative Xyz casting costs use the bold label `**Xyz Alternative Cost** —`. This line completely replaces normal materials, uses the indicated creature as material, and performs a proper Xyz Summon. The cost/material can share one proposition, for example `W, **Discard** 1 *“Burning Abyss”* Creature and use 1 *“Dante”* you control.` End with `Its materials transfer.` when materials must be retained.
 
 Examples:
 
 - For a Trap card, write the super-type on the type line (`Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc.), then start its text directly with its costs, conditions or numbered abilities. Do not add a `**Trap**` keyword line.
-- Write `Xyz Alternative Cost — W, discard 1 “Burning Abyss” creature and use 1 “Dante” you control. Its materials are transferred.`
+- Write `**Xyz Alternative Cost** — W, **Discard** 1 *“Burning Abyss”* Creature and use 1 *“Dante”* you control. Its materials are transferred.`
 - For Ritual effects, use the super-type `Ritual Summon` and write **Ritual Summon** in bold in the rule text.
 - For Fusion effects, use the super-type `Fusion Summon` and write **Fusion Summon** in bold in the rule text.
 - Do not write `**Trap**` nor `(1 - Static) **Trap**`: `Trap` is a super-type, not a keyword or an ability.
@@ -161,7 +168,7 @@ For **Activated** abilities, add an activation frequency after the type/timing i
 
 For abilities **Triggered** and **Activated**, add an activation frequency after the type/timing if necessary:
 
-- **Soft**: “You can only use this ability once per turn.” This limit is not linked to the name of the card. If the card leaves the field and returns, it can use the effect again.
+- **Soft**: “You can only use this ability once per turn.” This limit is not linked to the name of the card. If the card leaves the Field and returns, it can use the effect again.
 - **Hard**: “You can only activate the effect of X once per turn.” This limit is linked to the name of the card. Other copies cannot activate the same ability this turn.
 - **Hard Linked**: “You can only use one of the Y effects of X once per turn.” This limit is linked to the name of the card and also locks other **Hard Linked** effects of this card.
 
@@ -172,12 +179,16 @@ Example:
 ```text
 (1 - Static) **Abyssal Curse**
 (2 - Activated Hard Linked) **Descent**
-(3 - Triggered Hard Linked) **On Send Grave** — At the next end step, Search 1 “Burning Abyss” creature.
+(3 - Triggered Hard Linked) **On Send Grave** — At the next end step, **Search** 1 *“Burning Abyss”* Creature.
 ```
 
 Do not group several keywords on a single line if this grouping prevents each ability from being numbered or typed.
 
-Any keyword printed on a card — event, action, cost, affinity, evergreen Magic, canonical zone `Grave`, action `Set`, `Bounded`, `Indestructible` / `Effect Indestructible`, or alternative cost label `Alternative Cost` — must be written in bold (`**keyword**` in the docs, `<b>keyword</b>` in MSE).
+The closed action-keyword catalog is **Discard**, **Exile**, **Search**, **Summon**, **Hand Summon**, **Ritual Summon**, **Fusion Summon**, **Reanimate**, **Salvage**, **Reclaim**, **Release**, **Attach**, **Bounce**, **Negate**, **Negate & Destroy**, **Set**, **Detach N**, **Mill N**, **Scry N**, **Slow Blink N Any Creature**, **Draw**, **Target**, **Counter**, **Return**, **Destroy**, **Send**, **Cast**, **Sacrifice**, and **Reveal**. Bold and capitalize an exact base-form command wherever it performs that action. Homonymous nouns, adjectives, and participles remain plain and follow sentence casing: `the target`, `Predator counter`, `draw step`, `was cast`. `Choose` and `Put` remain ordinary instructions.
+
+Bold complete atomic compounds, including required arguments and connectors: **Detach 1 and Mill 3**, **Exile 1 Plant from Grave**, **Protection from Creatures**, **Ward 2**. Connectors remain lowercase; arguments and domain terms retain canonical case. A zone inside a compound inherits the compound's bold styling.
+
+Ability metadata — `Static`, `Triggered`, `Activated`, `Resolution`, `Flash`, `Sorcery`, activation-timing `Ritual`, `Soft`, `Hard`, and `Hard Linked` — stays inside the italic ability prefix and is not bold keyword text. Existing MSE `<kw-a><key>Flash</key></kw-a>` template styling may remain. Standalone evergreen **Flash**, if printed as an ability outside metadata, is bold.
 
 Evergreen Magic keywords like **Trample**, **Flying**, **Vigilance**, **Lifelink**, **Menace**, **Protection from everything**, **Protection from [quality]**, etc. should not be written as numbered passive abilities. Write them alone on their own line, in bold, without `(x - Static)`. They should come after the cost/alternative cost/casting condition lines, but before the numbered abilities. **Protection from everything** is equivalent to *protection from everything*; **Protection from [quality]** follows Magic rules for protection.
 
@@ -187,22 +198,22 @@ In the card texts, write the quantities with Arabic numerals rather than in full
 
 Examples:
 
-- Write `Choose 1 other creature`, not `Choose another creature`.
-- Write `draw 2 cards`, not `draw two cards`.
-- Write `send 1 card`, not `send a card`.
+- Write `Choose 1 other Creature`, not `Choose another Creature`.
+- Write `**Draw** 2 cards`, not `**Draw** two cards`.
+- Write `**Send** 1 card`, not `**Send** a card`.
 
-Choose targets explicitly during the current ability: write `Target 1 creature; ...` before `;`, then refer to it as `the target`. Use `the targeted creature` only when an earlier instruction or linked effect has already designated that target.
+Choose targets explicitly during the current ability: write `**Target** 1 Creature; ...` before `;`, then refer to it as `the target`. Use `the targeted Creature` only when an earlier instruction or linked effect has already designated that target.
 
 Example:
 
-- Write `(2 - Activated Hard) Target 1 creature; the target gains +1/+1 until the end of the turn.`
-- Do not write `(2 - Activated Hard) The targeted creature gains +1/+1 until the end of the turn.` when no target was previously chosen.
+- Write `(2 - Activated Hard) **Target** 1 Creature; the target gains +1/+1 until the end of the turn.`
+- Do not write `(2 - Activated Hard) The targeted Creature gains +1/+1 until the end of the turn.` when no target was previously chosen.
 
 Keep numbers spelled out only in titles, design comments, or wording where the number is not a governing quantity.
 
 Write inclusive numeric ranges with an en dash: `1–3` requires at least 1 and allows at most 3; `0–2` allows none. Always prefer compact dash ranges over `up to N` when the same bounds can be expressed as `0–N`. Never use a hyphen-minus for a numeric range.
 
-Unqualified personal zones in card text are controller-scoped shortcuts: `hand`, `Deck`, `Grave`, and `exile` mean your corresponding zone. Specify `opponent`, `any player`, or another owner only when a different scope applies. The battlefield is shared and has no such default.
+Unqualified personal zones in card text are controller-scoped shortcuts: `Hand`, `Deck`, `Grave`, and `Exile` mean your corresponding zone. Specify `opponent`, `any player`, or another owner only when a different scope applies. The Field is shared and has no such default.
 
 Always use the following shortcuts in card texts:
 
@@ -211,11 +222,11 @@ Always use the following shortcuts in card texts:
 
 Examples:
 
-- Write `1 creature MV 1`, not `1 creature with a mana value of 1`.
+- Write `1 Creature MV 1`, not `1 Creature with a mana value of 1`.
 - Write `from Deck`, not `from your library`.
 - Write `from Deck to Grave`, not `from your library into your Grave`.
 
-Always use **Grave** for graveyard zone throughout project (card text, docs, scripts, and tests). Do not write `graveyard`, `GY`, or `GYD`. **Grave** is the canonical zone keyword: make it bold in card texts (`**Grave**` / `<b>Grave</b>`).
+Always use `Grave` for the graveyard zone throughout the project; do not write `graveyard`, `GY`, `GYD`, or `G.Y.`. Canonical location/type terms in card text use initial uppercase: zones `Hand`, `Field`, `Deck`, `Grave`, `Exile`, `Sideboard`, `Stack`; card types `Creature`, `Creatures`, `Spell`, and `Spells`. Keep these terms plain when standalone. They remain bold only inside a larger atomic keyword such as **Exile from Grave**, **Protection from Creatures**, or **On Opponent Creature Enter**.
 
 To give indestructible, write `gains **Indestructible**` (or `gains **Effect Indestructible**` for the variant), not `indestructible` without bold.
 
@@ -223,7 +234,7 @@ In effect texts, write `If` instead of `When` for triggers and event conditions.
 
 Examples:
 
-- Write **On Enter** — ..., not `If this creature arrives`.
+- Write **On Enter** — ..., not `If this Creature arrives`.
 - Write `If this card is destroyed, ...`, not `When this card is destroyed, ...`.
 
 ## Event Keywords
@@ -258,9 +269,11 @@ By default, an event keyword without controller specification only looks at **yo
 
 **On Enter Synchro** means: “Whenever a Synchro Creature enters the battlefield under your control.” Include this card if it itself is an arriving Synchro Creature. Do not write `On Enter Your Synchro`: the “you” side is the default (see rule above).
 
-**On Opponent Activation or Attack** means: “When an opponent activates an ability or declares an attack with a creature.” May introduce a Triggered ability or restrict when an Activated Flash ability activates. “Activation” = ability activation on the stack, not casting a spell (use **On Opponent Cast** for spells).
+**On Opponent Activation or Attack** means: “When an opponent activates an ability or declares an attack with a creature.” May introduce a Triggered ability or restrict when an Activated Flash ability activates. “Activation” = ability activation on the Stack, not casting a spell (use **On Opponent Cast** for spells).
 
-**On Opponent Creature Enter** means: “Whenever a creature enters the field under an opponent's control.” When placed after an instruction, that instruction is repeated on each occurrence of that event for the specified duration.
+**On Opponent Creature Enter** means: “Whenever a creature enters the Field under an opponent's control.” When placed after an instruction, that instruction is repeated on each occurrence of that event for the specified duration.
+
+**MV2+ Opponent Creature Enter** means: “Whenever a creature with MV 2 or greater enters the Field under an opponent's control.” It may be combined with another defined event by ` or `; **On Enter or MV2+ Opponent Creature Enter** therefore triggers when this card enters or when an opponent's MV 2+ creature enters.
 
 **On Cast** means: “Every time you cast a spell, before it resolves.” This keyword family uses controller scope by default, followed by optional parameters:
 
@@ -270,7 +283,7 @@ By default, an event keyword without controller specification only looks at **yo
 
 After the scope, add parameters that define the spells concerned, for example `“Nekroz” Ritual`. The format is **On Cast [parameters]**. Reserve `cast` for spells; never use `played` when this spell-casting action is intended.
 
-**On Opponent Summon** means: “When an opponent Summons a creature.” This trigger only responds to the **Summon** action, not to the normal casting of a creature; use **On Opponent Cast** or explicit wording for casting events.
+**On Opponent Summon** means: “When an opponent summons a creature.” This trigger only responds to the **Summon** action, not to normal creature casting; use **On Opponent Cast** or explicit wording for casting events.
 
 **On Send Grave** means: “When this card is put into a Grave from any zone.” Use this keyword for any ability on this card that triggers when sent to Grave.
 
@@ -288,59 +301,59 @@ After the scope, add parameters that define the spells concerned, for example `�
 
 **Mill X** means: “Send top X cards of your Deck to Grave.” On a card, replace X with required value: `**Mill 1**`, `**Mill 2**` or `**Mill 3**`. Never write the bare keyword `**Mill**` without quantity: a card that sends 1 card uses `**Mill 1**`. If the player freely chooses the quantity from zero through three, write `**Mill 0–3**`.
 
-**Summon** means: “Put the indicated card onto the field from the specified zone, without casting it and without paying its mana cost.” A Summon alone does not constitute a proper summon of an Extra Deck or Ritual card. Any effect allowed to perform a normally illegal Summon must explicitly write `ignoring the restrictions of Summon`. This permission only makes Summon legal: it does not constitute a proper summon for future zone changes.
+**Summon** means: “Put the indicated card onto the Field from the specified zone, without casting it and without paying its mana cost.” A summon alone does not constitute a proper summon of an Extra Deck or Ritual card. Any effect allowed to perform a normally illegal **Summon** must explicitly write `ignoring the restrictions of summon`. This permission only makes **Summon** legal: it does not constitute a proper summon for future zone changes.
 
-**Hand Summon** means: “**Summon** the creature indicated from your hand.” On a card, write `**Hand Summon**` then the filters (`1 creature MV 1 or less`, etc.). Same proper-summon restrictions as **Summon**.
+**Hand Summon** means: “**Summon** the creature indicated from your Hand.” On a card, write `**Hand Summon**` then the filters (`1 Creature MV 1 or less`, etc.). Same proper-summon restrictions as **Summon**.
 
-When adding or updating a card, if an effect would perform an illegal Summon — especially from Sideboard without the required summon method — ask the user whether to add `ignoring the restrictions of Summon` to the effect. Never infer this permission silently.
+When adding or updating a card, if an effect would perform an illegal summon — especially from Sideboard without the required summon method — ask the user whether to add `ignoring the restrictions of summon` to the effect. Never infer this permission silently.
 
-**Reanimate** means: “Return target card from its Grave to field.” This action does not circumvent the proper-summon requirement for Extra Deck or Ritual cards.
+**Reanimate** means: “**Return** target card from its Grave to Field.” This action does not circumvent the proper-summon requirement for Extra Deck or Ritual cards.
 
-For an exact-count gate with post-success cleanup, write `Target 1 [creature] MV X in Grave and choose X [additional cards] from Grave; **Reanimate** it, if you do, exile [move] chosen cards.` Only the creature is targeted unless the effect explicitly targets the additional cards.
+For an exact-count gate with post-success cleanup, write `**Target** 1 [Creature] MV X in Grave and choose X [additional cards] from Grave; **Reanimate** it, if you do, **Exile** [move] chosen cards.` Only the creature is targeted unless the effect explicitly targets the additional cards.
 
-**Salvage** means: “Return indicated card from your Grave to your hand.” On a card, write the keyword in bold then the selector: `**Salvage** 1 non-creature “Shaddoll”`, `**Salvage** 1 other “Burning Abyss”`, `Target 1 “Nekroz” from Grave; **Salvage** the target`. **Salvage** does not return to the field (**Reanimate**), does not exile (**Exile from Grave**), and does not return a permanent from the battlefield (**Bounce**).
+**Salvage** means: “**Return** indicated card from your Grave to your Hand.” On a card, write the keyword in bold then the selector: `**Salvage** 1 non-Creature *“Shaddoll”*`, `**Salvage** 1 other *“Burning Abyss”*`, `**Target** 1 *“Nekroz”* from Grave; **Salvage** the target`. **Salvage** does not return to Field (**Reanimate**), does not exile (**Exile from Grave**), and does not return a permanent from Field (**Bounce**).
 
-**Reclaim** means: “Return indicated card from exile to your hand.” Write `**Reclaim**` in bold, then the selector or `target`: `Target 1 “Spellbook” from exile; **Reclaim** the target`. Distinct from **Salvage** (Grave → hand) and **Release** (exile → field).
+**Reclaim** means: “**Return** indicated card from Exile to your Hand.” Write `**Reclaim**` in bold, then the selector or `target`: `**Target** 1 *“Spellbook”* from Exile; **Reclaim** the target`. Distinct from **Salvage** (Grave → Hand) and **Release** (Exile → Field).
 
 When an effect copies only a target card's **Resolution** ability, identify the target before `;`, then write `copy the target's Resolution effect and resolve it`. This does not cast the copied card. It replaces the copying effect's resolution with the copied card's Resolution effect only; it does not copy casting costs, alternative costs, restrictions, or non-Resolution abilities.
 
-**Release** means: “Put the indicated card from exile onto the field.” Write `**Release**` in bold, then the selector or `target`. Same restrictions on correct summoning as **Summon** / **Reanimate**: add `ignoring the restrictions of Summon` if casting would otherwise be illegal. Distinct from **Reanimate** (Grave → field) and **Reclaim** (exile → hand).
+**Release** means: “Put the indicated card from Exile onto the Field.” Write `**Release**` in bold, then the selector or `target`. Same restrictions on correct summoning as **Summon** / **Reanimate**: add `ignoring the restrictions of summon` if casting would otherwise be illegal. Distinct from **Reanimate** (Grave → Field) and **Reclaim** (Exile → Hand).
 
-**Exile from Grave** means: “Activate only from your Grave. As a cost, exile this card from your Grave.” On a card, write only the keyword in bold instead of `From your Grave, exile this card`. Additional costs or choices (discard, exile from another card, targeting, etc.) remain written after the keyword, before `;` or `:` if applicable. Examples: `**Exile from Grave**; reveal…`, `**Exile from Grave** and discard 1 “Burning Abyss” creature; …`, `**Exile from Grave**, target 1 creature; …`.
+**Exile from Grave** means: “Activate only from your Grave. As a cost, **Exile** this card from your Grave.” On a card, write only the compound keyword instead of `From your Grave, **Exile** this card`. Additional costs or choices remain before `;` or `:`. Examples: `**Exile from Grave**; **Reveal**…`, `**Exile from Grave** and **Discard** 1 *“Burning Abyss”* Creature; …`, `**Exile from Grave**, **Target** 1 Creature; …`.
 
-**Exile N [selector] from Grave** means: “As a cost, exile N cards from your **Grave** that match the selector.” Example: `**Exile 1 Plant from Grave**`. Distinct from **Exile from Grave**, which exiles *this* card and fixes the activation zone. `N` is a positive integer; The selector follows the project's naming and type rules.
+**Exile N [selector] from Grave** means: “As a cost, **Exile** N cards from your Grave that match the selector.” Example: `**Exile 1 Plant from Grave**`. Distinct from **Exile from Grave**, which exiles *this* card and fixes the activation zone. `N` is a positive integer; the selector follows project naming/type rules.
 
 **Attach** means: “Attach indicated card to indicated Xyz Creature as material.”
 
 **Bounce** means: “Return indicated permanent to its owner's hand.”
 
-**Negate** requires a target: a permanent, spell, or ability on the stack. If the target is a permanent: this permanent loses all its abilities and all its abilities already on the stack are countered. If the target is a spell or ability: counter it.
+**Negate** requires a target: a permanent, spell, or ability on the Stack. If the target is a permanent, it loses all abilities and its abilities already on the Stack are countered. If the target is a spell or ability, counter it.
 
-**Negate & Destroy** means the same as **Negate**, then destroys the card that activated the effect (or the targeted permanent/spell depending on the card's context). A card can be destroyed like this from the field, the hand, Deck or Sideboard. It cannot be destroyed from **Grave** nor from exile. This destruction triggers the **On Destroy** effects of the destroyed card when they apply.
+**Negate & Destroy** means the same as **Negate**, then **Destroy** the card that activated the effect (or the targeted permanent/spell depending on context). A card can be destroyed this way from Field, Hand, Deck, or Sideboard. It cannot be destroyed from Grave or Exile. This destruction triggers applicable **On Destroy** effects.
 
-**Grave** is the zone keyword for Grave in card texts. Write it in bold when designating the zone as an isolated or highlighted rule term; in a common sentence (`from Grave`, `in Grave`), capitalize it as a canonical zone and put it in bold only if it is treated as a keyword in this project display context.
+`Grave` is a canonical game-zone name, not a keyword. Capitalize it and keep it plain in card text. It is bold only within a larger atomic keyword such as **On Send Grave** or **Exile from Grave**.
 
-**Set** means: “Put a card face down on the field according to Trap rules (or equivalent permission).” **Set** is an action keyword: write it in bold in the rule text. Set does not use the stack, does not cast the card, does not pay the casting cost, and does not trigger **On Cast**.
+**Set** means: “Put a card face down on the Field according to Trap rules (or equivalent permission).” **Set** is an action keyword: write it in bold in rules text. Setting does not use the Stack, cast the card, pay its casting cost, or trigger **On Cast**.
 
 **Alternative Cost** denotes an alternative casting cost. On a card, write label in bold, then condition or payment: `**Alternative Cost** — ...`. A documented affinity keyword can replace this label.
 
-**Bounded X** binds up to X other creatures you control to the card that carries the ability, called the `bounder`. When Bounded X becomes active, the bounder's controller chooses up to X other creatures they control; they become `bounded`. A bounded permanent benefits from the bonus or effect indicated only as long as its bounder remains on the field. If the bounder leaves the field, all its links and effects Bounded end immediately. If a bounded permanent leaves the field, the controller can immediately choose a new one within limit X.
+**Bounded X** binds up to X other creatures you control to the card carrying the ability, called the `bounder`. When active, the bounder's controller chooses up to X other creatures they control; those become `bounded`. A bounded permanent benefits only while its bounder remains on Field. If the bounder leaves Field, all Bounded links/effects end. If a bounded permanent leaves Field, its controller may immediately choose a replacement within limit X.
 
 **Indestructible** (evergreen Magic) and **Effect Indestructible** are keywords to write in bold. **Effect Indestructible** means that the creature cannot be destroyed by a spell or ability, but can still be destroyed by the rules of combat or by an action that is not an effect. For full evergreen, write **Indestructible**; for the variant limited to effects, write **Effect Indestructible**.
 
 **Hexproof** means: “This card cannot be targeted by your opponents' spells or abilities.”
 
-**Slow Blink X Any Creature** means: “Target 0–X creatures; exile them until the next end step, then return them to the field under their owner's control.”
+**Slow Blink X Any Creature** means: “**Target** 0–X creatures; **Exile** them until the next end step, then **Return** them to the Field under their owner's control.”
 
-**Ritual Summon** puts one or more `Ritual Creatures` onto the field while respecting the materials and conditions indicated. A noncreature card that carries this effect uses a supertype like `Ritual Summon Sorcery`. A `Ritual Creature` that has not yet been properly summoned can only be put on the field by this effect.
+**Ritual Summon** puts one or more `Ritual Creatures` onto the Field while respecting indicated materials/conditions. A noncreature carrying this effect uses a supertype like `Ritual Summon Sorcery`. A `Ritual Creature` not yet properly summoned can only be put on Field by this effect.
 
-**Fusion Summon** puts a `Fusion Creature` onto the field from Sideboard using the indicated materials and zones. A noncreature card that carries this effect uses a supertype like `Fusion Summon Sorcery`. A `Fusion Creature` that has not yet been properly summoned can only be put onto the field by this effect.
+**Fusion Summon** puts a `Fusion Creature` onto the Field from Sideboard using indicated materials/zones. A noncreature carrying this effect uses a supertype like `Fusion Summon Sorcery`. A `Fusion Creature` not yet properly summoned can only be put onto Field by this effect.
 
 The name or archetype placed after **Ritual Summon** or **Fusion Summon** filters compatible creatures without the need to repeat `Ritual Creature`, `Fusion Creature` or `Sideboard` in the card text.
 
 For any effect triggered by the card entering the battlefield, use **On Enter**, **On Fusion Summon** if the effect specifically requires a Fusion Summon, or **On Link Summon** if the effect specifically requires a Link Summon. For any effect triggered by an attack, a successful block, or becoming blocked, use **On Attack**, **On Block**, or **On Blocked** respectively. Use **On Attack or Block** or **On Block or Blocked** if the combined events trigger the same effect. For a Synchro that comes under your control (not just this card), use **On Enter Synchro**. To leave the battlefield, use **On Leave Field**. For an upkeep trigger, use **On Upkeep**. Do not rephrase these events with `If... happens`, `If... attacks` or `If... blocks`.
 
-An event keyword that introduces an ability must be written in bold and followed by an em dash: `**On Enter** — ...`, `**On Exile** — ...`, `**On Leave Field** — ...`, `**On Upkeep** — ...`, etc. A keyword placed after a repeated instruction, such as `Draw 1 card **On Opponent Creature Enter**`, does not take an em dash.
+An event keyword that introduces an ability must be written in bold and followed by an em dash: `**On Enter** — ...`, `**On Exile** — ...`, `**On Leave Field** — ...`, `**On Upkeep** — ...`, etc. A keyword placed after a repeated instruction, such as `**Draw** 1 card **On Opponent Creature Enter**`, does not take an em dash.
 
 Use event keywords to shorten triggered effects.
 
@@ -348,13 +361,13 @@ Use event keywords to shorten triggered effects.
 
 `Trap` is an English supertype reserved for noncreature cards. It precedes the Magic type on the type line: `Trap Instant`, `Trap Sorcery`, `Trap Enchantment`, etc. `Trap` is not a keyword, ability or subtype: do not write `**Trap**` in the rule text or `Instant — Trap` on the type line.
 
-A Trap card cannot be cast from the hand. From hand, its owner may **Set** it face down on the field. **Set** is a special action keyword that does not use the stack, does not cast the card, does not require you to pay its casting cost, and does not trigger **On Cast**. An effect that puts a Trap card face down on field Sets it and satisfies this prerequisite; then activating this card amounts to casting it. An explicit permission can allow this activation during the turn it was Set.
+A Trap card cannot be cast from Hand. From Hand, its owner may **Set** it face down on Field. Setting is a special action that does not use Stack, cast the card, pay its casting cost, or trigger **On Cast**. An effect that puts a Trap face down on Field sets it and satisfies this prerequisite; later activation casts it. Explicit permission can allow activation during the turn it was set.
 
-While face down, the card is treated as a nonland noncreature permanent with no name, color, mana cost, MV, type, subtype, supertype, ability, power, or toughness. It remains on the field as a permanent without effect; it is not an `Enchantment`.
+While face down, the card is a nonland noncreature permanent with no name, color, mana cost, MV, type, subtype, supertype, ability, power, or toughness. It remains on Field without effect and is not an `Enchantment`.
 
-From the turn following the one in which it was Set, its controller can turn it face up and cast it from the field at any time they could cast an `Instant`. They then pay its mana cost and additional costs normally. The card moves from the field to the stack: this casting uses the stack and counts as a spell cast from the field. When an effect specifies that a Trap can be cast or activated during the turn in which it was Set, this permission explicitly and only bypasses the rule which requires waiting for the next turn; all other Trap casting rules remain applicable.
+Starting the next turn, its controller can turn it face up and cast it from Field any time they could cast an `Instant`, paying normal costs. The card moves from Field to Stack; this uses Stack and counts as cast from Field. Permission to activate during the turn it was set bypasses only the one-turn wait.
 
-After its resolution, a `Trap Instant` or `Trap Sorcery` is put into Grave normally. A Trap with a permanent card type resolves and enters face up on the field according to the normal rules for that type. A Trap cast from another zone by an explicit permission follows this permission and is not considered to have been cast from the field.
+After resolution, a `Trap Instant` or `Trap Sorcery` goes to Grave. A Trap with a permanent type enters face up on Field. Explicit permission to cast from another zone remains applicable and does not count as casting from Field.
 
 ## Search shortcut
 
@@ -362,12 +375,12 @@ To simplify card texts, any effect that searches the library for a card to revea
 
 Example:
 
-- Do not write: “search your library for a “Burning Abyss” creature, reveal it, put it into your hand, then shuffle.”
-- Write: “Search 1 “Burning Abyss” creature.”
+- Do not write: “search your library for a *“Burning Abyss”* creature, reveal it, put it into your Hand, then shuffle.”
+- Write: “**Search** 1 *“Burning Abyss”* creature.”
 
 This convention defaults to searching the library, revealing if necessary, putting it in your hand, then shuffling.
 
-For any effect and zone, when a selector is already restricted by a card name, archetype name, or name fragment in quotes, omit the generic name `card(s)`. Write for example `Search 1 “Spellbook”`, `target 1 “Spellbook” in Grave`, `reveal 3 “Spellbook” from hand`, `1 “Spellbook” creature` or `1 non-creature Ritual Summon “Nekroz”`. Keep types and qualifiers that restrict eligible objects, but not the generic word `card(s)`. Retain `card(s)` when no quoted name follows or when removing it would create ambiguity with a permanent, spell, ability, or counter.
+For any effect and zone, when a selector is already restricted by a card name, archetype name, or name fragment, omit generic `card(s)`. Write `**Search** 1 *“Spellbook”*`, `**Target** 1 *“Spellbook”* in Grave`, `**Reveal** 3 *“Spellbook”* from Hand`, `1 *“Spellbook”* Creature`, or `1 non-Creature **Ritual Summon** *“Nekroz”*`. Keep restrictive types/qualifiers. Retain `card(s)` when no named selector follows or removal would create ambiguity.
 
 ## Magic Set Editor
 
@@ -428,7 +441,15 @@ After each addition, deletion or regeneration of cards in a `.mse-set` project, 
 
 ### Mandatory verification after MSE creation or modification
 
-After each creation or modification of a `.mse-set` project, check that the file is not corrupted before considering the task complete.
+After each creation or modification of canonical English MSE cards, run the read-only style linter before export:
+
+```bash
+python .script/lint_mse_card_style.py
+```
+
+The linter excludes frozen French archives, reports `path:line` plus a rule ID and correction, and exits nonzero for invalid keyword bolding/capitalization, zone styling, card-name italics, ability-prefix styling, or unbalanced rich-text markup. It never rewrites cards. The test suite also runs this contract for CI enforcement.
+
+After lint passes, check that the `.mse-set` project is not corrupted before considering the task complete.
 
 1. Run at least one CLI export:
 
@@ -480,26 +501,26 @@ This script saves the project, generates `mse_images/imageN.png` for all include
 
 ## Writing conventions for types, searches and zones
 
-- Always write `Ritual Creature`, never `Ritual creature` nor `Ritual creature`. In the plural, write `Ritual Creatures`.
-- For a search, write the type before the archetype name: `Search 1 Ritual Creature “Nekroz”.` For a non-creature summon card, write `Search 1 non-creature Ritual Summon “Nekroz”.` If a race is required, place it before the type: `Dragon Ritual Creature`.
+- Always write `Ritual Creature`, never `Ritual Creature` nor `Ritual Creature`. In the plural, write `Ritual Creatures`.
+- For a search, put type before archetype name: `**Search** 1 Ritual Creature *“Nekroz”*.` For a noncreature summon card: `**Search** 1 non-Creature **Ritual Summon** *“Nekroz”*.` If a race is required, place it before type: `Dragon Ritual Creature`.
 - For a cost of Ritual Summon based on mana value, compare the values explicitly. The default is equality; a card may say `greater than or equal` to allow overpayment, such as Good & Evil.
 - If several Ritual Creatures can be put onto field, use plural agreement: `their Ritual cost(s)`.
-- Personal zones are controller-scoped by default. Write `from hand or field`, not `from your hand or field`; specify another player only when needed.
+- Personal zones are controller-scoped by default. Write `from Hand or Field`, not `from your Hand or Field`; specify another player only when needed.
 - A selector without `target` chooses on resolution. Add `This effect does not target.` only when omission leaves genuine ambiguity.
-- Several keyword actions belonging to the same ability are written in the same group in bold and linked by `and`, for example `**Detach 1 and Mill 3**`.
+- Bold one complete span only when several actions form a documented atomic compound, for example **Detach 1 and Mill 3**. Independent actions keep separate bold spans joined by ordinary prose, for example `**Discard** 1 card and **Target** 1 Creature`.
 - Choosing a target is never a cost, even when `target...` is placed in the group of instructions that precedes `;` or `:`.
 - An effect activated from Grave by exiling this card begins with the bold keyword `**Exile from Grave**` (definition above), never with the long phrase `From your Grave, exile this card`. Additional costs and choices remain before `;` or `:`.
 - To designate the card itself, use its name if it is as short or shorter than `this card`; otherwise, use `this card`.
-- To move a card from Deck, reserve `Search` for cards put into hand. Use `Send ... from Deck to Grave` and `Put ... onto field from Deck` for other destinations.
-- Always write zones, types and mechanics with their validated case and spelling: `Deck`, `Grave`, `Sideboard`, `Ritual Creature`, `Fusion Creature` and `Trap`.
+- To move a card from Deck, reserve **Search** for cards put into Hand. Use `**Send** ... from Deck to Grave` and `Put ... onto Field from Deck` for other destinations.
+- Always write standalone location/type terms with validated capitalization and no bold: `Hand`, `Field`, `Deck`, `Grave`, `Exile`, `Sideboard`, `Stack`, `Creature(s)`, and `Spell(s)`. Keep compounds/mechanics in validated case, including `Ritual Creature`, `Fusion Creature`, and `Trap`.
 - In cube cards, `Sideboard` is the name of the MSE zone that represents the Extra Deck. General rules can talk about Extra Deck; compact text of cards uses Sideboard.
-- For any creature of type Sideboard / Extra Deck (`Xyz Creature`, `Synchro Creature`, `Fusion Creature`, `Link Creature`), the italicized material line **never repeats** the summon type: no prefix `Xyz —`, `Synchro —`, `Fusion —` nor `Link —`. The card's supertype already carries this information. Write only the materials, e.g. `*2 creatures MV 1*`, `*1 Tuner + 1+ non-Tuner*`, `*1 “Shaddoll” creature + 1 white creature*`, `*2+ Creatures*`.
+- For any creature of type Sideboard / Extra Deck (`Xyz Creature`, `Synchro Creature`, `Fusion Creature`, `Link Creature`), the italicized material line **never repeats** the summon type: no prefix `Xyz —`, `Synchro —`, `Fusion —` nor `Link —`. The card's supertype already carries this information. Write only the materials, e.g. `*2 Creatures MV 1*`, `*1 Tuner + 1+ non-Tuner*`, `*1 “Shaddoll” Creature + 1 white Creature*`, `*2+ Creatures*`.
 - A Fusion Creature's material line uses `*[materials]*`; the super-type `Fusion Creature` already carries the Fusion information.
 - The material line of a Synchro Creature always places the Tuner first: `*1 Tuner + 1+ non-Tuner*`; the `Synchro —` prefix is omitted.
 - A destruction replacement protection uses `If this card would be destroyed, you may sacrifice... instead.`
-- A loss of abilities accompanied by a change in statistics uses the command `The target creature loses all its abilities and becomes 0/0 until the end of the turn.`
+- A loss of abilities accompanied by a change in statistics uses the command `The target Creature loses all its abilities and becomes 0/0 until the end of the turn.`
 - When a material line requires `different` creatures, their names must be different.
-- A loss of abilities specified `on the field` ceases as soon as the card leaves the field and does not apply in other zones.
+- A loss of abilities specified `on the Field` ceases as soon as the card leaves Field and does not apply in other zones.
 
 ## Extra Deck / MSE type convention
 
@@ -512,10 +533,10 @@ For Extra Deck creatures, the special type must be placed in the `super_type`, b
 The first line of text of an `Xyz Creature` must indicate its materials in italics, **without** `Xyz —` / `Xyz -` prefix (the `Xyz Creature` supertype is sufficient). By default, use:
 
 ```text
-2 creatures MV N
+2 Creatures MV N
 ```
 
-where `N` is the mana value of the Xyz card itself. Example: an Xyz costing `{2}{U}` uses `2 creatures MV 3`. Exceptions only exist if the card design explicitly requires `2+ creatures` or named material, but the project baseline is `2 creatures MV N`. Never write `Xyz — 2 creatures MV 1`; write `2 creatures MV 1`. The alternative cost label `Xyz Alternative Cost —` remains distinct and permitted.
+where `N` is the mana value of the Xyz card itself. Example: an Xyz costing `{2}{U}` uses `2 Creatures MV 3`. Exceptions only exist if the card design explicitly requires `2+ Creatures` or named material, but the project baseline is `2 Creatures MV N`. Never write `Xyz — 2 Creatures MV 1`; write `2 Creatures MV 1`. The alternative cost label `Xyz Alternative Cost —` remains distinct and permitted.
 - `Synchro Creature` for Synchro creatures;
 - `Fusion Creature` for Fusion creatures;
 - `Link Creature` for Link creatures.
@@ -558,9 +579,9 @@ See also `frame_candidates.md` for the list of candidates and visual validations
 
 The first line of a creature's rule text from Extra Deck / Sideboard must be the summoning condition in italics, **without** repeating the summoning type or super-type (`Xyz`, `Synchro`, `Fusion`, `Link`):
 
-- `*2 creatures MV N*` for an Xyz Creature — never `*Xyz — 2 MV N*` creatures;
+- `*2 Creatures MV N*` for an Xyz Creature — never `*Xyz — 2 MV N*` creatures;
 - `*1 Tuner + 1+ non-Tuner*` for a Synchro Creature — never `*Synchro — …*`;
-- `*1 “Shaddoll” creature + 1 white creature*` for a Fusion Creature — never `*Fusion — …*`;
+- `*1 “Shaddoll” Creature + 1 white Creature*` for a Fusion Creature — never `*Fusion — …*`;
 - `*2+ Creatures*` for a Link Creature — never `*Link — …*`.
 
 For a `Link Creature`, the Link level remains carried by the card type (`Link Lvl 4 Creature`, for example), while the first line only indicates the number or properties of the required materials. MV or material level does not matter unless explicitly stated on the card, such as `2 Creatures MV 1` for Cherubini.

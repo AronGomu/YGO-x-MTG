@@ -342,7 +342,7 @@ Add or update project tests that assert:
 - removed/old names are absent from regeneration sources;
 - validated new keywords are documented and rejected candidates remain absent.
 
-Run the complete unittest suite and Python compilation for changed scripts.
+Run `python .script/lint_mse_card_style.py` after every canonical English MSE update; require pass before export and never lint frozen French archives. Then run the complete unittest suite and Python compilation for changed scripts.
 
 ## Phase 12 — MSE verification
 

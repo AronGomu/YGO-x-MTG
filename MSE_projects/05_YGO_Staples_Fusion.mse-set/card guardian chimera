@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 05_fusion.md
 	time_created: 2026-07-11 16:45:00
-	time_modified: 2026-07-17 23:13:49
+	time_modified: 2026-07-24 13:53:09
 	name: Guardian Chimera
 	casting_cost: 1BG
 	image: image5.png
@@ -19,9 +19,9 @@ card:
 	sub_type_4: 
 	rarity: rare
 	rule_text:
-		<i>3 creatures with different names, including at least 1 material from the field and 1 from the hand</i>
-		<i-auto>(1 - Triggered Hard)</i-auto> <b>On Enter</b> — Draw X cards then destroy X non-creature permanents your opponent controls, X being the number of materials from hand.
-		<i-auto>(2 - Static)</i-auto> If “Polymerization” is in your <b>Grave</b>, Guardian gains <b>Hexproof</b>.
+		<i>3 Creatures with different names, including at least 1 material from the Field and 1 from the Hand</i>
+		<i-auto>(1 - Triggered Hard)</i-auto> <b>On Enter</b> — <b>Draw</b> X cards then <b>Destroy</b> X non-Creature permanents your opponent controls, X being the number of materials from Hand.
+		<i-auto>(2 - Static)</i-auto> If <i-auto>“Polymerization”</i-auto> is in your Grave, <i-auto>“Guardian”</i-auto> gains <b>Hexproof</b>.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

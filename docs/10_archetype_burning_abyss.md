@@ -45,11 +45,11 @@ Main color: **Black**
 
 ### Descent
 
-**Descent** is an ability activated only at Sorcery speed: “If you have not Summoned a “Burning Abyss” creature this turn, Summon this card from hand.” This action does not cast the card and therefore does not trigger **On Cast** events.
+**Descent** is an ability activated only at Sorcery speed: “If you have not summoned a *“Burning Abyss”* creature this turn, **Summon** this card from Hand.” This action does not cast the card and therefore does not trigger **On Cast** events.
 
 ### Abyssal Curse
 
-**Abyssal Curse** means: “If you control another creature without “Burning Abyss” in its name, destroy this creature.”
+**Abyssal Curse** means: “If you control another creature without *“Burning Abyss”* in its name, **Destroy** this creature.”
 
 This ability appears on every non-Ritual **Burning Abyss** creature in the Main Deck. Ritual Creatures such as Malacoda are excluded.
 

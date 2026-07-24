@@ -55,7 +55,7 @@ class UpdateRulesSkillTest(unittest.TestCase):
             self.assertIn("Problem-Solving Card Text (PSCT)", text)
             self.assertIn("**condition keyword** —", text)
             self.assertIn("costs and targets;", text)
-            self.assertIn("**On Send Grave** — Discard 1 card", text)
+            self.assertIn("**On Send Grave** — **Discard** 1 card", text)
 
     def test_validate_mse_waits_for_completed_review_file(self) -> None:
         self.assertIn("every pattern destroyer and pattern maker", self.validate_skill)

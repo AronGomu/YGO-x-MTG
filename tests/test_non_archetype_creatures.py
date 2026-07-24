@@ -15,7 +15,7 @@ EXPECTED_CARDS = {
         "(1 - Activated",
         "Flash",
         "Hard)",
-        "counter it",
+        "<b>Counter</b> it",
         "power: 0",
         "toughness: 1",
         "card_code_text: 001/004 C",
@@ -25,7 +25,7 @@ EXPECTED_CARDS = {
         "casting_cost: B",
         "sub_type: <word-list-race-en>Bird</word-list-race-en>",
         "(1 - Activated",
-        "target 1 card in 1 Grave; exile it",
+        "<b>Target</b> 1 card in 1 Grave; <b>Exile</b> it",
         "card_code_text: 002/004 C",
     ),
     "card effect veiler": (
@@ -39,7 +39,7 @@ EXPECTED_CARDS = {
         "name: Maxx “C”",
         "casting_cost: G",
         "sub_type: <word-list-race-en>Insect</word-list-race-en>",
-        "draw 1 card <b>On Opponent Creature Enter</b>",
+        "<b>Draw</b> 1 card <b>On Opponent Creature Enter</b>",
         "card_code_text: 004/004 C",
     ),
 }

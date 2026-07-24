@@ -1,374 +1,105 @@
-# Keyword inventory — cards vs rules/docs
+# Keyword inventory — canonical English MSE cards
 
-Source: bold `<b>…</b>` in canonical MSE `rule_text` under `MSE_projects/*.mse-set/`; frozen `MSE_projects/French/` is excluded.
-Rules: `docs/context.md`, `docs/02_rules_keywords_card_design.md`, `docs/*_archetype_*.md`.
+Generated from 184 manifest-included cards. Frozen `MSE_projects/French/` is excluded.
 
-## Legend
+Controlling rules: `docs/context.md` and `docs/02_rules_keywords_card_design.md`. Enforcement: `python .script/lint_mse_card_style.py`.
 
-| Status | Meaning |
-|--------|---------|
-| GLOBAL | Defined in global rules (context / 02) |
-| ARCH | Defined in archetype doc |
-| EVERGREEN-MTG | Standard Magic keyword (not numbered passive) |
-| LABEL | Structural label, not a game keyword |
-| UNDOCUMENTED | Bold on cards, no matching definition found |
-| NOISE | Likely bold markup accident / partial phrase |
+## Closed formatting contract
 
-## Global keyword catalog (rules)
+- Bold only documented action, ability, event, and cost/procedure keywords.
+- Capitalize standalone location/type terms (`Hand`, `Field`, `Deck`, `Grave`, `Exile`, `Sideboard`, `Stack`, `Creature(s)`, `Spell(s)`) without bold.
+- Italicize full self-names without quotes; italicize name fragments/non-self names inside typographic quotes.
+- Keep ability metadata inside italic prefixes, not bold.
+- Bold complete atomic compounds, including required arguments/connectors.
 
-| Keyword | Kind |
-|---------|------|
-| `Alternative Cost` | cost-label |
-| `Attach` | action |
-| `Bounce` | action |
-| `Bounded X` | static |
-| `Detach X` | action/cost |
-| `Défense talismanique` | static |
-| `Exile from Grave` | activation |
-| `Flip` | event/mechanic |
-| `Fusion Summon` | summon-procedure |
-| `Grave` | zone |
-| `Indestructible` | static |
-| `Indestructible des Effets` | static |
-| `Mill X` | action |
-| `Negate` | action |
-| `Negate & Destroy` | action |
-| `On Any Cast` | event-family |
-| `On Attack` | event |
-| `On Attack / Block` | event |
-| `On Block` | event |
-| `On Block / Blocked` | event |
-| `On Blocked` | event |
-| `On Cast` | event-family |
-| `On Creature you Control Destroy` | event |
-| `On Destroy` | event |
-| `On End Step` | event |
-| `On Enter` | event |
-| `On Exile` | event |
-| `On Fusion Summon` | event |
-| `On Leave Field` | event |
-| `On Link Summon` | event |
-| `On Opponent Cast` | event-family |
-| `On Opponent Creature Enter` | event |
-| `On Opponent Summon` | event |
-| `On Sacrifice` | event |
-| `On Send Grave` | event |
-| `On Send Grave by Effect` | event |
-| `On Upkeep` | event |
-| `Reanimate` | action |
-| `Ritual Summon` | summon-procedure |
-| `Set` | action |
-| `Slow Blink X Any Creature` | action |
-| `Summon` | action |
-| `This turn On End Step` | delayed-event |
+## Current bold inventory
 
-## Archetype keyword catalog (docs)
+| Hits | Phrase | Class | First evidence |
+|---:|---|---|---|
+| 80 | `Target` | ACTION | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card ash blossom  joyous spring:18` |
+| 33 | `Discard` | ACTION | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card ash blossom  joyous spring:18` |
+| 28 | `Destroy` | ACTION | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card coordius the triphasic dealmon:25` |
+| 27 | `Exile` | ACTION | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card d.d crow:18` |
+| 26 | `Search` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card ancient fairy dragon:22` |
+| 22 | `On Send Grave` | EVENT | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card elder entity ntss:25` |
+| 20 | `Draw` | ACTION | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card maxx  c:18` |
+| 19 | `Send` | ACTION | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card elder entity ntss:23` |
+| 15 | `Ritual Summon` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card herald of the arc light:24` |
+| 15 | `Detach 1` | ACTION | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card bagooska:20` |
+| 14 | `Summon` | ACTION | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card elder entity ntss:24` |
+| 14 | `On Enter` | EVENT | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card guardian chimera:23` |
+| 12 | `Reanimate` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card goyo guardian:20` |
+| 11 | `Counter` | ACTION | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card ash blossom  joyous spring:18` |
+| 11 | `Abyssal Curse` | ABILITY | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - alich:19` |
+| 11 | `Descent` | ABILITY | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - alich:20` |
+| 11 | `Flip` | EVENT | `MSE_projects/11_YGO_Shaddoll.mse-set/card hel shaddoll - hollow:25` |
+| 11 | `On Send Grave by Effect` | EVENT | `MSE_projects/11_YGO_Shaddoll.mse-set/card hel shaddoll - hollow:26` |
+| 10 | `Flying` | ABILITY | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card garura wings of resonant life:26` |
+| 10 | `Spell Affinity` | ABILITY | `MSE_projects/13_YGO_Spellbook.mse-set/card spellbook library of the crescent:19` |
+| 7 | `Return` | ACTION | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card coordius the triphasic dealmon:24` |
+| 7 | `Fusion Summon` | ACTION | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card elder entity ntss:23` |
+| 7 | `Indestructible` | ABILITY | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card chaos angel:24` |
+| 7 | `Cast` | ACTION | `MSE_projects/09_YGO_Non_Archetype_Non_Creatures.mse-set/card breakthrough skill:20` |
+| 6 | `Sacrifice` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card stardust dragon:24` |
+| 6 | `Detach 2` | ACTION | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card bamboozling gossip shadow:20` |
+| 6 | `Reveal` | ACTION | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card absolute king back jack:20` |
+| 6 | `Shaddoll Recovery` | ABILITY | `MSE_projects/11_YGO_Shaddoll.mse-set/card el shaddoll - anoyatyllis:27` |
+| 5 | `On Destroy` | EVENT | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card panzer dragon:23` |
+| 5 | `Salvage` | ACTION | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - dante:21` |
+| 4 | `Bounce` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card black rose moonlight dragon:21` |
+| 4 | `Xyz Alternative Cost` | COST/PROCEDURE | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card downerd magician:20` |
+| 4 | `Release` | ACTION | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card leviair the sea dragon:20` |
+| 4 | `Attach` | ACTION | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card silent honor ark:20` |
+| 4 | `Exile from Grave` | COST/PROCEDURE | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card absolute king back jack:20` |
+| 4 | `On Sacrifice` | EVENT | `MSE_projects/12_YGO_Necroz.mse-set/card nekroz - dance princess:21` |
+| 3 | `Hexproof` | ABILITY | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card guardian chimera:24` |
+| 3 | `Alternative Cost` | COST/PROCEDURE | `MSE_projects/09_YGO_Non_Archetype_Non_Creatures.mse-set/card upstart goblin:19` |
+| 3 | `Nekroz Recovery` | ABILITY | `MSE_projects/12_YGO_Necroz.mse-set/card nekroz - cycle:20` |
+| 3 | `Reclaim` | ACTION | `MSE_projects/12_YGO_Necroz.mse-set/card nekroz - dance princess:21` |
+| 2 | `Mill X` | ACTION | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card ash blossom  joyous spring:18` |
+| 2 | `On Fusion Summon` | EVENT | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card coordius the triphasic dealmon:23` |
+| 2 | `Vigilance` | ABILITY | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card world chalice guardragon almarduke:23` |
+| 2 | `Protection from everything` | ABILITY | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card chaos angel:24` |
+| 2 | `Trample` | ABILITY | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card downerd magician:21` |
+| 2 | `On Attack or Block` | EVENT | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card downerd magician:23` |
+| 2 | `On Link Summon` | EVENT | `MSE_projects/08_YGO_Staples_Link.mse-set/card accesscode talker:22` |
+| 2 | `On End Step` | EVENT | `MSE_projects/09_YGO_Non_Archetype_Non_Creatures.mse-set/card instant fusion:18` |
+| 2 | `Effect Indestructible` | ABILITY | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - cherubini:23` |
+| 2 | `On Exile` | EVENT | `MSE_projects/12_YGO_Necroz.mse-set/card nekroz - exa:20` |
+| 2 | `On Leave Field` | EVENT | `MSE_projects/13_YGO_Spellbook.mse-set/card spellbook star hall:21` |
+| 1 | `On Opponent Creature Enter` | EVENT | `MSE_projects/03_YGO_Non_Archetype_Creatures.mse-set/card maxx  c:18` |
+| 1 | `Fusion Alternative Cost` | COST/PROCEDURE | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card elder entity ntss:23` |
+| 1 | `Ward 3` | ABILITY | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card mudragon of the swamp:23` |
+| 1 | `Protection from Creatures` | ABILITY | `MSE_projects/05_YGO_Staples_Fusion.mse-set/card world chalice guardragon almarduke:23` |
+| 1 | `Hand Summon` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card ancient fairy dragon:21` |
+| 1 | `Exile 1 Plant from Grave` | COST/PROCEDURE | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card black rose dragon:25` |
+| 1 | `On Enter or MV2+ Opponent Creature Enter` | EVENT | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card black rose moonlight dragon:21` |
+| 1 | `Negate` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card hot red dragon archfiend abyss:21` |
+| 1 | `On Opponent Activation or Attack` | EVENT | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card red supernova dragon:22` |
+| 1 | `Negate & Destroy` | ACTION | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card stardust dragon:24` |
+| 1 | `On Enter Synchro` | EVENT | `MSE_projects/06_YGO_Staples_Synchro.mse-set/card t.g. hyper librarian:23` |
+| 1 | `Detach X` | ACTION | `MSE_projects/07_YGO_Staples_Xyz.mse-set/card time thief redoer:21` |
+| 1 | `Haste` | ABILITY | `MSE_projects/08_YGO_Staples_Link.mse-set/card accesscode talker:20` |
+| 1 | `Double Strike` | ABILITY | `MSE_projects/08_YGO_Staples_Link.mse-set/card borrelsword dragon:21` |
+| 1 | `On Blocked` | EVENT | `MSE_projects/08_YGO_Staples_Link.mse-set/card borrelsword dragon:22` |
+| 1 | `On Creature you Control Destroy` | EVENT | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card aa-zeus - sky thunder:22` |
+| 1 | `Scry 3` | ACTION | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card absolute king back jack:19` |
+| 1 | `Set` | ACTION | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card absolute king back jack:20` |
+| 1 | `Bounded 1` | ABILITY | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - cherubini:23` |
+| 1 | `Detach 1 and Mill 3` | ACTION | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - dante:20` |
+| 1 | `Slow Blink 1 Any Creature` | ACTION | `MSE_projects/10_YGO_Burning_Abyss.mse-set/card burning abyss - farfa:21` |
+| 1 | `On Block or Blocked` | EVENT | `MSE_projects/11_YGO_Shaddoll.mse-set/card el shaddoll - construct:27` |
+| 1 | `On Opponent Summon` | EVENT | `MSE_projects/11_YGO_Shaddoll.mse-set/card el shaddoll - grysta:26` |
+| 1 | `Ward 2` | ABILITY | `MSE_projects/12_YGO_Necroz.mse-set/card nekroz - catastor:20` |
+| 1 | `This turn On End Step` | EVENT | `MSE_projects/13_YGO_Spellbook.mse-set/card spellbook of judgment:19` |
+| 1 | `On Cast “Spellbook”` | EVENT | `MSE_projects/13_YGO_Spellbook.mse-set/card spellbook star hall:19` |
+| 1 | `On Upkeep` | EVENT | `MSE_projects/13_YGO_Spellbook.mse-set/card the grand spellbook tower:25` |
 
-### Burning Abyss
+## Audit result
 
-| Keyword | Doc |
-|---------|-----|
-| `Descente` | docs/10_archetype_burning_abyss.md |
-| `Malédiction abyssale` | docs/10_archetype_burning_abyss.md |
-
-### Shaddoll
-
-| Keyword | Doc |
-|---------|-----|
-| `Flip` | docs/11 + global 02 |
-| `Shaddoll Recovery` | docs/11_archetype_shaddoll.md |
-
-### Necroz
-
-| Keyword | Doc |
-|---------|-----|
-| `Nekroz Recovery` | docs/12_archetype_necroz.md |
-
-### Spellbook
-
-| Keyword | Doc |
-|---------|-----|
-| `Spell Affinity` | docs/13_archetype_spellbook.md |
-
-## Keywords found on cards (MSE), by project
-
-### Burning_Abyss
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 15 | `On Send Grave` | GLOBAL | event |
-| 14 | `Grave` | GLOBAL | zone |
-| 11 | `Abyssal Curse` | UNDOCUMENTED |  |
-| 11 | `Descent` | UNDOCUMENTED |  |
-| 5 | `Summon` | GLOBAL | action |
-| 3 | `Exile from Grave` | GLOBAL | activation |
-| 3 | `Detach 1` | GLOBAL | action/cost (Detach X) |
-| 3 | `On Destroy` | GLOBAL | event |
-| 3 | `On Enter` | GLOBAL | event |
-| 2 | `Reanimate` | GLOBAL | action |
-| 1 | `Detach 2` | GLOBAL | action/cost (Detach X) |
-| 1 | `On Creature you Control Destroy` | GLOBAL | event |
-| 1 | `Attach` | GLOBAL | action |
-| 1 | `Set` | GLOBAL | action |
-| 1 | `Bounded 1` | GLOBAL | static (Bounded X) |
-| 1 | `bounded` | NOISE | not a keyword |
-| 1 | `Detach 1 and Mill 3` | UNDOCUMENTED |  |
-| 1 | `Salvage` | UNDOCUMENTED |  |
-| 1 | `Slow Blink 1 Any Creature` | GLOBAL | action |
-| 1 | `Ritual Summon` | GLOBAL | summon-procedure |
-| 1 | `Fusion Summon` | GLOBAL | summon-procedure |
-| 1 | `On Attack or Block` | UNDOCUMENTED |  |
-| 1 | `Release` | UNDOCUMENTED |  |
-
-### Necroz
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 10 | `Grave` | GLOBAL | zone |
-| 9 | `On Sacrifice` | GLOBAL | event |
-| 4 | `On Enter` | GLOBAL | event |
-| 4 | `Ritual Summon` | GLOBAL | summon-procedure |
-| 3 | `Nekroz Recovery` | ARCH:Necroz | docs/12_archetype_necroz.md |
-| 2 | `Reclaim` | UNDOCUMENTED |  |
-| 2 | `On Exile` | GLOBAL | event |
-| 2 | `Salvage` | UNDOCUMENTED |  |
-| 1 | `On Send Grave` | GLOBAL | event |
-| 1 | `Bounce` | GLOBAL | action |
-| 1 | `Reanimate` | GLOBAL | action |
-| 1 | `Hexproof` | UNDOCUMENTED |  |
-| 1 | `Release` | UNDOCUMENTED |  |
-
-### Non_Archetype_Creatures
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 1 | `Mill X` | GLOBAL | action |
-| 1 | `On Opponent Creature Enter` | GLOBAL | event |
-
-### Non_Archetype_Non_Creatures
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 2 | `Grave` | GLOBAL | zone |
-| 1 | `Summon` | GLOBAL | action |
-| 1 | `Reanimate` | GLOBAL | action |
-| 1 | `Fusion Summon` | GLOBAL | summon-procedure |
-| 1 | `Alternative Cost` | GLOBAL | cost-label |
-
-### Shaddoll
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 11 | `On Send Grave by Effect` | GLOBAL | event |
-| 10 | `Flip` | GLOBAL | event/mechanic |
-| 6 | `Shaddoll Recovery` | ARCH:Shaddoll | docs/11_archetype_shaddoll.md |
-| 5 | `Grave` | GLOBAL | zone |
-| 4 | `Fusion Summon` | GLOBAL | summon-procedure |
-| 3 | `Summon` | GLOBAL | action |
-| 2 | `On Send Grave` | GLOBAL | event |
-| 2 | `On Enter` | GLOBAL | event |
-| 2 | `Salvage` | UNDOCUMENTED |  |
-| 2 | `Reanimate` | GLOBAL | action |
-| 1 | `On Block or Blocked` | UNDOCUMENTED |  |
-| 1 | `On Opponent Summon` | GLOBAL | event |
-| 1 | `Effect Indestructible` | UNDOCUMENTED |  |
-| 1 | `Mill X` | GLOBAL | action |
-| 1 | `Release` | UNDOCUMENTED |  |
-| 1 | `Exile from Grave` | GLOBAL | activation |
-
-### Spellbook
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 10 | `Spell Affinity` | ARCH:Spellbook | docs/13_archetype_spellbook.md |
-| 7 | `Grave` | GLOBAL | zone |
-| 2 | `Alternative Cost` | GLOBAL | cost-label |
-| 2 | `Summon` | GLOBAL | action |
-| 2 | `Reanimate` | GLOBAL | action |
-| 2 | `On Leave Field` | GLOBAL | event |
-| 1 | `On End Step` | GLOBAL | event |
-| 1 | `On Enter` | GLOBAL | event |
-| 1 | `Reclaim` | UNDOCUMENTED |  |
-| 1 | `Bounce` | GLOBAL | action |
-| 1 | `This turn On End Step` | GLOBAL | delayed-event |
-| 1 | `Attach` | GLOBAL | action |
-| 1 | `Protection from everything` | UNDOCUMENTED |  |
-| 1 | `On Cast “Spellbook”` | GLOBAL | event-family (On Cast) |
-| 1 | `On Upkeep` | GLOBAL | event |
-
-### Staples_Fusion
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 3 | `Grave` | GLOBAL | zone |
-| 2 | `On Fusion Summon` | GLOBAL | event |
-| 2 | `Summon` | GLOBAL | action |
-| 2 | `On Send Grave` | GLOBAL | event |
-| 2 | `On Destroy` | GLOBAL | event |
-| 1 | `Fusion Alternative Cost` | UNDOCUMENTED |  |
-| 1 | `Flying` | UNDOCUMENTED |  |
-| 1 | `On Enter` | GLOBAL | event |
-| 1 | `Hexproof` | UNDOCUMENTED |  |
-| 1 | `Protection from creatures` | UNDOCUMENTED |  |
-
-### Staples_Link
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 2 | `On Link Summon` | GLOBAL | event |
-| 2 | `Grave` | GLOBAL | zone |
-| 1 | `Haste` | UNDOCUMENTED |  |
-| 1 | `Double Strike` | UNDOCUMENTED |  |
-| 1 | `On Blocked` | GLOBAL | event |
-
-### Staples_Synchro
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 9 | `Flying` | UNDOCUMENTED |  |
-| 4 | `On Enter` | GLOBAL | event |
-| 4 | `Grave` | GLOBAL | zone |
-| 3 | `Reanimate` | GLOBAL | action |
-| 2 | `On Send Grave` | GLOBAL | event |
-| 1 | `Hand Summon` | UNDOCUMENTED |  |
-| 1 | `Exile 1 Plant from Grave` | UNDOCUMENTED |  |
-| 1 | `On Enter or MV2+ Opponent Creature Enter` | UNDOCUMENTED |  |
-| 1 | `Bounce` | GLOBAL | action |
-| 1 | `Protection from everything` | UNDOCUMENTED |  |
-| 1 | `Negate` | GLOBAL | action |
-| 1 | `On Opponent Activation or Attack` | UNDOCUMENTED |  |
-| 1 | `Summon` | GLOBAL | action |
-| 1 | `Negate & Destroy` | GLOBAL | action |
-| 1 | `On Enter Synchro` | UNDOCUMENTED |  |
-
-### Staples_Xyz
-
-| Count | Keyword | Status | Note |
-|------:|---------|--------|------|
-| 12 | `Detach 1` | GLOBAL | action/cost (Detach X) |
-| 6 | `Detach 2` | GLOBAL | action/cost (Detach X) |
-| 3 | `Attach` | GLOBAL | action |
-| 3 | `Grave` | GLOBAL | zone |
-| 2 | `Xyz Alternative Cost` | UNDOCUMENTED |  |
-| 1 | `Trample` | UNDOCUMENTED |  |
-| 1 | `On Attack or Block` | UNDOCUMENTED |  |
-| 1 | `Reanimate` | GLOBAL | action |
-| 1 | `Release` | UNDOCUMENTED |  |
-| 1 | `Detach X` | GLOBAL | action/cost |
-
-## Master unique list + rules coverage
-
-| Keyword | Total hits | Status | Docs home |
-|---------|----------:|--------|-----------|
-| `Grave` | 50 | GLOBAL | zone |
-| `On Send Grave` | 22 | GLOBAL | event |
-| `Detach 1` | 15 | GLOBAL | action/cost (Detach X) |
-| `On Enter` | 15 | GLOBAL | event |
-| `Summon` | 14 | GLOBAL | action |
-| `Reanimate` | 12 | GLOBAL | action |
-| `Abyssal Curse` | 11 | UNDOCUMENTED | — |
-| `Descent` | 11 | UNDOCUMENTED | — |
-| `On Send Grave by Effect` | 11 | GLOBAL | event |
-| `Flip` | 10 | GLOBAL | event/mechanic |
-| `Flying` | 10 | UNDOCUMENTED | — |
-| `Spell Affinity` | 10 | ARCH:Spellbook | docs/13_archetype_spellbook.md |
-| `On Sacrifice` | 9 | GLOBAL | event |
-| `Detach 2` | 7 | GLOBAL | action/cost (Detach X) |
-| `Fusion Summon` | 6 | GLOBAL | summon-procedure |
-| `Shaddoll Recovery` | 6 | ARCH:Shaddoll | docs/11_archetype_shaddoll.md |
-| `Attach` | 5 | GLOBAL | action |
-| `On Destroy` | 5 | GLOBAL | event |
-| `Ritual Summon` | 5 | GLOBAL | summon-procedure |
-| `Salvage` | 5 | UNDOCUMENTED | — |
-| `Exile from Grave` | 4 | GLOBAL | activation |
-| `Release` | 4 | UNDOCUMENTED | — |
-| `Alternative Cost` | 3 | GLOBAL | cost-label |
-| `Bounce` | 3 | GLOBAL | action |
-| `Nekroz Recovery` | 3 | ARCH:Necroz | docs/12_archetype_necroz.md |
-| `Reclaim` | 3 | UNDOCUMENTED | — |
-| `Hexproof` | 2 | UNDOCUMENTED | — |
-| `Mill X` | 2 | GLOBAL | action |
-| `On Attack or Block` | 2 | UNDOCUMENTED | — |
-| `On Exile` | 2 | GLOBAL | event |
-| `On Fusion Summon` | 2 | GLOBAL | event |
-| `On Leave Field` | 2 | GLOBAL | event |
-| `On Link Summon` | 2 | GLOBAL | event |
-| `Protection from everything` | 2 | UNDOCUMENTED | — |
-| `Xyz Alternative Cost` | 2 | UNDOCUMENTED | — |
-| `bounded` | 1 | NOISE | — |
-| `Bounded 1` | 1 | GLOBAL | static (Bounded X) |
-| `Detach 1 and Mill 3` | 1 | UNDOCUMENTED | — |
-| `Detach X` | 1 | GLOBAL | action/cost |
-| `Double Strike` | 1 | UNDOCUMENTED | — |
-| `Effect Indestructible` | 1 | UNDOCUMENTED | — |
-| `Exile 1 Plant from Grave` | 1 | UNDOCUMENTED | — |
-| `Fusion Alternative Cost` | 1 | UNDOCUMENTED | — |
-| `Hand Summon` | 1 | UNDOCUMENTED | — |
-| `Haste` | 1 | UNDOCUMENTED | — |
-| `Negate` | 1 | GLOBAL | action |
-| `Negate & Destroy` | 1 | GLOBAL | action |
-| `On Block or Blocked` | 1 | UNDOCUMENTED | — |
-| `On Blocked` | 1 | GLOBAL | event |
-| `On Cast “Spellbook”` | 1 | GLOBAL | event-family (On Cast) |
-| `On Creature you Control Destroy` | 1 | GLOBAL | event |
-| `On End Step` | 1 | GLOBAL | event |
-| `On Enter or MV2+ Opponent Creature Enter` | 1 | UNDOCUMENTED | — |
-| `On Enter Synchro` | 1 | UNDOCUMENTED | — |
-| `On Opponent Activation or Attack` | 1 | UNDOCUMENTED | — |
-| `On Opponent Creature Enter` | 1 | GLOBAL | event |
-| `On Opponent Summon` | 1 | GLOBAL | event |
-| `On Upkeep` | 1 | GLOBAL | event |
-| `Protection from creatures` | 1 | UNDOCUMENTED | — |
-| `Set` | 1 | GLOBAL | action |
-| `Slow Blink 1 Any Creature` | 1 | GLOBAL | action |
-| `This turn On End Step` | 1 | GLOBAL | delayed-event |
-| `Trample` | 1 | UNDOCUMENTED | — |
-
-## Gaps: on cards but missing / weak in rules
-
-| Keyword | Hits | Where used (sample) | Likely action |
-|---------|-----:|---------------------|---------------|
-| `Abyssal Curse` | 11 | Burning_Abyss/card burning abyss - alich, Burning_Abyss/card burning abyss - barbar, Burning_Abyss/card burning abyss - cagna, Burning_Abyss/card burning abyss - calcab | Document or un-bold |
-| `Descent` | 11 | Burning_Abyss/card burning abyss - alich, Burning_Abyss/card burning abyss - barbar, Burning_Abyss/card burning abyss - cagna, Burning_Abyss/card burning abyss - calcab | Document or un-bold |
-| `Flying` | 10 | Staples_Fusion/card garura wings of resonant life, Staples_Synchro/card ancient fairy dragon, Staples_Synchro/card black rose dragon, Staples_Synchro/card black rose moonlight dragon | Document or un-bold |
-| `Salvage` | 5 | Burning_Abyss/card burning abyss - dante, Necroz/card nekroz - unicore, Necroz/card preparation of rites, Shaddoll/card shaddoll - core | Document or un-bold |
-| `Release` | 4 | Burning_Abyss/card leviair the sea dragon, Necroz/card nekroz - exa, Shaddoll/card nael shaddoll - ariel, Staples_Xyz/card leviair the sea dragon | Document or un-bold |
-| `Reclaim` | 3 | Necroz/card nekroz - dance princess, Necroz/card nekroz - great sorcerer, Spellbook/card spellbook of eternity | Document or un-bold |
-| `Hexproof` | 2 | Necroz/card nekroz - dance princess, Staples_Fusion/card guardian chimera | Document or un-bold |
-| `On Attack or Block` | 2 | Burning_Abyss/card downerd magician, Staples_Xyz/card downerd magician | Document or un-bold |
-| `Protection from everything` | 2 | Spellbook/card spellbook of wisdom, Staples_Synchro/card chaos angel | Document or un-bold |
-| `Xyz Alternative Cost` | 2 | Staples_Xyz/card aa zeus sky thunder, Staples_Xyz/card downerd magician | Document or un-bold |
-| `Detach 1 and Mill 3` | 1 | Burning_Abyss/card burning abyss - dante | Document or un-bold |
-| `Double Strike` | 1 | Staples_Link/card borrelsword dragon | Document or un-bold |
-| `Effect Indestructible` | 1 | Shaddoll/card el shaddoll - winda | Document or un-bold |
-| `Exile 1 Plant from Grave` | 1 | Staples_Synchro/card black rose dragon | Document or un-bold |
-| `Fusion Alternative Cost` | 1 | Staples_Fusion/card elder entity ntss | Document or un-bold |
-| `Hand Summon` | 1 | Staples_Synchro/card ancient fairy dragon | Document or un-bold |
-| `Haste` | 1 | Staples_Link/card accesscode talker | Document or un-bold |
-| `On Block or Blocked` | 1 | Shaddoll/card el shaddoll - construct | Document or un-bold |
-| `On Enter or MV2+ Opponent Creature Enter` | 1 | Staples_Synchro/card black rose moonlight dragon | Document or un-bold |
-| `On Enter Synchro` | 1 | Staples_Synchro/card t.g. hyper librarian | Document or un-bold |
-| `On Opponent Activation or Attack` | 1 | Staples_Synchro/card red supernova dragon | Document or un-bold |
-| `Protection from creatures` | 1 | Staples_Fusion/card world chalice guardragon almarduke | Document or un-bold |
-| `Trample` | 1 | Staples_Xyz/card downerd magician | Document or un-bold |
-
-## Documented global keywords with weak/no MSE hit
-
-Defined but not observed as bold on current MSE cards:
-- `Défense talismanique`
-- `Indestructible`
-- `Indestructible des Effets`
-- `On Any Cast`
-- `On Attack / Block`
-- `On Block / Blocked`
-- `On Opponent Cast`
-
-## Notes
-
-1. Variable forms: `Detach 1/2`, `Mill 3`, `Bounded 1`, `Slow Blink 1 Any Creature` = instances of X-forms.
-2. On Cast family: unqualified `On Cast "Spellbook"` is controller-scoped; `On Opponent Cast` and `On Any Cast` provide explicit alternate scopes.
-3. Spell Affinity lives in archetype doc 13; Book Affinity is retired and replaced by full Alternative Cost text.
-4. Descente / Malédiction abyssale / Shaddoll Recovery / Nekroz Recovery: archetype-only.
-5. Case drift: `Défense Talismanique` vs `Défense talismanique`.
-6. Piétinement: evergreen MTG; print alone, not numbered passive.
-7. Spellbook open proposals (`On Leave Field`, `On Upkeep`) already on MSE; now defined in global rules.
+- Unique bold phrases: 78.
+- Total bold invocations: 547.
+- Standalone bold zones: 0.
+- Unknown bold phrases: 0.
+- Unitalicized detected name references: 0.
+- Open doubtful words: 0; decisions recorded in `rule_reviews/2026-07-24-keyword-bold-italics-taxonomy.md`.

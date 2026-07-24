@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/10_archetype_burning_abyss.md
 	time_created: 2026-07-11 01:36:28
-	time_modified: 2026-07-12 15:01:54
+	time_modified: 2026-07-24 13:53:09
 	name: Burning Abyss - Traveler
 	casting_cost: B
 	image: mse_images/image22.png
@@ -15,7 +15,7 @@ card:
 	super_type: <word-list-type-en>Trap Instant</word-list-type-en>
 	sub_type: 
 	rarity: common
-	rule_text: <i-auto>(1 - Resolution)</i-auto> Return any number of “Burning Abyss” creatures sent to your <b>Grave</b> this turn to the field.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> <b>Return</b> any number of <i-auto>“Burning Abyss”</i-auto> Creatures sent to your Grave this turn to the Field.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 022/030 C
 	card_code_text_2: 022/030 C

@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/13_archetype_spellbook.md
 	time_created: 2026-07-10 23:49:32
-	time_modified: 2026-07-19 12:01:08
+	time_modified: 2026-07-24 13:53:09
 	name: Spellbook of Miracles
 	casting_cost: U
 	image: mse_images/image14.png
@@ -17,7 +17,7 @@ card:
 	rarity: common
 	rule_text:
 		<b>Spell Affinity</b>
-		<i-auto>(1 - Resolution Hard)</i-auto> Target 1 Wizard in <b>Grave</b> and 0–2 non-creature “Spellbook” in exile; <b>Reanimate</b> the Wizard. If it is an Xyz Creature, <b>Attach</b> the targeted “Spellbook” to it.
+		<i-auto>(1 - Resolution Hard)</i-auto> <b>Target</b> 1 Wizard in Grave and 0–2 non-Creature <i-auto>“Spellbook”</i-auto> in Exile; <b>Reanimate</b> the Wizard. If it is an Xyz Creature, <b>Attach</b> the targeted <i-auto>“Spellbook”</i-auto> to it.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 010/016 C
 	card_code_text_2: 010/016 C

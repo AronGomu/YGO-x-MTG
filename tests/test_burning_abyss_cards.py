@@ -39,38 +39,38 @@ class BurningAbyssCardTests(unittest.TestCase):
     def test_representative_card_mechanics_are_preserved(self) -> None:
         expected = {
             "card aa-zeus - sky thunder": (
-                "<i>2 creatures MV 4</i>",
+                "<i>2 Creatures MV 4</i>",
                 "Xyz Alternative Cost",
                 "(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)",
                 "<b>Detach 2</b>",
-                "send all other nonland permanents on the field to <b>Grave</b>",
+                "<b>Send</b> all other nonland permanents on the Field to Grave",
                 "(2 - Triggered Soft)",
-                "<b>Attach</b> the destroyed creature to ZEUS",
+                "<b>Attach</b> the destroyed Creature to <i-auto>“ZEUS”</i-auto>",
             ),
             "card burning abyss - cherubini": (
                 "name: Burning Abyss - Cherubini",
                 "super_type: <word-list-type-en>Link Lvl 2 Creature</word-list-type-en>",
-                "<i>2 creatures MV 1</i>",
-                "Send 1 creature with MV 1 from your Deck to <b>Grave</b>",
+                "<i>2 Creatures MV 1</i>",
+                "<b>Send</b> 1 Creature with MV 1 from your Deck to Grave",
             ),
             "card burning abyss - dante pilgrim": (
                 "<b><kw-a><nospellcheck><key>Hexproof</key></nospellcheck></kw-a></b>",
                 "<b>On Destroy</b>",
-                "they discard 1 card at random",
+                "they <b>Discard</b> 1 card at random",
             ),
             "card burning abyss - farfa": (
                 "<b>Slow Blink 1 Any Creature</b>",
             ),
             "card burning abyss - good  evil": (
                 "<b>Ritual Summon</b>",
-                "<b>Exile from Grave</b> and discard 1 “Burning Abyss” creature",
+                "<b>Exile from Grave</b> and <b>Discard</b> 1 <i-auto>“Burning Abyss”</i-auto> Creature",
             ),
             "card burning abyss - terminus": (
                 "<b>Fusion Summon</b>",
                 "the target gains +2/+2 until the end of the opponent’s next turn",
             ),
             "card leviair the sea dragon": (
-                "target 1 exiled MV 1 creature",
+                "<b>Target</b> 1 exiled MV 1 Creature",
                 "<b>Release</b> the target",
             ),
         }

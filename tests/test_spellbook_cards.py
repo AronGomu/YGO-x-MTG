@@ -12,22 +12,22 @@ BOOK_AFFINITY = "<b>Book Affinity</b>"
 SPELL_AFFINITY = "<b>Spell Affinity</b>"
 
 EXPECTED_RULES = {
-    "card high priestess of prophecy": ("<b>Alternative Cost</b>", "Reveal 3 non-creature “Spellbook” from hand", "Exile 1 “Spellbook” from hand or <b>Grave</b>"),
-    "card justice of prophecy": ("<b>On End Step</b>", "If 1 non-creature “Spellbook” was cast this turn", "Search 1 “Spellbook”"),
-    "card spellbook library of the crescent": ("If you control 1 Wizard MV 2+", "reveal 3 “Spellbook” from Deck", "Put the chosen card into hand"),
-    "card spellbook magician of prophecy": ("<b>Alternative Cost</b>", "If you cast 1 non-creature “Spellbook” this turn", "<b>On Enter</b>", "Search 1 “Spellbook”"),
-    "card spellbook of eternity": ("Target 1 “Spellbook” from exile", "<b>Reclaim</b> the target"),
-    "card spellbook of fate": ("Exile 1–3 “Spellbook” from <b>Grave</b>", "2 — <b>Bounce</b> 1 nonland permanent", "3 — Exile 1 nonland permanent"),
-    "card spellbook of judgment": ("<b>This turn On End Step</b>", "Search 0–(X−2) “Spellbook”", "non-creature “Spellbook” cast this turn", "<b>Summon</b> 1 “Spellbook” creature MV X or less from Deck"),
-    "card spellbook of knowledge": ("Sacrifice 1 “Spellbook” or discard 1 “Spellbook”; draw 2 cards",),
-    "card spellbook of life": ("Target 1 Wizard creature MV X in <b>Grave</b>", "choose X non-creature “Spellbook” from <b>Grave</b>", "<b>Reanimate</b> it, if you do, exile the chosen cards"),
-    "card spellbook of miracles": ("Target 1 Wizard in <b>Grave</b> and 0–2 non-creature “Spellbook” in exile", "<b>Reanimate</b> the Wizard", "<b>Attach</b> the targeted “Spellbook” to it"),
-    "card spellbook of power": ("Target 1 “Spellbook”; until end of turn, the target gets +2/+2", "Search 1 “Spellbook”"),
-    "card spellbook of secrets": ("Search 1 “Spellbook”",),
-    "card spellbook of the master": ("Reveal 1 other “Spellbook” from hand", "target 1 “Spellbook” from <b>Grave</b>", "copy the target's Resolution effect and resolve it"),
+    "card high priestess of prophecy": ("<b>Alternative Cost</b>", "<b>Reveal</b> 3 non-Creature <i-auto>“Spellbook”</i-auto> from Hand", "<b>Exile</b> 1 <i-auto>“Spellbook”</i-auto> from Hand or Grave"),
+    "card justice of prophecy": ("<b>On End Step</b>", "If 1 non-Creature <i-auto>“Spellbook”</i-auto> was cast this turn", "<b>Search</b> 1 <i-auto>“Spellbook”</i-auto>"),
+    "card spellbook library of the crescent": ("If you control 1 Wizard MV 2+", "<b>Reveal</b> 3 <i-auto>“Spellbook”</i-auto> from Deck", "Put the chosen card into Hand"),
+    "card spellbook magician of prophecy": ("<b>Alternative Cost</b>", "If you <b>Cast</b> 1 non-Creature <i-auto>“Spellbook”</i-auto> this turn", "<b>On Enter</b>", "<b>Search</b> 1 <i-auto>“Spellbook”</i-auto>"),
+    "card spellbook of eternity": ("<b>Target</b> 1 <i-auto>“Spellbook”</i-auto> from Exile", "<b>Reclaim</b> the target"),
+    "card spellbook of fate": ("<b>Exile</b> 1–3 <i-auto>“Spellbook”</i-auto> from Grave", "2 — <b>Bounce</b> 1 nonland permanent", "3 — <b>Exile</b> 1 nonland permanent"),
+    "card spellbook of judgment": ("<b>This turn On End Step</b>", "<b>Search</b> 0–(X−2) <i-auto>“Spellbook”</i-auto>", "non-Creature <i-auto>“Spellbook”</i-auto> cast this turn", "<b>Summon</b> 1 <i-auto>“Spellbook”</i-auto> Creature MV X or less from Deck"),
+    "card spellbook of knowledge": ("<b>Sacrifice</b> 1 <i-auto>“Spellbook”</i-auto> or <b>Discard</b> 1 <i-auto>“Spellbook”</i-auto>; <b>Draw</b> 2 cards",),
+    "card spellbook of life": ("<b>Target</b> 1 Wizard Creature MV X in Grave", "choose X non-Creature <i-auto>“Spellbook”</i-auto> from Grave", "<b>Reanimate</b> it, if you do, <b>Exile</b> the chosen cards"),
+    "card spellbook of miracles": ("<b>Target</b> 1 Wizard in Grave and 0–2 non-Creature <i-auto>“Spellbook”</i-auto> in Exile", "<b>Reanimate</b> the Wizard", "<b>Attach</b> the targeted <i-auto>“Spellbook”</i-auto> to it"),
+    "card spellbook of power": ("<b>Target</b> 1 <i-auto>“Spellbook”</i-auto>; until end of turn, the target gets +2/+2", "<b>Search</b> 1 <i-auto>“Spellbook”</i-auto>"),
+    "card spellbook of secrets": ("<b>Search</b> 1 <i-auto>“Spellbook”</i-auto>",),
+    "card spellbook of the master": ("<b>Reveal</b> 1 other <i-auto>“Spellbook”</i-auto> from Hand", "<b>Target</b> 1 <i-auto>“Spellbook”</i-auto> from Grave", "copy the target's Resolution effect and resolve it"),
     "card spellbook of wisdom": ("it gains <b>Protection from everything</b> until end of turn",),
-    "card spellbook star hall": ("<b>On Cast “Spellbook”</b>", "<b>On Leave Field</b>", "Search 1 “Spellbook” creature MV X or less"),
-    "card the grand spellbook tower": ("<b>On Upkeep</b>", "put 1 “Spellbook” from <b>Grave</b> on the bottom of Deck", "<b>On Leave Field</b>", "<b>Summon</b> 1 “Spellbook” creature from Deck"),
+    "card spellbook star hall": ("<b>On Cast <i-auto>“Spellbook”</i-auto></b>", "<b>On Leave Field</b>", "<b>Search</b> 1 <i-auto>“Spellbook”</i-auto> Creature MV X or less"),
+    "card the grand spellbook tower": ("<b>On Upkeep</b>", "put 1 <i-auto>“Spellbook”</i-auto> from Grave on the bottom of Deck", "<b>On Leave Field</b>", "<b>Summon</b> 1 <i-auto>“Spellbook”</i-auto> Creature from Deck"),
 }
 
 SPELL_AFFINITY_CARDS = {

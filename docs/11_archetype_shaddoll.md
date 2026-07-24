@@ -31,7 +31,7 @@ When this creature is turned face up, apply the indicated effect.
 
 ### Shaddoll Recovery
 
-**Shaddoll Recovery** means: “**On Send Grave** — **Salvage** 1 non-creature “Shaddoll”.” Cards print only the bold keyword after the ability prefix, without repeating full text. **Salvage** is the general Grave → hand keyword defined in `docs/context.md`.
+**Shaddoll Recovery** means: “**On Send Grave** — **Salvage** 1 non-creature *“Shaddoll”*.” Cards print only the bold keyword after the ability prefix, without repeating full text. **Salvage** is the general Grave → Hand keyword defined in `docs/context.md`.
 
 `On Send Grave by Effect` remains a separate event. It is not absorbed by **Shaddoll Recovery** unless card explicitly prints that keyword.
 

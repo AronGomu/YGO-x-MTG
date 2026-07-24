@@ -1,4 +1,4 @@
-mse_version: 2.5.8
+﻿mse_version: 2.5.8
 card:
 	stylesheet: sevenhalf
 	stylesheet_version: 2024-05-30
@@ -13,8 +13,8 @@ card:
 	mainframe_image: 
 	mainframe_image_2: 
 	super_type: <word-list-type-en>Instant</word-list-type-en>
-	sub_type:
+	sub_type: <word-list-spell></word-list-spell>
 	rarity: common
-	rule_text: <i-auto>(1 - Resolution)</i-auto> Turn all creatures face down. Their controllers cannot turn them face up until the start of their next turn. This restriction does not apply if a combat effect or rule turns them face-up.
+	rule_text: <i-auto>(1 - Resolution)</i-auto> Turn all Creatures face down. Their controllers cannot turn them face up until the start of their next turn. This restriction does not apply if a combat effect or rule turns them face-up.
 	flavor_text: <i-flavor></i-flavor>
 	card_code_text: 002/017 C

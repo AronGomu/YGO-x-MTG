@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/11_archetype_shaddoll.md
 	time_created: 2026-07-11 00:33:44
-	time_modified: 2026-07-12 21:50:00
+	time_modified: 2026-07-24 13:53:09
 	name: El Shaddoll - Wendigo
 	casting_cost: 2U
 	image: image5.png
@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 “Shaddoll” creature + 1 green creature</i>
-		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Target creature gains <b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b> until end of turn.
+		<i>1 “Shaddoll” Creature + 1 green Creature</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Hard)</i-auto> Target Creature gains <b><kw-a><nospellcheck><key>Indestructible</key></nospellcheck></kw-a></b> until end of turn.
 		<i-auto>(2 - Triggered)</i-auto> <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 1

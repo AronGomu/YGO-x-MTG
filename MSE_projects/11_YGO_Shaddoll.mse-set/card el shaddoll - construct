@@ -1,11 +1,11 @@
-﻿mse_version: 2.5.8
+mse_version: 2.5.8
 card:
 	stylesheet: genevensis-00-main
 	stylesheet_version: 2022-02-22
 	has_styling: false
 	notes: Source: docs/11_archetype_shaddoll.md
 	time_created: 2026-07-11 00:33:44
-	time_modified: 2026-07-17 22:55:14
+	time_modified: 2026-07-24 13:53:09
 	name: El Shaddoll - Construct
 	casting_cost: 2W
 	image: image1.png
@@ -22,9 +22,9 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 “Shaddoll” creature + 1 white creature</i>
-		<i-auto>(1 - Triggered)</i-auto> <b>On Enter</b> — Send 1 “Shaddoll” card from your Deck to <b>Grave</b>.
-		<i-auto>(2 - Triggered)</i-auto> <b>On Block or Blocked</b> — If the other creature was Summoned, destroy it.
+		<i>1 “Shaddoll” Creature + 1 white Creature</i>
+		<i-auto>(1 - Triggered)</i-auto> <b>On Enter</b> — <b>Send</b> 1 <i-auto>“Shaddoll”</i-auto> card from your Deck to Grave.
+		<i-auto>(2 - Triggered)</i-auto> <b>On Block or Blocked</b> — If the other Creature was summoned, <b>Destroy</b> it.
 		<i-auto>(3 - Triggered)</i-auto> <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 5

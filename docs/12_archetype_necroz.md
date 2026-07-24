@@ -46,7 +46,7 @@ Unless stated otherwise:
 
 ### Nekroz Recovery
 
-**Nekroz Recovery** means: “If you control no creatures: exile this card and 1 other “Nekroz” from Grave; Search 1 non-creature Ritual Summon “Nekroz”.” Non-Nekroz cards sharing this effect print full text after em dash.
+**Nekroz Recovery** means: “If you control no creatures: **Exile** this card and 1 other *“Nekroz”* from Grave; **Search** 1 non-creature **Ritual Summon** *“Nekroz”*.” Non-Nekroz cards sharing this effect print full text after em dash.
 
 ## Card source of truth
 
@@ -59,8 +59,8 @@ Nekroz should remain highly consistent but should depend on correct resource seq
 Cards should encourage:
 
 - searching for specific pieces;
-- converting cards in hand into utility effects;
-- strategic use of Grave and exile;
+- converting cards in Hand into utility effects;
+- strategic use of Grave and Exile;
 - punishing creatures from Sideboard;
 - incremental advantage rather than immediate lethal combos.
 

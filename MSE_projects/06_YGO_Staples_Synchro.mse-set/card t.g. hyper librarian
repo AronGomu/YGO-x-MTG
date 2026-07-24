@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 06_synchro.md
 	time_created: 2026-07-11 12:11:59
-	time_modified: 2026-07-18 00:13:44
+	time_modified: 2026-07-24 13:53:09
 	name: T.G. Hyper Librarian
 	casting_cost: UB
 	image: image2.png
@@ -20,7 +20,7 @@ card:
 	rarity: rare
 	rule_text:
 		<i>1 Tuner + 1+ non-Tuner</i>
-		<i-auto>(1 - Triggered Soft)</i-auto> <b>On Enter Synchro</b> — Draw 1 card.
+		<i-auto>(1 - Triggered Soft)</i-auto> <b>On Enter Synchro</b> — <b>Draw</b> 1 card.
 	flavor_text: <i-flavor></i-flavor>
 	power: 4
 	toughness: 3

@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/07_xyz.md
 	time_created: 2026-07-11 17:03:48
-	time_modified: 2026-07-11 18:11:52
+	time_modified: 2026-07-24 13:53:09
 	name: Constellar Pleiades
 	casting_cost: W
 	image: image1.png
@@ -16,8 +16,8 @@ card:
 	sub_type: <word-list-race-en>Warrior</word-list-race-en><soft><atom-sep> </atom-sep></soft><word-list-class-en></word-list-class-en>
 	rarity: rare
 	rule_text:
-		<i>2 white creatures MV 2</i>
-		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> and target 1 nonland permanent; return the target to its owner's hand.
+		<i>2 white Creatures MV 2</i>
+		<i-auto>(1 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Detach 1</b> and <b>Target</b> 1 nonland permanent; <b>Return</b> the target to its owner's Hand.
 	flavor_text: <i-flavor></i-flavor>
 	power: 3
 	toughness: 3

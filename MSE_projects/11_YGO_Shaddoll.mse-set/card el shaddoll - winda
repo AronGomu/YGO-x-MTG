@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/11_archetype_shaddoll.md
 	time_created: 2026-07-11 00:33:44
-	time_modified: 2026-07-12 21:49:46
+	time_modified: 2026-07-24 13:53:09
 	name: El Shaddoll - Winda
 	casting_cost: 1B
 	image: mse_images/image12.png
@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 “Shaddoll” creature + 1 black creature</i>
-		<i-auto>(1 - Static)</i-auto> Each player can only cast 1 creature per turn.
+		<i>1 “Shaddoll” Creature + 1 black Creature</i>
+		<i-auto>(1 - Static)</i-auto> Each player can only <b>Cast</b> 1 Creature per turn.
 		<i-auto>(2 - Static)</i-auto> <b>Effect Indestructible</b>.
 		<i-auto>(3 - Triggered)</i-auto> <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>

@@ -22,18 +22,18 @@ class TrapSupertypeTests(unittest.TestCase):
             with self.subTest(card=card_path.name):
                 card = card_path.read_text(encoding="utf-8-sig")
                 self.assertIn("super_type: <word-list-type-en>Trap Instant</word-list-type-en>", card)
-                self.assertRegex(card, r"(?m)^\tsub_type:\s*$")
+                self.assertRegex(card, r"(?m)^\tsub_type:(?: <word-list-spell></word-list-spell>)?\s*$")
                 self.assertNotIn("<b>Trap</b>", card)
 
     def test_trap_references_use_current_english_vocabulary(self) -> None:
         rafflesia = (ROOT / "MSE_projects/07_YGO_Staples_Xyz.mse-set/card traptrix rafflesia").read_text(encoding="utf-8-sig")
-        self.assertIn("<i>2 creatures MV 1</i>", rafflesia)
-        self.assertIn("send 1 Trap from your Deck to <b>Grave</b>", rafflesia)
+        self.assertIn("<i>2 Creatures MV 1</i>", rafflesia)
+        self.assertIn("<b>Send</b> 1 Trap from your Deck to Grave", rafflesia)
         self.assertNotIn("error-spelling", rafflesia)
 
         back_jack = (ROOT / "MSE_projects/10_YGO_Burning_Abyss.mse-set/card absolute king back jack").read_text(encoding="utf-8-sig")
-        self.assertIn("If it is a Trap, <b>Set</b> the card face down on the field", back_jack)
-        self.assertIn("you may cast it this turn", back_jack)
+        self.assertIn("If it is a Trap, <b>Set</b> the card face down on the Field", back_jack)
+        self.assertIn("you may <b>Cast</b> it this turn", back_jack)
 
     def test_rules_and_archive_preserve_trap_contract(self) -> None:
         context = (ROOT / "docs/context.md").read_text(encoding="utf-8-sig")

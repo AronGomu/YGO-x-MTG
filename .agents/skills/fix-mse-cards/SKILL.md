@@ -295,13 +295,14 @@ Never edit `docs/context.md` or `docs/02_rules_keywords_card_design.md` directly
 
 Run all applicable checks:
 
-1. structural MSE validation (includes, card files, image references, card totals);
-2. repository tests, including project-specific MSE tests;
-3. Python compilation for changed scripts;
-4. `git diff --check`;
-5. stale-reference search for renamed/removed cards and superseded rule text;
-6. MSE export using `MSE_CLI` loaded from `.env`, writing to a temporary directory outside the `.mse-set` folder;
-7. confirm expected exported PNG count, then delete all temporary export/cache files.
+1. `python .script/lint_mse_card_style.py` after every canonical English MSE update; require pass before export and never lint frozen French archives;
+2. structural MSE validation (includes, card files, image references, card totals);
+3. repository tests, including project-specific MSE tests;
+4. Python compilation for changed scripts;
+5. `git diff --check`;
+6. stale-reference search for renamed/removed cards and superseded rule text;
+7. MSE export using `MSE_CLI` loaded from `.env`, writing to a temporary directory outside the `.mse-set` folder;
+8. confirm expected exported PNG count, then delete all temporary export/cache files.
 
 Never hardcode `mse.exe` or `mse.com`. Load `MSEConfig` from `mse_config.py`. If `.env` is absent or invalid, instruct the user to run `python setup_mse.py`; do not guess an installation path.
 

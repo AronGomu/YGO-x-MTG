@@ -164,9 +164,12 @@ Validate the complete parent project, even for one-card scope:
 Then run:
 
 ```bash
+python .script/lint_mse_card_style.py
 python -m unittest discover -s tests
 git diff --check
 ```
+
+The card-style linter is mandatory after every canonical English MSE update and must pass before export. Never run it against frozen French archives.
 
 Compile any changed Python generators/synchronizers with `python -m py_compile <paths>`.
 

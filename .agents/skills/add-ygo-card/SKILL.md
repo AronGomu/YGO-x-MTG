@@ -76,8 +76,9 @@ rg -n "Official Yu-Gi-Oh|CARD NAME" original_cards
 rg -n "ORIGINAL NAME|CUBE NAME" docs MSE_projects mse .script
 ```
 
-3. Run relevant tests and the project's MSE export verification using the configured `.env`/`mse_config.py`; do not hardcode a machine-specific MSE installation path.
-4. Inspect the exported image when possible and remove temporary exports.
+3. Run `python .script/lint_mse_card_style.py`; require pass after every canonical English MSE update and before export. Frozen French archives remain excluded.
+4. Run relevant tests and the project's MSE export verification using the configured `.env`/`mse_config.py`; do not hardcode a machine-specific MSE installation path.
+5. Inspect the exported image when possible and remove temporary exports.
 
 ## Final response
 

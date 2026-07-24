@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "project": "03_YGO_Non_Archetype_Creatures.mse-set",
-  "exportedAt": "2026-07-19T21:40:33.924449Z",
+  "exportedAt": "2026-07-24T15:20:14.230110Z",
   "mse": {
     "version": "2.0.2",
     "game": "magic",
@@ -17,41 +17,41 @@
       "id": "card ash blossom  joyous spring",
       "name": "Ash Blossom & Joyous Spring",
       "manifestIndex": 0,
-      "sourceHash": "8e4800a290193746b035c2b6ad81a6877d8c488edcf53495ec1080f954ab4d01",
+      "sourceHash": "5c2db421db74415229fe03e7cff8a4568221e8160a947b9268dbfa71a195ea55",
       "artworkHash": "2cf505c03a0023a8ae1ca16cb5fe9130a66d3bb9e17eec88492e891960f46ca5",
       "render": "Ash Blossom & Joyous Spring.png",
-      "renderHash": "ce8dba0a18421e6e9aabd935638e2f0ce451768029368e77a4a3aa335dbafa56",
-      "renderPixelHash": "4cb2e5603d0380d3bb666fd6a4d6f6bdd0ead677a4a0df53caf511cbf5834d83"
+      "renderHash": "22e28f0d162854281ee739e7333231e4cab21f8411da9580f20dd25676b6a903",
+      "renderPixelHash": "44301b934d6bc068d04a863f63671b94645b56482e4e2cb57eccb2f62c77b765"
     },
     {
       "id": "card d.d crow",
       "name": "D.D. Crow",
       "manifestIndex": 1,
-      "sourceHash": "fa8be691e128df36e0fa9c820400ddf2feab84d0cfbb421120e78192a9c24ef3",
+      "sourceHash": "23650b9f851954b68804b0d0eaddfd76f325d2447972d6c046ff5ce4f86625f5",
       "artworkHash": "16eb9d1dccb00af641876e0952e8d658772337fd308f016c5b66999440161795",
       "render": "D.D. Crow.png",
-      "renderHash": "6ef310519b79c3089be3258d72fe162c9536a4c64ab59952707b66b628570cee",
-      "renderPixelHash": "8118ec9a4342de049c78dd0d404afe01016af567ecb8ed8d69bd0ed04f2f4d23"
+      "renderHash": "dc6b5cd49f736a2a5f945372e7f58686875fb7c55d0a67f873aeeb376fcf6e98",
+      "renderPixelHash": "d2f15c2f7605965f25dc29213ced9e04a2611654a09080ce21677498c731cff8"
     },
     {
       "id": "card effect veiler",
       "name": "Effect Veiler",
       "manifestIndex": 2,
-      "sourceHash": "10bf1ff572555a10875dbd7fd8b00faf99c99f0c595bac2329589c57e90878f3",
+      "sourceHash": "3a45cc3b8fa1491707135206828b2e17b5e714cde947e8e73e91c910ef3a8395",
       "artworkHash": "385f3255dabe593ee2fe32ad5a7a779fafc408d959363bb0da494a1f1d51a129",
       "render": "Effect Veiler.png",
-      "renderHash": "0ecbaf9393b2382b205089b1b02df1aa6e8594b16afa9adc73071214b6657589",
-      "renderPixelHash": "c3a77c7919a843503076e137767d723ac731dd65b954ad5e5a8676b89a7f2ff1"
+      "renderHash": "79d2386a06e85068565fb4cce22c03b7207b3f2cc971eedb1169f21a4a9f7c98",
+      "renderPixelHash": "30042be61e34637de0e1ed5c4a835892c891b3d8e52f6041ca8da4531e85bfc9"
     },
     {
       "id": "card maxx  c",
-      "name": "Maxx “C”",
+      "name": "Maxx \u201cC\u201d",
       "manifestIndex": 3,
-      "sourceHash": "4f1a04157fa2d158a9fe20bab89ebd605356b5888e777d65e8499cbaf4d099ab",
+      "sourceHash": "74813378ff58ad95a1a736400471707964ef5f66c8854f8eeb700a3803adefdd",
       "artworkHash": "dda94e7d5c1b146a8f912a0e89f977c9d9d4e44b9229e67085b33e25810d4c88",
-      "render": "Maxx “C”.png",
-      "renderHash": "0c660805d698922e42efc80fbc141052ad27db34ebb41a6cba9a9681694d0648",
-      "renderPixelHash": "48612f5cd8b57efd589c6414908413f8ca2a3daa57867ffe67eeb958e0c9900f"
+      "render": "Maxx \u201cC\u201d.png",
+      "renderHash": "d2cea060e023f12e0978237ff6ff88015c93d77dfa8dcd5243577e14b45d1b92",
+      "renderPixelHash": "1b01c91d377a7564e88574b668bf33c4e202769250c09b337de67b5c2f99ba4e"
     }
   ]
 }

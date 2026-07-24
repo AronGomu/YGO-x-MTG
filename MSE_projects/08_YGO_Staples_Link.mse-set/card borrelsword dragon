@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 08_link.md
 	time_created: 2026-07-11 12:12:32
-	time_modified: 2026-07-12 11:00:00
+	time_modified: 2026-07-24 13:53:09
 	name: Borrelsword Dragon
 	casting_cost: RRWW
 	image: mse_images/image3.png
@@ -17,9 +17,9 @@ card:
 	rarity: rare
 	rule_text:
 		<i>3+ Creatures</i>
-		<i-auto>(1 - Static)</i-auto> Prevent all combat damage that would be dealt to Borrelsword.
-		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> Target 1 creature; tap the target and Borrelsword gains <b>Double Strike</b> until the end of the turn. This ability cannot be countered.
-		<i-auto>(3 - Triggered)</i-auto> <b>On Blocked</b> — Target 1 creature blocking Borrelsword; Borrelsword gains +X/+X and the target gains -X/-X until the end of the turn, where X is half the target's power, rounded down.
+		<i-auto>(1 - Static)</i-auto> Prevent all combat damage that would be dealt to <i-auto>“Borrelsword”</i-auto>.
+		<i-auto>(2 - Activated <kw-a><nospellcheck><key>Flash</key></nospellcheck></kw-a> Soft)</i-auto> <b>Target</b> 1 Creature; tap the target and <i-auto>“Borrelsword”</i-auto> gains <b>Double Strike</b> until the end of the turn. This ability cannot be countered.
+		<i-auto>(3 - Triggered)</i-auto> <b>On Blocked</b> — <b>Target</b> 1 Creature blocking <i-auto>“Borrelsword”</i-auto>; <i-auto>“Borrelsword”</i-auto> gains +X/+X and the target gains -X/-X until the end of the turn, where X is half the target's power, rounded down.
 	flavor_text: <i-flavor></i-flavor>
 	power: 6
 	toughness: 6

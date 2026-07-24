@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: docs/11_archetype_shaddoll.md
 	time_created: 2026-07-11 00:33:44
-	time_modified: 2026-07-17 22:52:39
+	time_modified: 2026-07-24 13:53:09
 	name: El Shaddoll - Anoyatyllis
 	casting_cost: 2U
 	image: image3.png
@@ -22,8 +22,8 @@ card:
 	sub_type_4: 
 	rarity: common
 	rule_text:
-		<i>1 “Shaddoll” creature + 1 blue creature</i>
-		<i-auto>(1 - Static)</i-auto> If a creature would enter the field without having been cast from a hand or a Grave, exile it instead.
+		<i>1 “Shaddoll” Creature + 1 blue Creature</i>
+		<i-auto>(1 - Static)</i-auto> If a Creature would enter the Field without having been cast from a Hand or a Grave, <b>Exile</b> it instead.
 		<i-auto>(2 - Triggered)</i-auto> <b>On Send Grave</b> — <b>Shaddoll Recovery</b>
 	flavor_text: <i-flavor></i-flavor>
 	power: 5

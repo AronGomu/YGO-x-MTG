@@ -5,7 +5,7 @@ card:
 	has_styling: false
 	notes: Source: 06_synchro.md
 	time_created: 2026-07-11 12:12:00
-	time_modified: 2026-07-18 00:28:13
+	time_modified: 2026-07-24 13:53:09
 	name: Trishula, Dragon of the Ice Barrier
 	casting_cost: 1UU
 	image: image3.png
@@ -21,7 +21,7 @@ card:
 	rule_text:
 		<i>1 Tuner + 2+ non-Tuner</i>
 		<b>Flying</b>
-		<i-auto>(1 - Triggered)</i-auto> <b>On Enter</b> — Exile up to 1 card from an opponent's hand, up to 1 card from their field, and up to 1 card from their <b>Grave</b>.
+		<i-auto>(1 - Triggered)</i-auto> <b>On Enter</b> — <b>Exile</b> up to 1 card from an opponent's Hand, up to 1 card from their Field, and up to 1 card from their Grave.
 	flavor_text: <i-flavor></i-flavor>
 	power: 5
 	toughness: 4
