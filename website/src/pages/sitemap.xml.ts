@@ -4,6 +4,8 @@ export const GET: APIRoute = ({ site }) => {
   const routes = [
     '/',
     '/updates/',
+    '/rules/',
+    '/philosophy/',
     '/legal/',
     '/feed.xml',
     ...catalog.sections.map((section) => section.route),

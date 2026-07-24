@@ -1,0 +1,60 @@
+---
+import { withBase, type GalleryCard } from '../lib/catalog';
+
+interface Props {
+  cards: GalleryCard[];
+  base: string;
+}
+
+const { cards, base } = Astro.props;
+const date = (value: string) => value.slice(0, 10);
+const groups = Object.entries(
+  Object.groupBy(cards, (card) => date(card.modified)),
+).sort(([a], [b]) => b.localeCompare(a));
+const ranks = new Map(cards.map((card, index) => [card.id, index]));
+---
+
+{
+  groups.map(([day, dayCards]) => (
+    <section class="day-group" aria-labelledby={`day-${day}`}>
+      <h2 id={`day-${day}`}>
+        {new Intl.DateTimeFormat('en', { dateStyle: 'long' }).format(
+          new Date(`${day}T12:00:00`),
+        )}
+      </h2>
+      <div class="card-grid">
+        {dayCards?.map((card) => (
+          <a
+            class="gallery-card"
+            href={withBase(base, card.route)}
+            data-card-preview={withBase(base, card.render)}
+          >
+            <picture>
+              <source
+                srcset={withBase(base, card.galleryAvif)}
+                type="image/avif"
+              />
+              <source
+                srcset={withBase(base, card.galleryWebp)}
+                type="image/webp"
+              />
+              <img
+                src={withBase(base, card.render)}
+                alt=""
+                width={card.width}
+                height={card.height}
+                loading={(ranks.get(card.id) ?? 4) < 4 ? 'eager' : 'lazy'}
+                decoding="async"
+              />
+            </picture>
+            <span class="card-caption">
+              <strong>{card.name}</strong>
+              <span>{card.superType}</span>
+              {card.support && <small>Support card</small>}
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))
+}

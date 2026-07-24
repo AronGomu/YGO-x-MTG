@@ -40,6 +40,7 @@ const explanation = catalog.explanations[card.id];
   description={`${card.name}: ${card.superType}. ${card.ruleTextPlain.slice(0, 130)}`}
   image={card.render}
   accent={section.accent}
+  theme={section.slug}
 >
   <article class="page-shell card-detail">
     <div class="render-column">

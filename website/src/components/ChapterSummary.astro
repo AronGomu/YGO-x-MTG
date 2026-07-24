@@ -1,0 +1,19 @@
+---
+interface Item {
+  href: string;
+  label: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<aside class="chapter-summary">
+  <p class="chapter-summary-title">Chapter summary</p>
+  <nav class="page-toc" aria-label="Chapter summary">
+    {items.map((item) => <a href={item.href}>{item.label}</a>)}
+  </nav>
+</aside>

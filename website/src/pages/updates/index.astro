@@ -20,6 +20,7 @@ const updates = catalog.updates.map((update) => ({
 <BaseLayout
   title="Card updates — YGO × MTG"
   description="New and meaningfully updated cards across the YGO × MTG cube catalog."
+  theme="home"
 >
   <div class="page-shell">
     <header class="section-heading">
@@ -34,7 +35,10 @@ const updates = catalog.updates.map((update) => ({
       {
         updates.map(({ card, section, status }, index) => (
           <li class="update-item">
-            <a href={withBase(base, card.route)}>
+            <a
+              href={withBase(base, card.route)}
+              data-card-preview={withBase(base, card.render)}
+            >
               <>
                 <CardPicture {card} eager={index < 3} />
                 <span class="update-meta">

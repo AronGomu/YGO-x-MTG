@@ -87,23 +87,36 @@
 
 @layer base {
   body {
-    background: var(--blackfoil);
+    position: relative;
+    isolation: isolate;
+    background: transparent;
     color: var(--cardstock);
     font-family: var(--font-body);
     font-size: 1rem;
     line-height: 1.65;
   }
-  body::before {
+  body::before,
+  body::after {
     content: '';
     position: fixed;
     inset: 0;
+    z-index: -1;
     pointer-events: none;
-    opacity: 0.28;
-    background: radial-gradient(
-      circle at 80% -10%,
-      color-mix(in oklch, var(--accent) 18%, transparent),
-      transparent 36rem
+  }
+  body::before {
+    opacity: 0.82;
+    background: var(
+      --page-atmosphere,
+      radial-gradient(
+        circle at 80% -10%,
+        color-mix(in oklch, var(--accent) 18%, transparent),
+        transparent 36rem
+      )
     );
+  }
+  body::after {
+    opacity: 0;
+    background: var(--page-pattern, none);
   }
   h1,
   h2,
@@ -206,6 +219,25 @@
   }
   .compact-brand span {
     color: var(--accent);
+  }
+  .utility-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .utility-nav a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--ruleline);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+  }
+  .utility-nav a:hover,
+  .utility-nav a[aria-current='page'] {
+    border-color: var(--accent);
+    background: var(--sleeve);
   }
   main,
   .site-footer {
@@ -608,11 +640,26 @@
     max-width: 65ch;
     color: var(--silver-ink);
   }
+  .catalog-hero-art {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--blackfoil);
+  }
   .catalog-hero img {
     width: 100%;
-    max-height: 30rem;
+    height: 100%;
     object-fit: cover;
-    border-radius: var(--radius);
+    transition: transform 600ms var(--ease-out);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .catalog-hero-art img {
+      transform: scale(1.08);
+    }
+    .catalog-hero-art:hover img {
+      transform: scale(1);
+    }
   }
   .catalog-stats {
     display: flex;
@@ -623,55 +670,6 @@
   .catalog-stats strong {
     color: var(--cardstock);
   }
-  .filters {
-    margin-block: var(--space-6);
-    border-block: 1px solid var(--ruleline);
-    padding-block: var(--space-5);
-  }
-  .filter-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-  .filter-heading h2 {
-    margin: 0;
-  }
-  .filter-grid,
-  .date-filters {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  .filters label {
-    color: var(--silver-ink);
-  }
-  .filters label input,
-  .filters label select {
-    margin-top: 0.35rem;
-  }
-  .filters details {
-    margin-top: 1rem;
-  }
-  .filters summary {
-    cursor: pointer;
-  }
-  .filters .check {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-  }
-  .filters .check input {
-    width: auto;
-    margin: 0;
-  }
-  .result-count {
-    color: var(--silver-ink);
-  }
-  .presentation-trigger {
-    border-color: var(--accent);
-  }
   .day-group {
     margin-block: var(--space-6);
   }
@@ -681,31 +679,37 @@
   }
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(100%, 14rem), min(100%, 25rem))
+    );
+    justify-content: center;
     gap: clamp(1rem, 3vw, 2rem);
   }
   .gallery-card {
+    width: 100%;
+    max-width: 25rem;
     display: grid;
     gap: 0.75rem;
     text-decoration: none;
   }
   .gallery-card picture {
-    aspect-ratio: 744 / 1039;
+    width: 100%;
+    max-width: 25rem;
   }
   .gallery-card img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
     transition:
-      transform 350ms var(--ease-out),
-      filter 350ms var(--ease-out);
+      transform 140ms var(--ease-out),
+      filter 100ms linear;
   }
   .gallery-card:hover img,
   .gallery-card:focus-visible img {
     transform: translateY(-0.45rem) rotateX(1deg);
-    filter: drop-shadow(
-      0 0.35rem 0.35rem color-mix(in oklch, var(--accent) 28%, transparent)
-    );
+    filter: drop-shadow(0 0 0.45rem var(--accent))
+      drop-shadow(0 0 1rem color-mix(in oklch, var(--accent) 75%, transparent));
   }
   .card-caption {
     display: grid;
@@ -731,54 +735,6 @@
     text-align: center;
     padding: var(--space-6) 1rem;
   }
-  .presentation-dialog {
-    width: 100vw;
-    max-width: none;
-    height: 100dvh;
-    max-height: none;
-    border: 0;
-    background: var(--blackfoil);
-    padding: 0;
-  }
-  .presentation-stage {
-    min-height: 100%;
-    display: grid;
-    grid-template-columns: minmax(20rem, 1.45fr) minmax(16rem, 0.55fr);
-    gap: clamp(1.5rem, 5vw, 5rem);
-    align-items: center;
-    padding: clamp(1rem, 4vw, 4rem);
-  }
-  .presentation-stage > img {
-    max-height: calc(100dvh - 4rem);
-    justify-self: end;
-  }
-  .presentation-stage aside {
-    max-width: 32rem;
-  }
-  .presentation-position {
-    color: var(--silver-ink);
-  }
-  .presentation-controls {
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 0.5rem;
-  }
-  .presentation-dialog.clean aside,
-  .presentation-dialog.controls-hidden .presentation-controls {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .fullscreen-error {
-    position: fixed;
-    bottom: 5rem;
-    right: 1rem;
-    background: var(--sleeve);
-    padding: 0.6rem;
-  }
   .card-detail {
     display: grid;
     grid-template-columns: minmax(18rem, 0.85fr) minmax(20rem, 1.15fr);
@@ -789,8 +745,11 @@
     position: sticky;
     top: calc(var(--header) + 2rem);
   }
+  .card-detail .render-column picture,
   .card-detail .render-column img {
-    width: min(100%, 34rem);
+    width: min(100%, 25rem);
+    max-width: 25rem;
+    height: auto;
     margin-inline: auto;
   }
   .card-transcription {
@@ -866,6 +825,8 @@
     }
     .gallery-card:hover img,
     .gallery-card:focus-visible img,
+    .catalog-hero-art img,
+    .catalog-hero-art:hover img,
     .section-tile:hover img,
     .section-tile:focus-visible img,
     .update-item a:hover img,
@@ -889,6 +850,12 @@
     overflow: hidden !important;
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 90rem) {
+  .card-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
@@ -919,7 +886,7 @@
   .catalog-hero {
     grid-template-columns: 1fr;
   }
-  .catalog-hero img {
+  .catalog-hero-art {
     max-height: 22rem;
   }
 }
@@ -940,8 +907,7 @@
   .site-footer {
     flex-direction: column;
   }
-  .section-heading,
-  .filter-heading {
+  .section-heading {
     align-items: start;
     flex-direction: column;
   }
@@ -951,17 +917,471 @@
   .card-detail .render-column {
     position: static;
   }
-  .presentation-stage {
+}
+
+/* Page atmospheres */
+html[data-theme='home'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 18% 8%,
+      oklch(0.42 0.12 146 / 0.5),
+      transparent 34rem
+    ),
+    linear-gradient(145deg, oklch(0.18 0.055 150), var(--blackfoil) 64%);
+}
+html[data-theme='home'] .section-tile::after {
+  background: linear-gradient(
+    to top,
+    oklch(0.12 0.075 150 / 0.98),
+    oklch(0.3 0.11 148 / 0.28) 62%,
+    transparent 88%
+  );
+}
+html[data-theme='creatures'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 78% 5%,
+      oklch(0.48 0.1 63 / 0.42),
+      transparent 28rem
+    ),
+    linear-gradient(
+      150deg,
+      oklch(0.24 0.07 55),
+      oklch(0.1 0.025 48) 55%,
+      var(--blackfoil)
+    );
+}
+html[data-theme='fusions'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 78% 8%,
+      oklch(0.52 0.19 320 / 0.5),
+      transparent 30rem
+    ),
+    linear-gradient(
+      145deg,
+      oklch(0.25 0.11 315),
+      oklch(0.1 0.04 310) 58%,
+      var(--blackfoil)
+    );
+}
+html[data-theme='synchro'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 75% 10%,
+      oklch(0.95 0.015 220 / 0.36),
+      transparent 30rem
+    ),
+    linear-gradient(
+      145deg,
+      oklch(0.34 0.018 225),
+      oklch(0.12 0.012 225) 56%,
+      var(--blackfoil)
+    );
+}
+html[data-theme='xyz'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 72% 8%,
+      oklch(0.32 0.08 280 / 0.58),
+      transparent 30rem
+    ),
+    linear-gradient(155deg, oklch(0.12 0.035 280), var(--blackfoil) 62%);
+  --page-pattern:
+    radial-gradient(circle, oklch(0.95 0.06 95 / 0.85) 0 1px, transparent 1.6px)
+      0 0 / 3.7rem 3.7rem,
+    radial-gradient(
+        circle,
+        oklch(0.86 0.04 250 / 0.65) 0 1.4px,
+        transparent 2px
+      )
+      1.8rem 1rem / 5.2rem 5.2rem;
+}
+html[data-theme='link'] {
+  --page-atmosphere: linear-gradient(
+    145deg,
+    oklch(0.27 0.015 235),
+    oklch(0.1 0.01 235) 62%,
+    var(--blackfoil)
+  );
+  --page-pattern:
+    linear-gradient(oklch(0.7 0.03 220 / 0.11) 1px, transparent 1px) 0 0 / 3rem
+      3rem,
+    linear-gradient(90deg, oklch(0.7 0.03 220 / 0.11) 1px, transparent 1px) 0
+      0 / 3rem 3rem,
+    linear-gradient(
+        45deg,
+        transparent 49.5%,
+        oklch(0.72 0.04 220 / 0.08) 50%,
+        transparent 50.5%
+      )
+      0 0 / 6rem 6rem;
+}
+html[data-theme='non-creature'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 72% 10%,
+      oklch(0.52 0.15 151 / 0.45),
+      transparent 28rem
+    ),
+    linear-gradient(
+      145deg,
+      oklch(0.23 0.09 151),
+      oklch(0.09 0.025 150) 60%,
+      var(--blackfoil)
+    );
+}
+html[data-theme='burning-abyss'] {
+  --page-atmosphere:
+    radial-gradient(
+      ellipse at 20% 100%,
+      oklch(0.62 0.22 35 / 0.58),
+      transparent 32%
+    ),
+    radial-gradient(
+      ellipse at 58% 112%,
+      oklch(0.5 0.2 25 / 0.48),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 88% 100%,
+      oklch(0.72 0.16 65 / 0.35),
+      transparent 26%
+    ),
+    linear-gradient(to top, oklch(0.22 0.08 30), var(--blackfoil) 70%);
+}
+html[data-theme='nekroz'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 76% -4%,
+      oklch(0.94 0.055 210 / 0.72),
+      transparent 25rem
+    ),
+    radial-gradient(
+      ellipse at 12% 92%,
+      oklch(0.68 0.15 230 / 0.46),
+      transparent 34rem
+    ),
+    linear-gradient(
+      145deg,
+      oklch(0.31 0.12 224),
+      oklch(0.12 0.065 237) 58%,
+      oklch(0.055 0.025 245)
+    );
+  --page-pattern:
+    linear-gradient(
+        117deg,
+        transparent 49.6%,
+        oklch(0.91 0.07 210 / 0.14) 49.8% 50.2%,
+        transparent 50.4%
+      )
+      0 0 / 17rem 13rem,
+    linear-gradient(
+        63deg,
+        transparent 49.6%,
+        oklch(0.82 0.1 220 / 0.11) 49.8% 50.2%,
+        transparent 50.4%
+      )
+      2rem 1rem / 17rem 13rem,
+    radial-gradient(
+        circle,
+        oklch(0.98 0.025 205 / 0.48) 0 1px,
+        transparent 1.7px
+      )
+      0 0 / 5rem 5rem;
+}
+html[data-theme='shaddoll'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 72% 8%,
+      oklch(0.46 0.18 315 / 0.4),
+      transparent 30rem
+    ),
+    linear-gradient(
+      145deg,
+      oklch(0.21 0.08 312),
+      oklch(0.09 0.025 310) 62%,
+      var(--blackfoil)
+    );
+  --page-pattern:
+    linear-gradient(oklch(0.73 0.15 315 / 0.075) 1px, transparent 1px) 0 0 /
+      4rem 4rem,
+    linear-gradient(90deg, oklch(0.73 0.15 315 / 0.075) 1px, transparent 1px) 0
+      0 / 4rem 4rem;
+}
+html[data-theme='spellbook'] {
+  --page-atmosphere:
+    radial-gradient(
+      circle at 75% 5%,
+      oklch(0.66 0.14 168 / 0.4),
+      transparent 30rem
+    ),
+    radial-gradient(
+      circle at 15% 90%,
+      oklch(0.42 0.12 142 / 0.3),
+      transparent 32rem
+    ),
+    linear-gradient(
+      145deg,
+      oklch(0.2 0.075 158),
+      oklch(0.085 0.025 155) 64%,
+      var(--blackfoil)
+    );
+}
+html[data-theme='xyz'] body::after,
+html[data-theme='link'] body::after,
+html[data-theme='nekroz'] body::after,
+html[data-theme='shaddoll'] body::after {
+  opacity: 1;
+}
+html[data-theme='spellbook'] body::after {
+  content: 'ᚠ  ᚢ  ᚦ  ᚨ  ᚱ  ᚲ  ✦  ᚷ  ᚹ  ᚺ  ᚾ  ᛁ  ᛃ  ᛇ  ᛈ  ᛉ  ᛋ  ᛏ  ᛒ  ᛖ  ᛗ  ᛚ  ᛜ  ᛟ  ᛞ';
+  inset: 8rem 2rem auto calc(var(--sidebar) + 2rem);
+  color: oklch(0.8 0.12 165 / 0.12);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 4vw, 3.5rem);
+  line-height: 3;
+  letter-spacing: 0.8rem;
+  overflow: hidden;
+  opacity: 1;
+  transform: rotate(-8deg);
+}
+
+/* Card presentation */
+.update-list {
+  justify-items: center;
+}
+.update-item,
+.snapshot-item,
+.update-item picture,
+.snapshot-item picture {
+  width: 100%;
+  max-width: 25rem;
+}
+.update-item img,
+.snapshot-item img,
+.zoom-dialog img {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  object-fit: contain;
+}
+.update-item img,
+.snapshot-item img {
+  transition:
+    transform 140ms var(--ease-out),
+    filter 100ms linear;
+}
+.update-item:hover img,
+.update-item:focus-within img,
+.snapshot-item:hover img,
+.snapshot-item:focus-within img {
+  filter: drop-shadow(0 0 0.45rem var(--accent))
+    drop-shadow(0 0 1rem color-mix(in oklch, var(--accent) 75%, transparent));
+}
+html[data-theme='nekroz'] .gallery-card picture,
+html[data-theme='nekroz'] .update-item picture,
+html[data-theme='nekroz'] .snapshot-item picture,
+html[data-theme='nekroz'] .render-column picture {
+  border-radius: 0.7rem;
+  box-shadow:
+    0 0 0 1px oklch(0.91 0.08 215 / 0.75),
+    0 0 0.75rem oklch(0.83 0.12 215 / 0.52),
+    inset 0 0 0.45rem oklch(0.98 0.025 210 / 0.62);
+}
+.card-hover-preview {
+  position: fixed;
+  z-index: var(--z-tooltip);
+  left: var(--preview-left, 1rem);
+  top: var(--preview-top, 1rem);
+  width: min(25rem, calc(100vw - 2rem));
+  max-width: 25rem;
+  height: auto;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.96);
+  filter: drop-shadow(0 0 0.55rem var(--accent))
+    drop-shadow(0 1rem 1.6rem oklch(0.02 0 0 / 0.8));
+  transition:
+    opacity 100ms linear,
+    transform 120ms var(--ease-out);
+}
+.card-hover-preview.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Homepage carousel */
+.carousel-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.new-card-carousel {
+  display: flex;
+  grid-template-columns: none;
+  justify-content: start;
+  gap: var(--space-4);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-color: var(--accent) var(--sleeve);
+  padding: 0.75rem 0 1.25rem;
+}
+.new-card-carousel .update-item {
+  flex: 0 0 min(18rem, 78vw);
+  scroll-snap-align: start;
+}
+
+/* Editorial pages */
+.info-page {
+  max-width: 84rem;
+}
+.info-page > header {
+  max-width: 76ch;
+}
+.info-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15.5rem;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+  margin-top: var(--space-5);
+}
+.info-content {
+  min-width: 0;
+  max-width: 76ch;
+}
+.info-content > section {
+  border-top: 1px solid var(--ruleline);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  scroll-margin-top: calc(var(--header) + 1rem);
+}
+.info-content > section:first-child {
+  margin-top: 0;
+}
+.info-page .lede {
+  max-width: 60ch;
+  color: var(--cardstock);
+  font: 1.25rem/1.6 var(--font-display);
+}
+.chapter-summary {
+  position: sticky;
+  top: calc(var(--header) + 1rem);
+  max-height: calc(100vh - var(--header) - 2rem);
+  overflow: auto;
+  border: 1px solid var(--ruleline);
+  border-radius: var(--radius);
+  background: color-mix(in oklch, var(--blackfoil-raised) 92%, transparent);
+  padding: 1rem 0.9rem;
+}
+.chapter-summary-title {
+  margin: 0 0 0.75rem;
+  color: var(--silver-ink);
+  font: 0.78rem/1.2 var(--font-display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.page-toc {
+  display: grid;
+  gap: 0.35rem;
+}
+.page-toc a {
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.55rem;
+  color: var(--cardstock);
+  text-decoration: none;
+}
+.page-toc a:hover,
+.page-toc a:focus-visible {
+  border-color: var(--accent);
+  background: var(--sleeve);
+}
+@media (max-width: 64rem) {
+  .info-layout {
     grid-template-columns: 1fr;
-    align-content: start;
-    overflow-y: auto;
   }
-  .presentation-stage > img {
-    max-height: 68dvh;
-    justify-self: center;
+  .chapter-summary {
+    position: static;
+    max-height: none;
+    order: -1;
   }
-  .presentation-stage aside {
-    padding-bottom: 5rem;
+  .page-toc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.rule-glossary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1px;
+  background: var(--ruleline);
+}
+.rule-glossary div {
+  background: color-mix(in oklch, var(--blackfoil-raised) 90%, transparent);
+  padding: 1rem;
+}
+.rule-glossary dt {
+  font-weight: 700;
+}
+.rule-glossary dd {
+  color: var(--silver-ink);
+  margin: 0.3rem 0 0;
+}
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: var(--space-4);
+}
+.principle-grid article {
+  border-top: 1px solid var(--accent);
+}
+
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main {
+  animation: page-fade-in 220ms ease-out both;
+}
+
+@media (hover: none), (pointer: coarse), (max-width: 58rem) {
+  .card-hover-preview {
+    display: none;
+  }
+}
+
+@media (max-width: 44rem) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    padding-block: 0.55rem;
+  }
+  .utility-nav {
+    gap: 0.25rem;
+  }
+  .utility-nav a {
+    min-height: 2.45rem;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.5rem;
+  }
+  html[data-theme='spellbook'] body::after {
+    left: 1rem;
   }
 }
 

@@ -5,7 +5,7 @@ describe('English publication graph', () => {
   it('registers ten sections in required navigation order', () => {
     expect(catalog.sections.map((section) => section.label)).toEqual([
       'Creatures',
-      'Fusions',
+      'Fusion',
       'Synchro',
       'Xyz',
       'Link',
@@ -15,6 +15,15 @@ describe('English publication graph', () => {
       'Shaddoll',
       'Spellbook',
     ]);
+  });
+  it('uses requested archetype hero cards', () => {
+    expect(
+      catalog.sections.find((section) => section.slug === 'burning-abyss')
+        ?.iconicId,
+    ).toBe('burning-abyss-dante');
+    expect(
+      catalog.sections.find((section) => section.slug === 'shaddoll')?.iconicId,
+    ).toBe('el-shaddoll-construct');
   });
   it('publishes globally unique card ids and names', () => {
     expect(new Set(catalog.cards.map((card) => card.id)).size).toBe(

@@ -6,7 +6,7 @@ import { catalog, cardsById, withBase, formatDate } from '../lib/catalog';
 
 const base = import.meta.env.BASE_URL;
 const latest = catalog.updates
-  .slice(0, 12)
+  .filter((update) => update.status === 'new')
   .map((update) => ({ ...update, card: cardsById.get(update.cardId)! }));
 const heroSection = catalog.sections.find(
   (section) => section.slug === 'nekroz',
@@ -17,7 +17,8 @@ const heroSection = catalog.sections.find(
   title="YGO × MTG — The Blackfoil Archive"
   description="Faithful Yu-Gi-Oh! gameplay identities rebuilt as playable Magic cards."
   image={heroSection.image}
-  accent="ice"
+  accent="relic"
+  theme="home"
 >
   <section class="hero">
     <img
@@ -45,20 +46,44 @@ const heroSection = catalog.sections.find(
     </div>
   </section>
 
-  <section class="page-shell">
+  <section class="page-shell" aria-labelledby="new-cards-heading">
     <div class="section-heading">
       <div>
-        <h2>Latest from the archive</h2><p>
-          New additions and meaningful card changes, ordered by source
-          modification date.
+        <h2 id="new-cards-heading">New cards</h2><p>
+          New additions, ordered by source modification date. Scroll or use the
+          controls to browse the full row.
         </p>
-      </div><a href={withBase(base, '/updates/')}>View all updates →</a>
+      </div>
+      <div class="carousel-controls" aria-label="New card carousel controls">
+        <button
+          type="button"
+          data-carousel-previous
+          aria-controls="new-card-carousel"
+          aria-label="Previous cards">←</button
+        >
+        <button
+          type="button"
+          data-carousel-next
+          aria-controls="new-card-carousel"
+          aria-label="Next cards">→</button
+        >
+        <a href={withBase(base, '/updates/')}>View all updates</a>
+      </div>
     </div>
-    <ul class="update-list">
+    <ul
+      id="new-card-carousel"
+      class="update-list new-card-carousel"
+      data-card-carousel
+      tabindex="0"
+      aria-label="New cards"
+    >
       {
         latest.map(({ card, status }, index) => (
           <li class="update-item">
-            <a href={withBase(base, card.route)}>
+            <a
+              href={withBase(base, card.route)}
+              data-card-preview={withBase(base, card.render)}
+            >
               <>
                 <CardPicture card={card} eager={index < 3} />
                 <span class="update-meta">
@@ -120,3 +145,31 @@ const heroSection = catalog.sections.find(
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  const carousel = document.querySelector<HTMLElement>('[data-card-carousel]');
+  const scroll = (direction: number) => {
+    carousel?.scrollBy({
+      left: direction * Math.max(288, carousel.clientWidth * 0.8),
+      behavior: 'smooth',
+    });
+  };
+  document
+    .querySelector('[data-carousel-previous]')
+    ?.addEventListener('click', () => scroll(-1));
+  document
+    .querySelector('[data-carousel-next]')
+    ?.addEventListener('click', () => scroll(1));
+  carousel?.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      scroll(event.key === 'ArrowLeft' ? -1 : 1);
+    } else if (event.key === 'Home' || event.key === 'End') {
+      event.preventDefault();
+      carousel.scrollTo({
+        left: event.key === 'Home' ? 0 : carousel.scrollWidth,
+        behavior: 'smooth',
+      });
+    }
+  });
+</script>

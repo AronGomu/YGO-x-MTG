@@ -1,4 +1,5 @@
 ---
+import CardHoverPreview from '../components/CardHoverPreview.astro';
 import Navigation from '../components/Navigation.svelte';
 import SearchPalette from '../components/SearchPalette.svelte';
 import Seo from '../components/Seo.astro';
@@ -10,8 +11,15 @@ interface Props {
   description: string;
   image?: string;
   accent?: string;
+  theme?: string;
 }
-const { title, description, image, accent = 'relic' } = Astro.props;
+const {
+  title,
+  description,
+  image,
+  accent = 'relic',
+  theme = 'archive',
+} = Astro.props;
 const base = import.meta.env.BASE_URL;
 const navSections = catalog.sections.map(
   ({ slug, label, kind, route, count }) => ({
@@ -22,6 +30,11 @@ const navSections = catalog.sections.map(
     count,
   }),
 );
+const informationPage = Astro.url.pathname.endsWith('/rules/')
+  ? 'rules'
+  : Astro.url.pathname.endsWith('/philosophy/')
+    ? 'philosophy'
+    : undefined;
 const searchCards = catalog.cards.map(
   ({ id, name, matchNames, route, sectionSlug, manifestIndex }) => ({
     id,
@@ -35,7 +48,7 @@ const searchCards = catalog.cards.map(
 ---
 
 <!doctype html>
-<html lang="en" data-accent={accent}>
+<html lang="en" data-accent={accent} data-theme={theme}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -56,9 +69,22 @@ const searchCards = catalog.cards.map(
     />
     <header class="site-header">
       <a class="compact-brand" href={base}>YGO <span>×</span> MTG</a>
+      <nav class="utility-nav" aria-label="Information">
+        <a
+          href={`${base}rules/`}
+          aria-current={informationPage === 'rules' ? 'page' : undefined}
+          >Rules</a
+        >
+        <a
+          href={`${base}philosophy/`}
+          aria-current={informationPage === 'philosophy' ? 'page' : undefined}
+          >Philosophy</a
+        >
+      </nav>
       <SearchPalette client:load cards={searchCards} {base} />
     </header>
     <main id="main-content"><slot /></main>
+    <CardHoverPreview />
     <footer class="site-footer">
       <p>
         Fan-made card-design archive. Yu-Gi-Oh! and Magic: The Gathering remain

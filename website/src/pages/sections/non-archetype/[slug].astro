@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import FilterGallery from '../../../components/FilterGallery.svelte';
+import CardGallery from '../../../components/CardGallery.astro';
 import {
   catalog,
   cardsById,
@@ -26,6 +26,7 @@ const base = import.meta.env.BASE_URL;
   description={section.intro}
   image={section.image}
   accent={section.accent}
+  theme={section.slug}
 >
   <div class="page-shell">
     <section class="catalog-hero">
@@ -50,14 +51,16 @@ const base = import.meta.env.BASE_URL;
           )
         }
       </div>
-      <img
-        src={withBase(base, section.image)}
-        alt={`${section.label} iconic card artwork`}
-        width="1200"
-        height="800"
-        fetchpriority="high"
-      />
+      <div class="catalog-hero-art">
+        <img
+          src={withBase(base, section.image)}
+          alt={`${section.label} iconic card artwork`}
+          width="1200"
+          height="800"
+          fetchpriority="high"
+        />
+      </div>
     </section>
-    <FilterGallery client:load {cards} {base} accent={section.accent} />
+    <CardGallery {cards} {base} />
   </div>
 </BaseLayout>

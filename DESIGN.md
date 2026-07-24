@@ -55,7 +55,7 @@ Use a full palette with disciplined jurisdiction. Shell neutrals establish one d
 
 **The One Atmosphere Rule.** One section accent family may dominate a page. Other section colors appear only as navigation signposts.
 
-**The Catalog Order Rule.** Left navigation shows a collapsible **Non-Archetype** parent first, then its six child sections in fixed order: Creatures, Fusions, Synchro, Xyz, Link, Non-creature. Below that, defined archetypes list alphabetically. Cards belong to a defined-archetype gallery only when their owning MSE project is one of the registered archetype projects; every other published card lives under Non-Archetype.
+**The Catalog Order Rule.** Left navigation shows a collapsible **Non-Archetype** parent first, then its six child sections in fixed order: Creatures, Fusion, Synchro, Xyz, Link, Non-creature. Below that, defined archetypes list alphabetically. Cards belong to a defined-archetype gallery only when their owning MSE project is one of the registered archetype projects; every other published card lives under Non-Archetype.
 
 **The Neutral Night Rule.** Dark substrate is chroma-zero. Mood comes from imagery and named accents, not a purple or navy wash.
 

@@ -1,0 +1,315 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ChapterSummary from '../../components/ChapterSummary.astro';
+
+const chapters = [
+  { href: '#setup', label: 'Setup' },
+  { href: '#face-down', label: 'Face-down cards' },
+  { href: '#traps', label: 'Traps' },
+  { href: '#summons', label: 'Special summons' },
+  { href: '#timing', label: 'Timing' },
+  { href: '#actions', label: 'Cube actions' },
+  { href: '#archetypes', label: 'Archetypes' },
+];
+---
+
+<BaseLayout
+  title="Cube rules — YGO × MTG"
+  description="Rules unique to the YGO × MTG cube, including face-down cards, Traps, Extra Deck summons, timing, and archetype mechanics."
+  theme="home"
+>
+  <article class="page-shell info-page">
+    <header>
+      <p>YGO × MTG</p>
+      <h1>Cube rules</h1>
+      <p class="lede">
+        Normal Magic rules apply unless this page says otherwise. Card text uses
+        Yu-Gi-Oh! timing and identity inside Magic’s stack, zones, combat, and
+        turn structure.
+      </p>
+    </header>
+
+    <div class="info-layout">
+      <div class="info-content">
+        <section id="setup">
+          <h2>Setup and mulligan</h2>
+          <p>
+            This is a closed, high-power cube. Extra Deck cards—Fusion, Synchro,
+            Xyz, and Link Creatures—start in the Sideboard, which represents the
+            Extra Deck. Ritual Creatures remain in the Main Deck.
+          </p>
+          <h3>Cube mulligan</h3>
+          <ol>
+            <li>
+              Once before the game, choose any number of cards in your opening
+              hand.
+            </li>
+            <li>Put those cards on the bottom of your Deck in any order.</li>
+            <li>Draw the same number of cards. Do not shuffle.</li>
+          </ol>
+        </section>
+
+        <section id="face-down">
+          <h2>Face-down creatures</h2>
+          <ul>
+            <li>Any creature may be cast face down for its normal cost.</li>
+            <li>
+              Face down, it has no name, color, type, ability, power, or
+              toughness.
+            </li>
+            <li>
+              It cannot be Flipped during the turn it enters. From the next
+              turn, its controller may Flip it at sorcery speed.
+            </li>
+            <li>
+              A face-down creature may be Fusion or Ritual material, but not
+              Synchro or Xyz material.
+            </li>
+            <li>
+              <strong>Flip</strong> triggers when the creature turns face up.
+            </li>
+          </ul>
+        </section>
+
+        <section id="traps">
+          <h2>Trap cards</h2>
+          <p>
+            Trap is a supertype, such as <code>Trap Instant</code> or
+            <code>Trap Enchantment</code>. A Trap cannot normally be cast from
+            hand.
+          </p>
+          <ol>
+            <li>
+              <strong>Set</strong> it face down on the field as a special action.
+              Setting does not use the stack, pay its casting cost, or count as a
+              cast.
+            </li>
+            <li>
+              While face down, it is a nameless, colorless, typeless nonland,
+              noncreature permanent with no abilities or mana value.
+            </li>
+            <li>
+              Starting on the following turn, turn it face up and cast it from
+              the field at instant speed, paying normal costs. This uses the
+              stack and counts as a cast from the field.
+            </li>
+            <li>
+              Trap Instants and Sorceries go to Grave after resolving. Trap
+              permanents enter face up. Explicit same-turn permission removes
+              only the one-turn wait.
+            </li>
+          </ol>
+        </section>
+
+        <section id="summons">
+          <h2>Special summons and the Extra Deck</h2>
+          <p>
+            Fusion, Synchro, Xyz, Link, and Ritual Creatures must be properly
+            summoned by their named method before another effect can cast or put
+            them onto the field. “Ignoring the restrictions of Summon” allows
+            the immediate move, but does not make it a proper summon for later
+            returns.
+          </p>
+          <dl class="rule-glossary">
+            <div>
+              <dt>Ritual Summon</dt><dd>
+                Use listed materials; their total MV equals the Ritual
+                Creature’s MV unless the card allows more.
+              </dd>
+            </div>
+            <div>
+              <dt>Fusion Summon</dt><dd>
+                Move a Fusion Creature from Sideboard to field using its listed
+                materials and zones.
+              </dd>
+            </div>
+            <div>
+              <dt>Synchro Summon</dt><dd>
+                Use 1 Tuner plus listed non-Tuners whose total MV equals the
+                Synchro Creature’s MV.
+              </dd>
+            </div>
+            <div>
+              <dt>Xyz Summon</dt><dd>
+                Use listed same-MV creatures, placing them under the Xyz
+                Creature as materials. <strong>Detach X</strong> sends X materials
+                to Grave.
+              </dd>
+            </div>
+            <div>
+              <dt>Link Summon</dt><dd>
+                Use the number and kind of materials on the card. Link level
+                appears in its type line.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section id="timing">
+          <h2>Abilities, timing, and limits</h2>
+          <p>
+            Numbered abilities identify type, timing, and frequency. Costs and
+            targets appear before a semicolon; resolution follows it. Targeting
+            is never itself a cost.
+          </p>
+          <ul>
+            <li><strong>Static:</strong> always active.</li>
+            <li>
+              <strong>Activated Ritual:</strong> activate at sorcery speed.
+            </li>
+            <li>
+              <strong>Activated Flash:</strong> activate at instant speed.
+            </li>
+            <li><strong>Triggered:</strong> triggers from its named event.</li>
+            <li><strong>Soft:</strong> once per turn for that object.</li>
+            <li>
+              <strong>Hard:</strong> once per turn across cards with that name.
+            </li>
+            <li>
+              <strong>Hard Linked:</strong> use only one linked ability of that named
+              card each turn.
+            </li>
+          </ul>
+          <h3>Common events</h3>
+          <p>
+            <strong>On Cast</strong> means your spells; Opponent and Any change the
+            controller scope. <strong>On Send Grave</strong> includes every route
+            to Grave; <strong>On Send Grave by Effect</strong> excludes costs and
+            rules actions. <strong>On Fusion Summon</strong> and
+            <strong>On Link Summon</strong>
+            require the proper named summon, not an effect that merely puts the card
+            onto the field. Other event labels—On Destroy, On Leave Field, On Upkeep,
+            On End Step, On Blocked, On Block or Blocked, and On Opponent Summon—use
+            their literal Magic event.
+          </p>
+        </section>
+
+        <section id="actions">
+          <h2>Cube action glossary</h2>
+          <dl class="rule-glossary">
+            <div>
+              <dt>Summon</dt><dd>
+                Put the indicated card onto the field without casting or paying
+                its mana cost.
+              </dd>
+            </div>
+            <div>
+              <dt>Hand Summon</dt><dd>
+                Summon the indicated creature from hand.
+              </dd>
+            </div>
+            <div>
+              <dt>Reanimate</dt><dd>
+                Return the targeted card from Grave to field.
+              </dd>
+            </div>
+            <div>
+              <dt>Salvage</dt><dd>
+                Return the indicated card from Grave to hand.
+              </dd>
+            </div>
+            <div>
+              <dt>Reclaim</dt><dd>
+                Return the indicated card from exile to hand.
+              </dd>
+            </div>
+            <div>
+              <dt>Release</dt><dd>
+                Put the indicated exiled card onto the field.
+              </dd>
+            </div>
+            <div>
+              <dt>Mill N</dt><dd>
+                Send N cards from the top of your Deck to Grave.
+              </dd>
+            </div>
+            <div>
+              <dt>Attach</dt><dd>
+                Attach the indicated card to an Xyz Creature as material.
+              </dd>
+            </div>
+            <div>
+              <dt>Bounce</dt><dd>
+                Return the indicated permanent to its owner’s hand.
+              </dd>
+            </div>
+            <div>
+              <dt>Negate</dt><dd>
+                Counter a spell or ability; for a permanent, remove its
+                abilities and counter its abilities on the stack.
+              </dd>
+            </div>
+            <div>
+              <dt>Negate &amp; Destroy</dt><dd>
+                Negate, then destroy the source when it is in field, hand, Deck,
+                or Sideboard.
+              </dd>
+            </div>
+            <div>
+              <dt>Effect Indestructible</dt><dd>
+                Cannot be destroyed by spells or abilities; combat and
+                non-effect rules may still destroy it.
+              </dd>
+            </div>
+            <div>
+              <dt>Bounded X</dt><dd>
+                Choose up to X creatures linked to a bounder. Their bonus lasts
+                only while that bounder remains on field.
+              </dd>
+            </div>
+            <div>
+              <dt>Exile from Grave</dt><dd>
+                Activate in Grave and exile this card as a cost.
+              </dd>
+            </div>
+            <div>
+              <dt>Slow Blink X Any Creature</dt><dd>
+                Target 0–X creatures; exile them until next end step, then
+                return them under their owners’ control.
+              </dd>
+            </div>
+          </dl>
+          <p>
+            Unqualified hand, Deck, Grave, and exile mean your corresponding
+            zone. The battlefield is shared. <strong>Alternative Cost</strong>
+            replaces a normal casting cost only as printed.
+          </p>
+        </section>
+
+        <section id="archetypes">
+          <h2>Archetype-specific rules</h2>
+          <h3>Burning Abyss</h3>
+          <p>
+            <strong>Descent:</strong> at sorcery speed, if you have not Summoned a
+            “Burning Abyss” creature this turn, Summon this card from hand.
+            <strong>Abyssal Curse:</strong> if you control another creature without
+            “Burning Abyss” in its name, destroy this creature. Abyssal Curse applies
+            to non-Ritual Main Deck Burning Abyss creatures.
+          </p>
+          <h3>Shaddoll</h3>
+          <p>
+            <strong>Shaddoll Recovery:</strong> On Send Grave, Salvage 1 non-creature
+            “Shaddoll”. On Send Grave by Effect remains a separate event.
+          </p>
+          <h3>Nekroz</h3>
+          <p>
+            Nekroz Ritual Creatures can be cast only through Ritual Summon.
+            Unless a card says otherwise, each effect of a named Nekroz creature
+            is usable once per turn. <strong>Nekroz Recovery:</strong> if you control
+            no creatures, exile this card and 1 other “Nekroz” from Grave to Search
+            1 non-creature Ritual Summon “Nekroz”.
+          </p>
+          <h3>Spellbook</h3>
+          <p>
+            <strong>Spell Affinity</strong> appears only on eligible Spellbook Sorceries.
+            If you control 1 “Spellbook” creature, you may cast that spell without
+            paying its mana cost. Use this alternative cost only once each turn. Cards
+            without the printed keyword do not gain it.
+          </p>
+        </section>
+      </div>
+
+      <ChapterSummary items={chapters} />
+    </div>
+  </article>
+</BaseLayout>

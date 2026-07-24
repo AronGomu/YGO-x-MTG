@@ -47,6 +47,8 @@ test('primary routes pass automated a11y scans', async ({
     '/archetypes/nekroz/',
     '/cards/nekroz-trishula/',
     '/updates/',
+    '/rules/',
+    '/philosophy/',
     '/archetypes/nekroz/snapshots/001-2026-07-17/',
   ]) {
     await page.goto(urlFor(route));
@@ -62,11 +64,13 @@ test('forced colors preserve readable controls', async ({
   test.skip(browserName !== 'chromium', 'forced-colors coverage runs once');
   await page.emulateMedia({ forcedColors: 'active', reducedMotion: 'reduce' });
   await page.goto(urlFor('/archetypes/nekroz/'));
-  const trigger = page.getByRole('button', { name: /Present filtered cards/ });
-  await expect(trigger).toBeVisible();
-  await trigger.focus();
+  const firstCard = page.locator('.gallery-card').first();
+  await expect(firstCard).toBeVisible();
+  await firstCard.focus();
   expect(
-    await trigger.evaluate((element) => getComputedStyle(element).outlineStyle),
+    await firstCard.evaluate(
+      (element) => getComputedStyle(element).outlineStyle,
+    ),
   ).not.toBe('none');
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth),
@@ -92,26 +96,82 @@ test('global search keyboard shortcut opens card-name combobox', async ({
   await expect(page.getByRole('option').first()).toContainText('Trishula');
 });
 
-test('Nekroz filters persist and presentation restores focus', async ({
+test('Nekroz gallery removes filters and preserves card proportions', async ({
   page,
 }) => {
-  await page.goto(urlFor('/archetypes/nekroz/?q=Trishula'));
-  await expect(page.getByLabel('Name', { exact: true })).toHaveValue(
-    'Trishula',
+  await page.goto(urlFor('/archetypes/nekroz/'));
+  await expect(page.getByText('Refine this section')).toHaveCount(0);
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'nekroz');
+  const heroFrame = page.locator('.catalog-hero-art');
+  const heroImage = heroFrame.locator('img');
+  const frameBeforeHover = await heroFrame.boundingBox();
+  const transformBeforeHover = await heroImage.evaluate(
+    (element) => getComputedStyle(element).transform,
   );
-  await expect(page).toHaveURL(/q=Trishula/);
-  await page.getByLabel('Name', { exact: true }).fill('Brionac');
-  await expect(page).toHaveURL(/q=Brionac/);
-  await page.reload();
-  await expect(page.getByLabel('Name', { exact: true })).toHaveValue('Brionac');
-  await expect(page.getByText('1 card shown')).toBeVisible();
-  const trigger = page.getByRole('button', { name: /Present filtered cards/ });
-  await trigger.click();
+  await heroFrame.hover();
+  await expect
+    .poll(() =>
+      heroImage.evaluate((element) => getComputedStyle(element).transform),
+    )
+    .not.toBe(transformBeforeHover);
+  expect(await heroFrame.boundingBox()).toEqual(frameBeforeHover);
+  const card = page.locator('.gallery-card').first();
+  const image = card.locator('img');
+  const size = await image.evaluate((element: HTMLImageElement) => ({
+    displayedWidth: element.getBoundingClientRect().width,
+    displayedHeight: element.getBoundingClientRect().height,
+    naturalWidth: element.naturalWidth,
+    naturalHeight: element.naturalHeight,
+  }));
+  expect(size.displayedWidth).toBeLessThanOrEqual(400);
+  expect(size.displayedWidth / size.displayedHeight).toBeCloseTo(
+    size.naturalWidth / size.naturalHeight,
+    2,
+  );
+  await card.hover();
+  await expect(page.locator('.card-hover-preview')).toHaveClass(/is-visible/);
+});
+
+test('home exposes rules, philosophy, and single-row new-card carousel', async ({
+  page,
+}) => {
+  await page.goto(urlFor('/'));
+  await expect(page.getByRole('link', { name: 'Rules' })).toHaveAttribute(
+    'href',
+    /rules\/$/,
+  );
+  await expect(page.getByRole('link', { name: 'Philosophy' })).toHaveAttribute(
+    'href',
+    /philosophy\/$/,
+  );
+  const carousel = page.getByRole('list', { name: 'New cards' });
+  await expect(carousel).toHaveCSS('display', 'flex');
+  await expect(carousel).toHaveCSS('overflow-x', 'auto');
+});
+
+test('rules and philosophy expose sticky chapter summary', async ({ page }) => {
+  await page.goto(urlFor('/rules/'));
+  const rulesToc = page.getByRole('navigation', { name: 'Chapter summary' });
+  await expect(rulesToc).toBeVisible();
+  await expect(rulesToc.getByRole('link', { name: 'Traps' })).toHaveAttribute(
+    'href',
+    '#traps',
+  );
+  await rulesToc.getByRole('link', { name: 'Traps' }).click();
+  await expect(page.locator('#traps')).toBeInViewport();
+
+  await page.goto(urlFor('/philosophy/'));
+  const philosophyToc = page.getByRole('navigation', {
+    name: 'Chapter summary',
+  });
+  await expect(philosophyToc).toBeVisible();
   await expect(
-    page.getByRole('dialog', { name: /Nekroz - Brionac/ }),
-  ).toBeVisible();
-  await page.getByRole('button', { name: 'Close' }).click();
-  await expect(trigger).toBeFocused();
+    philosophyToc.getByRole('link', { name: 'What the cube avoids' }),
+  ).toHaveAttribute('href', '#avoids');
+  await philosophyToc
+    .getByRole('link', { name: 'What the cube avoids' })
+    .click();
+  await expect(page.locator('#avoids')).toBeInViewport();
 });
 
 test('card detail opens full-size dialog and restores focus', async ({

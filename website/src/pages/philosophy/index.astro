@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ChapterSummary from '../../components/ChapterSummary.astro';
+
+const chapters = [
+  { href: '#identity', label: 'Identity before translation' },
+  { href: '#environment', label: 'Powerful environment' },
+  { href: '#pace', label: 'YGO pace, Magic structure' },
+  { href: '#archetypes', label: 'Archetype promises' },
+  { href: '#source', label: 'Source-backed design' },
+  { href: '#avoids', label: 'What the cube avoids' },
+];
+---
+
+<BaseLayout
+  title="Cube philosophy — YGO × MTG"
+  description="Design philosophy behind translating Yu-Gi-Oh! identities into a high-power Magic cube."
+  theme="home"
+>
+  <article class="page-shell info-page philosophy-page">
+    <header>
+      <p>YGO × MTG</p>
+      <h1>Cube philosophy</h1>
+      <p class="lede">
+        Preserve how a Yu-Gi-Oh! card feels, not every literal line. Rebuild its
+        role inside Magic’s rules until it is recognizable, interactive, and
+        worth drafting.
+      </p>
+    </header>
+
+    <div class="info-layout">
+      <div class="info-content">
+        <section id="identity">
+          <h2>Identity before translation</h2>
+          <p>
+            This cube is adaptation, not transcription. Names, themes, signature
+            play patterns, and tactical purpose survive. Costs, statistics,
+            timing, and wording change when Magic’s engine needs them to. A
+            successful card creates the same decision or emotional beat without
+            pretending both games share a rules system.
+          </p>
+        </section>
+
+        <section id="environment">
+          <h2>A closed, intentionally powerful environment</h2>
+          <p>
+            Cards are balanced against this cube, not normal Limited. Games
+            support several actions per turn, fast development, frequent Extra
+            Deck summons, strong tutors, and graveyard recursion. Interaction
+            must be equally strong so speed creates decisions rather than
+            deterministic openings, infinite loops, or non-games.
+          </p>
+        </section>
+
+        <section id="pace">
+          <h2>Yu-Gi-Oh! pace, Magic structure</h2>
+          <div class="principle-grid">
+            <article>
+              <h3>Readable compression</h3>
+              <p>
+                Repeated long effects become stable cube keywords. Card text
+                stays concise enough to play at the table while this site
+                provides full definitions.
+              </p>
+            </article>
+            <article>
+              <h3>Real costs</h3>
+              <p>
+                Mana, cards, materials, tempo, Grave, and exile are deliberate
+                resources. Explosive effects demand sequencing and expose
+                windows for interaction.
+              </p>
+            </article>
+            <article>
+              <h3>Recognizable decks</h3>
+              <p>
+                Archetypes remain coherent packages, not piles of references.
+                Each should advertise a plan, reward mastery, and overlap with
+                the rest of the cube without losing identity.
+              </p>
+            </article>
+            <article>
+              <h3>Rules honesty</h3>
+              <p>
+                Summons, targets, costs, triggers, and zones use explicit Magic
+                semantics. Flavor never excuses ambiguous or hidden rules.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="archetypes">
+          <h2>Archetype promises</h2>
+          <dl class="rule-glossary">
+            <div>
+              <dt>Burning Abyss</dt><dd>
+                Small black Fiends turn sacrifice and Grave movement into
+                durable value, then climb into Xyz and Synchro threats.
+              </dd>
+            </div>
+            <div>
+              <dt>Shaddoll</dt><dd>
+                Control and Fusion gameplay rewards face-down planning plus
+                carefully sending cards to Grave.
+              </dd>
+            </div>
+            <div>
+              <dt>Nekroz</dt><dd>
+                A blue Ritual toolbox wins through search, hand utility,
+                resource sequencing, and measured anti-Extra Deck control—not
+                immediate lethal combos.
+              </dd>
+            </div>
+            <div>
+              <dt>Spellbook</dt><dd>
+                Wizard and spell chains turn accumulated knowledge into
+                incremental advantage while printed alternative costs create
+                deliberate burst turns.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section id="source">
+          <h2>Source-backed by design</h2>
+          <p>
+            Canonical MSE projects own card-by-card text, cost, statistics,
+            type, frame, and render. Rules documents own reusable mechanics.
+            Original Yu-Gi-Oh! records preserve traceability. This separation
+            lets cards evolve without quietly splitting the source of truth.
+          </p>
+        </section>
+
+        <section id="avoids">
+          <h2>What the cube avoids</h2>
+          <ul>
+            <li>Literal conversions that break Magic timing or vocabulary.</li>
+            <li>
+              Free power without deck-building, material, or tempo tension.
+            </li>
+            <li>Infinite loops and non-interactive endings.</li>
+            <li>Generic good-stuff cards that erase archetype identity.</li>
+            <li>Rules text duplicated across docs and card sources.</li>
+          </ul>
+          <p>
+            Goal: every card should make a Yu-Gi-Oh! player recognize its soul
+            and a Magic player trust how it works.
+          </p>
+        </section>
+      </div>
+
+      <ChapterSummary items={chapters} />
+    </div>
+  </article>
+</BaseLayout>

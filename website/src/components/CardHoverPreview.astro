@@ -1,0 +1,82 @@
+<img
+  class="card-hover-preview"
+  alt=""
+  aria-hidden="true"
+  width="400"
+  height="559"
+  decoding="async"
+/>
+
+<script>
+  const preview = document.querySelector<HTMLImageElement>(
+    '.card-hover-preview',
+  );
+  let active: HTMLElement | null = null;
+
+  const placePreview = (target: HTMLElement) => {
+    if (!preview) return;
+    const rect = target.getBoundingClientRect();
+    const gap = 16;
+    const width = Math.min(400, window.innerWidth - gap * 2);
+    const left =
+      rect.right + gap + width <= window.innerWidth
+        ? rect.right + gap
+        : Math.max(gap, rect.left - width - gap);
+    const top = Math.min(
+      Math.max(gap, rect.top + rect.height / 2 - width * 0.7),
+      window.innerHeight - width * 1.4 - gap,
+    );
+    preview.style.setProperty('--preview-left', `${left}px`);
+    preview.style.setProperty('--preview-top', `${Math.max(gap, top)}px`);
+  };
+
+  const showPreview = (target: HTMLElement) => {
+    const src = target.dataset.cardPreview;
+    if (!preview || !src) return;
+    active = target;
+    preview.src = src;
+    preview.classList.add('is-visible');
+    placePreview(target);
+  };
+
+  const hidePreview = (target: HTMLElement) => {
+    if (!preview || active !== target) return;
+    active = null;
+    preview.classList.remove('is-visible');
+  };
+
+  document.addEventListener('pointerover', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const target = event.target.closest<HTMLElement>('[data-card-preview]');
+    if (target) showPreview(target);
+  });
+  document.addEventListener('pointerout', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const target = event.target.closest<HTMLElement>('[data-card-preview]');
+    if (target && !target.contains(event.relatedTarget as Node)) {
+      hidePreview(target);
+    }
+  });
+  document.addEventListener('focusin', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const target = event.target.closest<HTMLElement>('[data-card-preview]');
+    if (target) showPreview(target);
+  });
+  document.addEventListener('focusout', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const target = event.target.closest<HTMLElement>('[data-card-preview]');
+    if (target && !target.contains(event.relatedTarget as Node)) {
+      hidePreview(target);
+    }
+  });
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (active) placePreview(active);
+    },
+    { passive: true },
+  );
+  window.addEventListener('resize', () => {
+    if (active) placePreview(active);
+  });
+</script>
